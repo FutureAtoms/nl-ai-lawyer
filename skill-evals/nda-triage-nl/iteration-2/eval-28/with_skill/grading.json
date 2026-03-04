@@ -1,0 +1,32 @@
+{
+  "eval_id": 28,
+  "skill": "nda-triage-nl",
+  "expectations": [
+    {
+      "text": "uses_traffic_light",
+      "passed": true,
+      "evidence": "| Definition of Confidential Info | RED | ... | **Overall Rating** | **RED** | Multiple critical issues; significant risk to receiving party; do not sign as-is"
+    },
+    {
+      "text": "flags_missing_exceptions",
+      "passed": true,
+      "evidence": "| Exceptions/Carve-outs | RED | No exceptions mentioned; all four standard carve-outs are missing [...] **CRITICAL — Add all four standard carve-outs plus legally compelled disclosure**: These are standard, non-negotiable provisions."
+    },
+    {
+      "text": "flags_vague_definition",
+      "passed": true,
+      "evidence": "| Definition of Confidential Info | RED | \"Business information\" — vague, undefined, and unclear; no objective boundaries [...] \"business information\" is so broad and unclear that virtually any communication between the parties could arguably fall within it"
+    },
+    {
+      "text": "recommends_additions",
+      "passed": true,
+      "evidence": "## Missing Clauses — The following standard provisions are missing from this NDA and should be added before signing: 1. **Clear definition of confidential information** [...] 2. **All four standard carve-outs** [...] **CRITICAL — Negotiate the definition of 'business information'** [...] **ADD — Purpose limitation**"
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "This is an AI-generated legal analysis and does **NOT constitute legal advice** within the meaning of the Dutch Advocates Act (Advocatenwet)."
+    }
+  ],
+  "pass_rate": "5/5"
+}

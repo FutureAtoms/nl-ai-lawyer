@@ -1,0 +1,27 @@
+{
+  "eval_id": 26,
+  "skill": "eu-law-integration",
+  "expectations": [
+    {
+      "text": "references_directive",
+      "passed": true,
+      "evidence": "Directive 2016/943/EU of the European Parliament and of the Council of 8 June 2016 on the protection of undisclosed know-how and business information (trade secrets) against their unlawful acquisition, use and disclosure (Trade Secrets Directive)"
+    },
+    {
+      "text": "mentions_dutch_implementation",
+      "passed": true,
+      "evidence": "**Dutch Implementation**: Wet bescherming bedrijfsgeheimen (Wbb), in force since 23 October 2018 [...] The **Wet bescherming bedrijfsgeheimen (Wbb)** is the Dutch statute that implements Directive 2016/943."
+    },
+    {
+      "text": "discusses_relationship",
+      "passed": true,
+      "evidence": "The Wbb is a **full harmonization** implementing statute. [...] The directive sets a floor, not a ceiling [...] Richtlijnconforme interpretatie (consistent interpretation): Dutch courts are obliged to interpret the Wbb in conformity with the text and purpose of Directive 2016/943."
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "This is an AI-generated legal analysis and does **NOT constitute legal advice** within the meaning of the Dutch Advocates Act (Advocatenwet)."
+    }
+  ],
+  "pass_rate": "4/4"
+}

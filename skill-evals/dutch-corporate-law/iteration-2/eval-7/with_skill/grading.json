@@ -1,0 +1,32 @@
+{
+  "eval_id": 7,
+  "skill": "dutch-corporate-law",
+  "expectations": [
+    {
+      "text": "mentions_flex_bv",
+      "passed": true,
+      "evidence": "Multiple references: 'Since the Flex-BV Act (Wet vereenvoudiging en flexibilisering bv-recht), which entered into force on 1 October 2012' and 'Since the introduction of the Flex-BV on 1 October 2012, the Dutch BV has no minimum share capital. The previous minimum of EUR 18,000 was abolished. Shares can now be issued with a nominal value as low as EUR 0.01 per share'."
+    },
+    {
+      "text": "references_boek_2",
+      "passed": true,
+      "evidence": "Extensive references throughout: 'BW Boek 2, Titel 6 (Art. 2:175–2:284a BW)', 'Art. 2:175 BW', 'Art. 2:177 BW', 'Art. 2:239 BW', 'Art. 2:242 BW', 'Art. 2:216 BW', 'Art. 2:250 BW', 'Art. 2:344–2:359 BW'."
+    },
+    {
+      "text": "discusses_shareholders_agreement",
+      "passed": true,
+      "evidence": "Entire section '4. Content of the Aandeelhoudersovereenkomst (Shareholders' Agreement / SHA)' with comprehensive coverage including: 'The aandeelhoudersovereenkomst (SHA) is a contractual agreement between the shareholders'."
+    },
+    {
+      "text": "mentions_kvk",
+      "passed": true,
+      "evidence": "Section '3. KVK Registration': 'Under the Handelsregisterwet 2007, the BV must be registered at the Kamer van Koophandel (KVK) within 8 days of incorporation.' Also in practical requirements table."
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "This is an AI-generated legal analysis and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet)."
+    }
+  ],
+  "pass_rate": "5/5"
+}

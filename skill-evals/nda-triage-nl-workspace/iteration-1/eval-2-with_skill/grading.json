@@ -1,0 +1,29 @@
+{
+  "test_prompt": "I received a unilateral NDA from a potential partner. It's very short - just says we can't disclose 'business information' for 2 years, governed by Dutch law, with a EUR 25,000 penalty per breach. No other clauses. Is this okay to sign?",
+  "skill": "nda-triage-nl",
+  "eval_id": "eval-2",
+  "assertions": {
+    "uses_traffic_light": {
+      "pass": true,
+      "evidence": "Uses the GREEN/YELLOW/RED traffic light system throughout. Overall risk rated as 'YELLOW (trending RED due to missing critical clauses)'. Individual clause ratings: Definition = RED, Term = GREEN, Carve-outs = RED, Penalty = GREEN, Scope = YELLOW, Governing Law/Dispute = YELLOW. Consistent application of the triage methodology."
+    },
+    "flags_missing_exceptions": {
+      "pass": true,
+      "evidence": "Rates the absence of exceptions as RED. Lists all four standard carve-outs that should be present (public domain, prior knowledge, independent development, third-party receipt) plus legally compelled disclosure. Explains specific risks: liability for information becoming public through no fault, information already known, independent development, court-ordered disclosure, regulatory compulsion. Lists 12 missing clauses in total across all categories. Makes this the #1 CRITICAL priority action."
+    },
+    "flags_vague_definition": {
+      "pass": true,
+      "evidence": "Rates the 'business information' definition as RED. Explains it is 'extraordinarily vague' and could cover 'virtually anything the disclosing party considers business-related.' References the Haviltex interpretation standard. Notes the 'chilling effect on normal business activities.' Recommends replacing with a specific, bounded definition including categories, marking mechanism, and public information exclusion."
+    },
+    "recommends_additions": {
+      "pass": true,
+      "evidence": "Provides a comprehensive list of recommended additions organized by priority: CRITICAL (standard carve-outs, legally compelled disclosure), HIGH (specific definition, permitted recipients, purpose limitation), MEDIUM (return/destruction, forum selection). Also provides a detailed 'Missing Clauses' section listing 12 absent standard provisions. The summary explicitly states 'not okay to sign in its current form' and recommends responding with a markup."
+    },
+    "includes_disclaimer": {
+      "pass": true,
+      "evidence": "Full disclaimer appended at the end with all 7 required points and the Netherlands AI Lawyer System attribution."
+    }
+  },
+  "overall_score": "5/5",
+  "notes": "All assertions pass. The response excels at handling the 'is this okay to sign?' question directly and honestly (answer: no, not in current form), while avoiding the blanket 'just reject' approach warned against in the SKILL.md ethical guardrails. It explains specifically what is wrong and what additions would make the NDA acceptable. The observation that a counterparty resisting standard carve-outs is 'itself a red flag' is a valuable practical insight."
+}

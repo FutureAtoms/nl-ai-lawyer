@@ -1,0 +1,29 @@
+{
+  "test_prompt": "Quickly screen this NDA: Mutual NDA, Dutch law, 5-year term, confidential info defined as 'all information shared between parties', penalty of EUR 100,000 per breach plus EUR 10,000 per day, no carve-out for legally compelled disclosure, no residual knowledge clause, disputes via NAI arbitration.",
+  "skill": "nda-triage-nl",
+  "eval_id": "eval-1",
+  "assertions": {
+    "uses_traffic_light": {
+      "pass": true,
+      "evidence": "Uses the GREEN/YELLOW/RED traffic light system throughout. Overall risk rated as 'YELLOW (with RED elements requiring attention)'. Individual clause ratings: Definition = RED, Term = YELLOW, Carve-outs = RED, Residual Knowledge = YELLOW, Penalty = RED, Dispute Resolution = GREEN. The format matches the SKILL.md triage criteria precisely."
+    },
+    "flags_overbroad_definition": {
+      "pass": true,
+      "evidence": "Explicitly flags the 'all information shared between parties' definition as RED, noting it is a 'catch-all that provides no meaningful boundary' that 'may encompass publicly available information, trivial communications, and information the disclosing party does not own.' References the Haviltex standard and Art. 6:248 lid 2 BW as relevant to enforceability concerns. Recommends replacing with a specific definition including categories and marking requirements."
+    },
+    "flags_missing_carveout": {
+      "pass": true,
+      "evidence": "Rates the missing legally compelled disclosure carve-out as RED and identifies it as the '#1 CRITICAL priority action.' Lists specific Dutch statutory disclosure obligations that would conflict (Wwft, AFM/DNB reporting, AWR tax requests, Art. 843a Rv document production, parliamentary inquiry). Also flags that all four standard carve-outs appear to be missing (public domain, prior knowledge, independent development, third-party receipt)."
+    },
+    "discusses_penalty": {
+      "pass": true,
+      "evidence": "Rates the penalty clause as RED. Compares EUR 100,000 per breach + EUR 10,000/day against the SKILL.md triage criteria (placing it in the 'strategic/critical' range). References the legal framework: Art. 6:91-6:94 BW, the Art. 6:92 default (penalty replaces damages), Art. 6:94 judicial moderation, and the Intrahof/Bart Smit precedent. Recommends reducing to EUR 25,000-50,000 per breach with EUR 2,500-5,000/day and an explicit cap. Raises the cumulation question."
+    },
+    "includes_disclaimer": {
+      "pass": true,
+      "evidence": "Full disclaimer appended at the end with all 7 required points and the Netherlands AI Lawyer System attribution."
+    }
+  },
+  "overall_score": "5/5",
+  "notes": "All assertions pass with strong evidence. The response follows the SKILL.md output format precisely, applies the triage criteria correctly, and provides actionable priority actions ranked by severity. The treatment of the penalty clause is particularly thorough, incorporating both the legal framework and market norms from the reference material."
+}

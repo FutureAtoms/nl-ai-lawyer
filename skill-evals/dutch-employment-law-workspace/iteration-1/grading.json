@@ -1,0 +1,85 @@
+{
+  "evaluation_date": "2026-03-04",
+  "skill": "dutch-employment-law",
+  "iteration": 1,
+  "tests": {
+    "test_1": {
+      "prompt": "I need to terminate an underperforming employee who's been with our company for 8 years. They're on an indefinite contract and we've had some verbal discussions about performance but nothing documented. What are our options under Dutch law?",
+      "criteria": {
+        "discusses_dismissal_routes": {
+          "pass": true,
+          "score": 1.0,
+          "evidence": "Output thoroughly discusses all three relevant routes: (1) Kantonrechter ontbinding on d-grond (disfunctioneren) as the primary judicial route, (2) UWV route (correctly noted as NOT applicable for underperformance, only for a-grond/b-grond), and (3) Vaststellingsovereenkomst (mutual consent / settlement agreement) as the most practical option given the weak dossier. Also covers the g-grond (verstoorde arbeidsverhouding) and i-grond (cumulatiegrond) as alternative judicial routes."
+        },
+        "mentions_disfunctioneren": {
+          "pass": true,
+          "score": 1.0,
+          "evidence": "Disfunctioneren (d-grond, Art. 7:669 lid 3 sub d BW) is the central focus of the analysis. Output correctly identifies all four requirements: (1) employee must have been clearly informed in writing, (2) genuine opportunity to improve via verbetertraject/PIP, (3) dysfunctioning not caused by insufficient training or poor working conditions, (4) no suitable alternative position (herplaatsingsmogelijkheden). Correctly cites BW article references."
+        },
+        "flags_documentation_gap": {
+          "pass": true,
+          "score": 1.0,
+          "evidence": "Output prominently flags the documentation gap as 'a significant obstacle to any dismissal route based on underperformance.' Explicitly states: 'Verbal discussions alone are almost certainly insufficient. Courts routinely reject d-grond petitions where the employee was never formally notified in writing.' Provides a detailed practical roadmap for building the required dossier from scratch, including timeline (9-12 months). Also warns that without documentation, even the i-grond will be difficult."
+        },
+        "mentions_transitievergoeding": {
+          "pass": true,
+          "score": 1.0,
+          "evidence": "Dedicates a full section to transitievergoeding under both 'Employee Rights / Employer Obligations' and 'Financial Implications.' Correctly states: calculation of 1/3 monthly salary per year of service (Art. 7:673 BW), estimates approximately 2.67 months' gross salary for 8 years, notes the 2024 maximum of EUR 94,000, mentions WAB reform making it accrue from day 1, notes the potential 50% supplement on i-grond, and mentions billijke vergoeding risk if process is mishandled."
+        },
+        "includes_disclaimer": {
+          "pass": true,
+          "score": 1.0,
+          "evidence": "Full disclaimer appended at the end of the output, matching the template from assets/disclaimers/disclaimer-en.md. Includes all seven enumerated points (informational purposes only, AI-generated, does not replace a lawyer, no confidentiality guarantee, may not reflect current law, cannot be used as evidence, no accuracy guarantee). Date fields populated with 2026-03-04."
+        }
+      },
+      "total_score": "5/5",
+      "pass": true
+    },
+    "test_2": {
+      "prompt": "We're hiring a senior developer from India as a kennismigrant. What salary threshold applies, and can we include a concurrentiebeding (non-compete) in a fixed-term contract?",
+      "criteria": {
+        "mentions_salary_threshold": {
+          "pass": true,
+          "score": 1.0,
+          "evidence": "Output provides detailed salary threshold table from IND criteria with 2024 figures: EUR 5,008/month for age 30+ and EUR 3,672/month for under 30 (excluding 8% vakantiegeld). Also includes European Blue Card threshold (EUR 6,245) and graduate threshold (EUR 2,631) for completeness. Correctly notes thresholds are updated annually in January and advises employer to verify current figures with IND."
+        },
+        "discusses_noncompete_fixedterm": {
+          "pass": true,
+          "score": 1.0,
+          "evidence": "Provides comprehensive analysis of concurrentiebeding in fixed-term contracts under Art. 7:653 BW as reformed by WWZ (2015). Correctly states: (1) non-compete in fixed-term contracts is in principle NOT permitted, (2) exception only with written justification of zwaarwegende bedrijfs- of dienstbelangen in the clause itself, (3) justification must be specific and concrete (not generic boilerplate), (4) related to the specific employee and function, (5) proportionate. Includes practical assessment table for the senior developer role distinguishing strong arguments (proprietary source code, trade secrets) from insufficient arguments (general programming skills). Recommends considering confidentiality clause (geheimhoudingsbeding) as alternative."
+        },
+        "references_ind": {
+          "pass": true,
+          "score": 1.0,
+          "evidence": "Multiple references to IND (Immigratie- en Naturalisatiedienst) throughout the output. Covers: erkend referent (recognized sponsor) requirement and application process, IND application procedure and fast-track processing (2-4 weeks), MVV (entry visa) process, IND fee structure (EUR 345 for kennismigrant permit, EUR 4,744 for erkend referent application), employer notification obligations to IND, and references to ind.nl as the authoritative source for current thresholds."
+        },
+        "includes_disclaimer": {
+          "pass": true,
+          "score": 1.0,
+          "evidence": "Full disclaimer appended at the end of the output, matching the template from assets/disclaimers/disclaimer-en.md. Includes all seven enumerated points. Date fields populated with 2026-03-04."
+        }
+      },
+      "total_score": "4/4",
+      "pass": true
+    }
+  },
+  "overall_assessment": {
+    "total_criteria_passed": 9,
+    "total_criteria": 9,
+    "overall_score": "9/9 (100%)",
+    "overall_pass": true,
+    "skill_adherence": {
+      "output_format_followed": true,
+      "ethical_guardrails_respected": true,
+      "legal_framework_referenced": true,
+      "wwz_wab_referenced": true,
+      "cao_system_referenced": true,
+      "ontslagrecht_referenced": true,
+      "arbeidsovereenkomst_referenced": true,
+      "disclaimer_appended": true,
+      "mediation_noted": true,
+      "perspective_identified": true,
+      "no_termination_letters_drafted": true
+    }
+  }
+}

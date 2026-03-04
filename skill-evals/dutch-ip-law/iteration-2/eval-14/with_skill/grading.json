@@ -1,0 +1,27 @@
+{
+  "eval_id": 14,
+  "skill": "dutch-ip-law",
+  "expectations": [
+    {
+      "text": "references_bvie",
+      "passed": true,
+      "evidence": "Benelux-Verdrag inzake de Intellectuele Eigendom (BVIE) — Benelux Convention on Intellectual Property (trademarks and designs)... Art. 2.20 BVIE — Exclusive rights of the trademark holder... As the holder of a Benelux trademark registration, you have exclusive rights under Art. 2.20 BVIE throughout the entire Benelux territory (Belgium, Netherlands, and Luxembourg). ... BOIP (Benelux Office for Intellectual Property) referenced multiple times."
+    },
+    {
+      "text": "mentions_kort_geding",
+      "passed": true,
+      "evidence": "Option 2: Kort Geding (Preliminary Injunction) — If the competitor continues infringing or the situation is urgent, you can commence a kort geding (summary proceedings for a preliminary injunction) before the civil court (Rechtbank). ... A kort geding can typically be heard within 2–4 weeks of filing... The kort geding is the most common and effective first step in trademark infringement enforcement in the Netherlands and the Benelux."
+    },
+    {
+      "text": "mentions_handelsnaamwet",
+      "passed": true,
+      "evidence": "Additional Trade Name Protection — Handelsnaamwet. Beyond trademark law, if your company operates under a particular trade name (handelsnaam) and the competitor is using a confusingly similar trade name in the same geographic area and/or sector, the Handelsnaamwet (Hw) provides additional protection. Under the Handelsnaamwet, it is unlawful to use a trade name that is identical or confusingly similar to another's earlier trade name."
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "This is an AI-generated legal analysis and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet)."
+    }
+  ],
+  "pass_rate": "4/4"
+}

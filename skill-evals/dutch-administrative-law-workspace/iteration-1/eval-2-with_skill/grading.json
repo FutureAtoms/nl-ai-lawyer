@@ -1,0 +1,24 @@
+{
+  "eval": "dutch-administrative-law-test-2",
+  "prompt": "A government agency took 4 months to decide on our subsidy application when the legal deadline was 8 weeks. Can we do anything about this delay?",
+  "assertions": {
+    "mentions_ingebrekestelling": {
+      "pass": true,
+      "evidence": "Response thoroughly explains the ingebrekestelling mechanism: formal written notice to the administrative body demanding a decision, followed by a 2-week period for the body to decide (Art. 4:17 lid 3 Awb). Provides practical guidance on how to draft and send the ingebrekestelling, including recommending registered mail for proof of delivery."
+    },
+    "mentions_dwangsom_4_17": {
+      "pass": true,
+      "evidence": "Response specifically references Art. 4:17 Awb and provides detailed dwangsom amounts: EUR 23 per day for the first 14 days, EUR 35 per day for the next 14 days, EUR 45 per day thereafter, with a maximum of EUR 1,442. Explains that the dwangsom accrues automatically after the 2-week ingebrekestelling period and that the body must issue a separate dwangsom beschikking."
+    },
+    "references_awb": {
+      "pass": true,
+      "evidence": "Response references multiple Awb provisions: Art. 4:13 (decision period), Art. 4:14 (notification obligation), Art. 4:15 (suspension of decision period), Art. 4:17 (dwangsom), Art. 6:2 sub b (fictieve weigering), Art. 6:12 (beroep against failure to decide), Art. 7:1 lid 1 sub f (skip bezwaar for niet-tijdig beslissen). Also references Art. 8:88 Awb and Art. 6:162 BW for damage claims."
+    },
+    "includes_disclaimer": {
+      "pass": true,
+      "evidence": "Response includes a comprehensive disclaimer at the end noting the information is general, the Awb provisions have specific procedural requirements, and recommends consulting a bestuursrechtadvocaat."
+    }
+  },
+  "overall_score": "4/4",
+  "notes": "All assertions pass. Response provides a comprehensive treatment of the niet-tijdig beslissen remedies with specific Awb article citations, practical step-by-step guidance, and appropriately discusses alternative options including beroep and Nationale Ombudsman. The nuance about retroactive dwangsom claims (must send ingebrekestelling before decision is made) is a valuable practical detail."
+}

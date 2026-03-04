@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+*.local.md
+__pycache__/
+*.pyc
+.DS_Store
+dutch-legal-mcp/node_modules/
+dutch-legal-mcp/dist/

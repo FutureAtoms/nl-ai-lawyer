@@ -1,0 +1,77 @@
+{
+  "skill": "dutch-privacy-gdpr",
+  "iteration": 1,
+  "date": "2026-03-04",
+  "tests": [
+    {
+      "test_id": "eval-1",
+      "prompt": "Our Dutch startup is building a health app that collects user location data, health metrics, and connects to a US-based analytics platform. We have 50,000 users. What are our AVG compliance obligations?",
+      "type": "with_skill",
+      "criteria": {
+        "mentions_special_categories": {
+          "pass": true,
+          "score": 1.0,
+          "evidence": "Output extensively discusses special categories of personal data (bijzondere persoonsgegevens) under Art. 9 AVG, identifies health metrics as special category data, references Art. 22-28 UAVG for Dutch-specific exceptions including Art. 24 UAVG for health data, and notes that explicit consent under Art. 9(2)(a) is required. Also correctly identifies location data as 'data of a highly personal nature' per EDPB guidelines."
+        },
+        "discusses_dpia": {
+          "pass": true,
+          "score": 1.0,
+          "evidence": "Output contains a dedicated DPIA section referencing Art. 35 AVG. Provides a table mapping the AP's DPIA criteria to the specific scenario (sensitive data, large-scale processing, innovative technology, systematic monitoring). References the AP's Art. 35(4) list including 'Processing of health data by non-healthcare institutions.' Explains the two-criteria threshold, references Art. 36 AVG prior consultation requirement, and recommends conducting a DPIA immediately as the top priority action item."
+        },
+        "addresses_us_transfer": {
+          "pass": true,
+          "score": 1.0,
+          "evidence": "Output contains a detailed International Transfers section covering Chapter V AVG. Discusses the EU-US Data Privacy Framework (DPF) adequacy decision of July 2023, SCCs (2021 version), Transfer Impact Assessment (TIA) requirement post-Schrems II, supplementary measures, and references US surveillance laws (FISA 702, EO 12333). Cites the Uber EUR 290,000,000 fine (2024) as enforcement precedent for international transfers. Recommends verifying DPF certification and considering keeping health data in the EEA."
+        },
+        "mentions_verwerkersovereenkomst": {
+          "pass": true,
+          "score": 1.0,
+          "evidence": "Output contains a dedicated 'Data Processing Agreements (Verwerkersovereenkomst -- Art. 28 AVG)' section. Lists all 12 mandatory elements of the verwerkersovereenkomst. Distinguishes between the US platform being a processor, joint controller (Art. 26 AVG), or independent controller. Notes AP enforcement risk for missing verwerkersovereenkomsten."
+        },
+        "includes_disclaimer": {
+          "pass": true,
+          "score": 1.0,
+          "evidence": "Output appends the full legal disclaimer from assets/disclaimers/disclaimer-en.md, including all 7 points about the AI-generated analysis not constituting legal advice under the Advocatenwet, lack of attorney-client privilege, and the requirement to consult a qualified Dutch lawyer. Date fields are populated with 4 March 2026."
+        }
+      },
+      "total_score": "5/5",
+      "percentage": 100
+    },
+    {
+      "test_id": "eval-2",
+      "prompt": "We received a data subject access request (inzageverzoek) from a former employee. They want all their personal data including internal performance reviews and emails about them. Do we have to provide everything? What's the deadline?",
+      "type": "with_skill",
+      "criteria": {
+        "cites_art_15": {
+          "pass": true,
+          "score": 1.0,
+          "evidence": "Output provides comprehensive analysis of Art. 15 AVG (right of access / inzagerecht). Lists all sub-paragraphs of Art. 15(1)(a)-(h) with the required information elements. References Art. 15(3) for the right to a copy and Art. 15(4) for the exception regarding rights and freedoms of others. Discusses the scope of 'personal data' as it applies to performance reviews and emails."
+        },
+        "mentions_deadline": {
+          "pass": true,
+          "score": 1.0,
+          "evidence": "Output clearly states the deadline framework: 'within one month (1 maand)' under Art. 12(3) AVG, with possible extension of 'two additional months (2 maanden)' for complex requests, giving a total maximum of 3 months. Notes that the controller must inform the data subject within the initial 1-month period if an extension is needed. References the AP's practical compliance tip about responding promptly."
+        },
+        "discusses_exceptions": {
+          "pass": true,
+          "score": 1.0,
+          "evidence": "Output identifies and analyzes five categories of exceptions: (1) Art. 15(4) rights and freedoms of others (with guidance on redaction of third-party data), (2) Art. 41 UAVG exceptions (intelligence services, journalism -- correctly noting non-applicability to employment context), (3) Art. 12(5) manifestly unfounded or excessive requests, (4) legal professional privilege (verschoningsrecht), and (5) practical considerations under Recital 63 AVG for specification of requests. Correctly emphasizes that exceptions must be interpreted restrictively and that redaction, not refusal, is the proper approach."
+        },
+        "includes_disclaimer": {
+          "pass": true,
+          "score": 1.0,
+          "evidence": "Output appends the full legal disclaimer from assets/disclaimers/disclaimer-en.md, including all 7 points. Date fields populated with 4 March 2026."
+        }
+      },
+      "total_score": "4/4",
+      "percentage": 100
+    }
+  ],
+  "overall": {
+    "total_criteria": 9,
+    "passed": 9,
+    "failed": 0,
+    "overall_score": "9/9",
+    "percentage": 100
+  }
+}

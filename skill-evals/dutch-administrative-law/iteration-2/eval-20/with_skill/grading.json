@@ -1,0 +1,27 @@
+{
+  "eval_id": 20,
+  "skill": "dutch-administrative-law",
+  "expectations": [
+    {
+      "text": "mentions_ingebrekestelling",
+      "passed": true,
+      "evidence": "\"## Remedy 1: Ingebrekestelling (Notice of Default)\" and \"you must first send an **ingebrekestelling** - a formal written notice to the agency stating that: The statutory decision deadline has passed; The agency is in default (in gebreke); You demand a decision to be issued.\""
+    },
+    {
+      "text": "mentions_dwangsom",
+      "passed": true,
+      "evidence": "\"## Remedy 2: Dwangsom bij Niet Tijdig Beslissen (Art. 4:17 Awb)\" and \"Art. 4:17 Awb - Dwangsom bij niet tijdig beslissen (penalty payment for failure to decide on time)\" - dwangsom amounts and procedure fully explained"
+    },
+    {
+      "text": "references_awb",
+      "passed": true,
+      "evidence": "\"**Legal Basis**: Algemene wet bestuursrecht (Awb), in particular Art. 4:13-4:15 (decision terms) and Art. 4:17-4:19 (dwangsom bij niet tijdig beslissen)\" - extensive Awb citations throughout"
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "\"This is an AI-generated legal analysis and does **NOT constitute legal advice** within the meaning of the Dutch Advocates Act (Advocatenwet).\""
+    }
+  ],
+  "pass_rate": "4/4"
+}

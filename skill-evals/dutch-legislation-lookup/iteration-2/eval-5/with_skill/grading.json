@@ -1,0 +1,27 @@
+{
+  "eval_id": 5,
+  "skill": "dutch-legislation-lookup",
+  "expectations": [
+    {
+      "text": "cites_art_7_652",
+      "passed": true,
+      "evidence": "Article 7:652 BW — Proeftijd (Probation Period) — the section header and throughout: 'Article 7:652 BW governs the probation period in Dutch employment contracts.'"
+    },
+    {
+      "text": "mentions_duration_limits",
+      "passed": true,
+      "evidence": "Fixed-term contracts of more than 6 months: Maximum probation period of één maand (one month). Indefinite-term (permanent) contracts: Maximum probation period of twee maanden (two months)."
+    },
+    {
+      "text": "explains_written_requirement",
+      "passed": true,
+      "evidence": "The probation period MUST be agreed in writing (schriftelijk). An oral probation agreement is null and void (nietig). This is an absolute requirement."
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "This is an AI-generated legal analysis and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet)."
+    }
+  ],
+  "pass_rate": "4/4"
+}

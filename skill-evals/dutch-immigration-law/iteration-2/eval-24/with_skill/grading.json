@@ -1,0 +1,27 @@
+{
+  "eval_id": 24,
+  "skill": "dutch-immigration-law",
+  "expectations": [
+    {
+      "text": "mentions_income_requirement",
+      "passed": true,
+      "evidence": "Art. 3.22 (income requirement); income threshold is 100% of the applicable minimum wage (minimumloon) (net); approximately EUR 1,934.40 per month net (2024)"
+    },
+    {
+      "text": "discusses_mvv",
+      "passed": true,
+      "evidence": "Japan is on the MVV-exempt nationalities list; your partner can enter the Netherlands without an MVV; TEV procedure from Japan (Option B)"
+    },
+    {
+      "text": "mentions_inburgering",
+      "passed": true,
+      "evidence": "basisexamen inburgering buitenland; Wet inburgering 2021 (Wi 2021) – Civic integration obligations; inburgeringsplicht; inburgering trajectory"
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "This is an AI-generated legal analysis and does not constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet)."
+    }
+  ],
+  "pass_rate": "4/4"
+}

@@ -1,0 +1,32 @@
+{
+  "eval_id": 1,
+  "skill": "dutch-contract-review",
+  "expectations": [
+    {
+      "text": "uses_traffic_light",
+      "passed": true,
+      "evidence": "Output contains multiple traffic light ratings: 'Overall Risk Assessment: RED', '- **Risk Level**: YELLOW', '- **Risk Level**: RED' appearing 13 times throughout the clause-by-clause analysis."
+    },
+    {
+      "text": "cites_bw_articles",
+      "passed": true,
+      "evidence": "Multiple BW article citations including: 'Art. 6:74 BW (attributable failure)', 'Art. 6:248 lid 2 BW (derogating effect of reasonableness and fairness)', 'Art. 6:233 sub b BW', 'Art. 6:234 BW', 'Art. 2 Auteurswet', and others matching pattern for BW article citations."
+    },
+    {
+      "text": "flags_ip_assignment",
+      "passed": true,
+      "evidence": "Section 3 is titled 'Intellectual Property - Customization Assignment' and the clause states: 'The IP clause says all customizations become their property. Can you review the key risk areas?' The output discusses 'intellectual property law (Auteurswet, Art. 2)', 'IP created by contractors does NOT automatically transfer', and flags as RED."
+    },
+    {
+      "text": "flags_algemene_voorwaarden",
+      "passed": true,
+      "evidence": "Section 4 is titled 'Algemene Voorwaarden - Incorporated by Reference (Not Provided)' and the term 'algemene voorwaarden' appears 10 times throughout the analysis, including 'the vendor's general terms and conditions (algemene voorwaarden) are incorporated by reference'."
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "Disclaimer at end of output states: 'This is an AI-generated legal analysis and does **NOT constitute legal advice** within the meaning of the Dutch Advocates Act (Advocatenwet).' This contains the substring 'NOT constitute legal advice' matching 'not constitute legal advice' case-insensitively."
+    }
+  ],
+  "pass_rate": "5/5"
+}

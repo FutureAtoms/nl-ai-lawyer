@@ -1,0 +1,28 @@
+{
+  "eval": "dutch-tax-law-test-2",
+  "prompt": "I'm a US citizen moving to the Netherlands. My Dutch employer offered me the 30% ruling. How does it work, what's the duration, and what happens to my US tax obligations?",
+  "assertions": {
+    "explains_30_percent": {
+      "pass": true,
+      "evidence": "Response provides a thorough explanation of the 30% ruling (30%-regeling / extraterritoriale kostenregeling): 30% of gross employment income is paid as a tax-free allowance, effectively taxing only 70% of salary. Includes a numerical example (EUR 100,000 salary, EUR 30,000 tax-free) and explains the partial non-resident taxpayer status benefit (Box 2 and Box 3 treatment)."
+    },
+    "mentions_duration": {
+      "pass": true,
+      "evidence": "Response clearly states the maximum duration of 5 years (60 months), notes the reduction from 8 years, mentions the effective date of the change (January 2024), and notes that prior Dutch presence reduces the 60-month period."
+    },
+    "discusses_conditions": {
+      "pass": true,
+      "evidence": "Response details four key conditions: (1) recruited from abroad / 150 km rule (16 of 24 months), (2) specific expertise assessed via salary criterion with specific thresholds (EUR 46,107 general / EUR 35,048 for under-30 with Master's), (3) must be an employee of a Dutch employer, (4) written agreement required. Also discusses the application process and 4-month filing deadline."
+    },
+    "mentions_treaty": {
+      "pass": true,
+      "evidence": "Response specifically discusses the Belastingverdrag Nederland-VS (Dutch-US Tax Treaty, 1992 as amended 2004 Protocol), references Art. 15 (employment income) and Art. 26 (saving clause), and explains how US worldwide taxation interacts with the 30% ruling through FEIE (IRC Section 911) and Foreign Tax Credit (IRC Section 901). Also discusses FBAR, FATCA, and the Totalization Agreement for social security."
+    },
+    "includes_disclaimer": {
+      "pass": true,
+      "evidence": "Response includes a comprehensive disclaimer at the end covering both Dutch and US tax obligations, noting the interaction is highly complex and fact-specific, and recommending qualified tax advisors in both jurisdictions."
+    }
+  },
+  "overall_score": "5/5",
+  "notes": "All assertions pass. Exceptional cross-border tax analysis that correctly identifies the interaction between the 30% ruling and US worldwide taxation, including the practical warning that the 30% ruling reduces Dutch tax credits available against US tax liability. The FBAR/FATCA discussion adds significant practical value."
+}

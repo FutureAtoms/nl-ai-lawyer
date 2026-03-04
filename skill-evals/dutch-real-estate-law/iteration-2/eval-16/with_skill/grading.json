@@ -1,0 +1,27 @@
+{
+  "eval_id": 16,
+  "skill": "dutch-real-estate-law",
+  "expectations": [
+    {
+      "text": "references_290_regime",
+      "passed": true,
+      "evidence": "BW Boek 7, Art. 7:290–310 — Middenstandsbedrijfsruimte (commercial retail/hospitality rental law)... The threshold question is whether your property qualifies as middenstandsbedrijfsruimte under Art. 7:290 BW. ... You have confirmed this is a 7:290 property, so this regime — with its relatively strong tenant protections — applies. ... The 7:290 regime gives tenants significantly more protection than, for example, Art. 7:230a commercial space."
+    },
+    {
+      "text": "explains_procedure",
+      "passed": true,
+      "evidence": "Step 1: Ingebrekestelling (Notice of Default) — Art. 6:82 BW. Before you can claim ontbinding, you must formally put the tenant in default (ingebrekestelling) by sending a written demand... Under Art. 6:265 BW, every failure in the performance of an obligation entitles the other party to dissolve the agreement (ontbinden)... Three months of unpaid rent is a serious breach (tekortkoming in de nakoming) that Dutch courts regularly accept as justifying ontbinding of a commercial lease and the accompanying ontruiming (eviction)."
+    },
+    {
+      "text": "mentions_court",
+      "passed": true,
+      "evidence": "The kantonrechter (part of the Rechtbank) has jurisdiction over commercial lease disputes, including 7:290 properties, under Art. 93–94 Rv (competentie kantonrechter in huurzaken). ... The kantonrechter will: 1. Schedule a hearing (zitting) 2. Allow the tenant to file a defense... 4. Issue a vonnis (judgment): Granting ontbinding and ontruiming (most likely outcome for 3 months non-payment without valid defense)."
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "This is an AI-generated legal analysis and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet)."
+    }
+  ],
+  "pass_rate": "4/4"
+}

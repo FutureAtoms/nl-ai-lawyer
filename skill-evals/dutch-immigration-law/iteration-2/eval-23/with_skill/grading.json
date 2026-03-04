@@ -1,0 +1,32 @@
+{
+  "eval_id": 23,
+  "skill": "dutch-immigration-law",
+  "expectations": [
+    {
+      "text": "mentions_recognized_sponsor",
+      "passed": true,
+      "evidence": "your company is a recognized sponsor (erkend referent) and the salary offered meets the applicable threshold"
+    },
+    {
+      "text": "mentions_salary_threshold",
+      "passed": true,
+      "evidence": "EUR 4,466–4,588 (recognized sponsor fee); EUR 5,493/month (standard threshold age 30+); EUR 4,028/month (reduced threshold age <30)"
+    },
+    {
+      "text": "explains_mvv_procedure",
+      "passed": true,
+      "evidence": "Since Brazil is not an MVV-exempt nationality, your candidate must go through the TEV procedure (machtiging tot voorlopig verblijf / Toegang en Verblijf). The TEV procedure is a single combined application..."
+    },
+    {
+      "text": "mentions_ind",
+      "passed": true,
+      "evidence": "you must apply to the IND (Immigratie- en Naturalisatiedienst)"
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "This is an AI-generated legal analysis and does not constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet)."
+    }
+  ],
+  "pass_rate": "5/5"
+}

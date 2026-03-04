@@ -1,0 +1,32 @@
+{
+  "eval_id": 25,
+  "skill": "eu-law-integration",
+  "expectations": [
+    {
+      "text": "explains_direct_effect",
+      "passed": true,
+      "evidence": "the doctrine of **direct effect** (rechtstreekse werking). [...] The doctrine of direct effect was established in the landmark case **Van Gend en Loos** (CJEU, 5 February 1963, Case 26/62)"
+    },
+    {
+      "text": "distinguishes_vertical_horizontal",
+      "passed": true,
+      "evidence": "A critical distinction must be drawn between **vertical** and **horizontal** direct effect: - **Vertical direct effect** (verticale rechtstreekse werking) [...] - **Horizontal direct effect** (horizontale rechtstreekse werking)"
+    },
+    {
+      "text": "mentions_key_cases",
+      "passed": true,
+      "evidence": "**Marshall v Southampton Health Authority (C-152/84)** [...] **Faccini Dori v Recreb Srl (C-91/92)** [...] **Francovich and Bonifaci (C-6/90 and C-9/90)**"
+    },
+    {
+      "text": "references_dutch_constitution",
+      "passed": true,
+      "evidence": "Under **art. 93 Grondwet**, provisions of treaties and decisions of international organizations [...] Under **art. 94 Grondwet**, Dutch statutory provisions must not be applied where their application is incompatible"
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "This is an AI-generated legal analysis and does **NOT constitute legal advice** within the meaning of the Dutch Advocates Act (Advocatenwet)."
+    }
+  ],
+  "pass_rate": "5/5"
+}

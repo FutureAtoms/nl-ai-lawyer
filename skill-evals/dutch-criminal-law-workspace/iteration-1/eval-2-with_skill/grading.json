@@ -1,0 +1,24 @@
+{
+  "eval": "dutch-criminal-law-test-2",
+  "prompt": "An employee reported that our factory might be violating environmental waste disposal regulations. Could this lead to criminal prosecution under Dutch law?",
+  "assertions": {
+    "mentions_wed": {
+      "pass": true,
+      "evidence": "Response extensively discusses the Wet op de Economische Delicten (WED) as the framework act for prosecuting environmental violations, explains the classification system (Art. 1 sub 1-4 WED with misdrijf/overtreding distinction), cites Art. 1a sub 1 WED for environmental offenses, and details the penalty framework under Art. 6 WED (up to 6 years imprisonment and 5th category fines or 10% annual turnover). Also discusses Art. 7 WED additional penalties including stillegging van de onderneming."
+    },
+    "discusses_environmental": {
+      "pass": true,
+      "evidence": "Response provides a thorough analysis of the environmental law framework: Wet milieubeheer (Wm) Chapter 10 for waste management, Omgevingswet, Besluit activiteiten leefomgeving (Bal), EU Waste Framework Directive, and Art. 173a-173b Sr for direct environmental pollution offenses. Includes a scenario-based table ranging from minor administrative violations to serious health risks, showing the likelihood and typical enforcement response."
+    },
+    "mentions_sanctions": {
+      "pass": true,
+      "evidence": "Response details comprehensive sanctions: fines up to EUR 900,000 or 10% of annual turnover, imprisonment up to 6 years (WED) or 12 years (Art. 173a Sr), stillegging van de onderneming (closure up to 1 year), confiscation, publication of judgment, remediation obligations, and civil liability. Also discusses the distinction between administrative and criminal enforcement tracks and the una via principle."
+    },
+    "includes_disclaimer": {
+      "pass": true,
+      "evidence": "Response includes a comprehensive disclaimer at the end noting the specialized nature of environmental criminal law, the dependency on specific waste types and permits, and recommending both environmental law and criminal defense lawyers with milieustrafrecht expertise."
+    }
+  },
+  "overall_score": "4/4",
+  "notes": "All assertions pass. Response provides a thorough and well-structured analysis of environmental criminal law in the Netherlands, correctly applies the WED framework, discusses both administrative and criminal enforcement tracks, and includes the practical addition of whistleblower protection under the Wet bescherming klokkenluiders. The scenario-likelihood table is particularly useful for understanding enforcement priorities."
+}

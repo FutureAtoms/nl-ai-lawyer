@@ -1,0 +1,32 @@
+{
+  "eval_id": 15,
+  "skill": "dutch-real-estate-law",
+  "expectations": [
+    {
+      "text": "explains_erfpacht",
+      "passed": true,
+      "evidence": "Erfpacht is a limited right in rem (beperkt zakelijk recht) under Art. 5:85 BW, distinct from ordinary rental (huur). It entitles the holder (erfpachter) to hold and use immovable property belonging to another — in this case, the Gemeente Amsterdam. ... The canon is the periodic payment made by the erfpachter to the grondeigenaar (here: the Gemeente Amsterdam) in exchange for the use of the land (Art. 5:89 BW)."
+    },
+    {
+      "text": "mentions_amsterdam_system",
+      "passed": true,
+      "evidence": "Amsterdam is unique in the Netherlands: the Gemeente Amsterdam owns approximately 80% of all land within the city, and virtually all residential and commercial property is on erfpacht land. Amsterdam has operated a municipal erfpacht system since 1896. ... The Amsterdam Erfpacht System — Critical Context. ... AB2016 — Eeuwigdurende Erfpacht (The Reformed Amsterdam System). Since 1 July 2016, the Gemeente Amsterdam issues all new erfpacht under the AB2016 (eeuwigdurende erfpacht) conditions."
+    },
+    {
+      "text": "warns_canon_revision",
+      "passed": true,
+      "evidence": "The most significant financial risk for any buyer is the canonherziening — the periodic revision of the canon when the applicable revision moment arrives. ... Given that Amsterdam property values have increased dramatically over the past 20+ years, a canon that has not been revised in 20 years is almost certainly well below what it would be after revision. The canonsprong (canon shock/leap) at the next revision moment can be enormous: Example: An erfpachter paying EUR 500/year in canon may face EUR 5,000–10,000/year or more after revision."
+    },
+    {
+      "text": "mentions_notaris",
+      "passed": true,
+      "evidence": "Transfer of the apartment (the appartementsrecht on erfpacht land) requires: A notariele akte van levering (notarial deed of transfer) — mandatory under Art. 3:89 BW. Registration at the kadaster. The notaris must verify: The erfpacht conditions (erfpachtvoorwaarden) and applicable AB; Any canon arrears... Engage a notaris with Amsterdam erfpacht expertise — not all notarissen have deep familiarity with the Amsterdam system."
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "This is an AI-generated legal analysis and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet)."
+    }
+  ],
+  "pass_rate": "5/5"
+}

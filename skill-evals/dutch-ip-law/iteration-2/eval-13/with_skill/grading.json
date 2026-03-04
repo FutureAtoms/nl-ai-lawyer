@@ -1,0 +1,27 @@
+{
+  "eval_id": 13,
+  "skill": "dutch-ip-law",
+  "expectations": [
+    {
+      "text": "cites_auteurswet",
+      "passed": true,
+      "evidence": "Under Art. 7 Auteurswet, when an employee creates a work as part of their employment duties, the employer is deemed the maker (maker) of the work — and therefore the initial copyright holder — unless otherwise contractually agreed. ... Art. 45h Auteurswet (implementing Art. 1 of the EU Software Directive 2009/24/EC). ... Art. 7 Aw applies: employer owns software copyright if created by employee as part of duties. ... werkgeversauteursrecht is referenced explicitly in the case law section."
+    },
+    {
+      "text": "discusses_software_ip",
+      "passed": true,
+      "evidence": "The training code written by the developer is a computer program (software), which is protected as a literary work under Art. 45h Auteurswet (implementing Art. 1 of the EU Software Directive 2009/24/EC). ... Art. 45h–45n — Specific provisions for software (implementing EU Software Directive 2009/24/EC). ... The AI model (the trained neural network or machine learning model, distinct from the training code) raises separate IP questions... may also be protected as software or as a database under the Databankenwet (Database Act)."
+    },
+    {
+      "text": "explains_employer_ownership",
+      "passed": true,
+      "evidence": "Under Art. 7 Auteurswet, when an employee creates a work as part of their employment duties, the employer is deemed the maker (maker) of the work — and therefore the initial copyright holder — unless otherwise contractually agreed. ... The developer's claim that he holds copyright in the training code he wrote is legally unfounded under Dutch law, provided the following conditions are met... the employer is deemed the maker by operation of law. ... Requirements: (1) employment relationship, (2) making the work was part of the job duties."
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "This is an AI-generated legal analysis and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet)."
+    }
+  ],
+  "pass_rate": "4/4"
+}

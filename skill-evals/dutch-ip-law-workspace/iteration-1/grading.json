@@ -1,0 +1,73 @@
+{
+  "skill": "dutch-ip-law",
+  "iteration": 1,
+  "date": "2026-03-04",
+  "tests": [
+    {
+      "test_id": "eval-1",
+      "prompt": "Our software development team created a custom AI model during working hours using company resources. One developer claims copyright on the training code he wrote. Who owns the IP under Dutch law?",
+      "type": "with_skill",
+      "criteria": {
+        "cites_auteurswet": {
+          "pass": true,
+          "evidence": "Output extensively cites the Auteurswet (Aw), including Art. 1 Aw (definition of copyright), Art. 7 Aw (employer ownership), Art. 45h Aw (software as literary work), Art. 6 Aw (commissioned works), Art. 2 Aw (transfer by akte), Art. 25 Aw (moral rights), and Art. 13 Aw (reproduction right). Specific article numbers are referenced throughout the analysis.",
+          "score": 1.0
+        },
+        "discusses_software_ip": {
+          "pass": true,
+          "evidence": "Output dedicates a full section to 'Software as a Protected Work' under Art. 45h Aw, explains that computer programs (including source code, object code, and preparatory design materials) are protected as literary works under the EU Software Directive 2009/24/EC, and discusses AI model patentability under Art. 2 ROW. Also addresses open source license compliance as a copyright matter.",
+          "score": 1.0
+        },
+        "explains_employer_ownership": {
+          "pass": true,
+          "evidence": "Output provides detailed analysis of Art. 7 Aw employer ownership rule, explains the two cumulative requirements (employment relationship + work within scope of duties), applies these to the specific facts (developer on software team, working hours, company resources), explains the legal fiction of 'fictief makerschap', and discusses the exception clause ('unless otherwise agreed'). Clearly concludes that the employer owns the copyright.",
+          "score": 1.0
+        },
+        "includes_disclaimer": {
+          "pass": true,
+          "evidence": "Full disclaimer appended at the end of the output, matching the template from assets/disclaimers/disclaimer-en.md. Includes all 7 points (informational only, AI-generated, does not replace lawyer, no confidentiality, may not reflect current law, cannot be used as evidence, no accuracy guarantee). Date fields populated with 2026-03-04.",
+          "score": 1.0
+        }
+      },
+      "total_score": 4.0,
+      "max_score": 4.0,
+      "percentage": 100.0
+    },
+    {
+      "test_id": "eval-2",
+      "prompt": "A competitor is using a very similar trade name and logo in the Benelux. We have a Benelux trademark registration. What are our options to stop them?",
+      "type": "with_skill",
+      "criteria": {
+        "references_bvie": {
+          "pass": true,
+          "evidence": "Output extensively references the BVIE (Benelux-Verdrag inzake de Intellectuele Eigendom), citing Art. 2.20 BVIE (exclusive rights) including sub a (double identity), sub b (likelihood of confusion), and sub c (reputation/dilution). Also references Art. 2.14 BVIE (opposition proceedings), Art. 2.26 BVIE (revocation for non-use), Art. 2.28 BVIE (invalidity), Art. 2.9 BVIE (duration). BOIP role explained.",
+          "score": 1.0
+        },
+        "mentions_kort_geding": {
+          "pass": true,
+          "evidence": "Output dedicates a full recommendation section to kort geding (preliminary injunction proceedings), explaining it as 'the most frequently used enforcement tool in Dutch trademark and trade name disputes'. Describes the process (hearing within 2-4 weeks), available remedies (voorlopig verbod, dwangsom), and notes it applies to both BVIE and Handelsnaamwet claims. Also mentioned under the BVIE enforcement section.",
+          "score": 1.0
+        },
+        "mentions_handelsnaamwet": {
+          "pass": true,
+          "evidence": "Output includes a full section on 'Trade Name Protection Under the Handelsnaamwet', referencing Art. 5 Hw (prohibition on confusingly similar trade names) and Art. 5a Hw (trade name containing a registered trademark). Explains that trade name rights arise from actual use (no registration required) and notes that all Rechtbanken have jurisdiction for trade name disputes.",
+          "score": 1.0
+        },
+        "includes_disclaimer": {
+          "pass": true,
+          "evidence": "Full disclaimer appended at the end of the output, matching the template from assets/disclaimers/disclaimer-en.md. Includes all 7 points. Date fields populated with 2026-03-04.",
+          "score": 1.0
+        }
+      },
+      "total_score": 4.0,
+      "max_score": 4.0,
+      "percentage": 100.0
+    }
+  ],
+  "overall": {
+    "total_score": 8.0,
+    "max_score": 8.0,
+    "percentage": 100.0,
+    "pass": true
+  }
+}

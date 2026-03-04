@@ -1,0 +1,81 @@
+{
+  "skill": "dutch-corporate-law",
+  "iteration": 1,
+  "date": "2026-03-04",
+  "tests": [
+    {
+      "test_id": "eval-1",
+      "prompt": "I'm setting up a Dutch BV with two founders (60/40 split). We want a board with both founders as directors plus an advisory board. What's the minimum share capital, what governance structure do you recommend, and what should go in the aandeelhoudersovereenkomst?",
+      "type": "with_skill",
+      "criteria": {
+        "mentions_flex_bv": {
+          "pass": true,
+          "evidence": "Output explicitly discusses the 'Flex-BV Act (Wet vereenvoudiging en flexibilisering bv-recht)' effective 1 October 2012, explains the removal of the EUR 18,000 minimum capital requirement, and details multiple Flex-BV features including non-voting shares, non-profit shares, and optional blokkeringsregeling.",
+          "location": "Section 1: Minimum Share Capital"
+        },
+        "references_boek_2": {
+          "pass": true,
+          "evidence": "Extensive references to BW Boek 2 throughout the output, including: Art. 2:175 (formation), Art. 2:178 (notarial deed), Art. 2:192 (share classes), Art. 2:195 (blokkeringsregeling), Art. 2:196 (share transfer), Art. 2:216 (uitkeringstest/distributions), Art. 2:217 (voting), Art. 2:224 (majority requirements), Art. 2:239 (board management), Art. 2:239a (one-tier board), Art. 2:240 (representation), Art. 2:242 (director appointment), Art. 2:244 (director dismissal), Art. 2:245 (remuneration), Art. 2:250 (supervisory board), Art. 2:206a (pre-emptive rights).",
+          "location": "Throughout all sections"
+        },
+        "discusses_shareholders_agreement": {
+          "pass": true,
+          "evidence": "Comprehensive section on the aandeelhoudersovereenkomst covering: tag-along/drag-along rights, right of first refusal, lock-up period, reserved matters, deadlock resolution (mediation/arbitration/Russian roulette), non-compete/non-solicitation, good leaver/bad leaver provisions, IP assignment, dividend policy, board composition, financing (bijstortingsplicht, shareholder loans), and exit/termination provisions.",
+          "location": "Section 3: Aandeelhoudersovereenkomst"
+        },
+        "mentions_kvk": {
+          "pass": true,
+          "evidence": "Output discusses KVK (Kamer van Koophandel) registration within 8 days of incorporation per Handelsregisterwet 2007, mentions KVK registration fee (EUR 75), UBO registration at KVK, joint signing authority (gezamenlijk bevoegd) registered at KVK, and obtaining btw-nummer after registration.",
+          "location": "Practical Requirements section and Recommendations"
+        },
+        "includes_disclaimer": {
+          "pass": true,
+          "evidence": "Full disclaimer appended at the end of the output, matching the template from assets/disclaimers/disclaimer-en.md, including all 7 numbered points, the acknowledgment statement, and the AI system attribution with date.",
+          "location": "End of output"
+        }
+      },
+      "total_criteria": 5,
+      "criteria_passed": 5,
+      "score": "5/5",
+      "grade": "PASS"
+    },
+    {
+      "test_id": "eval-2",
+      "prompt": "Our Dutch BV board approved a transaction with a related party (one director's other company) worth EUR 500K. The minority shareholder (30%) is objecting. What are the legal implications under Dutch corporate law?",
+      "type": "with_skill",
+      "criteria": {
+        "mentions_conflict_interest": {
+          "pass": true,
+          "evidence": "Extensive discussion of conflict of interest (tegenstrijdig belang) under Art. 2:239 lid 6 BW, including the requirement for the conflicted director to recuse from deliberation and decision-making, the WBTR codification since 2021, and the consequences of improper conflict management. Also references the Dutch Corporate Governance Code Chapter 2 on conflicts of interest.",
+          "location": "Section 1: Conflict of Interest (Tegenstrijdig Belang)"
+        },
+        "discusses_minority_protection": {
+          "pass": true,
+          "evidence": "Dedicated section on minority shareholder protection covering: (1) Right to challenge resolutions under Art. 2:15 BW with one-year limitation; (2) Inquiry procedure (enqueteprocedure) under Art. 2:344-2:359 BW with confirmation that 30% exceeds the 10% threshold; (3) Reasonableness and fairness under Art. 2:8 BW; (4) Direct tort action under Art. 6:162 BW; (5) Practical steps for the minority shareholder including kort geding (injunction). Also discusses the Ondernemingskamer's powers including suspension/dismissal of directors and annulment of resolutions.",
+          "location": "Section 2: Minority Shareholder Protection"
+        },
+        "cites_bw": {
+          "pass": true,
+          "evidence": "Specific BW article citations in Art. 2:xxx format throughout: Art. 2:8 (reasonableness/fairness), Art. 2:9 (director duty/liability), Art. 2:14 (nullity), Art. 2:15 (voidability), Art. 2:239 (board management), Art. 2:239 lid 6 (conflict of interest), Art. 2:344 (inquiry threshold), Art. 2:345 (Ondernemingskamer inquiry), Art. 2:349a (provisional measures), Art. 2:355 (wanbeleid remedies), Art. 2:224a (agenda rights), Art. 6:162 (tort). All citations follow the 'Art. 2:xxx BW' format.",
+          "location": "Throughout all sections"
+        },
+        "includes_disclaimer": {
+          "pass": true,
+          "evidence": "Full disclaimer appended at the end of the output, matching the template from assets/disclaimers/disclaimer-en.md, including all 7 numbered points, the acknowledgment statement, and the AI system attribution with date.",
+          "location": "End of output"
+        }
+      },
+      "total_criteria": 4,
+      "criteria_passed": 4,
+      "score": "4/4",
+      "grade": "PASS"
+    }
+  ],
+  "overall": {
+    "total_criteria": 9,
+    "total_passed": 9,
+    "overall_score": "9/9",
+    "overall_grade": "PASS",
+    "percentage": 100
+  }
+}

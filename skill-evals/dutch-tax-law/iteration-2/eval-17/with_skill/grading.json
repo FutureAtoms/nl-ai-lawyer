@@ -1,0 +1,32 @@
+{
+  "eval_id": 17,
+  "skill": "dutch-tax-law",
+  "expectations": [
+    {
+      "text": "cites_vpb",
+      "passed": true,
+      "evidence": "\"**Tax Type**: Vennootschapsbelasting (VPB) - Corporate Income Tax\" and \"**Wet op de vennootschapsbelasting 1969 (Wet VPB)** - in particular: **Art. 15 Wet VPB** - Fiscale eenheid (fiscal unity) regime\""
+    },
+    {
+      "text": "explains_advantages",
+      "passed": true,
+      "evidence": "\"### 1. Consolidation of Profits and Losses (Verliesverrekening)\" and \"### 2. Internal Transactions Are Ignored (Interne Transacties)\" - both key advantages are explained with detail"
+    },
+    {
+      "text": "mentions_joint_liability",
+      "passed": true,
+      "evidence": "\"### 1. Joint and Several Liability (Hoofdelijke Aansprakelijkheid)\" and \"the parent becomes exposed\" - section explicitly explains hoofdelijke aansprakelijkheid as a key risk"
+    },
+    {
+      "text": "mentions_rates",
+      "passed": true,
+      "evidence": "\"First EUR 200,000 | 19%\" and \"Above EUR 200,000 | 25.8%\" - specific VPB rates cited in percentage format matching regex \\d+[.,]?\\d*\\s*%"
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "\"This is an AI-generated legal analysis and does **NOT constitute legal advice** within the meaning of the Dutch Advocates Act (Advocatenwet).\""
+    }
+  ],
+  "pass_rate": "5/5"
+}

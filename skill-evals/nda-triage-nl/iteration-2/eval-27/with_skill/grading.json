@@ -1,0 +1,32 @@
+{
+  "eval_id": 27,
+  "skill": "nda-triage-nl",
+  "expectations": [
+    {
+      "text": "uses_traffic_light",
+      "passed": true,
+      "evidence": "| Definition of Confidential Info | RED | ... | **Overall Rating** | **RED** | Multiple critical issues; do not sign without material revisions"
+    },
+    {
+      "text": "flags_overbroad_definition",
+      "passed": true,
+      "evidence": "| Definition of Confidential Info | RED | \"All information shared between parties\" — catch-all with no boundaries; overbroad [...] The overbroad definition of confidential information and the absence of a legally compelled disclosure carve-out are fundamental structural deficiencies."
+    },
+    {
+      "text": "flags_missing_carveout",
+      "passed": true,
+      "evidence": "| Exceptions/Carve-outs | RED | No carve-out for legally compelled disclosure; missing critical standard exception [...] The absence of the legally compelled disclosure carve-out is a **critical deficiency**."
+    },
+    {
+      "text": "discusses_penalty",
+      "passed": true,
+      "evidence": "| Penalty Clause (Boetebeding) | RED | EUR 100,000 per breach + EUR 10,000 per day — exceeds standard; escalation trigger [...] **Single breach scenario**: EUR 100,000 x 1 = EUR 100,000"
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "This is an AI-generated legal analysis and does **NOT constitute legal advice** within the meaning of the Dutch Advocates Act (Advocatenwet)."
+    }
+  ],
+  "pass_rate": "5/5"
+}

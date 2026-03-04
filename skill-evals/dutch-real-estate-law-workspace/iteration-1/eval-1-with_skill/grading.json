@@ -1,0 +1,28 @@
+{
+  "eval": "dutch-real-estate-law-test-1",
+  "prompt": "I'm buying an apartment in Amsterdam. The makelaar says there's erfpacht (leasehold) from the gemeente. The canon hasn't been revised in 20 years. What should I watch out for?",
+  "assertions": {
+    "explains_erfpacht": {
+      "pass": true,
+      "evidence": "Response thoroughly explains erfpacht as a limited property right under Art. 5:85 BW, the distinction between land ownership (gemeente) and the appartementsrecht the buyer acquires, and the canon payment obligation."
+    },
+    "mentions_amsterdam_system": {
+      "pass": true,
+      "evidence": "Response specifically discusses Amsterdam's unique erfpacht system, distinguishing between voortdurende erfpacht (older system) and eeuwigdurende erfpacht (introduced 2016), and references the Gemeente Amsterdam Grondzaken department and the overstapregeling (conversion scheme)."
+    },
+    "warns_canon_revision": {
+      "pass": true,
+      "evidence": "Response explicitly warns that canon revision (canonherziening) is a 'major red flag,' explains that revision is based on current land values which have increased dramatically, and warns of potential 'enormous increase' from hundreds to thousands of euros per year. Advises checking the erfpachtakte for the revision date."
+    },
+    "mentions_notaris": {
+      "pass": true,
+      "evidence": "Response clearly states that a notaris is legally required for the transfer of appartementsrecht under Art. 3:89 BW, and that the notaris will review erfpacht conditions and flag upcoming canon revision."
+    },
+    "includes_disclaimer": {
+      "pass": true,
+      "evidence": "Response includes a comprehensive disclaimer at the end stating the information is for general informational purposes only, does not constitute legal advice, and recommends consulting a qualified Dutch notaris or real estate lawyer."
+    }
+  },
+  "overall_score": "5/5",
+  "notes": "All assertions pass. Response demonstrates strong command of erfpacht law, Amsterdam-specific municipal system, and practical advice regarding canon revision risk."
+}

@@ -1,0 +1,32 @@
+{
+  "eval_id": 3,
+  "skill": "dutch-case-law-research",
+  "expectations": [
+    {
+      "text": "mentions_ecli",
+      "passed": true,
+      "evidence": "Multiple valid ECLI citations appear: 'ECLI:NL:HR:2006:AZ0758' (Ontvanger/Roelofsen), 'ECLI:NL:HR:2010:BM0976' (Beklamel norm 2010), 'ECLI:NL:HR:1997:ZC2646' (Staleman/Van de Ven), 'ECLI:NL:HR:2001:AD4499' (SOBI/Hurks), 'ECLI:NL:HR:2014:2652', 'ECLI:NL:GHAMS:2021:1456', 'ECLI:NL:HR:2022:648' - all matching the pattern ECLI:NL:\\w+:\\d{4}:\\w+."
+    },
+    {
+      "text": "explains_beklamel",
+      "passed": true,
+      "evidence": "The output extensively explains the Beklamel norm: 'The Beklamel norm governs external director liability', 'A director is personally liable if he or she, on behalf of the company, entered into obligations with a third party while knowing... that the company would not be able to perform', and section titled 'Original Beklamel Norm - Foundational Case'. The term 'Beklamel' appears 36 times; 'bestuurdersaansprakelijkheid' and 'director liability' are also prominently featured."
+    },
+    {
+      "text": "references_hoge_raad",
+      "passed": true,
+      "evidence": "Multiple references to the Hoge Raad throughout: 'Hoge Raad der Nederlanden (Supreme Court)', 'The Hoge Raad established a two-track framework', 'The Hoge Raad confirmed that the high threshold', 'Binding (Hoge Raad - cassation court)'. The term 'Hoge Raad' appears 28 times."
+    },
+    {
+      "text": "mentions_art_2_9_bw",
+      "passed": true,
+      "evidence": "Art. 2:9 BW is referenced multiple times: 'Internal Director Liability - Art. 2:9 BW Framework', 'Under art. 2:9 BW, a director must properly perform his or her duties', 'Art. 2:9 BW: Directors must properly perform their duties', 'Liability of board members (of NVs and BVs) under Art. 2:248 BW' and 'Boek 2 BW Framework' section. Appears 14 times."
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "Disclaimer at end of output states: 'This is an AI-generated legal analysis and does **NOT constitute legal advice** within the meaning of the Dutch Advocates Act (Advocatenwet).' This contains the substring 'NOT constitute legal advice' matching 'not constitute legal advice' case-insensitively."
+    }
+  ],
+  "pass_rate": "5/5"
+}

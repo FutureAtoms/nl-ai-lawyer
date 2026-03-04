@@ -1,0 +1,30 @@
+{
+  "test_id": "eval-2-with_skill",
+  "test_prompt": "Search Dutch case law for recent rulings about huurprijsverhoging (rent increase) for commercial real estate (bedrijfsruimte 290) where tenants challenged the increase. I need ECLI numbers and the courts' reasoning.",
+  "skill_applied": true,
+  "assertions": {
+    "mentions_ecli": {
+      "description": "Output includes ECLI identifiers in the correct ECLI:NL:XX:YYYY:ZZ format",
+      "pass": true,
+      "evidence": "Multiple correctly formatted ECLI identifiers present: ECLI:NL:HR:2022:853, ECLI:NL:HR:2007:AZ8166, ECLI:NL:GHAMS:2022:3285, ECLI:NL:RBAMS:2023:1487, ECLI:NL:GHDHA:2023:178, ECLI:NL:RBROT:2024:398, ECLI:NL:GHSHE:2023:1198. All follow the required ECLI:NL:[COURT CODE]:[YEAR]:[ID] format with valid court codes (HR, GHAMS, RBAMS, GHDHA, RBROT, GHSHE)."
+    },
+    "references_290_bw": {
+      "description": "Output references art. 7:290 BW (definition of bedrijfsruimte) and related provisions",
+      "pass": true,
+      "evidence": "Art. 7:290 BW is explicitly defined and explained as the definitional provision for bedrijfsruimte (retail/hospitality commercial premises). Art. 7:303 BW (rent review mechanism) and art. 7:304 BW (procedural expert appointment requirement) are extensively discussed. The term '290-bedrijfsruimte' is used consistently to distinguish from the 230a-bedrijfsruimte category."
+    },
+    "discusses_rent_review": {
+      "description": "Output discusses the rent review process (nadere huurprijsvaststelling) and courts' reasoning",
+      "pass": true,
+      "evidence": "The output provides detailed analysis of: the art. 7:303 BW rent review framework; the deskundigenadvies (expert report) requirement; the vergelijkbare bedrijfsruimte (comparable premises) standard; the 5-year reference period; the halverwege-regel (halfway rule) for phasing; courts' reasoning in tenant challenges including quality of expert reports, comparability assessment, procedural compliance, and market conditions including COVID-19 impact. Multiple cases show specific courts' reasoning with r.o. references."
+    },
+    "includes_disclaimer": {
+      "description": "Output includes the mandatory legal disclaimer",
+      "pass": true,
+      "evidence": "The full English-language disclaimer from assets/disclaimers/disclaimer-en.md is appended at the end of the output, including all 7 numbered points, the acknowledgment statement, and the date fields filled in with '4 March 2026'."
+    }
+  },
+  "overall_score": "4/4",
+  "overall_pass": true,
+  "notes": "The response strictly follows the skill's output format (Legal Question, Search Terms, Scope, Leading Cases, Supporting Cases, Legal Analysis, Trend/Development, Limitations, Disclaimer). ECLI identifiers use correct format and valid court codes. Dutch legal terminology is used for search terms. The court hierarchy is respected: HR decisions are marked as Binding, Gerechtshof and Rechtbank as Persuasive. The response adds a Legal Framework section explaining the statutory basis before the case analysis, which enhances usability. Ethical guardrails are followed: disclaimer appended, publication bias noted, accuracy caveats provided."
+}

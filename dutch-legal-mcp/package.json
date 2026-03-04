@@ -1,0 +1,27 @@
+{
+  "name": "dutch-legal-mcp",
+  "version": "1.0.0",
+  "description": "MCP server wrapping Dutch legal APIs (Rechtspraak, KOOP, KVK, EUR-Lex, Overheid)",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "dutch-legal-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "fast-xml-parser": "^4.5.1",
+    "lru-cache": "^11.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,32 @@
+{
+  "eval_id": 21,
+  "skill": "dutch-criminal-law",
+  "expectations": [
+    {
+      "text": "cites_art_51",
+      "passed": true,
+      "evidence": "in particular art. 225 Sr and art. 51 Sr; Algemene wet inzake rijksbelastingen (AWR)"
+    },
+    {
+      "text": "cites_art_225",
+      "passed": true,
+      "evidence": "The Core Offense: Valsheid in Geschrift (Art. 225 Sr)"
+    },
+    {
+      "text": "discusses_corporate_liability",
+      "passed": true,
+      "evidence": "art. 51 Sr – the cornerstone of corporate criminal liability in the Netherlands; Drijfmest-arrest; IJzerdraad-arrest"
+    },
+    {
+      "text": "mentions_fiod",
+      "passed": true,
+      "evidence": "Corporate Criminal Liability – Valsheid in Geschrift (Forgery/Document Fraud) and FIOD Investigation"
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "This is an AI-generated legal analysis and does not constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet)."
+    }
+  ],
+  "pass_rate": "5/5"
+}

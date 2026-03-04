@@ -1,0 +1,27 @@
+{
+  "eval_id": 22,
+  "skill": "dutch-criminal-law",
+  "expectations": [
+    {
+      "text": "mentions_wed",
+      "passed": true,
+      "evidence": "Applicable Law: Wet op de Economische Delicten (WED); Omgevingswet; Wet milieubeheer (transitional provisions)"
+    },
+    {
+      "text": "discusses_environmental",
+      "passed": true,
+      "evidence": "Environmental criminal law (milieustrafrecht) in the Netherlands sits primarily within the framework of the Wet op de Economische Delicten (WED); Omgevingswet; Wet milieubeheer; afvalstoffendelicten"
+    },
+    {
+      "text": "mentions_sanctions",
+      "passed": true,
+      "evidence": "milieustrafrecht; Criminal Penalties (WED); up to 6 years gevangenisstraf; boete; straf; penalty; stillegging onderneming"
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "This is an AI-generated legal analysis and does not constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet)."
+    }
+  ],
+  "pass_rate": "4/4"
+}

@@ -1,0 +1,35 @@
+{
+  "test_id": "eval-1",
+  "test_prompt": "Software license agreement from Dutch SaaS vendor with liability cap, auto-renewal, unseen algemene voorwaarden, and IP assignment clause",
+  "assertions": {
+    "uses_traffic_light": {
+      "pass": true,
+      "score": 1.0,
+      "evidence": "GREEN, YELLOW, and RED risk levels are used throughout. Governing law clause is rated GREEN, liability cap is rated GREEN, auto-renewal is rated RED, algemene voorwaarden clause is rated RED, IP clause is rated RED. Overall risk assessment is RED. The traffic light system is applied consistently at both clause level and overall summary level, per the skill's output format."
+    },
+    "cites_bw_articles": {
+      "pass": true,
+      "score": 1.0,
+      "evidence": "Extensive BW article citations throughout: Art. 6:74 BW (attributable failure), Art. 6:96 BW (compensable damages), Art. 6:101 BW (contributory negligence), Art. 6:109 BW (judicial moderation), Art. 6:217 BW (contract formation), Art. 6:233 sub b BW (voidability of general terms), Art. 6:234 BW (reasonable opportunity to review), Art. 6:235 BW (large enterprise exception), Art. 6:237 sub g BW (Grey List - renewal), Art. 6:248 lid 2 BW (derogating effect of reasonableness and fairness), Art. 6:259 BW (continuing performance contracts), Art. 6:265 BW (dissolution), Art. 2 Auteurswet (akte requirement for copyright), Art. 7 Auteurswet (employer copyright), Art. 7:400-7:412 BW (opdracht). All citations are accurate and relevant to the clause being analyzed."
+    },
+    "flags_ip_assignment": {
+      "pass": true,
+      "score": 1.0,
+      "evidence": "The IP clause (Section 5) is rated RED and receives detailed analysis. Specific issues flagged: customizations becoming vendor property is non-standard, akte requirement under Art. 2 Auteurswet may not be satisfied by a blanket clause, no distinction between background and foreground IP, vendor lock-in risk, no license-back provision. Practical consequences (competitive risk, loss of leverage) are identified. Recommendation includes negotiating for licensee ownership of foreground IP or at minimum a perpetual irrevocable license."
+    },
+    "flags_algemene_voorwaarden": {
+      "pass": true,
+      "score": 1.0,
+      "evidence": "The algemene voorwaarden issue (Section 4) is rated RED and receives the most detailed analysis. Correctly identifies the core legal framework: Art. 6:233 sub b BW (voidability for failure to provide reasonable opportunity), Art. 6:234 BW (methods of provision), Art. 6:232 BW (binding effect), Art. 6:235 BW (large enterprise exception). Correctly notes that even large enterprises can invoke Art. 6:248 lid 2 BW. Practical recommendation: do not sign until terms are received and reviewed. Mentions NLdigital Voorwaarden as potential sector-standard terms."
+    },
+    "includes_disclaimer": {
+      "pass": true,
+      "score": 1.0,
+      "evidence": "The full English-language disclaimer from assets/disclaimers/disclaimer-en.md is appended at the end of the output. All 7 numbered points are included. The date fields are populated with 2026-03-04. The disclaimer is properly separated by horizontal rules and includes the system attribution line."
+    }
+  },
+  "overall_score": 5.0,
+  "max_score": 5.0,
+  "percentage": 100,
+  "notes": "The response follows the skill's output format exactly (Contract Review Summary, Overall Risk Assessment, Clause-by-Clause Analysis with Risk Level/Summary/Legal Basis/Issues/Recommendation, Missing Clauses, Key Risks, Recommended Actions, Disclaimer). All five assertions pass. The analysis demonstrates deep understanding of the Dutch legal framework, correctly applies the Dutch Contract Playbook benchmarks, and provides actionable recommendations. The response correctly identifies the review perspective (licensee) and addresses the conflict check requirement by not assuming dual representation."
+}

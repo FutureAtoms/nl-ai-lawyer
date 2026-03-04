@@ -1,0 +1,30 @@
+{
+  "test_id": "eval-2",
+  "test_prompt": "Dutch distribution agreement excerpt with unlimited indemnity, NAI arbitration, and 5-year EU-wide non-compete",
+  "assertions": {
+    "flags_unlimited_indemnity": {
+      "pass": true,
+      "score": 1.0,
+      "evidence": "The unlimited indemnity clause is rated RED and is the first clause analyzed. The analysis identifies it as a 'blanket, uncapped indemnity' and flags specific issues: no limitation (per Dutch Contract Playbook, indemnities should be subject to the overall liability cap), blanket scope ('all claims' is extremely broad), no duty to mitigate (Art. 6:101 BW), no carve-out for Supplier's own negligence, no claims procedure. The response correctly cites Art. 6:74 BW, Art. 6:96 BW, Art. 6:101 BW, Art. 6:109 BW (rechterlijke matiging), and Art. 6:248 lid 2 BW. Practical recommendation includes capping the indemnity at 1x annual contract value."
+    },
+    "flags_noncompete_duration": {
+      "pass": true,
+      "score": 1.0,
+      "evidence": "The non-compete clause is rated RED and receives the most extensive analysis. The 5-year duration is explicitly flagged as far exceeding the market standard of 1-2 years (per Dutch Contract Playbook). The EU-wide geographic scope is flagged as disproportionate. The analysis correctly applies both Dutch contract law (Art. 6:248 lid 2 BW) and the Dutch Contract Playbook benchmarks (1-2 years GREEN, >2 years YELLOW, unlimited RED). The recommendation is to reduce to a maximum of 1 year post-termination."
+    },
+    "mentions_competition_law": {
+      "pass": true,
+      "score": 1.0,
+      "evidence": "The response contains a detailed EU competition law analysis under the non-compete section (subsection B). Specific references include: Art. 101 TFEU (anti-competitive agreements), Art. 101(1) TFEU (prohibition), Art. 101(2) TFEU (automatic voidness), Art. 101(3) TFEU (exemption criteria), VBER (Regulation (EU) 2022/720), Art. 5(1)(a) VBER (during-term non-compete limit), Art. 5(3) VBER (post-termination safe harbor: 1 year, limited to premises and land). The analysis correctly concludes that the 5-year EU-wide non-compete 'almost certainly falls outside the VBER safe harbor' and 'is highly likely to be void under Art. 101(2) TFEU.' The ACM (Dutch competition authority) is also mentioned. This is a thorough and accurate competition law analysis."
+    },
+    "includes_disclaimer": {
+      "pass": true,
+      "score": 1.0,
+      "evidence": "The full English-language disclaimer from assets/disclaimers/disclaimer-en.md is appended at the end of the output. All 7 numbered points are included. The date fields are populated with 2026-03-04. The disclaimer is properly separated by horizontal rules and includes the system attribution line."
+    }
+  },
+  "overall_score": 4.0,
+  "max_score": 4.0,
+  "percentage": 100,
+  "notes": "The response follows the skill's output format exactly. All four assertions pass. The analysis is notably strong on EU competition law, correctly identifying the VBER safe harbor limits and the consequences of non-compliance under Art. 101 TFEU. The response also identifies the cumulative effect of unlimited indemnity combined with the excessive non-compete, which demonstrates sophisticated cross-clause analysis as required by the skill workflow. The contract type classification (innominate distribution agreement) is correct -- Dutch law does not have a specific BW title for distribution agreements, unlike agency agreements (Art. 7:428 BW)."
+}

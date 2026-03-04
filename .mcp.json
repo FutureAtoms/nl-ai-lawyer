@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "dutch-legal-mcp": {
+      "command": "node",
+      "args": ["dutch-legal-mcp/dist/index.js"],
+      "env": {
+        "KVK_API_KEY": "${KVK_API_KEY}"
+      },
+      "description": "Custom Dutch legal API server - legislation, case law, KVK, EUR-Lex"
+    },
+    "opentk": {
+      "command": "npx",
+      "args": ["-y", "@r-huijts/opentk-mcp@latest"],
+      "description": "Dutch parliamentary data - Tweede Kamer, Eerste Kamer, kamervragen, moties"
+    },
+    "cerebra-legal": {
+      "command": "node",
+      "args": ["node_modules/mcp-cerebra-legal-server/dist/index.js"],
+      "description": "Legal reasoning and analysis MCP server"
+    },
+    "dutch-law-downloader": {
+      "command": "npx",
+      "args": ["-y", "@smithery/cli@latest", "run", "MinBZK/dutch-law-downloader"],
+      "description": "Download and access Dutch law texts from MinBZK"
+    }
+  }
+}

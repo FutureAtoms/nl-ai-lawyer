@@ -1,0 +1,35 @@
+{
+  "test_id": "eval-1-with_skill",
+  "test_prompt": "I need to find recent Dutch case law on bestuurdersaansprakelijkheid (director liability) where the Hoge Raad ruled on the Beklamel norm. Can you search for relevant cases from the last 5 years and explain the current legal standard?",
+  "skill_applied": true,
+  "assertions": {
+    "mentions_ecli": {
+      "description": "Output includes ECLI identifiers in the correct ECLI:NL:XX:YYYY:ZZ format",
+      "pass": true,
+      "evidence": "Multiple correctly formatted ECLI identifiers present: ECLI:NL:HR:1989:AB9521 (Beklamel), ECLI:NL:HR:2006:AZ0758 (Ontvanger/Roelofsen), ECLI:NL:HR:2023:250 (recent HR), ECLI:NL:HR:2014:2627 (Tulip Air), ECLI:NL:GHAMS:2023:612, ECLI:NL:GHARL:2023:6076, ECLI:NL:RBROT:2024:3215. All follow the pattern ECLI:NL:[COURT CODE]:[YEAR]:[ID]."
+    },
+    "explains_beklamel": {
+      "description": "Output explains the Beklamel norm / doctrine",
+      "pass": true,
+      "evidence": "The output provides a detailed explanation of the Beklamel norm: a director is personally liable when entering obligations on behalf of a company while knowing or reasonably ought to know the company will not be able to fulfill those obligations and will not offer adequate recourse. The dual-track framework from Ontvanger/Roelofsen is explained. The 'ernstig verwijt' standard is discussed. Recent application is covered."
+    },
+    "references_hoge_raad": {
+      "description": "Output references Hoge Raad decisions and explains their precedential weight",
+      "pass": true,
+      "evidence": "Multiple Hoge Raad decisions are cited (HR 1989 Beklamel, HR 2006 Ontvanger/Roelofsen, HR 2023, HR 2014 Tulip Air). Each is marked as 'Binding' precedential value. The court hierarchy is respected: HR decisions are presented as leading cases, Gerechtshof and Rechtbank as supporting. The skill's court hierarchy knowledge is correctly applied."
+    },
+    "mentions_art_2_9_bw": {
+      "description": "Output mentions art. 2:9 BW (internal director liability)",
+      "pass": true,
+      "evidence": "Art. 2:9 BW is explicitly discussed in multiple places: in the Gerechtshof Arnhem-Leeuwarden case analysis (interaction between Beklamel and art. 2:9 BW), in the Legal Analysis section (distinguishing internal liability under art. 2:9 BW from external liability), and in the Recent Developments section. The output also references art. 2:248 BW (bankruptcy director liability) and art. 6:162 BW (tort)."
+    },
+    "includes_disclaimer": {
+      "description": "Output includes the mandatory legal disclaimer",
+      "pass": true,
+      "evidence": "The full English-language disclaimer from assets/disclaimers/disclaimer-en.md is appended at the end of the output, including all 7 numbered points, the acknowledgment statement, and the date fields filled in with '4 March 2026'."
+    }
+  },
+  "overall_score": "5/5",
+  "overall_pass": true,
+  "notes": "The response follows the skill's output format template faithfully (Legal Question, Search Terms, Scope, Leading Cases, Supporting Cases, Legal Analysis, Trend/Development, Limitations, Disclaimer). ECLI identifiers follow the correct format. Court hierarchy is respected in the ordering and precedential value annotations. Dutch legal terminology is used throughout. The skill's ethical guardrails are followed: the disclaimer is included, citation accuracy is noted (with caveats about AI-generated ECLIs), and publication bias is acknowledged."
+}

@@ -1,0 +1,47 @@
+{
+  "name": "nl-ai-lawyer",
+  "version": "1.0.0",
+  "description": "Netherlands AI Lawyer System - Comprehensive Dutch legal analysis plugin with multi-agent team capabilities",
+  "author": "AviFutureAtoms",
+  "license": "MIT",
+  "repository": "https://github.com/AviFutureAtoms/nl-ai-lawyer",
+  "keywords": [
+    "dutch-law",
+    "netherlands",
+    "legal-ai",
+    "rechtspraak",
+    "kvk",
+    "gdpr",
+    "avg",
+    "corporate-law",
+    "contract-review"
+  ],
+  "capabilities": {
+    "commands": 12,
+    "skills": 14,
+    "agents": 7,
+    "mcp_servers": 4
+  },
+  "legal_domains": [
+    "corporate-law",
+    "contract-law",
+    "employment-law",
+    "privacy-gdpr",
+    "intellectual-property",
+    "real-estate",
+    "tax-law",
+    "criminal-law",
+    "administrative-law",
+    "immigration-law",
+    "eu-law"
+  ],
+  "supported_languages": ["nl", "en"],
+  "apis": {
+    "rechtspraak": "https://data.rechtspraak.nl",
+    "koop_sru": "https://repository.overheid.nl",
+    "kvk": "https://api.kvk.nl/api/v2/",
+    "eurlex": "https://publications.europa.eu/webapi/rdf/sparql",
+    "overheid": "https://data.overheid.nl/data/api/3/"
+  },
+  "disclaimer": "This plugin provides AI-generated legal analysis and does NOT constitute legal advice. Always consult a qualified Dutch lawyer (advocaat) for legal matters."
+}

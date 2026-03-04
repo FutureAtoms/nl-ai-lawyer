@@ -1,0 +1,27 @@
+{
+  "eval_id": 2,
+  "skill": "dutch-contract-review",
+  "expectations": [
+    {
+      "text": "flags_unlimited_indemnity",
+      "passed": true,
+      "evidence": "Section 1 of the analysis is titled 'Indemnification Clause (Vrijwaring) - Unlimited, Without Limitation' and is rated RED. The output states: 'without any limitation (onbeperkt) is a critical RED flag' and 'An unlimited indemnification obligation on the Distributor for all claims arising from marketing activities. There is no cap, no limitation by type of damage'. The terms 'unlimited', 'without limitation', and 'RED' all appear in the output."
+    },
+    {
+      "text": "flags_noncompete_duration",
+      "passed": true,
+      "evidence": "Section 2 explicitly states: 'A 5-year duration is **excessive** (onredelijk) and significantly exceeds the market-standard range of 1-2 years post-termination.' Also: 'disproportionate non-compete (5 years, EU-wide)' appears in Key Risks section. All of '5 year', 'excessive', 'disproportionate', and 'onredelijk' appear in the output."
+    },
+    {
+      "text": "mentions_competition_law",
+      "passed": true,
+      "evidence": "Section 2B is titled 'Competition Law Analysis (Mededinging)' and references: 'mededingingsrecht', 'Art. 101 TFEU', 'Art. 6 Mededingingswet', 'kartel risico', 'competition law (mededingingsrecht)', and 'Autoriteit Consument & Markt (ACM)'. All of 'competition', 'mededinging', 'kartel', and 'Mededingingswet' appear in the output."
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "Disclaimer at end of output states: 'This is an AI-generated legal analysis and does **NOT constitute legal advice** within the meaning of the Dutch Advocates Act (Advocatenwet).' This contains the substring 'NOT constitute legal advice' matching 'not constitute legal advice' case-insensitively."
+    }
+  ],
+  "pass_rate": "4/4"
+}

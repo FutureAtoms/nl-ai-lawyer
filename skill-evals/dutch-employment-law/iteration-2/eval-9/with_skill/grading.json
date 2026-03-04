@@ -1,0 +1,32 @@
+{
+  "eval_id": 9,
+  "skill": "dutch-employment-law",
+  "expectations": [
+    {
+      "text": "discusses_dismissal_routes",
+      "passed": true,
+      "evidence": "Output discusses all three main routes: 'Route 1: UWV Ontslagvergunning (Administrative Route)' is mentioned and explained; 'kantonrechter' appears throughout (e.g., 'Kantonrechter Ontbinding (Judicial Route)', 'a kantonrechter is very likely to deny a dissolution request'); and 'vaststellingsovereenkomst' is covered extensively in 'Option 2: Negotiated Settlement (Vaststellingsovereenkomst)'."
+    },
+    {
+      "text": "mentions_disfunctioneren",
+      "passed": true,
+      "evidence": "The output explicitly references both 'disfunctioneren' (e.g., 'The Core Problem: Insufficient Documentation', 'dismissal for disfunctioneren (the d-grond)', 'underperformance') and 'Art. 7:669 lid 3 sub d BW' (e.g., 'Art. 7:669 lid 3 sub d BW (d-grond / disfunctioneren): Dissolution on the basis of dysfunctional performance')."
+    },
+    {
+      "text": "flags_documentation_gap",
+      "passed": true,
+      "evidence": "The output explicitly flags the documentation gap: 'you have confirmed that performance discussions to date have been verbal only, with nothing documented. This is a serious obstacle to any contested dismissal route.' It also discusses 'verbetertraject' extensively and mentions the need to 'Build a Proper Dossier', referencing 'dossier' and 'dossieropbouw' throughout."
+    },
+    {
+      "text": "mentions_transitievergoeding",
+      "passed": true,
+      "evidence": "The output contains an entire section titled 'Transitievergoeding (Mandatory Transition Payment)' with: 'Under Art. 7:673 BW (post-WAB): 1/3 monthly salary per year of service, accruing from day one' and discusses the maximum of 'EUR 94,000 or 1 year\u2019s salary if higher (2024 figure)'."
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "The output includes the full English disclaimer with the text: 'This is an AI-generated legal analysis and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet).' The phrase 'does not constitute legal advice' is present verbatim."
+    }
+  ],
+  "pass_rate": "5/5"
+}

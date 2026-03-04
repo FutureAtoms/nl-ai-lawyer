@@ -1,0 +1,355 @@
+{
+  "skill_name": "nl-ai-lawyer-skills",
+  "evals": [
+    {
+      "id": 1,
+      "skill": "dutch-contract-review",
+      "prompt": "I just received a software license agreement from a Dutch SaaS vendor. It's governed by Dutch law, has a liability cap of 1x annual fees, auto-renewal for 3 years, and their algemene voorwaarden are incorporated by reference but I haven't seen them. The IP clause says all customizations become their property. Can you review the key risk areas?",
+      "expected_output": "Clause-by-clause analysis with GREEN/YELLOW/RED flags, identification of problematic IP assignment, auto-renewal risk, and missing algemene voorwaarden review, with BW Boek 6/7 references",
+      "assertions": [
+        {"name": "uses_traffic_light", "type": "contains_any", "values": ["GREEN", "YELLOW", "RED"]},
+        {"name": "cites_bw_articles", "type": "regex", "pattern": "(?:art(?:ikel)?|Art)\\.?\\s*\\d+[:\\.]?\\d*\\s*(?:BW|Burgerlijk Wetboek)"},
+        {"name": "flags_ip_assignment", "type": "contains_any", "values": ["IP", "intellectual property", "intellectueel eigendom"]},
+        {"name": "flags_algemene_voorwaarden", "type": "contains_any", "values": ["algemene voorwaarden", "general terms"]},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice", "not constitute legal advice"]}
+      ]
+    },
+    {
+      "id": 2,
+      "skill": "dutch-contract-review",
+      "prompt": "Review this Dutch distribution agreement excerpt: 'Distributor shall indemnify Supplier against all claims, damages, and costs arising from Distributor's marketing activities, without any limitation. Governing law: Dutch law. Disputes: NAI Arbitration Amsterdam. Non-compete: Distributor shall not sell competing products for 5 years after termination in the entire EU.'",
+      "expected_output": "RED flags on unlimited indemnification and excessive non-compete (5 years EU-wide likely unenforceable), analysis against Dutch competition law and BW provisions",
+      "assertions": [
+        {"name": "flags_unlimited_indemnity", "type": "contains_any", "values": ["unlimited", "onbeperkt", "without limitation", "RED"]},
+        {"name": "flags_noncompete_duration", "type": "contains_any", "values": ["5 year", "excessive", "disproportionate", "onredelijk"]},
+        {"name": "mentions_competition_law", "type": "contains_any", "values": ["competition", "mededinging", "kartel", "Mededingingswet"]},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice"]}
+      ]
+    },
+    {
+      "id": 3,
+      "skill": "dutch-case-law-research",
+      "prompt": "I need to find recent Dutch case law on bestuurdersaansprakelijkheid (director liability) where the Hoge Raad ruled on the Beklamel norm. Can you search for relevant cases from the last 5 years and explain the current legal standard?",
+      "expected_output": "Search results with ECLI numbers, explanation of Beklamel norm, reference to key Hoge Raad rulings, court hierarchy explanation",
+      "assertions": [
+        {"name": "mentions_ecli", "type": "regex", "pattern": "ECLI:NL:\\w+:\\d{4}:\\w+"},
+        {"name": "explains_beklamel", "type": "contains_any", "values": ["Beklamel", "bestuurdersaansprakelijkheid", "director liability"]},
+        {"name": "references_hoge_raad", "type": "contains_any", "values": ["Hoge Raad", "HR", "Supreme Court"]},
+        {"name": "mentions_art_2_9_bw", "type": "contains_any", "values": ["2:9", "art. 2:9", "artikel 2:9", "Boek 2"]},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice"]}
+      ]
+    },
+    {
+      "id": 4,
+      "skill": "dutch-case-law-research",
+      "prompt": "Search Dutch case law for recent rulings about huurprijsverhoging (rent increase) for commercial real estate (bedrijfsruimte 290) where tenants challenged the increase. I need ECLI numbers and the courts' reasoning.",
+      "expected_output": "Case law results with ECLI numbers about commercial rent increases under art. 7:290+ BW, court reasoning on reasonableness of increases",
+      "assertions": [
+        {"name": "mentions_ecli", "type": "regex", "pattern": "ECLI:NL:\\w+:\\d{4}:\\w+"},
+        {"name": "references_290_bw", "type": "contains_any", "values": ["290", "7:290", "bedrijfsruimte"]},
+        {"name": "discusses_rent_review", "type": "contains_any", "values": ["huurprijs", "rent", "huurprijsverhoging", "huurprijsherziening"]},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice"]}
+      ]
+    },
+    {
+      "id": 5,
+      "skill": "dutch-legislation-lookup",
+      "prompt": "I need to understand the rules for proeftijd (probation period) in Dutch employment contracts. What does the law say? Which BW articles apply and what are the limitations?",
+      "expected_output": "Explanation of art. 7:652 BW with specific rules on probation periods for different contract types, maximum durations, formal requirements",
+      "assertions": [
+        {"name": "cites_art_7_652", "type": "contains_any", "values": ["7:652", "652"]},
+        {"name": "mentions_duration_limits", "type": "contains_any", "values": ["one month", "two month", "één maand", "twee maand", "1 maand", "2 maand"]},
+        {"name": "explains_written_requirement", "type": "contains_any", "values": ["schriftelijk", "written", "writing"]},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice"]}
+      ]
+    },
+    {
+      "id": 6,
+      "skill": "dutch-legislation-lookup",
+      "prompt": "What is the current text of artikel 6:162 BW (onrechtmatige daad / tort law)? I need the full article and an explanation of how Dutch courts interpret each element.",
+      "expected_output": "Full text of art. 6:162 BW in Dutch, explanation of the 5 elements (onrechtmatige daad, toerekenbaarheid, schade, causaal verband, relativiteit)",
+      "assertions": [
+        {"name": "cites_article", "type": "contains_any", "values": ["6:162", "artikel 6:162"]},
+        {"name": "mentions_elements", "type": "contains_any", "values": ["onrechtmatig", "toerekenbaarheid", "schade", "causaal verband", "relativiteit"]},
+        {"name": "provides_dutch_text", "type": "contains_any", "values": ["inbreuk op een recht", "strijd met een wettelijke plicht", "maatschappelijk verkeer"]},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice"]}
+      ]
+    },
+    {
+      "id": 7,
+      "skill": "dutch-corporate-law",
+      "prompt": "I'm setting up a Dutch BV with two founders (60/40 split). We want a board with both founders as directors plus an advisory board. What's the minimum share capital, what governance structure do you recommend, and what should go in the aandeelhoudersovereenkomst?",
+      "expected_output": "BV formation requirements (EUR 0.01 minimum capital since Flex-BV), governance options, recommended aandeelhoudersovereenkomst provisions, Boek 2 BW references",
+      "assertions": [
+        {"name": "mentions_flex_bv", "type": "contains_any", "values": ["Flex-BV", "flex BV", "0.01", "no minimum", "geen minimum"]},
+        {"name": "references_boek_2", "type": "contains_any", "values": ["Boek 2", "2:175", "2:177", "2:242"]},
+        {"name": "discusses_shareholders_agreement", "type": "contains_any", "values": ["aandeelhoudersovereenkomst", "shareholders agreement", "SHA"]},
+        {"name": "mentions_kvk", "type": "contains_any", "values": ["KVK", "Kamer van Koophandel", "Chamber of Commerce"]},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice"]}
+      ]
+    },
+    {
+      "id": 8,
+      "skill": "dutch-corporate-law",
+      "prompt": "Our Dutch BV board approved a transaction with a related party (one director's other company) worth EUR 500K. The minority shareholder (30%) is objecting. What are the legal implications under Dutch corporate law?",
+      "expected_output": "Analysis of related-party transaction rules, tegenstrijdig belang (conflict of interest) under art. 2:239 lid 6 BW, minority shareholder protection, potential challenge routes",
+      "assertions": [
+        {"name": "mentions_conflict_interest", "type": "contains_any", "values": ["tegenstrijdig belang", "conflict of interest", "2:239"]},
+        {"name": "discusses_minority_protection", "type": "contains_any", "values": ["minority", "minderheid", "enquêterecht", "2:344", "Ondernemingskamer"]},
+        {"name": "cites_bw", "type": "regex", "pattern": "(?:art(?:ikel)?|Art)\\.?\\s*2:\\d+"},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice"]}
+      ]
+    },
+    {
+      "id": 9,
+      "skill": "dutch-employment-law",
+      "prompt": "I need to terminate an underperforming employee who's been with our company for 8 years. They're on an indefinite contract and we've had some verbal discussions about performance but nothing documented. What are our options under Dutch law?",
+      "expected_output": "Analysis of dismissal routes (UWV vs kantonrechter vs vaststellingsovereenkomst), disfunctioneren ground (art. 7:669 lid 3 sub d), documentation requirements, transitievergoeding calculation",
+      "assertions": [
+        {"name": "discusses_dismissal_routes", "type": "contains_any", "values": ["UWV", "kantonrechter", "vaststellingsovereenkomst"]},
+        {"name": "mentions_disfunctioneren", "type": "contains_any", "values": ["disfunctioneren", "underperformance", "7:669"]},
+        {"name": "flags_documentation_gap", "type": "contains_any", "values": ["document", "dossier", "verbetertraject", "improvement plan"]},
+        {"name": "mentions_transitievergoeding", "type": "contains_any", "values": ["transitievergoeding", "transition payment", "severance"]},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice"]}
+      ]
+    },
+    {
+      "id": 10,
+      "skill": "dutch-employment-law",
+      "prompt": "We're hiring a senior developer from India as a kennismigrant. What salary threshold applies, and can we include a concurrentiebeding (non-compete) in a fixed-term contract?",
+      "expected_output": "Kennismigrant salary thresholds, non-compete restrictions in fixed-term contracts (art. 7:653 BW lid 2 motivation requirement), IND requirements",
+      "assertions": [
+        {"name": "mentions_salary_threshold", "type": "regex", "pattern": "(?:EUR|€)\\s*[\\d.,]+"},
+        {"name": "discusses_noncompete_fixedterm", "type": "contains_any", "values": ["7:653", "motivering", "motivation", "fixed-term", "bepaalde tijd"]},
+        {"name": "references_ind", "type": "contains_any", "values": ["IND", "kennismigrant", "knowledge migrant"]},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice"]}
+      ]
+    },
+    {
+      "id": 11,
+      "skill": "dutch-privacy-gdpr",
+      "prompt": "Our Dutch startup is building a health app that collects user location data, health metrics, and connects to a US-based analytics platform. We have 50,000 users. What are our AVG compliance obligations?",
+      "expected_output": "Analysis of legal basis, special categories (health data - art. 9 AVG), DPIA requirement, US data transfer (post-Schrems II), AP enforcement risk, verwerkersovereenkomst requirement",
+      "assertions": [
+        {"name": "mentions_special_categories", "type": "contains_any", "values": ["bijzondere categorie", "special category", "art. 9", "gezondheidsgegevens", "health data"]},
+        {"name": "discusses_dpia", "type": "contains_any", "values": ["DPIA", "Data Protection Impact Assessment", "gegevensbeschermingseffectbeoordeling"]},
+        {"name": "addresses_us_transfer", "type": "contains_any", "values": ["Schrems", "adequacy", "SCCs", "Standard Contractual Clauses", "DPF", "Data Privacy Framework"]},
+        {"name": "mentions_verwerkersovereenkomst", "type": "contains_any", "values": ["verwerkersovereenkomst", "data processing agreement", "art. 28"]},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice"]}
+      ]
+    },
+    {
+      "id": 12,
+      "skill": "dutch-privacy-gdpr",
+      "prompt": "We received a data subject access request (inzageverzoek) from a former employee. They want all their personal data including internal performance reviews and emails about them. Do we have to provide everything? What's the deadline?",
+      "expected_output": "Art. 15 AVG rights, 1-month deadline (extendable), exceptions for third-party data and legal privilege, performance review nuances",
+      "assertions": [
+        {"name": "cites_art_15", "type": "contains_any", "values": ["art. 15", "artikel 15", "inzagerecht"]},
+        {"name": "mentions_deadline", "type": "contains_any", "values": ["one month", "1 month", "één maand", "30 dagen", "4 weeks"]},
+        {"name": "discusses_exceptions", "type": "contains_any", "values": ["exception", "uitzondering", "rechten van anderen", "rights of others"]},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice"]}
+      ]
+    },
+    {
+      "id": 13,
+      "skill": "dutch-ip-law",
+      "prompt": "Our software development team created a custom AI model during working hours using company resources. One developer claims copyright on the training code he wrote. Who owns the IP under Dutch law?",
+      "expected_output": "Analysis of employer copyright under art. 7 Auteurswet, work-for-hire doctrine in Dutch law, software-specific provisions, employee invention rules",
+      "assertions": [
+        {"name": "cites_auteurswet", "type": "contains_any", "values": ["Auteurswet", "art. 7", "artikel 7", "werkgeversauteursrecht"]},
+        {"name": "discusses_software_ip", "type": "contains_any", "values": ["software", "programmatuur", "databankenwet"]},
+        {"name": "explains_employer_ownership", "type": "contains_any", "values": ["werkgever", "employer", "dienstverband", "employment"]},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice"]}
+      ]
+    },
+    {
+      "id": 14,
+      "skill": "dutch-ip-law",
+      "prompt": "A competitor is using a very similar trade name and logo in the Benelux. We have a Benelux trademark registration. What are our options to stop them?",
+      "expected_output": "Benelux trademark infringement analysis under BVIE, opposition/cancellation proceedings at BOIP, kort geding (preliminary injunction) option, handelsnaamwet",
+      "assertions": [
+        {"name": "references_bvie", "type": "contains_any", "values": ["BVIE", "Benelux", "BOIP", "Benelux-Verdrag"]},
+        {"name": "mentions_kort_geding", "type": "contains_any", "values": ["kort geding", "preliminary injunction", "voorlopige voorziening"]},
+        {"name": "mentions_handelsnaamwet", "type": "contains_any", "values": ["Handelsnaamwet", "trade name", "handelsnaam"]},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice"]}
+      ]
+    },
+    {
+      "id": 15,
+      "skill": "dutch-real-estate-law",
+      "prompt": "I'm buying an apartment in Amsterdam. The makelaar says there's erfpacht (leasehold) from the gemeente. The canon hasn't been revised in 20 years. What should I watch out for?",
+      "expected_output": "Erfpacht explanation, canon revision risks, Amsterdam gemeente erfpacht system, buyer protections, notarial deed requirements",
+      "assertions": [
+        {"name": "explains_erfpacht", "type": "contains_any", "values": ["erfpacht", "leasehold", "canon", "opstalrecht"]},
+        {"name": "mentions_amsterdam_system", "type": "contains_any", "values": ["Amsterdam", "gemeente", "eeuwigdurend", "voortdurend"]},
+        {"name": "warns_canon_revision", "type": "contains_any", "values": ["herziening", "revision", "canonherziening", "canonical"]},
+        {"name": "mentions_notaris", "type": "contains_any", "values": ["notaris", "notarial", "notarieel", "levering"]},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice"]}
+      ]
+    },
+    {
+      "id": 16,
+      "skill": "dutch-real-estate-law",
+      "prompt": "My tenant hasn't paid rent for 3 months on a 7:290 commercial property. What's the procedure to terminate the lease and evict them under Dutch law?",
+      "expected_output": "Procedure for commercial lease termination, ingebrekestelling, ontbinding via court, ontruiming procedure, art. 7:290-310 BW",
+      "assertions": [
+        {"name": "references_290_regime", "type": "contains_any", "values": ["7:290", "290-bedrijfsruimte", "middenstandsbedrijfsruimte"]},
+        {"name": "explains_procedure", "type": "contains_any", "values": ["ontbinding", "dissolution", "ingebrekestelling", "default notice"]},
+        {"name": "mentions_court", "type": "contains_any", "values": ["kantonrechter", "rechtbank", "vonnis", "court"]},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice"]}
+      ]
+    },
+    {
+      "id": 17,
+      "skill": "dutch-tax-law",
+      "prompt": "We're a Dutch BV with EUR 2M profit. We're considering forming a fiscale eenheid with our 100% subsidiary. What are the advantages, risks, and current requirements?",
+      "expected_output": "Fiscale eenheid requirements (art. 15 Wet VPB), advantages (loss offsetting, internal transactions), risks (joint liability), current VPB rates",
+      "assertions": [
+        {"name": "cites_vpb", "type": "contains_any", "values": ["Wet VPB", "vennootschapsbelasting", "art. 15", "corporate income tax"]},
+        {"name": "explains_advantages", "type": "contains_any", "values": ["verliesverrekening", "loss", "internal", "interne transacties"]},
+        {"name": "mentions_joint_liability", "type": "contains_any", "values": ["hoofdelijke aansprakelijkheid", "joint liability", "jointly liable"]},
+        {"name": "mentions_rates", "type": "regex", "pattern": "\\d+[.,]?\\d*\\s*%"},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice"]}
+      ]
+    },
+    {
+      "id": 18,
+      "skill": "dutch-tax-law",
+      "prompt": "I'm a US citizen moving to the Netherlands. My Dutch employer offered me the 30% ruling. How does it work, what's the duration, and what happens to my US tax obligations?",
+      "expected_output": "30% ruling explanation, duration (5 years max), conditions, partial non-resident taxpayer status, US treaty implications",
+      "assertions": [
+        {"name": "explains_30_percent", "type": "contains_any", "values": ["30%", "30 percent", "30-procent"]},
+        {"name": "mentions_duration", "type": "contains_any", "values": ["5 year", "five year", "60 month", "vijf jaar"]},
+        {"name": "discusses_conditions", "type": "contains_any", "values": ["specific expertise", "specifieke deskundigheid", "150 km", "salary threshold"]},
+        {"name": "mentions_treaty", "type": "contains_any", "values": ["treaty", "verdrag", "belastingverdrag", "double taxation"]},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice"]}
+      ]
+    },
+    {
+      "id": 19,
+      "skill": "dutch-administrative-law",
+      "prompt": "The gemeente rejected our building permit application (omgevingsvergunning). We think the decision is wrong. What are our options and deadlines?",
+      "expected_output": "Bezwaar procedure (6-week deadline), beroep at rechtbank, AWB procedures, voorlopige voorziening option",
+      "assertions": [
+        {"name": "mentions_bezwaar", "type": "contains_any", "values": ["bezwaar", "objection", "bezwaarschrift"]},
+        {"name": "mentions_deadline", "type": "contains_any", "values": ["6 week", "zes weken", "six week", "6-week"]},
+        {"name": "references_awb", "type": "contains_any", "values": ["Awb", "Algemene wet bestuursrecht"]},
+        {"name": "mentions_beroep", "type": "contains_any", "values": ["beroep", "appeal", "rechtbank"]},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice"]}
+      ]
+    },
+    {
+      "id": 20,
+      "skill": "dutch-administrative-law",
+      "prompt": "A government agency took 4 months to decide on our subsidy application when the legal deadline was 8 weeks. Can we do anything about this delay?",
+      "expected_output": "Ingebrekestelling for late decision, dwangsom bij niet tijdig beslissen (art. 4:17 Awb), automatic positive decision possibility, procedure steps",
+      "assertions": [
+        {"name": "mentions_ingebrekestelling", "type": "contains_any", "values": ["ingebrekestelling", "notice of default"]},
+        {"name": "mentions_dwangsom", "type": "contains_any", "values": ["dwangsom", "penalty payment", "4:17"]},
+        {"name": "references_awb", "type": "contains_any", "values": ["Awb", "Algemene wet bestuursrecht"]},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice"]}
+      ]
+    },
+    {
+      "id": 21,
+      "skill": "dutch-criminal-law",
+      "prompt": "Our company's financial director is suspected of submitting false invoices (valsheid in geschrift). The FIOD has raided our offices. What are the company's potential criminal liability risks?",
+      "expected_output": "Corporate criminal liability analysis (art. 51 Sr), valsheid in geschrift (art. 225 Sr), FIOD investigation process, rights during investigation",
+      "assertions": [
+        {"name": "cites_art_51", "type": "contains_any", "values": ["art. 51", "artikel 51", "rechtspersoon"]},
+        {"name": "cites_art_225", "type": "contains_any", "values": ["art. 225", "artikel 225", "valsheid in geschrift"]},
+        {"name": "discusses_corporate_liability", "type": "contains_any", "values": ["corporate criminal", "Drijfmest", "IJzerdraad", "rechtspersoon"]},
+        {"name": "mentions_fiod", "type": "contains_any", "values": ["FIOD", "Fiscale Inlichtingen"]},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice"]}
+      ]
+    },
+    {
+      "id": 22,
+      "skill": "dutch-criminal-law",
+      "prompt": "An employee reported that our factory might be violating environmental waste disposal regulations. Could this lead to criminal prosecution under Dutch law?",
+      "expected_output": "WED (Wet op de Economische Delicten) analysis, environmental criminal offenses, Wet milieubeheer, potential sanctions, compliance advice",
+      "assertions": [
+        {"name": "mentions_wed", "type": "contains_any", "values": ["WED", "Wet op de Economische Delicten", "economisch delict"]},
+        {"name": "discusses_environmental", "type": "contains_any", "values": ["milieu", "environment", "Wet milieubeheer", "afval"]},
+        {"name": "mentions_sanctions", "type": "contains_any", "values": ["straf", "sanction", "boete", "gevangenis", "penalty"]},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice"]}
+      ]
+    },
+    {
+      "id": 23,
+      "skill": "dutch-immigration-law",
+      "prompt": "We want to hire a Brazilian software engineer as a kennismigrant. She currently lives in Brazil. What's the full process from IND application to arrival in the Netherlands, and what salary do we need to offer?",
+      "expected_output": "Full kennismigrant process: recognized sponsor, salary thresholds, MVV/TEV procedure, timeline, 30% ruling eligibility",
+      "assertions": [
+        {"name": "mentions_recognized_sponsor", "type": "contains_any", "values": ["erkend referent", "recognized sponsor"]},
+        {"name": "mentions_salary_threshold", "type": "regex", "pattern": "(?:EUR|€)\\s*[\\d.,]+"},
+        {"name": "explains_mvv_procedure", "type": "contains_any", "values": ["MVV", "machtiging tot voorlopig verblijf", "TEV"]},
+        {"name": "mentions_ind", "type": "contains_any", "values": ["IND", "Immigratie"]},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice"]}
+      ]
+    },
+    {
+      "id": 24,
+      "skill": "dutch-immigration-law",
+      "prompt": "My partner is from Japan and we want them to join me in the Netherlands on a family reunification visa. I'm a Dutch citizen. What are the income requirements and how long does the process take?",
+      "expected_output": "Family reunification requirements, income threshold (120% minimum wage), MVV procedure, inburgeringsexamen, timeline",
+      "assertions": [
+        {"name": "mentions_income_requirement", "type": "contains_any", "values": ["income", "inkomen", "120%", "minimum loon", "minimumloon"]},
+        {"name": "discusses_mvv", "type": "contains_any", "values": ["MVV", "machtiging", "TEV"]},
+        {"name": "mentions_inburgering", "type": "contains_any", "values": ["inburgering", "civic integration", "basisexamen"]},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice"]}
+      ]
+    },
+    {
+      "id": 25,
+      "skill": "eu-law-integration",
+      "prompt": "A Dutch court is dealing with a case where an EU directive hasn't been properly implemented in Dutch law. The directive deadline passed 2 years ago. Can the private party invoke the directive directly against the Dutch government?",
+      "expected_output": "Direct effect doctrine (Van Gend en Loos), vertical direct effect of unimplemented directives (Marshall), no horizontal direct effect (Faccini Dori), Francovich state liability",
+      "assertions": [
+        {"name": "explains_direct_effect", "type": "contains_any", "values": ["direct effect", "rechtstreekse werking", "Van Gend en Loos"]},
+        {"name": "distinguishes_vertical_horizontal", "type": "contains_any", "values": ["vertical", "horizontal", "verticale", "horizontale"]},
+        {"name": "mentions_key_cases", "type": "contains_any", "values": ["Marshall", "Faccini Dori", "Francovich"]},
+        {"name": "references_dutch_constitution", "type": "contains_any", "values": ["art. 93", "art. 94", "Grondwet"]},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice"]}
+      ]
+    },
+    {
+      "id": 26,
+      "skill": "eu-law-integration",
+      "prompt": "Our company needs to comply with both the Dutch Wet bescherming bedrijfsgeheimen and the EU Trade Secrets Directive. How do these relate to each other?",
+      "expected_output": "Analysis of Directive 2016/943 implementation in Dutch Wbb, relationship between EU and Dutch law, any Dutch gold-plating",
+      "assertions": [
+        {"name": "references_directive", "type": "contains_any", "values": ["2016/943", "Trade Secrets Directive", "bedrijfsgeheimen"]},
+        {"name": "mentions_dutch_implementation", "type": "contains_any", "values": ["Wbb", "Wet bescherming bedrijfsgeheimen", "implementatie"]},
+        {"name": "discusses_relationship", "type": "contains_any", "values": ["implement", "omzetting", "richtlijn", "directive"]},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice"]}
+      ]
+    },
+    {
+      "id": 27,
+      "skill": "nda-triage-nl",
+      "prompt": "Quickly screen this NDA: Mutual NDA, Dutch law, 5-year term, confidential info defined as 'all information shared between parties', penalty of EUR 100,000 per breach plus EUR 10,000 per day, no carve-out for legally compelled disclosure, no residual knowledge clause, disputes via NAI arbitration.",
+      "expected_output": "GREEN/YELLOW/RED triage: RED on overbroad definition and missing legally compelled disclosure carve-out, YELLOW on 5-year term and high penalty, analysis against Dutch NDA standards",
+      "assertions": [
+        {"name": "uses_traffic_light", "type": "contains_any", "values": ["GREEN", "YELLOW", "RED"]},
+        {"name": "flags_overbroad_definition", "type": "contains_any", "values": ["overbroad", "te ruim", "all information", "broad"]},
+        {"name": "flags_missing_carveout", "type": "contains_any", "values": ["legally compelled", "wettelijke verplichting", "gerechtelijk bevel", "carve-out"]},
+        {"name": "discusses_penalty", "type": "contains_any", "values": ["boete", "penalty", "100.000", "100,000"]},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice"]}
+      ]
+    },
+    {
+      "id": 28,
+      "skill": "nda-triage-nl",
+      "prompt": "I received a unilateral NDA from a potential partner. It's very short - just says we can't disclose 'business information' for 2 years, governed by Dutch law, with a EUR 25,000 penalty per breach. No other clauses. Is this okay to sign?",
+      "expected_output": "Triage noting missing key clauses (no exceptions, no return obligation, vague definition), risk assessment, recommendations for additions",
+      "assertions": [
+        {"name": "uses_traffic_light", "type": "contains_any", "values": ["GREEN", "YELLOW", "RED"]},
+        {"name": "flags_missing_exceptions", "type": "contains_any", "values": ["exception", "uitzondering", "carve-out", "missing"]},
+        {"name": "flags_vague_definition", "type": "contains_any", "values": ["vague", "vaag", "onduidelijk", "unclear", "business information"]},
+        {"name": "recommends_additions", "type": "contains_any", "values": ["add", "toevoegen", "recommend", "aanbev", "missing"]},
+        {"name": "includes_disclaimer", "type": "contains_any", "values": ["geen juridisch advies", "does not constitute legal advice"]}
+      ]
+    }
+  ]
+}

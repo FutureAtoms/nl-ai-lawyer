@@ -1,0 +1,29 @@
+{
+  "test_prompt": "A Dutch court is dealing with a case where an EU directive hasn't been properly implemented in Dutch law. The directive deadline passed 2 years ago. Can the private party invoke the directive directly against the Dutch government?",
+  "skill": "eu-law-integration",
+  "eval_id": "eval-1",
+  "assertions": {
+    "explains_direct_effect": {
+      "pass": true,
+      "evidence": "Thoroughly explains the doctrine of direct effect, tracing it from Van Gend en Loos (C-26/62). Clearly states the three conditions: clear and precise, unconditional, and leaves no margin of discretion. Explains that after the transposition deadline, directive provisions meeting these criteria can be invoked directly by individuals against the State. Confirms that in this case, the answer is yes, the private party can invoke the directive."
+    },
+    "distinguishes_vertical_horizontal": {
+      "pass": true,
+      "evidence": "Dedicates a full section to 'Vertical vs. Horizontal Direct Effect: The Critical Distinction' with separate subsections for each. Clearly explains that vertical direct effect (against the State) is available for directives after the deadline, while horizontal direct effect (against private parties) is NOT available for directives. Correctly notes this is a vertical scenario since the claim is against the Dutch government."
+    },
+    "mentions_key_cases": {
+      "pass": true,
+      "evidence": "Mentions and explains all three required cases: (1) Marshall v Southampton (C-152/84) - vertical direct effect of directives; (2) Faccini Dori v Recreb (C-91/92) - no horizontal direct effect of directives; (3) Francovich (C-6/90 & C-9/90) - state liability for non-implementation. Also includes additional relevant cases: Van Gend en Loos, Costa v ENEL, Von Colson, Marleasing, Foster v British Gas, and Brasserie du Pecheur. A comprehensive case law table is provided."
+    },
+    "references_dutch_constitution": {
+      "pass": true,
+      "evidence": "Dedicated section on 'Dutch Constitutional Framework: Art. 93 and 94 Grondwet'. Quotes both articles in substance, explains that Art. 94 Gw enables Dutch courts to set aside conflicting national legislation, notes the monist system, and explains that all Dutch courts exercise this power (no constitutional court). Also notes that the Netherlands has not engaged in significant resistance to EU primacy unlike some other Member States."
+    },
+    "includes_disclaimer": {
+      "pass": true,
+      "evidence": "Full disclaimer appended at the end with all 7 required points and the Netherlands AI Lawyer System attribution."
+    }
+  },
+  "overall_score": "5/5",
+  "notes": "All assertions pass with strong evidence. The response is particularly thorough in its treatment of the vertical/horizontal distinction and the case law. It also goes beyond the minimum by covering alternative remedies (consistent interpretation, Francovich liability) and practical guidance for the court."
+}

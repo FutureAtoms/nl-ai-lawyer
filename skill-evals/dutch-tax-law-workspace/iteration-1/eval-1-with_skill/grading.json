@@ -1,0 +1,28 @@
+{
+  "eval": "dutch-tax-law-test-1",
+  "prompt": "We're a Dutch BV with EUR 2M profit. We're considering forming a fiscale eenheid with our 100% subsidiary. What are the advantages, risks, and current requirements?",
+  "assertions": {
+    "cites_vpb": {
+      "pass": true,
+      "evidence": "Response explicitly cites 'Wet op de vennootschapsbelasting 1969 (Wet VPB)' and specifically references 'Art. 15 Wet VPB' as the legal basis for the fiscale eenheid, along with Art. 15a-15aj for detailed rules, and the Besluit fiscale eenheid 2003."
+    },
+    "explains_advantages": {
+      "pass": true,
+      "evidence": "Response provides five detailed advantages: (1) loss consolidation within the same tax year, (2) elimination of intercompany transactions for tax purposes (no transfer pricing issues), (3) single tax return/administrative simplification, (4) tax rate optimization analysis with calculation, and (5) automatic elimination of intercompany dividends. Notably also includes a nuanced counter-analysis showing that with EUR 2M profit, the fiscal unity may not provide a rate advantage."
+    },
+    "mentions_joint_liability": {
+      "pass": true,
+      "evidence": "Response identifies joint and several liability (hoofdelijke aansprakelijkheid) as 'the most significant risk,' explaining that 'All entities within the fiscal unity are jointly and severally liable for the entire group's VPB debt' and that this liability can survive dissolution of the fiscal unity."
+    },
+    "mentions_rates": {
+      "pass": true,
+      "evidence": "Response includes a detailed rate table: 19% on the first EUR 200,000 and 25.8% above EUR 200,000. Provides a full tax calculation for the EUR 2M profit scenario and a comparison calculation showing the impact of filing separately vs. within a fiscal unity."
+    },
+    "includes_disclaimer": {
+      "pass": true,
+      "evidence": "Response includes a comprehensive disclaimer at the end stating the information is for general informational purposes only, does not constitute tax advice, rates and rules change frequently, and recommends consulting a belastingadviseur or fiscalist."
+    }
+  },
+  "overall_score": "5/5",
+  "notes": "All assertions pass. Response demonstrates strong depth with specific article citations, practical rate calculations, and a nuanced analysis that correctly identifies the potential disadvantage of losing a rate bracket in a fiscal unity. The joint liability risk is prominently highlighted."
+}

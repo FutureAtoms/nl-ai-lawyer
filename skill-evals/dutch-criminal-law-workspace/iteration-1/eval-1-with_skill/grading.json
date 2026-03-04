@@ -1,0 +1,28 @@
+{
+  "eval": "dutch-criminal-law-test-1",
+  "prompt": "Our company's financial director is suspected of submitting false invoices (valsheid in geschrift). The FIOD has raided our offices. What are the company's potential criminal liability risks?",
+  "assertions": {
+    "cites_art_51": {
+      "pass": true,
+      "evidence": "Response extensively cites Art. 51 Sr: Art. 51 lid 1 (offenses can be committed by legal entities), Art. 51 lid 2 (prosecution of the legal entity, those who ordered the offense, and those with de facto control). Also discusses the Drijfmest arrest criteria for attribution (sfeer van de rechtspersoon, beschikkingsmacht, aanvaarding, IJzerdraad criteria)."
+    },
+    "cites_art_225": {
+      "pass": true,
+      "evidence": "Response specifically cites Art. 225 lid 1 Sr (creating false documents / falsifying authentic documents) and Art. 225 lid 2 Sr (intentional use of false documents), including the maximum penalty of 6 years imprisonment or 5th category fine (EUR 90,000). Correctly identifies submitting false invoices as a 'classic example of valsheid in geschrift.'"
+    },
+    "discusses_corporate_liability": {
+      "pass": true,
+      "evidence": "Response provides a detailed analysis of corporate criminal liability: explains the three-track prosecution model under Art. 51 lid 2 (entity, those who ordered, those with de facto control), applies the Drijfmest criteria with a specific assessment table for the financial director scenario, discusses the critical question of internal controls, and lists potential charges (Art. 225, Art. 69 AWR, Art. 420bis witwassen, WED). Also discusses penalties for legal entities including fines up to EUR 900,000 or 10% of turnover."
+    },
+    "mentions_fiod": {
+      "pass": true,
+      "evidence": "Response explains what the FIOD is (Fiscale Inlichtingen- en Opsporingsdienst), its investigative mandate (tax fraud, financial crime, money laundering), that it operates under the Functioneel Parket, and discusses the legal basis for the raid (doorzoeking) under Art. 96c Sv and Art. 110 Sv. Explains what the FIOD can do during a raid and the immediate implications."
+    },
+    "includes_disclaimer": {
+      "pass": true,
+      "evidence": "Response includes a comprehensive disclaimer at the end emphasizing it is not criminal defense advice, the area is high-stakes, and strongly recommends immediately engaging a strafrechtadvocaat specialized in economic and financial criminal law."
+    }
+  },
+  "overall_score": "5/5",
+  "notes": "All assertions pass. Exceptionally thorough response that correctly applies Art. 51 corporate liability framework, cites the Drijfmest criteria for attribution, explains the FIOD's role and investigative powers, and provides critical practical advice (right to silence, separate legal counsel, preserve documents). The multiple potential charges analysis adds significant depth."
+}

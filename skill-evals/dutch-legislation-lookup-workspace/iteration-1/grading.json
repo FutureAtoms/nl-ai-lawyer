@@ -1,0 +1,73 @@
+{
+  "evaluation_date": "2026-03-04",
+  "skill": "dutch-legislation-lookup",
+  "iteration": 1,
+  "tests": [
+    {
+      "test_id": "eval-1-with_skill",
+      "prompt": "I need to understand the rules for proeftijd (probation period) in Dutch employment contracts. What does the law say? Which BW articles apply and what are the limitations?",
+      "criteria": {
+        "cites_art_7_652": {
+          "pass": true,
+          "score": 1.0,
+          "evidence": "Output explicitly cites Art. 7:652 BW as the central provision, including all 8 lids with full Dutch text and English explanation. Also cites Art. 7:676 BW for termination during probation."
+        },
+        "mentions_duration_limits": {
+          "pass": true,
+          "score": 1.0,
+          "evidence": "Output provides a clear summary table of maximum probation durations: 2 months for permanent contracts, 2 months for fixed-term >= 2 years, 1 month for fixed-term > 6 months but < 2 years, and no probation for contracts <= 6 months. Each limit is explained in the context of the relevant lid of Art. 7:652 BW."
+        },
+        "explains_written_requirement": {
+          "pass": true,
+          "score": 1.0,
+          "evidence": "Output explicitly addresses the written requirement in the explanation of lid 2 ('The probation period must be agreed upon in writing. An oral probation agreement is not valid. This is a strict formal requirement.') and again in the Practical Application section ('The probation clause must appear in the employment contract (or attached letter). Failure to put it in writing means there is no valid probation period.')."
+        },
+        "includes_disclaimer": {
+          "pass": true,
+          "score": 1.0,
+          "evidence": "Output includes the full English disclaimer from assets/disclaimers/disclaimer-en.md with all 7 numbered points, the acknowledgment statement, and the dated footer. Dates are filled in as 4 March 2026."
+        }
+      },
+      "overall_score": 4.0,
+      "max_score": 4.0,
+      "percentage": 100.0,
+      "notes": "Excellent coverage. Response follows the SKILL.md output format precisely: includes Legislation Lookup header, BWB identifier (BWBR0005290), status, effective date, Dutch article text, English explanations, legal context (semi-dwingend recht classification, related provisions), practical application summary table, key case law (HR 13 January 1995, HR 10 November 2000), recent/pending changes (WWZ 2015, EU Directive 2019/1152), and the full disclaimer. Cross-references Art. 7:669, 7:670, 7:671, 7:676, and 7:611 BW. Notes the critical nullity rule of lid 7 (entire clause void, not reduced). Addresses the EU dimension (Directive 2019/1152). Correctly identifies the law as semi-dwingend recht (Art. 7:652 lid 8)."
+    },
+    {
+      "test_id": "eval-2-with_skill",
+      "prompt": "What is the current text of artikel 6:162 BW (onrechtmatige daad / tort law)? I need the full article and an explanation of how Dutch courts interpret each element.",
+      "criteria": {
+        "cites_article": {
+          "pass": true,
+          "score": 1.0,
+          "evidence": "Output explicitly cites Art. 6:162 BW with all three lids in original Dutch text and English translation. BWB identifier BWBR0005289 is provided. Also cites Art. 6:163 BW (relativiteit) with its Dutch text."
+        },
+        "mentions_elements": {
+          "pass": true,
+          "score": 1.0,
+          "evidence": "Output identifies and explains all five elements required for a successful tort claim under Art. 6:162 BW: (1) Onrechtmatige daad (wrongful act) with three sub-categories (inbreuk op een recht, strijd met wettelijke plicht, strijd met maatschappelijke betamelijkheid) plus rechtvaardigingsgronden; (2) Toerekenbaarheid (attribution/fault); (3) Schade (damage); (4) Causaal verband (causation) with the two-step test; (5) Relativiteit (protective scope). Each element includes detailed court interpretation with case citations."
+        },
+        "provides_dutch_text": {
+          "pass": true,
+          "score": 1.0,
+          "evidence": "Full Dutch text of all three lids of Art. 6:162 BW is provided in blockquote format, as specified by the SKILL.md output template. Additionally, the Dutch text of Art. 6:163 BW is included."
+        },
+        "includes_disclaimer": {
+          "pass": true,
+          "score": 1.0,
+          "evidence": "Output includes the full English disclaimer from assets/disclaimers/disclaimer-en.md with all 7 numbered points, the acknowledgment statement, and the dated footer. Dates are filled in as 4 March 2026."
+        }
+      },
+      "overall_score": 4.0,
+      "max_score": 4.0,
+      "percentage": 100.0,
+      "notes": "Comprehensive response. Follows SKILL.md output format: includes Legislation Lookup header, BWB identifier (BWBR0005289), status, effective date, Dutch text, translation, legal context with extensive related provisions (Art. 6:163-177, 6:95-110, 6:98, 6:101 BW). Provides detailed interpretation of each element with landmark case law: Lindenbaum/Cohen (1919), Kelderluik (1965), Duwbak Linda (2004), Nefalit/Karamus (2006), Windmill (1992), and Urgenda (2019). Correctly identifies dwingend recht classification. Cross-references EU dimension. Notes the Kelderluik criteria for duty of care assessment. Addresses burden of proof including omkeringsregel. Covers practical applications across multiple areas of law. Mentions pending EU legislative developments (AI Liability Directive, revised Product Liability Directive)."
+    }
+  ],
+  "aggregate": {
+    "total_score": 8.0,
+    "max_possible": 8.0,
+    "percentage": 100.0,
+    "all_criteria_passed": true
+  }
+}

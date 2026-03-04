@@ -1,0 +1,27 @@
+{
+  "eval_id": 6,
+  "skill": "dutch-legislation-lookup",
+  "expectations": [
+    {
+      "text": "cites_article",
+      "passed": true,
+      "evidence": "Section header: 'Artikel 6:162 BW — Onrechtmatige Daad (Tort / Unlawful Act)' and repeated references to '6:162' and 'Art. 6:162 BW' throughout the document."
+    },
+    {
+      "text": "mentions_elements",
+      "passed": true,
+      "evidence": "The Five Elements table: 'Onrechtmatigheid', 'Toerekenbaarheid', 'Schade', 'Causaal verband', 'Relativiteit' — all five are explicitly named and discussed. Also the Dutch text includes 'inbreuk op een recht' and 'strijd met een wettelijke plicht'."
+    },
+    {
+      "text": "provides_dutch_text",
+      "passed": true,
+      "evidence": "Dutch text of lid 2: 'Als onrechtmatige daad worden aangemerkt een inbreuk op een recht en een doen of nalaten in strijd met een wettelijke plicht of met hetgeen volgens ongeschreven recht in het maatschappelijk verkeer betaamt...' — all three required phrases are present."
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "This is an AI-generated legal analysis and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet)."
+    }
+  ],
+  "pass_rate": "4/4"
+}

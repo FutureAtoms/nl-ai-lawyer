@@ -1,0 +1,25 @@
+{
+  "test_prompt": "My partner is from Japan and we want them to join me in the Netherlands on a family reunification visa. I'm a Dutch citizen. What are the income requirements and how long does the process take?",
+  "skill": "dutch-immigration-law",
+  "eval_id": "eval-2",
+  "assertions": {
+    "mentions_income_requirement": {
+      "pass": true,
+      "evidence": "Clearly states the income requirement under Art. 3.22 Vb 2000: 100% of the net minimum wage, approximately EUR 1,934.40 per month (net) for 2024. Explains the three criteria (independent, sufficient, durable) and what counts/does not count as income. Notes that Dutch citizens are not exempt from the income requirement."
+    },
+    "discusses_mvv": {
+      "pass": true,
+      "evidence": "Explicitly states that Japan is on the MVV-exempt list (Art. 17 Vw 2000 jo. Art. 3.1 VV 2000), meaning the Japanese partner does not need an MVV. Explains both options: VVB application from within the Netherlands (recommended) and TEV procedure from Japan. This correctly handles the nuance that MVV-exempt nationals have a different process."
+    },
+    "mentions_inburgering": {
+      "pass": true,
+      "evidence": "Covers both aspects: (1) Japanese nationals are exempt from the civic integration abroad exam (basisexamen inburgering buitenland), and (2) the partner WILL be subject to the Dutch civic integration obligation (inburgeringsplicht) after arrival under Wet inburgering 2021. Mentions the 3-year deadline, three learning routes (B1-route, Onderwijsroute, Zelfredzaamheidsroute), and consequences of non-compliance."
+    },
+    "includes_disclaimer": {
+      "pass": true,
+      "evidence": "Full disclaimer appended at the end, covering all 7 required points with the Netherlands AI Lawyer System attribution and date stamps."
+    }
+  },
+  "overall_score": "4/4",
+  "notes": "All assertions pass. The response correctly handles the nuance that Japanese nationals are MVV-exempt (changing the process significantly from the standard third-country national pathway). The inburgering discussion is particularly well-handled, distinguishing between the abroad exam (exempt) and the in-country obligation (applies)."
+}

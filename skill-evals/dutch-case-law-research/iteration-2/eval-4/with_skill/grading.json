@@ -1,0 +1,27 @@
+{
+  "eval_id": 4,
+  "skill": "dutch-case-law-research",
+  "expectations": [
+    {
+      "text": "mentions_ecli",
+      "passed": true,
+      "evidence": "Multiple valid ECLI citations appear: 'ECLI:NL:HR:2021:1272', 'ECLI:NL:HR:2021:1488', 'ECLI:NL:GHAMS:2022:3041', 'ECLI:NL:RBAMS:2023:4521', 'ECLI:NL:HR:2020:831', 'ECLI:NL:GHSHE:2021:2875' - all matching the pattern ECLI:NL:\\w+:\\d{4}:\\w+."
+    },
+    {
+      "text": "references_290_bw",
+      "passed": true,
+      "evidence": "The output extensively references Art. 7:290 BW: 'Art. 7:290 BW defines bedrijfsruimte', 'bedrijfsruimte rental agreement (within the scope of Art. 7:290 BW)', 'Art. 7:290 BW bedrijfsruimte', 'The Art. 7:303 BW Huurprijsherziening Procedure'. All of '290', '7:290', and 'bedrijfsruimte' appear 21 times total."
+    },
+    {
+      "text": "discusses_rent_review",
+      "passed": true,
+      "evidence": "The entire analysis is centered on huurprijsverhoging and huurprijsherziening: 'huurprijsverhoging (rent increase)', 'huurprijsherziening proceedings', 'huurprijs', 'rent', 'huurprijsverhoging', 'huurprijsherziening' all appear prominently throughout (45 total matches)."
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "Disclaimer at end of output states: 'This is an AI-generated legal analysis and does **NOT constitute legal advice** within the meaning of the Dutch Advocates Act (Advocatenwet).' This contains the substring 'NOT constitute legal advice' matching 'not constitute legal advice' case-insensitively."
+    }
+  ],
+  "pass_rate": "4/4"
+}

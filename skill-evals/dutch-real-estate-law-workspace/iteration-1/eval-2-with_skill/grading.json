@@ -1,0 +1,24 @@
+{
+  "eval": "dutch-real-estate-law-test-2",
+  "prompt": "My tenant hasn't paid rent for 3 months on a 7:290 commercial property. What's the procedure to terminate the lease and evict them under Dutch law?",
+  "assertions": {
+    "references_290_regime": {
+      "pass": true,
+      "evidence": "Response correctly identifies the property as falling under Art. 7:290-310 BW (middenstandsbedrijfsruimte), explains the 5+5 year minimum lease duration under Art. 7:292 BW, and discusses the specific protections applicable to 7:290 commercial properties including indeplaatsstelling (Art. 7:307) and rent review (Art. 7:303)."
+    },
+    "explains_procedure_ontbinding_ingebrekestelling": {
+      "pass": true,
+      "evidence": "Response provides a detailed step-by-step procedure: (1) Send ingebrekestelling under Art. 6:82 BW with 14-day cure deadline, (2) File for ontbinding under Art. 6:265 BW at the kantonrechter, (3) Request ontruiming. Also explains the distinction between bodemprocedure and kort geding options."
+    },
+    "mentions_court": {
+      "pass": true,
+      "evidence": "Response clearly states that 'only a court can terminate a lease for a 7:290 property,' identifies the kantonrechter (sub-district court) for the bodemprocedure, and the voorzieningenrechter for kort geding. Discusses court assessment criteria and enforcement of eviction orders through a deurwaarder."
+    },
+    "includes_disclaimer": {
+      "pass": true,
+      "evidence": "Response includes a comprehensive disclaimer at the end stating the information is for general informational purposes only, does not constitute legal advice, and recommends consulting a huurrechtadvocaat."
+    }
+  },
+  "overall_score": "4/4",
+  "notes": "All assertions pass. Response provides a thorough procedural walkthrough of commercial lease termination for non-payment, correctly applies the 7:290 regime, and offers practical guidance on both regular and summary proceedings."
+}

@@ -1,0 +1,27 @@
+{
+  "eval_id": 8,
+  "skill": "dutch-corporate-law",
+  "expectations": [
+    {
+      "text": "mentions_conflict_interest",
+      "passed": true,
+      "evidence": "Section header '1. Conflict of Interest (Tegenstrijdig Belang) — Art. 2:239 lid 6 BW' and: 'Art. 2:239 lid 6 BW: Een bestuurder neemt niet deel aan de beraadslaging en besluitvorming indien hij daarbij een direct of indirect persoonlijk belang heeft dat tegenstrijdig is aan het belang van de vennootschap...'"
+    },
+    {
+      "text": "discusses_minority_protection",
+      "passed": true,
+      "evidence": "Section '4. Minority Protection — Enquêterecht and Ondernemingskamer' with extensive discussion including: 'Art. 2:344–2:359 BW: Enquêteprocedure — The enquêterecht (inquiry right) is one of the most powerful tools available to minority shareholders under Dutch corporate law. It is exercised before the Ondernemingskamer (Enterprise Chamber) of the Amsterdam Court of Appeal.' Also: 'The minority shareholder holds 30% — well above the threshold.'"
+    },
+    {
+      "text": "cites_bw",
+      "passed": true,
+      "evidence": "Multiple Art. 2:XXX citations throughout: Art. 2:239 lid 6 BW, Art. 2:9 BW, Art. 2:8 BW, Art. 2:14–15 BW, Art. 2:344–2:359 BW, Art. 2:349a BW, Art. 2:355 BW, Art. 2:256 BW, Art. 2:343 BW — satisfying the regex for art. 2:XXX citation pattern."
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "This is an AI-generated legal analysis and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet). — matches 'does not constitute legal advice' from the assertion list."
+    }
+  ],
+  "pass_rate": "4/4"
+}

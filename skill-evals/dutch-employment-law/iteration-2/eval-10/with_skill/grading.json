@@ -1,0 +1,27 @@
+{
+  "eval_id": 10,
+  "skill": "dutch-employment-law",
+  "expectations": [
+    {
+      "text": "mentions_salary_threshold",
+      "passed": true,
+      "evidence": "The output contains multiple EUR-formatted salary amounts matching the regex pattern. For example: 'EUR 5,331 per month' (kennismigrant general threshold), 'EUR 3,909 per month' (reduced rate), 'EUR 2,801 per month' (recent graduates), and 'EUR 5,688 per month' (EU Blue Card). The table in Part 1 presents these as: 'EUR 5,331', 'EUR 3,909', 'EUR 2,801', 'EUR 5,688'."
+    },
+    {
+      "text": "discusses_noncompete_fixedterm",
+      "passed": true,
+      "evidence": "The output devotes an entire section to 'Part 2: Concurrentiebeding (Non-Compete Clause) in a Fixed-Term Contract', citing 'Art. 7:653 BW' and 'Art. 7:653 lid 2 BW', and stating: 'a non-compete clause in an employment contract for a definite period (bepaalde tijd) is only valid if the employer includes in the contract itself a written motivering'. The terms '7:653', 'motivering', 'fixed-term', and 'bepaalde tijd' all appear explicitly."
+    },
+    {
+      "text": "references_ind",
+      "passed": true,
+      "evidence": "The output references the IND and kennismigrant scheme throughout: 'the IND (Immigratie- en Naturalisatiedienst)', 'The kennismigrant (highly skilled migrant) residence permit is a Dutch immigration scheme', 'the IND salary thresholds', 'Verify current 2026 thresholds with IND', and 'IND application' in the Practical Steps section."
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "The output includes the full English disclaimer with the text: 'This is an AI-generated legal analysis and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet).' The phrase 'does not constitute legal advice' is present verbatim."
+    }
+  ],
+  "pass_rate": "4/4"
+}

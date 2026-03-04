@@ -1,0 +1,27 @@
+{
+  "eval_id": 12,
+  "skill": "dutch-privacy-gdpr",
+  "expectations": [
+    {
+      "text": "cites_art_15",
+      "passed": true,
+      "evidence": "The output cites art. 15 AVG extensively throughout. The Legal Basis section is titled 'Legal Basis: Art. 15 AVG - Right of Access (Inzagerecht)' and states: 'Art. 15 lid 1 AVG provides that the data subject has the right to obtain from the controller...' and 'Art. 15 lid 3 AVG requires the controller to provide a copy'. The term 'art. 15', 'artikel 15', and 'inzagerecht' all appear."
+    },
+    {
+      "text": "mentions_deadline",
+      "passed": true,
+      "evidence": "The output has an entire section titled 'The Deadline: One Month (with Possibility of Extension)' which states: 'Under art. 12 lid 3 AVG, the controller must respond to a data subject access request within one month (één maand) of receiving the request.' The phrase 'one month' and 'één maand' both appear verbatim."
+    },
+    {
+      "text": "discusses_exceptions",
+      "passed": true,
+      "evidence": "The output has an entire section titled 'Exceptions and Limitations' with five numbered subsections. Subsection 1 explicitly discusses 'Rights and Freedoms of Others (Rechten van Anderen) - Art. 15 lid 4 AVG' and states: 'Art. 15 lid 4 AVG explicitly states that the right to receive a copy must not adversely affect the rights and freedoms of others.' The terms 'exception', 'uitzondering', 'rechten van anderen', and 'rights of others' all appear."
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "The output includes the full English disclaimer with the text: 'This is an AI-generated legal analysis and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet).' The phrase 'does not constitute legal advice' is present verbatim."
+    }
+  ],
+  "pass_rate": "4/4"
+}

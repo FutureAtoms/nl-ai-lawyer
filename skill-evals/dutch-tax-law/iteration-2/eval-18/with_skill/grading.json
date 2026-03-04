@@ -1,0 +1,32 @@
+{
+  "eval_id": 18,
+  "skill": "dutch-tax-law",
+  "expectations": [
+    {
+      "text": "explains_30_percent",
+      "passed": true,
+      "evidence": "\"## What Is the 30% Ruling?\" and \"the employer may designate up to **30%** of the total gross employment income as a tax-free reimbursement\" - 30% ruling mechanism is fully explained"
+    },
+    {
+      "text": "mentions_duration",
+      "passed": true,
+      "evidence": "\"### Current Maximum Duration: 60 Months (5 Years)\" and \"the maximum duration of the 30% ruling is **60 months (five years)** from the first day of employment in the Netherlands\""
+    },
+    {
+      "text": "discusses_conditions",
+      "passed": true,
+      "evidence": "\"### 1. Specific Expertise (Specifieke Deskundigheid)\" and \"### 3. The 150 km Rule (150-Kilometerregel)\" and \"### 4. Salary Thresholds (Inkomensnorm)\" - all key conditions discussed"
+    },
+    {
+      "text": "mentions_treaty",
+      "passed": true,
+      "evidence": "\"**Netherlands-United States Tax Treaty (Belastingverdrag Nederland-VS)** - Double taxation relief\" and \"The Netherlands and the United States have concluded a comprehensive double taxation treaty (belastingverdrag / verdrag)\""
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "\"This is an AI-generated legal analysis and does **NOT constitute legal advice** within the meaning of the Dutch Advocates Act (Advocatenwet).\""
+    }
+  ],
+  "pass_rate": "5/5"
+}

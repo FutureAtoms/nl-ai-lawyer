@@ -1,0 +1,32 @@
+{
+  "eval_id": 11,
+  "skill": "dutch-privacy-gdpr",
+  "expectations": [
+    {
+      "text": "mentions_special_categories",
+      "passed": true,
+      "evidence": "The output contains multiple explicit references to the required terms. It references 'art. 9 AVG (Bijzondere Categorie)' and 'bijzondere categoriegegevens' in the Legal Basis Assessment section: 'Health metrics collected by a health app constitute special category data (bijzondere categoriegegevens) under art. 9 AVG.' It also uses 'gezondheidsgegevens (health data)' throughout and explicitly refers to 'art. 9' in multiple places."
+    },
+    {
+      "text": "discusses_dpia",
+      "passed": true,
+      "evidence": "Section 7 is entirely devoted to: 'DPIA (Data Protection Impact Assessment / Gegevensbeschermingseffectbeoordeling) - Art. 35 AVG'. The output states: 'A DPIA is almost certainly mandatory for this processing activity' and 'A DPIA must be conducted before the processing commences'. All three assertion keywords appear: 'DPIA', 'Data Protection Impact Assessment', and 'Gegevensbeschermingseffectbeoordeling'."
+    },
+    {
+      "text": "addresses_us_transfer",
+      "passed": true,
+      "evidence": "Section 6 is specifically titled 'International Transfers - Critical Risk Area' and covers: 'EU-US Data Privacy Framework (DPF) - Adequacy Decision', 'Standard Contractual Clauses (SCCs)', 'Post-Schrems II obligation', and references the 'CJEU C-311/18 (2020)' Schrems II ruling. The output also cites the Uber EUR 290M fine for transfers without adequate safeguards. All assertion keywords appear: 'Schrems', 'SCCs', 'Standard Contractual Clauses', 'DPF', 'Data Privacy Framework'."
+    },
+    {
+      "text": "mentions_verwerkersovereenkomst",
+      "passed": true,
+      "evidence": "Section 5 is titled 'Data Processing Agreements (Verwerkersovereenkomst) - Art. 28 AVG' and states: 'You must have a verwerkersovereenkomst (data processing agreement / DPA) in place with the analytics platform before any personal data is transferred to them. The DPA must contain all elements required by art. 28 lid 3 AVG'. All assertion keywords appear: 'verwerkersovereenkomst', 'data processing agreement', 'art. 28'."
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "The output includes the full English disclaimer with the text: 'This is an AI-generated legal analysis and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet).' The phrase 'does not constitute legal advice' is present verbatim."
+    }
+  ],
+  "pass_rate": "5/5"
+}

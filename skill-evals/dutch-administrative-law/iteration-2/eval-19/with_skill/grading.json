@@ -1,0 +1,32 @@
+{
+  "eval_id": 19,
+  "skill": "dutch-administrative-law",
+  "expectations": [
+    {
+      "text": "mentions_bezwaar",
+      "passed": true,
+      "evidence": "\"### Step 1: Bezwaar (Administrative Objection) - Art. 7:1 Awb\" and \"A formal written objection filed with the **same administrative body** (the gemeente)\" - bezwaar procedure fully explained"
+    },
+    {
+      "text": "mentions_deadline",
+      "passed": true,
+      "evidence": "\"**Deadline**: **6 weeks** from the day after the decision was sent or published (Art. 6:7-6:8 Awb)\" - 6-week deadline explicitly stated multiple times"
+    },
+    {
+      "text": "references_awb",
+      "passed": true,
+      "evidence": "\"**Algemene wet bestuursrecht (Awb)** - the foundational procedural statute\" with extensive citation of specific Awb articles including Art. 1:2, 3:2, 6:7-6:8, 7:1-7:13, 8:1-8:86, 8:81"
+    },
+    {
+      "text": "mentions_beroep",
+      "passed": true,
+      "evidence": "\"### Step 2: Beroep (Appeal to the Rechtbank) - Art. 8:1 Awb\" and \"you can appeal to the **bestuursrechter** (administrative law judge) at the **Rechtbank**\""
+    },
+    {
+      "text": "includes_disclaimer",
+      "passed": true,
+      "evidence": "\"This is an AI-generated legal analysis and does **NOT constitute legal advice** within the meaning of the Dutch Advocates Act (Advocatenwet).\""
+    }
+  ],
+  "pass_rate": "5/5"
+}

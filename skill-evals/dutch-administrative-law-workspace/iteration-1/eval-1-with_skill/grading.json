@@ -1,0 +1,28 @@
+{
+  "eval": "dutch-administrative-law-test-1",
+  "prompt": "The gemeente rejected our building permit application (omgevingsvergunning). We think the decision is wrong. What are our options and deadlines?",
+  "assertions": {
+    "mentions_bezwaar": {
+      "pass": true,
+      "evidence": "Response identifies bezwaar (objection) as the 'first and mandatory step,' explains it is filed with the same administrative body (College van B&W), details the content requirements under Art. 6:5 Awb, discusses the right to be heard under Art. 7:2 Awb, and explains the full reconsideration (heroverweging) under Art. 7:11 Awb. Also mentions pro forma bezwaar as a practical option."
+    },
+    "mentions_deadline_6_weeks": {
+      "pass": true,
+      "evidence": "Response repeatedly and prominently states the 6-week deadline (Art. 6:7-6:8 Awb), emphasizes it is 'strictly enforced,' that missing it results in being declared inadmissible (niet-ontvankelijk), and advises checking the deadline immediately as the first practical step."
+    },
+    "references_awb": {
+      "pass": true,
+      "evidence": "Response extensively references the Algemene wet bestuursrecht (Awb) throughout, citing specific articles: Art. 1:2 (belanghebbende), Art. 3:2 (zorgvuldigheidsbeginsel), Art. 3:4 (evenredigheidsbeginsel), Art. 3:46-47 (motiveringsbeginsel), Art. 6:5 (bezwaarschrift requirements), Art. 6:7-6:8 (deadline), Art. 7:2 (hearing), Art. 7:10 (decision timeline), Art. 7:11 (heroverweging), Art. 8:1 (beroep), Art. 8:81 (voorlopige voorziening), Art. 8:86 (kortsluiting)."
+    },
+    "mentions_beroep": {
+      "pass": true,
+      "evidence": "Response explains beroep as the second step after bezwaar: appeal to the bestuursrechter at the Rechtbank within 6 weeks of the decision on bezwaar, notes court fees, and explains the court can annul the decision. Also discusses hoger beroep to the ABRvS and the voorlopige voorziening procedure."
+    },
+    "includes_disclaimer": {
+      "pass": true,
+      "evidence": "Response includes a comprehensive disclaimer at the end noting the information is for general informational purposes only, emphasizes strict deadlines, the relative newness of the Omgevingswet framework, and recommends consulting a bestuursrechtadvocaat or omgevingsrechtadvocaat."
+    }
+  },
+  "overall_score": "5/5",
+  "notes": "All assertions pass. Response provides an exceptionally thorough walkthrough of the bezwaar-beroep procedure with extensive Awb citations, practical steps, and appropriate urgency regarding deadlines. The inclusion of voorlopige voorziening and alternative routes (revised application) adds practical value."
+}

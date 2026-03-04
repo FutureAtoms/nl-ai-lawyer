@@ -1,0 +1,25 @@
+{
+  "test_prompt": "Our company needs to comply with both the Dutch Wet bescherming bedrijfsgeheimen and the EU Trade Secrets Directive. How do these relate to each other?",
+  "skill": "eu-law-integration",
+  "eval_id": "eval-2",
+  "assertions": {
+    "references_directive": {
+      "pass": true,
+      "evidence": "Correctly identifies the directive as 'Directive 2016/943/EU of the European Parliament and of the Council of 8 June 2016 on the protection of undisclosed know-how and business information (trade secrets) against their unlawful acquisition, use and disclosure.' The 2016/943 reference is mentioned multiple times throughout, including in the header, article cross-references, and the compliance table."
+    },
+    "mentions_dutch_implementation": {
+      "pass": true,
+      "evidence": "Correctly identifies the Wet bescherming bedrijfsgeheimen (Wbb) as the Dutch implementing act, noting it entered into force on 23 October 2018. The response provides detailed article-by-article cross-referencing between the Wbb and the Directive (Art. 1 Wbb / Art. 2(1) Directive for definitions, Arts. 2-3 Wbb / Arts. 3-4 Directive for infringement, Arts. 5-8 Wbb / Arts. 6-15 Directive for remedies, etc.)."
+    },
+    "discusses_relationship": {
+      "pass": true,
+      "evidence": "Extensively discusses the relationship between the two instruments: (1) The Wbb IS the Dutch implementation of the Directive; (2) it is a minimum harmonization directive, so Dutch law may be more protective; (3) the Wbb closely follows the Directive without significant gold-plating; (4) Dutch general contract law and employment law provide additional protections beyond the Directive's scope; (5) consistent interpretation applies when Wbb is ambiguous. Includes a practical compliance table mapping each aspect to primary and supplementary sources."
+    },
+    "includes_disclaimer": {
+      "pass": true,
+      "evidence": "Full disclaimer appended at the end with all 7 required points and the Netherlands AI Lawyer System attribution."
+    }
+  },
+  "overall_score": "4/4",
+  "notes": "All assertions pass. The response excels at explaining the transposition relationship in practical terms, particularly the compliance strategy table and the distinction between statutory (Wbb) and contractual (NDA) protection. The treatment of minimum harmonization and its practical implications is accurate and useful."
+}
