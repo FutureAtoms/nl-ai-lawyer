@@ -1,0 +1,542 @@
+{
+  "iteration": 4,
+  "focus": "Cross-domain deep evaluation: immigration, 30% ruling, HSM, corporate law",
+  "date": "2026-03-04",
+  "methodology": "12 forum-based prompts + re-run of 28 original prompts (40 total)",
+  "quality_dimensions": [
+    "legal_accuracy",
+    "completeness",
+    "actionability",
+    "citation_depth",
+    "cross_referencing"
+  ],
+  "test_prompts": [
+    {
+      "id": "IT4-01",
+      "prompt": "I'm a software engineer relocating from India to Amsterdam. My employer is offering EUR 75,000/year. Am I eligible for the 30% ruling and kennismigrant permit?",
+      "target_skills": ["dutch-tax-law", "dutch-immigration-law"],
+      "category": "cross-domain-eligibility",
+      "assertions": [
+        {
+          "id": "IT4-01-A1",
+          "type": "legal_accuracy",
+          "description": "Must confirm eligibility for kennismigrant permit based on salary exceeding EUR 5,493/mo threshold",
+          "must_contain": ["5,493", "kennismigrant"],
+          "must_not_contain": []
+        },
+        {
+          "id": "IT4-01-A2",
+          "type": "legal_accuracy",
+          "description": "Must confirm 30% ruling eligibility (taxable salary EUR 52,500 > EUR 46,107 threshold)",
+          "must_contain": ["46,107", "30%"],
+          "must_not_contain": ["20%", "10%", "step-down"]
+        },
+        {
+          "id": "IT4-01-A3",
+          "type": "legal_accuracy",
+          "description": "Must state current 30% ruling rate: flat 30% through 2026, 27% from 2027",
+          "must_contain": ["30%", "2027", "27%"],
+          "must_not_contain": ["30%/20%/10%", "step-down", "gradual reduction"]
+        },
+        {
+          "id": "IT4-01-A4",
+          "type": "completeness",
+          "description": "Must mention 150km rule, 4-month application deadline, and erkend referent requirement",
+          "must_contain": ["150", "4 months", "erkend referent"]
+        },
+        {
+          "id": "IT4-01-A5",
+          "type": "actionability",
+          "description": "Must provide concrete next steps (employer files IND application, joint 30% ruling application)",
+          "must_contain": ["application"]
+        },
+        {
+          "id": "IT4-01-A6",
+          "type": "cross_referencing",
+          "description": "Must reference both immigration law and tax law domains",
+          "must_reference_skills": ["dutch-immigration-law", "dutch-tax-law"]
+        }
+      ]
+    },
+    {
+      "id": "IT4-02",
+      "prompt": "My company wants to change my employment from direct hire to their Dutch BV subsidiary. What happens to my 30% ruling and residence permit?",
+      "target_skills": ["dutch-tax-law", "dutch-immigration-law", "dutch-employment-law"],
+      "category": "employer-change",
+      "assertions": [
+        {
+          "id": "IT4-02-A1",
+          "type": "legal_accuracy",
+          "description": "Must explain that change of employer requires new kennismigrant application",
+          "must_contain": ["new application", "erkend referent"]
+        },
+        {
+          "id": "IT4-02-A2",
+          "type": "legal_accuracy",
+          "description": "Must explain 30% ruling requires new application, 3-month continuity window",
+          "must_contain": ["3 month", "new", "30% ruling"]
+        },
+        {
+          "id": "IT4-02-A3",
+          "type": "legal_accuracy",
+          "description": "Must state the 60-month clock is NOT reset on employer change",
+          "must_contain": ["not reset", "60 month"]
+        },
+        {
+          "id": "IT4-02-A4",
+          "type": "completeness",
+          "description": "Must address both immigration AND tax consequences of the change",
+          "must_contain": ["IND", "Belastingdienst"]
+        },
+        {
+          "id": "IT4-02-A5",
+          "type": "actionability",
+          "description": "Must provide step-by-step procedure for the transition",
+          "must_contain": ["step"]
+        },
+        {
+          "id": "IT4-02-A6",
+          "type": "legal_accuracy",
+          "description": "Must state new employer must be erkend referent and meet salary thresholds independently",
+          "must_contain": ["erkend referent", "salary threshold"]
+        }
+      ]
+    },
+    {
+      "id": "IT4-03",
+      "prompt": "I lost my job last week. I'm on a kennismigrant permit. How long do I have before I need to leave? Can I start freelancing?",
+      "target_skills": ["dutch-immigration-law"],
+      "category": "job-loss-emergency",
+      "assertions": [
+        {
+          "id": "IT4-03-A1",
+          "type": "legal_accuracy",
+          "description": "Must state 3-month grace period under Art. 3.31a Vb 2000",
+          "must_contain": ["3 month", "3.31a"]
+        },
+        {
+          "id": "IT4-03-A2",
+          "type": "legal_accuracy",
+          "description": "Must clearly state freelancing/ZZP is NOT permitted on kennismigrant permit",
+          "must_contain": ["not permitted", "freelanc"]
+        },
+        {
+          "id": "IT4-03-A3",
+          "type": "completeness",
+          "description": "Must mention employer's obligation to notify IND within 4 weeks",
+          "must_contain": ["notify IND", "4 week"]
+        },
+        {
+          "id": "IT4-03-A4",
+          "type": "actionability",
+          "description": "Must advise to find new erkend referent employer within 3 months",
+          "must_contain": ["erkend referent", "new employer"]
+        },
+        {
+          "id": "IT4-03-A5",
+          "type": "completeness",
+          "description": "Must mention 30% ruling continuity risk (3-month window for new application)",
+          "must_contain": ["30% ruling"]
+        }
+      ]
+    },
+    {
+      "id": "IT4-04",
+      "prompt": "I want to set up my own BV in the Netherlands. Can I sponsor myself as a highly skilled migrant?",
+      "target_skills": ["dutch-corporate-law", "dutch-immigration-law"],
+      "category": "self-sponsorship",
+      "assertions": [
+        {
+          "id": "IT4-04-A1",
+          "type": "legal_accuracy",
+          "description": "Must clearly state self-sponsorship as kennismigrant is NOT possible for DGA",
+          "must_contain": ["not possible", "DGA"]
+        },
+        {
+          "id": "IT4-04-A2",
+          "type": "legal_accuracy",
+          "description": "Must explain the gezagsverhouding (subordination) requirement from Art. 7:610 BW",
+          "must_contain": ["gezagsverhouding", "7:610"]
+        },
+        {
+          "id": "IT4-04-A3",
+          "type": "completeness",
+          "description": "Must mention alternative permits: zelfstandige, start-up visa, orientation year",
+          "must_contain": ["zelfstandige", "start-up"]
+        },
+        {
+          "id": "IT4-04-A4",
+          "type": "completeness",
+          "description": "Must explain BV formation process (notaris, KVK) even though self-sponsorship fails",
+          "must_contain": ["notaris", "KVK"]
+        },
+        {
+          "id": "IT4-04-A5",
+          "type": "cross_referencing",
+          "description": "Must reference both corporate law and immigration law",
+          "must_reference_skills": ["dutch-corporate-law", "dutch-immigration-law"]
+        },
+        {
+          "id": "IT4-04-A6",
+          "type": "actionability",
+          "description": "Must provide actionable alternative routes to legal residence",
+          "must_contain": ["alternative"]
+        }
+      ]
+    },
+    {
+      "id": "IT4-05",
+      "prompt": "My 30% ruling is expiring next year. What's the financial impact and can I extend it?",
+      "target_skills": ["dutch-tax-law"],
+      "category": "ruling-expiry",
+      "assertions": [
+        {
+          "id": "IT4-05-A1",
+          "type": "legal_accuracy",
+          "description": "Must state 30% ruling cannot be extended beyond 60 months",
+          "must_contain": ["60 month", "cannot", "extend"]
+        },
+        {
+          "id": "IT4-05-A2",
+          "type": "legal_accuracy",
+          "description": "Must state current rate: flat 30% (no step-down)",
+          "must_not_contain": ["20%", "10%", "step-down"]
+        },
+        {
+          "id": "IT4-05-A3",
+          "type": "completeness",
+          "description": "Must explain financial impact: taxable income increases from 70% to 100% of gross",
+          "must_contain": ["70%", "100%", "taxable"]
+        },
+        {
+          "id": "IT4-05-A4",
+          "type": "completeness",
+          "description": "Must mention loss of partieel buitenlands belastingplichtige status",
+          "must_contain": ["partieel buitenlands"]
+        },
+        {
+          "id": "IT4-05-A5",
+          "type": "actionability",
+          "description": "Must provide planning advice (pension, mortgage interest, Box 3 impact)",
+          "must_contain": ["plan"]
+        }
+      ]
+    },
+    {
+      "id": "IT4-06",
+      "prompt": "I'm forming a Dutch BV as a non-resident. What's the process, timeline, and do I need to be physically present?",
+      "target_skills": ["dutch-corporate-law"],
+      "category": "bv-formation-nonresident",
+      "assertions": [
+        {
+          "id": "IT4-06-A1",
+          "type": "legal_accuracy",
+          "description": "Must state notarial deed is mandatory (Art. 2:175 BW)",
+          "must_contain": ["notaris", "notarial deed"]
+        },
+        {
+          "id": "IT4-06-A2",
+          "type": "legal_accuracy",
+          "description": "Must state physical presence is NOT required (volmacht/proxy possible)",
+          "must_contain": ["not required", "volmacht"]
+        },
+        {
+          "id": "IT4-06-A3",
+          "type": "completeness",
+          "description": "Must mention legalization/apostille requirement for foreign documents",
+          "must_contain": ["apostille", "legalization"]
+        },
+        {
+          "id": "IT4-06-A4",
+          "type": "completeness",
+          "description": "Must provide timeline (1-2 weeks formation, immediate KVK)",
+          "must_contain": ["KVK", "week"]
+        },
+        {
+          "id": "IT4-06-A5",
+          "type": "completeness",
+          "description": "Must mention minimum share capital EUR 0.01 (Flex-BV 2012)",
+          "must_contain": ["0.01", "Flex-BV"]
+        },
+        {
+          "id": "IT4-06-A6",
+          "type": "actionability",
+          "description": "Must provide cost estimates",
+          "must_contain": ["EUR"]
+        }
+      ]
+    },
+    {
+      "id": "IT4-07",
+      "prompt": "My salary is EUR 5,200/month. The kennismigrant threshold went up this year. Am I still eligible for renewal?",
+      "target_skills": ["dutch-immigration-law"],
+      "category": "threshold-indexation-risk",
+      "assertions": [
+        {
+          "id": "IT4-07-A1",
+          "type": "legal_accuracy",
+          "description": "Must state 2025 standard threshold is EUR 5,493/month, which exceeds EUR 5,200",
+          "must_contain": ["5,493"]
+        },
+        {
+          "id": "IT4-07-A2",
+          "type": "legal_accuracy",
+          "description": "Must explain the salary falls BELOW the current threshold for age 30+",
+          "must_contain": ["below", "threshold"]
+        },
+        {
+          "id": "IT4-07-A3",
+          "type": "completeness",
+          "description": "Must mention annual indexation and the risk this creates for renewals",
+          "must_contain": ["index", "annual"]
+        },
+        {
+          "id": "IT4-07-A4",
+          "type": "actionability",
+          "description": "Must advise negotiating salary increase or checking under-30 threshold if applicable",
+          "must_contain": ["salary increase"]
+        },
+        {
+          "id": "IT4-07-A5",
+          "type": "completeness",
+          "description": "Must mention under-30 threshold (EUR 4,028) as potential alternative if age qualifies",
+          "must_contain": ["4,028", "under-30"]
+        }
+      ]
+    },
+    {
+      "id": "IT4-08",
+      "prompt": "I have a kennismigrant permit and want to switch employers. What's the procedure and risks?",
+      "target_skills": ["dutch-immigration-law", "dutch-tax-law"],
+      "category": "employer-switch",
+      "assertions": [
+        {
+          "id": "IT4-08-A1",
+          "type": "legal_accuracy",
+          "description": "Must state new employer must be erkend referent and file new application",
+          "must_contain": ["erkend referent", "new application"]
+        },
+        {
+          "id": "IT4-08-A2",
+          "type": "legal_accuracy",
+          "description": "Must explain can work for new employer while application is pending (Art. 3.31 Vb 2000)",
+          "must_contain": ["pending"]
+        },
+        {
+          "id": "IT4-08-A3",
+          "type": "completeness",
+          "description": "Must address 30% ruling continuity (3-month gap risk)",
+          "must_contain": ["30% ruling", "3 month"]
+        },
+        {
+          "id": "IT4-08-A4",
+          "type": "completeness",
+          "description": "Must mention salary threshold applies at time of new application (may have increased)",
+          "must_contain": ["threshold", "new application"]
+        },
+        {
+          "id": "IT4-08-A5",
+          "type": "actionability",
+          "description": "Must provide practical checklist for the switch",
+          "must_contain": ["verify", "file"]
+        },
+        {
+          "id": "IT4-08-A6",
+          "type": "cross_referencing",
+          "description": "Must reference both immigration and tax implications",
+          "must_reference_skills": ["dutch-immigration-law", "dutch-tax-law"]
+        }
+      ]
+    },
+    {
+      "id": "IT4-09",
+      "prompt": "Is the 30% ruling still 30% or did they change it to some step-down? I heard conflicting information.",
+      "target_skills": ["dutch-tax-law"],
+      "category": "ruling-status-verification",
+      "assertions": [
+        {
+          "id": "IT4-09-A1",
+          "type": "legal_accuracy",
+          "description": "CRITICAL: Must NOT mention 30%/20%/10% step-down as current law",
+          "must_not_contain": ["months 21-40: 20%", "months 41-60: 10%", "currently 30%/20%/10%"]
+        },
+        {
+          "id": "IT4-09-A2",
+          "type": "legal_accuracy",
+          "description": "Must state flat 30% through 2026, then 27% from 2027",
+          "must_contain": ["flat", "30%", "2027", "27%"]
+        },
+        {
+          "id": "IT4-09-A3",
+          "type": "legal_accuracy",
+          "description": "Must explain the step-down was enacted but then REVERSED by Belastingplan 2025",
+          "must_contain": ["reversed", "Belastingplan 2025"]
+        },
+        {
+          "id": "IT4-09-A4",
+          "type": "legal_accuracy",
+          "description": "Must mention partieel buitenlands belastingplichtige abolished for new rulings from 2025",
+          "must_contain": ["partieel buitenlands", "abolished", "2025"]
+        },
+        {
+          "id": "IT4-09-A5",
+          "type": "citation_depth",
+          "description": "Must cite Belastingplan 2025 or Stb. 2024, 456",
+          "must_contain": ["Belastingplan 2025"]
+        },
+        {
+          "id": "IT4-09-A6",
+          "type": "completeness",
+          "description": "Must explain transitional provisions for existing vs new rulings",
+          "must_contain": ["transitional", "existing"]
+        }
+      ]
+    },
+    {
+      "id": "IT4-10",
+      "prompt": "I'm a DGA of my own BV. What's my minimum salary requirement and how does it interact with the 30% ruling?",
+      "target_skills": ["dutch-tax-law", "dutch-corporate-law"],
+      "category": "dga-salary-ruling-interaction",
+      "assertions": [
+        {
+          "id": "IT4-10-A1",
+          "type": "legal_accuracy",
+          "description": "Must state DGA minimum salary (gebruikelijk loon) of EUR 56,000 (2025, Art. 12a Wet LB)",
+          "must_contain": ["56,000", "gebruikelijk loon"]
+        },
+        {
+          "id": "IT4-10-A2",
+          "type": "legal_accuracy",
+          "description": "Must explain DGA cannot typically claim 30% ruling if they control the BV",
+          "must_contain": ["DGA", "30% ruling"]
+        },
+        {
+          "id": "IT4-10-A3",
+          "type": "legal_accuracy",
+          "description": "Must explain self-sponsorship impossibility for kennismigrant",
+          "must_contain": ["self-sponsorship", "not possible"]
+        },
+        {
+          "id": "IT4-10-A4",
+          "type": "completeness",
+          "description": "Must mention the 75% rule (salary must be at least 75% of most comparable position)",
+          "must_contain": ["75%"]
+        },
+        {
+          "id": "IT4-10-A5",
+          "type": "cross_referencing",
+          "description": "Must reference both corporate law and tax law",
+          "must_reference_skills": ["dutch-corporate-law", "dutch-tax-law"]
+        },
+        {
+          "id": "IT4-10-A6",
+          "type": "legal_accuracy",
+          "description": "Must state current 30% rate correctly (flat 30%, not step-down)",
+          "must_not_contain": ["20%", "10%", "step-down"]
+        }
+      ]
+    },
+    {
+      "id": "IT4-11",
+      "prompt": "My employer isn't a recognized sponsor. Can they still hire me as a highly skilled migrant?",
+      "target_skills": ["dutch-immigration-law"],
+      "category": "erkend-referent-requirement",
+      "assertions": [
+        {
+          "id": "IT4-11-A1",
+          "type": "legal_accuracy",
+          "description": "Must state erkend referent status is MANDATORY for kennismigrant scheme (Art. 2c Vw 2000)",
+          "must_contain": ["mandatory", "erkend referent", "2c"]
+        },
+        {
+          "id": "IT4-11-A2",
+          "type": "completeness",
+          "description": "Must explain employer can apply for erkend referent status (process, 4-8 weeks, EUR 4,588)",
+          "must_contain": ["apply", "4,588"]
+        },
+        {
+          "id": "IT4-11-A3",
+          "type": "completeness",
+          "description": "Must mention IND assesses continuity, solvency, reliability",
+          "must_contain": ["continuity", "solvency"]
+        },
+        {
+          "id": "IT4-11-A4",
+          "type": "actionability",
+          "description": "Must advise employer to apply for erkend referent status as first step",
+          "must_contain": ["first step", "apply"]
+        },
+        {
+          "id": "IT4-11-A5",
+          "type": "completeness",
+          "description": "Must mention alternative: employer files without erkend referent status (much longer processing)",
+          "must_contain": ["longer", "processing"]
+        }
+      ]
+    },
+    {
+      "id": "IT4-12",
+      "prompt": "I arrived in the Netherlands mid-year. How do I file my first tax return? What's this M-form?",
+      "target_skills": ["dutch-tax-law"],
+      "category": "migration-year-tax",
+      "assertions": [
+        {
+          "id": "IT4-12-A1",
+          "type": "legal_accuracy",
+          "description": "Must explain M-form (M-biljet) is the migration year tax return",
+          "must_contain": ["M-form", "migration year"]
+        },
+        {
+          "id": "IT4-12-A2",
+          "type": "completeness",
+          "description": "Must explain year is split into non-resident and resident periods",
+          "must_contain": ["non-resident", "resident", "period"]
+        },
+        {
+          "id": "IT4-12-A3",
+          "type": "completeness",
+          "description": "Must mention 30% ruling interaction with M-form if applicable",
+          "must_contain": ["30% ruling"]
+        },
+        {
+          "id": "IT4-12-A4",
+          "type": "completeness",
+          "description": "Must mention Box 3 reference date is 1 January (often zero for mid-year arrivals)",
+          "must_contain": ["Box 3", "1 January"]
+        },
+        {
+          "id": "IT4-12-A5",
+          "type": "actionability",
+          "description": "Must advise hiring expat tax advisor and filing deadline",
+          "must_contain": ["tax advisor", "deadline"]
+        },
+        {
+          "id": "IT4-12-A6",
+          "type": "legal_accuracy",
+          "description": "Must mention partieel buitenlands belastingplichtige abolition for new rulings from 2025",
+          "must_contain": ["partieel buitenlands"]
+        },
+        {
+          "id": "IT4-12-A7",
+          "type": "completeness",
+          "description": "Must mention worldwide income is taxable for the resident period",
+          "must_contain": ["worldwide income"]
+        }
+      ]
+    }
+  ],
+  "total_assertions": 72,
+  "assertion_summary": {
+    "legal_accuracy": 28,
+    "completeness": 24,
+    "actionability": 10,
+    "citation_depth": 1,
+    "cross_referencing": 9
+  },
+  "critical_30_percent_assertions": {
+    "description": "These assertions specifically verify the 30% ruling error has been corrected",
+    "prompts_testing_30_percent": ["IT4-01", "IT4-02", "IT4-05", "IT4-09", "IT4-10"],
+    "must_not_contain_anywhere": ["30%/20%/10% step-down as current law", "First 20 months: 30%, Months 21-40: 20%, Months 41-60: 10%"],
+    "must_contain_somewhere": ["flat 30% through 2026", "27% from 2027", "Belastingplan 2025", "reversed"]
+  }
+}

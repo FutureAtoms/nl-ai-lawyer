@@ -169,9 +169,11 @@ costs (extraterritoriale kosten).
 
 ### Duration:
 - Maximum 5 years (60 months)
-- Reduced from the original 8 years (2012 reform) and subject to phase-out rules
-- Since 2024: capped at 30% in year 1-20 months, then 20% for months 21-40, then 10% for
-  months 41-60 (phase-out structure, subject to transitional arrangements)
+- Reduced from the original 8 years (2012 reform)
+- **Current law (Belastingplan 2025)**: Flat 30% for the full 60-month duration through 2026
+- **From 1 January 2027**: Flat 27% for the full 60-month duration
+- The previously enacted step-down (30%/20%/10%) was REVERSED before taking effect
+- Partieel buitenlands belastingplichtige status abolished for new rulings from 1 Jan 2025
 
 ### Relationship with kennismigrant permit:
 - The 30% ruling is a **tax measure** (Belastingdienst), not an immigration measure (IND)
@@ -302,11 +304,45 @@ branch/subsidiary as:
 - Short-term illness: IND generally accepts temporary salary reduction if employer continues
   to pay at least 70% of salary (in line with Art. 7:629 BW)
 
-### Job Change
+### Annual Threshold Indexation Risk
+- Salary thresholds are adjusted annually on 1 January based on CBS wage indices (typically ~3-4% increase)
+- **Renewal risk**: An employee whose salary met the threshold at the time of the initial application may fall below the new threshold at renewal time
+- Example: 2024 standard threshold EUR 5,331/mo → 2025 threshold EUR 5,493/mo (increase of EUR 162/mo)
+- Employers should build annual salary increases into contracts to account for threshold indexation
+- If salary falls below the **new** threshold at renewal: the extension may be denied
+- **Cross-reference**: Tax thresholds (30% ruling) are also indexed annually but by different amounts — meeting one does not guarantee meeting the other
+
+### Job Change (Change of Employer)
 - Kennismigrant may only work for the sponsoring employer
-- Changing employers requires a new application by the new recognized sponsor
+- Changing employers requires a **new application** by the new recognized sponsor
+- The new employer must **also be an erkend referent** (or apply first)
 - Gap between employers: if no application is pending, the migrant's work rights lapse
-- Recommend: file new application before start date with new employer
+- Recommend: file new application **before** start date with new employer
+- While the new application is pending, work for the new employer is permitted (Art. 3.31 Vb 2000)
+- The salary threshold applicable is the threshold **at the time of the new application** (not the original application) — thresholds increase annually, creating renewal risk
+- **30% ruling impact**: A new 30% ruling application must also be filed within 3 months of the end of the previous employment to maintain continuity (see dutch-tax-law references)
+
+### Job Loss Grace Period (Art. 3.31a Vb 2000)
+- Upon termination of employment, the kennismigrant has a **3-month search period** (zoekperiode)
+- During this 3-month period:
+  - The residence permit remains valid
+  - The migrant may seek new employment
+  - No work is permitted unless a new employer has filed a pending application
+- After 3 months without new qualifying employment: IND may withdraw the permit
+- The former employer must notify IND of the termination within 4 weeks (informatieplicht, Art. 2e Vw 2000)
+- **Freelancing/ZZP is NOT permitted** on a kennismigrant permit
+- **Starting a BV and self-employing does NOT maintain the permit** (see self-sponsorship limitations in expat-cross-domain-workflow.md)
+
+### IND Processing Times (Realistic Estimates, 2025)
+| Application Type | Erkend Referent | Non-Erkend Referent |
+|-----------------|----------------|-------------------|
+| TEV (MVV + VVB) | 2-4 weeks | 8-12 weeks |
+| VVB only (MVV-exempt) | 2-4 weeks | 6-8 weeks |
+| Change of employer | 2-4 weeks | N/A (erkend referent required) |
+| Extension | 2-4 weeks | N/A |
+| Peak periods (Sept-Jan) | Up to 6 weeks | Up to 3 months |
+
+⚠️ Processing times are estimates. IND publishes current processing times at ind.nl. Delays of up to 3 months are common during peak periods (September-January).
 
 ### Relationship Breakdown
 - Family members hold dependent permits tied to the kennismigrant

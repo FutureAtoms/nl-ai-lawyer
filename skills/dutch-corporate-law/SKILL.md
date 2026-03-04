@@ -74,8 +74,9 @@ Consult `references/key-case-law.md` for landmark court decisions relevant to th
 
 ## Related Skills
 - **dutch-contract-review** - For reviewing SPA, SHA, and other corporate transaction agreements
-- **dutch-tax-law** - For fiscal unity (fiscale eenheid) and corporate tax structuring
+- **dutch-tax-law** - For fiscal unity (fiscale eenheid), corporate tax structuring, DGA salary norms (gebruikelijk loonregeling), and 30% ruling for expat employees
 - **dutch-employment-law** - For works council (ondernemingsraad) requirements and employee transfer in M&A
+- **dutch-immigration-law** - For highly skilled migrant (kennismigrant) sponsorship by BVs, erkend referent requirements, and self-sponsorship limitations (DGA of own BV cannot sponsor themselves as kennismigrant)
 
 ## Output Format
 ```

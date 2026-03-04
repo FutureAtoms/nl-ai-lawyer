@@ -75,8 +75,9 @@ Consult `references/key-case-law.md` for landmark court decisions relevant to th
 - `get_case_law` - Retrieve specific immigration decisions
 
 ## Related Skills
-- **dutch-employment-law** - For employment contracts (arbeidsovereenkomst) linked to work permits
-- **dutch-tax-law** - For the 30% ruling and tax implications for expats
+- **dutch-employment-law** - For employment contracts (arbeidsovereenkomst) linked to work permits, kennismigrant salary clauses, and proeftijd risks for permit holders
+- **dutch-tax-law** - For the 30% ruling and tax implications for expats (flat 30% through 2026, then 27% from 2027; partieel buitenlands belastingplichtige abolished for new rulings from 2025)
+- **dutch-corporate-law** - For BV formation by non-residents, DGA (directeur-grootaandeelhouder) status, and self-sponsorship limitations (a DGA of their own BV cannot sponsor themselves as kennismigrant)
 
 ## Output Format
 ```

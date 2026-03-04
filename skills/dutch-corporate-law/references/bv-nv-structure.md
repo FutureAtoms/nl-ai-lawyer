@@ -156,3 +156,71 @@ Directors can be personally liable to third parties under tort law if:
 ### Share Transfer
 - **BV**: Transfer requires notarial deed (Art. 2:196 BW). Blokkeringsregeling optional.
 - **NV**: Transfer of registered shares by deed or entry in shareholder register. Bearer shares freely transferable.
+
+---
+
+## BV Formation by Non-Residents and Expats
+
+### Process for Non-Resident Founders
+1. **BSN not required for incorporation** — a BV can be formed without the founder having a BSN
+2. **Notaris is mandatory** — the founder must engage a Dutch notaris (civil-law notary)
+3. **Physical presence not required** — incorporation can be done via proxy (volmacht); the notaris executes the deed on behalf of the founder
+4. **Legalization of documents** — non-EU identity documents must be legalized (apostille for Hague Convention countries; full legalization for others)
+5. **KVK registration** — within 8 days of incorporation; directors registered with residential address
+6. **Bank account** — Dutch business bank accounts can be difficult for non-residents to open; some banks require physical presence and BSN
+
+### Indicative Costs (2025)
+| Item | Cost |
+|------|------|
+| Notaris fees | EUR 500 - 2,500 |
+| KVK registration | EUR 75 |
+| Share capital | EUR 0.01 minimum |
+| Legalization/apostille | EUR 50 - 300 |
+| Legal/tax advice | EUR 1,000 - 5,000 |
+
+### DGA (Directeur-Grootaandeelhouder) Salary Norms
+
+#### Customary Salary Rule (Art. 12a Wet LB 1964)
+- A DGA must take a salary of at least **EUR 56,000** per year (2025; indexed annually)
+- The salary must be at least 75% of the salary of the most comparable employment position
+- **Exception**: If the most comparable salary is below EUR 56,000, the DGA salary may be set lower (but not below that comparable salary)
+- The Belastingdienst can adjust the DGA salary if it deems it too low (gebruikelijk loonregeling)
+
+#### DGA Salary and Kennismigrant Interaction
+- A DGA salary that meets the IND kennismigrant threshold does **not** qualify the DGA for a kennismigrant permit
+- **Self-sponsorship is not possible**: A DGA who controls their own BV (typically 50%+ or effective control) cannot be sponsored by that BV as a kennismigrant
+- Reason: the IND requires a genuine employment relationship (gezagsverhouding, Art. 7:610 BW), which is absent when the worker controls the employer
+- **Alternatives**: self-employed residence permit (zelfstandige), start-up visa, or orientation year (if eligible)
+
+### Erkend Referent Application for Newly Formed BVs
+- A newly formed BV **can** apply for erkend referent status with the IND
+- Application fee: EUR 4,588 (2025)
+- Processing time: 4-8 weeks
+- IND assesses: continuity, solvency, reliability
+- New BVs face additional scrutiny — IND may request business plans, client contracts, financial projections
+- Once recognized: the BV can sponsor kennismigrant employees (but NOT its own controlling DGA)
+
+### Self-Sponsorship Impossibility Warning
+
+⚠️ **Critical rule for expat founders**: A DGA cannot sponsor themselves as a kennismigrant through their own BV. This is the most common misunderstanding among expat entrepreneurs.
+
+**What works:**
+- Being hired as a kennismigrant by an **unrelated** employer, then starting a BV on the side
+- Applying for a **self-employed residence permit** (zelfstandige verblijfsvergunning) based on a scored points system
+- Using the **start-up visa** facilitated by a recognized facilitator
+
+**What does NOT work:**
+- Forming a BV → applying as erkend referent → sponsoring yourself as kennismigrant
+- Having a minority co-founder nominally hold majority shares to circumvent the rule (IND looks at effective control)
+
+### Full Expat BV + Sponsorship Timeline
+```
+Week 1-2:   BV formation (notaris + KVK registration)
+Immediate:  KVK registration complete
+Week 2-3:   File erkend referent application at IND
+Week 6-10:  Erkend referent status granted (4-8 weeks)
+Week 6-10:  File kennismigrant application for employee (NOT DGA)
+Week 8-14:  Kennismigrant permit approved (2-4 weeks fast-track)
+```
+
+**Cross-reference**: See `dutch-immigration-law/references/expat-cross-domain-workflow.md` for the full integrated workflow including 30% ruling timing and M-form guidance.

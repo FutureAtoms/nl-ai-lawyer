@@ -141,3 +141,45 @@ Employer must provide written information on:
 - Calculation: 1/3 monthly salary per year of service (pro rata)
 - Maximum: EUR 94,000 or one year's salary if higher (2024 figure, adjusted annually)
 - Not due if: employee's serious culpable conduct, employee under 18 working <12 hours/week, termination by mutual consent (unless agreed), bankruptcy
+
+---
+
+## Kennismigrant (Highly Skilled Migrant) Employment Considerations
+
+### Kennismigrant-Specific Contract Requirements
+Employment contracts for kennismigrant employees must address additional requirements beyond standard BW 7:610 obligations:
+
+1. **Minimum salary clause**: The contract must specify a gross salary meeting or exceeding the IND kennismigrant threshold:
+   - Standard (30+): EUR 5,493/month (2025, excl. 8% vakantiegeld)
+   - Under-30: EUR 4,028/month (2025, excl. 8% vakantiegeld)
+   - Thresholds are indexed annually — contract should include annual salary review mechanism
+2. **30% ruling clause** (if applicable): Include a provision specifying whether the 30% ruling applies and how gross/net salary is structured:
+   - Belastingdienst taxable salary threshold: EUR 46,107 (standard) / EUR 35,048 (under-30 with Master's)
+   - The 30% ruling application must be filed within 4 months of the start of employment
+   - Current law: flat 30% through 2026, then 27% from 2027 (Belastingplan 2025)
+3. **Salary reduction safeguard**: If salary drops below the IND threshold, the employer must notify IND within 4 weeks (Art. 2e Vw 2000 informatieplicht). Build in contractual protection against salary reductions that would breach immigration thresholds.
+
+### Notice Period Implications for Permit Holders
+- **Standard Dutch notice periods apply** (Art. 7:672 BW), but the consequences are more severe for kennismigrant employees:
+  - Upon termination: the employee has only a **3-month grace period** (Art. 3.31a Vb 2000) to find new qualifying employment
+  - If no new employer files a kennismigrant application within 3 months: IND may withdraw the residence permit
+  - The employee must then leave the Netherlands (or apply for a different permit type)
+- **Vaststellingsovereenkomst (settlement agreement)**: When negotiating termination with a kennismigrant:
+  - Consider extending the notice period / gardening leave to maximize job search time
+  - The WW (unemployment benefit) waiting period interacts with the 3-month immigration grace period
+  - Include a clause addressing 30% ruling continuity (new employer must apply within 3 months)
+- **Collective dismissal (WMCO)**: Kennismigrant employees are subject to the same rules, but their immigration status adds urgency
+
+### Probationary Period (Proeftijd) Risks for Kennismigrant Employees
+- **During proeftijd**: either party can terminate immediately without reason (Art. 7:652 BW)
+- **Immigration impact of proeftijd dismissal**:
+  - The 3-month grace period applies from the date of termination
+  - The employee has already relocated to the Netherlands, arranged housing, possibly brought family
+  - Proeftijd dismissal in the first month of employment creates an extremely short total window (1 month worked + 3 months grace = leaving NL within ~4 months of arrival)
+- **30% ruling impact**: If terminated during proeftijd, the 30% ruling application may not yet be approved; a new employer must file a fresh application
+- **Practical recommendation**: Employers should exercise caution with proeftijd for kennismigrant employees given the disproportionate personal impact. Consider shorter proeftijd (1 month instead of 2) or providing additional contractual notice/severance.
+
+### Cross-Reference to Immigration Law
+- See **dutch-immigration-law** → `references/kennismigrant.md` for full permit requirements, salary thresholds, change of employer procedure, and job loss grace period
+- See **dutch-immigration-law** → `references/expat-cross-domain-workflow.md` for the integrated BV formation → sponsorship → employment → 30% ruling workflow
+- See **dutch-tax-law** → `references/loonbelasting-30-procent.md` for 30% ruling details, including the reversal of the step-down schedule and the 2027 reduction to 27%

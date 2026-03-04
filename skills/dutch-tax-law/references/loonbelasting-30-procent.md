@@ -43,7 +43,7 @@
 
 ### 4. Salary Thresholds (Inkomensnorm)
 
-#### 2024/2025 Salary Thresholds (verify for current year - updated annually)
+#### 2025 Salary Thresholds (Belastingdienst — updated annually on 1 January)
 
 | Category | Minimum Taxable Salary (after 30% reduction) | Equivalent Minimum Gross Salary |
 |----------|----------------------------------------------|--------------------------------|
@@ -52,8 +52,19 @@
 | **Scientific researchers at qualifying institutions** | No threshold | No threshold |
 | **Medical specialists in training (AIOS)** | No threshold | No threshold |
 
-- The taxable salary (after the 30% deduction) must meet or exceed the threshold
-- Thresholds are indexed annually
+⚠️ **2026 thresholds** will be indexed annually (typically ~3-4% increase based on CBS wage index). Check belastingdienst.nl for confirmed 2026 amounts.
+
+#### Corresponding IND Kennismigrant Thresholds (2025 — separate system)
+
+| Category | Monthly Gross (excl. 8% vakantiegeld) | Annual Gross (approx.) |
+|----------|---------------------------------------|----------------------|
+| Standard (30+) | EUR 5,493 | EUR 65,916 |
+| Under-30 | EUR 4,028 | EUR 48,336 |
+
+- The 30% ruling and IND salary thresholds are **independent**: meeting one does not guarantee meeting the other
+- For the 30% ruling: the **taxable salary** (after 30% deduction) must meet the Belastingdienst threshold
+- For IND: the **full gross salary** (before any 30% deduction) must meet the IND threshold
+- Thresholds are indexed annually by different bodies (Belastingdienst vs. IND/CBS)
 - "Master's degree" includes Dutch Master's, foreign equivalent (must be recognized by Nuffic/IDW), or doctorate (PhD)
 - The under-30 threshold applies based on the employee's age at the start of the first day of employment
 
@@ -66,26 +77,34 @@
 - Changed from the previous maximum of 8 years (96 months)
 - The 5-year period includes any time spent in the Netherlands in prior employments
 
-### Reduction in Percentage (2024 Legislative Changes)
+### Percentage Changes (2024-2027 Legislative History)
 
-#### 2024 Tax Plan (Belastingplan 2024)
-- Proposal to reduce the maximum percentage from 30% to 27% effective 2024
-- **As enacted**: gradual reduction for new rulings:
-  - First 20 months: 30%
-  - Months 21-40: 20%
-  - Months 41-60: 10%
-- **Important**: this step-down applies to rulings granted from 1 January 2024
-- Transitional provisions exist for existing rulings (see below)
+#### Step-Down Plan — Enacted and Then Reversed
+- **Belastingplan 2024** originally enacted a gradual step-down for new rulings from 1 January 2024:
+  - First 20 months: 30%, months 21-40: 20%, months 41-60: 10%
+- **Belastingplan 2025 (Wet van 18 december 2024, Stb. 2024, 456)** REVERSED this step-down
+- The step-down schedule was repealed before it took practical effect
 
-#### Further Proposals (2025+)
-- Political discussion continues about further limitations or complete abolition
-- Various political parties have proposed caps on maximum salary eligible for the ruling
-- Verify current legislative status - this area is subject to frequent change
+#### Current Law (as of 1 January 2025)
+- **2025-2026**: Flat **30%** for the full 60-month duration
+- **From 1 January 2027**: Reduced to a flat **27%** for the full 60-month duration (Art. 31a lid 2 sub e Wet LB 1964, as amended by Belastingplan 2025)
+- No step-down structure — the percentage is uniform throughout the ruling period
+
+#### Balkenende Norm / Salary Cap (WNT)
+- From 2027, the 30% ruling (then 27%) may only be applied up to the WNT norm (Wet normering topinkomens)
+- 2025 WNT norm: EUR 233,000 (indicative; adjusted annually)
+- Income above the WNT cap: no tax-free reimbursement applies to the excess
+- This cap does NOT apply during 2025-2026 (takes effect simultaneously with the 27% rate in 2027)
 
 ### Transitional Provisions (Overgangsrecht)
-- Employees who had a 30% ruling granted **before 1 January 2024** may retain the old terms:
-  - 30% for the full remaining duration under the old 5-year maximum
-  - Subject to specific transitional rules in the Belastingplan
+
+#### 30% → 27% Transition (Belastingplan 2025)
+- Rulings granted **before 1 January 2024**: retain 30% for the full remaining duration (no reduction to 27%)
+- Rulings granted **from 1 January 2024 through 31 December 2026**: retain 30% for the full 60-month duration
+- Rulings granted **from 1 January 2027 onward**: 27% from the start
+- The repealed step-down (30%/20%/10%) does NOT apply to any ruling — it was reversed before taking practical effect
+
+#### 5-Year vs. 8-Year Regime
 - Employees who had a ruling under the **old 8-year regime** (pre-2019 change):
   - Transitional provisions from the 2019 change may still apply
   - Duration was capped at 5 years with some grandfathering
@@ -106,13 +125,17 @@
 - **Box 3**: Only Dutch-sited assets are taxable (Dutch real estate, claims secured by Dutch real estate). Foreign bank accounts, investments, and property are **exempt** from Box 3 taxation
 - Very advantageous for employees with significant foreign wealth or investment portfolios
 
-### Important Limitations
-- **2025 legislative changes**: The partieel buitenlands belastingplichtige status is being phased out
-  - Belastingplan 2025 proposes abolition for new rulings from 2025
-  - Transitional provisions may apply for existing rulings
-  - Verify current status - this is actively debated in Parliament
+### Important Limitations — Abolition from 2025
+
+- **Abolished for new rulings from 1 January 2025** (Belastingplan 2025, Stb. 2024, 456):
+  - Employees who receive their first 30% ruling from 1 January 2025 onward **cannot** opt for partial non-resident status
+  - This applies to Box 2 and Box 3 only — Box 1 treatment is unchanged
+- **Transitional provision for existing rulings**:
+  - Employees who had a 30% ruling granted **before 1 January 2025** retain the right to elect partial non-resident status **through the expiry of their existing ruling**
+  - This transitional right applies until the end of the 60-month ruling period (or until the ruling is otherwise terminated)
 - The option must be explicitly elected in the annual income tax return (aangifte inkomstenbelasting)
-- Does not affect Box 1 taxation - all employment income and eigenwoningforfait remain fully taxable
+- Does not affect Box 1 taxation — all employment income and eigenwoningforfait remain fully taxable
+- **Practical impact**: New expats from 2025 onward with significant foreign investments/wealth lose a major tax advantage. Consider structuring advice before the ruling start date
 
 ---
 
@@ -151,17 +174,18 @@
 - Non-EU/EEA employees typically need a **kennismigrantvergunning** (highly skilled migrant residence permit)
 - The IND (Immigratie- en Naturalisatiedienst) salary thresholds differ from the 30% ruling thresholds:
 
-#### IND Kennismigrant Salary Thresholds (2024/2025 - verify annually)
+#### IND Kennismigrant Salary Thresholds (2025 — verify annually at ind.nl)
 | Category | Monthly Gross Salary (excl. 8% vacation allowance) |
 |----------|---------------------------------------------------|
-| Standard (30+) | EUR 5,008 |
-| Under-30 | EUR 3,672 |
-| Orientation year (zoekjaar) | EUR 2,801 |
-| Blue Card (Europese Blauwe Kaart) | EUR 6,245 |
+| Standard (30+) | EUR 5,493 |
+| Under-30 | EUR 4,028 |
+| Orientation year (zoekjaar) | EUR 2,887 |
+| Blue Card (Europese Blauwe Kaart) | EUR 6,435 |
 
 - These are **gross salary** thresholds (not reduced by 30% ruling)
 - An employee can qualify for BOTH the kennismigrant permit AND the 30% ruling, but the thresholds are independent
 - Losing the 30% ruling does NOT affect the residence permit (and vice versa), provided salary thresholds for each scheme are independently met
+- ⚠️ 2026 thresholds will be published by IND in Q4 2025 (typically ~3-4% increase)
 
 ### EU/EEA Nationals
 - No work permit or residence permit required (freedom of movement)
@@ -253,4 +277,4 @@
 
 ---
 
-*Last updated: 2024/2025 - Salary thresholds, tax rates, and legislative provisions are subject to annual changes. The 30% ruling regime has been modified significantly in 2024 and further changes are under discussion for 2025+. Always verify current thresholds and applicable transitional provisions with the Belastingdienst or a qualified tax advisor.*
+*Last updated: March 2026 — Reflects Belastingplan 2025 (Stb. 2024, 456) which REVERSED the 30%/20%/10% step-down and established: flat 30% through 2026, then 27% from 2027. Partieel buitenlands belastingplichtige abolished for new rulings from 1 Jan 2025. Salary thresholds shown are 2025 figures; 2026 thresholds subject to annual indexation. Always verify current thresholds and applicable transitional provisions with the Belastingdienst or a qualified tax advisor.*
