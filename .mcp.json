@@ -17,11 +17,6 @@
       "command": "node",
       "args": ["cerebra-legal-mcp/build/index.js"],
       "description": "Legal reasoning and analysis MCP server"
-    },
-    "dutch-law-downloader": {
-      "command": "npx",
-      "args": ["-y", "@smithery/cli@latest", "run", "MinBZK/dutch-law-downloader"],
-      "description": "Download and access Dutch law texts from MinBZK"
     }
   }
 }

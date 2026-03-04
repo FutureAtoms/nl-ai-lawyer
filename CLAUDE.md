@@ -11,6 +11,8 @@ Corporate law (primary), contract law, employment law, privacy/GDPR, IP, real es
 - **12 slash commands** in `commands/` - user-facing entry points
 - **7 specialized agents** in `agents/` - for multi-agent team workflows
 - **Custom MCP server** in `dutch-legal-mcp/` - TypeScript server wrapping Dutch legal APIs
+- **Cerebra Legal MCP** in `cerebra-legal-mcp/` - Legal reasoning server
+- **OpenTK MCP** - Dutch parliamentary data (installed via npx)
 - **Python scripts** in `scripts/` - utility fallback scripts
 - **Templates** in `assets/templates/` - legal document templates
 - **Disclaimers** in `assets/disclaimers/` - mandatory NL + EN disclaimers
