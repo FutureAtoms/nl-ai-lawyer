@@ -154,17 +154,20 @@ export function transformKoopSruSearch(xml: string): {
   const searchRetrieveResponse =
     extractPath(parsed, ["searchRetrieveResponse"]) ??
     extractPath(parsed, ["srw:searchRetrieveResponse"]) ??
+    extractPath(parsed, ["zs:searchRetrieveResponse"]) ??
     parsed;
 
   const totalResults = Number(
     extractPath(searchRetrieveResponse, ["numberOfRecords"]) ??
       extractPath(searchRetrieveResponse, ["srw:numberOfRecords"]) ??
+      extractPath(searchRetrieveResponse, ["zs:numberOfRecords"]) ??
       0,
   );
 
   const records = ensureArray(
     extractPath(searchRetrieveResponse, ["records", "record"]) ??
       extractPath(searchRetrieveResponse, ["srw:records", "srw:record"]) ??
+      extractPath(searchRetrieveResponse, ["zs:records", "zs:record"]) ??
       [],
   );
 
@@ -182,24 +185,37 @@ export function transformKoopSruSearch(xml: string): {
 
     const meta = (gzd as Record<string, unknown>) ?? {};
 
+    // SRU 1.2 nests under originalData > overheidbwb:meta > owmskern
+    const owmskern =
+      extractPath(meta, ["originalData", "owmskern"]) ??
+      extractPath(meta, ["originalData", "overheidbwb:meta", "owmskern"]) ??
+      {};
+
+    const kern = owmskern as Record<string, unknown>;
+
     return {
       bwbId:
+        extractText(kern, ["dcterms:identifier"]) ??
         extractText(meta, ["originalData", "owmskern:identifier"]) ??
         extractText(meta, ["identifier"]) ??
         "",
       title:
+        extractText(kern, ["dcterms:title"]) ??
         extractText(meta, ["originalData", "owmskern:title"]) ??
         extractText(meta, ["title"]) ??
         "",
       type:
+        extractText(kern, ["dcterms:type"]) ??
         extractText(meta, ["originalData", "owmskern:type"]) ??
         extractText(meta, ["type"]) ??
         "",
       creator:
+        extractText(kern, ["dcterms:creator"]) ??
         extractText(meta, ["originalData", "owmskern:creator"]) ??
         extractText(meta, ["creator"]) ??
         "",
       modified:
+        extractText(kern, ["dcterms:modified"]) ??
         extractText(meta, ["enrichedData", "modified"]) ??
         extractText(meta, ["modified"]) ??
         "",

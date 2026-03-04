@@ -16,8 +16,11 @@ import {
   type KoopSearchResult,
 } from "../utils/xml-transform.js";
 
-const BASE_URL = "https://repository.overheid.nl";
+// SRU endpoint moved from repository.overheid.nl to zoekservice.overheid.nl (2025)
+const SRU_BASE_URL = "https://zoekservice.overheid.nl";
 const SRU_PATH = "/sru/Search";
+const WETTEN_BASE_URL = "https://wetten.overheid.nl";
+const REPO_BASE_URL = "https://repository.officiele-overheidspublicaties.nl";
 const BACKEND = "koopSru";
 
 export interface LegislationSearchParams {
@@ -63,23 +66,20 @@ function buildCqlQuery(params: LegislationSearchParams): string {
   const parts: string[] = [];
 
   if (params.query) {
-    // Full-text search across BWB documents
-    parts.push(`overheidwg.text all "${params.query}"`);
+    // Title search using 'adj' operator for flexible matching (zoekservice.overheid.nl)
+    parts.push(`overheidbwb.titel adj "${params.query}"`);
   }
 
   if (params.area) {
-    parts.push(`overheidwg.rechtsgebied = "${params.area}"`);
+    parts.push(`overheidbwb.rechtsgebied = "${params.area}"`);
   }
 
   if (params.dateFrom) {
-    parts.push(`overheidwg.geldigheidsdatum >= "${params.dateFrom}"`);
+    parts.push(`overheidbwb.geldigheidsperiode_startdatum >= "${params.dateFrom}"`);
   }
   if (params.dateTo) {
-    parts.push(`overheidwg.geldigheidsdatum <= "${params.dateTo}"`);
+    parts.push(`overheidbwb.geldigheidsperiode_einddatum <= "${params.dateTo}"`);
   }
-
-  // Default: search in BWB collection
-  parts.push(`overheidwg.collectie = "BWB"`);
 
   return parts.join(" AND ");
 }
@@ -106,14 +106,14 @@ export async function searchLegislation(
 
   const urlParams = new URLSearchParams({
     operation: "searchRetrieve",
-    version: "2.0",
+    version: "1.2",
+    "x-connection": "BWB",
     query: cql,
     maximumRecords: String(params.max ?? 10),
     startRecord: String(params.startRecord ?? 1),
-    recordSchema: "gzd",
   });
 
-  const url = `${BASE_URL}${SRU_PATH}?${urlParams.toString()}`;
+  const url = `${SRU_BASE_URL}${SRU_PATH}?${urlParams.toString()}`;
 
   await rateLimiter.acquire(BACKEND);
   const response = await fetch(url, {
@@ -146,56 +146,113 @@ export async function getArticle(
   const cached = cache.get<ArticleContent>("legislation", cacheKey);
   if (cached) return cached;
 
-  // BWB article URL pattern
-  const url = `${BASE_URL}/frbr/bwb/${encodeURIComponent(bwbId)}/nl/article/${encodeURIComponent(articleNumber)}`;
+  // Strategy 1: Try to find the article in the XML repository via SRU metadata
+  // First, search SRU for the BWB to get the current dated XML URL
+  try {
+    const article = await getArticleFromXmlRepo(bwbId, articleNumber);
+    if (article) {
+      cache.set("legislation", cacheKey, article);
+      return article;
+    }
+  } catch {
+    // Fall through to HTML fallback
+  }
+
+  // Strategy 2: Fetch from wetten.overheid.nl HTML (follows redirects)
+  const wettenUrl = `${WETTEN_BASE_URL}/${encodeURIComponent(bwbId)}`;
+  await rateLimiter.acquire(BACKEND);
+  const response = await fetch(wettenUrl, {
+    headers: { Accept: "text/html" },
+    redirect: "follow",
+  });
+
+  if (response.ok) {
+    const html = await response.text();
+    const articleText = extractArticleFromHtml(html, articleNumber);
+    if (articleText) {
+      const result: ArticleContent = {
+        bwbId,
+        articleNumber,
+        title: `Artikel ${articleNumber}`,
+        text: articleText,
+      };
+      cache.set("legislation", cacheKey, result);
+      return result;
+    }
+  }
+
+  throw new Error(
+    `Article fetch failed: Could not retrieve article ${articleNumber} from ${bwbId}.`,
+  );
+}
+
+/**
+ * Fetch a specific article from the official XML repository.
+ * Tries to construct the XML URL from the BWB ID and today's date.
+ */
+async function getArticleFromXmlRepo(
+  bwbId: string,
+  articleNumber: string,
+): Promise<ArticleContent | null> {
+  // Construct the XML URL using today's date
+  const today = new Date().toISOString().split("T")[0]; // YYYY-MM-DD
+  const xmlUrl = `${REPO_BASE_URL}/bwb/${bwbId}/${today}_0/xml/${bwbId}_${today}_0.xml`;
 
   await rateLimiter.acquire(BACKEND);
-  const response = await fetch(url, {
+  const response = await fetch(xmlUrl, {
     headers: { Accept: "application/xml" },
   });
 
-  if (!response.ok) {
-    // Fallback: try the XML content endpoint
-    const fallbackUrl = `https://wetten.overheid.nl/${encodeURIComponent(bwbId)}/artikel/${encodeURIComponent(articleNumber)}`;
-    await rateLimiter.acquire(BACKEND);
-    const fallbackResponse = await fetch(fallbackUrl, {
-      headers: { Accept: "text/html" },
-    });
-
-    if (!fallbackResponse.ok) {
-      throw new Error(
-        `KOOP article fetch failed (${response.status}): Could not retrieve article ${articleNumber} from ${bwbId}`,
-      );
-    }
-
-    // Parse the HTML/XML response
-    const text = await fallbackResponse.text();
-    const result: ArticleContent = {
-      bwbId,
-      articleNumber,
-      title: `Artikel ${articleNumber}`,
-      text: extractTextContent(text),
-    };
-
-    cache.set("legislation", cacheKey, result);
-    return result;
-  }
+  if (!response.ok) return null;
 
   const xml = await response.text();
-  const parsed = parseXml(xml);
+  return extractArticleFromXml(xml, bwbId, articleNumber);
+}
 
-  // Navigate to the article content
-  const article = findArticleContent(parsed, articleNumber);
+/**
+ * Extract a specific article from BWB XML content.
+ * BWB XML uses <artikel> elements with a label like 'Artikel 610'.
+ */
+function extractArticleFromXml(
+  xml: string,
+  bwbId: string,
+  articleNumber: string,
+): ArticleContent | null {
+  // Normalize article number: "7:610" -> "610", "610" -> "610"
+  const normalizedArt = articleNumber.includes(":")
+    ? articleNumber.split(":").pop()!
+    : articleNumber;
 
-  const result: ArticleContent = {
-    bwbId,
-    articleNumber,
-    title: article.title || `Artikel ${articleNumber}`,
-    text: article.text,
-  };
+  // Match the article element by its label attribute
+  const patterns = [
+    new RegExp(
+      `<artikel[^>]*label="Artikel\\s+${escapeRegex(normalizedArt)}"[^>]*>([\\s\\S]*?)</artikel>`,
+      "i",
+    ),
+    new RegExp(
+      `<artikel[^>]*label="Artikel\\s+${escapeRegex(articleNumber)}"[^>]*>([\\s\\S]*?)</artikel>`,
+      "i",
+    ),
+  ];
 
-  cache.set("legislation", cacheKey, result);
-  return result;
+  for (const pattern of patterns) {
+    const match = xml.match(pattern);
+    if (match) {
+      // Strip XML tags to get plain text
+      const text = match[0]
+        .replace(/<[^>]+>/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+      return {
+        bwbId,
+        articleNumber,
+        title: `Artikel ${articleNumber}`,
+        text,
+      };
+    }
+  }
+
+  return null;
 }
 
 /**
@@ -207,16 +264,16 @@ export async function getVersions(bwbId: string): Promise<VersionInfo> {
   if (cached) return cached;
 
   // Use SRU to find all versions of a BWB
-  const cql = `overheidwg.identifier = "${bwbId}"`;
+  const cql = `dcterms.identifier = "${bwbId}"`;
   const urlParams = new URLSearchParams({
     operation: "searchRetrieve",
-    version: "2.0",
+    version: "1.2",
+    "x-connection": "BWB",
     query: cql,
     maximumRecords: "50",
-    recordSchema: "gzd",
   });
 
-  const url = `${BASE_URL}${SRU_PATH}?${urlParams.toString()}`;
+  const url = `${SRU_BASE_URL}${SRU_PATH}?${urlParams.toString()}`;
 
   await rateLimiter.acquire(BACKEND);
   const response = await fetch(url, {
@@ -232,15 +289,17 @@ export async function getVersions(bwbId: string): Promise<VersionInfo> {
   const xml = await response.text();
   const parsed = parseXml(xml);
 
-  // Extract version entries from the SRU response
+  // Extract version entries from the SRU response (handles both SRU 1.2 and 2.0 namespace variants)
   const sruResponse =
     getNestedProp(parsed, "searchRetrieveResponse") ??
     getNestedProp(parsed, "srw:searchRetrieveResponse") ??
+    getNestedProp(parsed, "zs:searchRetrieveResponse") ??
     parsed;
 
   const records = ensureArray(
     getNestedProp(sruResponse, "records", "record") ??
     getNestedProp(sruResponse, "srw:records", "srw:record") ??
+    getNestedProp(sruResponse, "zs:records", "zs:record") ??
     [],
   );
 
@@ -325,13 +384,70 @@ function collectText(obj: unknown): string {
 }
 
 /**
- * Extract readable text from an HTML string (simple approach).
+ * Extract a specific article from wetten.overheid.nl HTML.
+ * wetten.overheid.nl uses div elements with id attributes like "Artikel610" or anchors.
  */
-function extractTextContent(html: string): string {
-  return html
+function extractArticleFromHtml(html: string, articleNumber: string): string | null {
+  const normalizedArt = articleNumber.includes(":")
+    ? articleNumber.split(":").pop()!
+    : articleNumber;
+
+  // Clean the HTML first
+  const clean = html
     .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, "")
     .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, "")
-    .replace(/<[^>]+>/g, " ")
+    .replace(/<nav[^>]*>[\s\S]*?<\/nav>/gi, "")
+    .replace(/<header[^>]*>[\s\S]*?<\/header>/gi, "")
+    .replace(/<footer[^>]*>[\s\S]*?<\/footer>/gi, "");
+
+  // Strategy 1: Find by id attribute (wetten.nl uses id="Artikel610")
+  const idPatterns = [
+    new RegExp(`id="[^"]*Artikel${escapeRegex(normalizedArt)}"[^>]*>([\\s\\S]*?)(?=<div[^>]*id="[^"]*Artikel|<\\/section|$)`, "i"),
+    new RegExp(`id="[^"]*Artikel_${escapeRegex(normalizedArt)}"[^>]*>([\\s\\S]*?)(?=<div[^>]*id="[^"]*Artikel|<\\/section|$)`, "i"),
+  ];
+
+  for (const pattern of idPatterns) {
+    const match = clean.match(pattern);
+    if (match) {
+      const text = cleanWettenUiNoise(match[0].replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim());
+      if (text.length > 20) return text;
+    }
+  }
+
+  // Strategy 2: Find in plain text between "Artikel X" headers
+  const plainText = clean.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+  const artStart = plainText.indexOf(`Artikel ${normalizedArt} `);
+  if (artStart !== -1) {
+    // Find the next "Artikel" header (but not "Artikel X" variants like "Artikel Xa")
+    const nextArtPattern = new RegExp(`Artikel\\s+${escapeRegex(normalizedArt)}[a-z]\\b|Artikel\\s+(?!${escapeRegex(normalizedArt)}\\b)\\d`, "i");
+    const rest = plainText.substring(artStart + 10);
+    const nextMatch = rest.search(nextArtPattern);
+    const articleText = nextMatch !== -1
+      ? plainText.substring(artStart, artStart + 10 + nextMatch)
+      : plainText.substring(artStart, artStart + 3000);
+
+    if (articleText.length > 30) return cleanWettenUiNoise(articleText.trim());
+  }
+
+  return null;
+}
+
+function escapeRegex(str: string): string {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+/**
+ * Remove wetten.nl UI noise from extracted text (navigation hints, buttons, etc.)
+ */
+function cleanWettenUiNoise(text: string): string {
+  return text
+    .replace(/id="[^"]*"\s*/g, "")
+    .replace(/Toon relaties in LiDO/gi, "")
+    .replace(/Maak een permanente link/gi, "")
+    .replace(/Toon wetstechnische informatie/gi, "")
+    .replace(/Druk het regelingonderdeel af/gi, "")
+    .replace(/Sla het regelingonderdeel op/gi, "")
+    .replace(/\.\.\.\s+/g, "")
     .replace(/\s+/g, " ")
     .trim();
 }
