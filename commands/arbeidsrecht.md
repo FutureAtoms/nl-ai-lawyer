@@ -1,6 +1,6 @@
 ---
 name: arbeidsrecht
-description: Employment law query
+description: "Answer a Dutch employment law question (dismissal, contracts, CAO, non-compete)"
 arguments:
   - name: question
     description: Employment law question

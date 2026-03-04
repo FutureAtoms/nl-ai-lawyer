@@ -1,6 +1,6 @@
 ---
 name: dutch-administrative-law
-description: AWB procedures, objection and appeal against government decisions, government liability
+description: "AWB procedures, objection and appeal against government decisions, government liability. Use this skill whenever the user asks about Dutch administrative law, bezwaar, beroep, omgevingsvergunning, building permits, government decisions, bestuursrecht, or Awb procedures."
 ---
 
 # Dutch Administrative Law

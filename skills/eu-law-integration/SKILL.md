@@ -1,6 +1,6 @@
 ---
 name: eu-law-integration
-description: EU law supremacy in the Netherlands, directives implementation, CJEU preliminary rulings, and interaction between EU and Dutch legal orders
+description: "EU law supremacy in the Netherlands, directives implementation, CJEU preliminary rulings, and interaction between EU and Dutch legal orders. Use this skill whenever the user asks about EU law in the Netherlands, direct effect, directives implementation, CJEU, preliminary rulings, or EU-Dutch legal relationship."
 ---
 
 # EU Law Integration in the Netherlands

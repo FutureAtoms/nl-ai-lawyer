@@ -1,6 +1,6 @@
 ---
 name: search-wetgeving
-description: Search Dutch legislation
+description: "Search and retrieve Dutch legislation articles from Burgerlijk Wetboek and other statutes"
 arguments:
   - name: query
     description: Search terms or law name

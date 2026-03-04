@@ -1,6 +1,6 @@
 ---
 name: brief
-description: Generate legal briefing on a Dutch law topic
+description: "Generate a structured legal briefing on any Dutch law topic"
 arguments:
   - name: topic
     description: Legal topic to brief on

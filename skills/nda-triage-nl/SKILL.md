@@ -1,6 +1,6 @@
 ---
 name: nda-triage-nl
-description: Rapid NDA/geheimhoudingsovereenkomst screening with GREEN/YELLOW/RED triage under Dutch law
+description: "Rapid NDA/geheimhoudingsovereenkomst screening with GREEN/YELLOW/RED triage under Dutch law. Use this skill whenever the user asks to review, screen, or triage an NDA, non-disclosure agreement, geheimhoudingsovereenkomst, confidentiality agreement, or secrecy agreement under Dutch law."
 ---
 
 # NDA Triage - Dutch Law (Geheimhoudingsovereenkomst)

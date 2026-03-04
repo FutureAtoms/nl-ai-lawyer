@@ -1,6 +1,6 @@
 ---
 name: company-check
-description: KVK company registry lookup
+description: "Look up a Dutch company in the KVK (Chamber of Commerce) registry"
 arguments:
   - name: company
     description: Company name or KVK number

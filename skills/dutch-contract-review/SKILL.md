@@ -1,6 +1,6 @@
 ---
 name: dutch-contract-review
-description: Clause-by-clause review of contracts against Dutch civil law (BW Boek 6/7) with GREEN/YELLOW/RED risk flagging
+description: "Clause-by-clause review of contracts against Dutch civil law (BW Boek 6/7) with GREEN/YELLOW/RED risk flagging. Use this skill whenever the user asks to review, analyze, or check a Dutch contract, agreement, SaaS license, distribution agreement, service agreement, or any commercial contract governed by Dutch law. Also use when the user mentions algemene voorwaarden, liability clauses, indemnification, or contract risk assessment."
 ---
 
 # Dutch Contract Review

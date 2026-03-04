@@ -1,6 +1,6 @@
 ---
 name: legal-memo
-description: Write structured legal memorandum
+description: "Write a structured Dutch legal memorandum with citations and analysis"
 arguments:
   - name: question
     description: Legal question to analyze

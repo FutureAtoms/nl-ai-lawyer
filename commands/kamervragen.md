@@ -1,6 +1,6 @@
 ---
 name: kamervragen
-description: Search Dutch parliamentary questions and debates
+description: "Search Dutch parliamentary questions, debates, and legislative history"
 arguments:
   - name: query
     description: Search terms for parliamentary documents

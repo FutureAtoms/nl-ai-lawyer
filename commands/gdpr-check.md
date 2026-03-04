@@ -1,6 +1,6 @@
 ---
 name: gdpr-check
-description: AVG/GDPR compliance assessment
+description: "Assess AVG/GDPR compliance for a Dutch data processing activity"
 arguments:
   - name: processing
     description: Description of data processing activity

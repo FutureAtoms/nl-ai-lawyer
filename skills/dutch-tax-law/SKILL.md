@@ -1,6 +1,6 @@
 ---
 name: dutch-tax-law
-description: Corporate tax, VAT, payroll tax, 30% ruling, fiscal unity, and other Dutch tax matters
+description: "Corporate tax, VAT, payroll tax, 30% ruling, fiscal unity, and other Dutch tax matters. Use this skill whenever the user asks about Dutch taxes, vennootschapsbelasting, BTW, loonbelasting, 30% ruling, fiscale eenheid, Box 1/2/3, or expat tax in the Netherlands."
 ---
 
 # Dutch Tax Law

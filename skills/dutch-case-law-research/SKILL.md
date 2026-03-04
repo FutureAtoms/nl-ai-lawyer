@@ -1,6 +1,6 @@
 ---
 name: dutch-case-law-research
-description: Search, retrieve, and analyze Dutch case law using ECLI identifiers and Rechtspraak.nl
+description: "Search, retrieve, and analyze Dutch case law using ECLI identifiers and Rechtspraak.nl. Use this skill whenever the user asks about Dutch court decisions, jurisprudentie, rechtspraak, case law, ECLI numbers, Hoge Raad rulings, or wants to find legal precedents under Dutch law."
 ---
 
 # Dutch Case Law Research

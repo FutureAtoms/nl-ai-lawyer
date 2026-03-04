@@ -1,6 +1,6 @@
 ---
 name: dutch-criminal-law
-description: Criminal code, economic criminal law, corporate criminal liability, and criminal procedure under Dutch law
+description: "Criminal code, economic criminal law, corporate criminal liability, and criminal procedure under Dutch law. Use this skill whenever the user asks about Dutch criminal law, strafrecht, FIOD, corporate criminal liability, environmental crimes, valsheid in geschrift, or WED offenses."
 ---
 
 # Dutch Criminal Law

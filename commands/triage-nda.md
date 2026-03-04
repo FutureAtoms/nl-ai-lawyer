@@ -1,6 +1,6 @@
 ---
 name: triage-nda
-description: Rapid NDA/geheimhoudingsovereenkomst pre-screening
+description: "Quick screen an NDA or confidentiality agreement under Dutch law with traffic-light risk triage"
 arguments:
   - name: nda
     description: NDA text or file path

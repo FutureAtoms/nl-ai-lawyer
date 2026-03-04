@@ -1,6 +1,6 @@
 ---
 name: dutch-legislation-lookup
-description: Retrieve, explain, and contextualize Dutch legislation from BWB/CVDR databases
+description: "Retrieve, explain, and contextualize Dutch legislation from BWB/CVDR databases. Use this skill whenever the user asks about Dutch laws, BW articles, wetgeving, statutes, Burgerlijk Wetboek provisions, or wants to look up specific articles of Dutch law."
 ---
 
 # Dutch Legislation Lookup

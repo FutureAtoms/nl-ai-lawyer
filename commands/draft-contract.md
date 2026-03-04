@@ -1,6 +1,6 @@
 ---
 name: draft-contract
-description: Generate Dutch contract from requirements
+description: "Draft a Dutch contract from requirements (NDA, employment, service agreement, etc.)"
 arguments:
   - name: type
     description: Contract type (arbeidsovereenkomst, huurovereenkomst, koopovereenkomst, dienstverlening, etc.)

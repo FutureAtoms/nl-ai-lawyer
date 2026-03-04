@@ -1,6 +1,6 @@
 ---
 name: review-contract
-description: Dutch contract clause-by-clause review with risk flags
+description: "Review a Dutch contract clause-by-clause with GREEN/YELLOW/RED risk flags against BW Boek 6/7"
 arguments:
   - name: contract
     description: Contract text or file path to review

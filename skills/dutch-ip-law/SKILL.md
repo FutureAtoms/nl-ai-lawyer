@@ -1,6 +1,6 @@
 ---
 name: dutch-ip-law
-description: Copyright, patents, Benelux trademarks, trade secrets, and other IP rights under Dutch and Benelux law
+description: "Copyright, patents, Benelux trademarks, trade secrets, and other IP rights under Dutch and Benelux law. Use this skill whenever the user asks about Dutch intellectual property, auteursrecht, copyright ownership, trademark registration, BOIP, patent law, trade secrets, or Wet bescherming bedrijfsgeheimen."
 ---
 
 # Dutch Intellectual Property Law

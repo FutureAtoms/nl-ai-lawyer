@@ -1,6 +1,6 @@
 ---
 name: dutch-immigration-law
-description: Residence permits, knowledge migrant scheme, IND procedures, and work permits under Dutch immigration law
+description: "Residence permits, knowledge migrant scheme, IND procedures, and work permits under Dutch immigration law. Use this skill whenever the user asks about Dutch immigration, kennismigrant, visa, verblijfsvergunning, IND, work permits, family reunification, or moving to the Netherlands."
 ---
 
 # Dutch Immigration Law

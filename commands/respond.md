@@ -1,6 +1,6 @@
 ---
 name: respond
-description: Generate templated legal response
+description: "Generate a templated legal response (DSAR reply, discovery hold notice, objection letter)"
 arguments:
   - name: type
     description: Response type (dsar, discovery-hold, bezwaar, ingebrekestelling, sommatiebrief)

@@ -1,6 +1,6 @@
 ---
 name: search-rechtspraak
-description: Search Dutch case law database
+description: "Search Dutch case law (rechtspraak) by keyword, ECLI number, court, or legal topic"
 arguments:
   - name: query
     description: Search terms (Dutch or English)

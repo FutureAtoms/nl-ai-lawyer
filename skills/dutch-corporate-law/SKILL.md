@@ -1,6 +1,6 @@
 ---
 name: dutch-corporate-law
-description: BV/NV formation, corporate governance, M&A, KVK registration, and BW Book 2 analysis
+description: "BV/NV formation, corporate governance, M&A, KVK registration, and BW Book 2 analysis. Use this skill whenever the user asks about Dutch companies, BV incorporation, shareholder agreements, director liability, bestuurdersaansprakelijkheid, aandeelhoudersovereenkomst, corporate governance, or KVK registration."
 ---
 
 # Dutch Corporate Law

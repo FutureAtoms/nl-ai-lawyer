@@ -1,6 +1,6 @@
 ---
 name: dutch-real-estate-law
-description: Real estate transactions, rental law, kadaster, leasehold, and property law under Dutch law
+description: "Real estate transactions, rental law, kadaster, leasehold, and property law under Dutch law. Use this skill whenever the user asks about buying property in the Netherlands, huurrecht, erfpacht, commercial lease, koopovereenkomst, notaris, or Dutch real estate transactions."
 ---
 
 # Dutch Real Estate Law
