@@ -65,8 +65,14 @@ function buildCqlQuery(params: LegislationSearchParams): string {
   const parts: string[] = [];
 
   if (params.query) {
-    // Title search using 'adj' operator for flexible matching (zoekservice.overheid.nl)
-    parts.push(`overheidbwb.titel adj "${params.query}"`);
+    // Extract law name keywords from the query (strip article numbers, generic words)
+    // Users often search like "Burgerlijk Wetboek artikel 7:653 concurrentiebeding"
+    // but the SRU only supports title search, not full-text article content search
+    const titleKeywords = extractTitleKeywords(params.query);
+    if (titleKeywords) {
+      // Use 'all' operator: matches if ALL keywords appear anywhere in the title
+      parts.push(`overheidbwb.titel all "${titleKeywords}"`);
+    }
   }
 
   if (params.area) {
@@ -81,6 +87,65 @@ function buildCqlQuery(params: LegislationSearchParams): string {
   }
 
   return parts.join(" AND ");
+}
+
+/**
+ * Extract likely law title keywords from a user query.
+ *
+ * SRU title search only matches against law titles (e.g. "Burgerlijk Wetboek",
+ * "Auteurswet"), NOT article content. Queries like "Burgerlijk Wetboek artikel
+ * 7:653 concurrentiebeding" must be reduced to just "Burgerlijk Wetboek" —
+ * content keywords like "concurrentiebeding" cause the `all` operator to fail.
+ */
+function extractTitleKeywords(query: string): string {
+  // Step 1: Remove article references ("artikel 7:653a", "art. 6:248")
+  const cleaned = query
+    .replace(/\b(?:artikel|art\.?)\s+\d+[:\.]?\d*[a-z]?\b/gi, "")
+    .replace(/\b\d+[:.]\d+[a-z]?\b/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  // Step 2: Try to identify the law name — return ONLY that for the title search
+  const lawName = identifyLawName(cleaned);
+  if (lawName) return lawName;
+
+  // Step 3: No recognizable law name — strip stop words and return remainder
+  return cleaned
+    .replace(/\b(?:over|betreffende|inzake|omtrent|van|de|het|een|voor|met|bij|op|in|en|of|aan|uit|tot|naar)\b/gi, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+/**
+ * Identify a Dutch law name from a search query.
+ * Returns ONLY the law name, stripping content keywords (e.g. "concurrentiebeding").
+ */
+function identifyLawName(text: string): string | null {
+  // 1. Known multi-word Dutch law names (most specific first)
+  const knownLaws: RegExp[] = [
+    /Burgerlijk\s+Wetboek/i,
+    /Wetboek\s+van\s+(?:Strafrecht|Koophandel|Burgerlijke\s+Rechtsvordering|Strafvordering)/i,
+    /Algemene\s+wet\s+(?:bestuursrecht|gelijke\s+behandeling|inzake\s+rijksbelastingen)/i,
+    /Wet\s+minimumloon\s+en\s+minimumvakantiebijslag/i,
+    /Wet\s+(?:arbeid\s+en\s+zorg|werk\s+en\s+zekerheid|arbeidsmarkt\s+in\s+balans)/i,
+    /Wet\s+op\s+de\s+(?:ondernemingsraden|collectieve\s+arbeidsovereenkomst|loonbelasting|vennootschapsbelasting|huurtoeslag)/i,
+    /Wet\s+op\s+het\s+(?:financieel\s+toezicht|notarisambt|hoger\s+onderwijs)/i,
+    /Wet\s+(?:inkomstenbelasting|bescherming\s+persoonsgegevens|geneesmiddelenprijzen)/i,
+  ];
+  for (const pattern of knownLaws) {
+    const match = text.match(pattern);
+    if (match) return match[0];
+  }
+
+  // 2. Compound words ending in -wet (Auteurswet, Opiumwet, Grondwet, Faillissementswet, etc.)
+  const compound = text.match(/\b[A-Za-z]{3,}wet\b/i);
+  if (compound) return compound[0];
+
+  // 3. Common abbreviations (case-sensitive)
+  const abbrev = text.match(/\b(?:BW|WvK|Sr|Sv|Gw|Awb|WOR|WAB|WML|Fw|WIA|WW|AOW|ZW|WSNP|EVRM|WAADI|WMCO)\b/);
+  if (abbrev) return abbrev[0];
+
+  return null;
 }
 
 /**
