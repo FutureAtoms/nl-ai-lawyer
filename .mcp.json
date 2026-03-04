@@ -15,7 +15,7 @@
     },
     "cerebra-legal": {
       "command": "node",
-      "args": ["node_modules/mcp-cerebra-legal-server/dist/index.js"],
+      "args": ["cerebra-legal-mcp/build/index.js"],
       "description": "Legal reasoning and analysis MCP server"
     },
     "dutch-law-downloader": {
