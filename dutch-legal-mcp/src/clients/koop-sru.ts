@@ -20,7 +20,6 @@ import {
 const SRU_BASE_URL = "https://zoekservice.overheid.nl";
 const SRU_PATH = "/sru/Search";
 const WETTEN_BASE_URL = "https://wetten.overheid.nl";
-const REPO_BASE_URL = "https://repository.officiele-overheidspublicaties.nl";
 const BACKEND = "koopSru";
 
 export interface LegislationSearchParams {
@@ -146,21 +145,9 @@ export async function getArticle(
   const cached = cache.get<ArticleContent>("legislation", cacheKey);
   if (cached) return cached;
 
-  // Strategy 1: Try to find the article in the XML repository via SRU metadata
-  // First, search SRU for the BWB to get the current dated XML URL
-  try {
-    const article = await getArticleFromXmlRepo(bwbId, articleNumber);
-    if (article) {
-      cache.set("legislation", cacheKey, article);
-      return article;
-    }
-  } catch {
-    // Fall through to HTML fallback
-  }
-
-  // Strategy 2: Fetch from wetten.overheid.nl HTML (follows redirects)
-  const wettenUrl = `${WETTEN_BASE_URL}/${encodeURIComponent(bwbId)}`;
+  // Primary: Fetch from wetten.overheid.nl HTML (reliable, always has current version)
   await rateLimiter.acquire(BACKEND);
+  const wettenUrl = `${WETTEN_BASE_URL}/${encodeURIComponent(bwbId)}`;
   const response = await fetch(wettenUrl, {
     headers: { Accept: "text/html" },
     redirect: "follow",
@@ -182,78 +169,10 @@ export async function getArticle(
   }
 
   throw new Error(
-    `Article fetch failed: Could not retrieve article ${articleNumber} from ${bwbId}.`,
+    `Article fetch failed: Could not retrieve article ${articleNumber} from ${bwbId}. wetten.overheid.nl returned ${response.status}.`,
   );
 }
 
-/**
- * Fetch a specific article from the official XML repository.
- * Tries to construct the XML URL from the BWB ID and today's date.
- */
-async function getArticleFromXmlRepo(
-  bwbId: string,
-  articleNumber: string,
-): Promise<ArticleContent | null> {
-  // Construct the XML URL using today's date
-  const today = new Date().toISOString().split("T")[0]; // YYYY-MM-DD
-  const xmlUrl = `${REPO_BASE_URL}/bwb/${bwbId}/${today}_0/xml/${bwbId}_${today}_0.xml`;
-
-  await rateLimiter.acquire(BACKEND);
-  const response = await fetch(xmlUrl, {
-    headers: { Accept: "application/xml" },
-  });
-
-  if (!response.ok) return null;
-
-  const xml = await response.text();
-  return extractArticleFromXml(xml, bwbId, articleNumber);
-}
-
-/**
- * Extract a specific article from BWB XML content.
- * BWB XML uses <artikel> elements with a label like 'Artikel 610'.
- */
-function extractArticleFromXml(
-  xml: string,
-  bwbId: string,
-  articleNumber: string,
-): ArticleContent | null {
-  // Normalize article number: "7:610" -> "610", "610" -> "610"
-  const normalizedArt = articleNumber.includes(":")
-    ? articleNumber.split(":").pop()!
-    : articleNumber;
-
-  // Match the article element by its label attribute
-  const patterns = [
-    new RegExp(
-      `<artikel[^>]*label="Artikel\\s+${escapeRegex(normalizedArt)}"[^>]*>([\\s\\S]*?)</artikel>`,
-      "i",
-    ),
-    new RegExp(
-      `<artikel[^>]*label="Artikel\\s+${escapeRegex(articleNumber)}"[^>]*>([\\s\\S]*?)</artikel>`,
-      "i",
-    ),
-  ];
-
-  for (const pattern of patterns) {
-    const match = xml.match(pattern);
-    if (match) {
-      // Strip XML tags to get plain text
-      const text = match[0]
-        .replace(/<[^>]+>/g, " ")
-        .replace(/\s+/g, " ")
-        .trim();
-      return {
-        bwbId,
-        articleNumber,
-        title: `Artikel ${articleNumber}`,
-        text,
-      };
-    }
-  }
-
-  return null;
-}
 
 /**
  * Get version history for a law identified by BWB-ID.
