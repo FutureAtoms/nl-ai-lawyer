@@ -1,9 +1,9 @@
 # Response to Proposed Employment Addendum
 
 **From:** Abhilash Chadhar
-**To:** Axelera AI B.V. — Legal Department (via Bram)
+**To:** Axelera AI B.V., Legal Department (via Bram)
 **Date:** 4 March 2026
-**Re:** Proposed Addendum to Employment Agreement — Sections 1.1–1.19
+**Re:** Proposed Addendum to Employment Agreement, Sections 1.1–1.19
 **Classification:** Confidential
 
 ---
@@ -12,7 +12,7 @@ Dear Counsel,
 
 Thank you for preparing the proposed addendum regarding the Wingman application. I appreciate legal's work in protecting Axelera's interests, and I want to help scope this correctly so we can reach a clean agreement quickly. I am fully committed to delivering Wingman v1.0.0 to Axelera under fair and legally compliant terms.
 
-Before addressing the specific clauses, I think it would be helpful to clarify the factual and technical background, as the proposed addendum may have been drafted on the understanding that Wingman and ChipOS are closely linked. In practice, they are separate products serving different purposes. Wingman leverages patterns and structural approaches from my independently-developed ChipOS platform, but it is a purpose-built application scoped to Axelera's specific needs. I want to set out this distinction below so legal can scope the addendum precisely to the Wingman delivery.
+Before addressing the specific clauses, I think it would be helpful to clarify the factual and technical background, as the proposed addendum may have been drafted on the understanding that Wingman and ChipOS are closely linked. In practice, they are independent products serving different purposes, though Wingman does draw on general patterns and structural approaches from ChipOS (as detailed in Section 1.3 below). Wingman uses patterns and structural approaches from my independently-developed ChipOS platform, but it is an application built specifically for Axelera's needs. I want to set out this distinction below so legal can scope the addendum precisely to the Wingman delivery.
 
 ---
 
@@ -20,7 +20,7 @@ Before addressing the specific clauses, I think it would be helpful to clarify t
 
 ### 1.1 What is ChipOS?
 
-**ChipOS** is a vendor-neutral agentic orchestration platform for semiconductor design workflows. I conceived, designed, and developed ChipOS independently — on my own time, using my own equipment and resources — through my registered sole proprietorship **FutureAtoms** (eenmanszaak, KvK: 99153289). ChipOS was not created as part of my employment duties at Axelera, was not developed using Axelera equipment or resources, and was not created under Axelera's direction or instruction.
+**ChipOS** is a vendor-neutral agentic orchestration platform for semiconductor design workflows. I conceived, designed, and developed ChipOS independently, on my own time, using my own equipment and resources, through my registered sole proprietorship **FutureAtoms** (eenmanszaak, KvK: 99153289). ChipOS was not created as part of my employment duties at Axelera, was not developed using Axelera equipment or resources, and was not created under Axelera's direction or instruction.
 
 ChipOS is a substantial, mature platform:
 - **485 git commits** of independent development
@@ -30,7 +30,7 @@ ChipOS is a substantial, mature platform:
 
 ### 1.2 What is Wingman?
 
-**Wingman** (formally "Voyager Wingman") is an application I built specifically for the purpose of programming Axelera AI accelerator cards using the Voyager SDK. Wingman was developed as a **derivative application** that leverages general patterns and structural approaches from my independently-developed ChipOS platform, tailored specifically for the Voyager SDK use case.
+**Wingman** (formally "Voyager Wingman") is an application I built specifically for the purpose of programming Axelera AI accelerator cards using the Voyager SDK. Wingman was developed as a **derivative application** that applies general patterns and structural approaches from my independently-developed ChipOS platform, tailored specifically for the Voyager SDK use case.
 
 Wingman's profile:
 - **Separate git repository** from ChipOS
@@ -40,19 +40,19 @@ Wingman's profile:
 
 ### 1.3 The Relationship Between ChipOS and Wingman
 
-To be transparent: Wingman leverages patterns, structural approaches, and general techniques that I developed through my work on ChipOS. This is a common arrangement in software — a developer builds a general platform (ChipOS) and then creates a purpose-built application (Wingman) for a specific client's needs.
+To be transparent: Wingman builds on patterns, structural approaches, and general techniques that I developed through my work on ChipOS. This is a common arrangement in software: a developer builds a general platform (ChipOS) and then creates a tailored application (Wingman) for a specific client's needs.
 
-Both products incorporate general software engineering patterns — workflow automation, API integration, configuration management — that are standard industry techniques used by developers worldwide. Under **Article 45a(2) Auteurswet** (implementing EU Directive 2009/24/EC Art. 1(2)), the ideas and principles underlying a computer program are not protectable by copyright. The fact that both products use similar structural approaches reflects common professional practice, not a proprietary connection between the codebases.
+Both products incorporate general software engineering patterns (workflow automation, API integration, configuration management) that are standard industry techniques used by developers worldwide. Under **Article 45a(2) Auteurswet** (implementing EU Directive 2009/24/EC Art. 1(2)), the ideas and principles underlying a computer program are not protectable by copyright. The fact that both products use similar structural approaches reflects common professional practice, not a proprietary connection between the codebases.
 
 The key distinction is:
-- **ChipOS** is the broader platform — 11 App Packs, vendor-neutral, serving multiple use cases across semiconductor design
-- **Wingman** is a purpose-built application — scoped exclusively to programming Axelera AI accelerator cards
+- **ChipOS** is the broader platform: 11 App Packs, vendor-neutral, serving multiple use cases across semiconductor design
+- **Wingman** is a focused application designed for a single purpose: programming Axelera AI accelerator cards
 
 The **delivered version (Wingman v1.0.0)** will be a standalone, self-contained codebase that Axelera can operate independently. Prior to delivery, I will ensure all non-Wingman components are removed and the codebase operates as a standalone application.
 
 ### 1.4 The Pilot
 
-During an approximately three-month pilot, Axelera evaluated Wingman as an internal tool for assisting with Voyager SDK programming. The pilot demonstrated Wingman's value for Axelera's specific use case. It is this product — Wingman v1.0.0 — that I have agreed to deliver to Axelera.
+During an approximately three-month pilot, Axelera evaluated Wingman as an internal tool for assisting with Voyager SDK programming. The pilot confirmed Wingman's value for Axelera's specific use case. It is this product, Wingman v1.0.0, that I have agreed to deliver to Axelera.
 
 ### 1.5 Key Differences
 
@@ -69,31 +69,31 @@ During an approximately three-month pilot, Axelera evaluated Wingman as an inter
 
 ### 1.6 FutureAtoms' Broader Scope
 
-It is worth noting that FutureAtoms operates across nine diverse project domains that extend far beyond semiconductors. In addition to ChipOS, FutureAtoms encompasses: **Swaastik** (healthcare platform serving 150K+ facilities), **BevyBeats** (music generation), **Zaphy** (LinkedIn networking AI), **Agentic Control** (workflow automation), **SystemVerilogGPT** (RTL generation), **Yuj** (AI wellness/yoga), **Savitri** (mental health CBT/DBT companion), and **AdaptiveVision** (computer vision deployment). The breadth of these projects -- spanning healthcare, music, wellness, networking, and automation -- underscores that FutureAtoms is not a competitor to Axelera. Scoping the addendum specifically to the Wingman deliverable avoids unintentionally capturing these unrelated activities.
+It is worth noting that FutureAtoms operates across nine diverse project domains that extend far beyond semiconductors. In addition to ChipOS, FutureAtoms encompasses: **Swaastik** (healthcare platform serving 150K+ facilities), **BevyBeats** (music generation), **Zaphy** (LinkedIn networking AI), **Agentic Control** (workflow automation), **SystemVerilogGPT** (RTL generation), **Yuj** (AI wellness/yoga), **Savitri** (mental health CBT/DBT companion), and **AdaptiveVision** (computer vision deployment). The breadth of these projects, spanning healthcare, music, wellness, networking, and automation, underscores that FutureAtoms is not a competitor to Axelera. Scoping the addendum specifically to the Wingman deliverable avoids unintentionally capturing these unrelated activities.
 
 ### 1.7 What This Means for the Addendum
 
-The agreed arrangement is the delivery of **Wingman v1.0.0** — a purpose-built application for Axelera — with an exclusive license for Axelera to use it with its hardware products. This is a standard software licensing arrangement: the client (Axelera) receives an exclusive license to the deliverable application (Wingman), while the developer (FutureAtoms) retains ownership of the underlying platform (ChipOS) from which it was derived.
+The agreed arrangement is the delivery of **Wingman v1.0.0**, an application built for Axelera, with an exclusive license for Axelera to use it with its hardware products. This is a standard software licensing arrangement: the client (Axelera) receives an exclusive license to the deliverable application (Wingman), while the developer (FutureAtoms) retains ownership of the underlying platform (ChipOS) from which it was derived.
 
-The addendum should therefore be scoped to the Wingman deliverable. The proposed draft references **ChipOS** in several places, which I believe was unintentional -- the Wingman delivery is what we discussed and agreed upon. The suggestions below are intended to help align the addendum's scope with the actual deliverable.
+The addendum should therefore be scoped to the Wingman deliverable. The proposed draft references **ChipOS** in several places, which I believe was unintentional. The Wingman delivery is what we discussed and agreed upon. The suggestions below are intended to help align the addendum's scope with the actual deliverable.
 
 ---
 
 ## 2. Suggested Scope Refinements
 
-I am happy to give Axelera very strong Wingman rights -- including exclusive use, full source code delivery, and even future development during my employment. The only thing I need is clear separation for my independent projects (ChipOS and FutureAtoms). With that framing, here are some areas where I believe the scope can be refined to capture the intent more precisely:
+I am happy to give Axelera very strong Wingman rights, including exclusive use, full source code delivery, and even future development during my employment. The only thing I need is clear separation for my independent projects (ChipOS and FutureAtoms). With that framing, here are some areas where I believe the scope can be refined to capture the intent more precisely:
 
-### 2.1 ChipOS Definition -- Scope Alignment (Section 1.2)
+### 2.1 ChipOS Definition: Scope Alignment (Section 1.2)
 
 The definition includes "any successor, derivative, fork, update, extension, architectural variation or **related technology**." This is broader than necessary for the Wingman delivery and may unintentionally capture future software I develop through FutureAtoms in unrelated domains (healthcare, music, wellness, etc.). I would suggest scoping this to the Wingman v1.0.0 deliverable as defined in the delivery manifest.
 
-### 2.2 License Scope -- Wingman vs. ChipOS (Section 1.3a)
+### 2.2 License Scope: Wingman vs. ChipOS (Section 1.3a)
 
-Section 1.3a grants Axelera a perpetual, irrevocable, transferable, sublicensable license to the **entire ChipOS platform** rather than the Wingman deliverable. I would suggest scoping this to the Wingman application, which is what Axelera evaluated during the pilot and what we agreed to deliver. ChipOS is a broader, independently developed platform with 11 App Packs serving multiple use cases beyond Axelera. To ensure compliance with **Article 7 of the Auteurswet** (*werkgeversauteursrecht*), it is worth noting that employer copyright arises only where there is a functional connection (*functioneel verband*) between the employment duties and the creative work (HR 19 November 1993). For software specifically, **Article 45h Auteurswet** (implementing EU Directive 2009/24/EC Art. 2(3)) further requires creation "in the exercise of the employment" (*in de uitoefening van de dienstbetrekking*). Scoping the license to Wingman ensures the addendum aligns with these statutory requirements.
+Section 1.3a grants Axelera a perpetual, irrevocable, transferable, sublicensable license to the **entire ChipOS platform** rather than the Wingman deliverable. I would suggest scoping this to the Wingman application, which is what Axelera evaluated during the pilot and what we agreed to deliver. ChipOS is a broader, independently developed platform with 11 App Packs serving multiple use cases beyond Axelera. To ensure compliance with **Article 7 of the Auteurswet** (*werkgeversauteursrecht*), it is worth noting that employer copyright arises only where there is a functional connection (*functioneel verband*) between the employment duties and the creative work (HR 19 November 1993). Article 7 Aw applies to software as well as other works and requires that the employee's work "consists of" creating such works and that the works are created "in the service of" the employer. Scoping the license to Wingman ensures the addendum aligns with these statutory requirements.
 
-### 2.3 "Defined Fields" -- Precision of Scope (Section 1.3b)
+### 2.3 "Defined Fields": Precision of Scope (Section 1.3b)
 
-The exclusive license scope -- "any and all fields of developing software for AI applications on CPUs, GPUs, AIPUs, accelerators, and **any other compute processors**" -- is broader than necessary for the Wingman delivery scope. As drafted, this may unintentionally capture FutureAtoms projects in entirely unrelated domains (healthcare, music, wellness). I would suggest scoping this to programming Axelera AI accelerator cards, which is what Wingman was built for. This more precise scope also helps ensure compliance with **Article 6:248 lid 2 BW** (*derogerende werking van redelijkheid en billijkheid*), which requires proportionality in contractual terms.
+The exclusive license scope ("any and all fields of developing software for AI applications on CPUs, GPUs, AIPUs, accelerators, and **any other compute processors**") is broader than necessary for the Wingman delivery scope. As drafted, this may unintentionally capture FutureAtoms projects in entirely unrelated domains (healthcare, music, wellness). I would suggest scoping this to programming Axelera AI accelerator cards, which is what Wingman was built for. This more precise scope also helps ensure compliance with **Article 6:248 lid 2 BW** (*derogerende werking van redelijkheid en billijkheid*), which requires proportionality in contractual terms.
 
 ### 2.4 Future Development Scope (Section 1.8)
 
@@ -111,9 +111,9 @@ FutureAtoms generates no revenue, has no external clients, and operates across n
 
 The delivery obligation references the "full source code repository for **ChipOS** and Voyager Wingman." Since these are separate repositories (as outlined in the comparison table above), I would suggest updating this to reference the Wingman v1.0.0 repository specifically. This aligns the delivery clause with the actual deliverable and avoids any ambiguity.
 
-### 2.7 Enforcement Rights -- Scope Alignment (Section 1.15)
+### 2.7 Enforcement Rights: Scope Alignment (Section 1.15)
 
-This provision would grant Axelera enforcement rights over ChipOS intellectual property. I would suggest scoping this to the Wingman deliverable IP, which is the subject of the license. Axelera should absolutely have strong enforcement rights over Wingman -- I just want to ensure the scope matches the deliverable.
+This provision would grant Axelera enforcement rights over ChipOS intellectual property. I would suggest scoping this to the Wingman deliverable IP, which is the subject of the license. Axelera should absolutely have strong enforcement rights over Wingman; I just want to ensure the scope matches the deliverable.
 
 ### 2.8 Termination Provisions (Section 1.17)
 
@@ -169,7 +169,7 @@ For absolute clarity, the following are **expressly excluded** from the Wingman 
 
 ## 5. Conclusion
 
-I believe we are very close to a good agreement. The core of what I am proposing is simple: Axelera gets everything on Wingman -- exclusive rights, full source code, the ability to modify and extend it -- and my independently operated side business (FutureAtoms) stays separate. Given that FutureAtoms spans nine diverse domains from healthcare to music to wellness, none of which compete with Axelera, I am confident this is a clean separation that works well for both sides.
+I believe we are very close to a good agreement. The core of what I am proposing is simple: Axelera gets everything on Wingman (exclusive rights, full source code, the ability to modify and extend it) and my independently operated side business (FutureAtoms) stays separate. Given that FutureAtoms spans nine diverse domains from healthcare to music to wellness, none of which compete with Axelera, I am confident this is a clean separation that works well for both sides.
 
 I am available to discuss the counter-proposal at your convenience and welcome the opportunity to finalise this quickly.
 
@@ -183,7 +183,7 @@ Axelera AI B.V.
 
 ## Attachments
 
-- **Annex A:** Counter-Proposal — Addendum to Employment Agreement (Ref: FTA-AXL-2026-CP-001)
+- **Annex A:** Counter-Proposal, Addendum to Employment Agreement (Ref: FTA-AXL-2026-CP-001)
 - **Annex B:** Wingman v1.0.0 Delivery Manifest
 
 ---
@@ -192,7 +192,8 @@ Axelera AI B.V.
 
 | Reference | Subject |
 |-----------|---------|
-| Art. 7 Auteurswet | Employer copyright (*werkgeversauteursrecht*); requires that the work "consists of" creating such works and that works are created "in the service of" the employer — a functional connection (*functioneel verband*) between employment duties and the work (HR 19 November 1993). For software specifically, Art. 45h Aw (implementing Directive 2009/24/EC Art. 2(3)) requires creation "in de uitoefening van de dienstbetrekking" |
+| Art. 7 Auteurswet | Employer copyright (*werkgeversauteursrecht*); requires that the work "consists of" creating such works and that works are created "in the service of" the employer, i.e., a functional connection (*functioneel verband*) between employment duties and the work (HR 19 November 1993). Art. 7 Aw applies to all works including software. |
+| Art. 45h Auteurswet | Part of the software chapter (Arts. 45h–45n Aw) implementing EU Directive 2009/24/EC; Art. 45h concerns rental rights (*verhuurrechten*) for software, not employer copyright. Employer copyright for software is governed by Art. 7 Aw (general provision). |
 | Art. 45a(2) Auteurswet | Ideas and principles underlying a computer program are not protectable by copyright (implementing EU Directive 2009/24/EC Art. 1(2); cf. CJEU C-406/10, *SAS Institute v. WPL*) |
 | Art. 7:653a BW | Ancillary activities clause (*nevenwerkzaamhedenbeding*); void without objective justification. Effective 1 August 2022, implementing EU Directive 2019/1152. Includes anti-retaliation protection. |
 | Art. 7:611 BW | Good employer practices (*goed werkgeverschap*) |

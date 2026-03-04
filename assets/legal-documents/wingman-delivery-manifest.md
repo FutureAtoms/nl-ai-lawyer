@@ -26,7 +26,7 @@ This document serves as the authoritative reference for what is included in, and
 |-----------|--------|
 | **Product Name** | Voyager Wingman |
 | **Version** | 1.0.0 |
-| **Description** | Purpose-built application for programming Axelera AI accelerator cards using the Voyager SDK |
+| **Description** | Application built for programming Axelera AI accelerator cards using the Voyager SDK |
 | **Repository** | Wingman repository (separate from ChipOS) |
 | **Delivered as** | Standalone, self-contained codebase |
 
@@ -43,7 +43,7 @@ This document serves as the authoritative reference for what is included in, and
 
 ### 3.1 Source Code
 
-- [ ] Git archive export (tag: `v1.0.0`) -- Wingman repository ONLY
+- [ ] Git archive export (tag: `v1.0.0`), Wingman repository ONLY
 - [ ] SHA-256 checksum of git archive
 - [ ] Git commit log (for provenance verification)
 - [ ] `.gitignore` (secrets/credentials excluded)
@@ -150,7 +150,7 @@ This document serves as the authoritative reference for what is included in, and
 
 ## 7. Product Distinction: ChipOS vs Wingman
 
-The following table summarises the key differences between ChipOS (the broader platform retained by FutureAtoms) and Wingman (the deliverable to Axelera). While Wingman leverages patterns and approaches from ChipOS, it is a purpose-built application scoped to Axelera's needs. The delivered Wingman v1.0.0 will operate as a standalone codebase.
+The following table summarises the key differences between ChipOS (the broader platform retained by FutureAtoms) and Wingman (the deliverable to Axelera). While Wingman uses patterns and approaches from ChipOS, it is an application built specifically for Axelera's needs. The delivered Wingman v1.0.0 will operate as a standalone codebase.
 
 | Aspect | ChipOS | Wingman v1.0.0 |
 |--------|--------|----------------|
@@ -174,7 +174,7 @@ Prior to delivery of Wingman v1.0.0, Employee will complete the following prepar
 - [ ] Remove any components not required for Wingman operation
 - [ ] Remove ChipOS branding and references
 - [ ] Ensure Wingman operates standalone without ChipOS infrastructure
-- [ ] Create clean git history (squash to remove non-Wingman development history)
+- [ ] Use `git filter-repo` to remove non-Wingman files while preserving commit metadata, timestamps, and author attribution; archive full unfiltered repository as a separate evidence package before filtering
 - [ ] Remove all secrets, credentials, and API keys
 - [ ] Generate Software Bill of Materials (SBOM)
 - [ ] Test standalone deployment and verify all acceptance criteria

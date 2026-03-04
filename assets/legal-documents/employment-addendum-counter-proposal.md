@@ -7,7 +7,7 @@
 **Document Reference:** FTA-AXL-2026-CP-001
 **Date:** 4 March 2026 (4 maart 2026)
 **Classification:** Confidential (Vertrouwelijk)
-**Status:** COUNTER-PROPOSAL -- FOR NEGOTIATION PURPOSES
+**Status:** COUNTER-PROPOSAL: FOR NEGOTIATION PURPOSES
 
 ---
 
@@ -33,9 +33,9 @@ A. Employee has been employed by Employer since 1 December 2022 under a permanen
 
 B. Employee independently owns and operates **FutureAtoms**, a sole proprietorship (eenmanszaak) registered with the Dutch Chamber of Commerce (Kamer van Koophandel) under number **KvK: 99153289**, through which Employee has developed **ChipOS**, a vendor-neutral agentic orchestration platform for semiconductor design workflows. FutureAtoms operates across nine diverse domains: semiconductor design (ChipOS), healthcare (Swaastik, serving 150K+ facilities), music generation (BevyBeats), professional networking AI (Zaphy), workflow automation (Agentic Control), RTL generation (SystemVerilogGPT), wellness (Yuj), mental health (Savitri), and computer vision (AdaptiveVision), demonstrating that FutureAtoms is a broad technology platform, not a competitor to Employer's hardware business;
 
-C. ChipOS was conceived, designed, and developed by Employee on his own time, using his own equipment and resources, independently of and prior to any instruction or assignment by Employer, and does not fall within Employee's employment duties (taakomschrijving) with Employer. ChipOS is maintained in a separate git repository (github.com/FutureAtoms/ChipOS.git) with 485 commits, all authored by FutureAtoms, and has no code-level dependency on, imports from, or shared history with any Employer repository or the Wingman application;
+C. ChipOS was conceived, designed, and developed by Employee on his own time, using his own equipment and resources, independently of and prior to any instruction or assignment by Employer, and does not fall within Employee's employment duties (taakomschrijving) with Employer. ChipOS is maintained in a separate git repository (github.com/FutureAtoms/ChipOS.git) with 485 commits (468 by FutureAtoms, with minor CI bot and AI-assisted commits), and has no code-level dependency on, imports from, or shared history with any Employer repository or the Wingman application;
 
-D. Employee developed an application called **Wingman** -- a product for programming Axelera AI accelerator cards using the Voyager SDK -- which is maintained in a separate git repository (github.com/FutureAtoms/voyager-wingman.git, 3 commits) with a fundamentally different architecture (8-service Docker microservices platform) from ChipOS (custom VS Code distribution), zero code imports from ChipOS, a separate database, and a separate Docker network. Wingman leverages general development patterns from Employee's independent work but is specifically tailored for Axelera's use case;
+D. Employee developed an application called **Wingman**, a product for programming Axelera AI accelerator cards using the Voyager SDK, which is maintained in a separate git repository (github.com/FutureAtoms/voyager-wingman.git, 3 commits) with a distinct architecture (8-service Docker microservices platform) from ChipOS (custom VS Code distribution), zero code imports from ChipOS, a separate database, and a separate Docker network. Wingman uses general development patterns from Employee's independent work but is specifically tailored for Axelera's use case;
 
 E. Employer has expressed interest in acquiring rights to the Wingman application for use in connection with its hardware products;
 
@@ -55,7 +55,7 @@ H. Parties wish to record their agreements in this Addendum in accordance with t
 
 ---
 
-### Article A1 -- Disclosure and Approval of Side Business (Openbaarmaking en Goedkeuring Nevenactiviteiten)
+### Article A1: Disclosure and Approval of Side Business (Openbaarmaking en Goedkeuring Nevenactiviteiten)
 
 A1.1. Employee hereby formally discloses that he owns and operates the sole proprietorship (eenmanszaak) **FutureAtoms**, registered with the Kamer van Koophandel under number **KvK: 99153289** (hereinafter: **"FutureAtoms"**).
 
@@ -69,7 +69,7 @@ A1.5. Any restriction on side activities must comply with the requirements of **
 
 ---
 
-### Article A2 -- Separation of Activities (Scheiding van Activiteiten)
+### Article A2: Separation of Activities (Scheiding van Activiteiten)
 
 A2.1. Employee undertakes that all work for FutureAtoms, including but not limited to development, marketing, customer engagement, and administrative tasks, shall be performed **exclusively outside of Employee's working hours** (buiten werktijd) as defined in the employment agreement and any applicable working time arrangements.
 
@@ -84,7 +84,7 @@ A2.4. Employee shall **not** use any trade secrets (bedrijfsgeheimen) of Employe
 
 A2.5. Employee shall **promptly disclose** to Employer any situation that may give rise to a conflict of interest (belangenconflict) between Employee's duties under the employment agreement and FutureAtoms' business activities. Such disclosure shall be made in writing within five (5) business days of Employee becoming aware of the potential conflict.
 
-### Article A2.6 -- Objective Justification of Restrictions (Objectieve Rechtvaardiging Beperkingen)
+### Article A2.6: Objective Justification of Restrictions (Objectieve Rechtvaardiging Beperkingen)
 
 A2.6. In accordance with **Article 7:653a BW**, the restrictions set forth in Articles A2.1 through A2.5 are each supported by the following objective justifications:
 
@@ -96,7 +96,7 @@ A2.6. In accordance with **Article 7:653a BW**, the restrictions set forth in Ar
 
 ---
 
-### Article A3 -- Intellectual Property Boundary (Intellectueel Eigendom Afbakening)
+### Article A3: Intellectual Property Boundary (Intellectueel Eigendom Afbakening)
 
 *This Article constitutes the agreed delineation of intellectual property ownership between the Parties.*
 
@@ -123,9 +123,9 @@ A3.5. In the event of any dispute regarding the classification of specific intel
 
 ---
 
-### Article A4 -- ChipOS Definition (Definitie ChipOS)
+### Article A4: ChipOS Definition (Definitie ChipOS)
 
-A4.1. For the purposes of this Addendum, **"ChipOS"** means the vendor-neutral agentic orchestration platform for semiconductor design workflows, developed by Employee through FutureAtoms, maintained in the git repository at github.com/FutureAtoms/ChipOS.git (485 commits as of 4 March 2026, all authored by FutureAtoms), including but not limited to:
+A4.1. For the purposes of this Addendum, **"ChipOS"** means the vendor-neutral agentic orchestration platform for semiconductor design workflows, developed by Employee through FutureAtoms, maintained in the git repository at github.com/FutureAtoms/ChipOS.git (485 commits as of 4 March 2026, 468 by FutureAtoms, with minor CI bot and AI-assisted commits), including but not limited to:
    - (a) the core orchestration engine and framework (custom VS Code distribution with FastAPI backend and MCP server);
    - (b) all application modules, plugins, extensions, and App Packs (including but not limited to the 11 AI-native App Packs for semiconductor design workflows: CPU Development, RTL Verification, RTL Debug, Physical Design, PD Verification, Spec Developer, Hardware Programmer, Voyager SDK, Raspberry Pi, Web Development, and Documentation);
    - (c) all APIs, interfaces, protocols, and data schemas;
@@ -147,22 +147,22 @@ A4.3. Nothing in the employment agreement, any prior or subsequent addendum, or 
 
 ---
 
-### Article B1 -- Wingman Definition (Definitie Wingman)
+### Article B1: Wingman Definition (Definitie Wingman)
 
 B1.1. For the purposes of this Addendum, **"Wingman"** means the standalone software application developed by Employee for the specific purpose of programming Axelera AI accelerator cards using the Voyager SDK.
 
-B1.2. Wingman is a **purpose-built application** that leverages general patterns and structural approaches from Employee's independently-developed ChipOS platform, tailored specifically for the Voyager SDK use case. While Wingman shares some structural elements with ChipOS, it is scoped to Axelera's specific needs and is maintained in its own git repository with its own database infrastructure. The delivered version (Wingman v1.0.0) will be a standalone, self-contained codebase that Employer can operate independently.
+B1.2. Wingman is an **application designed for** and that uses general patterns and structural approaches from Employee's independently-developed ChipOS platform, tailored specifically for the Voyager SDK use case. While Wingman shares some structural elements with ChipOS, it is scoped to Axelera's specific needs and is maintained in its own git repository with its own database infrastructure. The delivered version (Wingman v1.0.0) will be a standalone, self-contained codebase that Employer can operate independently.
 
 B1.3. The version of Wingman subject to this Addendum is **version 1.0.0** (hereinafter: **"Wingman v1.0.0"**).
 
-B1.4. **Shared Development Patterns (Gedeelde Ontwikkelpatronen):** The Parties acknowledge that Wingman v1.0.0 may contain structural elements, patterns, or approaches derived from ChipOS (hereinafter: **"Shared Development Patterns"**). For the avoidance of doubt, Shared Development Patterns constitute general software engineering techniques — including workflow automation patterns, API integration approaches, and configuration management structures — that are standard industry practices and do not represent proprietary intellectual property of either Party (cf. **Article 45a(2) Auteurswet**, implementing EU Directive 2009/24/EC Art. 1(2): ideas and principles underlying a computer program are not protectable by copyright). The Wingman License granted under Article B3 includes a license to use such Shared Development Patterns **solely as part of and in connection with Wingman v1.0.0 for the Permitted Purpose**. This license to Shared Development Patterns does not extend to:
+B1.4. **Shared Development Patterns (Gedeelde Ontwikkelpatronen):** The Parties acknowledge that Wingman v1.0.0 may contain structural elements, patterns, or approaches derived from ChipOS (hereinafter: **"Shared Development Patterns"**). For the avoidance of doubt, Shared Development Patterns constitute general software engineering techniques, including workflow automation patterns, API integration approaches, and configuration management structures, that are standard industry practices and do not represent proprietary intellectual property of either Party (cf. **Article 45a(2) Auteurswet**, implementing EU Directive 2009/24/EC Art. 1(2): ideas and principles underlying a computer program are not protectable by copyright). The Wingman License granted under Article B3 includes a license to use such Shared Development Patterns **solely as part of and in connection with Wingman v1.0.0 for the Permitted Purpose**. This license to Shared Development Patterns does not extend to:
    - (a) the ChipOS platform as a whole;
    - (b) any ChipOS modules, App Packs, or components not included in the Wingman v1.0.0 deliverable;
    - (c) any use of Shared Development Patterns outside of or separate from the Wingman application.
 
 ---
 
-### Article B2 -- Delivery Scope and Timeline (Omvang en Tijdlijn Oplevering)
+### Article B2: Delivery Scope and Timeline (Omvang en Tijdlijn Oplevering)
 
 B2.1. Employee shall deliver Wingman v1.0.0 to Employer no later than **15 April 2026** (hereinafter: the **"Delivery Date"**).
 
@@ -195,7 +195,7 @@ B2.5. **Deficiency Resolution (Geschillenregeling Gebreken).** If Employer provi
 
 ---
 
-### Article B3 -- License Grant (Licentieverlening)
+### Article B3: License Grant (Licentieverlening)
 
 B3.1. **Vesting of the Wingman License.** The Wingman License shall vest upon satisfaction of **both** of the following conditions (the **"Vesting Conditions"**):
 
@@ -204,6 +204,8 @@ B3.1. **Vesting of the Wingman License.** The Wingman License shall vest upon sa
    (ii) **Payment**: the cash bonus set forth in Article B6.1(a) has been received by Employee.
 
    **Payment obligation is independent of acceptance:** the obligation to pay under Article B6 arises upon the Delivery Date and is not conditional upon acceptance. Employer may not withhold payment pending acceptance.
+
+   **Independent contractual obligations:** The equity compensation under Article B6.1(b) and expense reimbursement under Article B6.1(c) are independent contractual obligations of Employer arising upon the Delivery Date. Failure to grant the equity compensation within the period specified in Article B6.1(b), or failure to reimburse expenses within the period specified in Article B6.1(c), shall constitute a material breach of this Addendum entitling Employee to claim performance, damages, and/or statutory interest (wettelijke handelsrente, Art. 6:119a BW) without prejudice to the vesting of the Wingman License.
 
    **Testing License bridge:** Until both Vesting Conditions are satisfied, the Testing License under Article B2.4 shall remain in effect (on its existing terms, solely for verification and internal evaluation purposes). If the delivery has been accepted but payment remains outstanding more than fifteen (15) calendar days after the payment due date, Employee may terminate the Testing License upon seven (7) calendar days' written notice, without prejudice to Employee's right to claim the outstanding payment.
 
@@ -215,10 +217,10 @@ B3.1. **Vesting of the Wingman License.** The Wingman License shall vest upon sa
    - **Perpetual** (eeuwigdurend): the license shall have no expiration date;
    - **Irrevocable** (onherroepelijk): the license may not be revoked by Employee / FutureAtoms;
    - **Worldwide** (wereldwijd): the license shall have no territorial restrictions;
-   - **Exclusive** (exclusief): Employee / FutureAtoms shall not grant licenses for the same purpose to third parties, subject to Article B3.1(f);
+   - **Exclusive** (exclusief): Employee / FutureAtoms shall not grant licenses to third parties for standalone applications whose primary purpose is programming Axelera AI accelerator cards, subject to Article B3.1(f). For the avoidance of doubt, this exclusivity does not extend to vendor-neutral, multi-platform tools that may incidentally support Axelera hardware alongside other vendors' hardware (see Article B3.1(f)(iv));
 
-   **(b) Scope Limitation -- Purpose:**
-   The Wingman License is **strictly limited** to the purpose of **programming Axelera AI accelerator cards**, including the Metis platform and its successors (hereinafter: **"Permitted Purpose"**);
+   **(b) Scope Limitation: Purpose:**
+   The Wingman License is **strictly limited** to the purpose of **programming Axelera AI accelerator cards**, including the Metis platform and its successors (hereinafter: **"Permitted Purpose"**). For the avoidance of doubt, the Permitted Purpose covers standalone applications that are marketed or distributed as dedicated tools for programming Axelera AI hardware; it does not cover vendor-neutral, multi-platform tools that may incidentally support Axelera hardware alongside other vendors' hardware;
 
    **(c) Permitted Uses:**
    Within the Permitted Purpose, Employer may:
@@ -239,14 +241,14 @@ B3.1. **Vesting of the Wingman License.** The Wingman License shall vest upon sa
    - Develop, license, and commercialize similar technology, products, and applications for **non-Axelera hardware platforms**;
    - Continue developing ChipOS and derivative products for any purpose not covered by the Permitted Purpose;
    - Use the general knowledge, skills, experience, and know-how acquired during the development of Wingman;
-   - Develop and distribute vendor-neutral tools and platforms that support multiple hardware platforms, including tools that may incidentally support Axelera hardware alongside other vendors' hardware, provided such tools are not marketed or positioned as direct replacements for the Wingman application;
+   - (iv) Develop and distribute vendor-neutral tools and platforms that support multiple hardware platforms, including tools that may incidentally support Axelera hardware alongside other vendors' hardware, provided such tools are not marketed or positioned as dedicated Axelera programming tools that would directly replace the Wingman application for the Permitted Purpose;
 
    **(g) Internal Modifications:**
    Employer may modify Wingman v1.0.0 internally for its own purposes within the scope of the Permitted Purpose. Any such modifications shall not create any obligation on the part of Employee / FutureAtoms to support, maintain, or warrant such modifications.
 
 ---
 
-### Article B4 -- No Future Obligation (Geen Toekomstige Verplichtingen)
+### Article B4: No Future Obligation (Geen Toekomstige Verplichtingen)
 
 B4.1. Employee (acting in his capacity as sole proprietor of FutureAtoms) shall have **no obligation** to provide any of the following after the Delivery Date:
    - (a) Updates, upgrades, patches, or new versions of Wingman;
@@ -260,7 +262,7 @@ B4.2. Any future development, maintenance, support, or update services requested
 
 ---
 
-### Article B5 -- Exclusions from Delivery (Uitgesloten van Oplevering)
+### Article B5: Exclusions from Delivery (Uitgesloten van Oplevering)
 
 B5.1. For the avoidance of doubt, the following are **expressly not included** in the delivery under this Addendum and are **not** covered by the Wingman License:
 
@@ -273,7 +275,7 @@ B5.1. For the avoidance of doubt, the following are **expressly not included** i
 
 ---
 
-### Article B6 -- Compensation (Vergoeding)
+### Article B6: Compensation (Vergoeding)
 
 B6.1. In consideration of the delivery of Wingman v1.0.0 and the grant of the Wingman License, Employer shall pay Employee the following compensation through the employment relationship (via payroll), subject to applicable tax withholdings and social security contributions:
 
@@ -296,7 +298,7 @@ B6.2. The compensation set forth in this Article B6 constitutes the **full and f
 
 ---
 
-### Article C1 -- Employee's Marketing Rights (Marketingrechten Werknemer)
+### Article C1: Employee's Marketing Rights (Marketingrechten Werknemer)
 
 C1.1. Employee (acting in his capacity as sole proprietor of FutureAtoms) shall have the right to publicly state, in marketing materials, portfolios, case studies, website content, and professional communications, that Employee / FutureAtoms developed the Wingman application for Axelera AI.
 
@@ -306,7 +308,7 @@ C1.3. Employer shall respond to any approval request under Article C1.2 within t
 
 ---
 
-### Article C2 -- Employer's Marketing Rights (Marketingrechten Werkgever)
+### Article C2: Employer's Marketing Rights (Marketingrechten Werkgever)
 
 C2.1. Employer shall have the right to reference FutureAtoms' contribution to the development of the Wingman application in Employer's marketing materials, press releases, investor communications, and product documentation.
 
@@ -322,11 +324,11 @@ C2.3. Employee / FutureAtoms shall respond to any approval request under Article
 
 ---
 
-### Article D1 -- Narrow Non-Competition Clause (Beperkt Concurrentiebeding)
+### Article D1: Narrow Non-Competition Clause (Beperkt Concurrentiebeding)
 
 D1.1. During the term of the employment agreement only (gedurende de looptijd van de arbeidsovereenkomst), Employee shall refrain from developing, licensing, or commercializing products that **directly compete** with Wingman for the specific purpose of programming Axelera AI accelerator cards.
 
-D1.2. This non-competition obligation is **narrowly defined** and shall be interpreted restrictively in accordance with **Article 7:653 BW** (concurrentiebeding) and established case law of the Hoge Raad regarding the proportionality of non-competition clauses. For the avoidance of doubt, this Article D1 constitutes a concurrentiebeding within the meaning of Article 7:653 BW, not a nevenwerkzaamhedenbeding within the meaning of Article 7:653a BW; the side-activity restrictions in Part A are governed by Article 7:653a BW.
+D1.2. This non-competition obligation is **narrowly defined** and shall be interpreted restrictively. For the avoidance of doubt, this Article D1 constitutes a **nevenwerkzaamhedenbeding** within the meaning of **Article 7:653a BW**, as it restricts side activities **during the employment relationship only** (see Article D1.4: automatic termination upon end of employment). Article 7:653 BW (concurrentiebeding) applies exclusively to **post-employment** non-competition restrictions and is therefore not applicable to this clause. The objective justification for this restriction under Art. 7:653a BW is the protection of Employer's legitimate commercial interest in the exclusive Wingman license granted under Part B.
 
 D1.3. For the avoidance of doubt, the non-competition obligation in Article D1.1 does **NOT** restrict Employee (acting in his capacity as sole proprietor of FutureAtoms) from:
    - (a) Continuing to develop, license, and commercialize **ChipOS** in any form;
@@ -337,7 +339,7 @@ D1.3. For the avoidance of doubt, the non-competition obligation in Article D1.1
 
 D1.4. This non-competition obligation shall **automatically terminate** upon the termination of the employment agreement for any reason, without any post-employment non-competition period.
 
-D1.5. In accordance with **Article 7:653 BW** and established principles of proportionality, Employer may only invoke this non-competition clause to the extent that the restriction is proportionate to the legitimate business interest it seeks to protect, taking into account the employee's interest in unrestricted professional activity.
+D1.5. In accordance with **Article 7:653a BW** and established principles of proportionality, Employer may only invoke this restriction to the extent that it is justified by objective reasons and proportionate to the legitimate business interest it seeks to protect, taking into account the employee's interest in unrestricted professional activity.
 
 D1.6. **Supersession of Prior Restrictions (Vervanging Eerdere Bedingen).** This Article D1 is intended to update and align with current legal requirements any prior non-competition clause (*concurrentiebeding*) and/or non-solicitation clause (*relatiebeding*) contained in the original employment agreement between the Parties dated 1 December 2022, or in any prior amendment or addendum thereto. From the effective date of this Addendum, Employee shall have no post-employment non-competition or non-solicitation obligations beyond those set forth in this Article D1.
 
@@ -347,7 +349,7 @@ D1.6. **Supersession of Prior Restrictions (Vervanging Eerdere Bedingen).** This
 
 ---
 
-### Article G1 -- Entire Agreement (Volledige Overeenkomst)
+### Article G1: Entire Agreement (Volledige Overeenkomst)
 
 G1.1. This Addendum, together with the employment agreement dated 1 December 2022 and any prior amendments thereto, constitutes the entire agreement between the Parties with respect to the subject matter hereof.
 
@@ -355,7 +357,7 @@ G1.2. In the event of any conflict between this Addendum and the employment agre
 
 ---
 
-### Article G2 -- Governing Law and Disputes (Toepasselijk Recht en Geschillen)
+### Article G2: Governing Law and Disputes (Toepasselijk Recht en Geschillen)
 
 G2.1. This Addendum shall be governed by and construed in accordance with the laws of the **Netherlands** (Nederlands recht).
 
@@ -363,7 +365,7 @@ G2.2. Any disputes arising out of or in connection with this Addendum shall firs
 
 ---
 
-### Article G3 -- Severability (Partiële Nietigheid)
+### Article G3: Severability (Partiële Nietigheid)
 
 G3.1. If any provision of this Addendum is held to be invalid, illegal, or unenforceable, the remaining provisions shall continue in full force and effect.
 
@@ -371,13 +373,13 @@ G3.2. The Parties shall negotiate in good faith to replace any invalid provision
 
 ---
 
-### Article G4 -- Amendments (Wijzigingen)
+### Article G4: Amendments (Wijzigingen)
 
 G4.1. This Addendum may only be amended, modified, or supplemented by a written instrument signed by both Parties.
 
 ---
 
-### Article G5 -- Counterparts (Exemplaren)
+### Article G5: Counterparts (Exemplaren)
 
 G5.1. This Addendum may be executed in counterparts, each of which shall be deemed an original, and all of which together shall constitute one and the same instrument.
 

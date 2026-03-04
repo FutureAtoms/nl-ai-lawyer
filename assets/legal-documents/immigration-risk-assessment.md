@@ -28,7 +28,7 @@
 
 ### **Switching to contractor or self-employed status carries very high risk and is strongly discouraged.**
 
-Your current HSM (kennismigrant) permit, employment relationship, and citizenship timeline are all dependent on remaining a permanent employee. Switching to contractor status would likely jeopardize your residence permit, risk disrupting your citizenship timeline, and result in the loss of substantial financial benefits -- with no guaranteed path to an alternative permit. In exceptional circumstances (e.g., imminent employer insolvency), consult an immigration lawyer before making any change.
+Your current HSM (kennismigrant) permit, employment relationship, and citizenship timeline are all strongly supported by maintaining continuous lawful residence, most easily achieved through permanent employment with a recognized sponsor. Switching to contractor status would likely jeopardize your residence permit, risk disrupting your citizenship timeline, and result in the loss of substantial financial benefits, with no guaranteed path to an alternative permit. In exceptional circumstances (e.g., imminent employer insolvency), consult an immigration lawyer before making any change.
 
 ---
 
@@ -37,9 +37,9 @@ Your current HSM (kennismigrant) permit, employment relationship, and citizenshi
 | Factor | Permanent Employee | Self-Employed Contractor |
 |--------|-------------------|------------------------|
 | **Residence permit** | HSM (current, valid until 15/11/2027) | Must apply for zelfstandige permit |
-| **Permit requirements** | Employer is recognized sponsor (erkend referent) | Assessment by RVO on "essential interest to the Dutch economy" (*wezenlijk Nederlands belang*); RVO evaluates personal experience, business plan, and added value -- see IND/RVO current guidance for the applicable assessment framework |
+| **Permit requirements** | Employer is recognized sponsor (erkend referent) | Assessment by RVO on "essential interest to the Dutch economy" (*wezenlijk Nederlands belang*); RVO evaluates personal experience, business plan, and added value (see IND/RVO current guidance for the applicable assessment framework) |
 | **Salary threshold** | Met (meets the applicable HSM salary threshold, indexed annually; verify current figure with IND) | Must prove sustainable income independently |
-| **Revenue requirement** | N/A | FutureAtoms has EUR 0 revenue -- **very unlikely to meet threshold** |
+| **Revenue requirement** | N/A | FutureAtoms has EUR 0 revenue, **very unlikely to meet threshold** |
 | **Processing time** | Already in place | Several months (IND decision period of 90 days, extendable; total process including RVO assessment may take longer), uncertain outcome |
 | **Gap risk** | None | Potential gap in legal residence |
 | **Citizenship clock** | Continues accumulating | May reset if residence gap occurs |
@@ -48,7 +48,7 @@ Your current HSM (kennismigrant) permit, employment relationship, and citizenshi
 | **Schijnzelfstandigheid risk** | N/A | **HIGH** risk under Wet DBA |
 | **Tax status** | Employee (loonbelasting via employer) | Self-employed (inkomstenbelasting + BTW) |
 | **Job security** | Full Dutch employment protection (ontslagbescherming) | No protection whatsoever |
-| **30% ruling** | Preserved (tax-free allowance continues) | Lost permanently (no longer qualifying employee) |
+| **30% ruling** | Preserved (tax-free allowance continues) | Lapses (3-month transfer window to new qualifying employer; see Section 4.5) |
 
 ---
 
@@ -60,7 +60,7 @@ Your current HSM (kennismigrant) permit, employment relationship, and citizenshi
 - Axelera AI B.V. holds recognized sponsor status with the IND.
 - Switching to self-employment means the legal basis for the HSM permit ceases. In practice, the IND must be notified and will initiate a withdrawal procedure, but the permit does not lapse instantaneously; however, the legal basis is lost and continued residence on the HSM permit becomes precarious.
 - A **different permit type** (verblijfsvergunning als zelfstandige) is required for self-employed persons.
-- The zelfstandige permit has fundamentally different and much stricter requirements.
+- The zelfstandige permit has distinct and much stricter requirements.
 
 ### 4.2 Zelfstandige Permit Requirements
 
@@ -87,7 +87,7 @@ Switching to contractor status means the immediate and permanent loss of:
 - **SARs / stock appreciation rights** (currently offered as part of compensation)
 - **Pension contributions** (employer pension scheme)
 - **Illness coverage** under the Ziektewet (2 years continued salary during illness)
-- **Holiday pay** (8% vakantiegeld, Art. 7:639 BW)
+- **Holiday allowance** (8% vakantiebijslag, Art. 15 Wet minimumloon en minimumvakantiebijslag (WML))
 - **13th month salary** (if applicable under employment contract or CLA)
 - **Dutch employment protection** (ontslagbescherming under Art. 7:669 BW et seq.)
 - **Transition payment** (transitievergoeding) upon termination
@@ -100,9 +100,9 @@ The 30% ruling (*30%-regeling*) under **Art. 31a(2)(e) Wet op de loonbelasting 1
 
 **Key implications for status change:**
 
-- The 30% ruling is **only available to employees** — self-employed persons and contractors do not qualify.
-- If the employment relationship with Axelera AI ends (whether by resignation, termination, or switch to contractor status), the 30% ruling **lapses immediately** unless a new qualifying employment is found within three months.
-- Once lost, the ruling **cannot be reinstated** for the same period — the remaining entitlement is forfeited permanently.
+- The 30% ruling is **only available to employees**; self-employed persons and contractors do not qualify.
+- If the employment relationship with Axelera AI ends (whether by resignation, termination, or switch to contractor status), the 30% ruling **lapses** unless a new qualifying employment with a different employer is found **within three months** (the transfer window).
+- If the three-month transfer window expires without new qualifying employment, the remaining entitlement is **forfeited permanently** and cannot be reinstated for the same period.
 
 **Estimated financial impact:**
 
@@ -112,7 +112,7 @@ The 30% ruling (*30%-regeling*) under **Art. 31a(2)(e) Wet op de loonbelasting 1
 | Remaining ruling period (estimated) | 1–3 years (maximum 5-year period from first employment in NL) |
 | Total potential loss if ruling lapses | EUR 6,000–20,000 over remaining period |
 
-**Note:** The 30% ruling was reduced from 30% to an effective lower rate for high earners under recent legislative changes (2024–2025). The exact benefit depends on current salary, the applicable percentage cap, and remaining eligibility period. Consult a tax advisor (*belastingadviseur*) for a precise calculation.
+**Note:** The 30% ruling was reduced from 30% to an effective lower rate for high earners under recent legislative changes (2024–2025). Furthermore, the rate is **reduced from 30% to 27%** from **1 January 2027**. The exact benefit depends on current salary, the applicable percentage cap, and remaining eligibility period. Consult a tax advisor (*belastingadviseur*) for a precise calculation.
 
 **Interaction with addendum negotiation:** The 30% ruling provides an additional financial incentive to remain in employment. Any addendum terms that might lead to employment termination or reclassification should be evaluated in light of this potential tax benefit loss.
 
@@ -121,7 +121,7 @@ The 30% ruling (*30%-regeling*) under **Art. 31a(2)(e) Wet op de loonbelasting 1
 - Under the **Wet deregulering beoordeling arbeidsrelaties (Wet DBA)**, if a contractor works primarily for one client, tax authorities (Belastingdienst) may reclassify the relationship as employment.
 - If Axelera AI is the primary or sole client of FutureAtoms, this risk is **very high**.
 - Reclassification creates **tax liability for both parties**: back-payment of payroll taxes, social security contributions, and potential penalties.
-- **Enforcement resumed from 1 January 2025** after years of a moratorium. The government announced a transitional approach for 2025: full enforcement commenced, but initial enforcement focuses on correction and back-taxes rather than fines (*geen boetes bij handhaving schijnzelfstandigheid* in 2025; see [Rijksoverheid announcement 18 December 2024](https://www.rijksoverheid.nl/actueel/nieuws/2024/12/18/in-2025-geen-boetes-bij-handhaving-schijnzelfstandigheid)). From 2026 onward, the full penalty regime is expected to apply.
+- **Enforcement resumed from 1 January 2025** after years of a moratorium. The government announced a transitional approach: 2025 focused on correction and back-taxes rather than fines (*geen boetes bij handhaving schijnzelfstandigheid* in 2025; see [Rijksoverheid announcement 18 December 2024](https://www.rijksoverheid.nl/actueel/nieuws/2024/12/18/in-2025-geen-boetes-bij-handhaving-schijnzelfstandigheid)). **2026 is a "halfzachte landing" (semi-soft landing):** no *verzuimboetes* (administrative fines for failure to comply) are imposed; *vergrijpboetes* (fines for intentional or grossly negligent non-compliance / *opzet of grove schuld*) are possible from 1 January 2026; back-assessments (*naheffingsaanslagen*) can be levied back to 1 January 2025. The **full penalty regime** (including verzuimboetes) is not expected until **2027**.
 - The Deliveroo ruling (Hoge Raad, ECLI:NL:HR:2023:443) has broadened the criteria for establishing an employment relationship.
 
 ---
@@ -211,7 +211,7 @@ The 30% ruling (*30%-regeling*) under **Art. 31a(2)(e) Wet op de loonbelasting 1
 - **Rijkswet op het Nederlanderschap**, Art. 8 (naturalization requirements)
 - **Burgerlijk Wetboek**, Art. 7:653a (nevenwerkzaamhedenbeding / side activities)
 - **Burgerlijk Wetboek**, Art. 7:669 et seq. (ontslagbescherming / employment protection)
-- **Burgerlijk Wetboek**, Art. 7:639 (vakantiegeld / holiday pay)
+- **Wet minimumloon en minimumvakantiebijslag (WML)**, Art. 15 (vakantiebijslag / holiday allowance, i.e., 8% annual holiday allowance). Note: Art. 7:639 BW concerns vakantieloon (continued salary during leave), which is a different entitlement.
 - **Wet deregulering beoordeling arbeidsrelaties (Wet DBA)** (false self-employment)
 - **Hoge Raad**, ECLI:NL:HR:2023:443 (Deliveroo ruling on employment relationships)
 - **IND Guidelines** on self-employment permits (verblijfsvergunning als zelfstandige)

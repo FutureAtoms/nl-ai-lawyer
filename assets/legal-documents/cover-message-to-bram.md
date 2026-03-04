@@ -1,6 +1,6 @@
 # Cover Message to Bram
 
-*Short message to accompany the formal response -- send via email / Teams / Slack*
+*Short message to accompany the formal response. Send via email / Teams / Slack.*
 
 ---
 
@@ -11,12 +11,12 @@ aligned on the compensation side.
 
 I've gone through the clauses carefully. I can see legal drafted broadly
 to protect the company, which makes sense. I'd like to help scope the
-addendum to what we discussed -- Axelera getting strong exclusive rights
-to Wingman -- so it's easy for legal to finalise.
+addendum to what we discussed (Axelera getting strong exclusive rights
+to Wingman) so it's easy for legal to finalise.
 
 I want to make this as easy as possible for legal: Axelera gets strong
 Wingman rights, and my independent side projects stay separate. To give
-you some context, FutureAtoms isn't a competitor -- it's a broad hobby
+you some context, FutureAtoms isn't a competitor, it's a broad hobby
 business spanning healthcare (Swaastik, 150K+ facilities), music
 generation (BevyBeats), AI wellness (Yuj), mental health (Savitri),
 LinkedIn networking (Zaphy), workflow automation (Agentic Control),
@@ -28,11 +28,11 @@ I've put together a few documents with clarifications to help refine
 the scope and get us to a clean agreement:
 
 Three attachments:
-1. **Response letter** (for legal) -- clarifications to help refine
+1. **Response letter** (for legal): clarifications to help refine
    the scope and ensure the addendum captures what we intended
-2. **Counter-proposal** -- a replacement addendum that I think works
+2. **Counter-proposal**: a replacement addendum that I think works
    for both sides
-3. **Delivery manifest** -- exactly what Wingman v1.0.0 includes
+3. **Delivery manifest**: exactly what Wingman v1.0.0 includes
 
 The counter-proposal is a starting point. I'm flexible on details
 and I'm sure there will be some back and forth. I just want to make
