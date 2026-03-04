@@ -1,0 +1,57 @@
+{
+  "eval_id": "eval-18",
+  "skill": "dutch-tax-law",
+  "iteration": 3,
+  "question": "I'm a US citizen moving to the Netherlands. My Dutch employer offered me the 30% ruling. How does it work, what's the duration, and what happens to my US tax obligations?",
+  "assertions": {
+    "explains_30_percent": {
+      "description": "Explains the 30% ruling mechanism",
+      "pattern": "30%|30 percent|30-procent",
+      "result": "PASS",
+      "evidence": "Response thoroughly explains the 30% ruling: 'The employer may designate up to 30% of the total gross employment income as a tax-free reimbursement', with a worked numerical example showing EUR 65,867 gross salary, EUR 19,760 tax-free allowance, and EUR 46,107 taxable salary. The mechanism is explained in clear detail."
+    },
+    "mentions_duration": {
+      "description": "Mentions the 5-year / 60-month duration",
+      "pattern": "5 year|five year|60 month|vijf jaar",
+      "result": "PASS",
+      "evidence": "Response explicitly states: 'The maximum duration of the 30% ruling is 60 months (5 years) from the first day of employment in the Netherlands.' The step-down schedule (30%/20%/10% over 20-month tranches) is also detailed."
+    },
+    "discusses_conditions": {
+      "description": "Discusses eligibility conditions including specific expertise, 150 km rule, and salary threshold",
+      "pattern": "specific expertise|specifieke deskundigheid|150 km|salary threshold",
+      "result": "PASS",
+      "evidence": "Response has three dedicated subsections: '1. Specific Expertise (Specifieke Deskundigheid)', '3. The 150 km Rule (150-Kilometerregel)', and '4. Salary Thresholds (Inkomensnorm) - 2024/2025' with a full table of threshold amounts. All conditions are explained in detail."
+    },
+    "mentions_treaty": {
+      "description": "Mentions the Netherlands-US tax treaty/belastingverdrag/double taxation",
+      "pattern": "treaty|verdrag|belastingverdrag|double taxation",
+      "result": "PASS",
+      "evidence": "Response has a dedicated section 'The Netherlands-US Tax Treaty (Belastingverdrag)' explaining the bilateral treaty mechanisms, foreign tax credits, exemption methods, and how the treaty interacts with the 30% ruling. Double taxation risk is explicitly discussed."
+    },
+    "includes_disclaimer": {
+      "description": "Includes a legal disclaimer",
+      "pattern": "disclaimer|legal advice|advocaat|belastingadviseur",
+      "result": "PASS",
+      "evidence": "Response includes a comprehensive Legal Disclaimer explicitly stating this is not legal advice, noting the Advocatenwet, recommending a Dutch belastingadviseur and a US-qualified tax professional (CPA or tax attorney), and warning about the frequent legislative changes to the 30% ruling regime."
+    }
+  },
+  "assertions_passed": 5,
+  "assertions_total": 5,
+  "assertions_score": 1.0,
+  "quality_scores": {
+    "legal_accuracy": 5,
+    "completeness": 5,
+    "actionability": 5,
+    "citation_depth": 5,
+    "cross_referencing": 5
+  },
+  "quality_notes": {
+    "legal_accuracy": "Response accurately cites Art. 31a lid 2 sub e Wet LB 1964, the 2024 salary thresholds (EUR 46,107 / EUR 65,867), the 5-year duration rule, the 150 km requirement and its measurement methodology, the new step-down percentages (30%/20%/10% per the Belastingplan 2024), and the US worldwide taxation principle. The FEIE limitation (cannot combine with foreign tax credit for same income) is correctly stated. HR case law on specifieke deskundigheid and duration reduction is cited accurately.",
+    "completeness": "Response fully covers: (1) mechanism of the 30% ruling; (2) all four eligibility conditions (specific expertise, recruitment from abroad, 150 km rule, salary threshold); (3) duration (60 months) and the step-down schedule; (4) transitional provisions; (5) US worldwide taxation problem; (6) Netherlands-US Tax Treaty; (7) FEIE and foreign tax credit interaction; (8) US compliance obligations (FBAR, FATCA, Form 1040); (9) partial non-resident taxpayer status; (10) Totalization Agreement for social security. This is exceptionally complete.",
+    "actionability": "Response provides specific, practical recommendations: apply within 4 months, engage dual-qualified advisor, analyze FEIE vs. foreign tax credit, plan for ruling expiration, monitor legislative changes, maintain FBAR/FATCA compliance, check the step-down schedule. The common pitfalls section from the reference material is implicitly incorporated.",
+    "citation_depth": "Response cites: Art. 31a lid 2 sub e Wet LB 1964; Art. 10e-10ej UBLB 1965; Art. 10ea-10ef URLB 2011; Art. 2.6 Wet IB 2001; Besluit voorkoming dubbele belasting 2001; Netherlands-US Tax Treaty; US IRC Sec. 911; HR 28 april 2006 ECLI:NL:HR:2006:AU2304; HR 14 oktober 2022 ECLI:NL:HR:2022:1436; Gerechtshof Den Haag 22 maart 2017. Citation depth is excellent.",
+    "cross_referencing": "Excellent cross-referencing: the 30% ruling is cross-referenced with (a) the partial non-resident taxpayer status under Art. 2.6 Wet IB 2001; (b) the US-NL Tax Treaty; (c) US IRC Sec. 911 FEIE; (d) the Totalization Agreement for social security; (e) IND kennismigrant thresholds; (f) Belastingplan 2024 legislative changes. The interaction between the 30% ruling and the US foreign tax credit mechanism is particularly well explained."
+  },
+  "overall_pass": true,
+  "grading_notes": "A perfect score on all assertions and all quality dimensions. The response draws comprehensively from the loonbelasting-30-procent.md reference file and the key-case-law.md file, and adds crucial US-specific content that the question specifically required. The response is notably strong on the US citizen special considerations section, which is a critical part of the question. The step-down schedule for new 2024 rulings adds important current legislative accuracy."
+}

@@ -1,0 +1,47 @@
+{
+  "eval_id": 10,
+  "skill": "dutch-employment-law",
+  "iteration": 3,
+  "test_question": "We're hiring a senior developer from India as a kennismigrant. What salary threshold applies, and can we include a concurrentiebeding (non-compete) in a fixed-term contract?",
+  "expectations": [
+    {
+      "assertion": "mentions_salary_threshold",
+      "pattern": "EUR/€",
+      "passed": true,
+      "evidence": "The output explicitly states salary thresholds in EUR notation multiple times, including: 'EUR 5,688 per month (approx.)' for general kennismigrant age 30+, 'EUR 4,171 per month (approx.)' for under 30, and 'EUR 2,989 per month (approx.)' for orientation year permit. The threshold is also referenced in the financial implications section: 'Must meet the applicable IND threshold (approximately EUR 5,688/month gross for 30+ year olds in 2025)'."
+    },
+    {
+      "assertion": "discusses_noncompete_fixedterm",
+      "pattern": "7:653/motivering/motivation/fixed-term/bepaalde tijd",
+      "passed": true,
+      "evidence": "The output contains an entire section 'Part 2: Non-Compete Clause in a Fixed-Term Contract' explicitly discussing Art. 7:653 lid 2 BW: 'Since 1 January 2015 (Art. 7:653 lid 2 BW, as amended by the WWZ), including a concurrentiebeding (non-compete clause) in a fixed-term employment contract (arbeidsovereenkomst voor bepaalde tijd) is in principle not permitted, unless: The employer includes a written justification (schriftelijke motivering)'. The 'motivering' requirement is discussed in detail with specific case law guidance."
+    },
+    {
+      "assertion": "references_ind",
+      "pattern": "IND/kennismigrant/knowledge migrant",
+      "passed": true,
+      "evidence": "The output references 'IND (Immigratie- en Naturalisatiedienst)' in the legal framework section and throughout the analysis. 'kennismigrant' appears in the title and throughout the text. The IND process, IND salary thresholds, IND erkend referent requirements, and www.ind.nl are all explicitly referenced. The output explains 'Who is a Kennismigrant?' and the IND Process Overview in detail."
+    },
+    {
+      "assertion": "includes_disclaimer",
+      "pattern": "disclaimer",
+      "passed": true,
+      "evidence": "The output includes the full English disclaimer: 'This is an AI-generated legal analysis and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet).' All seven disclaimer points are present."
+    }
+  ],
+  "pass_rate": "4/4",
+  "quality_scores": {
+    "legal_accuracy": 5,
+    "completeness": 5,
+    "actionability": 5,
+    "citation_depth": 5,
+    "cross_referencing": 5
+  },
+  "quality_notes": {
+    "legal_accuracy": "All legal provisions are accurately cited. Art. 7:653 lid 2 BW is correctly described as requiring contemporaneous, specific written justification for non-competes in fixed-term contracts. The Hof Arnhem-Leeuwarden case (ECLI:NL:GHARL:2019:7739) is correctly cited for the specificity requirement. The IND salary threshold figures are presented as approximate with appropriate caveats to verify current year figures. The requirement that the salary be gross excluding 8% holiday allowance is correctly noted. The note about the 30% ruling not affecting the gross salary threshold calculation is accurate.",
+    "completeness": "The response covers both questions comprehensively: (1) kennismigrant salary thresholds with age-differentiated amounts, IND process, erkend referent requirement, GVVA nature, and timeline; (2) non-compete in fixed-term contracts covering the general prohibition, the specific justification exception, case law requirements, court moderation powers, compensation rules, and the relatiebeding. Additional considerations (30% ruling, IP ownership, planned legislation) enhance completeness.",
+    "actionability": "The 11-point practical recommendations section is immediately executable. The timeline table, financial implications section, and specific drafting guidance for the non-compete justification make this highly actionable. The warning about common errors (generic motivation, retrospective justification) is particularly practical.",
+    "citation_depth": "Multiple specific article references: Art. 7:653 lid 1, lid 2, lid 3, lid 5 BW; Art. 7:655 BW; Art. 1d BuWav; Wet Werk en Zekerheid 2015. Key case law cited: ECLI:NL:GHARL:2019:7739. Legislative framework references (Wamv, Vb 2000, BuWav, Wav) are comprehensive. IND-specific regulatory context is well-grounded.",
+    "cross_referencing": "Excellent cross-referencing: explicitly references the dutch-immigration-law skill area, the dutch-ip-law skill area (Art. 7 Auteurswet for employer IP ownership), the dutch-privacy-gdpr skill area (personal data in AI models), and the dutch-tax-law skill area (30% ruling). The CAO ICT is mentioned as potentially applicable. This demonstrates awareness of the multi-disciplinary nature of the question."
+  }
+}

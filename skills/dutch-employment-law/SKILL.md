@@ -1,6 +1,6 @@
 ---
 name: dutch-employment-law
-description: "Employment contracts, dismissal law, collective agreements, and worker protections under Dutch law. Use this skill whenever the user asks about Dutch employment, arbeidsrecht, ontslag, dismissal, transitievergoeding, non-compete clauses, concurrentiebeding, CAO, or hiring employees in the Netherlands."
+description: "Employment contracts, dismissal law, collective agreements, and worker protections under Dutch law. Use this skill whenever the user asks about Dutch employment, arbeidsrecht, ontslag, ontslagvergoeding, dismissal, transitievergoeding, non-compete clauses, concurrentiebeding, CAO, proeftijd, or hiring employees in the Netherlands."
 ---
 
 # Dutch Employment Law

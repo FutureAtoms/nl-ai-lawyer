@@ -1,0 +1,57 @@
+{
+  "eval_id": "eval-17",
+  "skill": "dutch-tax-law",
+  "iteration": 3,
+  "question": "We're a Dutch BV with EUR 2M profit. We're considering forming a fiscale eenheid with our 100% subsidiary. What are the advantages, risks, and current requirements?",
+  "assertions": {
+    "cites_vpb": {
+      "description": "Cites Wet VPB/vennootschapsbelasting/art. 15/corporate income tax",
+      "pattern": "Wet VPB|vennootschapsbelasting|art. 15|corporate income tax",
+      "result": "PASS",
+      "evidence": "Response explicitly cites 'Art. 15 Wet VPB: Fiscale eenheid (fiscal unity) regime', 'Wet op de vennootschapsbelasting 1969 (Wet VPB)', and 'Art. 15 Wet VPB' multiple times throughout the analysis."
+    },
+    "explains_advantages": {
+      "description": "Explains verliesverrekening/loss/internal/interne transacties",
+      "pattern": "verliesverrekening|loss|internal|interne transacties",
+      "result": "PASS",
+      "evidence": "Response has a dedicated section '1. Consolidation of Profits and Losses (Verliesverrekening)' explaining loss offsetting, and '2. Tax-Neutral Intercompany Transactions (Interne Transacties)' explaining that intercompany transactions between members are ignored for VPB purposes."
+    },
+    "mentions_joint_liability": {
+      "description": "Mentions hoofdelijke aansprakelijkheid/joint liability/jointly liable",
+      "pattern": "hoofdelijke aansprakelijkheid|joint liability|jointly liable",
+      "result": "PASS",
+      "evidence": "Response has a dedicated risk section '1. Joint and Several Liability (Hoofdelijke Aansprakelijkheid)' explicitly explaining that all members of the fiscal unity are jointly and severally liable for the VPB debt of the entire group."
+    },
+    "mentions_rates": {
+      "description": "Mentions tax rates with percentages",
+      "pattern": "\\d+%",
+      "result": "PASS",
+      "evidence": "Response explicitly states '19%' and '25.8%' rates in the tax rates table, confirms 95% ownership requirement, references 9% innovation box rate, 50% loss offset limitation, and provides a detailed tax calculation showing EUR 502,400 total VPB."
+    },
+    "includes_disclaimer": {
+      "description": "Includes a legal disclaimer",
+      "pattern": "disclaimer|legal advice|advocaat|belastingadviseur",
+      "result": "PASS",
+      "evidence": "Response includes a full Legal Disclaimer section explicitly stating this is not legal advice, references the Advocatenwet, and recommends consulting a qualified belastingadviseur and/or advocaat."
+    }
+  },
+  "assertions_passed": 5,
+  "assertions_total": 5,
+  "assertions_score": 1.0,
+  "quality_scores": {
+    "legal_accuracy": 5,
+    "completeness": 5,
+    "actionability": 5,
+    "citation_depth": 5,
+    "cross_referencing": 5
+  },
+  "quality_notes": {
+    "legal_accuracy": "Response accurately cites Art. 15 Wet VPB requirements (95% ownership, Dutch tax residence, same financial year, same profit determination methods), the 2024 VPB rates (19%/25.8%), the CJEU X BV/X NV ruling leading to spoedreparatiemaatregelen, and loss compensation rules under Art. 20 Wet VPB. The joint and several liability risk is accurately described. The earnings stripping rule (Art. 15b) is correctly cited. No material inaccuracies detected.",
+    "completeness": "The response comprehensively covers all three dimensions asked: (1) advantages - consolidation, interne transacties, single return, asset transfers; (2) risks - hoofdelijke aansprakelijkheid, entry/exit consequences, spoedreparatiemaatregelen, earnings stripping, loss utilization restrictions, cross-border limitations; (3) requirements - all five conditions under Art. 15 Wet VPB. A detailed indicative tax calculation is also provided. The response covers anti-avoidance provisions and compliance obligations.",
+    "actionability": "Response provides clear, immediately actionable recommendations including: verifying conditions with a tax advisor, assessing joint liability risk, modelling loss consolidation benefit, understanding exit consequences, filing the application timely, and reviewing intercompany arrangements. The escalation triggers for specialist advice are also provided.",
+    "citation_depth": "Response cites: Art. 15, 15b, 20, 13, 10a, 8b Wet VPB; the Wet VPB 1969 statute itself; CJEU C-398/16 and C-399/16 (X BV and X NV); HR 17 december 2004 ECLI:NL:HR:2004:AQ3810; HR 22 februari 2008 ECLI:NL:HR:2008:BB6186; fraus legis doctrine (HR 26 mei 1926). All citations are substantively used and explained.",
+    "cross_referencing": "Response cross-references the spoedreparatiemaatregelen triggered by the CJEU EU law rulings, the interaction between Art. 10a and the fiscal unity regime, the earnings stripping rules under ATAD, and the participation exemption. The response also references the related fraus legis doctrine with its historical case law origin. Multiple legal domains (EU law, domestic VPB, anti-avoidance) are appropriately integrated."
+  },
+  "overall_pass": true,
+  "grading_notes": "A perfect score on all assertions and all quality dimensions. The response is comprehensive, legally precise, well-structured, and highly practical. It draws extensively from the vennootschapsbelasting.md and key-case-law.md reference files, covering all required topics with appropriate depth and nuance. The inclusion of a detailed tax calculation adds significant value for the EUR 2M profit scenario specified."
+}

@@ -1,0 +1,47 @@
+{
+  "eval_id": 13,
+  "skill": "dutch-ip-law",
+  "iteration": 3,
+  "test_question": "Our software development team created a custom AI model during working hours using company resources. One developer claims copyright on the training code he wrote. Who owns the IP under Dutch law?",
+  "expectations": [
+    {
+      "assertion": "cites_auteurswet",
+      "pattern": "Auteurswet/art. 7/artikel 7/werkgeversauteursrecht",
+      "passed": true,
+      "evidence": "The output cites 'Art. 7 Aw — Werkgeversauteursrecht (employer copyright / works made in employment)' in the legal framework section. The entire analysis section '2. The Central Legal Issue: Art. 7 Auteurswet — Werkgeversauteursrecht' is dedicated to this provision. The term 'werkgeversauteursrecht' appears multiple times. The output also cites 'Art. 45h–45n Aw' for software-specific provisions."
+    },
+    {
+      "assertion": "discusses_software_ip",
+      "pattern": "software/programmatuur/databankenwet",
+      "passed": true,
+      "evidence": "The output discusses software copyright extensively, citing 'Art. 45h–45n Aw' (special provisions for computer programs), 'Art. 45h Aw: the employer is deemed the author of software created by an employee in the course of their duties'. The 'Databankenwet' is explicitly referenced in the section '6. Database Rights (Databankenwet) — AI Model Training Data' explaining sui generis database rights for the training dataset. The SAS Institute case (CJEU C-406/10) on software copyright scope is cited."
+    },
+    {
+      "assertion": "explains_employer_ownership",
+      "pattern": "werkgever/employer/dienstverband/employment",
+      "passed": true,
+      "evidence": "The output clearly explains employer ownership: 'The employer is automatically deemed the author — and thus the copyright owner — of works created by an employee in the course of their employment duties, without any need for a separate written assignment'. The ownership table states 'Training code (source code): Owner = Employer (Art. 7 Aw)'. The terms 'werkgever', 'employer', 'dienstverband', and 'employment' all appear throughout the analysis."
+    },
+    {
+      "assertion": "includes_disclaimer",
+      "pattern": "disclaimer",
+      "passed": true,
+      "evidence": "The output includes the full English disclaimer: 'This is an AI-generated legal analysis and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet).' All seven disclaimer points are present verbatim."
+    }
+  ],
+  "pass_rate": "4/4",
+  "quality_scores": {
+    "legal_accuracy": 5,
+    "completeness": 5,
+    "actionability": 5,
+    "citation_depth": 5,
+    "cross_referencing": 5
+  },
+  "quality_notes": {
+    "legal_accuracy": "All provisions are accurately cited and correctly applied. Art. 7 Aw is correctly identified as the automatic employer ownership rule without need for an assignment deed. The 'unless otherwise agreed' provision of Art. 7 is correctly noted. The conditions for Art. 7 to apply (employment contract, work within scope of duties) are correctly identified, citing HR 1990 (Kluwer Academic Publishers, ECLI:NL:HR:1990:ZC8537). The distinction from Art. 2 Aw (transfer requiring akte) is correct. The moral rights analysis (employer as deemed maker, not just owner) is legally accurate. The SAS Institute rule (ideas/algorithms not protected) is correctly applied to AI models. The Databankenwet sui generis right is correctly identified.",
+    "completeness": "The response covers: originality threshold (Endstra Tapes, Infopaq), Art. 7 Aw employer ownership rule, Art. 45h Aw software-specific rule, conditions for Art. 7 application, the 'otherwise agreed' exception, moral rights analysis, database rights (Databankenwet), patent considerations (ROW Art. 12), and the evolving question of AI model weight protection. The IP protection status table and practical recommendations are comprehensive.",
+    "actionability": "The 8-item practical recommendations section is immediately executable. The advice to review the employment contract, document work attribution, assess trade secret protection, consider patent protection, and seek specialist AI law advice are all concrete and specific. The escalation trigger for AI model weight copyright is appropriately flagged.",
+    "citation_depth": "Extensive citations: Art. 7 Aw, Art. 8 Aw, Art. 2 Aw, Art. 45h-45n Aw, Art. 25 Aw, Art. 1 Aw; Databankenwet; Art. 12 ROW; HR 1 June 1990 (ECLI:NL:HR:1990:ZC8537); HR 30 May 2008 (ECLI:NL:HR:2008:BC2153, Endstra Tapes); CJEU C-5/08 (Infopaq); CJEU C-406/10 (SAS Institute); EU Software Directive 2009/24/EC; EU Directive 96/9/EC (Database Directive). Exceptionally deep citation coverage.",
+    "cross_referencing": "Excellent cross-referencing: explicitly references the Wet bescherming bedrijfsgeheimen (Wbb, trade secrets), the Rijksoctrooiwet 1995 (ROW, patents), the Databankenwet (database rights), and flags the AI-generated works issue as an escalation trigger. Cross-references to the employment law context (employment contract, job description) are appropriate. The output notes the interaction between copyright law and employment law in determining the scope of Art. 7 Aw."
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "test_id": "25",
+  "skill": "eu-law-integration",
+  "iteration": 3,
+  "question": "A Dutch court is dealing with a case where an EU directive hasn't been properly implemented in Dutch law. The directive deadline passed 2 years ago. Can the private party invoke the directive directly against the Dutch government?",
+  "assertions": {
+    "explains_direct_effect": {
+      "pattern": "direct effect|rechtstreekse werking|Van Gend en Loos",
+      "result": "PASS",
+      "evidence": "Extensive coverage: 'The foundational principle of direct effect was established in a Dutch case — Van Gend en Loos v Nederlandse Administratie der Belastingen.' Full three-part Van Gend en Loos test explained (clear/precise, unconditional, no margin of discretion). Also covers 'rechtstreekse werking' concept contextually."
+    },
+    "distinguishes_vertical_horizontal": {
+      "pattern": "vertical|horizontal|verticale|horizontale",
+      "result": "PASS",
+      "evidence": "Section 2 explicitly titled 'The Key Principle: Vertical Direct Effect Only'. Marshall and Faccini Dori cited for no horizontal direct effect. Section 4 fully titled 'Vertical vs. Horizontal Direct Effect — The Full Picture' with comprehensive distinction and exceptions (Mangold general principles, consistent interpretation)."
+    },
+    "mentions_key_cases": {
+      "pattern": "Marshall|Faccini Dori|Francovich",
+      "result": "PASS",
+      "evidence": "All three key cases mentioned: 'Marshall v Southampton... (CJEU, C-152/84, 1986)' — directives no horizontal; 'Faccini Dori v Recreb Srl (CJEU, C-91/92, 1994)' — no horizontal direct effect; 'Francovich (C-6/90 and C-9/90, 1991)' — state liability. Additional cases: Brasserie du Pêcheur, Simmenthal, Van Gend en Loos, Costa v ENEL, Marleasing."
+    },
+    "references_dutch_constitution": {
+      "pattern": "art. 93|art. 94|Grondwet",
+      "result": "PASS",
+      "evidence": "Art. 93 and Art. 94 Grondwet both cited with full text quotations: 'Art. 93 Grondwet' binding force of directly effective treaty provisions, 'Art. 94 Grondwet' obligation to set aside conflicting national law. Section 7 dedicated entirely to 'Dutch Constitutional Framework'. The toetsingsverbod (Art. 120 Grondwet) also correctly noted."
+    },
+    "includes_disclaimer": {
+      "pattern": "disclaimer|legal advice|advocaat",
+      "result": "PASS",
+      "evidence": "Full English disclaimer appended with all seven numbered points."
+    }
+  },
+  "assertions_passed": 5,
+  "assertions_total": 5,
+  "assertions_score": 1.0,
+  "quality_scores": {
+    "legal_accuracy": 5,
+    "completeness": 5,
+    "actionability": 5,
+    "citation_depth": 5,
+    "cross_referencing": 5
+  },
+  "quality_notes": {
+    "legal_accuracy": "Exceptional legal accuracy throughout. Key verifications: (1) Van Gend en Loos three-part test correctly stated; (2) Marshall and Faccini Dori correctly cited for no horizontal direct effect of directives; (3) Francovich conditions correctly stated from Brasserie du Pêcheur (three conditions); (4) Art. 93/94 Grondwet correctly explained and contrasted with Art. 120 Grondwet toetsingsverbod; (5) Foster v British Gas correctly cited for broad definition of 'State'; (6) Simmenthal correctly explained; (7) Marleasing correctly cited for directive-conforming interpretation; (8) Dutch monist tradition correctly explained. The nuance that Art. 120 Gw (constitutional review prohibition) does NOT extend to EU law review via Art. 94 is correctly and importantly stated.",
+    "completeness": "Outstanding completeness. Covers: Van Gend en Loos direct effect test, directive-specific rules (vertical only), why vertical applies here (against Dutch government), Marshall/Faccini Dori for horizontal, Francovich as alternative remedy with three conditions, consistent interpretation duty (Marleasing), Dutch constitutional framework (Arts. 93/94/120 Grondwet), what the court should actually do step-by-step, preliminary reference option (Art. 267 TFEU), summary case law table. Nothing material is missing from this analysis.",
+    "actionability": "Exceptionally actionable for a complex EU law question. Section 5 ('What the Dutch Court Can and Should Do') provides a structured three-step approach: (1) set aside conflicting national law, (2) directive-conforming interpretation, (3) preliminary reference. Section 8 provides a specific numbered checklist for the court. The Francovich damages pathway is explained as a clear alternative. Courts and practitioners can directly use this framework.",
+    "citation_depth": "Outstanding citation depth: 14 distinct cases cited including foundational CJEU cases (Van Gend en Loos, Costa v ENEL, Simmenthal, Marshall, Faccini Dori, Francovich, Brasserie du Pêcheur, Marleasing, Foster v British Gas, Mangold, Kucukdeveci), Dutch cases (HR Rusttijden-arrest, Rb. Den Haag Francovich claim), plus specific ECLI numbers. All TFEU and Grondwet articles correctly numbered. Full case law summary table provided.",
+    "cross_referencing": "Excellent cross-referencing: EU primary law to Dutch constitutional framework, Simmenthal principle to Art. 94 Grondwet as Dutch equivalent, Francovich to Dutch tort law (Art. 6:162 BW), preliminary reference procedure (Art. 267 TFEU) to Dutch courts of last instance, horizontal direct effect limitation to exceptions via general principles (Mangold), German and French constitutional resistance contexts provided for comparative perspective. The monist vs. dualist distinction is cross-referenced to the constitutional acceptance of EU primacy in the Netherlands specifically."
+  },
+  "overall_grade": "EXCELLENT",
+  "grader_notes": "This is a textbook-quality analysis of EU direct effect doctrine in the Dutch constitutional context. The response correctly answers the question (yes, direct invocability against the Dutch government is likely available) while providing the full analytical framework, clearly distinguishing vertical from horizontal direct effect, citing all three required key cases (Marshall, Faccini Dori, Francovich), and grounding the analysis in Dutch constitutional law (Arts. 93/94 Grondwet). The structure — establishing the principle, applying it to the specific facts (government as defendant, deadline passed 2 years ago), then providing alternatives (consistent interpretation, Francovich) — is exactly right. The checklist for the court in Section 8 is a particularly strong practical contribution. Score: 25/25."
+}

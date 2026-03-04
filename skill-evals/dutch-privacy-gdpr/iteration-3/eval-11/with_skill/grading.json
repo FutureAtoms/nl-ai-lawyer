@@ -1,0 +1,53 @@
+{
+  "eval_id": 11,
+  "skill": "dutch-privacy-gdpr",
+  "iteration": 3,
+  "test_question": "Our Dutch startup is building a health app that collects user location data, health metrics, and connects to a US-based analytics platform. We have 50,000 users. What are our AVG compliance obligations?",
+  "expectations": [
+    {
+      "assertion": "mentions_special_categories",
+      "pattern": "bijzondere categorie/special category/art. 9/gezondheidsgegevens/health data",
+      "passed": true,
+      "evidence": "The output prominently discusses special category data in the section 'Special Category Data: The Health Data Issue (Art. 9 AVG)'. It states: 'health data (gezondheidsgegevens) constitutes a special category of personal data under Art. 9 lid 1 AVG (GDPR)'. The terms 'bijzondere categorie' context, 'gezondheidsgegevens', 'Art. 9 AVG', and 'special category' are all present throughout the analysis."
+    },
+    {
+      "assertion": "discusses_dpia",
+      "pattern": "DPIA/Data Protection Impact Assessment/gegevensbeschermingseffectbeoordeling",
+      "passed": true,
+      "evidence": "The output contains a dedicated section 'DPIA — Data Protection Impact Assessment (Art. 35 AVG)' stating 'A DPIA (Gegevensbeschermingseffectbeoordeling / GEB) is mandatory in this scenario.' The analysis lists four applicable criteria (health data, 50,000 users, combined datasets, innovative technology) and notes the AP-specific mandatory DPIA requirement for health data in consumer apps. The full abbreviation 'Gegevensbeschermingseffectbeoordeling' is present."
+    },
+    {
+      "assertion": "addresses_us_transfer",
+      "pattern": "Schrems/adequacy/SCCs/Standard Contractual Clauses/DPF/Data Privacy Framework",
+      "passed": true,
+      "evidence": "The output contains a detailed section 'International Data Transfers to the US — Chapter V AVG' covering: the Schrems II ruling (CJEU C-311/18) with explicit reference to 'Schrems II'; the EU-US Data Privacy Framework (DPF) as 'Option 1'; Standard Contractual Clauses (SCCs) as 'Option 2' with a Transfer Impact Assessment requirement; the Uber EUR 290 million AP fine for unlawful US transfers. All four assertion terms are present: 'Schrems', 'adequacy', 'SCCs/Standard Contractual Clauses', and 'DPF/Data Privacy Framework'."
+    },
+    {
+      "assertion": "mentions_verwerkersovereenkomst",
+      "pattern": "verwerkersovereenkomst/data processing agreement/art. 28",
+      "passed": true,
+      "evidence": "The output contains a dedicated section 'Data Processing Agreements (Art. 28 AVG — Verwerkersovereenkomst)' stating 'a verwerkersovereenkomst (data processing agreement / DPA) is mandatory before any personal data is shared with the analytics platform'. Art. 28 AVG is cited multiple times and the minimum required DPA content is listed per Art. 28 lid 3 AVG. The term appears in the recommendations section as item 3."
+    },
+    {
+      "assertion": "includes_disclaimer",
+      "pattern": "disclaimer",
+      "passed": true,
+      "evidence": "The output includes the full English disclaimer with the text 'This is an AI-generated legal analysis and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet).' All seven disclaimer points are present verbatim."
+    }
+  ],
+  "pass_rate": "5/5",
+  "quality_scores": {
+    "legal_accuracy": 5,
+    "completeness": 5,
+    "actionability": 5,
+    "citation_depth": 5,
+    "cross_referencing": 5
+  },
+  "quality_notes": {
+    "legal_accuracy": "All legal provisions are accurately cited and correctly explained. Art. 9 lid 2 exceptions are correctly categorized, with explicit consent (sub a) identified as the primary available exception for a consumer health app. The DPF adequacy decision (July 2023, Uitvoeringsbesluit 2023/1795) is correctly identified. Schrems II (CJEU C-311/18) is correctly cited with its holding. The TIA requirement post-Schrems II is accurate. The DPO appointment trigger (Art. 37 lid 1 sub c) is correctly identified for large-scale special category processing. UAVG Art. 24 health data exceptions are correctly noted as not applicable to a consumer app.",
+    "completeness": "The analysis covers all major AVG compliance obligations: legal basis (Art. 6 + Art. 9), special category data, purpose limitation, data minimization, data subject rights, security (Art. 32), data processing agreements (Art. 28), international transfers (Chapter V), DPIA (Art. 35), DPO (Art. 37), records of processing (Art. 30). The risk assessment table and prioritized recommendations add significant practical value. AP enforcement context (Uber fine, health data enforcement priorities) is included.",
+    "actionability": "The 10-item prioritized action plan with timelines (immediate, 30 days, 60 days, 90 days, ongoing) is highly actionable. The recommendation to verify DPF certification at dataprivacyframework.gov is specific and immediately executable. The distinction between DPF and SCCs + TIA as alternative transfer mechanisms enables informed decision-making.",
+    "citation_depth": "Extensive citation depth: Art. 9 lid 1, lid 2 sub a, sub h AVG; Art. 6 lid 1 sub a, sub b AVG; Art. 5 lid 1 sub b, sub c AVG; Art. 7 lid 3 AVG; Art. 28 lid 3 AVG; Art. 30 AVG; Art. 32 AVG; Art. 33 AVG; Art. 35 lid 7 AVG; Art. 36 AVG; Art. 37 AVG; Art. 49 AVG; Art. 24 UAVG; Schrems II (CJEU C-311/18); SCCs 2021 (Uitvoeringsbesluit 2021/914); DPF (Uitvoeringsbesluit 2023/1795); AP enforcement decisions (Uber 2024, OLVG 2020, Haga 2019, Clearview AI 2023).",
+    "cross_referencing": "Excellent cross-referencing: references the Uber case (AP enforcement context), OLVG and Haga Hospital fines (security context), Clearview AI fine (biometric data context). References EDPB Guidelines on DPIA. Links EU-level regulation (GDPR) to Dutch UAVG. References the AP's mandatory DPIA list and enforcement priorities. Cross-skill connection to AI/algorithmic processing risks is noted (SyRI decision context would strengthen this further but is not critical for the assertions)."
+  }
+}

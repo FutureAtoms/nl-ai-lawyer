@@ -1,0 +1,52 @@
+{
+  "test_id": "27",
+  "skill": "nda-triage-nl",
+  "iteration": 3,
+  "question": "Quickly screen this NDA: Mutual NDA, Dutch law, 5-year term, confidential info defined as 'all information shared between parties', penalty of EUR 100,000 per breach plus EUR 10,000 per day, no carve-out for legally compelled disclosure, no residual knowledge clause, disputes via NAI arbitration.",
+  "assertions": {
+    "uses_traffic_light": {
+      "pattern": "GREEN|YELLOW|RED",
+      "result": "PASS",
+      "evidence": "Full traffic light system used throughout: Quick Summary Table uses GREEN/YELLOW/RED for each clause. 'Overall Rating: RED' stated at top. Individual clauses rated: RED for definition, RED for carve-outs, YELLOW for term, GREEN for dispute resolution, etc."
+    },
+    "flags_overbroad_definition": {
+      "pattern": "overbroad|te ruim|all information|broad",
+      "result": "PASS",
+      "evidence": "'all information shared between parties' is explicitly flagged as RED with heading 'Overbroad and legally unworkable': 'This definition covers every piece of information exchanged between the parties, regardless of its nature, sensitivity, or whether it was intended to be confidential.' The word 'overbroad' is used directly."
+    },
+    "flags_missing_carveout": {
+      "pattern": "legally compelled|wettelijke verplichting|gerechtelijk bevel|carve-out",
+      "result": "PASS",
+      "evidence": "Explicit RED flag: 'The Missing Legally Compelled Disclosure Provision is the Most Serious Omission' in Clause 2 section. Includes: 'The absence of a legally compelled disclosure carve-out creates an irresolvable conflict with Dutch and EU legal obligations' with specific examples (Art. 843a Rv, Wwft, AFM, Belastingdienst, parliamentary inquiry). Term 'carve-out' used multiple times."
+    },
+    "discusses_penalty": {
+      "pattern": "boete|penalty|100.000|100,000",
+      "result": "PASS",
+      "evidence": "Full penalty analysis in Clause 3: EUR 100,000 per breach explicitly discussed. Penalty Exposure Analysis table provided with four scenarios: single breach = EUR 100,000; 30-day continuation = EUR 400,000; 90-day = EUR 1,000,000; 1-year = EUR 3,750,000. Art. 6:94 BW judicial moderation discussed. Intrahof/Bart Smit case cited."
+    },
+    "includes_disclaimer": {
+      "pattern": "disclaimer|legal advice|advocaat",
+      "result": "PASS",
+      "evidence": "Full English disclaimer appended with note that this is a 'pre-screening assessment only — it does not constitute a full legal opinion on the enforceability of any specific clause.'"
+    }
+  },
+  "assertions_passed": 5,
+  "assertions_total": 5,
+  "assertions_score": 1.0,
+  "quality_scores": {
+    "legal_accuracy": 5,
+    "completeness": 5,
+    "actionability": 5,
+    "citation_depth": 5,
+    "cross_referencing": 5
+  },
+  "quality_notes": {
+    "legal_accuracy": "Highly accurate on all legal points. Key verifications: (1) Art. 6:91-6:94 BW penalty clause framework correctly cited; (2) Art. 6:92 BW default (penalty replaces damages) correctly explained; (3) Art. 6:248 BW reasonableness/fairness ground for moderation correctly cited; (4) Art. 843a Rv (exhibitieplicht) correctly identified as a source of legally compelled disclosure; (5) Wwft, AFM/DNB reporting, AWR correctly identified as other compelled disclosure contexts; (6) Haviltex standard correctly cited for interpretation; (7) NAI arbitration correctly assessed as GREEN; (8) Art. 254 Rv kort geding correctly flagged as preserved even with arbitration clause (unless explicitly excluded); (9) Intrahof/Bart Smit correctly cited for moderation threshold.",
+    "completeness": "The Quick Summary Table covers all key clauses including return/destruction (flagged as missing) and residual knowledge (rated RED as missing). Clause-by-clause analysis covers all five flagged issues plus governing law/disputes. Missing clauses table at end is comprehensive. Priority actions numbered and specific. Penalty exposure analysis table with four scenarios is a required output per SKILL.md and is fully present.",
+    "actionability": "Highly actionable: Seven numbered priority actions, specific negotiation targets for the penalty clause (reduce to EUR 25,000-50,000 per breach, EUR 2,500-5,000 per day, add aggregate cap), specific drafting directions for definition and carve-outs. The 'Action' line after each clause analysis (Accept/Negotiate/Reject) follows the SKILL.md format. The distinction between trade secrets (Wbb) and ordinary confidential information is made clearly.",
+    "citation_depth": "Excellent: Arts. 6:91-6:94 BW (penalty clauses), Art. 6:248 BW (reasonableness), Art. 843a Rv (exhibitieplicht), Haviltex (HR 13 maart 1981, NJ 1981/635), Intrahof/Bart Smit (HR 27 april 2007, ECLI:NL:HR:2007:AZ6638), Art. 254 Rv (kort geding), Wet bescherming bedrijfsgeheimen (Wbb), Art. 1 Wbb, Art. 6:162 BW. All penalty clause articles correctly sequenced (6:91 definition, 6:92 default, 6:93 notice, 6:94 moderation).",
+    "cross_referencing": "Excellent: Penalty clause cross-referenced to Art. 6:94 BW moderation and Intrahof/Bart Smit; overbroad definition cross-referenced to Haviltex interpretation standard and potential court moderation under Art. 6:248 BW; missing carve-outs cross-referenced to specific Dutch statutory compelled disclosure obligations; residual knowledge cross-referenced to employee freedom and Wbb limitation to defined trade secrets; arbitration cross-referenced to kort geding preservation (Art. 254 Rv). The Wbb/NDA distinction is correctly framed."
+  },
+  "overall_grade": "EXCELLENT",
+  "grader_notes": "This response perfectly implements the SKILL.md triage framework. The Quick Summary Table with GREEN/YELLOW/RED ratings appears first, the penalty exposure analysis table is provided, and the clause-by-clause analysis clearly flags all four required assertion topics: traffic light system, overbroad definition, missing carve-out, and penalty discussion. The response correctly gives the overall NDA a RED rating based on three concurrent RED-rated clauses. The legally compelled disclosure analysis is particularly detailed and legally precise, identifying six specific Dutch legal obligations that would conflict with the prohibition. The residual knowledge analysis adds value by connecting the overbroad definition to the specific risk for technical staff. Score: 25/25."
+}

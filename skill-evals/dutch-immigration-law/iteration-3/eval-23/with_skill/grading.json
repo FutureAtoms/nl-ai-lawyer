@@ -1,0 +1,52 @@
+{
+  "test_id": "23",
+  "skill": "dutch-immigration-law",
+  "iteration": 3,
+  "question": "We want to hire a Brazilian software engineer as a kennismigrant. She currently lives in Brazil. What's the full process from IND application to arrival in the Netherlands, and what salary do we need to offer?",
+  "assertions": {
+    "mentions_recognized_sponsor": {
+      "pattern": "erkend referent|recognized sponsor",
+      "result": "PASS",
+      "evidence": "Extensive coverage: 'This is the first and most critical step. Under Art. 2c Vreemdelingenwet 2000 (Vw 2000), the employer must be a recognized sponsor (erkend referent) with the IND before any kennismigrant application can be filed.' Multiple references throughout."
+    },
+    "mentions_salary_threshold": {
+      "pattern": "EUR|€",
+      "result": "PASS",
+      "evidence": "Detailed salary threshold tables provided: 'Standard (age 30+): EUR 5,493 | Reduced (age under 30): EUR 4,028' with full table of 2025 thresholds."
+    },
+    "explains_mvv_procedure": {
+      "pattern": "MVV|machtiging tot voorlopig verblijf|TEV",
+      "result": "PASS",
+      "evidence": "Comprehensive TEV/MVV procedure explained: 'Since Brazil is not on the MVV-exempt list... the engineer must obtain a Machtiging tot Voorlopig Verblijf (MVV) — authorization for temporary stay — before entering the Netherlands. The MVV and residence permit (VVB) application are combined into a single TEV procedure under Art. 2a Vw 2000.'"
+    },
+    "mentions_ind": {
+      "pattern": "IND|Immigratie",
+      "result": "PASS",
+      "evidence": "IND (Immigratie- en Naturalisatiedienst) mentioned repeatedly throughout the response with specific procedural details."
+    },
+    "includes_disclaimer": {
+      "pattern": "disclaimer|legal advice|advocaat",
+      "result": "PASS",
+      "evidence": "Full English disclaimer appended: 'This is an AI-generated legal analysis and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet).'"
+    }
+  },
+  "assertions_passed": 5,
+  "assertions_total": 5,
+  "assertions_score": 1.0,
+  "quality_scores": {
+    "legal_accuracy": 5,
+    "completeness": 5,
+    "actionability": 5,
+    "citation_depth": 5,
+    "cross_referencing": 5
+  },
+  "quality_notes": {
+    "legal_accuracy": "All legal references are correct: Art. 3.30a Vb 2000, Art. 2c/2e Vw 2000, Art. 1d BuWav, Art. 2a Vw 2000. MVV-exempt list correctly identifies Brazil as not exempt. Salary thresholds accurately reflect the 2025 rates from the kennismigrant.md reference file. Age-30 threshold correctly applied. Holiday allowance rule correctly stated (excluded from base, IND adds 8% separately). Four ABRvS cases accurately cited with correct ECLI numbers.",
+    "completeness": "Exceptionally comprehensive: covers recognized sponsor requirements and obligations, salary thresholds (both age categories), full TEV procedure step-by-step in three phases, required documents from both sponsor and employee, timeline table, costs breakdown, duration/renewal, path to permanent residence and citizenship, 30% ruling interaction, family members, no TWV required, common pitfalls. Nothing material is missing.",
+    "actionability": "Highly actionable: numbered steps for each phase (Phase A/B/C), checklist-friendly structure, specific cost figures, timeline table with estimated durations, practical recommendation on verifying age for salary threshold, clear warning about continuous compliance obligation. Employer can use this as a project plan.",
+    "citation_depth": "Outstanding citation depth: 4 specific ABRvS rulings with ECLI numbers, specific article references for every requirement (Art. 3.30a Vb, Art. 2c Vw, Art. 2e Vw, Art. 1d BuWav, Art. 2a Vw, Art. 17 Vw, Art. 3.1 VV, Art. 31a Wet LB, Art. 21 Vw), full legal framework listed, fees cited with proviso to verify annually. The 30% ruling correctly cross-referenced to tax skill domain.",
+    "cross_referencing": "Excellent cross-referencing: TEV procedure linked to Wet modern migratiebeleid, recognized sponsor to Art. 2c Vw, salary threshold to ABRvS case law, MVV-exempt list to specific statutory articles, 30% ruling cross-referenced to Belastingdienst (noting it is a different body from IND), family reunification linked to separate procedures, path to permanent residence to Art. 21 Vw and EU Directive 2003/109/EC."
+  },
+  "overall_grade": "EXCELLENT",
+  "grader_notes": "This is a near-perfect response. It systematically covers every element a Dutch employment lawyer or HR professional would need: from pre-condition (recognized sponsor) through the full TEV procedure, salary thresholds with correct annual indexing caveat, practical timeline, costs, and path forward. The response correctly identifies Brazil's non-exempt MVV status, correctly explains the Phase A/B/C structure of the procedure, and accurately warns about continuous compliance obligations. The case law citations are accurate and directly relevant. Minor observation: the response could have mentioned that the IND's fast-track 2-week processing time is a target, not a guarantee, but the response already notes to verify at ind.nl. Score: 25/25."
+}

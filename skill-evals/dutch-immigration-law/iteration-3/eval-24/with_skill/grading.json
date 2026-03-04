@@ -1,0 +1,47 @@
+{
+  "test_id": "24",
+  "skill": "dutch-immigration-law",
+  "iteration": 3,
+  "question": "My partner is from Japan and we want them to join me in the Netherlands on a family reunification visa. I'm a Dutch citizen. What are the income requirements and how long does the process take?",
+  "assertions": {
+    "mentions_income_requirement": {
+      "pattern": "income|inkomen|120%|minimum loon|minimumloon",
+      "result": "PASS",
+      "evidence": "Detailed income requirement section: '100% of the net minimum wage (netto minimumloon)' and 'Approximately EUR 1,934.40 per month net (2024 figure)'. The response correctly states 100% (not 120%) and references the Chakroun case for why 120% was invalidated."
+    },
+    "discusses_mvv": {
+      "pattern": "MVV|machtiging|TEV",
+      "result": "PASS",
+      "evidence": "Full discussion: 'Japan is on the MVV-exempt list (Art. 17 Vw 2000 jo. Art. 3.1 VV 2000), which means your partner does not need to obtain an MVV before entering the Netherlands.' TEV procedure also explained in detail with two route options."
+    },
+    "mentions_inburgering": {
+      "pattern": "inburgering|civic integration|basisexamen",
+      "result": "PASS",
+      "evidence": "Comprehensive coverage: 'Under the Dutch civic integration requirement for family migration, certain nationalities must pass a basisexamen inburgering buitenland (basic civic integration exam abroad)' plus confirmation Japan is exempt, then covers the Wet inburgering 2021 obligation post-arrival."
+    },
+    "includes_disclaimer": {
+      "pattern": "disclaimer|legal advice|advocaat",
+      "result": "PASS",
+      "evidence": "Full English disclaimer appended with all seven numbered points."
+    }
+  },
+  "assertions_passed": 4,
+  "assertions_total": 4,
+  "assertions_score": 1.0,
+  "quality_scores": {
+    "legal_accuracy": 5,
+    "completeness": 5,
+    "actionability": 5,
+    "citation_depth": 5,
+    "cross_referencing": 4
+  },
+  "quality_notes": {
+    "legal_accuracy": "Highly accurate. Key points verified: (1) Japan is correctly identified as MVV-exempt; (2) income threshold correctly stated as 100% net minimum wage (not 120%) — the response explains the Chakroun case that invalidated 120%; (3) correctly notes that for a Dutch citizen in the Netherlands, EU Directive 2003/86/EC applies (not the Free Movement Directive 2004/38/EC); (4) Wet inburgering 2021 correctly cited; (5) the three Wi 2021 learning routes are correctly named. One minor point: the response states Japan is on the exemption list for the basisexamen buitenland — this is worth noting as the actual Dutch exemption list (Art. 3.71a Vb) is complex and subject to change; users should verify.",
+    "completeness": "Excellent coverage: income requirement with correct percentage and amount, what counts/doesn't count as income, durability requirement, Chakroun ruling impact, MVV-exempt status with both route options (TEV from abroad and arrival then apply), required documents for both parties, civic integration abroad (exempt for Japan) and in NL (required), processing timeline (90 days), application fees, permit duration, path to permanent residence and citizenship, summary checklist. The checklist at the end is particularly useful.",
+    "actionability": "Highly actionable: Two-party checklist (sponsor and partner), specific fee amounts, 90-day processing time clearly stated, practical note on IND delays and dwangsom mechanism, recommended approach (TEV from Japan). The checklist format at the end makes implementation straightforward.",
+    "citation_depth": "Strong citation depth: CJEU Chakroun (C-578/08), ABRvS 4 april 2012 (ECLI:NL:RVS:2012:BW0791), ABRvS 26 maart 2014 (ECLI:NL:RVS:2014:1145), ABRvS 30 mei 2018 (ECLI:NL:RVS:2018:1778), specific Articles: 3.13–3.22 Vb, 3.22 Vb, 17 Vw, 3.1 VV, 2a Vw, 3.51 Vb, 21 Vw, Wet inburgering 2021, Rijkswet op het Nederlanderschap.",
+    "cross_referencing": "Good cross-referencing between Dutch national law and EU directive (2003/86/EC), between income rules and Chakroun case law, between MVV exemption and TEV procedure alternatives. Slight deduction: the response could have cross-referenced the 30% ruling (which Japanese partners of kennismigranten sometimes ask about) but this was not directly relevant to this family reunification question."
+  },
+  "overall_grade": "EXCELLENT",
+  "grader_notes": "This is an excellent response to a nuanced question. The particularly impressive element is the correct identification that as a Dutch citizen in the Netherlands (not an EU citizen exercising free movement rights in another Member State), EU Directive 2004/38/EC does NOT apply — but Directive 2003/86/EC does. Many practitioners conflate these. The response also correctly identifies the 100% vs. 120% issue (Chakroun) and Japan's MVV-exempt status. The basisexamen inburgering buitenland section is notably complete — it explains the rule, confirms Japan is exempt, then covers the post-arrival Wi 2021 obligation. The two-route MVV analysis (TEV from abroad vs. apply after arrival) is practically useful. Minor deduction on cross-referencing for not mentioning the 30% ruling possibility if the Dutch partner is also an expat. Score: 24/25."
+}

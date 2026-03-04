@@ -1,0 +1,53 @@
+{
+  "eval_id": 9,
+  "skill": "dutch-employment-law",
+  "iteration": 3,
+  "test_question": "I need to terminate an underperforming employee who's been with our company for 8 years. They're on an indefinite contract and we've had some verbal discussions about performance but nothing documented. What are our options under Dutch law?",
+  "expectations": [
+    {
+      "assertion": "discusses_dismissal_routes",
+      "pattern": "UWV/kantonrechter/vaststellingsovereenkomst",
+      "passed": true,
+      "evidence": "The output explicitly covers all three dismissal routes: 'Option 1: Kantonrechter Route via d-grond (Disfunctioneren)', 'Option 2: UWV Ontslagvergunning Route — Generally Not Applicable Here' (explaining why UWV is for a-grond/b-grond only), and 'Option 3: Vaststellingsovereenkomst (VSO) — Mutual Consent — Recommended First Step'. The vaststellingsovereenkomst is described in detail under Art. 7:900 BW."
+    },
+    {
+      "assertion": "mentions_disfunctioneren",
+      "pattern": "disfunctioneren/underperformance/7:669",
+      "passed": true,
+      "evidence": "The output references 'disfunctioneren' throughout, including: 'Art. 7:669 lid 3 sub d BW (d-grond) — Disfunctioneren (dysfunctional performance / underperformance)', 'the d-grond requires a documented dossier', 'a dismissal for disfunctioneren (Art. 7:669 lid 3 sub d BW)', and the entire section 'Option 1: Kantonrechter Route via d-grond (Disfunctioneren)'. Art. 7:669 is cited multiple times."
+    },
+    {
+      "assertion": "flags_documentation_gap",
+      "pattern": "document/dossier/verbetertraject/improvement plan",
+      "passed": true,
+      "evidence": "The documentation gap is flagged prominently under 'Critical Problem: The Documentation Gap'. The output states: 'you have had only verbal discussions about performance with no written documentation. This is a serious — potentially fatal — obstacle to any contested dismissal route.' The output discusses 'verbetertraject', 'dossier', 'dossieropbouw', and lists concrete requirements from case law (Rb. Amsterdam 2016 and Rb. Midden-Nederland 2017)."
+    },
+    {
+      "assertion": "mentions_transitievergoeding",
+      "pattern": "transitievergoeding/transition payment/severance",
+      "passed": true,
+      "evidence": "The output contains a dedicated section 'Transitievergoeding (Art. 7:673 BW)' stating: 'Rate: 1/3 monthly salary per year of service (pro rata for partial years)', 'Calculation for 8 years: approximately 2.67 months' gross salary', and 'Maximum (2024): EUR 94,000 or one year's salary, whichever is higher'. The transitievergoeding is also referenced in the financial implications table and as a mandatory element of the vaststellingsovereenkomst."
+    },
+    {
+      "assertion": "includes_disclaimer",
+      "pattern": "disclaimer",
+      "passed": true,
+      "evidence": "The output includes the full English disclaimer with the text 'This is an AI-generated legal analysis and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet).' All seven disclaimer points are present verbatim."
+    }
+  ],
+  "pass_rate": "5/5",
+  "quality_scores": {
+    "legal_accuracy": 5,
+    "completeness": 5,
+    "actionability": 5,
+    "citation_depth": 5,
+    "cross_referencing": 4
+  },
+  "quality_notes": {
+    "legal_accuracy": "All legal provisions are accurately cited. The d-grond requirements align with the reference material (Art. 7:669 lid 3 sub d BW). The transitievergoeding calculation (1/3 month per year, maximum EUR 94,000) is correct per the WAB. The cooling-off period rules for VSO (14 days, extendable to 21 if employer fails to inform) are correctly stated under Art. 7:670b BW. UWV jurisdiction is correctly limited to a-grond and b-grond. The New Hairstyle case (ECLI:NL:HR:2017:1187) is correctly cited for billijke vergoeding.",
+    "completeness": "The response covers all four dismissal routes (d-grond kantonrechter, UWV, VSO, and i-grond cumulatiegrond), the verbetertraject requirements derived from case law, financial implications including transitievergoeding calculation for 8 years, notice periods, billijke vergoeding risk, discrimination risk, and CAO considerations. The summary risk table provides a useful comparative overview.",
+    "actionability": "The 12-step action plan is highly practical and immediately executable. Steps are sequenced logically (document first, then evaluate VSO vs. litigation). The timeline table and financial implications table add concrete planning information. The mediation note addresses the skill's mandatory mediation requirement.",
+    "citation_depth": "Specific article references are provided throughout: Art. 7:669 lid 3 sub d, sub g, sub i BW; Art. 7:673 BW; Art. 7:900 BW; Art. 7:670b BW; Art. 7:672 BW; Art. 7:671b BW. Two specific ECLI case references are included (Rb. Amsterdam 2016, Rb. Midden-Nederland 2017, New Hairstyle HR 2017). WAB and WWZ legislative context is provided.",
+    "cross_referencing": "The response references the CAO system, the ondernemingsraad (WOR), and discrimination law as relevant considerations. It cross-references the i-grond with the d-grond and g-grond. Minor deduction: could have more explicitly cross-referenced the immigration law skill for potential expat considerations, though the question does not suggest this is relevant."
+  }
+}

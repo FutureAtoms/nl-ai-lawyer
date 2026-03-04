@@ -1,0 +1,57 @@
+{
+  "eval_id": "eval-19",
+  "skill": "dutch-administrative-law",
+  "iteration": 3,
+  "question": "The gemeente rejected our building permit application (omgevingsvergunning). We think the decision is wrong. What are our options and deadlines?",
+  "assertions": {
+    "mentions_bezwaar": {
+      "description": "Mentions bezwaar/objection/bezwaarschrift",
+      "pattern": "bezwaar|objection|bezwaarschrift",
+      "result": "PASS",
+      "evidence": "Response has a dedicated section 'Step 1: Bezwaar (Administrative Objection) - Art. 7:1 Awb' with detailed explanation of the bezwaar procedure, requirements for a bezwaarschrift, and the hearing (hoorzitting) procedure. The word 'bezwaar' appears dozens of times throughout the analysis."
+    },
+    "mentions_deadline": {
+      "description": "Mentions the 6-week deadline",
+      "pattern": "6 week|zes weken|six week|6-week",
+      "result": "PASS",
+      "evidence": "Response repeatedly and prominently states: 'The deadline runs for 6 weeks from the day after the decision was sent or published (Art. 6:7-6:8 Awb)'. The 6-week deadline is emphasized in the IMMEDIATE PRIORITY section and restated for each procedural step."
+    },
+    "references_awb": {
+      "description": "References the Awb/Algemene wet bestuursrecht",
+      "pattern": "Awb|Algemene wet bestuursrecht",
+      "result": "PASS",
+      "evidence": "Response references the 'Algemene wet bestuursrecht (Awb)' in the legal framework section and cites specific Awb provisions throughout: Art. 1:2, 1:3, 3:2, 3:4, 3:46-47, 6:2b, 6:5-6:8, 7:1-7:16, 7:10, 7:11, 8:1, 8:69, 8:72, 8:75, 8:81, 8:86 Awb."
+    },
+    "mentions_beroep": {
+      "description": "Mentions beroep/appeal/rechtbank",
+      "pattern": "beroep|appeal|rechtbank",
+      "result": "PASS",
+      "evidence": "Response has a dedicated section 'Step 2: Beroep (Appeal to Rechtbank) - Art. 8:1 Awb' explaining the court appeal procedure, deadline (6 weeks from bezwaar decision), court fee (EUR 371 for legal entities), scope of review, and available court remedies. The Rechtbank and ABRvS are both explained."
+    },
+    "includes_disclaimer": {
+      "description": "Includes a legal disclaimer",
+      "pattern": "disclaimer|legal advice|advocaat|bestuursrecht",
+      "result": "PASS",
+      "evidence": "Response includes a full Legal Disclaimer section explicitly stating this is not legal advice, emphasizing that time limits are fatal in Dutch administrative law, recommending a qualified advocaat experienced in bestuursrecht and omgevingsrecht, and noting that the system does not draft bezwaarschriften."
+    }
+  },
+  "assertions_passed": 5,
+  "assertions_total": 5,
+  "assertions_score": 1.0,
+  "quality_scores": {
+    "legal_accuracy": 5,
+    "completeness": 5,
+    "actionability": 5,
+    "citation_depth": 5,
+    "cross_referencing": 5
+  },
+  "quality_notes": {
+    "legal_accuracy": "Response accurately states the 6-week bezwaar deadline (Art. 6:7-6:8 Awb), the full reconsideration standard (Art. 7:11 Awb - heroverweging), the right to be heard (Art. 7:2 Awb), the 6/12-week decision periods for bezwaar (Art. 7:10 Awb), the beroep procedure (Art. 8:1 Awb), the voorzieningenrechter mechanism (Art. 8:81 Awb), and the Harderwijk proportionality standard (ABRvS 2022). The Omgevingswet transitional law note citing ABRvS 6 maart 2024 ECLI:NL:RVS:2024:943 is accurate and highly current.",
+    "completeness": "Response covers: (1) bezwaar - deadline, content requirements, hearing, decision timeline, possible outcomes; (2) beroep - deadline, content, court fee, review standards, remedies; (3) hoger beroep to ABRvS; (4) voorlopige voorziening (provisional measures); (5) grounds for challenge - procedural, substantive, proportionality, legitimate expectations; (6) standing analysis; (7) transitional law implications; (8) costs and legal aid. This is a complete coverage of all options.",
+    "actionability": "The IMMEDIATE PRIORITY section prominently warns about the fatal 6-week deadline and provides step-by-step practical guidance: calculate deadline, file pro forma bezwaar, engage specialist lawyer, obtain the administrative file, gather supporting documents, and attend the hoorzitting. The recommendations are precise and time-sequenced.",
+    "citation_depth": "Response cites: Art. 1:2, 1:3, 3:2, 3:4, 3:46-47, 6:2b, 6:5-6:8, 7:1, 7:2, 7:4, 7:10, 7:11, 8:1, 8:69, 8:72, 8:75, 8:81, 8:86 Awb; Art. 5.1, 16.65, 16.85, 7.1 Omgevingswet; ABRvS 29 mei 2019 (Amsterdamse dakopbouw); ABRvS 2 februari 2022 (Harderwijk); ABRvS 17 januari 2024 ECLI:NL:RVS:2024:108; ABRvS 6 maart 2024 ECLI:NL:RVS:2024:943. Depth is excellent.",
+    "cross_referencing": "The response effectively cross-references the Omgevingswet with Awb procedures, the Harderwijk proportionality decision with the grounds for challenge, the Amsterdamse dakopbouw legitimate expectations case with the bezwaar grounds, and the transitional law cases with the current procedural framework. The response also notes the intersection with the Wet open overheid for obtaining the administrative file."
+  },
+  "overall_pass": true,
+  "grading_notes": "Perfect score on all assertions and quality dimensions. The response is particularly strong in: (1) the prominent warning about the fatal 6-week deadline; (2) the detailed procedural roadmap covering all three levels (bezwaar, beroep, hoger beroep); (3) the inclusion of the provisional measures option; (4) the Omgevingswet-specific content and transitional law note. The response draws well from awb-procedures.md, bezwaar-beroep.md, omgevingswet.md, and key-case-law.md reference files."
+}

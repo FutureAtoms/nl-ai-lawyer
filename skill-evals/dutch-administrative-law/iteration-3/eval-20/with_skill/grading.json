@@ -1,0 +1,51 @@
+{
+  "eval_id": "eval-20",
+  "skill": "dutch-administrative-law",
+  "iteration": 3,
+  "question": "A government agency took 4 months to decide on our subsidy application when the legal deadline was 8 weeks. Can we do anything about this delay?",
+  "assertions": {
+    "mentions_ingebrekestelling": {
+      "description": "Mentions ingebrekestelling/notice of default",
+      "pattern": "ingebrekestelling|notice of default",
+      "result": "PASS",
+      "evidence": "Response has a dedicated section 'Remedy 1: Ingebrekestelling (Notice of Default) - Art. 4:17 Awb' with detailed step-by-step instructions on how to draft and send the ingebrekestelling, including timing, content requirements, and the 2-week grace period. The ingebrekestelling is also featured in the practical action plan."
+    },
+    "mentions_dwangsom": {
+      "description": "Mentions dwangsom/penalty payment/4:17",
+      "pattern": "dwangsom|penalty payment|4:17",
+      "result": "PASS",
+      "evidence": "Response has a dedicated section 'Remedy 2: Dwangsom (Penalty Payment for Late Decision) - Art. 4:17 Awb' including a table of daily penalty amounts (EUR 23/35/45 per day), the maximum cap of EUR 1,442, and references to the ABRvS case law confirming the maximum applies per application. Art. 4:17 is cited multiple times."
+    },
+    "references_awb": {
+      "description": "References the Awb/Algemene wet bestuursrecht",
+      "pattern": "Awb|Algemene wet bestuursrecht",
+      "result": "PASS",
+      "evidence": "Response references 'Algemene wet bestuursrecht (Awb)' in the legal framework and cites specific provisions: Art. 4:13, 4:14, 4:15, 4:17, 4:18, 4:21, 4:23, 6:2 sub b, 8:1, 8:55b-8:55f, 8:88 Awb. The Awb chapter structure (Chapter 4 on subsidies, Chapter 4A on dwangsom) is explicitly referenced."
+    },
+    "includes_disclaimer": {
+      "description": "Includes a legal disclaimer",
+      "pattern": "disclaimer|legal advice|advocaat|bestuursrecht",
+      "result": "PASS",
+      "evidence": "Response includes a full Legal Disclaimer section stating this is not legal advice, recommending a qualified advocaat experienced in bestuursrecht, noting that dwangsom amounts are indexed and should be verified, and stating the analysis cannot be used as evidence in proceedings."
+    }
+  },
+  "assertions_passed": 4,
+  "assertions_total": 4,
+  "assertions_score": 1.0,
+  "quality_scores": {
+    "legal_accuracy": 5,
+    "completeness": 5,
+    "actionability": 5,
+    "citation_depth": 5,
+    "cross_referencing": 4
+  },
+  "quality_notes": {
+    "legal_accuracy": "Response accurately states the dwangsom mechanism: ingebrekestelling triggers 2-week grace period (Art. 4:17 lid 3), then EUR 23/35/45 daily penalties with EUR 1,442 maximum (Art. 4:17 Awb). The ABRvS case law on the per-application maximum (ABRvS 17 juli 2019) and timing from receipt (ABRvS 6 maart 2013) is correctly cited. The expedited beroep niet-tijdig procedure (Art. 8:55b-8:55f Awb) is accurately described, including the 8-week court decision timeline. The suspension rules (Art. 4:15 Awb) are also correctly explained.",
+    "completeness": "Response provides four distinct remedies: (1) ingebrekestelling; (2) dwangsom; (3) beroep niet-tijdig beslissen (Art. 6:2 sub b and Art. 8:55b); (4) wettelijke rente for damages. Additional analysis covers deadline suspension (Art. 4:15), the Art. 4:14 notification obligation, government liability for damages (Art. 8:88 Awb / Art. 6:162 BW), and the practical significance of the 4-month vs 8-week timeline. The response also explains what to do when the eventual decision arrives.",
+    "actionability": "The 5-step practical action plan is clear and sequential: (1) send ingebrekestelling by registered mail; (2) simultaneously consider beroep niet-tijdig; (3) monitor grace period; (4) claim dwangsom; (5) address the decision when it arrives. The format (registered mail for proof of receipt) and reference details for the notice are practical guidance.",
+    "citation_depth": "Response cites: Art. 4:13, 4:14, 4:15, 4:17 lid 3, 4:18, 4:21, 4:23, 6:2 sub b, 8:1, 8:55b-8:55f, 8:88 Awb; Art. 6:162 BW; ABRvS 6 maart 2013 ECLI:NL:RVS:2013:BZ3382; ABRvS 17 juli 2019 ECLI:NL:RVS:2019:2464. The full table of dwangsom penalty amounts with daily rates is cited. Citation depth is excellent.",
+    "cross_referencing": "The response cross-references the ingebrekestelling with the beroep niet-tijdig (noting they can be pursued simultaneously), the dwangsom mechanism with the government liability claim, and the administrative remedies with the civil law alternative (Art. 6:162 BW). Slightly lower than the other evaluations because the response could have more explicitly cross-referenced the subsidy-specific provisions (Art. 4:21 - 4:36 Awb) with the general decision-making framework, but this does not materially detract from the quality."
+  },
+  "overall_pass": true,
+  "grading_notes": "Perfect assertion scores (4/4). High quality scores across all dimensions with a minor 4/5 for cross_referencing due to somewhat limited explicit cross-referencing with subsidy-specific provisions, though the analysis is still excellent. The response is particularly strong in its clear multi-remedy framework and the step-by-step practical action plan. The inclusion of government liability for damages (a topic not explicitly required by the assertions but highly relevant) demonstrates depth beyond the minimum. The response draws well from bezwaar-beroep.md and awb-procedures.md reference files."
+}

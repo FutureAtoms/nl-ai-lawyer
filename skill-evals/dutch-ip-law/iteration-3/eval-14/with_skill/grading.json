@@ -1,0 +1,47 @@
+{
+  "eval_id": 14,
+  "skill": "dutch-ip-law",
+  "iteration": 3,
+  "test_question": "A competitor is using a very similar trade name and logo in the Benelux. We have a Benelux trademark registration. What are our options to stop them?",
+  "expectations": [
+    {
+      "assertion": "references_bvie",
+      "pattern": "BVIE/Benelux/BOIP/Benelux-Verdrag",
+      "passed": true,
+      "evidence": "The output explicitly references the 'Benelux-Verdrag inzake de Intellectuele Eigendom (BVIE)' in the legal framework and throughout the analysis. BOIP is cited multiple times (as 'Benelux Office for Intellectual Property (BOIP / BBIE)') with specific article references: Art. 2.20 BVIE (exclusive rights), Art. 2.14 BVIE (opposition), Art. 2.26 BVIE (revocation), Art. 2.28 BVIE (invalidity). The Benelux Court of Justice is also referenced."
+    },
+    {
+      "assertion": "mentions_kort_geding",
+      "pattern": "kort geding/preliminary injunction/voorlopige voorziening",
+      "passed": true,
+      "evidence": "The output contains a dedicated section 'Option A: Kort Geding (Preliminary Injunction) — Most Urgent and Commonly Used' with detailed discussion. 'Kort geding (preliminary injunction / voorlopige voorziening)' is cited in the legal framework under 'Art. 254–260 Rv — Kort geding (preliminary injunction) procedure'. The requirements (spoedeisend belang, aannemelijkheid, balancing of interests), timeline (4–8 weeks), and typical remedies (verbod, dwangsom) are all explained."
+    },
+    {
+      "assertion": "mentions_handelsnaamwet",
+      "pattern": "Handelsnaamwet/trade name/handelsnaam",
+      "passed": true,
+      "evidence": "The output explicitly references the 'Handelsnaamwet (Hw)' in the legal framework and has a dedicated section '2. Trade Name Protection — Handelsnaamwet'. Art. 5 Handelsnaamwet and Art. 5a Handelsnaamwet are cited with their requirements. The term 'handelsnaam' appears in the context of trade name protection. The output correctly notes that trademark and trade name rights provide complementary/independent protection."
+    },
+    {
+      "assertion": "includes_disclaimer",
+      "pattern": "disclaimer",
+      "passed": true,
+      "evidence": "The output includes the full English disclaimer: 'This is an AI-generated legal analysis and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet).' All seven disclaimer points are present verbatim."
+    }
+  ],
+  "pass_rate": "4/4",
+  "quality_scores": {
+    "legal_accuracy": 5,
+    "completeness": 5,
+    "actionability": 5,
+    "citation_depth": 5,
+    "cross_referencing": 4
+  },
+  "quality_notes": {
+    "legal_accuracy": "All provisions are accurately cited. Art. 2.20 BVIE exclusive rights are correctly described with sub a (double identity), sub b (likelihood of confusion), and sub c (reputation/dilution). The Sabel/Puma (CJEU C-251/95) and Lloyd/Klijsen (CJEU C-342/97) standards are correctly applied. The kort geding requirements (spoedeisend belang, aannemelijkheid) are accurately described. Art. 5 Handelsnaamwet is correctly identified as an independent basis from trademark law. The 5-year non-use revocation risk (Art. 2.26 BVIE) is appropriately flagged. Art. 1019h Rv for IP cost recovery is correctly cited.",
+    "completeness": "The response covers five distinct enforcement options: kort geding, bodemzaak, cease and desist letter, BOIP opposition/cancellation, and customs detention. The trademark infringement analysis covers all three relevant grounds (sub a, b, c of Art. 2.20 BVIE). Trade name protection under the Handelsnaamwet is covered as an independent basis. The timeline and cost overview table adds significant practical value.",
+    "actionability": "The 8-item practical recommendations section is immediately executable. The advice to act urgently, send a sommatie first, verify the trademark registration, and prepare kort geding proceedings in parallel is practical and sequenced logically. The cost estimates give a realistic expectation. The urgency warning about delay weakening the kort geding argument is important practical advice.",
+    "citation_depth": "Excellent citation depth: Art. 2.20, 2.14, 2.26, 2.28 BVIE; Art. 5, 5a Handelsnaamwet; Art. 254-260 Rv; Art. 1019h Rv; EU Regulation 608/2013; CJEU C-251/95 (Sabel/Puma); CJEU C-342/97 (Lloyd/Klijsen); Hof Den Haag 2019 (ECLI:NL:GHDHA:2019:594, trademark dilution). Multiple BOIP procedural references with filing fees.",
+    "cross_referencing": "Good cross-referencing between trademark law (BVIE) and trade name law (Handelsnaamwet), noting they are independent but complementary. References EU Regulation 608/2013 for customs. Mentions EUTM as a complement to Benelux registration. Minor deduction: could have referenced the Benelux Court of Justice's specific role in interpreting BVIE more prominently, and the IP Enforcement Directive (2004/48/EC) underlying Art. 1019h Rv could be noted."
+  }
+}

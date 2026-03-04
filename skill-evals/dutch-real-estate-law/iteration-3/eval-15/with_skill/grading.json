@@ -1,0 +1,53 @@
+{
+  "eval_id": 15,
+  "skill": "dutch-real-estate-law",
+  "iteration": 3,
+  "test_question": "I'm buying an apartment in Amsterdam. The makelaar says there's erfpacht (leasehold) from the gemeente. The canon hasn't been revised in 20 years. What should I watch out for?",
+  "expectations": [
+    {
+      "assertion": "explains_erfpacht",
+      "pattern": "erfpacht/leasehold/canon/opstalrecht",
+      "passed": true,
+      "evidence": "The output explains erfpacht extensively: 'Erfpacht is a beperkt zakelijk recht (limited right in rem) under Art. 5:85 BW entitling the holder (erfpachter) to hold and use immovable property belonging to another person (the grondeigenaar / bloot eigenaar).' The canon is defined as 'a periodic fee (the canon) to the landowner'. The term 'leasehold' appears in the header. The analysis covers the nature, legal basis (Art. 5:85-5:100 BW), and financial implications of erfpacht."
+    },
+    {
+      "assertion": "mentions_amsterdam_system",
+      "pattern": "Amsterdam/gemeente/eeuwigdurend/voortdurend",
+      "passed": true,
+      "evidence": "The output contains a dedicated section 'Understanding the Amsterdam Erfpacht System — Critical Due Diligence' explicitly referencing the Gemeente Amsterdam's system. All three erfpacht types are described: 'AB2016 — Eeuwigdurende Erfpacht', 'AB2000 — Voortdurende Erfpacht', 'AB1966 and older — Tijdelijk Erfpacht'. The terms 'eeuwigdurend' and 'voortdurend' both appear. The Gemeente Amsterdam's 80% land ownership is noted."
+    },
+    {
+      "assertion": "warns_canon_revision",
+      "pattern": "herziening/revision/canonherziening/canonical",
+      "passed": true,
+      "evidence": "The output prominently warns about canon revision in section '3. The 20-Year Canon Gap — What It Means' and '4. The Canonherziening / Canon Revision Risk'. The output states: 'canonsprong (canon shock)' and provides examples of canon increases from EUR 500/year to EUR 5,000-10,000/year. The term 'herziening' appears multiple times. 'Canonherziening' is used as a section title. The case law reference to Gerechtshof Amsterdam 2010 on canon revision challenges is included."
+    },
+    {
+      "assertion": "mentions_notaris",
+      "pattern": "notaris/notarial/notarieel/levering",
+      "passed": true,
+      "evidence": "The output contains a dedicated section '5. The Notaris — Non-Negotiable Role' stating 'purchase of an apartment in Amsterdam requires involvement of a notaris'. It references: 'notariele akte van levering (notarial transfer deed)' per Art. 3:89 BW, 'registration at the kadaster', and lists the notaris's obligations (eigendomsonderzoek, hypotheekonderzoek, erfpacht examination). The notaris is also listed in the 'Professionals Required' section."
+    },
+    {
+      "assertion": "includes_disclaimer",
+      "pattern": "disclaimer",
+      "passed": true,
+      "evidence": "The output includes the full English disclaimer: 'This is an AI-generated legal analysis and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet).' All seven disclaimer points are present verbatim."
+    }
+  ],
+  "pass_rate": "5/5",
+  "quality_scores": {
+    "legal_accuracy": 5,
+    "completeness": 5,
+    "actionability": 5,
+    "citation_depth": 5,
+    "cross_referencing": 5
+  },
+  "quality_notes": {
+    "legal_accuracy": "All legal provisions are accurately cited. Art. 5:85-5:100 BW framework for erfpacht is correctly identified. The Amsterdam AB system (AB1915/AB1934/AB1966/AB1994/AB2000/AB2016) is accurately described with correct characteristics (50-year revision under AB2000, 75-year term under AB1966, no revision under AB2016). The canon calculation methodology (residuele grondwaarde) is accurately described. Art. 5:91 BW transfer restrictions and Art. 5:99 BW termination compensation are correctly cited. Case law references (Gerechtshof Amsterdam 2010, HR 1999, Rb. Amsterdam 2019) are correctly used. Art. 3:89 BW for notarial transfer requirement is correct.",
+    "completeness": "The response comprehensively covers: erfpacht definition and legal nature, the Amsterdam AB system (all relevant versions), the four scenarios explaining what the 20-year gap might mean, the canon herziening risk with concrete examples, the notaris's mandatory role, apartment-specific issues (VvE, splitsingsakte), due diligence checklist (9 items), required professionals, red flags table with severity ratings, and 7 practical recommendations. Tax implications (Art. 3:120 IB 2001) are also noted.",
+    "actionability": "The due diligence checklist (9 items) and professionals required list are immediately executable. The concrete advice to contact the Gemeente Amsterdam Grondzaken department, use the online calculator, and include a financieringsvoorbehoud in the koopovereenkomst are specific and practical. The red flags table with severity ratings enables risk prioritization.",
+    "citation_depth": "Exceptional citation depth: Art. 5:85-5:100 BW (multiple specific articles cited); Art. 5:86, 5:87, 5:89, 5:91, 5:92, 5:99 BW; Art. 5:130 BW (VvE implied); Art. 3:89 BW; Art. 7:17 BW; Art. 6:248 BW; Art. 3:120 Wet IB 2001 (tax); Kadasterwet; Wet op het notarisambt. Case law: ECLI:NL:GHAMS:2010:BN2643; ECLI:NL:HR:1999:ZC2874; ECLI:NL:RBAMS:2019:2755. All Amsterdam AB conditions (AB1915 through AB2016) are covered.",
+    "cross_referencing": "Excellent cross-referencing: explicitly links to Dutch tax law (Art. 3:120 IB 2001, canon deductibility), to mortgage financing considerations (NHG threshold context, bank conditions), to VvE law (appartementsrecht, splitsingsakte), and to the koopovereenkomst (financieringsvoorbehoud). References the Gemeente Amsterdam Grondzaken department as a specific institutional contact. The overstapregeling is correctly cross-referenced to the AB2016 reform."
+  }
+}

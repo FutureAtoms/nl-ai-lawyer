@@ -1,0 +1,52 @@
+{
+  "test_id": "28",
+  "skill": "nda-triage-nl",
+  "iteration": 3,
+  "question": "I received a unilateral NDA from a potential partner. It's very short - just says we can't disclose 'business information' for 2 years, governed by Dutch law, with a EUR 25,000 penalty per breach. No other clauses. Is this okay to sign?",
+  "assertions": {
+    "uses_traffic_light": {
+      "pattern": "GREEN|YELLOW|RED",
+      "result": "PASS",
+      "evidence": "Full traffic light system used: Quick Summary Table with GREEN/YELLOW/RED ratings for each clause. Overall Rating: RED stated prominently. Individual ratings: Definition of Confidential Information = RED, Exceptions/Carve-outs = RED, Term = GREEN, Penalty = YELLOW, Dispute Resolution = YELLOW."
+    },
+    "flags_missing_exceptions": {
+      "pattern": "exception|uitzondering|carve-out|missing",
+      "result": "PASS",
+      "evidence": "Clause 2 titled 'Standard Exceptions/Carve-outs — RED' with 'This is the most critical deficiency.' Lists all four standard exceptions as missing. Missing legally compelled disclosure carve-out given separate treatment with specific Dutch legal obligations listed (Art. 843a Rv, Wwft, AFM, DNB, Belastingdienst, AWR, parliamentary inquiry)."
+    },
+    "flags_vague_definition": {
+      "pattern": "vague|vaag|onduidelijk|unclear|business information",
+      "result": "PASS",
+      "evidence": "Clause 1 explicitly titled 'Definition of Confidential Information — RED' and states: 'Vague and undefined: \"Business information\" is not a recognized legal term of art under Dutch law. It could mean virtually anything relating to the disclosing party's business.' The word 'vague' is used directly in point 1."
+    },
+    "recommends_additions": {
+      "pattern": "add|toevoegen|recommend|aanbev|missing",
+      "result": "PASS",
+      "evidence": "Extensive recommendations section: (1) Priority Actions with 8 numbered items all starting with ADD/REJECT/CLARIFY/REDEFINE; (2) 'Missing Clauses and Additions Recommended' table with 8 rows; (3) each clause analysis includes an 'Action' line. Examples: 'ADD all four standard exceptions', 'ADD a legally compelled disclosure provision', 'ADD return/destruction obligations', 'ADD a purpose limitation clause', 'ADD a dispute resolution clause'."
+    },
+    "includes_disclaimer": {
+      "pattern": "disclaimer|legal advice|advocaat",
+      "result": "PASS",
+      "evidence": "Full English disclaimer appended with note that this is a 'pre-screening assessment only'."
+    }
+  },
+  "assertions_passed": 5,
+  "assertions_total": 5,
+  "assertions_score": 1.0,
+  "quality_scores": {
+    "legal_accuracy": 5,
+    "completeness": 5,
+    "actionability": 5,
+    "citation_depth": 5,
+    "cross_referencing": 4
+  },
+  "quality_notes": {
+    "legal_accuracy": "Highly accurate on all legal points. Key verifications: (1) 'Business information' correctly identified as not a recognized Dutch legal term; (2) Haviltex standard correctly cited for interpretation of ambiguous NDA terms; (3) EUR 25,000 correctly rated YELLOW (upper YELLOW/lower RED per SKILL.md thresholds); (4) Art. 6:92 BW default correctly explained (penalty replaces damages unless expressly stated otherwise); (5) Art. 6:93 BW ingebrekestelling requirement correctly noted; (6) Art. 6:94 BW judicial moderation correctly described with correct klaarblijkelijk threshold; (7) Art. 843a Rv exhibitieplicht and other compelled disclosure sources correctly identified; (8) four standard exceptions correctly identified; (9) NDA vs. Wbb (Art. 1 Wbb) distinction correctly made; (10) Art. 254 Rv kort geding noted for absence of arbitration clause.",
+    "completeness": "Excellent completeness for a 'very short' NDA that needs gap analysis: Quick Summary Table, eight-clause analysis, penalty exposure table with three scenarios, missing clauses table with eight rows, eight priority actions, and an executive summary. The response correctly covers all standard NDA elements even when they are absent — which is exactly the right approach for triage of an inadequate document. The unilateral nature is correctly identified and analyzed (obligations run one direction against the user).",
+    "actionability": "Exceptionally actionable: 8 numbered priority actions with specific instructions (ADD/REJECT/REDEFINE/CLARIFY), specific target amounts for penalty negotiation, specific examples of what each missing clause should address. The response correctly frames the analysis from the recipient's perspective (as instructed by the unilateral NDA structure) — all risk and obligation analysis focuses on what the user is agreeing to.",
+    "citation_depth": "Strong citation depth: Haviltex (HR 13 maart 1981, NJ 1981/635), Art. 6:92 BW, Art. 6:93 BW, Art. 6:94 BW, Art. 1 Wbb (three-part test), Art. 843a Rv, Art. 254 Rv, Art. 6:248 BW. The Art. 6:162 BW reference for tort law context is also included. Specific Dutch compelled disclosure contexts (Wwft, AFM, DNB, AWR) provide concrete examples that strengthen the legally compelled disclosure argument.",
+    "cross_referencing": "Good cross-referencing: penalty clause to Arts. 6:92-6:94 BW and Haviltex for interpretation; vague definition to litigation risk and Art. 6:248 BW moderation; missing carve-outs to specific Dutch statutory obligations; Wbb distinction from NDA protection correctly maintained. Minor deduction: the response could have explicitly cross-referenced the Art. 6:248 lid 2 BW (derogating effect of reasonableness) as a possible ground to attack the definition breadth, though this is implicitly present in the moderation discussion."
+  },
+  "overall_grade": "EXCELLENT",
+  "grader_notes": "This response handles a common real-world scenario (minimalist unilateral NDA presented by a business partner) with appropriate thoroughness. The response correctly identifies that the NDA's brevity is itself the risk — a 'simple' NDA without exceptions is not simple but one-sided. The RED rating is appropriately justified by the combination of vague definition and missing carve-outs. The penalty analysis correctly rates EUR 25,000 as YELLOW (not RED), showing calibration. The 'Missing Clauses and Additions Recommended' table is a particularly useful deliverable that directly answers 'is this okay to sign?' by showing exactly what needs to be added. The final summary correctly frames the business relationship context (a partner using a minimalist, one-sided form as a red flag for the relationship dynamic). Score: 24/25 (minor deduction for cross-referencing)."
+}

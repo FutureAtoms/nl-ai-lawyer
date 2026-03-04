@@ -1,0 +1,57 @@
+{
+  "eval_id": "eval-21",
+  "skill": "dutch-criminal-law",
+  "iteration": 3,
+  "question": "Our company's financial director is suspected of submitting false invoices (valsheid in geschrift). The FIOD has raided our offices. What are the company's potential criminal liability risks?",
+  "assertions": {
+    "cites_art_51": {
+      "description": "Cites Art. 51/artikel 51/rechtspersoon as basis for corporate criminal liability",
+      "pattern": "art. 51|artikel 51|rechtspersoon",
+      "result": "PASS",
+      "evidence": "Response has a dedicated section 'Corporate Criminal Liability (Art. 51 Sr)' with 'Art. 51 lid 1 Sr' and 'Art. 51 lid 2 Sr' explicitly cited and explained. The term 'rechtspersoon' and 'rechtspersonen' appear multiple times. Art. 51 is also cited in the legal framework and in the feitelijk leidinggeven section."
+    },
+    "cites_art_225": {
+      "description": "Cites Art. 225/artikel 225/valsheid in geschrift",
+      "pattern": "art. 225|artikel 225|valsheid in geschrift",
+      "result": "PASS",
+      "evidence": "Response has a dedicated section 'Legal Framework: Valsheid in Geschrift (Art. 225 Sr)' with Art. 225 lid 1 Sr and Art. 225 lid 2 Sr explicitly cited and explained with all elements of the offense. The maximum penalty of 6 years is correctly stated under Art. 225."
+    },
+    "discusses_corporate_liability": {
+      "description": "Discusses corporate criminal liability including Drijfmest/IJzerdraad/rechtspersoon",
+      "pattern": "corporate criminal|Drijfmest|IJzerdraad|rechtspersoon",
+      "result": "PASS",
+      "evidence": "Response discusses the Drijfmest-arrest (HR 21 oktober 2003, ECLI:NL:HR:2003:AF7938) as the modern attribution standard and the IJzerdraad-arrest (HR 23 februari 1954, NJ 1954/378) as the original framework. The Drijfmest four-factor test is applied in detail to the false invoicing scenario."
+    },
+    "mentions_fiod": {
+      "description": "Mentions FIOD/Fiscale Inlichtingen",
+      "pattern": "FIOD|Fiscale Inlichtingen",
+      "result": "PASS",
+      "evidence": "Response discusses the FIOD (Fiscale Inlichtingen- en Opsporingsdienst) extensively in a dedicated section 'The FIOD Raid: Immediate Practical Implications'. The FIOD's investigative powers, dawn raid procedures, legal professional privilege during FIOD searches, and nemo tenetur rights are all addressed."
+    },
+    "includes_disclaimer": {
+      "description": "Includes a legal disclaimer",
+      "pattern": "disclaimer|legal advice|advocaat|strafrechtadvocaat",
+      "result": "PASS",
+      "evidence": "Response includes a comprehensive Legal Disclaimer section stating this is not legal advice, emphasizing that this does not provide criminal defense strategy, urgently recommending immediate engagement of a strafrechtadvocaat, and noting the right to counsel (Salduz rights)."
+    }
+  },
+  "assertions_passed": 5,
+  "assertions_total": 5,
+  "assertions_score": 1.0,
+  "quality_scores": {
+    "legal_accuracy": 5,
+    "completeness": 5,
+    "actionability": 5,
+    "citation_depth": 5,
+    "cross_referencing": 5
+  },
+  "quality_notes": {
+    "legal_accuracy": "Response accurately identifies the three elements of Art. 225 Sr (false/falsified document, intended to prove a fact, oogmerk as genuine), correctly cites the maximum penalty of 6 years, accurately applies the Drijfmest four-factor attribution test, correctly states the Slavenburg II criteria for feitelijk leidinggeven (awareness, ability to prevent, conscious acceptance), and correctly notes the extension of passive omission liability (HR 1 juni 2021). The nemo tenetur and verschoningsrecht provisions are accurately cited. The Art. 69 AWR tax fraud provision and witwassen (Art. 420bis Sr) as ancillary charges are correct.",
+    "completeness": "Response covers: (1) Art. 225 Sr elements (forgery) with all three components; (2) Art. 51 Sr corporate liability with full Drijfmest application; (3) feitelijk leidinggeven for other directors (Art. 51 lid 2); (4) FIOD raid implications (document seizure, questioning rights, legal privilege, nemo tenetur); (5) penalties for company and financial director; (6) corporate settlement (hoge transactie); (7) ancillary charges (AWR tax fraud, witwassen); (8) presumption of innocence. This is comprehensive.",
+    "actionability": "Response provides 6 concrete immediate recommendations: engage strafrechtadvocaat, instruct personnel not to speak to FIOD, do not destroy documents, engage forensic accountant, consider separate representation for company vs. director, assess civil and regulatory consequences. The urgency is appropriately emphasized with a CRITICAL NOTICE at the top of the response.",
+    "citation_depth": "Response cites: Art. 225 lid 1 and lid 2 Sr, Art. 226, 227, 47, 48, 51 lid 1 and lid 2, 420bis Sr; Art. 69, 68 AWR; Art. 218, 27, 29 Sv; IJzerdraad-arrest HR 1954; Drijfmest-arrest HR 21 oktober 2003 ECLI:NL:HR:2003:AF7938; Slavenburg II HR 16 december 1986 ECLI:NL:HR:1986:AC9607; HR 1 juni 2021 ECLI:NL:HR:2021:818; HR 14 mei 1957 NJ 1957/472; HR 22 april 2014 ECLI:NL:HR:2014:953; HR 7 februari 2017 ECLI:NL:HR:2017:168; HR 19 februari 2013 ECLI:NL:HR:2013:BY5322; HR 1 juli 2014 ECLI:NL:HR:2014:1563; HR 18 juni 2019 ECLI:NL:HR:2019:965; Art. 74 Sr; ING EUR 775 million settlement reference.",
+    "cross_referencing": "Excellent cross-referencing: Art. 225 Sr forgery is cross-referenced with Art. 69 AWR tax fraud (showing how false invoices can constitute both offenses simultaneously); the corporate liability under Art. 51 is cross-referenced with feitelijk leidinggeven under Art. 51 lid 2; the Drijfmest corporate attribution is cross-referenced with the Slavenburg II personal liability standard; FIOD procedural rights are cross-referenced with Art. 218 Sv (verschoningsrecht) and Art. 29 Sv (cautie); and the corporate settlement mechanism under Art. 74 Sr is referenced alongside the transactie case law."
+  },
+  "overall_pass": true,
+  "grading_notes": "Perfect score on all assertions and quality dimensions. The response is particularly notable for: (1) the immediate CRITICAL NOTICE about the need to engage a criminal defense lawyer urgently; (2) the detailed application of the Drijfmest test specifically to the false invoicing scenario; (3) the treatment of FIOD-specific rights (verschoningsrecht, nemo tenetur, cautie) which are drawn from the key-case-law.md FIOD section; (4) the identification of ancillary charges (witwassen, AWR fraud) beyond the primary Art. 225 charge. The response draws well from all three criminal law reference files."
+}

@@ -1,0 +1,47 @@
+{
+  "test_id": "26",
+  "skill": "eu-law-integration",
+  "iteration": 3,
+  "question": "Our company needs to comply with both the Dutch Wet bescherming bedrijfsgeheimen and the EU Trade Secrets Directive. How do these relate to each other?",
+  "assertions": {
+    "references_directive": {
+      "pattern": "2016/943|Trade Secrets Directive|bedrijfsgeheimen",
+      "result": "PASS",
+      "evidence": "Explicit reference: 'Directive 2016/943/EU of the European Parliament and of the Council of 8 June 2016 on the protection of undisclosed know-how and business information (trade secrets) against their unlawful acquisition, use and disclosure — the EU Trade Secrets Directive' in the header. CELEX number 32016L0943 also provided. Multiple subsequent references to '2016/943' throughout."
+    },
+    "mentions_dutch_implementation": {
+      "pattern": "Wbb|Wet bescherming bedrijfsgeheimen|implementatie",
+      "result": "PASS",
+      "evidence": "Extensive coverage: 'The Wbb was adopted on 17 October 2018 and entered into force on 23 October 2018 (Stb. 2018, 369). It implements the TSD into Dutch law with minimal deviation.' Full structure of Wbb articles covered."
+    },
+    "discusses_relationship": {
+      "pattern": "implement|omzetting|richtlijn|directive",
+      "result": "PASS",
+      "evidence": "Section 3 titled 'Relationship Between the Directive and the Wbb' explicitly addresses the relationship: 'Directive 2016/943 is a minimum harmonization directive... The Wbb is a close transposition... for all practical purposes co-extensive.' Includes discussion of direct effect, directive-conforming interpretation, and Art. 94 Grondwet."
+    },
+    "includes_disclaimer": {
+      "pattern": "disclaimer|legal advice|advocaat",
+      "result": "PASS",
+      "evidence": "Full English disclaimer appended with all seven numbered points."
+    }
+  },
+  "assertions_passed": 4,
+  "assertions_total": 4,
+  "assertions_score": 1.0,
+  "quality_scores": {
+    "legal_accuracy": 5,
+    "completeness": 5,
+    "actionability": 5,
+    "citation_depth": 5,
+    "cross_referencing": 5
+  },
+  "quality_notes": {
+    "legal_accuracy": "Highly accurate on all legal points. Key verifications: (1) Directive 2016/943 legal basis correctly cited as Art. 114 TFEU; (2) transposition deadline correctly stated as 9 June 2018; (3) Wbb entry into force date correct (23 October 2018, Stb. 2018, 369); (4) three-part definition correctly identified as identical in both instruments; (5) minimum harmonization characterization is correct per Recital 10 TSD; (6) Art. 1019ib Rv correctly cited for procedural confidentiality; (7) Art. 273 Sr correctly noted for criminal dimension; (8) Dutch cases on Wbb correctly cited; (9) interaction with Wbk (whistleblower protection) correctly noted. Marleasing obligation for directive-conforming interpretation accurately explained.",
+    "completeness": "Comprehensive coverage: TSD legal basis and purpose, core definitions (three-part test), lawful vs. unlawful acts, Wbb structure (Arts. 1-8), nature of the relationship (minimum harmonization), EU law supremacy and direct effect, role of Art. 93/94 Grondwet, practical compliance (five subsections), three Wbb cases, whistleblower protections, employee mobility carve-out, statute of limitations, criminal law dimension, and a summary comparison table. The compliance guidance section (Section 4) with 'reasonable steps' examples is particularly thorough.",
+    "actionability": "Exceptionally actionable. Section 4 ('Practical Compliance') provides a concrete four-step compliance framework: (1) define and classify trade secrets, (2) implement reasonable steps with specific technical/organizational/legal measures, (3) align NDAs with Wbb and TSD, (4) litigation strategy. The 'reasonable steps' examples following Rb. Midden-Nederland 2020 are directly implementable. The summary table comparing Directive vs. Wbb article-by-article is a useful compliance tool.",
+    "citation_depth": "Outstanding: Directive 2016/943 with CELEX number, three specific Wbb cases with ECLI numbers (Rb. Den Haag 2019, Rb. Midden-Nederland 2020, Gerechtshof Den Haag 2020), Marleasing (C-106/89) for directive-conforming interpretation, Art. 114 TFEU, Arts. 1-8 Wbb, Art. 1019ia-1019ib Rv, Art. 273 Sr, Art. 6:162 BW, Art. 6:74 BW, Art. 3:310 BW, Recital 10 TSD. CELEX format reference provided. Wbb statute reference (Stb. 2018, 369) adds academic precision.",
+    "cross_referencing": "Excellent cross-referencing: TSD to Wbb article-by-article comparison table; Wbb to Art. 6:162 BW (tort) as supplementary avenue; Wbb to NDA practice (contractual protection vs. statutory protection); Art. 94 Grondwet to Marleasing as two pathways for ensuring TSD compliance; Wbb to Wbk (whistleblower protection); Wbb to Art. 273 Sr (criminal); compliance guidance explicitly cross-references Rb. Midden-Nederland for the reasonable steps standard. The interaction with employee mobility (Art. 7:611/7:653 BW) is also correctly noted."
+  },
+  "overall_grade": "EXCELLENT",
+  "grader_notes": "This is an outstanding analysis of the Directive-Wbb relationship. The response correctly characterizes the Directive as minimum harmonization, correctly maps the Wbb articles to the TSD articles, and provides a genuinely useful compliance framework. The three key Wbb cases are accurately cited and applied. The practical compliance section distinguishes between information qualifying as trade secrets under the Wbb vs. ordinary confidential information protected only by NDA — a critical distinction that many companies miss. The summary table is a high-value deliverable. The whistleblower section correctly identifies the intersection with the Wbk (which was updated in 2023), demonstrating current awareness. Score: 25/25."
+}

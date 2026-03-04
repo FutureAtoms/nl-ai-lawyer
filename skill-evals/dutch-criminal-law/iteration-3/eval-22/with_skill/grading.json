@@ -1,0 +1,51 @@
+{
+  "eval_id": "eval-22",
+  "skill": "dutch-criminal-law",
+  "iteration": 3,
+  "question": "An employee reported that our factory might be violating environmental waste disposal regulations. Could this lead to criminal prosecution under Dutch law?",
+  "assertions": {
+    "mentions_wed": {
+      "description": "Mentions WED/Wet op de Economische Delicten/economisch delict",
+      "pattern": "WED|Wet op de Economische Delicten|economisch delict",
+      "result": "PASS",
+      "evidence": "Response has a dedicated section 'The WED Framework: Environmental Offenses' explaining the Wet op de Economische Delicten structure. WED is cited throughout including Art. 1, 1a, 6, 7 WED. The WED is correctly described as the 'central mechanism for criminalizing environmental violations' by designating violations of specific environmental laws as economic offenses."
+    },
+    "discusses_environmental": {
+      "description": "Discusses environmental law including milieu/environment/Wet milieubeheer/afval",
+      "pattern": "milieu|environment|Wet milieubeheer|afval",
+      "result": "PASS",
+      "evidence": "Response discusses Wet milieubeheer (Wm), Art. 10.1 Wm, the Omgevingswet, illegal waste disposal (afvalstoffendelicten), illegal dumping (storten van afvalstoffen), the zorgplicht (duty of care), Art. 173a/173b Sr (pollution/endangerment), Art. 1.11 Omgevingswet, and the ILT as primary environmental inspection authority."
+    },
+    "mentions_sanctions": {
+      "description": "Mentions criminal sanctions/straf/sanction/boete/gevangenis/penalty",
+      "pattern": "straf|sanction|boete|gevangenis|penalty",
+      "result": "PASS",
+      "evidence": "Response includes a comprehensive penalty section with tables showing: imprisonment (gevangenisstraf) up to 6 years for intentional misdrijven, fines up to EUR 900,000 or 10% annual turnover, additional WED sanctions (stillegging, verbeurdverklaring, ontneming, publication of conviction). The distinction between misdrijven and overtredingen penalties is clearly explained."
+    },
+    "includes_disclaimer": {
+      "description": "Includes a legal disclaimer",
+      "pattern": "disclaimer|legal advice|advocaat|strafrechtadvocaat",
+      "result": "PASS",
+      "evidence": "Response includes a full Legal Disclaimer section stating this is not legal advice, recommending a qualified advocaat with expertise in milieustrafrecht and economic criminal law, warning about the changing Omgevingswet framework, and stating the analysis cannot be used as evidence in proceedings."
+    }
+  },
+  "assertions_passed": 4,
+  "assertions_total": 4,
+  "assertions_score": 1.0,
+  "quality_scores": {
+    "legal_accuracy": 5,
+    "completeness": 5,
+    "actionability": 5,
+    "citation_depth": 5,
+    "cross_referencing": 5
+  },
+  "quality_notes": {
+    "legal_accuracy": "Response accurately describes: the WED classification system (Art. 1 sub 1-3/4), the Drijfmest attribution test for corporate liability, the Art. 173a/173b Sr endangerment offenses and their penalties, the zorgplicht under Art. 1.11 Omgevingswet (and predecessor Art. 10.1 Wm), the una via principle (Art. 5:44 Awb), and the distinction between administrative and criminal enforcement. The HR 23 december 2003 (Middelburg) and HR 21 april 2009 (Chemie-Pack) cases are correctly applied. The Wet bescherming klokkenluiders (2023) whistleblower protection is accurately noted.",
+    "completeness": "Response covers: (1) WED framework and classification; (2) types of waste offenses (unauthorized disposal, zorgplicht violation, Art. 173a/173b Sr endangerment); (3) corporate criminal liability (Art. 51 Sr, Drijfmest); (4) personal liability of directors (feitelijk leidinggeven); (5) all relevant enforcement actors (ILT, Omgevingsdiensten, FIOD, Functioneel Parket, Politie); (6) full penalty tables (WED misdrijven, overtredingen); (7) additional WED sanctions (Art. 7); (8) dual enforcement and una via principle; (9) whistleblower implications; (10) practical recommendations. Exceptionally complete.",
+    "actionability": "Response provides 8 concrete recommendations: internal investigation, preserve records, engage specialist lawyer, assess permit compliance, consider voluntary disclosure, review environmental compliance systems (ISO 14001), protect the reporting employee (Wet bescherming klokkenluiders), and prepare for inspection. The advice to consider voluntary disclosure with the strategic analysis of why self-reporting can be advantageous is particularly actionable.",
+    "citation_depth": "Response cites: Art. 1, 1a, 6, 7 WED; Art. 173a, 173b, 51 Sr; Art. 10.1 Wm (historical); Art. 1.11 Omgevingswet; EU Directive 2008/99/EC; EVOA EC 1013/2006; HR 23 december 2003 ECLI:NL:HR:2003:AN7818 (Middelburg); HR 21 april 2009 ECLI:NL:HR:2009:BH2684 (Chemie-Pack); HR 21 oktober 2003 ECLI:NL:HR:2003:AF7938 (Drijfmest); Art. 5:44 Awb (una via); Rb. Rotterdam 19 november 2013 ECLI:NL:RBROT:2013:9116; Art. 74 Sr (transactie). Citation depth is excellent across all relevant sources.",
+    "cross_referencing": "Excellent cross-referencing: the WED is cross-referenced with the Wet milieubeheer/Omgevingswet as the source of criminalized conduct; the zorgplicht is cross-referenced with Art. 173a Sr (showing that a duty of care breach can form the basis for the more serious Sr offense); the corporate liability under Art. 51/Drijfmest is cross-referenced with feitelijk leidinggeven for directors; the internal employee report is cross-referenced with the strengthened attribution of the offense to the company and the Wet bescherming klokkenluiders; and the administrative enforcement route is cross-referenced with the criminal prosecution route through the una via principle."
+  },
+  "overall_pass": true,
+  "grading_notes": "Perfect score on all assertions and quality dimensions. The response is particularly notable for: (1) the clear statement at the outset that 'Yes, this can lead to criminal prosecution'; (2) the comprehensive enforcement actors table showing all relevant Dutch authorities; (3) the nuanced treatment of the employee's internal report and its implications for both corporate attribution and whistleblower protection; (4) the inclusion of EU Directive 2008/99/EC and EVOA as part of the legal framework; (5) the inclusion of the Probo Koala/Trafigura and other landmark Dutch environmental criminal cases from the reference file. The response draws comprehensively from milieustrafrecht.md, economic-criminal-law.md, wetboek-strafrecht.md, and key-case-law.md."
+}

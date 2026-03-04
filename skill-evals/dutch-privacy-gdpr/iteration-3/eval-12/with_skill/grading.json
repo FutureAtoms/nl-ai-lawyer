@@ -1,0 +1,47 @@
+{
+  "eval_id": 12,
+  "skill": "dutch-privacy-gdpr",
+  "iteration": 3,
+  "test_question": "We received a data subject access request (inzageverzoek) from a former employee. They want all their personal data including internal performance reviews and emails about them. Do we have to provide everything? What's the deadline?",
+  "expectations": [
+    {
+      "assertion": "cites_art_15",
+      "pattern": "art. 15/artikel 15/inzagerecht",
+      "passed": true,
+      "evidence": "The output prominently cites Art. 15 AVG throughout. The legal framework section lists 'Art. 15 AVG (GDPR) — Right of access (inzagerecht): the core provision governing this request'. The analysis section is titled 'The Right of Access: What Art. 15 AVG Provides' and cites 'Art. 15 lid 1 AVG', 'Art. 15 lid 3 AVG', and 'Art. 15 lid 4 AVG' multiple times. The term 'inzagerecht' is used in the legal framework. ECLI:NL:HR:2017:286 is cited as the Hoge Raad ruling on the scope of the access right."
+    },
+    {
+      "assertion": "mentions_deadline",
+      "pattern": "one month/1 month/één maand/30 dagen/4 weeks",
+      "passed": true,
+      "evidence": "The output contains a dedicated section 'The Deadline: One Month with Extension Possibility' citing Art. 12 lid 3 AVG: 'within one month of receipt of the request'. The section explains: 'Total maximum response time: 3 months (1 month + 2-month extension)'. The practical compliance section also notes: 'send an extension notice within the first month'. The phrase 'one month' appears multiple times."
+    },
+    {
+      "assertion": "discusses_exceptions",
+      "pattern": "exception/uitzondering/rechten van anderen/rights of others",
+      "passed": true,
+      "evidence": "The output contains a dedicated section 'Exceptions and Limitations' with four sub-sections: 'Exception 1: Rights and Freedoms of Others (Art. 15 lid 4 AVG jo. Art. 23 AVG)' — which explicitly addresses 'rechten van anderen' (rights of others); 'Exception 2: Legitimate Business Interests / Trade Secrets'; 'Exception 3: Art. 41 UAVG — Dutch National Exemptions'; 'Exception 4: Repetitive or Manifestly Unfounded Requests (Art. 12 lid 5 AVG)'. The phrase 'rights of others' appears in the context of Art. 15 lid 4 AVG."
+    },
+    {
+      "assertion": "includes_disclaimer",
+      "pattern": "disclaimer",
+      "passed": true,
+      "evidence": "The output includes the full English disclaimer: 'This is an AI-generated legal analysis and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet).' All seven disclaimer points are present verbatim."
+    }
+  ],
+  "pass_rate": "4/4",
+  "quality_scores": {
+    "legal_accuracy": 5,
+    "completeness": 5,
+    "actionability": 5,
+    "citation_depth": 5,
+    "cross_referencing": 4
+  },
+  "quality_notes": {
+    "legal_accuracy": "All provisions are accurately cited. Art. 15 lid 1, lid 3, lid 4 AVG are correctly explained. The one-month deadline with two-month extension under Art. 12 lid 3 AVG is correctly stated. Art. 41 UAVG Dutch-specific exemptions are correctly identified and described as narrow. The distinction between 'redact third-party data' vs. 'withhold entire document' is legally correct and aligned with EDPB Guidelines 01/2022. The HR 24 February 2017 (ECLI:NL:HR:2017:286) case is correctly cited for the Dutch scope of the access right.",
+    "completeness": "The response comprehensively covers: what Art. 15 provides, what must be provided (all categories of HR data), the critical issue of emails about the employee, all four applicable exceptions (rights of others, trade secrets, Art. 41 UAVG, excessive requests), the deadline (one month) and extension mechanism, the practical compliance procedure (8 steps), and specific guidance on performance reviews and internal emails. The risk assessment table adds additional value.",
+    "actionability": "The 8-step practical compliance procedure is immediately executable. The 7-item recommendations section provides clear guidance. The practical compliance procedure correctly identifies all relevant data storage systems to search (HRIS, email, performance systems, etc.). The guidance on how to handle each type of document (performance reviews, internal emails) is highly practical and specific.",
+    "citation_depth": "Multiple specific article references: Art. 15 lid 1, lid 3, lid 4 AVG; Art. 12 lid 3, lid 5, lid 6 AVG; Art. 23 AVG; Art. 41 UAVG; Art. 77 AVG; Art. 79 AVG. HR 24 February 2017 (ECLI:NL:HR:2017:286) is cited. EDPB Guidelines 01/2022 on data subject rights is referenced. Strong citation depth across Dutch and EU-level sources.",
+    "cross_referencing": "Good cross-referencing to Dutch court practice (Hoge Raad), EDPB guidance, and UAVG Dutch implementation. Minor deduction: could have referenced the AP enforcement practice on access rights more explicitly, and could have noted the interaction with the employment law context more specifically (e.g., that performance data is governed by both the AVG and employment law obligations to maintain a personnel file). The AP complaint mechanism (Art. 77 AVG) is correctly referenced."
+  }
+}

@@ -1,6 +1,6 @@
 ---
 name: dutch-privacy-gdpr
-description: "AVG/UAVG compliance, DPIAs, data processing agreements, and Autoriteit Persoonsgegevens enforcement. Use this skill whenever the user asks about Dutch GDPR, AVG, privacy compliance, data protection, verwerkersovereenkomst, data subject rights, cookie consent, or AP enforcement in the Netherlands."
+description: "AVG/UAVG compliance, DPIAs, data processing agreements, and Autoriteit Persoonsgegevens enforcement under Dutch law (Netherlands jurisdiction only). Use this skill whenever the user asks about Dutch GDPR, AVG, privacy compliance, data protection, verwerkersovereenkomst, data subject rights, cookie consent, or AP enforcement in the Netherlands. Do not use for GDPR questions about other EU countries."
 ---
 
 # Dutch Privacy and GDPR
