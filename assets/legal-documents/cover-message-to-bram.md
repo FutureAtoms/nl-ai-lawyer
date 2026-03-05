@@ -1,7 +1,5 @@
 # Cover Message to Bram
 
-*Short message to accompany the formal response. Send via email / Teams / Slack.*
-
 ---
 
 Hi Bram,
@@ -16,8 +14,7 @@ to Wingman) so it's easy for legal to finalise.
 
 I want to make this as easy as possible for legal: Axelera gets strong
 Wingman rights, and my independent side projects stay separate. To give
-you some context, FutureAtoms isn't a competitor, it's a broad hobby
-business spanning healthcare (Swaastik, 150K+ facilities), music
+you some context, FutureAtoms isn't a competitor — it's an independent, diversified technology portfolio spanning healthcare (Swaastik, targeting 150K+ facilities per project specifications), music
 generation (BevyBeats), AI wellness (Yuj), mental health (Savitri),
 LinkedIn networking (Zaphy), workflow automation (Agentic Control),
 computer vision (AdaptiveVision), RTL generation (SystemVerilogGPT),

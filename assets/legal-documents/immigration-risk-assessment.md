@@ -39,7 +39,7 @@ Your current HSM (kennismigrant) permit, employment relationship, and citizenshi
 | **Residence permit** | HSM (current, valid until 15/11/2027) | Must apply for zelfstandige permit |
 | **Permit requirements** | Employer is recognized sponsor (erkend referent) | Assessment by RVO on "essential interest to the Dutch economy" (*wezenlijk Nederlands belang*); RVO evaluates personal experience, business plan, and added value (see IND/RVO current guidance for the applicable assessment framework) |
 | **Salary threshold** | Met (meets the applicable HSM salary threshold, indexed annually; verify current figure with IND) | Must prove sustainable income independently |
-| **Revenue requirement** | N/A | FutureAtoms has EUR 0 revenue, **very unlikely to meet threshold** |
+| **RVO points-based assessment** | N/A | The zelfstandige permit requires a positive *wezenlijk Nederlands belang* assessment by RVO, using a points-based system evaluating: (A) personal experience, (B) business plan/market viability, and (C) added value/innovation (minimum 90 points total, with minimum 30 per category or 45+45 in categories A+B). A separate minimum income requirement (~EUR 1,734.57/month as of January 2026) also applies. FutureAtoms has EUR 0 revenue, making it very difficult to score sufficiently on financial viability. |
 | **Processing time** | Already in place | Several months (IND decision period of 90 days, extendable; total process including RVO assessment may take longer), uncertain outcome |
 | **Gap risk** | None | Potential gap in legal residence |
 | **Citizenship clock** | Continues accumulating | May reset if residence gap occurs |
@@ -96,13 +96,13 @@ Switching to contractor status means the immediate and permanent loss of:
 
 ### 4.5 30% Ruling (30%-regeling)
 
-The 30% ruling (*30%-regeling*) under **Art. 31a(2)(e) Wet op de loonbelasting 1964** allows qualifying employees recruited from abroad to receive up to 30% of their gross salary as a tax-free allowance, intended to compensate for extraterritorial costs (housing, travel, cost-of-living differences).
+The 30% ruling (*30%-regeling*) under **Art. 31a(2)(e) Wet op de loonbelasting 1964**, as further implemented in the **Uitvoeringsregeling loonbelasting 2011** and Belastingdienst guidance, allows qualifying employees recruited from abroad to receive up to 30% of their gross salary as a tax-free allowance, intended to compensate for extraterritorial costs (housing, travel, cost-of-living differences).
 
 **Key implications for status change:**
 
 - The 30% ruling is **only available to employees**; self-employed persons and contractors do not qualify.
 - If the employment relationship with Axelera AI ends (whether by resignation, termination, or switch to contractor status), the 30% ruling **lapses** unless a new qualifying employment with a different employer is found **within three months** (the transfer window).
-- If the three-month transfer window expires without new qualifying employment, the remaining entitlement is **forfeited permanently** and cannot be reinstated for the same period.
+- If the three-month transfer window expires without new qualifying employment, the remaining entitlement for that period **lapses** and cannot be reinstated. Note: a new 30% ruling application may be possible with a subsequent qualifying employer, but the elapsed months are not recoverable.
 
 **Estimated financial impact:**
 
@@ -112,7 +112,7 @@ The 30% ruling (*30%-regeling*) under **Art. 31a(2)(e) Wet op de loonbelasting 1
 | Remaining ruling period (estimated) | 1–3 years (maximum 5-year period from first employment in NL) |
 | Total potential loss if ruling lapses | EUR 6,000–20,000 over remaining period |
 
-**Note:** The 30% ruling was reduced from 30% to an effective lower rate for high earners under recent legislative changes (2024–2025). Furthermore, the rate is **reduced from 30% to 27%** from **1 January 2027**. The exact benefit depends on current salary, the applicable percentage cap, and remaining eligibility period. Consult a tax advisor (*belastingadviseur*) for a precise calculation.
+**Note:** The 30% ruling was reduced from 30% to an effective lower rate for high earners under recent legislative changes (2024–2025). Furthermore, under current legislative plans, the rate is **scheduled to be reduced from 30% to 27%** from **1 January 2027** (subject to final parliamentary approval and possible amendment). The exact benefit depends on current salary, the applicable percentage cap, and remaining eligibility period. Consult a tax advisor (*belastingadviseur*) for a precise calculation.
 
 **Interaction with addendum negotiation:** The 30% ruling provides an additional financial incentive to remain in employment. Any addendum terms that might lead to employment termination or reclassification should be evaluated in light of this potential tax benefit loss.
 
@@ -133,7 +133,7 @@ The 30% ruling (*30%-regeling*) under **Art. 31a(2)(e) Wet op de loonbelasting 1
 - The HSM permit is based on the **primary employment relationship** with Axelera AI B.V.
 - A side business (eenmanszaak) is a **separate activity** that does not affect the legal basis of the residence permit.
 - Employment income continues to meet the HSM salary threshold requirement.
-- Under current IND practice, a side business (eenmanszaak) alongside HSM employment generally does not need to be separately reported to the IND, provided primary employment continues and all HSM conditions remain fulfilled. However, IND policy and reporting requirements can change; confirm with an immigration lawyer or the IND if in doubt.
+- Under current IND practice, a side business (eenmanszaak) alongside HSM employment generally does not need to be separately reported to the IND, provided primary employment continues and all HSM conditions remain fulfilled, and subject to the conditions and endorsements stated on the individual residence permit (*verblijfsdocument*). However, IND policy and reporting requirements can change; confirm with an immigration lawyer or the IND if in doubt.
 - **Art. 7:653a BW** (nevenwerkzaamhedenbeding) provides that an employer may not prohibit an employee from performing work for others unless the employer has an objective justification. This protects the right to have side activities.
 - The eenmanszaak can grow organically while employment provides stability, income, and immigration security.
 - Any income from the eenmanszaak must be properly declared in the annual income tax return (aangifte inkomstenbelasting).
@@ -160,7 +160,7 @@ The 30% ruling (*30%-regeling*) under **Art. 31a(2)(e) Wet op de loonbelasting 1
 - **5 years continuous legal residence** in the Netherlands
 - **Sufficient integration**: civic integration exam (inburgeringsexamen) passed, or exemption (vrijstelling) based on education or other grounds
 - **No criminal record issues**: no conviction for certain offenses, no pending criminal proceedings
-- **Note on income**: while "sufficient and sustainable income" is not listed as a formal naturalisation requirement under Art. 8 RWN (the core requirements are continuous residence, integration, no criminal objections, and nationality renunciation), the IND may in practice consider the applicant's means of existence as part of the broader assessment. Stable employment income is generally favorable. Consult the [current IND naturalisation requirements](https://ind.nl/en/dutch-citizenship/becoming-a-dutch-national-through-naturalisation) for the definitive list of conditions
+- **Note on income**: while "sufficient and sustainable income" is not listed as a formal naturalisation requirement under Art. 8 RWN (the core requirements are continuous residence, integration, no criminal objections, and nationality renunciation), the IND may in practice consider the applicant's means of existence as part of the broader assessment. Stable employment income is generally favorable. Consult the [current IND naturalisation requirements](https://ind.nl/en/dutch-citizenship/becoming-a-dutch-national-through-naturalisation) for the definitive list of conditions. This reflects current IND practice as of March 2026; IND assessment criteria may evolve. Verify against the current IND naturalisation guidance before relying on this factor.
 - **Renunciation of previous nationality**: Indian nationality must be renounced (India generally requires renunciation; limited exceptions apply under Dutch law)
 - **No threat to public order, public morals, or national security**
 

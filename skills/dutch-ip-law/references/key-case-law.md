@@ -201,8 +201,8 @@
 ### Software-Specific Provisions
 
 - **Art. 45h-45n Auteurswet** (implementing Software Directive 2009/24/EC):
-  - Art. 45h: The employer is the author of software created by an employee in the
-    course of their duties.
+  - Art. 45h: Rental rights (*verhuurrechten*) for software — author's consent required
+    for renting out software. Employer copyright for software is governed by Art. 7 Aw.
   - Art. 45j: Lawful users of software may make copies and adaptations necessary for
     the intended use, including error correction. This right cannot be contractually
     overridden.

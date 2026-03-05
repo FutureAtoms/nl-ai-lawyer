@@ -23,7 +23,7 @@ Before addressing the specific clauses, I think it would be helpful to clarify t
 **ChipOS** is a vendor-neutral agentic orchestration platform for semiconductor design workflows. I conceived, designed, and developed ChipOS independently, on my own time, using my own equipment and resources, through my registered sole proprietorship **FutureAtoms** (eenmanszaak, KvK: 99153289). ChipOS was not created as part of my employment duties at Axelera, was not developed using Axelera equipment or resources, and was not created under Axelera's direction or instruction.
 
 ChipOS is a substantial, mature platform:
-- **485 git commits** of independent development
+- **An extensive independent commit history** of development
 - **11 application modules** ("App Packs") covering verification, physical design, and other semiconductor workflows
 - **Own database infrastructure** (separate Supabase project)
 - **Vendor-neutral:** designed to work with any semiconductor vendor's toolchain, not specific to Axelera
@@ -42,7 +42,7 @@ Wingman's profile:
 
 To be transparent: Wingman builds on patterns, structural approaches, and general techniques that I developed through my work on ChipOS. This is a common arrangement in software: a developer builds a general platform (ChipOS) and then creates a tailored application (Wingman) for a specific client's needs.
 
-Both products incorporate general software engineering patterns (workflow automation, API integration, configuration management) that are standard industry techniques used by developers worldwide. Under **Article 45a(2) Auteurswet** (implementing EU Directive 2009/24/EC Art. 1(2)), the ideas and principles underlying a computer program are not protectable by copyright. The fact that both products use similar structural approaches reflects common professional practice, not a proprietary connection between the codebases.
+Both products incorporate general software engineering patterns (workflow automation, API integration, configuration management) that are standard industry techniques used by developers worldwide. Under **EU Directive 2009/24/EC Art. 1(2)** (the Software Directive, applied in Dutch law via directive-conforming interpretation; confirmed by CJEU C-406/10, *SAS Institute v. WPL*), the ideas and principles underlying a computer program are not protectable by copyright. The fact that both products use similar structural approaches reflects common professional practice, not a proprietary connection between the codebases.
 
 The key distinction is:
 - **ChipOS** is the broader platform: 11 App Packs, vendor-neutral, serving multiple use cases across semiconductor design
@@ -62,14 +62,14 @@ During an approximately three-month pilot, Axelera evaluated Wingman as an inter
 | **Scope** | 11 App Packs, multiple workflows | Single application, single use case |
 | **Target users** | Any semiconductor engineer | Axelera developers only |
 | **Business context** | FutureAtoms independent product | Developed for Axelera's specific needs |
-| **Git repository** | Separate repo (485 commits) | Separate repo |
+| **Git repository** | Separate repo (extensive independent commit history) | Separate repo |
 | **Database** | Own Supabase project | Separate Supabase project |
 | **Branding** | FutureAtoms / ChipOS | Voyager Wingman |
 | **Licensing** | FutureAtoms proprietary | Licensed to Axelera per this addendum |
 
 ### 1.6 FutureAtoms' Broader Scope
 
-It is worth noting that FutureAtoms operates across nine diverse project domains that extend far beyond semiconductors. In addition to ChipOS, FutureAtoms encompasses: **Swaastik** (healthcare platform serving 150K+ facilities), **BevyBeats** (music generation), **Zaphy** (LinkedIn networking AI), **Agentic Control** (workflow automation), **SystemVerilogGPT** (RTL generation), **Yuj** (AI wellness/yoga), **Savitri** (mental health CBT/DBT companion), and **AdaptiveVision** (computer vision deployment). The breadth of these projects, spanning healthcare, music, wellness, networking, and automation, underscores that FutureAtoms is not a competitor to Axelera. Scoping the addendum specifically to the Wingman deliverable avoids unintentionally capturing these unrelated activities.
+It is worth noting that FutureAtoms operates across nine diverse project domains that extend far beyond semiconductors. In addition to ChipOS, FutureAtoms encompasses: **Swaastik** (healthcare platform targeting 150K+ facilities, per FutureAtoms project specifications), **BevyBeats** (music generation), **Zaphy** (LinkedIn networking AI), **Agentic Control** (workflow automation), **SystemVerilogGPT** (RTL generation), **Yuj** (AI wellness/yoga), **Savitri** (mental health CBT/DBT companion), and **AdaptiveVision** (computer vision deployment). The breadth of these projects, spanning healthcare, music, wellness, networking, and automation, underscores that FutureAtoms is not a competitor to Axelera. Scoping the addendum specifically to the Wingman deliverable avoids unintentionally capturing these unrelated activities.
 
 ### 1.7 What This Means for the Addendum
 
@@ -89,7 +89,7 @@ The definition includes "any successor, derivative, fork, update, extension, arc
 
 ### 2.2 License Scope: Wingman vs. ChipOS (Section 1.3a)
 
-Section 1.3a grants Axelera a perpetual, irrevocable, transferable, sublicensable license to the **entire ChipOS platform** rather than the Wingman deliverable. I would suggest scoping this to the Wingman application, which is what Axelera evaluated during the pilot and what we agreed to deliver. ChipOS is a broader, independently developed platform with 11 App Packs serving multiple use cases beyond Axelera. To ensure compliance with **Article 7 of the Auteurswet** (*werkgeversauteursrecht*), it is worth noting that employer copyright arises only where there is a functional connection (*functioneel verband*) between the employment duties and the creative work (HR 19 November 1993). Article 7 Aw applies to software as well as other works and requires that the employee's work "consists of" creating such works and that the works are created "in the service of" the employer. Scoping the license to Wingman ensures the addendum aligns with these statutory requirements.
+Section 1.3a grants Axelera a perpetual, irrevocable, transferable, sublicensable license to the **entire ChipOS platform** rather than the Wingman deliverable. I would suggest scoping this to the Wingman application, which is what Axelera evaluated during the pilot and what we agreed to deliver. ChipOS is a broader, independently developed platform with 11 App Packs serving multiple use cases beyond Axelera. To ensure compliance with **Article 7 of the Auteurswet** (*werkgeversauteursrecht*), it is worth noting that employer copyright arises only where there is a functional connection (*functioneel verband*) between the employment duties and the creative work (see e.g. HR 19 januari 1951, NJ 1952/37, *Van der Laan/Schoonderbeek*). Article 7 Aw applies to software as well as other works and requires that the employee's work "consists of" creating such works and that the works are created "in the service of" the employer. Scoping the license to Wingman ensures the addendum aligns with these statutory requirements.
 
 ### 2.3 "Defined Fields": Precision of Scope (Section 1.3b)
 
@@ -117,7 +117,7 @@ This provision would grant Axelera enforcement rights over ChipOS intellectual p
 
 ### 2.8 Termination Provisions (Section 1.17)
 
-I understand the desire for license stability, which I fully support. To ensure the provision aligns with the principle of good employer practices (*goed werkgeverschap*) under **Article 7:611 BW**, I would suggest including standard mutual termination-for-material-breach provisions, which is common in licensing arrangements and protects both parties.
+I understand the desire for license stability, which I fully support. To ensure the provision aligns with the principle of good employer practices (*goed werkgeverschap*) under **Article 7:611 BW**, and noting that Dutch employment termination law is governed by the semi-mandatory regime of **Article 7:669 ff. BW**, I would suggest including standard mutual termination-for-material-breach provisions that operate within this statutory framework, which is common in licensing arrangements and protects both parties.
 
 ---
 
@@ -158,7 +158,7 @@ For absolute clarity, the following are **expressly excluded** from the Wingman 
 
 | Excluded Item | Reason |
 |---------------|--------|
-| ChipOS platform source code | Separate product, FutureAtoms IP (485 commits, 11 App Packs, vendor-neutral platform) |
+| ChipOS platform source code | Separate product, FutureAtoms IP (extensive independent commit history, 11 App Packs, vendor-neutral platform) |
 | ChipOS git history | Separate repository |
 | Non-Wingman App Packs | 11 modules unrelated to Wingman |
 | FutureAtoms branding / logos | FutureAtoms proprietary |
@@ -192,12 +192,12 @@ Axelera AI B.V.
 
 | Reference | Subject |
 |-----------|---------|
-| Art. 7 Auteurswet | Employer copyright (*werkgeversauteursrecht*); requires that the work "consists of" creating such works and that works are created "in the service of" the employer, i.e., a functional connection (*functioneel verband*) between employment duties and the work (HR 19 November 1993). Art. 7 Aw applies to all works including software. |
+| Art. 7 Auteurswet | Employer copyright (*werkgeversauteursrecht*); requires that the work "consists of" creating such works and that works are created "in the service of" the employer, i.e., a functional connection (*functioneel verband*) between employment duties and the work (see e.g. HR 19 januari 1951, NJ 1952/37, *Van der Laan/Schoonderbeek*). Art. 7 Aw applies to all works including software. |
 | Art. 45h Auteurswet | Part of the software chapter (Arts. 45h–45n Aw) implementing EU Directive 2009/24/EC; Art. 45h concerns rental rights (*verhuurrechten*) for software, not employer copyright. Employer copyright for software is governed by Art. 7 Aw (general provision). |
-| Art. 45a(2) Auteurswet | Ideas and principles underlying a computer program are not protectable by copyright (implementing EU Directive 2009/24/EC Art. 1(2); cf. CJEU C-406/10, *SAS Institute v. WPL*) |
+| EU Directive 2009/24/EC Art. 1(2) | Ideas and principles underlying a computer program are not protectable by copyright (CJEU C-406/10, *SAS Institute v. WPL*; applied via *richtlijnconforme interpretatie*) |
 | Art. 7:653a BW | Ancillary activities clause (*nevenwerkzaamhedenbeding*); void without objective justification. Effective 1 August 2022, implementing EU Directive 2019/1152. Includes anti-retaliation protection. |
-| Art. 7:611 BW | Good employer practices (*goed werkgeverschap*) |
-| Art. 6:248 lid 2 BW | Limitation based on reasonableness and fairness (*derogerende werking van redelijkheid en billijkheid*) |
+| Art. 7:611 BW | Good employer practices (*goed werkgeverschap*); applies alongside the semi-mandatory termination regime of Art. 7:669 ff. BW |
+| Art. 6:248 lid 2 BW | Limitation based on reasonableness and fairness (*derogerende werking van redelijkheid en billijkheid*); a contractual provision is not binding insofar as its application would be unacceptable (*onaanvaardbaar*) per standards of reasonableness and fairness (HR 25 februari 2000, NJ 2000/471) |
 | EU Directive 2019/1152 | Transparent and predictable working conditions |
 | Clause 13, Employment Agreement | Side activities permitted with consent "not unreasonably withheld on objective grounds" |
 

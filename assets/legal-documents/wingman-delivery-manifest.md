@@ -32,7 +32,7 @@ This document serves as the authoritative reference for what is included in, and
 
 ### Scope Clarification: Items Outside This Delivery
 
-- ChipOS platform (broader platform with 485 commits, 11 App Packs, vendor-neutral)
+- ChipOS platform (broader platform with extensive commit history, 11 App Packs, vendor-neutral)
 - Non-Wingman ChipOS App Packs or modules
 - FutureAtoms branding or proprietary components
 - Any ChipOS infrastructure not required for Wingman operation
@@ -139,7 +139,7 @@ This document serves as the authoritative reference for what is included in, and
 | Item | Reason |
 |------|--------|
 | ChipOS platform source code | Separate product, Employee/FutureAtoms IP |
-| ChipOS git history | Separate repository, 485 commits |
+| ChipOS git history | Separate repository, extensive independent commit history |
 | Non-Wingman ChipOS App Packs | 11 packs unrelated to Wingman |
 | FutureAtoms branding/logos | FutureAtoms proprietary |
 | Future Wingman versions (v1.1+) | Not covered by this agreement |
@@ -158,7 +158,7 @@ The following table summarises the key differences between ChipOS (the broader p
 | **Scope** | 11 App Packs, multiple workflows | Single application, single use case |
 | **Target users** | Any semiconductor engineer | Axelera developers only |
 | **Business context** | FutureAtoms independent product | Developed for Axelera's specific needs |
-| **Git repository** | Separate repo (485 commits) | Separate repo |
+| **Git repository** | Separate repo (extensive independent commit history) | Separate repo |
 | **Database** | Own Supabase project | Separate Supabase project |
 | **Branding** | FutureAtoms / ChipOS | Voyager Wingman |
 | **Licensing** | FutureAtoms proprietary | Licensed exclusively to Axelera |

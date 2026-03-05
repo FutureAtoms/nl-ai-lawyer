@@ -1,0 +1,5342 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<<
+/Producer (pypdf)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 13
+/Kids [ 4 0 R 14 0 R 16 0 R 18 0 R 20 0 R 22 0 R 24 0 R 26 0 R 28 0 R 30 0 R 32 0 R 34 0 R 36 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+4 0 obj
+<<
+/Contents 5 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/ExtGState <<
+/gRLs0 <<
+/ca 0.15
+>>
+>>
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+/F2-0 9 0 R
+/F3 10 0 R
+/F4 11 0 R
+/F5 12 0 R
+/F6 13 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+5 0 obj
+<<
+/Length 6975
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+BT /F1 7 Tf 8.4 TL ET
+.501961 .501961 .501961 rg
+BT 1 0 0 1 187.7168 28.34646 Tm (Page 1  |  05-03-2026  |  Netherlands AI Lawyer System  |  Confidential) Tj T* ET
+Q
+q
+1 0 0 1 76.86614 743.0236 cm
+q
+.101961 .101961 .101961 rg
+BT 1 0 0 1 0 8 Tm /F2 14 Tf 22 TL (Technical and Legal Independence Report: ChipOS vs. Wingman) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 693.0236 cm
+q
+.172549 .243137 .313725 rg
+BT 1 0 0 1 0 24 Tm /F2 12 Tf 18 TL (\(Technisch en Juridisch Onafhankelijkheidsrapport: ChipOS versus) Tj T* (Wingman\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 633.0236 cm
+q
+BT 1 0 0 1 0 44.5 Tm .453026 Tw 13.5 TL /F2 9.5 Tf 0 0 0 rg (Prepared for:) Tj /F1 9.5 Tf ( Abhilash Chadhar / FutureAtoms ) Tj /F2 9.5 Tf (Date:) Tj /F1 9.5 Tf ( 4 March 2026 ) Tj /F2 9.5 Tf (Classification:) Tj /F1 9.5 Tf ( Confidential. Legal) Tj T* 0 Tw 5.556781 Tw (Strategy Document ) Tj /F2 9.5 Tf (Purpose:) Tj /F1 9.5 Tf ( Establishing clarity for both parties regarding the independent) Tj T* 0 Tw .414524 Tw (development, distinct architecture, and separate IP status of ChipOS and Wingman, to support accurate) Tj T* 0 Tw (scoping of the employment addendum) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 625.0236 cm
+Q
+q
+1 0 0 1 76.86614 623.5236 cm
+q
+.5 w
+1 J
+.8 .8 .8 RG
+n 0 0 m 441.5433 0 l S
+Q
+Q
+q
+1 0 0 1 76.86614 619.5236 cm
+Q
+q
+1 0 0 1 76.86614 587.5236 cm
+q
+.172549 .243137 .313725 rg
+BT 1 0 0 1 0 6 Tm /F2 12 Tf 18 TL (1. Executive Summary) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 514.0236 cm
+q
+BT 1 0 0 1 0 58 Tm 3.177942 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (This report presents the combined technical and legal evidence demonstrating that ) Tj /F2 9.5 Tf (ChipOS) Tj /F1 9.5 Tf ( and) Tj T* 0 Tw 1.978801 Tw /F2 9.5 Tf (Wingman) Tj /F1 9.5 Tf ( are two independent products with no runtime dependencies, separate architectures, and) Tj T* 0 Tw 2.564401 Tw (distinct ownership status under Dutch law. While Wingman applies general patterns and structural) Tj T* 0 Tw 1.918447 Tw (approaches from ChipOS \(see Section 6.3\), the products are technically and legally separable. The) Tj T* 0 Tw (evidence is drawn from:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 495.5236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf (Codebase analysis) Tj /F1 9.5 Tf ( of both repositories \(git history, source code, architecture, dependencies\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 465.5236 cm
+q
+BT 1 0 0 1 28.34646 17.5 Tm 2.764885 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf (Statutory framework) Tj /F1 9.5 Tf ( under Dutch copyright law \(Auteurswet\), patent law \(Rijksoctrooiwet) Tj T* 0 Tw (1995\), employment law \(BW Boek 7\), and the EU Software Directive \(2009/24/EC\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 435.5236 cm
+q
+BT 1 0 0 1 28.34646 17.5 Tm 1.796527 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf (Case law) Tj /F1 9.5 Tf ( from the Hoge Raad establishing the functional connection requirement and strict) Tj T* 0 Tw (interpretation of employer copyright) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 230.0236 cm
+q
+BT 1 0 0 1 0 193 Tm 1.704531 Tw 13.5 TL /F2 9.5 Tf 0 0 0 rg (Core finding:) Tj /F1 9.5 Tf ( ChipOS is an independently developed, vendor-neutral semiconductor design platform) Tj T* 0 Tw 2.390431 Tw (owned by FutureAtoms. FutureAtoms operates across nine diverse domains: semiconductor design) Tj T* 0 Tw .201631 Tw (\(ChipOS\), healthcare \(Swaastik, targeting 150K+ facilities per FutureAtoms project specifications\), music) Tj T* 0 Tw .121831 Tw (generation \(BevyBeats\), professional networking AI \(Zaphy\), workflow automation \(Agentic Control\), RTL) Tj T* 0 Tw 6.062312 Tw (generation \(SystemVerilogGPT\), wellness \(Yuj\), mental health \(Savitri\), and computer vision) Tj T* 0 Tw .558629 Tw (\(AdaptiveVision\). This demonstrates that it is a broad technology platform, not a competitor to Axelera's) Tj T* 0 Tw 1.490109 Tw (hardware business. Wingman is an application built specifically for Axelera's Voyager SDK, delivered) Tj T* 0 Tw .582067 Tw (under a separate license. Wingman uses general development patterns and structural approaches from) Tj T* 0 Tw .721346 Tw (ChipOS \(as acknowledged in the counter-proposal's "Shared Development Patterns" provision\), but the) Tj T* 0 Tw 2.268982 Tw (two products are ) Tj /F2 9.5 Tf (independent of each other) Tj /F1 9.5 Tf (: separate repositories, separate databases, separate) Tj T* 0 Tw 1.859817 Tw (Docker networks, no runtime imports, and entirely different architectures. The shared developer and) Tj T* 0 Tw .140863 Tw (shared design patterns do not create employer IP claims over ChipOS, as any attempt to claim employer) Tj T* 0 Tw 2.122331 Tw (ownership through the employment relationship fails the cumulative test of Article 7 Auteurswet, as) Tj T* 0 Tw 2.68422 Tw (conditions \(2\) and \(3\) are not met \(condition \(1\), the existence of an employment relationship, is) Tj T* 0 Tw (conceded\).) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 222.0236 cm
+Q
+q
+1 0 0 1 76.86614 220.5236 cm
+q
+.5 w
+1 J
+.8 .8 .8 RG
+n 0 0 m 441.5433 0 l S
+Q
+Q
+q
+1 0 0 1 76.86614 216.5236 cm
+Q
+q
+1 0 0 1 76.86614 184.5236 cm
+q
+.172549 .243137 .313725 rg
+BT 1 0 0 1 0 6 Tm /F2 12 Tf 18 TL (2. Product Definitions) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 160.5236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (2.1 ChipOS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 70.86614 71.52362 cm
+q
+.172549 .243137 .313725 rg
+n 0 84 453.5433 -21 re f*
+1 1 1 rg
+n 0 63 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 42 453.5433 -21 re f*
+1 1 1 rg
+n 0 21 453.5433 -21 re f*
+.960784 .960784 .960784 rg
+BT /F2 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 68 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Attribute) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.39108 68 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Details) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 47 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Full name) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.39108 47 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (ChipOS: AI Operating System for Semiconductor Design) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Repository) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.39108 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (https://github.com/FutureAtoms/ChipOS.git) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Owner) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.39108 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (FutureAtoms \(eenmanszaak, KvK: 99153289\)) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.8 .8 .8 RG
+.5 w
+n 0 84 m 453.5433 84 l S
+n 0 0 m 0 84 l S
+n 453.5433 0 m 453.5433 84 l S
+n 0 0 m 453.5433 0 l S
+n 0 63 m 453.5433 63 l S
+n 0 42 m 453.5433 42 l S
+n 0 21 m 453.5433 21 l S
+n 71.39108 0 m 71.39108 84 l S
+Q
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+q
+0.707107 0.707107 -0.707107 0.707107 297.6378 420.9449 cm
+BT
+/F2-0 54 Tf
+64.8 TL
+ET
+1 0 0 rg
+/gRLs0 gs
+BT
+1 0 0 1 -234.009 0 Tm
+(VERTROUWELIJK) Tj
+T*
+ET
+Q
+Q
+
+
+endstream
+endobj
+6 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+9 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+10 0 obj
+<<
+/BaseFont /Courier
+/Encoding /WinAnsiEncoding
+/Name /F3
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+11 0 obj
+<<
+/BaseFont /Symbol
+/Name /F4
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+12 0 obj
+<<
+/BaseFont /Helvetica-Oblique
+/Encoding /WinAnsiEncoding
+/Name /F5
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+13 0 obj
+<<
+/BaseFont /Helvetica-BoldOblique
+/Encoding /WinAnsiEncoding
+/Name /F6
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+14 0 obj
+<<
+/Contents 15 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/ExtGState <<
+/gRLs0 <<
+/ca 0.15
+>>
+>>
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+/F2-0 9 0 R
+/F3 10 0 R
+/F4 11 0 R
+/F5 12 0 R
+/F6 13 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+15 0 obj
+<<
+/Length 10522
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+BT /F1 7 Tf 8.4 TL ET
+.501961 .501961 .501961 rg
+BT 1 0 0 1 187.7168 28.34646 Tm (Page 2  |  05-03-2026  |  Netherlands AI Lawyer System  |  Confidential) Tj T* ET
+Q
+q
+1 0 0 1 70.86614 576.0236 cm
+q
+.172549 .243137 .313725 rg
+n 0 189 453.5433 -21 re f*
+1 1 1 rg
+n 0 168 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 147 453.5433 -21 re f*
+1 1 1 rg
+n 0 126 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 105 453.5433 -21 re f*
+1 1 1 rg
+n 0 84 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 63 453.5433 -21 re f*
+1 1 1 rg
+n 0 42 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 21 453.5433 -21 re f*
+.960784 .960784 .960784 rg
+BT /F2 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 173 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Attribute) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.39108 173 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Details) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 152 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (First commit) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.39108 152 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (15 September 2025 \(ad59af6, by FutureAtoms\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 131 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Total commits) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.39108 131 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Extensive \(predominantly FutureAtoms\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 110 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Contributors) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.39108 110 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (FutureAtoms \(vast majority\); minor contributions from CI automation and AI-assisted commits) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 89 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Version) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.39108 89 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (v1.0.1 \(released 5 February 2026\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 68 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (License) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.39108 68 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (FutureAtoms proprietary license \(v1.0, December 2025\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 47 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Architecture) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.39108 47 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Custom VS Code distribution + FastAPI backend + MCP server) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Purpose) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.39108 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Vendor-neutral agentic orchestration for semiconductor design workflows) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Target users) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.39108 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Any semiconductor engineer \(vendor-neutral, not tied to any specific hardware\)) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.8 .8 .8 RG
+.5 w
+n 0 189 m 453.5433 189 l S
+n 0 168 m 0 189 l S
+n 0 0 m 0 168 l S
+n 453.5433 168 m 453.5433 189 l S
+n 453.5433 0 m 453.5433 168 l S
+n 0 0 m 453.5433 0 l S
+n 0 168 m 453.5433 168 l S
+n 71.39108 168 m 71.39108 189 l S
+n 0 147 m 453.5433 147 l S
+n 0 126 m 453.5433 126 l S
+n 0 105 m 453.5433 105 l S
+n 0 84 m 453.5433 84 l S
+n 0 63 m 453.5433 63 l S
+n 0 42 m 453.5433 42 l S
+n 0 21 m 453.5433 21 l S
+n 71.39108 0 m 71.39108 168 l S
+Q
+Q
+Q
+q
+1 0 0 1 76.86614 568.0236 cm
+Q
+q
+1 0 0 1 76.86614 544.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (2.2 Wingman) Tj T* ET
+Q
+Q
+q
+1 0 0 1 70.86614 308.0236 cm
+q
+.172549 .243137 .313725 rg
+n 0 231 453.5433 -21 re f*
+1 1 1 rg
+n 0 210 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 189 453.5433 -21 re f*
+1 1 1 rg
+n 0 168 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 147 453.5433 -21 re f*
+1 1 1 rg
+n 0 126 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 105 453.5433 -21 re f*
+1 1 1 rg
+n 0 84 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 63 453.5433 -21 re f*
+1 1 1 rg
+n 0 42 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 21 453.5433 -21 re f*
+.960784 .960784 .960784 rg
+BT /F2 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 215 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Attribute) Tj T* ET
+Q
+Q
+q
+1 0 0 1 101.378 215 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Details) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 194 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Full name) Tj T* ET
+Q
+Q
+q
+1 0 0 1 101.378 194 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Voyager Wingman v1.0.0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 173 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Repository) Tj T* ET
+Q
+Q
+q
+1 0 0 1 101.378 173 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (https://github.com/FutureAtoms/voyager-wingman.git) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 152 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Owner) Tj T* ET
+Q
+Q
+q
+1 0 0 1 101.378 152 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (FutureAtoms \(delivered to Axelera AI under license\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 131 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Total commits) Tj T* ET
+Q
+Q
+q
+1 0 0 1 101.378 131 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (3) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 110 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Contributors) Tj T* ET
+Q
+Q
+q
+1 0 0 1 101.378 110 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (FutureAtoms: 3 commits) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 89 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Version) Tj T* ET
+Q
+Q
+q
+1 0 0 1 101.378 89 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (v1.0.0 \(delivered February 2026\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 68 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (License) Tj T* ET
+Q
+Q
+q
+1 0 0 1 101.378 68 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Voyager Wingman Software License Agreement v1.0 \(January 2026\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 47 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Architecture) Tj T* ET
+Q
+Q
+q
+1 0 0 1 101.378 47 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Full-stack microservices platform \(8 Docker services\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Purpose) Tj T* ET
+Q
+Q
+q
+1 0 0 1 101.378 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (AI-powered developer platform for Axelera Metis NPU programming) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Target users) Tj T* ET
+Q
+Q
+q
+1 0 0 1 101.378 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Axelera Voyager SDK developers only) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.8 .8 .8 RG
+.5 w
+n 0 231 m 453.5433 231 l S
+n 0 0 m 453.5433 0 l S
+n 0 0 m 0 231 l S
+n 453.5433 0 m 453.5433 231 l S
+n 0 210 m 453.5433 210 l S
+n 0 189 m 453.5433 189 l S
+n 0 168 m 453.5433 168 l S
+n 0 147 m 453.5433 147 l S
+n 0 126 m 453.5433 126 l S
+n 0 105 m 453.5433 105 l S
+n 0 84 m 453.5433 84 l S
+n 0 63 m 453.5433 63 l S
+n 0 42 m 453.5433 42 l S
+n 0 21 m 453.5433 21 l S
+n 96.37795 0 m 96.37795 231 l S
+Q
+Q
+Q
+q
+1 0 0 1 76.86614 300.0236 cm
+Q
+q
+1 0 0 1 76.86614 297.0236 cm
+Q
+q
+1 0 0 1 76.86614 295.5236 cm
+q
+.5 w
+1 J
+.8 .8 .8 RG
+n 0 0 m 441.5433 0 l S
+Q
+Q
+q
+1 0 0 1 76.86614 291.5236 cm
+Q
+q
+1 0 0 1 76.86614 259.5236 cm
+q
+.172549 .243137 .313725 rg
+BT 1 0 0 1 0 6 Tm /F2 12 Tf 18 TL (3. Technical Independence Evidence) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 235.5236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (3.1 Architectural Separation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 217.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F1 9.5 Tf 13.5 TL (ChipOS and Wingman have distinct architectures:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 70.86614 75.02362 cm
+q
+.172549 .243137 .313725 rg
+n 0 137 453.5433 -21 re f*
+1 1 1 rg
+n 0 116 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 95 453.5433 -21 re f*
+1 1 1 rg
+n 0 74 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 53 453.5433 -32 re f*
+1 1 1 rg
+n 0 21 453.5433 -21 re f*
+.960784 .960784 .960784 rg
+BT /F2 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 121 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Aspect) Tj T* ET
+Q
+Q
+q
+1 0 0 1 81.25949 121 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (ChipOS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 285.956 121 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Wingman) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 100 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Type) Tj T* ET
+Q
+Q
+q
+1 0 0 1 81.25949 100 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Custom VS Code distribution) Tj T* ET
+Q
+Q
+q
+1 0 0 1 285.956 100 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Full-stack microservices platform) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 79 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Frontend) Tj T* ET
+Q
+Q
+q
+1 0 0 1 81.25949 79 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (VS Code native UI + embedded webviews) Tj T* ET
+Q
+Q
+q
+1 0 0 1 285.956 79 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (React 18 + Vite SPA \(port 4737\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 58 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Backend) Tj T* ET
+Q
+Q
+q
+1 0 0 1 81.25949 58 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (FastAPI \(port 8181\) + VS Code extension host) Tj T* ET
+Q
+Q
+q
+1 0 0 1 285.956 58 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (FastAPI \(port 9181\) + 7 additional services) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 37 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Chat) Tj T* ET
+Q
+Q
+q
+1 0 0 1 81.25949 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (ChipChat \(Continue.dev fork, integrated in VS) Tj T* (Code\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 285.956 37 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (LibreChat fork \(standalone, port 4080\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (MCP server) Tj T* ET
+Q
+Q
+q
+1 0 0 1 81.25949 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Extension IPC-based) Tj T* ET
+Q
+Q
+q
+1 0 0 1 285.956 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (HTTP-based \(port 9051\)) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.8 .8 .8 RG
+.5 w
+n 0 137 m 453.5433 137 l S
+n 0 0 m 0 137 l S
+n 453.5433 0 m 453.5433 137 l S
+n 0 0 m 453.5433 0 l S
+n 0 116 m 453.5433 116 l S
+n 0 95 m 453.5433 95 l S
+n 0 74 m 453.5433 74 l S
+n 0 53 m 453.5433 53 l S
+n 0 21 m 453.5433 21 l S
+n 76.25949 0 m 76.25949 137 l S
+n 280.956 0 m 280.956 137 l S
+Q
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+q
+0.707107 0.707107 -0.707107 0.707107 297.6378 420.9449 cm
+BT
+/F2-0 54 Tf
+64.8 TL
+ET
+1 0 0 rg
+/gRLs0 gs
+BT
+1 0 0 1 -234.009 0 Tm
+(VERTROUWELIJK) Tj
+T*
+ET
+Q
+Q
+
+
+endstream
+endobj
+16 0 obj
+<<
+/Contents 17 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/ExtGState <<
+/gRLs0 <<
+/ca 0.15
+>>
+>>
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+/F2-0 9 0 R
+/F3 10 0 R
+/F4 11 0 R
+/F5 12 0 R
+/F6 13 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+17 0 obj
+<<
+/Length 9451
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+BT /F1 7 Tf 8.4 TL ET
+.501961 .501961 .501961 rg
+BT 1 0 0 1 187.7168 28.34646 Tm (Page 3  |  05-03-2026  |  Netherlands AI Lawyer System  |  Confidential) Tj T* ET
+Q
+q
+1 0 0 1 70.86614 628.0236 cm
+q
+.172549 .243137 .313725 rg
+n 0 137 453.5433 -21 re f*
+1 1 1 rg
+n 0 116 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 95 453.5433 -21 re f*
+1 1 1 rg
+n 0 74 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 53 453.5433 -32 re f*
+1 1 1 rg
+n 0 21 453.5433 -21 re f*
+.960784 .960784 .960784 rg
+BT /F2 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 121 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Aspect) Tj T* ET
+Q
+Q
+q
+1 0 0 1 81.25949 121 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (ChipOS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 285.956 121 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Wingman) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 100 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Database) Tj T* ET
+Q
+Q
+q
+1 0 0 1 81.25949 100 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Supabase \(own project\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 285.956 100 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Supabase \(separate project, mandatory\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 79 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Authentication) Tj T* ET
+Q
+Q
+q
+1 0 0 1 81.25949 79 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Supabase OAuth + VS Code auth) Tj T* ET
+Q
+Q
+q
+1 0 0 1 285.956 79 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Supabase JWT + OAuth + JWKS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 58 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Docker services) Tj T* ET
+Q
+Q
+q
+1 0 0 1 81.25949 58 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (VS Code app + backend + MCP) Tj T* ET
+Q
+Q
+q
+1 0 0 1 285.956 58 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (8 independent containers) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 37 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Port range) Tj T* ET
+Q
+Q
+q
+1 0 0 1 81.25949 37 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (3737, 8181, 8051) Tj T* ET
+Q
+Q
+q
+1 0 0 1 285.956 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (4080, 4737, 5433, 7800, 9051, 9181,) Tj T* (28017) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Network) Tj T* ET
+Q
+Q
+q
+1 0 0 1 81.25949 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (chipos-network) Tj T* ET
+Q
+Q
+q
+1 0 0 1 285.956 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (wingman-network) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.8 .8 .8 RG
+.5 w
+n 0 137 m 453.5433 137 l S
+n 0 116 m 0 137 l S
+n 0 0 m 0 116 l S
+n 453.5433 116 m 453.5433 137 l S
+n 453.5433 0 m 453.5433 116 l S
+n 0 0 m 453.5433 0 l S
+n 0 116 m 453.5433 116 l S
+n 76.25949 116 m 76.25949 137 l S
+n 280.956 116 m 280.956 137 l S
+n 0 95 m 453.5433 95 l S
+n 0 74 m 453.5433 74 l S
+n 0 53 m 453.5433 53 l S
+n 0 21 m 453.5433 21 l S
+n 76.25949 0 m 76.25949 116 l S
+n 280.956 0 m 280.956 116 l S
+Q
+Q
+Q
+q
+1 0 0 1 76.86614 620.0236 cm
+Q
+q
+1 0 0 1 76.86614 596.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (3.2 Code Independence) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 577.5236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 9.5 Tf 13.5 TL (No runtime cross-imports between the two codebases:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 559.0236 cm
+q
+BT 1 0 0 1 0 4 Tm 13.5 TL /F1 9.5 Tf 0 0 0 rg (A search of the Wingman repository for runtime imports from ChipOS modules yields ) Tj /F2 9.5 Tf (zero results) Tj /F1 9.5 Tf (:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 534.0236 cm
+q
+.8 .8 .8 RG
+.5 w
+.960784 .960784 .960784 rg
+n 3.338583 -8 434.8661 35 re B*
+Q
+q
+BT 1 0 0 1 11.33858 11.5 Tm 9.5 TL /F3 7.5 Tf 0 0 0 rg (grep -r "from.*chipos\\|import.*chipos" backend/ --include="*.py") Tj  T* /F4 7.5 Tf 9.5 TL (\256) Tj /F3 7.5 Tf 9.5 TL ( Returns only database table name references \(configuration, not code imports\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 445.0236 cm
+q
+BT 1 0 0 1 0 71.5 Tm .765593 Tw 13.5 TL /F2 9.5 Tf 0 0 0 rg (Important context:) Tj /F1 9.5 Tf ( While Wingman has no runtime dependency on ChipOS, the two products share a) Tj T* 0 Tw .449067 Tw (developer and Wingman was built using general patterns, structural approaches, and design techniques) Tj T* 0 Tw 1.585846 Tw (from ChipOS \(see Section 6.3 and the counter-proposal's "Shared Development Patterns" provision\).) Tj T* 0 Tw .161077 Tw (This is analogous to a developer building a general platform and then creating a tailored application for a) Tj T* 0 Tw 1.914415 Tw (specific client. The application draws on the developer's experience and patterns but operates as a) Tj T* 0 Tw (standalone product.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 372.5236 cm
+q
+BT 1 0 0 1 0 58 Tm 1.769687 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (The two codebases: - Live in ) Tj /F2 9.5 Tf (separate git repositories) Tj /F1 9.5 Tf ( with no shared history - Maintain ) Tj /F2 9.5 Tf (separate) Tj T* 0 Tw .084028 Tw (dependency manifests) Tj /F1 9.5 Tf ( \() Tj /F3 8 Tf (pyproject.toml) Tj /F1 9.5 Tf (, ) Tj /F3 8 Tf (package.json) Tj /F1 9.5 Tf (\) - Share ) Tj /F2 9.5 Tf (no utility libraries) Tj /F1 9.5 Tf ( or runtime modules) Tj T* 0 Tw 3.858522 Tw (- Include ) Tj /F2 9.5 Tf (no git submodules) Tj /F1 9.5 Tf ( pointing to each other - Run from ) Tj /F2 9.5 Tf (separate Docker Compose) Tj T* 0 Tw 3.359234 Tw (configurations) Tj /F1 9.5 Tf ( with no cross-references - Carry ) Tj /F2 9.5 Tf (separate VS Code extension IDs) Tj /F1 9.5 Tf ( and bundle) Tj T* 0 Tw (identifiers) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 348.5236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (3.3 Git Repository Evidence) Tj T* ET
+Q
+Q
+q
+1 0 0 1 70.86614 109.5236 cm
+q
+.172549 .243137 .313725 rg
+n 0 234 453.5433 -21 re f*
+1 1 1 rg
+n 0 213 453.5433 -32 re f*
+.972549 .976471 .980392 rg
+n 0 181 453.5433 -32 re f*
+1 1 1 rg
+n 0 149 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 128 453.5433 -32 re f*
+1 1 1 rg
+n 0 96 453.5433 -32 re f*
+.972549 .976471 .980392 rg
+n 0 64 453.5433 -32 re f*
+1 1 1 rg
+n 0 32 453.5433 -32 re f*
+.960784 .960784 .960784 rg
+BT /F2 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 218 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Metric) Tj T* ET
+Q
+Q
+q
+1 0 0 1 82.34847 218 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (ChipOS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 310.878 218 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Wingman) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 197 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Remote) Tj T* ET
+Q
+Q
+q
+1 0 0 1 82.34847 197 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (github.com/FutureAtoms/ChipOS.git) Tj T* ET
+Q
+Q
+q
+1 0 0 1 310.878 186 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (github.com/FutureAtoms/voyager-wi) Tj T* (ngman.git) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 154 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F2 8.5 Tf 11 TL (Upstream) Tj T* (remotes) Tj T* ET
+Q
+Q
+q
+1 0 0 1 82.34847 165 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (None \(origin only\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 310.878 165 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (None \(origin only\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 133 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Commits) Tj T* ET
+Q
+Q
+q
+1 0 0 1 82.34847 133 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Extensive \(predominantly FutureAtoms\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 310.878 133 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (3) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 112 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Authors) Tj T* ET
+Q
+Q
+q
+1 0 0 1 82.34847 101 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (FutureAtoms \(vast majority\), minor CI bot and) Tj T* (AI-assisted commits) Tj T* ET
+Q
+Q
+q
+1 0 0 1 310.878 112 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (FutureAtoms \(3\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 69 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F2 8.5 Tf 11 TL (First commit) Tj T* (date) Tj T* ET
+Q
+Q
+q
+1 0 0 1 82.34847 80 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (15 September 2025) Tj T* ET
+Q
+Q
+q
+1 0 0 1 310.878 80 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (February 2026) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 37 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F2 8.5 Tf 11 TL (Shared git) Tj T* (history) Tj T* ET
+Q
+Q
+q
+1 0 0 1 82.34847 48 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (None) Tj T* ET
+Q
+Q
+q
+1 0 0 1 310.878 48 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (None) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F2 8.5 Tf 11 TL (Shared branche) Tj T* (s) Tj T* ET
+Q
+Q
+q
+1 0 0 1 82.34847 16 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (None) Tj T* ET
+Q
+Q
+q
+1 0 0 1 310.878 16 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (None) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.8 .8 .8 RG
+.5 w
+n 0 234 m 453.5433 234 l S
+n 0 0 m 453.5433 0 l S
+n 0 0 m 0 234 l S
+n 453.5433 0 m 453.5433 234 l S
+n 0 213 m 453.5433 213 l S
+n 0 181 m 453.5433 181 l S
+n 0 149 m 453.5433 149 l S
+n 0 128 m 453.5433 128 l S
+n 0 96 m 453.5433 96 l S
+n 0 64 m 453.5433 64 l S
+n 0 32 m 453.5433 32 l S
+n 77.34847 0 m 77.34847 234 l S
+n 305.878 0 m 305.878 234 l S
+Q
+Q
+Q
+q
+1 0 0 1 76.86614 101.5236 cm
+Q
+q
+1 0 0 1 76.86614 77.52362 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (3.4 Database Separation) Tj T* ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+q
+0.707107 0.707107 -0.707107 0.707107 297.6378 420.9449 cm
+BT
+/F2-0 54 Tf
+64.8 TL
+ET
+1 0 0 rg
+/gRLs0 gs
+BT
+1 0 0 1 -234.009 0 Tm
+(VERTROUWELIJK) Tj
+T*
+ET
+Q
+Q
+
+
+endstream
+endobj
+18 0 obj
+<<
+/Contents 19 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/ExtGState <<
+/gRLs0 <<
+/ca 0.15
+>>
+>>
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+/F2-0 9 0 R
+/F3 10 0 R
+/F4 11 0 R
+/F5 12 0 R
+/F6 13 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+19 0 obj
+<<
+/Length 10805
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+BT /F1 7 Tf 8.4 TL ET
+.501961 .501961 .501961 rg
+BT 1 0 0 1 187.7168 28.34646 Tm (Page 4  |  05-03-2026  |  Netherlands AI Lawyer System  |  Confidential) Tj T* ET
+Q
+q
+1 0 0 1 76.86614 738.0236 cm
+q
+BT 1 0 0 1 0 17.5 Tm 3.972181 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (Each product requires a ) Tj /F2 9.5 Tf (separate Supabase project) Tj /F1 9.5 Tf ( \(separate PostgreSQL instance, separate) Tj T* 0 Tw (authentication domain, separate API keys\):) Tj T* ET
+Q
+Q
+q
+1 0 0 1 70.86614 586.0236 cm
+q
+.172549 .243137 .313725 rg
+n 0 147 453.5433 -21 re f*
+1 1 1 rg
+n 0 126 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 105 453.5433 -21 re f*
+1 1 1 rg
+n 0 84 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 63 453.5433 -21 re f*
+1 1 1 rg
+n 0 42 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 21 453.5433 -21 re f*
+.960784 .960784 .960784 rg
+BT /F2 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 131 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Database aspect) Tj T* ET
+Q
+Q
+q
+1 0 0 1 103.7916 131 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (ChipOS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 229.5264 131 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Wingman) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 110 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Supabase project) Tj T* ET
+Q
+Q
+q
+1 0 0 1 103.7916 110 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Own instance) Tj T* ET
+Q
+Q
+q
+1 0 0 1 229.5264 110 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Separate instance \(mandatory\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 89 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Tables) Tj T* ET
+Q
+Q
+q
+1 0 0 1 103.7916 89 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (chipos_* prefix \(15+ tables\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 229.5264 89 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (chipos_* prefix \(15 tables, renamed from wingman_*\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 68 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (RLS policies) Tj T* ET
+Q
+Q
+q
+1 0 0 1 103.7916 68 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Organization-scoped) Tj T* ET
+Q
+Q
+q
+1 0 0 1 229.5264 68 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Organization-scoped \(26 policies\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 47 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Connection strings) Tj T* ET
+Q
+Q
+q
+1 0 0 1 103.7916 47 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (CHIPOS_SUPABASE_URL) Tj T* ET
+Q
+Q
+q
+1 0 0 1 229.5264 47 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (WINGMAN_SUPABASE_URL) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (API keys) Tj T* ET
+Q
+Q
+q
+1 0 0 1 103.7916 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (CHIPOS_SUPABASE_KEY) Tj T* ET
+Q
+Q
+q
+1 0 0 1 229.5264 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (WINGMAN_SUPABASE_KEY) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Data sharing) Tj T* ET
+Q
+Q
+q
+1 0 0 1 103.7916 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (None) Tj T* ET
+Q
+Q
+q
+1 0 0 1 229.5264 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (None) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.8 .8 .8 RG
+.5 w
+n 0 147 m 453.5433 147 l S
+n 0 0 m 453.5433 0 l S
+n 0 0 m 0 147 l S
+n 453.5433 0 m 453.5433 147 l S
+n 0 126 m 453.5433 126 l S
+n 0 105 m 453.5433 105 l S
+n 0 84 m 453.5433 84 l S
+n 0 63 m 453.5433 63 l S
+n 0 42 m 453.5433 42 l S
+n 0 21 m 453.5433 21 l S
+n 98.79161 0 m 98.79161 147 l S
+n 224.5264 0 m 224.5264 147 l S
+Q
+Q
+Q
+q
+1 0 0 1 76.86614 578.0236 cm
+Q
+q
+1 0 0 1 76.86614 524.0236 cm
+q
+BT 1 0 0 1 0 44.5 Tm 1.531808 Tw 13.5 TL /F2 9.5 Tf 0 0 0 rg (Note:) Tj /F1 9.5 Tf ( Wingman database tables currently use a ) Tj /F3 8 Tf (chipos_) Tj /F1 9.5 Tf ( prefix due to an earlier naming convention.) Tj T* 0 Tw .608519 Tw (These tables will be renamed to ) Tj /F3 8 Tf (wingman_*) Tj /F1 9.5 Tf ( before delivery to ensure clear separation. This is a naming) Tj T* 0 Tw 2.533272 Tw (convention only, not evidence of code sharing. The tables are in a completely separate database) Tj T* 0 Tw (instance. Backward-compatibility views \() Tj /F3 8 Tf (wingman_*) Tj /F1 9.5 Tf ( ) Tj /F4 9.5 Tf 13.5 TL (\256) Tj /F1 9.5 Tf 13.5 TL ( ) Tj /F3 8 Tf (chipos_*) Tj /F1 9.5 Tf (\) exist for migration purposes.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 500.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (3.5 Technology Stack Differences) Tj T* ET
+Q
+Q
+q
+1 0 0 1 70.86614 306.0236 cm
+q
+.172549 .243137 .313725 rg
+n 0 189 453.5433 -21 re f*
+1 1 1 rg
+n 0 168 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 147 453.5433 -21 re f*
+1 1 1 rg
+n 0 126 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 105 453.5433 -21 re f*
+1 1 1 rg
+n 0 84 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 63 453.5433 -21 re f*
+1 1 1 rg
+n 0 42 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 21 453.5433 -21 re f*
+.960784 .960784 .960784 rg
+BT /F2 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 173 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Layer) Tj T* ET
+Q
+Q
+q
+1 0 0 1 92.21987 173 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (ChipOS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 284.1036 173 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Wingman) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 152 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Core platform) Tj T* ET
+Q
+Q
+q
+1 0 0 1 92.21987 152 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Electron / Code-OSS \(VS Code\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 284.1036 152 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Docker Compose \(8 microservices\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 131 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Extensions) Tj T* ET
+Q
+Q
+q
+1 0 0 1 92.21987 131 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (9+ custom VS Code extensions) Tj T* ET
+Q
+Q
+q
+1 0 0 1 284.1036 131 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (3 VS Code extensions \(optional\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 110 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Chat integration) Tj T* ET
+Q
+Q
+q
+1 0 0 1 92.21987 110 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Continue.dev fork \("Chip AI"\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 284.1036 110 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (LibreChat fork \("ChipChat"\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 89 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Search) Tj T* ET
+Q
+Q
+q
+1 0 0 1 92.21987 89 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Built-in VS Code search + RAG) Tj T* ET
+Q
+Q
+q
+1 0 0 1 284.1036 89 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (MeiliSearch \(dedicated container\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 68 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Document store) Tj T* ET
+Q
+Q
+q
+1 0 0 1 92.21987 68 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (MongoDB \(embedded\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 284.1036 68 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (MongoDB \(separate container, port 28017\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 47 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Vector search) Tj T* ET
+Q
+Q
+q
+1 0 0 1 92.21987 47 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (pgvector \(via Supabase\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 284.1036 47 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (pgvector \(separate container, port 5433\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Customer support) Tj T* ET
+Q
+Q
+q
+1 0 0 1 92.21987 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Zendesk MCP) Tj T* ET
+Q
+Q
+q
+1 0 0 1 284.1036 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Zendesk MCP \(separate instance\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Build system) Tj T* ET
+Q
+Q
+q
+1 0 0 1 92.21987 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Custom Electron builder + multi-arch scripts) Tj T* ET
+Q
+Q
+q
+1 0 0 1 284.1036 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Standard Docker build) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.8 .8 .8 RG
+.5 w
+n 0 189 m 453.5433 189 l S
+n 0 0 m 453.5433 0 l S
+n 0 0 m 0 189 l S
+n 453.5433 0 m 453.5433 189 l S
+n 0 168 m 453.5433 168 l S
+n 0 147 m 453.5433 147 l S
+n 0 126 m 453.5433 126 l S
+n 0 105 m 453.5433 105 l S
+n 0 84 m 453.5433 84 l S
+n 0 63 m 453.5433 63 l S
+n 0 42 m 453.5433 42 l S
+n 0 21 m 453.5433 21 l S
+n 87.21987 0 m 87.21987 189 l S
+n 279.1036 0 m 279.1036 189 l S
+Q
+Q
+Q
+q
+1 0 0 1 76.86614 298.0236 cm
+Q
+q
+1 0 0 1 76.86614 274.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (3.6 Feature Independence) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 255.5236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 9.5 Tf 13.5 TL (ChipOS has 11 AI-native App Packs for chip design:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 237.0236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F2 9.5 Tf 0 0 0 rg (1.) Tj /F1 9.5 Tf ( CPU Development \(RISC-V ISA, micro-architecture\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 220.5236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F2 9.5 Tf 0 0 0 rg (2.) Tj /F1 9.5 Tf ( RTL Verification \(UVM testbenches, SystemVerilog assertions\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 204.0236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F2 9.5 Tf 0 0 0 rg (3.) Tj /F1 9.5 Tf ( RTL Debug \(waveform analysis, signal tracing\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 187.5236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F2 9.5 Tf 0 0 0 rg (4.) Tj /F1 9.5 Tf ( Physical Design \(floorplanning, placement, CTS, routing\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 171.0236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F2 9.5 Tf 0 0 0 rg (5.) Tj /F1 9.5 Tf ( PD Verification \(DRC/LVS/ERC, static timing, IR/EM analysis\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 154.5236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F2 9.5 Tf 0 0 0 rg (6.) Tj /F1 9.5 Tf ( Spec Developer \(architecture specifications\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 138.0236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F2 9.5 Tf 0 0 0 rg (7.) Tj /F1 9.5 Tf ( Hardware Programmer \(FPGA workflows, firmware\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 121.5236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F2 9.5 Tf 0 0 0 rg (8.) Tj /F1 9.5 Tf ( Axelera Voyager SDK \(AI acceleration on Metis APUs\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 105.0236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F2 9.5 Tf 0 0 0 rg (9.) Tj /F1 9.5 Tf ( Raspberry Pi \(embedded Linux, GPIO\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 88.52362 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F2 9.5 Tf 0 0 0 rg (10.) Tj /F1 9.5 Tf ( Web Development \(React/FastAPI\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 72.02362 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F2 9.5 Tf 0 0 0 rg (11.) Tj /F1 9.5 Tf ( Documentation \(technical writing\)) Tj T* ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+q
+0.707107 0.707107 -0.707107 0.707107 297.6378 420.9449 cm
+BT
+/F2-0 54 Tf
+64.8 TL
+ET
+1 0 0 rg
+/gRLs0 gs
+BT
+1 0 0 1 -234.009 0 Tm
+(VERTROUWELIJK) Tj
+T*
+ET
+Q
+Q
+
+
+endstream
+endobj
+20 0 obj
+<<
+/Contents 21 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/ExtGState <<
+/gRLs0 <<
+/ca 0.15
+>>
+>>
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+/F2-0 9 0 R
+/F3 10 0 R
+/F4 11 0 R
+/F5 12 0 R
+/F6 13 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+21 0 obj
+<<
+/Length 8347
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+BT /F1 7 Tf 8.4 TL ET
+.501961 .501961 .501961 rg
+BT 1 0 0 1 187.7168 28.34646 Tm (Page 5  |  05-03-2026  |  Netherlands AI Lawyer System  |  Confidential) Tj T* ET
+Q
+q
+1 0 0 1 76.86614 751.5236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 9.5 Tf 13.5 TL (Wingman has a focused feature set for Axelera:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 733.0236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F2 9.5 Tf 0 0 0 rg (1.) Tj /F1 9.5 Tf ( Voyager SDK pipeline builder \(Axelera Metis NPU-specific\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 716.5236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F2 9.5 Tf 0 0 0 rg (2.) Tj /F1 9.5 Tf ( RAG knowledge base \(documentation search\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 700.0236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F2 9.5 Tf 0 0 0 rg (3.) Tj /F1 9.5 Tf ( Multi-model AI chat \(14 models, 5 providers\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 683.5236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F2 9.5 Tf 0 0 0 rg (4.) Tj /F1 9.5 Tf ( Project/task management) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 667.0236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F2 9.5 Tf 0 0 0 rg (5.) Tj /F1 9.5 Tf ( Zendesk customer support integration) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 650.5236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F2 9.5 Tf 0 0 0 rg (6.) Tj /F1 9.5 Tf ( MCP tool integration for Claude Code/Cursor) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 580.0236 cm
+q
+BT 1 0 0 1 0 58 Tm .57332 Tw 13.5 TL /F2 9.5 Tf 0 0 0 rg (Key observation:) Tj /F1 9.5 Tf ( While App Pack #8 in ChipOS provides Voyager SDK support within the ChipOS VS) Tj T* 0 Tw 3.815431 Tw (Code environment, Wingman implements Voyager SDK support through a separate architecture) Tj T* 0 Tw .460562 Tw (\(8-service Docker microservices vs. VS Code extension\). They share a ) Tj /F5 9.5 Tf (purpose) Tj /F1 9.5 Tf ( \(Voyager SDK support\)) Tj T* 0 Tw 1.998101 Tw (and ) Tj /F5 9.5 Tf (general development patterns) Tj /F1 9.5 Tf ( from the same developer, but run independently with no runtime) Tj T* 0 Tw (dependencies between them.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 556.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (3.7 Independence Verification) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 510.5236 cm
+q
+BT 1 0 0 1 0 31 Tm .179781 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (Wingman includes a ) Tj /F2 9.5 Tf (formal independence verification methodology) Tj /F1 9.5 Tf ( that programmatically confirms: -) Tj T* 0 Tw .395954 Tw (Docker network is ) Tj /F3 8 Tf (wingman-network) Tj /F1 9.5 Tf ( \(not shared with ChipOS\) - All volumes are prefixed with ) Tj /F3 8 Tf (wingman-) Tj /F1 9.5 Tf ( -) Tj T* 0 Tw (Product identity in ) Tj /F3 8 Tf (product.overrides.json) Tj /F1 9.5 Tf ( is correct - No ChipOS runtime dependencies) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 486.5236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (3.8 Deployment Independence) Tj T* ET
+Q
+Q
+q
+1 0 0 1 70.86614 333.5236 cm
+q
+.172549 .243137 .313725 rg
+n 0 148 453.5433 -21 re f*
+1 1 1 rg
+n 0 127 453.5433 -32 re f*
+.972549 .976471 .980392 rg
+n 0 95 453.5433 -21 re f*
+1 1 1 rg
+n 0 74 453.5433 -32 re f*
+.972549 .976471 .980392 rg
+n 0 42 453.5433 -21 re f*
+1 1 1 rg
+n 0 21 453.5433 -21 re f*
+.960784 .960784 .960784 rg
+BT /F2 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 132 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Aspect) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112.2011 132 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (ChipOS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 343.0959 132 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Wingman) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 111 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Deployment target) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112.2011 100 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (Desktop application \(Electron\) + GCP Cloud Run) Tj T* (\(backend\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 343.0959 100 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (GCP Cloud Run \(all) Tj T* (services\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 79 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Domain) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112.2011 79 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (futureatoms.com \(planned: chipos.ai\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 343.0959 79 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Axelera infrastructure) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 47 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F2 8.5 Tf 11 TL (Docker Compose) Tj T* (project) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112.2011 58 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (chipos) Tj T* ET
+Q
+Q
+q
+1 0 0 1 343.0959 58 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (voyager-wingman) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Can run simultaneously) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112.2011 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Yes) Tj T* ET
+Q
+Q
+q
+1 0 0 1 343.0959 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Yes) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Requires the other) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112.2011 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (No) Tj T* ET
+Q
+Q
+q
+1 0 0 1 343.0959 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (No) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.8 .8 .8 RG
+.5 w
+n 0 148 m 453.5433 148 l S
+n 0 0 m 453.5433 0 l S
+n 0 0 m 0 148 l S
+n 453.5433 0 m 453.5433 148 l S
+n 0 127 m 453.5433 127 l S
+n 0 95 m 453.5433 95 l S
+n 0 74 m 453.5433 74 l S
+n 0 42 m 453.5433 42 l S
+n 0 21 m 453.5433 21 l S
+n 107.2011 0 m 107.2011 148 l S
+n 338.0959 0 m 338.0959 148 l S
+Q
+Q
+Q
+q
+1 0 0 1 76.86614 325.5236 cm
+Q
+q
+1 0 0 1 76.86614 322.5236 cm
+Q
+q
+1 0 0 1 76.86614 321.0236 cm
+q
+.5 w
+1 J
+.8 .8 .8 RG
+n 0 0 m 441.5433 0 l S
+Q
+Q
+q
+1 0 0 1 76.86614 317.0236 cm
+Q
+q
+1 0 0 1 76.86614 285.0236 cm
+q
+.172549 .243137 .313725 rg
+BT 1 0 0 1 0 6 Tm /F2 12 Tf 18 TL (4. Legal Framework for IP Independence) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 261.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (4.1 The Creator Principle \(Makersbeginsel\): Art. 1 Auteurswet) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 215.5236 cm
+q
+BT 1 0 0 1 0 31 Tm .474577 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (The fundamental principle of Dutch copyright law is that ) Tj /F2 9.5 Tf (the natural person who creates a work is its) Tj T* 0 Tw .715187 Tw (author) Tj /F1 9.5 Tf ( \(maker\). This is the starting point. All exceptions, including employer copyright under Art. 7 Aw,) Tj T* 0 Tw (must be ) Tj /F2 9.5 Tf (strictly interpreted) Tj /F1 9.5 Tf ( \() Tj /F5 9.5 Tf (restrictieve interpretatie) Tj /F1 9.5 Tf (\).) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 156.5236 cm
+q
+BT 1 0 0 1 0 44.5 Tm 2.49137 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (This principle was reaffirmed by the Hoge Raad in ) Tj /F2 9.5 Tf (HR 12 April 2013, ECLI:NL:HR:2013:BY1532) Tj T* 0 Tw 1.920639 Tw (\(Stokke/Fikszo, Tripp Trapp\)) Tj /F1 9.5 Tf (, which confirmed that the creator principle is the foundation of Dutch) Tj T* 0 Tw .883665 Tw (copyright law, consistent with the EU requirement of "een eigen intellectuele schepping van de auteur") Tj T* 0 Tw (\(an own intellectual creation of the author\) per ) Tj /F2 9.5 Tf (HvJEU C-5/08 \(Infopaq I\)) Tj /F1 9.5 Tf (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 132.5236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (4.2 Article 7 Auteurswet: Employer Copyright) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 100.5236 cm
+q
+BT 1 0 0 1 0 17.5 Tm .768457 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (Article 7 Aw provides an exception to the creator principle for works created in employment. It requires) Tj T* 0 Tw /F2 9.5 Tf (three cumulative conditions) Tj /F1 9.5 Tf (:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 57.02362 cm
+q
+.203922 .596078 .858824 RG
+2 w
+.941176 .956863 .972549 rg
+n 20.34646 -8 415.0236 53.5 re B*
+Q
+q
+BT 1 0 0 1 28.34646 28.5 Tm 1.974187 Tw 12.5 TL /F5 9 Tf .2 .2 .2 rg ("Indien de arbeid, in dienst van een ander verricht, ) Tj /F6 9 Tf (bestaat in) Tj /F5 9 Tf ( het vervaardigen van bepaalde) Tj T* 0 Tw 3.237719 Tw (werken van letterkunde, wetenschap of kunst, dan wordt, tenzij tusschen partijen anders is) Tj T* 0 Tw 1.065432 Tw (overeengekomen, als de maker van die werken aangemerkt degene, ) Tj /F6 9 Tf (in wiens dienst) Tj /F5 9 Tf ( de werken) Tj T* 0 Tw ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+q
+0.707107 0.707107 -0.707107 0.707107 297.6378 420.9449 cm
+BT
+/F2-0 54 Tf
+64.8 TL
+ET
+1 0 0 rg
+/gRLs0 gs
+BT
+1 0 0 1 -234.009 0 Tm
+(VERTROUWELIJK) Tj
+T*
+ET
+Q
+Q
+
+
+endstream
+endobj
+22 0 obj
+<<
+/Contents 23 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/ExtGState <<
+/gRLs0 <<
+/ca 0.15
+>>
+>>
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+/F2-0 9 0 R
+/F3 10 0 R
+/F4 11 0 R
+/F5 12 0 R
+/F6 13 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+23 0 obj
+<<
+/Length 7561
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+BT /F1 7 Tf 8.4 TL ET
+.501961 .501961 .501961 rg
+BT 1 0 0 1 187.7168 28.34646 Tm (Page 6  |  05-03-2026  |  Netherlands AI Lawyer System  |  Confidential) Tj T* ET
+Q
+q
+1 0 0 1 76.86614 752.5236 cm
+q
+.203922 .596078 .858824 RG
+2 w
+.941176 .956863 .972549 rg
+n 20.34646 -8 415.0236 28.5 re B*
+Q
+q
+BT 1 0 0 1 28.34646 3.5 Tm 12.5 TL /F5 9 Tf .2 .2 .2 rg (zijn vervaardigd.") Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 731.0236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F2 9.5 Tf 0 0 0 rg (1.) Tj /F1 9.5 Tf ( ) Tj /F2 9.5 Tf (Employment relationship) Tj /F1 9.5 Tf ( exists) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 714.5236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F2 9.5 Tf 0 0 0 rg (2.) Tj /F1 9.5 Tf ( ) Tj /F2 9.5 Tf (The work consists of) Tj /F1 9.5 Tf ( creating such works \(must be part of employee's duties\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 698.0236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F2 9.5 Tf 0 0 0 rg (3.) Tj /F1 9.5 Tf ( Works were created ) Tj /F2 9.5 Tf (in the service of) Tj /F1 9.5 Tf ( the employer) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 641.0236 cm
+q
+BT 1 0 0 1 0 44.5 Tm 2.169359 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (Hoge Raad jurisprudence establishes that Art. 7 Aw requires a ) Tj /F2 9.5 Tf (functional connection) Tj /F1 9.5 Tf ( \() Tj /F5 9.5 Tf (functioneel) Tj T* 0 Tw .465654 Tw (verband) Tj /F1 9.5 Tf (\) between the employment relationship and the creative work \(see e.g. ) Tj /F2 9.5 Tf (HR 19 januari 1951, NJ) Tj T* 0 Tw 4.089528 Tw (1952/37) Tj /F1 9.5 Tf (, ) Tj /F5 9.5 Tf (Van der Laan/Schoonderbeek) Tj /F1 9.5 Tf (\). The mere existence of an employment relationship is) Tj T* 0 Tw (insufficient.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 568.5236 cm
+q
+BT 1 0 0 1 0 58 Tm 1.096547 Tw 13.5 TL /F2 9.5 Tf 0 0 0 rg (Application to ChipOS:) Tj /F1 9.5 Tf ( Only one of the three conditions is met, and the remaining two \227 which are) Tj T* 0 Tw 1.592962 Tw (each necessary for Art. 7 Aw to apply \227 are not: - \(1\) Employment exists \(conceded\) - \(2\) ChipOS) Tj T* 0 Tw 2.030451 Tw (development was not part of Employee's duties as Senior Verification Engineer: ) Tj /F2 9.5 Tf (not satisfied) Tj /F1 9.5 Tf ( - \(3\)) Tj T* 0 Tw .827287 Tw (ChipOS was not created "in the service of" Axelera \(outside hours, own equipment, own initiative\): ) Tj /F2 9.5 Tf (not) Tj T* 0 Tw (satisfied) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 544.5236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (4.3 Article 7 Auteurswet: Application to Software) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 458.5236 cm
+q
+BT 1 0 0 1 0 71.5 Tm 1.242754 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (Art. 7 Aw is the ) Tj /F2 9.5 Tf (general employer copyright provision) Tj /F1 9.5 Tf ( that applies to all works, including computer) Tj T* 0 Tw .274986 Tw (programs. The EU Software Directive 2009/24/EC Art. 2\(3\), which provides that the employer is deemed) Tj T* 0 Tw .991707 Tw (author of computer programs created by an employee "in the execution of his duties" or "following the) Tj T* 0 Tw -0.101387 Tw (instructions given by his employer", is implemented in Dutch law through ) Tj /F2 9.5 Tf (Art. 7 Aw) Tj /F1 9.5 Tf ( \(the general employer) Tj T* 0 Tw -0.111233 Tw (copyright article\), not through Art. 45h Aw. Art. 45h Aw is part of the software chapter \(Arts. 45h\22645n\) and) Tj T* 0 Tw (concerns rental rights \() Tj /F5 9.5 Tf (verhuurrechten) Tj /F1 9.5 Tf (\) for software, not employer copyright.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 413.0236 cm
+q
+BT 1 0 0 1 0 31 Tm .410739 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (Art. 7 Aw requires, as set out in Section 4.2 above, that the employee's work "consists of" creating such) Tj T* 0 Tw .8356 Tw (works and that the works are created "in the service of" the employer, i.e., there must be a ) Tj /F2 9.5 Tf (functional) Tj T* 0 Tw (connection) Tj /F1 9.5 Tf ( \() Tj /F5 9.5 Tf (functioneel verband) Tj /F1 9.5 Tf (\) between employment duties and the creative work.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 381.0236 cm
+q
+BT 1 0 0 1 0 17.5 Tm 1.513019 Tw 13.5 TL /F2 9.5 Tf 0 0 0 rg (EU Directive 2009/24/EC Art. 2\(3\)) Tj /F1 9.5 Tf ( requires that the software was created: - "in the execution of his) Tj T* 0 Tw (duties" ) Tj /F2 9.5 Tf (OR) Tj /F1 9.5 Tf ( - "following the instructions given by his employer") Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 349.0236 cm
+q
+BT 1 0 0 1 0 17.5 Tm 1.163894 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (For ChipOS, ) Tj /F2 9.5 Tf (neither condition is met) Tj /F1 9.5 Tf (: it was not created in execution of employment duties, and no) Tj T* 0 Tw (instructions were given by Axelera for its development.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 290.0236 cm
+q
+BT 1 0 0 1 0 44.5 Tm .681913 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (Under the ) Tj /F2 9.5 Tf (richtlijnconforme interpretatie) Tj /F1 9.5 Tf ( \(directive-conforming interpretation\) obligation established in) Tj T* 0 Tw 3.366423 Tw /F2 9.5 Tf (HR 19 June 2009, ECLI:NL:HR:2009:BH7602 \(Buma/Chellomedia\)) Tj /F1 9.5 Tf (, Dutch courts must interpret) Tj T* 0 Tw -0.088918 Tw (national copyright provisions in conformity with EU directives. This means Art. 7 Aw must be read through) Tj T* 0 Tw (the lens of Directive 2009/24/EC when applied to software.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 266.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (4.4 Article 12 Rijksoctrooiwet 1995: Patent Law Analogy) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 247.5236 cm
+q
+BT 1 0 0 1 0 4 Tm 13.5 TL /F1 9.5 Tf 0 0 0 rg (Even patent law, which provides a broader basis for employer claims, ) Tj /F2 9.5 Tf (defaults to employee ownership) Tj /F1 9.5 Tf (:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 216.5236 cm
+q
+.203922 .596078 .858824 RG
+2 w
+.941176 .956863 .972549 rg
+n 20.34646 -8 415.0236 41 re B*
+Q
+q
+.2 .2 .2 rg
+BT 1 0 0 1 28.34646 16 Tm /F5 9 Tf 12.5 TL 1.133414 Tw ("[The employee] has a claim to the patent, UNLESS the nature of the position entails using their) Tj T* 0 Tw (special knowledge to make inventions of the same type.") Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 181.5236 cm
+q
+BT 1 0 0 1 0 17.5 Tm 2.306485 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (If patent law protects employee-inventors who develop inventions related to the employer's field, ) Tj /F2 9.5 Tf (a) Tj T* 0 Tw (fortiori) Tj /F1 9.5 Tf ( copyright law, which starts from the creator principle, should offer at least equivalent protection.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 136.0236 cm
+q
+BT 1 0 0 1 0 31 Tm 2.475734 Tw 13.5 TL /F2 9.5 Tf 0 0 0 rg (Application:) Tj /F1 9.5 Tf ( The "nature" of Employee's position as Senior Verification Engineer does not "entail") Tj T* 0 Tw .73171 Tw (developing AI orchestration platforms. Even under the more employer-friendly patent standard, ChipOS) Tj T* 0 Tw (would remain Employee's IP.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 112.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (4.5 Article 7:653a BW: Side Activities Freedom) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 66.52362 cm
+q
+BT 1 0 0 1 0 31 Tm 1.156817 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (Since 1 August 2022 \(implementing EU Directive 2019/1152\), employers ) Tj /F2 9.5 Tf (may not restrict) Tj /F1 9.5 Tf ( employees) Tj T* 0 Tw 2.448985 Tw (from performing work outside working hours unless justified by an objective reason. This statutory) Tj T* 0 Tw 2.524381 Tw (protection further supports the legal permissibility of Employee's independent ChipOS development) Tj T* 0 Tw ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+q
+0.707107 0.707107 -0.707107 0.707107 297.6378 420.9449 cm
+BT
+/F2-0 54 Tf
+64.8 TL
+ET
+1 0 0 rg
+/gRLs0 gs
+BT
+1 0 0 1 -234.009 0 Tm
+(VERTROUWELIJK) Tj
+T*
+ET
+Q
+Q
+
+
+endstream
+endobj
+24 0 obj
+<<
+/Contents 25 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/ExtGState <<
+/gRLs0 <<
+/ca 0.15
+>>
+>>
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+/F2-0 9 0 R
+/F3 10 0 R
+/F4 11 0 R
+/F5 12 0 R
+/F6 13 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+25 0 obj
+<<
+/Length 8484
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+BT /F1 7 Tf 8.4 TL ET
+.501961 .501961 .501961 rg
+BT 1 0 0 1 187.7168 28.34646 Tm (Page 7  |  05-03-2026  |  Netherlands AI Lawyer System  |  Confidential) Tj T* ET
+Q
+q
+1 0 0 1 76.86614 751.5236 cm
+q
+BT 1 0 0 1 0 4 Tm 13.5 TL /F1 9.5 Tf 0 0 0 rg (through FutureAtoms.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 727.5236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 14 TL /F2 10.5 Tf 0 0 0 rg (4.6 The Task-Based Test \() Tj /F6 10.5 Tf (Taakcriterium) Tj /F2 10.5 Tf (\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 695.5236 cm
+q
+BT 1 0 0 1 0 17.5 Tm 1.386073 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (The decisive legal test under Dutch law is whether creating the specific type of work was part of the) Tj T* 0 Tw (employee's ) Tj /F2 9.5 Tf (assigned tasks) Tj /F1 9.5 Tf (, not whether the employer and employee operate in the same general field.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 636.5236 cm
+q
+BT 1 0 0 1 0 44.5 Tm 2.083067 Tw 13.5 TL /F2 9.5 Tf 0 0 0 rg (Key distinction:) Tj /F1 9.5 Tf ( Abhilash Chadhar was hired as a ) Tj /F2 9.5 Tf (Senior Verification Engineer) Tj /F1 9.5 Tf (. His employment) Tj T* 0 Tw 3.400346 Tw (duties involve hardware verification tasks for Axelera's chip products. Developing an AI-powered) Tj T* 0 Tw .084986 Tw (orchestration platform for semiconductor design is an entirely different activity that falls outside the scope) Tj T* 0 Tw (of his employment duties.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 604.5236 cm
+q
+BT 1 0 0 1 0 17.5 Tm .81652 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (The fact that both activities relate to the semiconductor field is ) Tj /F2 9.5 Tf (legally irrelevant) Tj /F1 9.5 Tf ( under the task-based) Tj T* 0 Tw (test. Field relatedness alone does not create employer copyright.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 580.5236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (4.7 Burden of Proof) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 535.0236 cm
+q
+BT 1 0 0 1 0 31 Tm 1.942878 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (The ) Tj /F2 9.5 Tf (employer bears the burden) Tj /F1 9.5 Tf ( of proving that the conditions of Art. 7 Aw are met, as the party) Tj T* 0 Tw .627695 Tw (invoking the exception to the creator principle \(Art. 1 Aw\). In the absence of clear evidence, the creator) Tj T* 0 Tw (principle prevails.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 527.0236 cm
+Q
+q
+1 0 0 1 76.86614 525.5236 cm
+q
+.5 w
+1 J
+.8 .8 .8 RG
+n 0 0 m 441.5433 0 l S
+Q
+Q
+q
+1 0 0 1 76.86614 521.5236 cm
+Q
+q
+1 0 0 1 76.86614 489.5236 cm
+q
+.172549 .243137 .313725 rg
+BT 1 0 0 1 0 6 Tm /F2 12 Tf 18 TL (5. Evidence Summary: Why ChipOS Is Employee IP) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 465.5236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (5.1 Temporal Evidence \(Created Outside Working Hours\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 70.86614 333.5236 cm
+q
+.172549 .243137 .313725 rg
+n 0 127 453.5433 -21 re f*
+1 1 1 rg
+n 0 106 453.5433 -32 re f*
+.972549 .976471 .980392 rg
+n 0 74 453.5433 -21 re f*
+1 1 1 rg
+n 0 53 453.5433 -32 re f*
+.972549 .976471 .980392 rg
+n 0 21 453.5433 -21 re f*
+.960784 .960784 .960784 rg
+BT /F2 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 111 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Factor) Tj T* ET
+Q
+Q
+q
+1 0 0 1 120.3076 111 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Evidence) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 90 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Git commit timestamps) Tj T* ET
+Q
+Q
+q
+1 0 0 1 120.3076 79 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (ChipOS commits occur in evenings, weekends, and holidays, outside standard) Tj T* (working hours) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 58 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Development duration) Tj T* ET
+Q
+Q
+q
+1 0 0 1 120.3076 58 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Extensive commits from September 2025 to March 2026, sustained independent effort) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F2 8.5 Tf 11 TL (No overlap with work) Tj T* (hours) Tj T* ET
+Q
+Q
+q
+1 0 0 1 120.3076 37 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Employer's time registration shows normal working hours only) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Personal GitHub account) Tj T* ET
+Q
+Q
+q
+1 0 0 1 120.3076 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Development conducted through personal FutureAtoms GitHub organization) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.8 .8 .8 RG
+.5 w
+n 0 127 m 453.5433 127 l S
+n 0 0 m 453.5433 0 l S
+n 0 0 m 0 127 l S
+n 453.5433 0 m 453.5433 127 l S
+n 0 106 m 453.5433 106 l S
+n 0 74 m 453.5433 74 l S
+n 0 53 m 453.5433 53 l S
+n 0 21 m 453.5433 21 l S
+n 115.3076 0 m 115.3076 127 l S
+Q
+Q
+Q
+q
+1 0 0 1 76.86614 325.5236 cm
+Q
+q
+1 0 0 1 76.86614 301.5236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (5.2 Resource Independence \(Own Equipment and Accounts\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 70.86614 149.5236 cm
+q
+.172549 .243137 .313725 rg
+n 0 147 453.5433 -21 re f*
+1 1 1 rg
+n 0 126 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 105 453.5433 -21 re f*
+1 1 1 rg
+n 0 84 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 63 453.5433 -21 re f*
+1 1 1 rg
+n 0 42 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 21 453.5433 -21 re f*
+.960784 .960784 .960784 rg
+BT /F2 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 131 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Factor) Tj T* ET
+Q
+Q
+q
+1 0 0 1 159.617 131 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Evidence) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 110 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Repository hosting) Tj T* ET
+Q
+Q
+q
+1 0 0 1 159.617 110 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Personal GitHub organization \(github.com/FutureAtoms\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 89 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Cloud services) Tj T* ET
+Q
+Q
+q
+1 0 0 1 159.617 89 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Personal Supabase project, personal GCP project) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 68 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Domain) Tj T* ET
+Q
+Q
+q
+1 0 0 1 159.617 68 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (futureatoms.com \(personally registered\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 47 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Infrastructure) Tj T* ET
+Q
+Q
+q
+1 0 0 1 159.617 47 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Personal development machine, personal internet connection) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (API keys) Tj T* ET
+Q
+Q
+q
+1 0 0 1 159.617 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Personal API keys for all LLM providers, cloud services) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (No employer resources used) Tj T* ET
+Q
+Q
+q
+1 0 0 1 159.617 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (No Axelera VPN, network, equipment, or licenses used) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.8 .8 .8 RG
+.5 w
+n 0 147 m 453.5433 147 l S
+n 0 0 m 453.5433 0 l S
+n 0 0 m 0 147 l S
+n 453.5433 0 m 453.5433 147 l S
+n 0 126 m 453.5433 126 l S
+n 0 105 m 453.5433 105 l S
+n 0 84 m 453.5433 84 l S
+n 0 63 m 453.5433 63 l S
+n 0 42 m 453.5433 42 l S
+n 0 21 m 453.5433 21 l S
+n 154.617 0 m 154.617 147 l S
+Q
+Q
+Q
+q
+1 0 0 1 76.86614 141.5236 cm
+Q
+q
+1 0 0 1 76.86614 117.5236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (5.3 Conceptual Independence \(Own Idea, Own Direction\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 70.86614 70.52362 cm
+q
+.172549 .243137 .313725 rg
+n 0 42 453.5433 -21 re f*
+1 1 1 rg
+n 0 21 453.5433 -21 re f*
+.960784 .960784 .960784 rg
+BT /F2 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 26 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Factor) Tj T* ET
+Q
+Q
+q
+1 0 0 1 131.9921 26 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Evidence) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Vendor-neutral design) Tj T* ET
+Q
+Q
+q
+1 0 0 1 131.9921 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (ChipOS supports multiple vendors; not limited to Axelera) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.8 .8 .8 RG
+.5 w
+n 0 42 m 453.5433 42 l S
+n 0 0 m 0 42 l S
+n 453.5433 0 m 453.5433 42 l S
+n 0 0 m 453.5433 0 l S
+n 0 21 m 453.5433 21 l S
+n 126.9921 0 m 126.9921 42 l S
+Q
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+q
+0.707107 0.707107 -0.707107 0.707107 297.6378 420.9449 cm
+BT
+/F2-0 54 Tf
+64.8 TL
+ET
+1 0 0 rg
+/gRLs0 gs
+BT
+1 0 0 1 -234.009 0 Tm
+(VERTROUWELIJK) Tj
+T*
+ET
+Q
+Q
+
+
+endstream
+endobj
+26 0 obj
+<<
+/Contents 27 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/ExtGState <<
+/gRLs0 <<
+/ca 0.15
+>>
+>>
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+/F2-0 9 0 R
+/F3 10 0 R
+/F4 11 0 R
+/F5 12 0 R
+/F6 13 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+27 0 obj
+<<
+/Length 8871
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+BT /F1 7 Tf 8.4 TL ET
+.501961 .501961 .501961 rg
+BT 1 0 0 1 187.7168 28.34646 Tm (Page 8  |  05-03-2026  |  Netherlands AI Lawyer System  |  Confidential) Tj T* ET
+Q
+q
+1 0 0 1 70.86614 639.0236 cm
+q
+.172549 .243137 .313725 rg
+n 0 126 453.5433 -21 re f*
+1 1 1 rg
+n 0 105 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 84 453.5433 -21 re f*
+1 1 1 rg
+n 0 63 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 42 453.5433 -21 re f*
+1 1 1 rg
+n 0 21 453.5433 -21 re f*
+.960784 .960784 .960784 rg
+BT /F2 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 110 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Factor) Tj T* ET
+Q
+Q
+q
+1 0 0 1 131.9921 110 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Evidence) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 89 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Independent architecture) Tj T* ET
+Q
+Q
+q
+1 0 0 1 131.9921 89 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Custom VS Code distribution, distinct from any Axelera product) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 68 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (11 App Packs) Tj T* ET
+Q
+Q
+q
+1 0 0 1 131.9921 68 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Broad semiconductor coverage; Axelera Voyager SDK is just one of 11) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 47 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Business registration) Tj T* ET
+Q
+Q
+q
+1 0 0 1 131.9921 47 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (FutureAtoms \(KvK: 99153289\) registered independently) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Proprietary license) Tj T* ET
+Q
+Q
+q
+1 0 0 1 131.9921 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (FutureAtoms proprietary license independent of Axelera) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (No Axelera input) Tj T* ET
+Q
+Q
+q
+1 0 0 1 131.9921 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (No evidence of Axelera direction, instruction, or contribution to ChipOS) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.8 .8 .8 RG
+.5 w
+n 0 126 m 453.5433 126 l S
+n 0 105 m 0 126 l S
+n 0 0 m 0 105 l S
+n 453.5433 105 m 453.5433 126 l S
+n 453.5433 0 m 453.5433 105 l S
+n 0 0 m 453.5433 0 l S
+n 0 105 m 453.5433 105 l S
+n 126.9921 105 m 126.9921 126 l S
+n 0 84 m 453.5433 84 l S
+n 0 63 m 453.5433 63 l S
+n 0 42 m 453.5433 42 l S
+n 0 21 m 453.5433 21 l S
+n 126.9921 0 m 126.9921 105 l S
+Q
+Q
+Q
+q
+1 0 0 1 76.86614 631.0236 cm
+Q
+q
+1 0 0 1 76.86614 607.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (5.4 Scope of Employment \(Outside Job Duties\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 70.86614 313.0236 cm
+q
+.172549 .243137 .313725 rg
+n 0 289 453.5433 -21 re f*
+1 1 1 rg
+n 0 268 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 247 453.5433 -32 re f*
+1 1 1 rg
+n 0 215 453.5433 -43 re f*
+.972549 .976471 .980392 rg
+n 0 172 453.5433 -43 re f*
+1 1 1 rg
+n 0 129 453.5433 -43 re f*
+.972549 .976471 .980392 rg
+n 0 86 453.5433 -32 re f*
+1 1 1 rg
+n 0 54 453.5433 -54 re f*
+.960784 .960784 .960784 rg
+BT /F2 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 273 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Factor) Tj T* ET
+Q
+Q
+q
+1 0 0 1 61.12409 273 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Evidence) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 252 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Job title) Tj T* ET
+Q
+Q
+q
+1 0 0 1 61.12409 252 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Senior Verification Engineer, not software platform developer) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 220 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F2 8.5 Tf 11 TL (Employme) Tj T* (nt duties) Tj T* ET
+Q
+Q
+q
+1 0 0 1 61.12409 231 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Hardware verification for Axelera chip products) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 177 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 24.5 Tm /F2 8.5 Tf 11 TL (Employme) Tj T* (nt perform) Tj T* (ance) Tj T* ET
+Q
+Q
+q
+1 0 0 1 61.12409 177 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 24.5 Tm /F1 8.5 Tf 11 TL (Employee has actively contributed beyond core duties: developed open-source tooling adopted across) Tj T* (the engineering team, represented Axelera at community presentations, and received internal) Tj T* (recognition \(MVP awards\), confirming full engagement in employment role) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 134 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 24.5 Tm /F2 8.5 Tf 11 TL (No IP assig) Tj T* (nment clau) Tj T* (se) Tj T* ET
+Q
+Q
+q
+1 0 0 1 61.12409 156 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Original employment contract does not assign side-project IP to Axelera) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 91 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 24.5 Tm /F2 8.5 Tf 11 TL (Different) Tj T* (product) Tj T* (type) Tj T* ET
+Q
+Q
+q
+1 0 0 1 61.12409 113 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (AI orchestration platform ) Tj /F4 8.5 Tf 11 TL (\271) Tj /F1 8.5 Tf 11 TL ( hardware verification) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 59 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F2 8.5 Tf 11 TL (Different) Tj T* (technology) Tj T* ET
+Q
+Q
+q
+1 0 0 1 61.12409 70 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (VS Code distribution ) Tj /F4 8.5 Tf 11 TL (\271) Tj /F1 8.5 Tf 11 TL ( verification testbenches) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 35.5 Tm /F2 8.5 Tf 11 TL (Employer) Tj T* (never assi) Tj T* (gned this) Tj T* (work) Tj T* ET
+Q
+Q
+q
+1 0 0 1 61.12409 38 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Axelera never instructed Employee to develop ChipOS) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.8 .8 .8 RG
+.5 w
+n 0 289 m 453.5433 289 l S
+n 0 0 m 453.5433 0 l S
+n 0 0 m 0 289 l S
+n 453.5433 0 m 453.5433 289 l S
+n 0 268 m 453.5433 268 l S
+n 0 247 m 453.5433 247 l S
+n 0 215 m 453.5433 215 l S
+n 0 172 m 453.5433 172 l S
+n 0 129 m 453.5433 129 l S
+n 0 86 m 453.5433 86 l S
+n 0 54 m 453.5433 54 l S
+n 56.12409 0 m 56.12409 289 l S
+Q
+Q
+Q
+q
+1 0 0 1 76.86614 305.0236 cm
+Q
+q
+1 0 0 1 76.86614 281.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (5.5 Knowledge Separation \(No Axelera Trade Secrets\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 70.86614 128.0236 cm
+q
+.172549 .243137 .313725 rg
+n 0 148 453.5433 -21 re f*
+1 1 1 rg
+n 0 127 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 106 453.5433 -21 re f*
+1 1 1 rg
+n 0 85 453.5433 -32 re f*
+.972549 .976471 .980392 rg
+n 0 53 453.5433 -21 re f*
+1 1 1 rg
+n 0 32 453.5433 -32 re f*
+.960784 .960784 .960784 rg
+BT /F2 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 132 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Factor) Tj T* ET
+Q
+Q
+q
+1 0 0 1 102.1879 132 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Evidence) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 111 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (No runtime imports) Tj T* ET
+Q
+Q
+q
+1 0 0 1 102.1879 111 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Wingman has no runtime imports from ChipOS; ChipOS has no Axelera confidential code) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 90 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Different codebases) Tj T* ET
+Q
+Q
+q
+1 0 0 1 102.1879 90 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Separate git repos, separate histories, separate dependencies) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 58 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F2 8.5 Tf 11 TL (Different architecture) Tj T* (s) Tj T* ET
+Q
+Q
+q
+1 0 0 1 102.1879 58 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (Separate approaches \(VS Code distribution vs. Docker microservices\) despite shared) Tj T* (general patterns) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 37 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (No employer data) Tj T* ET
+Q
+Q
+q
+1 0 0 1 102.1879 37 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (ChipOS contains no Axelera confidential information, customer data, or trade secrets) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F2 8.5 Tf 11 TL (Vendor-neutral) Tj T* (design) Tj T* ET
+Q
+Q
+q
+1 0 0 1 102.1879 16 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (ChipOS supports SkyWater, GlobalFoundries, FreePDK45, ASAP7 \(not Axelera-specific\)) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.8 .8 .8 RG
+.5 w
+n 0 148 m 453.5433 148 l S
+n 0 0 m 453.5433 0 l S
+n 0 0 m 0 148 l S
+n 453.5433 0 m 453.5433 148 l S
+n 0 127 m 453.5433 127 l S
+n 0 106 m 453.5433 106 l S
+n 0 85 m 453.5433 85 l S
+n 0 53 m 453.5433 53 l S
+n 0 32 m 453.5433 32 l S
+n 97.18785 0 m 97.18785 148 l S
+Q
+Q
+Q
+q
+1 0 0 1 76.86614 120.0236 cm
+Q
+q
+1 0 0 1 76.86614 117.0236 cm
+Q
+q
+1 0 0 1 76.86614 115.5236 cm
+q
+.5 w
+1 J
+.8 .8 .8 RG
+n 0 0 m 441.5433 0 l S
+Q
+Q
+q
+1 0 0 1 76.86614 111.5236 cm
+Q
+q
+1 0 0 1 76.86614 79.52362 cm
+q
+.172549 .243137 .313725 rg
+BT 1 0 0 1 0 6 Tm /F2 12 Tf 18 TL (6. Wingman: Properly Scoped Deliverable) Tj T* ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+q
+0.707107 0.707107 -0.707107 0.707107 297.6378 420.9449 cm
+BT
+/F2-0 54 Tf
+64.8 TL
+ET
+1 0 0 rg
+/gRLs0 gs
+BT
+1 0 0 1 -234.009 0 Tm
+(VERTROUWELIJK) Tj
+T*
+ET
+Q
+Q
+
+
+endstream
+endobj
+28 0 obj
+<<
+/Contents 29 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/ExtGState <<
+/gRLs0 <<
+/ca 0.15
+>>
+>>
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+/F2-0 9 0 R
+/F3 10 0 R
+/F4 11 0 R
+/F5 12 0 R
+/F6 13 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+29 0 obj
+<<
+/Length 10186
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+BT /F1 7 Tf 8.4 TL ET
+.501961 .501961 .501961 rg
+BT 1 0 0 1 187.7168 28.34646 Tm (Page 9  |  05-03-2026  |  Netherlands AI Lawyer System  |  Confidential) Tj T* ET
+Q
+q
+1 0 0 1 76.86614 751.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (6.1 What Wingman Is) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 705.5236 cm
+q
+BT 1 0 0 1 0 31 Tm 1.21837 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (Wingman is an ) Tj /F2 9.5 Tf (application designed specifically for Axelera's Voyager SDK) Tj /F1 9.5 Tf (. It was developed by) Tj T* 0 Tw 2.284562 Tw (FutureAtoms specifically for the Axelera engagement and is the ) Tj /F2 9.5 Tf (only deliverable) Tj /F1 9.5 Tf ( with a legitimate) Tj T* 0 Tw (connection to the employment relationship.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 681.5236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (6.2 Why Wingman Is Not ChipOS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 70.86614 390.5236 cm
+q
+.172549 .243137 .313725 rg
+n 0 286 453.5433 -21 re f*
+1 1 1 rg
+n 0 265 453.5433 -32 re f*
+.972549 .976471 .980392 rg
+n 0 233 453.5433 -21 re f*
+1 1 1 rg
+n 0 212 453.5433 -32 re f*
+.972549 .976471 .980392 rg
+n 0 180 453.5433 -32 re f*
+1 1 1 rg
+n 0 148 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 127 453.5433 -21 re f*
+1 1 1 rg
+n 0 106 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 85 453.5433 -32 re f*
+1 1 1 rg
+n 0 53 453.5433 -21 re f*
+.972549 .976471 .980392 rg
+n 0 32 453.5433 -32 re f*
+.960784 .960784 .960784 rg
+BT /F2 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 270 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Criterion) Tj T* ET
+Q
+Q
+q
+1 0 0 1 87.16364 270 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (ChipOS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 208.7658 270 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Wingman) Tj T* ET
+Q
+Q
+q
+1 0 0 1 389.5258 270 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Conclusion) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 249 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Architecture) Tj T* ET
+Q
+Q
+q
+1 0 0 1 87.16364 249 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (VS Code distribution) Tj T* ET
+Q
+Q
+q
+1 0 0 1 208.7658 249 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (8-service Docker microservices) Tj T* ET
+Q
+Q
+q
+1 0 0 1 389.5258 238 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (Entirely differe) Tj T* (nt) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 217 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Repository) Tj T* ET
+Q
+Q
+q
+1 0 0 1 87.16364 217 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (FutureAtoms/ChipOS.git) Tj T* ET
+Q
+Q
+q
+1 0 0 1 208.7658 217 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (FutureAtoms/voyager-wingman.git) Tj T* ET
+Q
+Q
+q
+1 0 0 1 389.5258 217 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Separate repos) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 196 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Git history) Tj T* ET
+Q
+Q
+q
+1 0 0 1 87.16364 185 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (Extensive \(predominantly) Tj T* (FutureAtoms\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 208.7658 196 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (3 commits) Tj T* ET
+Q
+Q
+q
+1 0 0 1 389.5258 185 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (Independent) Tj T* (histories) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 164 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Code sharing) Tj T* ET
+Q
+Q
+q
+1 0 0 1 87.16364 164 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (N/A) Tj T* ET
+Q
+Q
+q
+1 0 0 1 208.7658 153 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (No runtime imports from ChipOS; shares) Tj T* (general patterns) Tj T* ET
+Q
+Q
+q
+1 0 0 1 389.5258 164 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Self-contained) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 132 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Database) Tj T* ET
+Q
+Q
+q
+1 0 0 1 87.16364 132 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Own Supabase project) Tj T* ET
+Q
+Q
+q
+1 0 0 1 208.7658 132 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Separate Supabase project) Tj T* ET
+Q
+Q
+q
+1 0 0 1 389.5258 132 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Separate data) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 111 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Network) Tj T* ET
+Q
+Q
+q
+1 0 0 1 87.16364 111 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (chipos-network) Tj T* ET
+Q
+Q
+q
+1 0 0 1 208.7658 111 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (wingman-network) Tj T* ET
+Q
+Q
+q
+1 0 0 1 389.5258 111 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Isolated) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 90 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Ports) Tj T* ET
+Q
+Q
+q
+1 0 0 1 87.16364 90 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (3737, 8181, 8051) Tj T* ET
+Q
+Q
+q
+1 0 0 1 208.7658 90 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (4080, 4737, 5433, 7800, 9051, 9181, 28017) Tj T* ET
+Q
+Q
+q
+1 0 0 1 389.5258 90 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (No overlap) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 69 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Target users) Tj T* ET
+Q
+Q
+q
+1 0 0 1 87.16364 69 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Any semiconductor engineer) Tj T* ET
+Q
+Q
+q
+1 0 0 1 208.7658 69 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Axelera developers only) Tj T* ET
+Q
+Q
+q
+1 0 0 1 389.5258 58 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (Different) Tj T* (markets) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 37 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (License) Tj T* ET
+Q
+Q
+q
+1 0 0 1 87.16364 37 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (FutureAtoms proprietary) Tj T* ET
+Q
+Q
+q
+1 0 0 1 208.7658 37 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Wingman License Agreement v1.0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 389.5258 37 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Separate terms) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F2 8.5 Tf 11 TL (Can run indepen) Tj T* (dently) Tj T* ET
+Q
+Q
+q
+1 0 0 1 87.16364 16 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Yes) Tj T* ET
+Q
+Q
+q
+1 0 0 1 208.7658 16 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Yes) Tj T* ET
+Q
+Q
+q
+1 0 0 1 389.5258 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (No mutual) Tj T* (dependency) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.8 .8 .8 RG
+.5 w
+n 0 286 m 453.5433 286 l S
+n 0 0 m 453.5433 0 l S
+n 0 0 m 0 286 l S
+n 453.5433 0 m 453.5433 286 l S
+n 0 265 m 453.5433 265 l S
+n 0 233 m 453.5433 233 l S
+n 0 212 m 453.5433 212 l S
+n 0 180 m 453.5433 180 l S
+n 0 148 m 453.5433 148 l S
+n 0 127 m 453.5433 127 l S
+n 0 106 m 453.5433 106 l S
+n 0 85 m 453.5433 85 l S
+n 0 53 m 453.5433 53 l S
+n 0 32 m 453.5433 32 l S
+n 82.16364 0 m 82.16364 286 l S
+n 203.7658 0 m 203.7658 286 l S
+n 384.5258 0 m 384.5258 286 l S
+Q
+Q
+Q
+q
+1 0 0 1 76.86614 382.5236 cm
+Q
+q
+1 0 0 1 76.86614 358.5236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (6.3 Why "General Development Patterns" Do Not Create IP Claims) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 326.5236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 17.5 Tm /F1 9.5 Tf 13.5 TL .618573 Tw (The counter-proposal \(Recital D\) acknowledges that Wingman "draws on general development patterns) Tj T* 0 Tw (from Employee's independent work." This is legally significant because:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 294.5236 cm
+q
+BT 1 0 0 1 28.34646 17.5 Tm .267632 Tw 13.5 TL /F2 9.5 Tf 0 0 0 rg (1.) Tj /F1 9.5 Tf ( ) Tj /F2 9.5 Tf (General skills and experience are not trade secrets.) Tj /F1 9.5 Tf ( The Hoge Raad's jurisprudence on Art.) Tj T* 0 Tw (7 Aw distinguishes between specific employer IP and general professional skills.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 251.0236 cm
+q
+BT 1 0 0 1 28.34646 31 Tm 1.309485 Tw 13.5 TL /F2 9.5 Tf 0 0 0 rg (2.) Tj /F1 9.5 Tf ( ) Tj /F2 9.5 Tf (Art. 12 Rijksoctrooiwet 1995) Tj /F1 9.5 Tf ( distinguishes between "bijzondere kennis" \(special knowledge) Tj T* 0 Tw 2.216719 Tw (intrinsic to the role\) and general expertise. Using general programming patterns is not using) Tj T* 0 Tw (employer IP.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 221.0236 cm
+q
+BT 1 0 0 1 28.34646 17.5 Tm .814561 Tw 13.5 TL /F2 9.5 Tf 0 0 0 rg (3.) Tj /F1 9.5 Tf ( ) Tj /F2 9.5 Tf (The EU Software Directive) Tj /F1 9.5 Tf ( does not capture software that merely uses similar techniques; it) Tj T* 0 Tw (requires creation "in the execution of duties.") Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 177.5236 cm
+q
+BT 1 0 0 1 28.34646 31 Tm .728654 Tw 13.5 TL /F2 9.5 Tf 0 0 0 rg (4.) Tj /F1 9.5 Tf ( ) Tj /F2 9.5 Tf (No developer operates in a vacuum.) Tj /F1 9.5 Tf ( Using general patterns, architectures, and approaches) Tj T* 0 Tw 1.875685 Tw (learned through professional experience is inherent to professional software development and) Tj T* 0 Tw (cannot be the basis for IP claims.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 66.52362 cm
+q
+BT 1 0 0 1 28.34646 98.5 Tm .204571 Tw 13.5 TL /F2 9.5 Tf 0 0 0 rg (5.) Tj /F1 9.5 Tf ( ) Tj /F2 9.5 Tf (The shared patterns originate from an open-source framework.) Tj /F1 9.5 Tf ( The structural patterns and) Tj T* 0 Tw -0.015781 Tw (general approaches common to both ChipOS and Wingman are derived from ) Tj /F2 9.5 Tf (Agentic Control) Tj /F1 9.5 Tf (, an) Tj T* 0 Tw 1.264983 Tw (open-source workflow automation framework independently developed and publicly released by) Tj T* 0 Tw 4.284885 Tw (Employee through FutureAtoms. Agentic Control's source code is publicly available \(see) Tj T* 0 Tw .665642 Tw (https://github.com/FutureAtoms/agentic-control-framework\), meaning that the patterns in question) Tj T* 0 Tw 2.333895 Tw (are accessible to any developer worldwide. Under ) Tj /F2 9.5 Tf (Art. 12\(1\) Rijksoctrooiwet 1995) Tj /F1 9.5 Tf (, publicly) Tj T* 0 Tw .239785 Tw (available techniques and patterns cannot constitute ) Tj /F5 9.5 Tf (bijzondere kennis) Tj /F1 9.5 Tf ( \(special knowledge intrinsic) Tj T* 0 Tw 1.107584 Tw (to the employment role\), as they are by definition not proprietary to the employer. Under ) Tj /F2 9.5 Tf (Art. 7) Tj T* 0 Tw ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+q
+0.707107 0.707107 -0.707107 0.707107 297.6378 420.9449 cm
+BT
+/F2-0 54 Tf
+64.8 TL
+ET
+1 0 0 rg
+/gRLs0 gs
+BT
+1 0 0 1 -234.009 0 Tm
+(VERTROUWELIJK) Tj
+T*
+ET
+Q
+Q
+
+
+endstream
+endobj
+30 0 obj
+<<
+/Contents 31 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/ExtGState <<
+/gRLs0 <<
+/ca 0.15
+>>
+>>
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+/F2-0 9 0 R
+/F3 10 0 R
+/F4 11 0 R
+/F5 12 0 R
+/F6 13 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+31 0 obj
+<<
+/Length 8132
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+BT /F1 7 Tf 8.4 TL ET
+.501961 .501961 .501961 rg
+BT 1 0 0 1 185.7708 28.34646 Tm (Page 10  |  05-03-2026  |  Netherlands AI Lawyer System  |  Confidential) Tj T* ET
+Q
+q
+1 0 0 1 76.86614 684.0236 cm
+q
+BT 1 0 0 1 28.34646 71.5 Tm 3.090735 Tw 13.5 TL /F2 9.5 Tf 0 0 0 rg (Auteurswet) Tj /F1 9.5 Tf (, open-source code that pre-dates and exists independently of the employment) Tj T* 0 Tw 1.033604 Tw (relationship cannot be deemed to have been created ) Tj /F5 9.5 Tf (in de uitoefening van de dienstbetrekking) Tj /F1 9.5 Tf (.) Tj T* 0 Tw -0.107346 Tw (The fact that Employee voluntarily presented Agentic Control at an Axelera company-wide meeting) Tj T* 0 Tw .330446 Tw (and encouraged colleagues to use it further demonstrates good faith \() Tj /F5 9.5 Tf (goed werknemerschap) Tj /F1 9.5 Tf (, Art.) Tj T* 0 Tw .313741 Tw (7:611 BW\) and confirms that the sharing of these patterns was an act of voluntary generosity, not) Tj T* 0 Tw (a product of employment-directed work.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 678.0236 cm
+Q
+q
+1 0 0 1 76.86614 676.5236 cm
+q
+.5 w
+1 J
+.8 .8 .8 RG
+n 0 0 m 441.5433 0 l S
+Q
+Q
+q
+1 0 0 1 76.86614 672.5236 cm
+Q
+q
+1 0 0 1 76.86614 640.5236 cm
+q
+.172549 .243137 .313725 rg
+BT 1 0 0 1 0 6 Tm /F2 12 Tf 18 TL (7. Addressing Common Questions) Tj T* ET
+Q
+Q
+q
+1 0 0 1 70.86614 169.5236 cm
+q
+.172549 .243137 .313725 rg
+n 0 465 453.5433 -32 re f*
+1 1 1 rg
+n 0 433 453.5433 -65 re f*
+.972549 .976471 .980392 rg
+n 0 368 453.5433 -54 re f*
+1 1 1 rg
+n 0 314 453.5433 -87 re f*
+.972549 .976471 .980392 rg
+n 0 227 453.5433 -54 re f*
+1 1 1 rg
+n 0 173 453.5433 -54 re f*
+.972549 .976471 .980392 rg
+n 0 119 453.5433 -65 re f*
+1 1 1 rg
+n 0 54 453.5433 -54 re f*
+.960784 .960784 .960784 rg
+BT /F2 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 438 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 13.5 Tm /F2 8.5 Tf 11 TL (Potential) Tj T* (Question) Tj T* ET
+Q
+Q
+q
+1 0 0 1 56.63681 449 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Clarification) Tj T* ET
+Q
+Q
+q
+1 0 0 1 318.2633 449 cm
+q
+.960784 .960784 .960784 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Legal Reference) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 8.5 Tf 12 TL ET
+q
+1 0 0 1 5 384 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 35.5 Tm /F1 8.5 Tf 11 TL ("ChipOS) Tj T* (relates to) Tj T* (our field) Tj T* (of activity") Tj T* ET
+Q
+Q
+q
+1 0 0 1 56.63681 395 cm
+q
+BT 1 0 0 1 0 24.5 Tm 11 TL /F1 8.5 Tf 0 0 0 rg (Field relatedness is insufficient. The test is ) Tj /F2 8.5 Tf (task-based) Tj /F1 8.5 Tf (: was ) Tj T* (creating ChipOS part of Employee's assigned duties? The answer ) Tj T* (is no.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 318.2633 373 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 46.5 Tm /F1 8.5 Tf 11 TL (Established Hoge Raad) Tj T* (jurisprudence on Art. 7 Aw) Tj T* (\(functional connection) Tj T* (requirement; see e.g. HR 19) Tj T* (januari 1951, NJ 1952/37\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 319 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 35.5 Tm /F1 8.5 Tf 11 TL ("Employee) Tj T* (used skills) Tj T* (learned) Tj T* (at Axelera") Tj T* ET
+Q
+Q
+q
+1 0 0 1 56.63681 330 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 24.5 Tm /F1 8.5 Tf 11 TL (General skills and experience are not trade secrets and do not) Tj T* (create IP claims. The task-based criterion focuses on what was) Tj T* (assigned, not what was learned.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 318.2633 330 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 24.5 Tm /F1 8.5 Tf 11 TL (Art. 12\(1\) Rijksoctrooiwet 1995) Tj T* (\(distinguishes bijzondere kennis) Tj T* (from general skills\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 232 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 68.5 Tm /F1 8.5 Tf 11 TL ("Dutch) Tj T* (law gives) Tj T* (Axelera) Tj T* (ownership) Tj T* (of all empl) Tj T* (oyee softw) Tj T* (are") Tj T* ET
+Q
+Q
+q
+1 0 0 1 56.63681 265 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 35.5 Tm /F1 8.5 Tf 11 TL (Art. 45h Aw concerns rental rights, not employer copyright. The) Tj T* (correct test is Art. 7 Aw, which requires that software was created ") Tj T* (in dienst van" the employer as part of assigned duties. ChipOS) Tj T* (was not created as part of Employee's duties.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 318.2633 243 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 57.5 Tm /F1 8.5 Tf 11 TL (Art. 7 Auteurswet; Directive) Tj T* (2009/24/EC Art. 2\(3\); established) Tj T* (Hoge Raad jurisprudence) Tj T* (\(functional connection) Tj T* (requirement; see e.g. HR 19) Tj T* (januari 1951, NJ 1952/37\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 178 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 35.5 Tm /F1 8.5 Tf 11 TL ("Employee) Tj T* (had a) Tj T* (duty of) Tj T* (loyalty") Tj T* ET
+Q
+Q
+q
+1 0 0 1 56.63681 189 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 24.5 Tm /F1 8.5 Tf 11 TL (Art. 7:611 BW requires good faith, but not surrender of) Tj T* (independently created property. Art. 7:653a BW explicitly protects) Tj T* (side activities.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 318.2633 211 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Art. 7:611 BW; Art. 7:653a BW) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 124 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 35.5 Tm /F1 8.5 Tf 11 TL ("Our non-c) Tj T* (ompete) Tj T* (clause) Tj T* (covers this") Tj T* ET
+Q
+Q
+q
+1 0 0 1 56.63681 146 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (Non-compete clauses regulate competitive activity, not IP) Tj T* (ownership. They are separate legal instruments.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 318.2633 146 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (Art. 7:653 BW \(separate from Art.) Tj T* (7 Aw\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 59 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 46.5 Tm /F1 8.5 Tf 11 TL ("Wingman) Tj T* (proves) Tj T* (ChipOS) Tj T* (was create) Tj T* (d for us") Tj T* ET
+Q
+Q
+q
+1 0 0 1 56.63681 59 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 46.5 Tm /F1 8.5 Tf 11 TL (Wingman is a separate product with no runtime ChipOS imports,) Tj T* (separate repo, and a completely different architecture. While) Tj T* (Wingman applies general patterns from ChipOS \(as transparently) Tj T* (acknowledged\), the existence of a deliverable for Axelera does) Tj T* (not retroactively capture pre-existing independent IP.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 318.2633 103 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F1 8.5 Tf 11 TL (Separation evidence in Section 3) Tj T* ET
+Q
+Q
+q
+1 0 0 1 5 16 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 24.5 Tm /F1 8.5 Tf 11 TL ("The adde) Tj T* (ndum cove) Tj T* (rs ChipOS") Tj T* ET
+Q
+Q
+q
+1 0 0 1 56.63681 5 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 35.5 Tm /F1 8.5 Tf 11 TL (The addendum has not been signed. Proposed terms that are) Tj T* (broader than necessary may be void under Art. 6:248 BW) Tj T* (\(redelijkheid en billijkheid\) and fail the Stoof/Mammoet test) Tj T* (\(ECLI:NL:HR:2008:BD1847\).) Tj T* ET
+Q
+Q
+q
+1 0 0 1 318.2633 27 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 13.5 Tm /F1 8.5 Tf 11 TL (Art. 6:248 BW; HR 11 July 2008) Tj T* (\(Stoof/Mammoet\)) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.8 .8 .8 RG
+.5 w
+n 0 465 m 453.5433 465 l S
+n 0 0 m 453.5433 0 l S
+n 0 0 m 0 465 l S
+n 453.5433 0 m 453.5433 465 l S
+n 0 433 m 453.5433 433 l S
+n 0 368 m 453.5433 368 l S
+n 0 314 m 453.5433 314 l S
+n 0 227 m 453.5433 227 l S
+n 0 173 m 453.5433 173 l S
+n 0 119 m 453.5433 119 l S
+n 0 54 m 453.5433 54 l S
+n 51.63681 0 m 51.63681 465 l S
+n 313.2633 0 m 313.2633 465 l S
+Q
+Q
+Q
+q
+1 0 0 1 76.86614 161.5236 cm
+Q
+q
+1 0 0 1 76.86614 158.5236 cm
+Q
+q
+1 0 0 1 76.86614 157.0236 cm
+q
+.5 w
+1 J
+.8 .8 .8 RG
+n 0 0 m 441.5433 0 l S
+Q
+Q
+q
+1 0 0 1 76.86614 153.0236 cm
+Q
+q
+1 0 0 1 76.86614 121.0236 cm
+q
+.172549 .243137 .313725 rg
+BT 1 0 0 1 0 6 Tm /F2 12 Tf 18 TL (8. Forward-Looking Independence Measures) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 97.02362 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (8.1 Technical Measures Already in Place) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 78.52362 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F2 9.5 Tf 0 0 0 rg (1.) Tj /F1 9.5 Tf ( ) Tj /F2 9.5 Tf (Separate git repositories) Tj /F1 9.5 Tf ( with no cross-references) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 62.02362 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F2 9.5 Tf 0 0 0 rg (2.) Tj /F1 9.5 Tf ( ) Tj /F2 9.5 Tf (Dedicated Supabase projects) Tj /F1 9.5 Tf ( for each product \(mandatory, enforced by configuration\)) Tj T* ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+q
+0.707107 0.707107 -0.707107 0.707107 297.6378 420.9449 cm
+BT
+/F2-0 54 Tf
+64.8 TL
+ET
+1 0 0 rg
+/gRLs0 gs
+BT
+1 0 0 1 -234.009 0 Tm
+(VERTROUWELIJK) Tj
+T*
+ET
+Q
+Q
+
+
+endstream
+endobj
+32 0 obj
+<<
+/Contents 33 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/ExtGState <<
+/gRLs0 <<
+/ca 0.15
+>>
+>>
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+/F2-0 9 0 R
+/F3 10 0 R
+/F4 11 0 R
+/F5 12 0 R
+/F6 13 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+33 0 obj
+<<
+/Length 7132
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+BT /F1 7 Tf 8.4 TL ET
+.501961 .501961 .501961 rg
+BT 1 0 0 1 185.7708 28.34646 Tm (Page 11  |  05-03-2026  |  Netherlands AI Lawyer System  |  Confidential) Tj T* ET
+Q
+q
+1 0 0 1 76.86614 751.5236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F2 9.5 Tf 0 0 0 rg (3.) Tj /F1 9.5 Tf ( ) Tj /F2 9.5 Tf (Isolated Docker networks and volumes) Tj /F1 9.5 Tf ( \(wingman-network vs chipos-network\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 735.0236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F2 9.5 Tf 0 0 0 rg (4.) Tj /F1 9.5 Tf ( ) Tj /F2 9.5 Tf (Non-overlapping port ranges) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 718.5236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F2 9.5 Tf 0 0 0 rg (5.) Tj /F1 9.5 Tf ( ) Tj /F2 9.5 Tf (Independence verification methodology) Tj /F1 9.5 Tf ( \(see Section 3.7 above\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 702.0236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F2 9.5 Tf 0 0 0 rg (6.) Tj /F1 9.5 Tf ( ) Tj /F2 9.5 Tf (No shared runtime libraries or submodules) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 678.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (8.2 Recommended Additional Measures) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 646.0236 cm
+q
+BT 1 0 0 1 28.34646 17.5 Tm .461532 Tw 13.5 TL /F2 9.5 Tf 0 0 0 rg (1.) Tj /F1 9.5 Tf ( ) Tj /F2 9.5 Tf (Maintain separate development environments) Tj /F1 9.5 Tf ( by using different machines or user accounts) Tj T* 0 Tw (for ChipOS vs. Wingman development) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 616.0236 cm
+q
+BT 1 0 0 1 28.34646 17.5 Tm 2.096395 Tw 13.5 TL /F2 9.5 Tf 0 0 0 rg (2.) Tj /F1 9.5 Tf ( ) Tj /F2 9.5 Tf (Continue timestamped commit discipline) Tj /F1 9.5 Tf ( to ensure ChipOS commits clearly fall outside) Tj T* 0 Tw (Axelera working hours) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 586.0236 cm
+q
+BT 1 0 0 1 28.34646 17.5 Tm 1.354135 Tw 13.5 TL /F2 9.5 Tf 0 0 0 rg (3.) Tj /F1 9.5 Tf ( ) Tj /F2 9.5 Tf (Document all ChipOS development decisions independently.) Tj /F1 9.5 Tf ( Maintain decision logs that) Tj T* 0 Tw (demonstrate independent creative direction.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 556.0236 cm
+q
+BT 1 0 0 1 28.34646 17.5 Tm .032685 Tw 13.5 TL /F2 9.5 Tf 0 0 0 rg (4.) Tj /F1 9.5 Tf ( ) Tj /F2 9.5 Tf (Keep FutureAtoms business records separate) Tj /F1 9.5 Tf (: clean KvK administration, separate invoicing,) Tj T* 0 Tw (separate bank account if applicable) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 526.0236 cm
+q
+BT 1 0 0 1 28.34646 17.5 Tm -0.018679 Tw 13.5 TL /F2 9.5 Tf 0 0 0 rg (5.) Tj /F1 9.5 Tf ( ) Tj /F2 9.5 Tf (Preserve all evidence) Tj /F1 9.5 Tf (, including git history, commit timestamps, personal purchase receipts for) Tj T* 0 Tw (equipment/services, and correspondence demonstrating independent development) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 496.0236 cm
+q
+BT 1 0 0 1 28.34646 17.5 Tm 8.745135 Tw 13.5 TL /F2 9.5 Tf 0 0 0 rg (6.) Tj /F1 9.5 Tf ( ) Tj /F2 9.5 Tf (Secure written approval) Tj /F1 9.5 Tf ( for FutureAtoms side activities from Axelera \(see) Tj T* 0 Tw (side-business-permission-request.md\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 490.0236 cm
+Q
+q
+1 0 0 1 76.86614 488.5236 cm
+q
+.5 w
+1 J
+.8 .8 .8 RG
+n 0 0 m 441.5433 0 l S
+Q
+Q
+q
+1 0 0 1 76.86614 484.5236 cm
+Q
+q
+1 0 0 1 76.86614 452.5236 cm
+q
+.172549 .243137 .313725 rg
+BT 1 0 0 1 0 6 Tm /F2 12 Tf 18 TL (9. Conclusion) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 379.0236 cm
+q
+BT 1 0 0 1 0 58 Tm 1.558908 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (The technical evidence is clear: ) Tj /F2 9.5 Tf (ChipOS and Wingman are independent products) Tj /F1 9.5 Tf ( with no runtime) Tj T* 0 Tw .449859 Tw (dependencies, architecturally different designs, and no data coupling. While Wingman draws on general) Tj T* 0 Tw 3.44871 Tw (patterns and structural approaches from ChipOS \(as transparently acknowledged in the "Shared) Tj T* 0 Tw .483216 Tw (Development Patterns" provision\), this does not create employer IP claims over the underlying platform.) Tj T* 0 Tw (This technical independence maps directly onto the legal framework for employee IP under Dutch law:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 333.5236 cm
+q
+BT 1 0 0 1 28.34646 31 Tm 3.08269 Tw 13.5 TL /F2 9.5 Tf 0 0 0 rg (1.) Tj /F1 9.5 Tf ( ) Tj /F2 9.5 Tf (Art. 7 Auteurswet fails) Tj /F1 9.5 Tf ( on conditions \(2\) and \(3\): ChipOS development is not part of) Tj T* 0 Tw 1.137561 Tw (Employee's duties and was not created in the service of Axelera \(condition \(1\) \(employment\) is) Tj T* 0 Tw (conceded\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 303.5236 cm
+q
+BT 1 0 0 1 28.34646 17.5 Tm .252025 Tw 13.5 TL /F2 9.5 Tf 0 0 0 rg (2.) Tj /F1 9.5 Tf ( ) Tj /F2 9.5 Tf (Art. 7 Aw applied to software) Tj /F1 9.5 Tf ( \(implementing EU Directive 2009/24/EC Art. 2\(3\)\): ChipOS was) Tj T* 0 Tw (not created in the exercise of employment duties, and no employer instructions were given) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 273.5236 cm
+q
+BT 1 0 0 1 28.34646 17.5 Tm 1.320029 Tw 13.5 TL /F2 9.5 Tf 0 0 0 rg (3.) Tj /F1 9.5 Tf ( ) Tj /F2 9.5 Tf (EU Directive 2009/24/EC fails) Tj /F1 9.5 Tf (: Neither "execution of duties" nor "employer instructions" are) Tj T* 0 Tw (present) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 243.5236 cm
+q
+BT 1 0 0 1 28.34646 17.5 Tm 1.873404 Tw 13.5 TL /F2 9.5 Tf 0 0 0 rg (4.) Tj /F1 9.5 Tf ( ) Tj /F2 9.5 Tf (Art. 12 Rijksoctrooiwet 1995) Tj /F1 9.5 Tf ( \(by analogy\): Even under the more employer-friendly patent) Tj T* 0 Tw (standard, ChipOS would remain Employee's IP) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 213.5236 cm
+q
+BT 1 0 0 1 28.34646 17.5 Tm .834918 Tw 13.5 TL /F2 9.5 Tf 0 0 0 rg (5.) Tj /F1 9.5 Tf ( ) Tj /F2 9.5 Tf (Art. 7:653a BW) Tj /F1 9.5 Tf ( protects Employee's right to develop ChipOS through FutureAtoms as a side) Tj T* 0 Tw (activity) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 156.5236 cm
+q
+BT 1 0 0 1 0 44.5 Tm 1.432485 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (The only deliverable with a legitimate connection to the employment relationship is ) Tj /F2 9.5 Tf (Wingman v1.0.0) Tj /F1 9.5 Tf (.) Tj T* 0 Tw .782101 Tw (While Wingman builds on general development patterns from ChipOS, it runs independently, as shown) Tj T* 0 Tw 2.033192 Tw (by the absence of runtime imports, separate repositories, separate databases, and entirely different) Tj T* 0 Tw (architectures.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 97.52362 cm
+q
+BT 1 0 0 1 0 44.5 Tm 1.367486 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (Both parties benefit from a clearly scoped addendum that gives Axelera strong Wingman rights while) Tj T* 0 Tw 1.335392 Tw (preserving FutureAtoms' independence across its diverse portfolio of projects. The technical evidence) Tj T* 0 Tw 4.908255 Tw (supports limiting the addendum scope to ) Tj /F2 9.5 Tf (Wingman v1.0.0) Tj /F1 9.5 Tf (, with express acknowledgment of) Tj T* 0 Tw (FutureAtoms' exclusive ownership of ChipOS and all related intellectual property.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 89.52362 cm
+Q
+q
+1 0 0 1 76.86614 88.02362 cm
+q
+.5 w
+1 J
+.8 .8 .8 RG
+n 0 0 m 441.5433 0 l S
+Q
+Q
+q
+1 0 0 1 76.86614 84.02362 cm
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+q
+0.707107 0.707107 -0.707107 0.707107 297.6378 420.9449 cm
+BT
+/F2-0 54 Tf
+64.8 TL
+ET
+1 0 0 rg
+/gRLs0 gs
+BT
+1 0 0 1 -234.009 0 Tm
+(VERTROUWELIJK) Tj
+T*
+ET
+Q
+Q
+
+
+endstream
+endobj
+34 0 obj
+<<
+/Contents 35 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/ExtGState <<
+/gRLs0 <<
+/ca 0.15
+>>
+>>
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+/F2-0 9 0 R
+/F3 10 0 R
+/F4 11 0 R
+/F5 12 0 R
+/F6 13 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+35 0 obj
+<<
+/Length 6369
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+BT /F1 7 Tf 8.4 TL ET
+.501961 .501961 .501961 rg
+BT 1 0 0 1 185.7708 28.34646 Tm (Page 12  |  05-03-2026  |  Netherlands AI Lawyer System  |  Confidential) Tj T* ET
+Q
+q
+1 0 0 1 76.86614 747.0236 cm
+q
+.172549 .243137 .313725 rg
+BT 1 0 0 1 0 6 Tm /F2 12 Tf 18 TL (Legal References) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 723.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (Dutch Legislation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 704.5236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf (Art. 1 Auteurswet) Tj /F1 9.5 Tf (: creator principle \(makersbeginsel\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 688.0236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf (Art. 7 Auteurswet) Tj /F1 9.5 Tf (: employer copyright \(werkgeversauteursrecht\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 671.5236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf (Art. 8 Auteurswet) Tj /F1 9.5 Tf (: organizational authorship) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 628.0236 cm
+q
+BT 1 0 0 1 28.34646 31 Tm .378835 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf (Art. 45h Auteurswet) Tj /F1 9.5 Tf (: software rental rights \() Tj /F5 9.5 Tf (verhuurrechten) Tj /F1 9.5 Tf (\); part of the software chapter \(Arts.) Tj T* 0 Tw 3.517285 Tw (45h-45n Aw\) implementing Directive 2009/24/EC. Note: employer copyright for software is) Tj T* 0 Tw (governed by Art. 7 Aw, not Art. 45h.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 611.5236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf (Art. 12 Rijksoctrooiwet 1995) Tj /F1 9.5 Tf (: employee patents) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 595.0236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf (Art. 7:610 BW) Tj /F1 9.5 Tf (: employment contract definition) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 578.5236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf (Art. 7:611 BW) Tj /F1 9.5 Tf (: good employer/employee practices) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 562.0236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf (Art. 7:653 BW) Tj /F1 9.5 Tf (: non-competition clause \(concurrentiebeding\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 545.5236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf (Art. 7:653a BW) Tj /F1 9.5 Tf (: side activities restriction \(nevenwerkzaamhedenbeding\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 529.0236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf (Art. 6:248 BW) Tj /F1 9.5 Tf (: reasonableness and fairness \(redelijkheid en billijkheid\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 512.5236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf (Wet bescherming bedrijfsgeheimen) Tj /F1 9.5 Tf (: trade secrets protection) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 488.5236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (EU Legislation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 470.0236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf (Directive 2009/24/EC) Tj /F1 9.5 Tf ( \(Software Directive\), Art. 2\(3\): employer copyright in software) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 440.0236 cm
+q
+BT 1 0 0 1 28.34646 17.5 Tm 4.185135 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf (Directive 2019/1152) Tj /F1 9.5 Tf ( \(Transparent and Predictable Working Conditions\), Art. 9: parallel) Tj T* 0 Tw (employment) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 416.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 10.5 Tf 14 TL (Case Law) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 357.0236 cm
+q
+BT 1 0 0 1 28.34646 44.5 Tm 3.512759 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf (HR 19 januari 1951, NJ 1952/37) Tj /F1 9.5 Tf ( \() Tj /F5 9.5 Tf (Van der Laan/Schoonderbeek) Tj /F1 9.5 Tf (\): functional connection) Tj T* 0 Tw 1.085157 Tw (requirement for Art. 7 Aw. Note: some secondary sources cite "HR 19 November 1993" for this) Tj T* 0 Tw .019275 Tw (principle; the full ECLI/NJ citation for that reference could not be independently verified and should) Tj T* 0 Tw (be confirmed by counsel before use in proceedings.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 340.5236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf (HR 12 April 2013, ECLI:NL:HR:2013:BY1532) Tj /F1 9.5 Tf ( \(Stokke/Fikszo, Tripp Trapp\): creator principle) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 310.5236 cm
+q
+BT 1 0 0 1 28.34646 17.5 Tm 4.253836 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf (HR 19 June 2009, ECLI:NL:HR:2009:BH7602) Tj /F1 9.5 Tf ( \(Buma/Chellomedia\): directive-conforming) Tj T* 0 Tw (interpretation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 280.5236 cm
+q
+BT 1 0 0 1 28.34646 17.5 Tm .550372 Tw 13.5 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf (HR 11 July 2008, ECLI:NL:HR:2008:BD1847) Tj /F1 9.5 Tf ( \(Stoof/Mammoet\): employment term modification) Tj T* 0 Tw (test) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 264.0236 cm
+q
+BT 1 0 0 1 28.34646 4 Tm 13.5 TL /F1 9.5 Tf 0 0 0 rg (\177 ) Tj /F2 9.5 Tf (HvJEU C-5/08) Tj /F1 9.5 Tf ( \(Infopaq I\): own intellectual creation standard) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 258.0236 cm
+Q
+q
+1 0 0 1 76.86614 256.5236 cm
+q
+.5 w
+1 J
+.8 .8 .8 RG
+n 0 0 m 441.5433 0 l S
+Q
+Q
+q
+1 0 0 1 76.86614 252.5236 cm
+Q
+q
+1 0 0 1 76.86614 198.5236 cm
+q
+BT 1 0 0 1 0 44.5 Tm -0.064299 Tw 13.5 TL /F2 9.5 Tf 0 0 0 rg (DISCLAIMER:) Tj /F1 9.5 Tf ( This is an AI-generated analysis and does NOT constitute legal advice within the meaning) Tj T* 0 Tw .499593 Tw (of the Dutch Advocates Act \(Advocatenwet\). This document is for informational purposes only and must) Tj T* 0 Tw 2.2178 Tw (be reviewed and finalized by a licensed attorney admitted to the Dutch bar. All legal citations and) Tj T* 0 Tw (technical evidence should be independently verified.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 166.5236 cm
+q
+BT 1 0 0 1 0 17.5 Tm 1.242317 Tw 13.5 TL /F5 9.5 Tf 0 0 0 rg (Generated by the Netherlands AI Lawyer System) Tj /F1 9.5 Tf ( ) Tj /F5 9.5 Tf (Date of analysis: 2026-03-04) Tj /F1 9.5 Tf ( ) Tj /F5 9.5 Tf (Legislation verification) Tj T* 0 Tw (date: 2026-03-04) Tj T* ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+q
+0.707107 0.707107 -0.707107 0.707107 297.6378 420.9449 cm
+BT
+/F2-0 54 Tf
+64.8 TL
+ET
+1 0 0 rg
+/gRLs0 gs
+BT
+1 0 0 1 -234.009 0 Tm
+(VERTROUWELIJK) Tj
+T*
+ET
+Q
+Q
+
+
+endstream
+endobj
+36 0 obj
+<<
+/Contents 37 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/ExtGState <<
+/gRLs0 <<
+/ca 0.15
+>>
+>>
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+/F2-0 9 0 R
+/F3 10 0 R
+/F4 11 0 R
+/F5 12 0 R
+/F6 13 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+37 0 obj
+<<
+/Length 5559
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+BT /F1 7 Tf 8.4 TL ET
+.501961 .501961 .501961 rg
+BT 1 0 0 1 185.7708 28.34646 Tm (Page 13  |  05-03-2026  |  Netherlands AI Lawyer System  |  Confidential) Tj T* ET
+Q
+q
+1 0 0 1 76.86614 747.0236 cm
+q
+.172549 .243137 .313725 rg
+BT 1 0 0 1 0 6 Tm /F2 12 Tf 18 TL (DISCLAIMER) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 737.0236 cm
+Q
+q
+1 0 0 1 76.86614 735.0236 cm
+q
+1 w
+1 J
+.172549 .243137 .313725 RG
+n 0 0 m 441.5433 0 l S
+Q
+Q
+q
+1 0 0 1 76.86614 726.0236 cm
+Q
+q
+1 0 0 1 76.86614 709.0236 cm
+q
+.2 .2 .2 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (Juridische Disclaimer) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 703.0236 cm
+Q
+q
+1 0 0 1 76.86614 701.7236 cm
+q
+.3 w
+1 J
+.8 .8 .8 RG
+n 0 0 m 441.5433 0 l S
+Q
+Q
+q
+1 0 0 1 76.86614 697.7236 cm
+Q
+q
+1 0 0 1 76.86614 683.2236 cm
+q
+.501961 .501961 .501961 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8 Tf 10.5 TL (BELANGRIJK - LEES DEZE DISCLAIMER ZORGVULDIG) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 677.2236 cm
+Q
+q
+1 0 0 1 76.86614 652.2236 cm
+q
+BT 1 0 0 1 0 13 Tm .025739 Tw 10.5 TL /F1 8 Tf .501961 .501961 .501961 rg (Dit is een AI-gegenereerde juridische analyse en vormt ) Tj /F2 8 Tf (geen juridisch advies) Tj /F1 8 Tf ( in de zin van de Advocatenwet. De informatie) Tj T* 0 Tw (in deze analyse:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 646.2236 cm
+Q
+q
+1 0 0 1 76.86614 621.2236 cm
+q
+BT 1 0 0 1 0 13 Tm .001842 Tw 10.5 TL /F1 8 Tf .501961 .501961 .501961 rg (1. ) Tj /F2 8 Tf (Is uitsluitend informatief) Tj /F1 8 Tf ( en mag niet worden beschouwd als een vervanging voor professioneel juridisch advies van een) Tj T* 0 Tw (gekwalificeerde Nederlandse advocaat \(ingeschreven bij de Nederlandse Orde van Advocaten\).) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 615.2236 cm
+Q
+q
+1 0 0 1 76.86614 590.2236 cm
+q
+BT 1 0 0 1 0 13 Tm .631276 Tw 10.5 TL /F1 8 Tf .501961 .501961 .501961 rg (2. ) Tj /F2 8 Tf (Is gegenereerd door kunstmatige intelligentie) Tj /F1 8 Tf ( en kan onnauwkeurigheden, onvolledigheden of verouderde informatie) Tj T* 0 Tw (bevatten, ondanks inspanningen om actuele en correcte bronnen te raadplegen.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 584.2236 cm
+Q
+q
+1 0 0 1 76.86614 559.2236 cm
+q
+BT 1 0 0 1 0 13 Tm 3.113665 Tw 10.5 TL /F1 8 Tf .501961 .501961 .501961 rg (3. ) Tj /F2 8 Tf (Vervangt geen advocaat.) Tj /F1 8 Tf ( Voor juridische beslissingen, procedures, contracten of geschillen dient u altijd een) Tj T* 0 Tw (gekwalificeerde advocaat te raadplegen die bevoegd is om in Nederland de rechtspraktijk uit te oefenen.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 553.2236 cm
+Q
+q
+1 0 0 1 76.86614 528.2236 cm
+q
+BT 1 0 0 1 0 13 Tm 2.106087 Tw 10.5 TL /F1 8 Tf .501961 .501961 .501961 rg (4. ) Tj /F2 8 Tf (Garandeert geen vertrouwelijkheid.) Tj /F1 8 Tf ( Informatie die u deelt met dit AI-systeem valt niet onder het advocaat-cli\353nt) Tj T* 0 Tw (verschoningsrecht \(legal privilege\). Deel geen vertrouwelijke of geprivilegieerde informatie.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 522.2236 cm
+Q
+q
+1 0 0 1 76.86614 497.2236 cm
+q
+BT 1 0 0 1 0 13 Tm .207954 Tw 10.5 TL /F1 8 Tf .501961 .501961 .501961 rg (5. ) Tj /F2 8 Tf (Is mogelijk niet actueel.) Tj /F1 8 Tf ( De Nederlandse wetgeving en jurisprudentie veranderen voortdurend. De analyse is gebaseerd) Tj T* 0 Tw (op de stand van het recht op de aangegeven datum en houdt mogelijk geen rekening met recente wijzigingen.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 491.2236 cm
+Q
+q
+1 0 0 1 76.86614 476.7236 cm
+q
+BT 1 0 0 1 0 2.5 Tm 10.5 TL /F1 8 Tf .501961 .501961 .501961 rg (6. ) Tj /F2 8 Tf (Kan niet worden gebruikt als bewijs) Tj /F1 8 Tf ( in gerechtelijke of administratieve procedures.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 470.7236 cm
+Q
+q
+1 0 0 1 76.86614 445.7236 cm
+q
+BT 1 0 0 1 0 13 Tm 1.338236 Tw 10.5 TL /F1 8 Tf .501961 .501961 .501961 rg (7. ) Tj /F2 8 Tf (Biedt geen garantie op juistheid) Tj /F1 8 Tf ( van verwijzingen naar wetsartikelen, ECLI-nummers of andere juridische bronnen.) Tj T* 0 Tw (Verifieer alle bronvermeldingen zelfstandig.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 439.7236 cm
+Q
+q
+1 0 0 1 76.86614 414.7236 cm
+q
+.501961 .501961 .501961 rg
+BT 1 0 0 1 0 13 Tm /F2 8 Tf 10.5 TL .936765 Tw (Door gebruik te maken van deze analyse erkent u dat u deze disclaimer heeft gelezen en begrepen, en dat u het) Tj T* 0 Tw (AI-systeem niet beschouwt als uw juridisch adviseur.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 408.7236 cm
+Q
+q
+1 0 0 1 76.86614 407.4236 cm
+q
+.3 w
+1 J
+.8 .8 .8 RG
+n 0 0 m 441.5433 0 l S
+Q
+Q
+q
+1 0 0 1 76.86614 403.4236 cm
+Q
+q
+1 0 0 1 76.86614 388.9236 cm
+q
+.501961 .501961 .501961 rg
+BT 1 0 0 1 0 2.5 Tm /F5 8 Tf 10.5 TL (Gegenereerd door het Netherlands AI Lawyer System - een AI-hulpmiddel voor juridische analyse.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 374.4236 cm
+q
+.501961 .501961 .501961 rg
+BT 1 0 0 1 0 2.5 Tm /F5 8 Tf 10.5 TL (Datum van analyse: 05-03-2026) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 359.9236 cm
+q
+.501961 .501961 .501961 rg
+BT 1 0 0 1 0 2.5 Tm /F5 8 Tf 10.5 TL (Verificatiedatum wetgeving: 05-03-2026) Tj T* ET
+Q
+Q
+q
+1 0 0 1 76.86614 353.9236 cm
+Q
+q
+1 0 0 1 76.86614 343.9236 cm
+Q
+q
+1 0 0 1 76.86614 342.4236 cm
+q
+.5 w
+1 J
+.8 .8 .8 RG
+n 0 0 m 441.5433 0 l S
+Q
+Q
+q
+1 0 0 1 76.86614 335.4236 cm
+Q
+q
+1 0 0 1 76.86614 323.4236 cm
+q
+.501961 .501961 .501961 rg
+BT 1 0 0 1 0 4 Tm /F1 8 Tf 12 TL 108.7993 0 Td (Netherlands AI Lawyer System | Datum: 05-03-2026 | Verificatiedatum wetgeving: 05-03-2026) Tj T* -108.7993 0 Td ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+q
+0.707107 0.707107 -0.707107 0.707107 297.6378 420.9449 cm
+BT
+/F2-0 54 Tf
+64.8 TL
+ET
+1 0 0 rg
+/gRLs0 gs
+BT
+1 0 0 1 -234.009 0 Tm
+(VERTROUWELIJK) Tj
+T*
+ET
+Q
+Q
+
+
+endstream
+endobj
+xref
+0 38
+0000000000 65535 f 
+0000000015 00000 n 
+0000000054 00000 n 
+0000000198 00000 n 
+0000000247 00000 n 
+0000000585 00000 n 
+0000007612 00000 n 
+0000007719 00000 n 
+0000007826 00000 n 
+0000007938 00000 n 
+0000008050 00000 n 
+0000008156 00000 n 
+0000008234 00000 n 
+0000008350 00000 n 
+0000008470 00000 n 
+0000008810 00000 n 
+0000019386 00000 n 
+0000019726 00000 n 
+0000029230 00000 n 
+0000029570 00000 n 
+0000040429 00000 n 
+0000040769 00000 n 
+0000049169 00000 n 
+0000049509 00000 n 
+0000057123 00000 n 
+0000057463 00000 n 
+0000066000 00000 n 
+0000066340 00000 n 
+0000075264 00000 n 
+0000075604 00000 n 
+0000085844 00000 n 
+0000086184 00000 n 
+0000094369 00000 n 
+0000094709 00000 n 
+0000101894 00000 n 
+0000102234 00000 n 
+0000108656 00000 n 
+0000108996 00000 n 
+trailer
+<<
+/Size 38
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+114608
+%%EOF

@@ -45,7 +45,7 @@ This definition is broad enough to capture virtually any future work that Future
 Section 1.3a grants Axelera a "perpetual, irrevocable, transferable, sublicensable" non-exclusive license to the entire ChipOS platform.
 
 **Problem:**
-The scope of this license extends beyond the Wingman delivery arrangement. Axelera evaluated and agreed to receive Wingman, a narrow application for programming the Voyager SDK. There is no contractual or factual basis for a license to ChipOS itself, which is a separate, pre-existing platform developed independently by FutureAtoms. This license scope would encompass 485 commits of independent work, 11 App Packs, and the entire VS Code IDE extension architecture, none of which relate to the agreed Wingman delivery.
+The scope of this license extends beyond the Wingman delivery arrangement. Axelera evaluated and agreed to receive Wingman, a narrow application for programming the Voyager SDK. There is no contractual or factual basis for a license to ChipOS itself, which is a separate, pre-existing platform developed independently by FutureAtoms. This license scope would encompass an extensive independent commit history, 11 App Packs, and the entire VS Code IDE extension architecture, none of which relate to the agreed Wingman delivery.
 
 **Legal Basis:**
 - No contractual basis exists in the employment agreement for requiring license rights to pre-existing, independently developed IP.
@@ -88,7 +88,7 @@ This clause is difficult to reconcile with Dutch law. It claims ownership over w
 **Legal Basis:**
 - **Art. 7:653a BW** (effective 1 August 2022): employers cannot restrict ancillary activities without objective justification. Claiming ownership of all output from those activities goes far beyond mere restriction.
 - **Art. 7 Auteurswet (Copyright Act)**: employer copyright is limited to works created within the scope of the employee's duties. Work done independently outside employment scope does not fall under this provision.
-- **Art. 7:610 BW**: the employment relationship is defined by its scope; an employer cannot unilaterally expand that scope to capture all of an employee's productive activity.
+- **Art. 6:248 lid 2 BW** (*derogerende werking van redelijkheid en billijkheid*): a contractual provision is not binding insofar as it would be unacceptable according to standards of reasonableness and fairness. Claiming ownership of all independent output is disproportionate and unreasonable.
 
 **Risk Assessment:** **CRITICAL**
 
@@ -131,7 +131,7 @@ This is difficult to reconcile with both Dutch law and the original employment a
 Sections 1.5 and 1.6c require delivery of the "full source code repository for ChipOS and Voyager Wingman."
 
 **Problem:**
-The delivery obligation captures the entire ChipOS codebase: 485 commits of independently developed work, including 11 App Packs, the VS Code IDE architecture, and all supporting infrastructure. The only deliverable that should be in scope is Wingman, which consists of 3 commits and a separate FastAPI + React application with zero imports from ChipOS. Including the full ChipOS source code in the delivery scope would effectively encompass the entire FutureAtoms product portfolio.
+The delivery obligation captures the entire ChipOS codebase: an extensive independent commit history of developed work, including 11 App Packs, the VS Code IDE architecture, and all supporting infrastructure. The only deliverable that should be in scope is Wingman, which consists of 3 commits and a separate FastAPI + React application with zero imports from ChipOS. Including the full ChipOS source code in the delivery scope would effectively encompass the entire FutureAtoms product portfolio.
 
 **Legal Basis:**
 - There is no contractual basis in the employment agreement for requiring delivery of pre-existing, independently developed IP.
@@ -215,7 +215,7 @@ The following technical evidence, verified by codebase analysis on 4 March 2026,
 | Aspect | ChipOS | Wingman |
 |--------|--------|---------|
 | **Repository** | github.com/FutureAtoms/ChipOS.git | github.com/FutureAtoms/voyager-wingman.git |
-| **Git commits** | 485 (468 by FutureAtoms) | 3 (all by FutureAtoms) |
+| **Git commits** | Extensive (predominantly FutureAtoms) | 3 (all by FutureAtoms) |
 | **First commit** | 15 September 2025 | February 2026 |
 | **Architecture** | Custom VS Code distribution + FastAPI + MCP | 8-service Docker microservices platform |
 | **Purpose** | Vendor-neutral semiconductor design orchestration (11 App Packs) | Axelera Metis NPU programming (Voyager SDK) |
@@ -227,7 +227,7 @@ The following technical evidence, verified by codebase analysis on 4 March 2026,
 | **Target users** | Any semiconductor engineer (vendor-neutral) | Axelera Voyager SDK developers only |
 | **License** | FutureAtoms proprietary (December 2025) | Voyager Wingman License Agreement v1.0 (January 2026) |
 | **Shared git history** | None | None |
-| **Independence verification** | N/A | Formal `verify-independence.sh` script confirms isolation |
+| **Independence verification** | N/A | Independence verified through technical analysis (see chipos-wingman-independence-report.md for full methodology) |
 
 This separation is critical: Wingman has no runtime dependency on ChipOS and operates as a standalone product. While Wingman draws on general development patterns and structural approaches from ChipOS (as transparently acknowledged in the counter-proposal's "Shared Development Patterns" provision), the two products have entirely different architectures, different purposes, different technology stacks, separate databases, and separate Docker networks. A comprehensive technical-legal independence report is available as a separate annex (`chipos-wingman-independence-report.md`).
 

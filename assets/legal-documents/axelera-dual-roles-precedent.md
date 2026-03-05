@@ -15,7 +15,7 @@
 
 ## 1. Executive Summary
 
-- **38 of 111 Axelera AI employees (34%)** have concurrent roles, businesses, or external positions
+- **38 of 111 Axelera AI employees (34%)** have concurrent roles, businesses, or external positions, based on publicly available data (LinkedIn profiles, KvK registrations, public corporate filings) reviewed in March 2026; supporting documentation available on request
 - This includes founding team members, senior leadership, and technical staff at all levels
 - Refusing FutureAtoms while tolerating these 38 cases would raise a strong argument of unequal treatment, subject to Axelera's ability to demonstrate objective justification or that it was unaware of the other arrangements
 - **Article 7:653a BW** (effective 1 August 2022) prohibits ancillary activities clauses without objective justification
@@ -27,7 +27,7 @@
 
 ## 2. Background
 
-Abhilash Chadhar, a Senior Engineer at Axelera AI, is requesting permission for his side business **FutureAtoms**. Research into publicly available data (LinkedIn profiles, Dutch Chamber of Commerce registrations, and public corporate filings) reveals that **38 of 111 Axelera employees (34%)** already maintain concurrent roles or businesses. This document analyzes that finding and its legal implications under Dutch employment law.
+Abhilash Chadhar, a Senior Engineer at Axelera AI, is requesting permission for his side business **FutureAtoms**. Research into publicly available data (LinkedIn profiles, Dutch Chamber of Commerce registrations, and public corporate filings) reveals that **38 of 111 Axelera employees (34%)** already maintain concurrent roles or businesses. Data source: publicly available information (LinkedIn profiles, Dutch Chamber of Commerce registrations, and public corporate filings) as of March 2026. Methodology documentation and underlying data are retained separately and available for verification by qualified legal counsel if required. This document analyzes that finding and its legal implications under Dutch employment law.
 
 ---
 
@@ -35,16 +35,16 @@ Abhilash Chadhar, a Senior Engineer at Axelera AI, is requesting permission for 
 
 > **Note on anonymization:** In compliance with GDPR Art. 5(1)(c) (data minimization), the individual cases below use anonymized role descriptions rather than names. The underlying data is derived from publicly available sources (LinkedIn, KvK) and is retained separately for use by qualified legal counsel if formal proceedings require identification. This anonymized presentation is equally effective as evidence of organizational precedent (see Section 8, Recommendation 2).
 
-### 3.1 Comparator A: Principal-Level Architect (Founding Team)
+### 3.1 Comparator A: Founding Team Member (Senior Technical Role)
 
-- **Position at Axelera:** Principal-level architect, founding team member
-- **Concurrent business:** Registered technology company (active since mid-2022, before or around the same time Axelera was founded)
-- **Nature:** Technology consulting/development
+- **Position at Axelera:** Founding team member in a senior technical role
+- **Concurrent business:** Registered technology company
+- **Nature:** Technology-related business
 - **Significance:** A founding team member with the highest technical authority maintains a concurrent technology company. Of all identified cases, this one carries the most weight: even the most senior and trusted technical leaders maintain parallel businesses in the same technology domain without enforcement action by Axelera. If the founding team itself maintains side businesses without restriction, there is no principled basis for denying the same to other employees.
 
 ### 3.2 Comparator B: Senior Engineer (Peer Level)
 
-- **Position at Axelera:** Senior QA Engineer
+- **Position at Axelera:** Senior engineering role at peer level
 - **Concurrent business:** Registered software development company
 - **Nature:** Software development
 - **Significance:** This colleague holds a similar seniority level to Abhilash and operates a software development business alongside their Axelera employment, making this the closest parallel to FutureAtoms. If Axelera has not enforced restrictions against a senior engineer running a software development business, there is no objective basis for prohibiting another senior engineer from operating FutureAtoms.
@@ -69,7 +69,7 @@ Abhilash Chadhar, a Senior Engineer at Axelera AI, is requesting permission for 
 | Category | Count | Percentage |
 |---|---|---|
 | Total Axelera employees surveyed | 111 | 100% |
-| Employees with concurrent roles/businesses | 38 | 34% |
+| Employees with concurrent roles/businesses (per public data review, March 2026; see Section 2) | 38 | 34% |
 | Employees without known concurrent roles | 73 | 66% |
 
 ### Types of Concurrent Activities Identified
@@ -114,7 +114,7 @@ Article 7:653a of the Dutch Civil Code (Burgerlijk Wetboek), effective since **1
 ### 5.2 Equal Treatment Argument (Gelijke Behandeling)
 
 - If Axelera was aware of and tolerated **38 employees** maintaining concurrent roles but refuses Abhilash, this would give rise to a strong argument of **unequal treatment** (*ongelijke behandeling*). The strength of this argument depends on whether Axelera can demonstrate it was genuinely unaware of the other arrangements or had objective grounds for distinguishing those cases.
-- Under Dutch law, the employer bears the burden of proving an **"objective justification"** for treating one employee differently from comparable colleagues.
+- When invoking a restriction under Art. 7:653a BW, the employer bears the burden of demonstrating an **"objective justification"** for the restriction (Art. 7:653a lid 1 BW).
 - FutureAtoms (no revenue, no external clients, different product scope) poses **LESS competitive risk** than many of the 38 existing cases.
 - The principle of *goed werkgeverschap* (good employer practice) under Article 7:611 BW requires consistent and fair treatment of employees in comparable situations.
 - Selective enforcement of a side activities clause against one employee while tolerating violations by 38 others would, if employer awareness can be established, be difficult to defend as reasonable before a Dutch court (*kantonrechter*).
@@ -150,7 +150,7 @@ FutureAtoms operates across nine diverse technology domains, the vast majority o
 | # | Project | Domain | Relevance to Axelera |
 |---|---------|--------|---------------------|
 | 1 | ChipOS | Semiconductor design OS | Vendor-neutral; not Axelera-specific |
-| 2 | Swaastik | Healthcare platform (150K+ facilities) | None |
+| 2 | Swaastik | Healthcare platform (targeting 150K+ facilities, per project specifications) | None |
 | 3 | BevyBeats | Music generation | None |
 | 4 | Zaphy | LinkedIn networking AI | None |
 | 5 | Agentic Control | Workflow automation | None |
@@ -163,12 +163,12 @@ This breadth of activity makes clear that FutureAtoms is a genuine independent t
 
 | Factor | FutureAtoms (Abhilash) | Comparator A: Founding Team Member, Technology Company | Comparator B: Senior Engineer, Software Development |
 |---|---|---|---|
-| Employee level | Senior Engineer | Principal Architect (founding team) | Senior QA Engineer |
+| Employee level | Senior Engineer | Founding team member (senior technical role) | Senior engineering role (peer level) |
 | Business type | Software platform | Technology company | Software development |
 | Revenue | **No revenue (zero)** | Unknown | Unknown |
 | External clients | **None** | Unknown | Unknown |
 | Competitive overlap | **Minimal** (different product domain) | Potential (same technology domain) | Potential (software development) |
-| Duration of concurrent activity | Active | Since mid-2022 | Active |
+| Duration of concurrent activity | Active | Active | Active |
 | Current status at Axelera | Current employee | Current employee (founding team) | Current employee |
 | Risk to Axelera | **Lowest** | Higher (founding team knowledge) | Moderate |
 
@@ -192,9 +192,9 @@ Refusing permission for FutureAtoms while tolerating 38 other cases would:
 
 ## 8. Recommendations
 
-1. **Present this precedent data** when requesting FutureAtoms approval. The 34% figure is a powerful factual foundation.
+1. **Present this precedent data** when requesting FutureAtoms approval. The 34% figure (based on publicly available data reviewed in March 2026; supporting documentation available on request) is a powerful factual foundation.
 2. **This document uses anonymized examples** in compliance with GDPR Art. 5(1)(c) (data minimization). Comparators are identified by role description ("a founding team member who maintains a concurrent technology company," "a same-level engineer who operates a software development business") rather than by name. This approach (a) avoids GDPR/AVG concerns about processing colleagues' personal data in an adversarial context, (b) reduces the risk of damaging workplace relationships, and (c) is equally effective as evidence of organizational precedent. The underlying named data is retained separately for use by qualified legal counsel if formal proceedings require identification under Art. 843a Rv.
-3. **Aggregate statistics are the primary weapon**: "34% of employees maintain concurrent roles" is compelling without identifying anyone. If the employer disputes this figure, Art. 843a Rv (exhibitieplicht) and Art. 22 Rv (rechterlijk bevel) can compel the employer to produce its own HR records on side activity permissions.
+3. **Aggregate statistics are the primary weapon**: "34% of employees maintain concurrent roles" is compelling without identifying anyone. If the employer disputes this figure, Art. 843a Rv (exhibitieplicht), subject to its cumulative conditions (legitimate interest, specificity of documents requested, and party status in a legal relationship), and Art. 22 Rv (rechterlijk bevel) may be used to request the employer to produce its own HR records on side activity permissions, provided the statutory conditions are met.
 4. **Emphasize that FutureAtoms poses LESS risk** than many tolerated cases: zero revenue, no external clients, different product domain.
 5. **Frame the request as seeking equal treatment, not special treatment.** The ask is simply to be treated the same as existing colleagues with similar arrangements.
 6. **Cite Article 7:653a BW explicitly** in any written communication, putting the employer on notice that the legal framework requires objective justification.

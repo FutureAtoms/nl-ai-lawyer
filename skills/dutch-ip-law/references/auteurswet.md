@@ -145,10 +145,15 @@ Even after transfer of copyright, the author retains:
 ## Software Copyright (Art. 45h-45n)
 
 Specific provisions for computer programs (implementing EU Software Directive 2009/24/EC):
-- **Art. 45h**: Computer programs are protected as literary works
-- **Art. 45i**: Lawful user may make backup copy, observe/study/test functionality
-- **Art. 45j**: Decompilation (reverse engineering) permitted only for interoperability purposes
-- **Art. 45k**: Contractual provisions contrary to Arts. 45i-45j are null and void
+- **Art. 45h**: Rental rights (*verhuurrechten*) — author's consent required for renting out software
+- **Art. 45i**: Definition of reproduction — loading, display, execution, transmission, storage
+- **Art. 45j**: Lawful user exceptions — use necessary for intended purpose; error correction cannot be contractually prohibited
+- **Art. 45k**: Backup copies — lawful user may make backup if necessary for intended use
+- **Art. 45l**: Observation, study, and testing — right to determine underlying ideas and principles
+- **Art. 45m**: Decompilation for interoperability — reverse engineering permitted only for interoperability
+- **Art. 45n**: Exclusion of general exceptions — certain general copyright exceptions do not apply to software
+
+Note: Employer copyright for software is governed by Art. 7 Aw (general provision), NOT by Art. 45h.
 
 ### Important for Software:
 - **Art. 7 Aw** applies: employer owns software copyright if created by employee as part of duties

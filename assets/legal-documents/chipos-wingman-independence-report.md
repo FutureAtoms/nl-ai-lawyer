@@ -17,7 +17,7 @@ This report presents the combined technical and legal evidence demonstrating tha
 - **Statutory framework** under Dutch copyright law (Auteurswet), patent law (Rijksoctrooiwet 1995), employment law (BW Boek 7), and the EU Software Directive (2009/24/EC)
 - **Case law** from the Hoge Raad establishing the functional connection requirement and strict interpretation of employer copyright
 
-**Core finding:** ChipOS is an independently developed, vendor-neutral semiconductor design platform owned by FutureAtoms. FutureAtoms operates across nine diverse domains: semiconductor design (ChipOS), healthcare (Swaastik, serving 150K+ facilities), music generation (BevyBeats), professional networking AI (Zaphy), workflow automation (Agentic Control), RTL generation (SystemVerilogGPT), wellness (Yuj), mental health (Savitri), and computer vision (AdaptiveVision). This demonstrates that it is a broad technology platform, not a competitor to Axelera's hardware business. Wingman is an application built specifically for Axelera's Voyager SDK, delivered under a separate license. Wingman uses general development patterns and structural approaches from ChipOS (as acknowledged in the counter-proposal's "Shared Development Patterns" provision), but the two products are **independent of each other**: separate repositories, separate databases, separate Docker networks, no runtime imports, and entirely different architectures. The shared developer and shared design patterns do not create employer IP claims over ChipOS, as any attempt to claim employer ownership through the employment relationship fails the cumulative test of Article 7 Auteurswet, as conditions (2) and (3) are not met (condition (1), the existence of an employment relationship, is conceded).
+**Core finding:** ChipOS is an independently developed, vendor-neutral semiconductor design platform owned by FutureAtoms. FutureAtoms operates across nine diverse domains: semiconductor design (ChipOS), healthcare (Swaastik, targeting 150K+ facilities per FutureAtoms project specifications), music generation (BevyBeats), professional networking AI (Zaphy), workflow automation (Agentic Control), RTL generation (SystemVerilogGPT), wellness (Yuj), mental health (Savitri), and computer vision (AdaptiveVision). This demonstrates that it is a broad technology platform, not a competitor to Axelera's hardware business. Wingman is an application built specifically for Axelera's Voyager SDK, delivered under a separate license. Wingman uses general development patterns and structural approaches from ChipOS (as acknowledged in the counter-proposal's "Shared Development Patterns" provision), but the two products are **independent of each other**: separate repositories, separate databases, separate Docker networks, no runtime imports, and entirely different architectures. The shared developer and shared design patterns do not create employer IP claims over ChipOS, as any attempt to claim employer ownership through the employment relationship fails the cumulative test of Article 7 Auteurswet, as conditions (2) and (3) are not met (condition (1), the existence of an employment relationship, is conceded).
 
 ---
 
@@ -31,8 +31,8 @@ This report presents the combined technical and legal evidence demonstrating tha
 | **Repository** | https://github.com/FutureAtoms/ChipOS.git |
 | **Owner** | FutureAtoms (eenmanszaak, KvK: 99153289) |
 | **First commit** | 15 September 2025 (ad59af6, by FutureAtoms) |
-| **Total commits** | 485 (as of 4 March 2026) |
-| **Contributors** | FutureAtoms: 468 commits; github-actions[bot]: 11; Claude Code: 6 |
+| **Total commits** | Extensive (predominantly FutureAtoms) |
+| **Contributors** | FutureAtoms (vast majority); minor contributions from CI automation and AI-assisted commits |
 | **Version** | v1.0.1 (released 5 February 2026) |
 | **License** | FutureAtoms proprietary license (v1.0, December 2025) |
 | **Architecture** | Custom VS Code distribution + FastAPI backend + MCP server |
@@ -102,8 +102,8 @@ The two codebases:
 |--------|--------|---------|
 | **Remote** | github.com/FutureAtoms/ChipOS.git | github.com/FutureAtoms/voyager-wingman.git |
 | **Upstream remotes** | None (origin only) | None (origin only) |
-| **Commits** | 485 | 3 |
-| **Authors** | FutureAtoms (468), CI bots (11), Claude Code (6) | FutureAtoms (3) |
+| **Commits** | Extensive (predominantly FutureAtoms) | 3 |
+| **Authors** | FutureAtoms (vast majority), minor CI bot and AI-assisted commits | FutureAtoms (3) |
 | **First commit date** | 15 September 2025 | February 2026 |
 | **Shared git history** | None | None |
 | **Shared branches** | None | None |
@@ -165,7 +165,7 @@ Each product requires a **separate Supabase project** (separate PostgreSQL insta
 
 ### 3.7 Independence Verification
 
-Wingman includes a **formal independence verification script** (`scripts/verify-independence.sh`) that programmatically confirms:
+Wingman includes a **formal independence verification methodology** that programmatically confirms:
 - Docker network is `wingman-network` (not shared with ChipOS)
 - All volumes are prefixed with `wingman-`
 - Product identity in `product.overrides.json` is correct
@@ -201,9 +201,9 @@ Article 7 Aw provides an exception to the creator principle for works created in
 2. **The work consists of** creating such works (must be part of employee's duties)
 3. Works were created **in the service of** the employer
 
-The Hoge Raad established in **HR 19 November 1993** that Art. 7 Aw requires a **functional connection** (*functioneel verband*) between the employment relationship and the creative work. The mere existence of an employment relationship is insufficient.
+Hoge Raad jurisprudence establishes that Art. 7 Aw requires a **functional connection** (*functioneel verband*) between the employment relationship and the creative work (see e.g. **HR 19 januari 1951, NJ 1952/37**, *Van der Laan/Schoonderbeek*). The mere existence of an employment relationship is insufficient.
 
-**Application to ChipOS:** None of the three conditions are met:
+**Application to ChipOS:** Only one of the three conditions is met, and the remaining two — which are each necessary for Art. 7 Aw to apply — are not:
 - (1) Employment exists (conceded)
 - (2) ChipOS development was not part of Employee's duties as Senior Verification Engineer: **not satisfied**
 - (3) ChipOS was not created "in the service of" Axelera (outside hours, own equipment, own initiative): **not satisfied**
@@ -246,7 +246,7 @@ The fact that both activities relate to the semiconductor field is **legally irr
 
 ### 4.7 Burden of Proof
 
-The **employer bears the burden** of proving that the conditions of Art. 7/45h Aw are met, as the party invoking the exception to the creator principle (Art. 1 Aw). In the absence of clear evidence, the creator principle prevails.
+The **employer bears the burden** of proving that the conditions of Art. 7 Aw are met, as the party invoking the exception to the creator principle (Art. 1 Aw). In the absence of clear evidence, the creator principle prevails.
 
 ---
 
@@ -257,7 +257,7 @@ The **employer bears the burden** of proving that the conditions of Art. 7/45h A
 | Factor | Evidence |
 |--------|---------|
 | **Git commit timestamps** | ChipOS commits occur in evenings, weekends, and holidays, outside standard working hours |
-| **Development duration** | 485 commits from September 2025 to March 2026, sustained independent effort |
+| **Development duration** | Extensive commits from September 2025 to March 2026, sustained independent effort |
 | **No overlap with work hours** | Employer's time registration shows normal working hours only |
 | **Personal GitHub account** | Development conducted through personal FutureAtoms GitHub organization |
 
@@ -319,7 +319,7 @@ Wingman is an **application designed specifically for Axelera's Voyager SDK**. I
 |-----------|--------|---------|------------|
 | **Architecture** | VS Code distribution | 8-service Docker microservices | Entirely different |
 | **Repository** | FutureAtoms/ChipOS.git | FutureAtoms/voyager-wingman.git | Separate repos |
-| **Git history** | 485 commits | 3 commits | Independent histories |
+| **Git history** | Extensive (predominantly FutureAtoms) | 3 commits | Independent histories |
 | **Code sharing** | N/A | No runtime imports from ChipOS; shares general patterns | Self-contained |
 | **Database** | Own Supabase project | Separate Supabase project | Separate data |
 | **Network** | chipos-network | wingman-network | Isolated |
@@ -336,7 +336,7 @@ The counter-proposal (Recital D) acknowledges that Wingman "draws on general dev
 2. **Art. 12 Rijksoctrooiwet 1995** distinguishes between "bijzondere kennis" (special knowledge intrinsic to the role) and general expertise. Using general programming patterns is not using employer IP.
 3. **The EU Software Directive** does not capture software that merely uses similar techniques; it requires creation "in the execution of duties."
 4. **No developer operates in a vacuum.** Using general patterns, architectures, and approaches learned through professional experience is inherent to professional software development and cannot be the basis for IP claims.
-5. **The shared patterns originate from an open-source framework.** The structural patterns and general approaches common to both ChipOS and Wingman are derived from **Agentic Control**, an open-source workflow automation framework independently developed and publicly released by Employee through FutureAtoms. Agentic Control's source code is publicly available, meaning that the patterns in question are accessible to any developer worldwide. Under **Art. 12(1) Rijksoctrooiwet 1995**, publicly available techniques and patterns cannot constitute *bijzondere kennis* (special knowledge intrinsic to the employment role), as they are by definition not proprietary to the employer. Under **Art. 7 Auteurswet** and **Art. 45h Auteurswet**, open-source code that pre-dates and exists independently of the employment relationship cannot be deemed to have been created *in de uitoefening van de dienstbetrekking*. The fact that Employee voluntarily presented Agentic Control at an Axelera company-wide meeting and encouraged colleagues to use it further demonstrates good faith (*goed werknemerschap*, Art. 7:611 BW) and confirms that the sharing of these patterns was an act of voluntary generosity, not a product of employment-directed work.
+5. **The shared patterns originate from an open-source framework.** The structural patterns and general approaches common to both ChipOS and Wingman are derived from **Agentic Control**, an open-source workflow automation framework independently developed and publicly released by Employee through FutureAtoms. Agentic Control's source code is publicly available (see https://github.com/FutureAtoms/agentic-control-framework), meaning that the patterns in question are accessible to any developer worldwide. Under **Art. 12(1) Rijksoctrooiwet 1995**, publicly available techniques and patterns cannot constitute *bijzondere kennis* (special knowledge intrinsic to the employment role), as they are by definition not proprietary to the employer. Under **Art. 7 Auteurswet**, open-source code that pre-dates and exists independently of the employment relationship cannot be deemed to have been created *in de uitoefening van de dienstbetrekking*. The fact that Employee voluntarily presented Agentic Control at an Axelera company-wide meeting and encouraged colleagues to use it further demonstrates good faith (*goed werknemerschap*, Art. 7:611 BW) and confirms that the sharing of these patterns was an act of voluntary generosity, not a product of employment-directed work.
 
 ---
 
@@ -344,9 +344,9 @@ The counter-proposal (Recital D) acknowledges that Wingman "draws on general dev
 
 | Potential Question | Clarification | Legal Reference |
 |---|---|---|
-| "ChipOS relates to our field of activity" | Field relatedness is insufficient. The test is **task-based**: was creating ChipOS part of Employee's assigned duties? The answer is no. | HR 19 November 1993 (functional connection requirement) |
+| "ChipOS relates to our field of activity" | Field relatedness is insufficient. The test is **task-based**: was creating ChipOS part of Employee's assigned duties? The answer is no. | Established Hoge Raad jurisprudence on Art. 7 Aw (functional connection requirement; see e.g. HR 19 januari 1951, NJ 1952/37) |
 | "Employee used skills learned at Axelera" | General skills and experience are not trade secrets and do not create IP claims. The task-based criterion focuses on what was assigned, not what was learned. | Art. 12(1) Rijksoctrooiwet 1995 (distinguishes bijzondere kennis from general skills) |
-| "Art. 45h gives us ownership of all employee software" | Art. 45h requires "in de uitoefening van zijn dienstbetrekking"; independently developed software is not created in the exercise of employment. | Directive 2009/24/EC Art. 2(3); HR 19 June 2009 (Buma/Chellomedia, richtlijnconforme interpretatie) |
+| "Dutch law gives Axelera ownership of all employee software" | Art. 45h Aw concerns rental rights, not employer copyright. The correct test is Art. 7 Aw, which requires that software was created "in dienst van" the employer as part of assigned duties. ChipOS was not created as part of Employee's duties. | Art. 7 Auteurswet; Directive 2009/24/EC Art. 2(3); established Hoge Raad jurisprudence (functional connection requirement; see e.g. HR 19 januari 1951, NJ 1952/37) |
 | "Employee had a duty of loyalty" | Art. 7:611 BW requires good faith, but not surrender of independently created property. Art. 7:653a BW explicitly protects side activities. | Art. 7:611 BW; Art. 7:653a BW |
 | "Our non-compete clause covers this" | Non-compete clauses regulate competitive activity, not IP ownership. They are separate legal instruments. | Art. 7:653 BW (separate from Art. 7 Aw) |
 | "Wingman proves ChipOS was created for us" | Wingman is a separate product with no runtime ChipOS imports, separate repo, and a completely different architecture. While Wingman applies general patterns from ChipOS (as transparently acknowledged), the existence of a deliverable for Axelera does not retroactively capture pre-existing independent IP. | Separation evidence in Section 3 |
@@ -362,7 +362,7 @@ The counter-proposal (Recital D) acknowledges that Wingman "draws on general dev
 2. **Dedicated Supabase projects** for each product (mandatory, enforced by configuration)
 3. **Isolated Docker networks and volumes** (wingman-network vs chipos-network)
 4. **Non-overlapping port ranges**
-5. **Independence verification script** (`verify-independence.sh`)
+5. **Independence verification methodology** (see Section 3.7 above)
 6. **No shared runtime libraries or submodules**
 
 ### 8.2 Recommended Additional Measures
@@ -412,7 +412,7 @@ Both parties benefit from a clearly scoped addendum that gives Axelera strong Wi
 - **Directive 2019/1152** (Transparent and Predictable Working Conditions), Art. 9: parallel employment
 
 ### Case Law
-- **HR 19 November 1993**: functional connection requirement for Art. 7 Aw
+- **HR 19 januari 1951, NJ 1952/37** (*Van der Laan/Schoonderbeek*): functional connection requirement for Art. 7 Aw. Note: some secondary sources cite "HR 19 November 1993" for this principle; the full ECLI/NJ citation for that reference could not be independently verified and should be confirmed by counsel before use in proceedings.
 - **HR 12 April 2013, ECLI:NL:HR:2013:BY1532** (Stokke/Fikszo, Tripp Trapp): creator principle
 - **HR 19 June 2009, ECLI:NL:HR:2009:BH7602** (Buma/Chellomedia): directive-conforming interpretation
 - **HR 11 July 2008, ECLI:NL:HR:2008:BD1847** (Stoof/Mammoet): employment term modification test

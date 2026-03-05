@@ -41,7 +41,7 @@ I wish to disclose the following side business:
 | **Legal form** | Eenmanszaak (sole proprietorship) |
 | **KvK number** | 99153289 |
 | **Registration date** | 28 November 2024 |
-| **Nature of activities** | A broad portfolio of independent technology projects spanning multiple unrelated domains: **ChipOS** (vendor-neutral semiconductor design orchestration platform), **Swaastik** (healthcare platform designed for 150K+ facilities), **BevyBeats** (music generation), **Zaphy** (LinkedIn networking AI), **Agentic Control** (workflow automation), **SystemVerilogGPT** (RTL generation), **Yuj** (AI wellness/yoga), **Savitri** (mental health CBT/DBT companion), and **AdaptiveVision** (computer vision deployment) |
+| **Nature of activities** | A broad portfolio of independent technology projects spanning multiple unrelated domains: **ChipOS** (vendor-neutral semiconductor design orchestration platform), **Swaastik** (healthcare platform targeting 150K+ facilities, per project specifications), **BevyBeats** (music generation), **Zaphy** (LinkedIn networking AI), **Agentic Control** (workflow automation), **SystemVerilogGPT** (RTL generation), **Yuj** (AI wellness/yoga), **Savitri** (mental health CBT/DBT companion), and **AdaptiveVision** (computer vision deployment) |
 | **Revenue status** | No revenue to date |
 | **Client status** | No external clients to date |
 
@@ -92,7 +92,7 @@ I believe there is no objective ground on which consent could reasonably be with
 
 ### 4.3 Existing Practice at Axelera: Equal Treatment
 
-I note that a significant number of Axelera employees maintain concurrent roles, businesses, and external engagements. Based on publicly available information (LinkedIn, KvK registers), approximately 38 of 111 Axelera employees (34%) hold concurrent positions or operate side businesses, including members of the founding team, senior engineers, and board members holding concurrent executive and advisory roles at other entities.
+I note that a significant number of Axelera employees maintain concurrent roles, businesses, and external engagements. Based on publicly available information (LinkedIn, KvK registers), approximately 38 of 111 Axelera employees (34%) (data based on publicly available sources as of March 2026; methodology and underlying data retained separately and available on request for verification by qualified legal counsel) hold concurrent positions or operate side businesses, including members of the founding team, senior engineers, and board members holding concurrent executive and advisory roles at other entities.
 
 The fact that these arrangements exist, whether formally approved or informally tolerated, establishes a clear practice within Axelera of allowing side activities. I trust that my request will be assessed on the same basis as these existing arrangements, in line with the principle of equal treatment (*gelijke behandeling*) and *goed werkgeverschap* under Art. 7:611 BW.
 
