@@ -11,6 +11,31 @@
 
 ---
 
+## Executive Summary
+
+**What Axelera Gets:**
+- Perpetual, irrevocable, worldwide, exclusive license to Wingman v1.0.0 for Axelera AI accelerator cards
+- Full source code delivery with modification rights
+- Right to distribute Wingman to Axelera customers
+- Independent Wingman operation without ongoing Employee dependency
+
+**What Employee Retains:**
+- ChipOS platform ownership (developed independently as eenmanszaak, registered KvK 99153289)
+- FutureAtoms business continuation for non-competing platforms
+- Right to develop for non-Axelera hardware platforms
+
+**Why This Works for Both Parties:**
+- Axelera receives an autonomous, production-ready Wingman v1.0.0 package
+- The addendum is legally enforceable (compliant with Art. 7:653a BW and Art. 6:248 lid 2 BW)
+- Clear boundaries prevent future disputes over IP ownership
+
+**Compensation:**
+- EUR 14,000 gross one-time payment
+- EUR 10,000 in Stock Appreciation Rights (SARs)
+- Approximately USD 1,400 in documented out-of-pocket expenses
+
+---
+
 ## PARTIES (PARTIJEN)
 
 **1. Employer (Werkgever):**
@@ -44,6 +69,10 @@ F. Employer has proposed an addendum to the employment agreement that, in Employ
 G. This Counter-Proposal seeks to establish a fair and legally compliant arrangement that (i) properly delineates the boundaries between Employee's employment duties and FutureAtoms' independent business activities, (ii) grants Employer appropriate rights to the Wingman application, and (iii) preserves Employee's pre-existing intellectual property rights in ChipOS and FutureAtoms, all in accordance with Dutch law, including but not limited to Book 7 of the Dutch Civil Code (Burgerlijk Wetboek, "BW"), the Dutch Copyright Act (Auteurswet, "Aw"), and the Dutch Patent Act (Rijksoctrooiwet);
 
 H. Parties wish to record their agreements in this Addendum in accordance with the principle of good employment practices (goed werkgeverschap en goed werknemerschap) as set forth in **Article 7:611 BW**;
+
+(I) Both Parties recognize that this arrangement serves their mutual interests: Employer receives an autonomous, production-ready Wingman v1.0.0 package, and Employee retains the ability to continue developing the independently-created ChipOS platform through FutureAtoms;
+
+(J) Both Parties wish to establish a clear, enforceable framework that provides legal certainty and avoids future disputes regarding the ownership and use of software developed by Employee;
 
 **NOW, THEREFORE, the Parties agree as follows:**
 
@@ -120,6 +149,14 @@ A3.4. **Testing and Demonstration Exception (Uitzondering voor Testen en Demonst
    - (c) alter the classification of ChipOS or any FutureAtoms product as Employee's / FutureAtoms' IP under Article A3.2.
 
 A3.5. In the event of any dispute regarding the classification of specific intellectual property under this Article A3, the burden of proof that such IP was created in the performance of employment duties using employer time and equipment shall rest with Employer.
+
+A3.6. **Mixed-Scenario Clarification (Verduidelijking Gemengde Situaties).** In the event that the creation of intellectual property involves elements of both Article A3.1 and Article A3.2 (for example, work performed partly during and partly outside working hours, or using a combination of Employer and Employee resources):
+
+   (a) The intellectual property shall be classified as Employer's IP under Article A3.1 **only if** Employer demonstrates that **both** cumulative conditions (A3.1(a) and A3.1(b)) are satisfied for the **substantial and material part** of the creative work. Incidental or *de minimis* use of Employer time or resources (e.g., a brief test on Employer hardware, reference to a work email) shall not, by itself, satisfy condition A3.1(b).
+
+   (b) Where the creative work cannot reasonably be attributed predominantly to either category, the Parties shall negotiate in good faith to reach a fair allocation of rights, taking into account the relative contributions of each Party's time and resources to the creation of the IP.
+
+   (c) The burden of proof that the cumulative conditions of Article A3.1 are met for the substantial part of the work shall rest with Employer (consistent with Article A3.5).
 
 ---
 
@@ -243,7 +280,13 @@ B3.1. **Vesting of the Wingman License.** The Wingman License shall vest upon sa
    - Use the general knowledge, skills, experience, and know-how acquired during the development of Wingman;
    - (iv) Develop and distribute vendor-neutral tools and platforms that support multiple hardware platforms, including tools that may incidentally support Axelera hardware alongside other vendors' hardware, provided such tools are not marketed or positioned as dedicated Axelera programming tools that would directly replace the Wingman application for the Permitted Purpose;
 
-   **(g) Internal Modifications:**
+   **(g) Relationship to Non-Competition Provisions:**
+   The exclusivity covenant in Article B3.1(a) is a license term governing the scope of commercial exploitation of Wingman v1.0.0 and is not a post-employment non-competition clause (*concurrentiebeding*) within the meaning of Article 7:653 BW. For the avoidance of doubt:
+   - This exclusivity relates solely to standalone applications whose primary purpose is programming Axelera AI accelerator cards and that are substantially based on Wingman v1.0.0 technology;
+   - It does not restrict Employee's right to develop, market, or distribute new, independently-created software products (even if such products support Axelera hardware) provided they are not substantially derived from Wingman v1.0.0;
+   - The post-employment restrictions addressed in Article D1 are separate and independent provisions governed by employment law; the license exclusivity in this Article B3 does not extend, modify, or supplement those provisions.
+
+   **(h) Internal Modifications:**
    Employer may modify Wingman v1.0.0 internally for its own purposes within the scope of the Permitted Purpose. Any such modifications shall not create any obligation on the part of Employee / FutureAtoms to support, maintain, or warrant such modifications.
 
 ---
@@ -256,7 +299,7 @@ B4.1. Employee (acting in his capacity as sole proprietor of FutureAtoms) shall 
    - (c) Training or knowledge transfer beyond the documentation delivered under Article B2.2(c);
    - (d) Integration services or compatibility assurances with future Employer products or systems.
 
-B4.1a. For the avoidance of doubt, any future Wingman development or enhancement work performed by Employee within the scope of Employee's employment duties at Employer shall be the property of Employer under Article A3.1. This provision reflects Employee's commitment to Employer's Wingman product within the employment relationship.
+B4.1a. For the avoidance of doubt, any future Wingman development or enhancement work performed by Employee **within the scope of Employee's regular employment duties** at Employer (i.e., work that Employer directs as part of Employee's day-to-day role and for which Employee receives regular salary compensation) shall be the property of Employer under Article A3.1. This provision applies to routine employment-scope work and does not create an obligation for Employee to perform Wingman development work beyond Employee's agreed role description. For work that falls outside Employee's regular employment duties or that constitutes a discrete development project, Article B4.2 applies.
 
 B4.2. Any future development, maintenance, support, or update services requested by Employer shall be subject to a separate commercial agreement between Employer and Employee (acting in his capacity as sole proprietor of FutureAtoms), to be negotiated in good faith at arm's length terms and market rates.
 
@@ -341,7 +384,7 @@ D1.4. This non-competition obligation shall **automatically terminate** upon the
 
 D1.5. In accordance with **Article 7:653a BW** and established principles of proportionality, Employer may only invoke this restriction to the extent that it is justified by objective reasons and proportionate to the legitimate business interest it seeks to protect, taking into account the employee's interest in unrestricted professional activity.
 
-D1.6. **Supersession of Prior Restrictions (Vervanging Eerdere Bedingen).** This Article D1 is intended to update and align with current legal requirements any prior non-competition clause (*concurrentiebeding*) and/or non-solicitation clause (*relatiebeding*) contained in the original employment agreement between the Parties dated 1 December 2022, or in any prior amendment or addendum thereto. From the effective date of this Addendum, Employee shall have no post-employment non-competition or non-solicitation obligations beyond those set forth in this Article D1.
+D1.6. **Supersession of Prior Restrictions (Vervanging Eerdere Bedingen).** This Article D1 is intended to update and align with current legal requirements any prior non-competition clause (*concurrentiebeding*) and/or non-solicitation clause (*relatiebeding*) contained in the original employment agreement between the Parties dated 1 December 2022, or in any prior amendment or addendum thereto. From the effective date of this Addendum, Employee shall have no post-employment non-competition or non-solicitation obligations beyond those set forth in this Article D1. For the relationship between this Article and the license exclusivity covenant in Article B3.1(a), see Article B3.1(g).
 
 ---
 
@@ -449,7 +492,25 @@ This Addendum has been executed in two (2) counterparts on the date first writte
 
 ---
 
-**DISCLAIMER:** This is an AI-generated document and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet). This document is for informational purposes only and should be reviewed by a qualified Dutch lawyer (advocaat) before use. References to legal provisions should be independently verified.
+**DISCLAIMER:** This is an AI-generated document and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet). This document is for informational purposes only and should be reviewed by a qualified Dutch lawyer (advocaat) before use.
 
-*Generated by the Netherlands AI Lawyer System*
+1. **Is for informational purposes only** and must not be considered a substitute for professional legal advice from a qualified Dutch lawyer (advocaat) registered with the Netherlands Bar Association (Nederlandse Orde van Advocaten).
+
+2. **Is generated by artificial intelligence** and may contain inaccuracies, omissions, or outdated information, despite efforts to consult current and accurate sources.
+
+3. **Does not replace a lawyer.** For legal decisions, proceedings, contracts, or disputes, you must always consult a qualified lawyer authorized to practice law in the Netherlands.
+
+4. **Does not guarantee confidentiality.** Information shared with this AI system is not protected by attorney-client privilege (verschoningsrecht). Do not share confidential or privileged information.
+
+5. **May not reflect current law.** Dutch legislation and case law change continuously. This analysis is based on the state of the law as of the indicated date and may not account for recent amendments.
+
+6. **Cannot be used as evidence** in judicial or administrative proceedings.
+
+7. **Does not guarantee the accuracy** of references to statutory articles, ECLI numbers, or other legal sources. Independently verify all source citations.
+
+**By using this analysis, you acknowledge that you have read and understood this disclaimer and that you do not consider the AI system to be your legal advisor.**
+
+---
+
+*Generated by FALCON (FutureAtoms AI Legal Counsel Of Netherlands)*
 *Date of analysis: 2026-03-04*

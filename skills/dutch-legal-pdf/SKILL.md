@@ -242,7 +242,7 @@ def create_legal_document(filename, title, content_blocks):
     ))
     story.append(Spacer(1, 8))
     story.append(Paragraph(
-        f"Gegenereerd door Netherlands AI Lawyer System | "
+        f"Gegenereerd door FALCON (FutureAtoms AI Legal Counsel Of Netherlands) | "
         f"Datum: {date.today().strftime('%d-%m-%Y')} | "
         f"Verificatiedatum wetgeving: {date.today().strftime('%d-%m-%Y')}",
         styles['LegalFooter']
@@ -368,7 +368,7 @@ pdfimages -j bewijsstuk.pdf images/bewijs
 # Extracts as bewijs-000.jpg, bewijs-001.jpg, etc.
 ```
 
-## Integration with Netherlands AI Lawyer System
+## Integration with FALCON
 
 When generating legal PDFs, leverage the existing legal domain skills:
 

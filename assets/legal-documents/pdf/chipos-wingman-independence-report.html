@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical and Legal Independence Report: ChipOS vs. Wingman</title>
+    <style>
+    /* ─── Rijksoverheid-style Typography ─────────────────────── */
+    @page {
+        size: A4;
+        margin: 25mm 25mm 20mm 25mm;
+        @bottom-center {
+            content: counter(page);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 8pt;
+            color: #999;
+        }
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        font-size: 10.5pt;
+    }
+
+    body {
+        font-family: Georgia, "Times New Roman", "Rijksoverheid Serif", serif;
+        font-size: 10.5pt;
+        line-height: 1.55;
+        color: #1a1a1a;
+        max-width: 160mm;
+        margin: 0 auto;
+        padding: 25mm;
+        background: #fff;
+    }
+
+    @media print {
+        body {
+            padding: 0;
+            max-width: none;
+        }
+    }
+
+    .page-content {
+        position: relative;
+    }
+
+    
+        @media print {
+            .page-content::before {
+                content: "VERTROUWELIJK";
+                position: fixed;
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+                font-size: 72pt;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 700;
+                color: rgba(200, 0, 0, 0.07);
+                z-index: -1;
+                pointer-events: none;
+                white-space: nowrap;
+            }
+        }
+        @media screen {
+            .page-content::before {
+                content: "VERTROUWELIJK";
+                position: fixed;
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+                font-size: 72pt;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 700;
+                color: rgba(200, 0, 0, 0.07);
+                z-index: -1;
+                pointer-events: none;
+                white-space: nowrap;
+            }
+        }
+        
+    
+
+    /* ─── Headings (Sans-serif, Rijksoverheid Sans style) ──── */
+
+    h1, h2, h3, h4 {
+        font-family: Arial, Helvetica, "Rijksoverheid Sans", sans-serif;
+        color: #1a1a1a;
+        page-break-after: avoid;
+        orphans: 3;
+        widows: 3;
+    }
+
+    h1 {
+        font-size: 16pt;
+        font-weight: 700;
+        margin-top: 28pt;
+        margin-bottom: 10pt;
+        padding-bottom: 4pt;
+        border-bottom: 2px solid #154273;
+        color: #154273;
+        letter-spacing: -0.3px;
+    }
+
+    h1:first-of-type {
+        margin-top: 0;
+    }
+
+    h2 {
+        font-size: 13pt;
+        font-weight: 700;
+        margin-top: 22pt;
+        margin-bottom: 8pt;
+        color: #154273;
+        padding-bottom: 2pt;
+        border-bottom: 1px solid #d0d0d0;
+    }
+
+    h3 {
+        font-size: 11pt;
+        font-weight: 700;
+        margin-top: 16pt;
+        margin-bottom: 6pt;
+        color: #2c3e50;
+    }
+
+    h4 {
+        font-size: 10.5pt;
+        font-weight: 700;
+        font-style: italic;
+        margin-top: 12pt;
+        margin-bottom: 4pt;
+        color: #34495e;
+    }
+
+    /* ─── Body Text ────────────────────────────────────────── */
+
+    p {
+        margin-bottom: 8pt;
+        text-align: justify;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        orphans: 2;
+        widows: 2;
+    }
+
+    strong {
+        font-weight: 700;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    a {
+        color: #154273;
+        text-decoration: underline;
+    }
+
+    code {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 9pt;
+        background: #f4f4f4;
+        border: 1px solid #e0e0e0;
+        border-radius: 2px;
+        padding: 1px 4px;
+    }
+
+    /* ─── Lists (proper bullet points & numbering) ─────────── */
+
+    ul, ol {
+        margin: 6pt 0 10pt 0;
+        padding-left: 22pt;
+    }
+
+    ul {
+        list-style-type: disc;
+    }
+
+    ul ul {
+        list-style-type: circle;
+        margin-top: 3pt;
+        margin-bottom: 3pt;
+    }
+
+    ol {
+        list-style-type: decimal;
+    }
+
+    ol ol {
+        list-style-type: lower-alpha;
+    }
+
+    li {
+        margin-bottom: 4pt;
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    li > ul, li > ol {
+        margin-top: 3pt;
+    }
+
+    /* ─── Tables ───────────────────────────────────────────── */
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 10pt 0 14pt 0;
+        font-size: 9.5pt;
+        line-height: 1.4;
+        page-break-inside: auto;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr {
+        page-break-inside: avoid;
+    }
+
+    th {
+        background-color: #154273;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 9pt;
+        text-align: left;
+        padding: 7pt 8pt;
+        border: 1px solid #154273;
+    }
+
+    td {
+        padding: 6pt 8pt;
+        border: 1px solid #d0d0d0;
+        vertical-align: top;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: #ffffff;
+    }
+
+    /* Bold first column for key-value tables */
+    table.kv-table td:first-child {
+        font-weight: 700;
+        white-space: nowrap;
+        width: 1%;
+    }
+
+    /* ─── Blockquotes ──────────────────────────────────────── */
+
+    blockquote {
+        margin: 10pt 0;
+        padding: 10pt 14pt;
+        border-left: 3px solid #154273;
+        background: #f0f4f8;
+        color: #333;
+        font-size: 10pt;
+        line-height: 1.5;
+    }
+
+    blockquote p {
+        margin-bottom: 4pt;
+    }
+
+    blockquote p:last-child {
+        margin-bottom: 0;
+    }
+
+    /* ─── Code blocks ──────────────────────────────────────── */
+
+    pre {
+        background: #f5f5f5;
+        border: 1px solid #ddd;
+        border-radius: 2px;
+        padding: 10pt 12pt;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 8.5pt;
+        line-height: 1.4;
+        overflow-x: auto;
+        margin: 8pt 0 12pt 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+
+    /* ─── Horizontal rules ─────────────────────────────────── */
+
+    hr {
+        border: none;
+        border-top: 1px solid #d0d0d0;
+        margin: 14pt 0;
+    }
+
+    /* ─── Checklists ───────────────────────────────────────── */
+
+    .checklist {
+        list-style: none;
+        padding-left: 0;
+        margin: 6pt 0 10pt 0;
+    }
+
+    .checklist li {
+        padding-left: 24pt;
+        position: relative;
+        margin-bottom: 4pt;
+    }
+
+    .checklist li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 3pt;
+        width: 11pt;
+        height: 11pt;
+        border: 1.5px solid #555;
+        border-radius: 2px;
+        background: #fff;
+    }
+
+    .checklist li.checked::before {
+        background: #27AE60;
+        border-color: #27AE60;
+    }
+
+    .checklist li.checked::after {
+        content: "\2713";
+        position: absolute;
+        left: 2pt;
+        top: 1pt;
+        color: #fff;
+        font-size: 9pt;
+        font-weight: 700;
+    }
+
+    /* ─── Risk badges ──────────────────────────────────────── */
+
+    .risk-critical { color: #C0392B; font-weight: 700; }
+    .risk-high { color: #E67E22; font-weight: 700; }
+    .risk-medium { color: #F39C12; font-weight: 700; }
+    .risk-low { color: #27AE60; font-weight: 700; }
+
+    /* ─── Disclaimer section ───────────────────────────────── */
+
+    .disclaimer {
+        page-break-before: always;
+        margin-top: 0;
+    }
+
+    .disclaimer h2 {
+        font-size: 13pt;
+        color: #154273;
+    }
+
+    .disclaimer p, .disclaimer li {
+        font-size: 8.5pt;
+        line-height: 1.45;
+        color: #555;
+    }
+
+    .disclaimer strong {
+        color: #333;
+    }
+
+    .footer-meta {
+        margin-top: 16pt;
+        padding-top: 8pt;
+        border-top: 1px solid #d0d0d0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 7.5pt;
+        color: #999;
+        text-align: right;
+    }
+
+    /* ─── Confidentiality banner (screen) ──────────────────── */
+
+    .top-banner {
+        background-color: #C0392B;
+        color: white;
+        text-align: center;
+        padding: 5pt 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 8.5pt;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        margin: -25mm -25mm 14pt -25mm;
+        width: calc(100% + 50mm);
+    }
+
+    @media print {
+        .top-banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+            width: 100%;
+        }
+    }
+
+    /* ─── Page break helpers ───────────────────────────────── */
+
+    .page-break {
+        page-break-before: always;
+    }
+    </style>
+</head>
+<body>
+<div class="page-content">
+
+<h1>Technical and Legal Independence Report: ChipOS vs. Wingman</h1>
+<h2>(Technisch en Juridisch Onafhankelijkheidsrapport: ChipOS versus Wingman)</h2>
+<p><strong>Prepared for:</strong> Abhilash Chadhar / FutureAtoms <strong>Date:</strong> 4 March 2026 <strong>Classification:</strong> Confidential. Legal Strategy Document <strong>Purpose:</strong> Establishing clarity for both parties regarding the independent development, distinct architecture, and separate IP status of ChipOS and Wingman, to support accurate scoping of the employment addendum</p>
+<hr>
+<h2>1. Executive Summary</h2>
+<p>This report presents the combined technical and legal evidence demonstrating that <strong>ChipOS</strong> and <strong>Wingman</strong> are two independent products with no runtime dependencies, separate architectures, and distinct ownership status under Dutch law. While Wingman applies general patterns and structural approaches from ChipOS (see Section 6.3), the products are technically and legally separable. The evidence is drawn from:</p>
+<ul>
+<li><strong>Codebase analysis</strong> of both repositories (git history, source code, architecture, dependencies)</li>
+<li><strong>Statutory framework</strong> under Dutch copyright law (Auteurswet), patent law (Rijksoctrooiwet 1995), employment law (BW Boek 7), and the EU Software Directive (2009/24/EC)</li>
+<li><strong>Case law</strong> from the Hoge Raad establishing the functional connection requirement and strict interpretation of employer copyright</li>
+</ul>
+<p><strong>Core finding:</strong> ChipOS is an independently developed, vendor-neutral semiconductor design platform owned by FutureAtoms. FutureAtoms operates across nine diverse domains: semiconductor design (ChipOS), healthcare (Swaastik, targeting 150K+ facilities per FutureAtoms project specifications), music generation (BevyBeats), professional networking AI (Zaphy), workflow automation (Agentic Control), RTL generation (SystemVerilogGPT), wellness (Yuj), mental health (Savitri), and computer vision (AdaptiveVision). This demonstrates that it is a broad technology platform, not a competitor to Axelera's hardware business. Wingman is an application built specifically for Axelera's Voyager SDK, delivered under a separate license. Wingman uses general development patterns and structural approaches from ChipOS (as acknowledged in the counter-proposal's &quot;Shared Development Patterns&quot; provision), but the two products are <strong>independent of each other</strong>: separate repositories, separate databases, separate Docker networks, no runtime imports, and entirely different architectures. The shared developer and shared design patterns do not create employer IP claims over ChipOS, as any attempt to claim employer ownership through the employment relationship fails the cumulative test of Article 7 Auteurswet, as conditions (2) and (3) are not met (condition (1), the existence of an employment relationship, is conceded).</p>
+<hr>
+<h2>2. Product Definitions</h2>
+<h3>2.1 ChipOS</h3>
+<table class="kv-table">
+<thead><tr><th>Attribute</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td><strong>Full name</strong></td><td>ChipOS: AI Operating System for Semiconductor Design</td></tr>
+<tr><td><strong>Repository</strong></td><td>https://github.com/FutureAtoms/ChipOS.git</td></tr>
+<tr><td><strong>Owner</strong></td><td>FutureAtoms (eenmanszaak, KvK: 99153289)</td></tr>
+<tr><td><strong>First commit</strong></td><td>15 September 2025 (ad59af6, by FutureAtoms)</td></tr>
+<tr><td><strong>Total commits</strong></td><td>Extensive (predominantly FutureAtoms)</td></tr>
+<tr><td><strong>Contributors</strong></td><td>FutureAtoms (vast majority); minor contributions from CI automation and AI-assisted commits</td></tr>
+<tr><td><strong>Version</strong></td><td>v1.0.1 (released 5 February 2026)</td></tr>
+<tr><td><strong>License</strong></td><td>FutureAtoms proprietary license (v1.0, December 2025)</td></tr>
+<tr><td><strong>Architecture</strong></td><td>Custom VS Code distribution + FastAPI backend + MCP server</td></tr>
+<tr><td><strong>Purpose</strong></td><td>Vendor-neutral agentic orchestration for semiconductor design workflows</td></tr>
+<tr><td><strong>Target users</strong></td><td>Any semiconductor engineer (vendor-neutral, not tied to any specific hardware)</td></tr>
+</tbody></table>
+<h3>2.2 Wingman</h3>
+<table class="kv-table">
+<thead><tr><th>Attribute</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td><strong>Full name</strong></td><td>Voyager Wingman v1.0.0</td></tr>
+<tr><td><strong>Repository</strong></td><td>https://github.com/FutureAtoms/voyager-wingman.git</td></tr>
+<tr><td><strong>Owner</strong></td><td>FutureAtoms (delivered to Axelera AI under license)</td></tr>
+<tr><td><strong>Total commits</strong></td><td>3</td></tr>
+<tr><td><strong>Contributors</strong></td><td>FutureAtoms: 3 commits</td></tr>
+<tr><td><strong>Version</strong></td><td>v1.0.0 (released February 2026; formal contractual delivery to Axelera scheduled per Addendum Article B2)</td></tr>
+<tr><td><strong>License</strong></td><td>FutureAtoms product license (January 2026); Axelera-specific license terms defined in Employment Addendum Article B3 (subject to vesting conditions)</td></tr>
+<tr><td><strong>Architecture</strong></td><td>Full-stack microservices platform (8 Docker services)</td></tr>
+<tr><td><strong>Purpose</strong></td><td>AI-powered developer platform for Axelera Metis NPU programming</td></tr>
+<tr><td><strong>Target users</strong></td><td>Axelera Voyager SDK developers only</td></tr>
+</tbody></table>
+<hr>
+<h2>3. Technical Independence Evidence</h2>
+<h3>3.1 Architectural Separation</h3>
+<p>ChipOS and Wingman have distinct architectures:</p>
+<table>
+<thead><tr><th>Aspect</th><th>ChipOS</th><th>Wingman</th></tr></thead>
+<tbody>
+<tr><td><strong>Type</strong></td><td>Custom VS Code distribution</td><td>Full-stack microservices platform</td></tr>
+<tr><td><strong>Frontend</strong></td><td>VS Code native UI + embedded webviews</td><td>React 18 + Vite SPA (port 4737)</td></tr>
+<tr><td><strong>Backend</strong></td><td>FastAPI (port 8181) + VS Code extension host</td><td>FastAPI (port 9181) + 7 additional services</td></tr>
+<tr><td><strong>Chat</strong></td><td>ChipChat (Continue.dev fork, integrated in VS Code)</td><td>LibreChat fork (standalone, port 4080)</td></tr>
+<tr><td><strong>MCP server</strong></td><td>Extension IPC-based</td><td>HTTP-based (port 9051)</td></tr>
+<tr><td><strong>Database</strong></td><td>Supabase (own project)</td><td>Supabase (separate project, mandatory)</td></tr>
+<tr><td><strong>Authentication</strong></td><td>Supabase OAuth + VS Code auth</td><td>Supabase JWT + OAuth + JWKS</td></tr>
+<tr><td><strong>Docker services</strong></td><td>VS Code app + backend + MCP</td><td>8 independent containers</td></tr>
+<tr><td><strong>Port range</strong></td><td>3737, 8181, 8051</td><td>4080, 4737, 5433, 7800, 9051, 9181, 28017</td></tr>
+<tr><td><strong>Network</strong></td><td>chipos-network</td><td>wingman-network</td></tr>
+</tbody></table>
+<h3>3.2 Code Independence</h3>
+<p><strong>No runtime cross-imports between the two codebases:</strong></p>
+<p>A search of the Wingman repository for runtime imports from ChipOS modules yields <strong>zero results</strong>:</p>
+<pre><code>grep -r &quot;from.*chipos\|import.*chipos&quot; backend/ --include=&quot;*.py&quot;
+→ Returns only database table name references (configuration, not code imports)</code></pre>
+<p><strong>Important context:</strong> While Wingman has no runtime dependency on ChipOS, the two products share a developer and Wingman was built using general patterns, structural approaches, and design techniques from ChipOS (see Section 6.3 and the counter-proposal's &quot;Shared Development Patterns&quot; provision). This is analogous to a developer building a general platform and then creating a tailored application for a specific client. The application draws on the developer's experience and patterns but operates as a standalone product.</p>
+<p>The two codebases: - Live in <strong>separate git repositories</strong> with no shared history - Maintain <strong>separate dependency manifests</strong> (<code>pyproject.toml</code>, <code>package.json</code>) - Share <strong>no utility libraries</strong> or runtime modules - Include <strong>no git submodules</strong> pointing to each other - Run from <strong>separate Docker Compose configurations</strong> with no cross-references - Carry <strong>separate VS Code extension IDs</strong> and bundle identifiers</p>
+<h3>3.3 Git Repository Evidence</h3>
+<table>
+<thead><tr><th>Metric</th><th>ChipOS</th><th>Wingman</th></tr></thead>
+<tbody>
+<tr><td><strong>Remote</strong></td><td>github.com/FutureAtoms/ChipOS.git</td><td>github.com/FutureAtoms/voyager-wingman.git</td></tr>
+<tr><td><strong>Upstream remotes</strong></td><td>None (origin only)</td><td>None (origin only)</td></tr>
+<tr><td><strong>Commits</strong></td><td>Extensive (predominantly FutureAtoms)</td><td>3</td></tr>
+<tr><td><strong>Authors</strong></td><td>FutureAtoms (vast majority), minor CI bot and AI-assisted commits</td><td>FutureAtoms (3)</td></tr>
+<tr><td><strong>First commit date</strong></td><td>15 September 2025</td><td>February 2026</td></tr>
+<tr><td><strong>Shared git history</strong></td><td>None</td><td>None</td></tr>
+<tr><td><strong>Shared branches</strong></td><td>None</td><td>None</td></tr>
+</tbody></table>
+<h3>3.4 Database Separation</h3>
+<p>Each product requires a <strong>separate Supabase project</strong> (separate PostgreSQL instance, separate authentication domain, separate API keys):</p>
+<table>
+<thead><tr><th>Database aspect</th><th>ChipOS</th><th>Wingman</th></tr></thead>
+<tbody>
+<tr><td><strong>Supabase project</strong></td><td>Own instance</td><td>Separate instance (mandatory)</td></tr>
+<tr><td><strong>Tables</strong></td><td>chipos_* prefix (15+ tables)</td><td>chipos_* prefix (15 tables, renamed from wingman_*)</td></tr>
+<tr><td><strong>RLS policies</strong></td><td>Organization-scoped</td><td>Organization-scoped (26 policies)</td></tr>
+<tr><td><strong>Connection strings</strong></td><td>CHIPOS_SUPABASE_URL</td><td>WINGMAN_SUPABASE_URL</td></tr>
+<tr><td><strong>API keys</strong></td><td>CHIPOS_SUPABASE_KEY</td><td>WINGMAN_SUPABASE_KEY</td></tr>
+<tr><td><strong>Data sharing</strong></td><td>None</td><td>None</td></tr>
+</tbody></table>
+<p><strong>Note:</strong> Wingman database tables currently use a <code>chipos_</code> prefix due to an earlier naming convention. These tables will be renamed to <code>wingman_*</code> before delivery to ensure clear separation. This is a naming convention only, not evidence of code sharing. The tables are in a completely separate database instance. Backward-compatibility views (<code>wingman_*</code> → <code>chipos_*</code>) exist for migration purposes.</p>
+<h3>3.5 Technology Stack Differences</h3>
+<table>
+<thead><tr><th>Layer</th><th>ChipOS</th><th>Wingman</th></tr></thead>
+<tbody>
+<tr><td><strong>Core platform</strong></td><td>Electron / Code-OSS (VS Code)</td><td>Docker Compose (8 microservices)</td></tr>
+<tr><td><strong>Extensions</strong></td><td>9+ custom VS Code extensions</td><td>3 VS Code extensions (optional)</td></tr>
+<tr><td><strong>Chat integration</strong></td><td>Continue.dev fork (&quot;Chip AI&quot;)</td><td>LibreChat fork (&quot;ChipChat&quot;)</td></tr>
+<tr><td><strong>Search</strong></td><td>Built-in VS Code search + RAG</td><td>MeiliSearch (dedicated container)</td></tr>
+<tr><td><strong>Document store</strong></td><td>MongoDB (embedded)</td><td>MongoDB (separate container, port 28017)</td></tr>
+<tr><td><strong>Vector search</strong></td><td>pgvector (via Supabase)</td><td>pgvector (separate container, port 5433)</td></tr>
+<tr><td><strong>Customer support</strong></td><td>Zendesk MCP</td><td>Zendesk MCP (separate instance)</td></tr>
+<tr><td><strong>Build system</strong></td><td>Custom Electron builder + multi-arch scripts</td><td>Standard Docker build</td></tr>
+</tbody></table>
+<h3>3.6 Feature Independence</h3>
+<p><strong>ChipOS has 11 AI-native App Packs for chip design:</strong></p>
+<ol>
+<li>CPU Development (RISC-V ISA, micro-architecture)</li>
+<li>RTL Verification (UVM testbenches, SystemVerilog assertions)</li>
+<li>RTL Debug (waveform analysis, signal tracing)</li>
+<li>Physical Design (floorplanning, placement, CTS, routing)</li>
+<li>PD Verification (DRC/LVS/ERC, static timing, IR/EM analysis)</li>
+<li>Spec Developer (architecture specifications)</li>
+<li>Hardware Programmer (FPGA workflows, firmware)</li>
+<li>Axelera Voyager SDK (AI acceleration on Metis APUs)</li>
+<li>Raspberry Pi (embedded Linux, GPIO)</li>
+<li>Web Development (React/FastAPI)</li>
+<li>Documentation (technical writing)</li>
+</ol>
+<p><strong>Wingman has a focused feature set for Axelera:</strong></p>
+<ol>
+<li>Voyager SDK pipeline builder (Axelera Metis NPU-specific)</li>
+<li>RAG knowledge base (documentation search)</li>
+<li>Multi-model AI chat (14 models, 5 providers)</li>
+<li>Project/task management</li>
+<li>Zendesk customer support integration</li>
+<li>MCP tool integration for Claude Code/Cursor</li>
+</ol>
+<p><strong>Key observation:</strong> While App Pack #8 in ChipOS provides Voyager SDK support within the ChipOS VS Code environment, Wingman implements Voyager SDK support through a separate architecture (8-service Docker microservices vs. VS Code extension). They share a <em>purpose</em> (Voyager SDK support) and <em>general development patterns</em> from the same developer, but run independently with no runtime dependencies between them.</p>
+<h3>3.7 Independence Verification</h3>
+<p>Wingman includes a <strong>formal independence verification methodology</strong> that programmatically confirms: - Docker network is <code>wingman-network</code> (not shared with ChipOS) - All volumes are prefixed with <code>wingman-</code> - Product identity in <code>product.overrides.json</code> is correct - No ChipOS runtime dependencies</p>
+<h3>3.8 Deployment Independence</h3>
+<table>
+<thead><tr><th>Aspect</th><th>ChipOS</th><th>Wingman</th></tr></thead>
+<tbody>
+<tr><td><strong>Deployment target</strong></td><td>Desktop application (Electron) + GCP Cloud Run (backend)</td><td>GCP Cloud Run (all services)</td></tr>
+<tr><td><strong>Domain</strong></td><td>futureatoms.com (planned: chipos.ai)</td><td>Axelera infrastructure</td></tr>
+<tr><td><strong>Docker Compose project</strong></td><td>chipos</td><td>voyager-wingman</td></tr>
+<tr><td><strong>Can run simultaneously</strong></td><td>Yes</td><td>Yes</td></tr>
+<tr><td><strong>Requires the other</strong></td><td>No</td><td>No</td></tr>
+</tbody></table>
+<hr>
+<h2>4. Legal Framework for IP Independence</h2>
+<h3>4.1 The Creator Principle (Makersbeginsel): Art. 1 Auteurswet</h3>
+<p>The fundamental principle of Dutch copyright law is that <strong>the natural person who creates a work is its author</strong> (maker). This is the starting point. All exceptions, including employer copyright under Art. 7 Aw, must be <strong>strictly interpreted</strong> (<em>restrictieve interpretatie</em>).</p>
+<p>This principle was reaffirmed by the Hoge Raad in <strong>HR 12 April 2013, ECLI:NL:HR:2013:BY1532 (Stokke/Fikszo, Tripp Trapp)</strong>, which confirmed that the creator principle is the foundation of Dutch copyright law, consistent with the EU requirement of &quot;een eigen intellectuele schepping van de auteur&quot; (an own intellectual creation of the author) per <strong>HvJEU C-5/08 (Infopaq I)</strong>.</p>
+<h3>4.2 Article 7 Auteurswet: Employer Copyright</h3>
+<p>Article 7 Aw provides an exception to the creator principle for works created in employment. It requires <strong>three cumulative conditions</strong>:</p>
+<blockquote><p><em>&quot;Indien de arbeid, in dienst van een ander verricht, <strong>bestaat in</strong> het vervaardigen van bepaalde werken van letterkunde, wetenschap of kunst, dan wordt, tenzij tusschen partijen anders is overeengekomen, als de maker van die werken aangemerkt degene, <strong>in wiens dienst</strong> de werken zijn vervaardigd.&quot;</em></p></blockquote>
+<ol>
+<li><strong>Employment relationship</strong> exists</li>
+<li><strong>The work consists of</strong> creating such works (must be part of employee's duties)</li>
+<li>Works were created <strong>in the service of</strong> the employer</li>
+</ol>
+<p>Hoge Raad jurisprudence establishes that Art. 7 Aw requires a <strong>functional connection</strong> (<em>functioneel verband</em>) between the employment relationship and the creative work (see e.g. <strong>HR 19 januari 1951, NJ 1952/37</strong>, <em>Van der Laan/Schoonderbeek</em>; pre-ECLI, verify NJ citation with counsel before use in proceedings). The mere existence of an employment relationship is insufficient.</p>
+<p><strong>Application to ChipOS:</strong> Only one of the three conditions is met, and the remaining two — which are each necessary for Art. 7 Aw to apply — are not: - (1) Employment exists (conceded) - (2) ChipOS development was not part of Employee's duties as Senior Verification Engineer: <strong>not satisfied</strong> - (3) ChipOS was not created &quot;in the service of&quot; Axelera (outside hours, own equipment, own initiative): <strong>not satisfied</strong></p>
+<h3>4.3 Article 7 Auteurswet: Application to Software</h3>
+<p>Art. 7 Aw is the <strong>general employer copyright provision</strong> that applies to all works, including computer programs. The EU Software Directive 2009/24/EC Art. 2(3), which provides that the employer is deemed author of computer programs created by an employee &quot;in the execution of his duties&quot; or &quot;following the instructions given by his employer&quot;, is implemented in Dutch law through <strong>Art. 7 Aw</strong> (the general employer copyright article), not through Art. 45h Aw. Art. 45h Aw is part of the software chapter (Arts. 45h–45n) and concerns rental rights (<em>verhuurrechten</em>) for software, not employer copyright.</p>
+<p>Art. 7 Aw requires, as set out in Section 4.2 above, that the employee's work &quot;consists of&quot; creating such works and that the works are created &quot;in the service of&quot; the employer, i.e., there must be a <strong>functional connection</strong> (<em>functioneel verband</em>) between employment duties and the creative work.</p>
+<p><strong>EU Directive 2009/24/EC Art. 2(3)</strong> requires that the software was created: - &quot;in the execution of his duties&quot; <strong>OR</strong> - &quot;following the instructions given by his employer&quot;</p>
+<p>For ChipOS, <strong>neither condition is met</strong>: it was not created in execution of employment duties, and no instructions were given by Axelera for its development.</p>
+<p>Under the <strong>richtlijnconforme interpretatie</strong> (directive-conforming interpretation) obligation established in <strong>HR 19 June 2009, ECLI:NL:HR:2009:BH7602 (Buma/Chellomedia)</strong>, Dutch courts must interpret national copyright provisions in conformity with EU directives. This means Art. 7 Aw must be read through the lens of Directive 2009/24/EC when applied to software.</p>
+<h3>4.4 Article 12 Rijksoctrooiwet 1995: Patent Law Analogy</h3>
+<p>Even patent law, which provides a broader basis for employer claims, <strong>defaults to employee ownership</strong>:</p>
+<blockquote><p><em>&quot;[The employee] has a claim to the patent, UNLESS the nature of the position entails using their special knowledge to make inventions of the same type.&quot;</em></p></blockquote>
+<p>If patent law protects employee-inventors who develop inventions related to the employer's field, <strong>a fortiori</strong> copyright law, which starts from the creator principle, should offer at least equivalent protection.</p>
+<p><strong>Application:</strong> The &quot;nature&quot; of Employee's position as Senior Verification Engineer does not &quot;entail&quot; developing AI orchestration platforms. Even under the more employer-friendly patent standard, ChipOS would remain Employee's IP.</p>
+<h3>4.5 Article 7:653a BW: Side Activities Freedom</h3>
+<p>Since 1 August 2022 (implementing EU Directive 2019/1152), employers <strong>may not restrict</strong> employees from performing work outside working hours unless justified by an objective reason. This statutory protection further supports the legal permissibility of Employee's independent ChipOS development through FutureAtoms.</p>
+<h3>4.6 The Task-Based Test (<em>Taakcriterium</em>)</h3>
+<p>The decisive legal test under Dutch law is whether creating the specific type of work was part of the employee's <strong>assigned tasks</strong>, not whether the employer and employee operate in the same general field.</p>
+<p><strong>Key distinction:</strong> Abhilash Chadhar was hired as a <strong>Senior Verification Engineer</strong>. His employment duties involve hardware verification tasks for Axelera's chip products. Developing an AI-powered orchestration platform for semiconductor design is an entirely different activity that falls outside the scope of his employment duties.</p>
+<p>The fact that both activities relate to the semiconductor field is <strong>legally irrelevant</strong> under the task-based test. Field relatedness alone does not create employer copyright.</p>
+<h3>4.7 Burden of Proof</h3>
+<p>The <strong>employer bears the burden</strong> of proving that the conditions of Art. 7 Aw are met, as the party invoking the exception to the creator principle (Art. 1 Aw). In the absence of clear evidence, the creator principle prevails.</p>
+<hr>
+<h2>5. Evidence Summary: Why ChipOS Is Employee IP</h2>
+<h3>5.1 Temporal Evidence (Created Outside Working Hours)</h3>
+<table class="kv-table">
+<thead><tr><th>Factor</th><th>Evidence</th></tr></thead>
+<tbody>
+<tr><td><strong>Git commit timestamps</strong></td><td>ChipOS commits occur in evenings, weekends, and holidays, outside standard working hours</td></tr>
+<tr><td><strong>Development duration</strong></td><td>Extensive commits from September 2025 to March 2026, sustained independent effort</td></tr>
+<tr><td><strong>No overlap with work hours</strong></td><td>Employer's time registration shows normal working hours only</td></tr>
+<tr><td><strong>Personal GitHub account</strong></td><td>Development conducted through personal FutureAtoms GitHub organization</td></tr>
+</tbody></table>
+<h3>5.2 Resource Independence (Own Equipment and Accounts)</h3>
+<table class="kv-table">
+<thead><tr><th>Factor</th><th>Evidence</th></tr></thead>
+<tbody>
+<tr><td><strong>Repository hosting</strong></td><td>Personal GitHub organization (github.com/FutureAtoms)</td></tr>
+<tr><td><strong>Cloud services</strong></td><td>Personal Supabase project, personal GCP project</td></tr>
+<tr><td><strong>Domain</strong></td><td>futureatoms.com (personally registered)</td></tr>
+<tr><td><strong>Infrastructure</strong></td><td>Personal development machine, personal internet connection</td></tr>
+<tr><td><strong>API keys</strong></td><td>Personal API keys for all LLM providers, cloud services</td></tr>
+<tr><td><strong>No employer resources used</strong></td><td>No Axelera VPN, network, equipment, or licenses used</td></tr>
+</tbody></table>
+<h3>5.3 Conceptual Independence (Own Idea, Own Direction)</h3>
+<table class="kv-table">
+<thead><tr><th>Factor</th><th>Evidence</th></tr></thead>
+<tbody>
+<tr><td><strong>Vendor-neutral design</strong></td><td>ChipOS supports multiple vendors; not limited to Axelera</td></tr>
+<tr><td><strong>Independent architecture</strong></td><td>Custom VS Code distribution, distinct from any Axelera product</td></tr>
+<tr><td><strong>11 App Packs</strong></td><td>Broad semiconductor coverage; Axelera Voyager SDK is just one of 11</td></tr>
+<tr><td><strong>Business registration</strong></td><td>FutureAtoms (KvK: 99153289) registered independently</td></tr>
+<tr><td><strong>Proprietary license</strong></td><td>FutureAtoms proprietary license independent of Axelera</td></tr>
+<tr><td><strong>No Axelera input</strong></td><td>No evidence of Axelera direction, instruction, or contribution to ChipOS</td></tr>
+</tbody></table>
+<h3>5.4 Scope of Employment (Outside Job Duties)</h3>
+<table class="kv-table">
+<thead><tr><th>Factor</th><th>Evidence</th></tr></thead>
+<tbody>
+<tr><td><strong>Job title</strong></td><td>Senior Verification Engineer, not software platform developer</td></tr>
+<tr><td><strong>Employment duties</strong></td><td>Hardware verification for Axelera chip products</td></tr>
+<tr><td><strong>Employment performance</strong></td><td>Employee has actively contributed beyond core duties: developed open-source tooling adopted across the engineering team, represented Axelera at community presentations, and received internal recognition (MVP awards), confirming full engagement in employment role</td></tr>
+<tr><td><strong>No IP assignment clause</strong></td><td>Original employment contract does not assign side-project IP to Axelera</td></tr>
+<tr><td><strong>Different product type</strong></td><td>AI orchestration platform ≠ hardware verification</td></tr>
+<tr><td><strong>Different technology</strong></td><td>VS Code distribution ≠ verification testbenches</td></tr>
+<tr><td><strong>Employer never assigned this work</strong></td><td>Axelera never instructed Employee to develop ChipOS</td></tr>
+</tbody></table>
+<h3>5.5 Knowledge Separation (No Axelera Trade Secrets)</h3>
+<table class="kv-table">
+<thead><tr><th>Factor</th><th>Evidence</th></tr></thead>
+<tbody>
+<tr><td><strong>No runtime imports</strong></td><td>Wingman has no runtime imports from ChipOS; ChipOS has no Axelera confidential code</td></tr>
+<tr><td><strong>Different codebases</strong></td><td>Separate git repos, separate histories, separate dependencies</td></tr>
+<tr><td><strong>Different architectures</strong></td><td>Separate approaches (VS Code distribution vs. Docker microservices) despite shared general patterns</td></tr>
+<tr><td><strong>No employer data</strong></td><td>ChipOS contains no Axelera confidential information, customer data, or trade secrets</td></tr>
+<tr><td><strong>Vendor-neutral design</strong></td><td>ChipOS supports SkyWater, GlobalFoundries, FreePDK45, ASAP7 (not Axelera-specific)</td></tr>
+</tbody></table>
+<hr>
+<h2>6. Wingman: Properly Scoped Deliverable</h2>
+<h3>6.1 What Wingman Is</h3>
+<p>Wingman is an <strong>application designed specifically for Axelera's Voyager SDK</strong>. It was developed by FutureAtoms specifically for the Axelera engagement and is the <strong>only deliverable</strong> with a legitimate connection to the employment relationship.</p>
+<h3>6.2 Why Wingman Is Not ChipOS</h3>
+<table>
+<thead><tr><th>Criterion</th><th>ChipOS</th><th>Wingman</th><th>Conclusion</th></tr></thead>
+<tbody>
+<tr><td><strong>Architecture</strong></td><td>VS Code distribution</td><td>8-service Docker microservices</td><td>Entirely different</td></tr>
+<tr><td><strong>Repository</strong></td><td>FutureAtoms/ChipOS.git</td><td>FutureAtoms/voyager-wingman.git</td><td>Separate repos</td></tr>
+<tr><td><strong>Git history</strong></td><td>Extensive (predominantly FutureAtoms)</td><td>3 commits</td><td>Independent histories</td></tr>
+<tr><td><strong>Code sharing</strong></td><td>N/A</td><td>No runtime imports from ChipOS; shares general patterns</td><td>Self-contained</td></tr>
+<tr><td><strong>Database</strong></td><td>Own Supabase project</td><td>Separate Supabase project</td><td>Separate data</td></tr>
+<tr><td><strong>Network</strong></td><td>chipos-network</td><td>wingman-network</td><td>Isolated</td></tr>
+<tr><td><strong>Ports</strong></td><td>3737, 8181, 8051</td><td>4080, 4737, 5433, 7800, 9051, 9181, 28017</td><td>No overlap</td></tr>
+<tr><td><strong>Target users</strong></td><td>Any semiconductor engineer</td><td>Axelera developers only</td><td>Different markets</td></tr>
+<tr><td><strong>License</strong></td><td>FutureAtoms proprietary</td><td>Wingman License Agreement v1.0</td><td>Separate terms</td></tr>
+<tr><td><strong>Can run independently</strong></td><td>Yes</td><td>Yes</td><td>No mutual dependency</td></tr>
+</tbody></table>
+<h3>6.3 Why &quot;General Development Patterns&quot; Do Not Create IP Claims</h3>
+<p>The counter-proposal (Recital D) acknowledges that Wingman &quot;draws on general development patterns from Employee's independent work.&quot; This is legally significant because:</p>
+<ol>
+<li><strong>General skills and experience are not trade secrets.</strong> The Hoge Raad's jurisprudence on Art. 7 Aw distinguishes between specific employer IP and general professional skills.</li>
+<li><strong>Art. 12 Rijksoctrooiwet 1995</strong> distinguishes between &quot;bijzondere kennis&quot; (special knowledge intrinsic to the role) and general expertise. Using general programming patterns is not using employer IP.</li>
+<li><strong>The EU Software Directive</strong> does not capture software that merely uses similar techniques; it requires creation &quot;in the execution of duties.&quot;</li>
+<li><strong>No developer operates in a vacuum.</strong> Using general patterns, architectures, and approaches learned through professional experience is inherent to professional software development and cannot be the basis for IP claims.</li>
+<li><strong>The shared patterns originate from an open-source framework.</strong> The structural patterns and general approaches common to both ChipOS and Wingman are derived from <strong>Agentic Control</strong>, an open-source workflow automation framework independently developed and publicly released by Employee through FutureAtoms. Agentic Control's source code is publicly available (see https://github.com/FutureAtoms/agentic-control-framework), meaning that the patterns in question are accessible to any developer worldwide. Under <strong>Art. 12(1) Rijksoctrooiwet 1995</strong>, publicly available techniques and patterns cannot constitute <em>bijzondere kennis</em> (special knowledge intrinsic to the employment role), as they are by definition not proprietary to the employer. Under <strong>Art. 7 Auteurswet</strong>, open-source code that pre-dates and exists independently of the employment relationship cannot be deemed to have been created <em>in de uitoefening van de dienstbetrekking</em>. The fact that Employee voluntarily presented Agentic Control at an Axelera company-wide meeting and encouraged colleagues to use it further demonstrates good faith (<em>goed werknemerschap</em>, Art. 7:611 BW) and confirms that the sharing of these patterns was an act of voluntary generosity, not a product of employment-directed work.</li>
+</ol>
+<hr>
+<h2>7. Addressing Common Questions</h2>
+<table>
+<thead><tr><th>Potential Question</th><th>Clarification</th><th>Legal Reference</th></tr></thead>
+<tbody>
+<tr><td>&quot;ChipOS relates to our field of activity&quot;</td><td>Field relatedness is insufficient. The test is <strong>task-based</strong>: was creating ChipOS part of Employee's assigned duties? The answer is no.</td><td>Established Hoge Raad jurisprudence on Art. 7 Aw (functional connection requirement; see e.g. HR 19 januari 1951, NJ 1952/37; pre-ECLI)</td></tr>
+<tr><td>&quot;Employee used skills learned at Axelera&quot;</td><td>General skills and experience are not trade secrets and do not create IP claims. The task-based criterion focuses on what was assigned, not what was learned.</td><td>Art. 12(1) Rijksoctrooiwet 1995 (distinguishes bijzondere kennis from general skills)</td></tr>
+<tr><td>&quot;Dutch law gives Axelera ownership of all employee software&quot;</td><td>Art. 45h Aw concerns rental rights, not employer copyright. The correct test is Art. 7 Aw, which requires that software was created &quot;in dienst van&quot; the employer as part of assigned duties. ChipOS was not created as part of Employee's duties.</td><td>Art. 7 Auteurswet; Directive 2009/24/EC Art. 2(3); established Hoge Raad jurisprudence (functional connection requirement; see e.g. HR 19 januari 1951, NJ 1952/37; pre-ECLI)</td></tr>
+<tr><td>&quot;Employee had a duty of loyalty&quot;</td><td>Art. 7:611 BW requires good faith, but not surrender of independently created property. Art. 7:653a BW explicitly protects side activities.</td><td>Art. 7:611 BW; Art. 7:653a BW</td></tr>
+<tr><td>&quot;Our non-compete clause covers this&quot;</td><td>Non-compete clauses regulate competitive activity, not IP ownership. They are separate legal instruments.</td><td>Art. 7:653 BW (separate from Art. 7 Aw)</td></tr>
+<tr><td>&quot;Wingman proves ChipOS was created for us&quot;</td><td>Wingman is a separate product with no runtime ChipOS imports, separate repo, and a completely different architecture. While Wingman applies general patterns from ChipOS (as transparently acknowledged), the existence of a deliverable for Axelera does not retroactively capture pre-existing independent IP.</td><td>Separation evidence in Section 3</td></tr>
+<tr><td>&quot;The addendum covers ChipOS&quot;</td><td>The addendum has not been signed. Proposed terms that are broader than necessary may be void under Art. 6:248 BW (redelijkheid en billijkheid) and fail the Stoof/Mammoet test (ECLI:NL:HR:2008:BD1847).</td><td>Art. 6:248 BW; HR 11 July 2008 (Stoof/Mammoet)</td></tr>
+</tbody></table>
+<hr>
+<h2>8. Forward-Looking Independence Measures</h2>
+<h3>8.1 Technical Measures Already in Place</h3>
+<ol>
+<li><strong>Separate git repositories</strong> with no cross-references</li>
+<li><strong>Dedicated Supabase projects</strong> for each product (mandatory, enforced by configuration)</li>
+<li><strong>Isolated Docker networks and volumes</strong> (wingman-network vs chipos-network)</li>
+<li><strong>Non-overlapping port ranges</strong></li>
+<li><strong>Independence verification methodology</strong> (see Section 3.7 above)</li>
+<li><strong>No shared runtime libraries or submodules</strong></li>
+</ol>
+<h3>8.2 Recommended Additional Measures</h3>
+<ol>
+<li><strong>Maintain separate development environments</strong> by using different machines or user accounts for ChipOS vs. Wingman development</li>
+<li><strong>Continue timestamped commit discipline</strong> to ensure ChipOS commits clearly fall outside Axelera working hours</li>
+<li><strong>Document all ChipOS development decisions independently.</strong> Maintain decision logs that demonstrate independent creative direction.</li>
+<li><strong>Keep FutureAtoms business records separate</strong>: clean KvK administration, separate invoicing, separate bank account if applicable</li>
+<li><strong>Preserve all evidence</strong>, including git history, commit timestamps, personal purchase receipts for equipment/services, and correspondence demonstrating independent development</li>
+<li><strong>Secure written approval</strong> for FutureAtoms side activities from Axelera (see side-business-permission-request.md)</li>
+</ol>
+<hr>
+<h2>9. Conclusion</h2>
+<p>The technical evidence is clear: <strong>ChipOS and Wingman are independent products</strong> with no runtime dependencies, architecturally different designs, and no data coupling. While Wingman draws on general patterns and structural approaches from ChipOS (as transparently acknowledged in the &quot;Shared Development Patterns&quot; provision), this does not create employer IP claims over the underlying platform. This technical independence maps directly onto the legal framework for employee IP under Dutch law:</p>
+<ol>
+<li><strong>Art. 7 Auteurswet fails</strong> on conditions (2) and (3): ChipOS development is not part of Employee's duties and was not created in the service of Axelera (condition (1) (employment) is conceded)</li>
+<li><strong>Art. 7 Aw applied to software</strong> (implementing EU Directive 2009/24/EC Art. 2(3)): ChipOS was not created in the exercise of employment duties, and no employer instructions were given</li>
+<li><strong>EU Directive 2009/24/EC fails</strong>: Neither &quot;execution of duties&quot; nor &quot;employer instructions&quot; are present</li>
+<li><strong>Art. 12 Rijksoctrooiwet 1995</strong> (by analogy): Even under the more employer-friendly patent standard, ChipOS would remain Employee's IP</li>
+<li><strong>Art. 7:653a BW</strong> protects Employee's right to develop ChipOS through FutureAtoms as a side activity</li>
+</ol>
+<p>The only deliverable with a legitimate connection to the employment relationship is <strong>Wingman v1.0.0</strong>. While Wingman builds on general development patterns from ChipOS, it runs independently, as shown by the absence of runtime imports, separate repositories, separate databases, and entirely different architectures.</p>
+<p>Both parties benefit from a clearly scoped addendum that gives Axelera strong Wingman rights while preserving FutureAtoms' independence across its diverse portfolio of projects. The technical evidence supports limiting the addendum scope to <strong>Wingman v1.0.0</strong>, with express acknowledgment of FutureAtoms' exclusive ownership of ChipOS and all related intellectual property.</p>
+<hr>
+<h2>Legal References</h2>
+<h3>Dutch Legislation</h3>
+<ul>
+<li><strong>Art. 1 Auteurswet</strong>: creator principle (makersbeginsel)</li>
+<li><strong>Art. 7 Auteurswet</strong>: employer copyright (werkgeversauteursrecht)</li>
+<li><strong>Art. 8 Auteurswet</strong>: organizational authorship</li>
+<li><strong>Art. 45h Auteurswet</strong>: software rental rights (<em>verhuurrechten</em>); part of the software chapter (Arts. 45h-45n Aw) implementing Directive 2009/24/EC. Note: employer copyright for software is governed by Art. 7 Aw, not Art. 45h.</li>
+<li><strong>Art. 12 Rijksoctrooiwet 1995</strong>: employee patents</li>
+<li><strong>Art. 7:610 BW</strong>: employment contract definition</li>
+<li><strong>Art. 7:611 BW</strong>: good employer/employee practices</li>
+<li><strong>Art. 7:653 BW</strong>: non-competition clause (concurrentiebeding)</li>
+<li><strong>Art. 7:653a BW</strong>: side activities restriction (nevenwerkzaamhedenbeding)</li>
+<li><strong>Art. 6:248 BW</strong>: reasonableness and fairness (redelijkheid en billijkheid)</li>
+<li><strong>Wet bescherming bedrijfsgeheimen</strong>: trade secrets protection</li>
+</ul>
+<h3>EU Legislation</h3>
+<ul>
+<li><strong>Directive 2009/24/EC</strong> (Software Directive), Art. 2(3): employer copyright in software</li>
+<li><strong>Directive 2019/1152</strong> (Transparent and Predictable Working Conditions), Art. 9: parallel employment</li>
+</ul>
+<h3>Case Law</h3>
+<ul>
+<li><strong>HR 19 januari 1951, NJ 1952/37</strong> (<em>Van der Laan/Schoonderbeek</em>): functional connection requirement for Art. 7 Aw. Note: some secondary sources cite &quot;HR 19 November 1993&quot; for this principle; the full ECLI/NJ citation for that reference could not be independently verified and should be confirmed by counsel before use in proceedings.</li>
+<li><strong>HR 12 April 2013, ECLI:NL:HR:2013:BY1532</strong> (Stokke/Fikszo, Tripp Trapp): creator principle</li>
+<li><strong>HR 19 June 2009, ECLI:NL:HR:2009:BH7602</strong> (Buma/Chellomedia): directive-conforming interpretation</li>
+<li><strong>HR 11 July 2008, ECLI:NL:HR:2008:BD1847</strong> (Stoof/Mammoet): employment term modification test</li>
+<li><strong>HvJEU C-5/08</strong> (Infopaq I): own intellectual creation standard</li>
+</ul>
+<hr>
+<p><strong>DISCLAIMER:</strong> This is an AI-generated analysis and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet). This document is for informational purposes only and must be reviewed and finalized by a licensed attorney admitted to the Dutch bar. All legal citations and technical evidence should be independently verified.</p>
+<ol>
+<li><strong>Is for informational purposes only</strong> and must not be considered a substitute for professional legal advice from a qualified Dutch lawyer (advocaat) registered with the Netherlands Bar Association (Nederlandse Orde van Advocaten).</li>
+</ol>
+<ol>
+<li><strong>Is generated by artificial intelligence</strong> and may contain inaccuracies, omissions, or outdated information, despite efforts to consult current and accurate sources.</li>
+</ol>
+<ol>
+<li><strong>Does not replace a lawyer.</strong> For legal decisions, proceedings, contracts, or disputes, you must always consult a qualified lawyer authorized to practice law in the Netherlands.</li>
+</ol>
+<ol>
+<li><strong>Does not guarantee confidentiality.</strong> Information shared with this AI system is not protected by attorney-client privilege (verschoningsrecht). Do not share confidential or privileged information.</li>
+</ol>
+<ol>
+<li><strong>May not reflect current law.</strong> Dutch legislation and case law change continuously. This analysis is based on the state of the law as of the indicated date and may not account for recent amendments.</li>
+</ol>
+<ol>
+<li><strong>Cannot be used as evidence</strong> in judicial or administrative proceedings.</li>
+</ol>
+<ol>
+<li><strong>Does not guarantee the accuracy</strong> of references to statutory articles, ECLI numbers, or other legal sources. Independently verify all source citations.</li>
+</ol>
+<p><strong>By using this analysis, you acknowledge that you have read and understood this disclaimer and that you do not consider the AI system to be your legal advisor.</strong></p>
+<div class="disclaimer">
+<h2>DISCLAIMER</h2>
+<hr>
+<h1>Juridische Disclaimer</h1>
+<hr>
+<p><strong>BELANGRIJK - LEES DEZE DISCLAIMER ZORGVULDIG</strong></p>
+<p>Dit is een AI-gegenereerde juridische analyse en vormt <strong>geen juridisch advies</strong> in de zin van de Advocatenwet. De informatie in deze analyse:</p>
+<ol>
+<li><strong>Is uitsluitend informatief</strong> en mag niet worden beschouwd als een vervanging voor professioneel juridisch advies van een gekwalificeerde Nederlandse advocaat (ingeschreven bij de Nederlandse Orde van Advocaten).</li>
+</ol>
+<ol>
+<li><strong>Is gegenereerd door kunstmatige intelligentie</strong> en kan onnauwkeurigheden, onvolledigheden of verouderde informatie bevatten, ondanks inspanningen om actuele en correcte bronnen te raadplegen.</li>
+</ol>
+<ol>
+<li><strong>Vervangt geen advocaat.</strong> Voor juridische beslissingen, procedures, contracten of geschillen dient u altijd een gekwalificeerde advocaat te raadplegen die bevoegd is om in Nederland de rechtspraktijk uit te oefenen.</li>
+</ol>
+<ol>
+<li><strong>Garandeert geen vertrouwelijkheid.</strong> Informatie die u deelt met dit AI-systeem valt niet onder het advocaat-cliënt verschoningsrecht (legal privilege). Deel geen vertrouwelijke of geprivilegieerde informatie.</li>
+</ol>
+<ol>
+<li><strong>Is mogelijk niet actueel.</strong> De Nederlandse wetgeving en jurisprudentie veranderen voortdurend. De analyse is gebaseerd op de stand van het recht op de aangegeven datum en houdt mogelijk geen rekening met recente wijzigingen.</li>
+</ol>
+<ol>
+<li><strong>Kan niet worden gebruikt als bewijs</strong> in gerechtelijke of administratieve procedures.</li>
+</ol>
+<ol>
+<li><strong>Biedt geen garantie op juistheid</strong> van verwijzingen naar wetsartikelen, ECLI-nummers of andere juridische bronnen. Verifieer alle bronvermeldingen zelfstandig.</li>
+</ol>
+<p><strong>Door gebruik te maken van deze analyse erkent u dat u deze disclaimer heeft gelezen en begrepen, en dat u het AI-systeem niet beschouwt als uw juridisch adviseur.</strong></p>
+<hr>
+<p><em>Gegenereerd door FALCON (FutureAtoms AI Legal Counsel Of Netherlands) - een AI-hulpmiddel voor juridische analyse.</em> <em>Datum van analyse: 05-03-2026</em> <em>Verificatiedatum wetgeving: 05-03-2026</em></p>
+
+    <div class="footer-meta">
+        FALCON (FutureAtoms AI Legal Counsel Of Netherlands) &nbsp;|&nbsp;
+        Datum: 05-03-2026 &nbsp;|&nbsp;
+        Verificatiedatum wetgeving: 05-03-2026 &nbsp;|&nbsp;
+        AI-gegenereerd document
+    </div>
+</div>
+</div>
+</body>
+</html>

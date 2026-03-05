@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axelera AI Dual-Roles Precedent Report</title>
+    <style>
+    /* ─── Rijksoverheid-style Typography ─────────────────────── */
+    @page {
+        size: A4;
+        margin: 25mm 25mm 20mm 25mm;
+        @bottom-center {
+            content: counter(page);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 8pt;
+            color: #999;
+        }
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        font-size: 10.5pt;
+    }
+
+    body {
+        font-family: Georgia, "Times New Roman", "Rijksoverheid Serif", serif;
+        font-size: 10.5pt;
+        line-height: 1.55;
+        color: #1a1a1a;
+        max-width: 160mm;
+        margin: 0 auto;
+        padding: 25mm;
+        background: #fff;
+    }
+
+    @media print {
+        body {
+            padding: 0;
+            max-width: none;
+        }
+    }
+
+    .page-content {
+        position: relative;
+    }
+
+    
+        @media print {
+            .page-content::before {
+                content: "STRIKT VERTROUWELIJK";
+                position: fixed;
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+                font-size: 72pt;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 700;
+                color: rgba(200, 0, 0, 0.07);
+                z-index: -1;
+                pointer-events: none;
+                white-space: nowrap;
+            }
+        }
+        @media screen {
+            .page-content::before {
+                content: "STRIKT VERTROUWELIJK";
+                position: fixed;
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+                font-size: 72pt;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 700;
+                color: rgba(200, 0, 0, 0.07);
+                z-index: -1;
+                pointer-events: none;
+                white-space: nowrap;
+            }
+        }
+        
+    
+        .conf-banner {
+            background-color: #C0392B;
+            color: white;
+            text-align: center;
+            padding: 6px 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 9pt;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            position: running(banner);
+        }
+        @page {
+            @top-center {
+                content: element(banner);
+            }
+        }
+        
+
+    /* ─── Headings (Sans-serif, Rijksoverheid Sans style) ──── */
+
+    h1, h2, h3, h4 {
+        font-family: Arial, Helvetica, "Rijksoverheid Sans", sans-serif;
+        color: #1a1a1a;
+        page-break-after: avoid;
+        orphans: 3;
+        widows: 3;
+    }
+
+    h1 {
+        font-size: 16pt;
+        font-weight: 700;
+        margin-top: 28pt;
+        margin-bottom: 10pt;
+        padding-bottom: 4pt;
+        border-bottom: 2px solid #154273;
+        color: #154273;
+        letter-spacing: -0.3px;
+    }
+
+    h1:first-of-type {
+        margin-top: 0;
+    }
+
+    h2 {
+        font-size: 13pt;
+        font-weight: 700;
+        margin-top: 22pt;
+        margin-bottom: 8pt;
+        color: #154273;
+        padding-bottom: 2pt;
+        border-bottom: 1px solid #d0d0d0;
+    }
+
+    h3 {
+        font-size: 11pt;
+        font-weight: 700;
+        margin-top: 16pt;
+        margin-bottom: 6pt;
+        color: #2c3e50;
+    }
+
+    h4 {
+        font-size: 10.5pt;
+        font-weight: 700;
+        font-style: italic;
+        margin-top: 12pt;
+        margin-bottom: 4pt;
+        color: #34495e;
+    }
+
+    /* ─── Body Text ────────────────────────────────────────── */
+
+    p {
+        margin-bottom: 8pt;
+        text-align: justify;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        orphans: 2;
+        widows: 2;
+    }
+
+    strong {
+        font-weight: 700;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    a {
+        color: #154273;
+        text-decoration: underline;
+    }
+
+    code {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 9pt;
+        background: #f4f4f4;
+        border: 1px solid #e0e0e0;
+        border-radius: 2px;
+        padding: 1px 4px;
+    }
+
+    /* ─── Lists (proper bullet points & numbering) ─────────── */
+
+    ul, ol {
+        margin: 6pt 0 10pt 0;
+        padding-left: 22pt;
+    }
+
+    ul {
+        list-style-type: disc;
+    }
+
+    ul ul {
+        list-style-type: circle;
+        margin-top: 3pt;
+        margin-bottom: 3pt;
+    }
+
+    ol {
+        list-style-type: decimal;
+    }
+
+    ol ol {
+        list-style-type: lower-alpha;
+    }
+
+    li {
+        margin-bottom: 4pt;
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    li > ul, li > ol {
+        margin-top: 3pt;
+    }
+
+    /* ─── Tables ───────────────────────────────────────────── */
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 10pt 0 14pt 0;
+        font-size: 9.5pt;
+        line-height: 1.4;
+        page-break-inside: auto;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr {
+        page-break-inside: avoid;
+    }
+
+    th {
+        background-color: #154273;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 9pt;
+        text-align: left;
+        padding: 7pt 8pt;
+        border: 1px solid #154273;
+    }
+
+    td {
+        padding: 6pt 8pt;
+        border: 1px solid #d0d0d0;
+        vertical-align: top;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: #ffffff;
+    }
+
+    /* Bold first column for key-value tables */
+    table.kv-table td:first-child {
+        font-weight: 700;
+        white-space: nowrap;
+        width: 1%;
+    }
+
+    /* ─── Blockquotes ──────────────────────────────────────── */
+
+    blockquote {
+        margin: 10pt 0;
+        padding: 10pt 14pt;
+        border-left: 3px solid #154273;
+        background: #f0f4f8;
+        color: #333;
+        font-size: 10pt;
+        line-height: 1.5;
+    }
+
+    blockquote p {
+        margin-bottom: 4pt;
+    }
+
+    blockquote p:last-child {
+        margin-bottom: 0;
+    }
+
+    /* ─── Code blocks ──────────────────────────────────────── */
+
+    pre {
+        background: #f5f5f5;
+        border: 1px solid #ddd;
+        border-radius: 2px;
+        padding: 10pt 12pt;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 8.5pt;
+        line-height: 1.4;
+        overflow-x: auto;
+        margin: 8pt 0 12pt 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+
+    /* ─── Horizontal rules ─────────────────────────────────── */
+
+    hr {
+        border: none;
+        border-top: 1px solid #d0d0d0;
+        margin: 14pt 0;
+    }
+
+    /* ─── Checklists ───────────────────────────────────────── */
+
+    .checklist {
+        list-style: none;
+        padding-left: 0;
+        margin: 6pt 0 10pt 0;
+    }
+
+    .checklist li {
+        padding-left: 24pt;
+        position: relative;
+        margin-bottom: 4pt;
+    }
+
+    .checklist li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 3pt;
+        width: 11pt;
+        height: 11pt;
+        border: 1.5px solid #555;
+        border-radius: 2px;
+        background: #fff;
+    }
+
+    .checklist li.checked::before {
+        background: #27AE60;
+        border-color: #27AE60;
+    }
+
+    .checklist li.checked::after {
+        content: "\2713";
+        position: absolute;
+        left: 2pt;
+        top: 1pt;
+        color: #fff;
+        font-size: 9pt;
+        font-weight: 700;
+    }
+
+    /* ─── Risk badges ──────────────────────────────────────── */
+
+    .risk-critical { color: #C0392B; font-weight: 700; }
+    .risk-high { color: #E67E22; font-weight: 700; }
+    .risk-medium { color: #F39C12; font-weight: 700; }
+    .risk-low { color: #27AE60; font-weight: 700; }
+
+    /* ─── Disclaimer section ───────────────────────────────── */
+
+    .disclaimer {
+        page-break-before: always;
+        margin-top: 0;
+    }
+
+    .disclaimer h2 {
+        font-size: 13pt;
+        color: #154273;
+    }
+
+    .disclaimer p, .disclaimer li {
+        font-size: 8.5pt;
+        line-height: 1.45;
+        color: #555;
+    }
+
+    .disclaimer strong {
+        color: #333;
+    }
+
+    .footer-meta {
+        margin-top: 16pt;
+        padding-top: 8pt;
+        border-top: 1px solid #d0d0d0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 7.5pt;
+        color: #999;
+        text-align: right;
+    }
+
+    /* ─── Confidentiality banner (screen) ──────────────────── */
+
+    .top-banner {
+        background-color: #C0392B;
+        color: white;
+        text-align: center;
+        padding: 5pt 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 8.5pt;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        margin: -25mm -25mm 14pt -25mm;
+        width: calc(100% + 50mm);
+    }
+
+    @media print {
+        .top-banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+            width: 100%;
+        }
+    }
+
+    /* ─── Page break helpers ───────────────────────────────── */
+
+    .page-break {
+        page-break-before: always;
+    }
+    </style>
+</head>
+<body>
+<div class="page-content">
+<div class="top-banner">STRICTLY CONFIDENTIAL — FOR INTERNAL USE ONLY</div>
+<blockquote><p><strong>STRICTLY CONFIDENTIAL: THIS DOCUMENT MUST NOT BE SHARED WITH AXELERA AI OR ITS LEGAL REPRESENTATIVES</strong></p><p><strong>FOR INTERNAL USE ONLY. Legal strategy document prepared exclusively for Abhilash Chadhar.</strong></p></blockquote>
+<h1>Axelera AI Dual-Roles Precedent Report</h1>
+<h2>Equal Treatment Analysis under Article 7:653a BW</h2>
+<p><strong>Date:</strong> 4 March 2026 <strong>Prepared for:</strong> Abhilash Chadhar <strong>Subject:</strong> Organizational Precedent for Concurrent Roles and Side Businesses at Axelera AI <strong>Classification:</strong> Confidential. Internal Strategy Document</p>
+<hr>
+<h2>1. Executive Summary</h2>
+<ul>
+<li><strong>38 of 111 Axelera AI employees (34%)</strong> have concurrent roles, businesses, or external positions, based on publicly available data (LinkedIn profiles, KvK registrations, public corporate filings) reviewed in March 2026; supporting documentation available on request</li>
+<li>This includes founding team members, senior leadership, and technical staff at all levels</li>
+<li>Refusing FutureAtoms while tolerating these 38 cases would raise a strong argument of unequal treatment, subject to Axelera's ability to demonstrate objective justification or that it was unaware of the other arrangements</li>
+<li><strong>Article 7:653a BW</strong> (effective 1 August 2022) prohibits ancillary activities clauses without objective justification</li>
+<li>Based on publicly available data, concurrent roles appear to be a common practice at Axelera AI, though the extent of formal employer awareness or approval is not independently verified</li>
+</ul>
+<blockquote><p><strong>INTERNAL USE ONLY:</strong> This document is prepared exclusively for internal strategic purposes. The data and analysis herein should not be shared with Axelera AI, its legal department, or any external party. The information is intended to inform the employee's negotiation strategy and legal position assessment only.</p></blockquote>
+<blockquote><p><strong>Sharing guidance:</strong> While this document and its analysis must not be shared externally, the aggregate statistic (34% of employees maintaining concurrent roles) is derived from publicly available sources and may be referenced in external communications (e.g., the FutureAtoms side business permission request). Only the underlying named data, anonymized case studies, and strategic analysis in this document are confidential.</p></blockquote>
+<hr>
+<h2>2. Background</h2>
+<p>Abhilash Chadhar, a Senior Verification Engineer at Axelera AI, is requesting permission for his side business <strong>FutureAtoms</strong>. Research into publicly available data (LinkedIn profiles, Dutch Chamber of Commerce registrations, and public corporate filings) reveals that <strong>38 of 111 Axelera employees (34%)</strong> already maintain concurrent roles or businesses. Data source: publicly available information (LinkedIn profiles, Dutch Chamber of Commerce registrations, and public corporate filings) as of March 2026. Methodology documentation and underlying data are retained separately and available for verification by qualified legal counsel if required. This document analyzes that finding and its legal implications under Dutch employment law.</p>
+<hr>
+<h2>3. Key Individual Cases</h2>
+<blockquote><p><strong>Note on anonymization:</strong> In compliance with GDPR Art. 5(1)(c) (data minimization), the individual cases below use anonymized role descriptions rather than names. The underlying data is derived from publicly available sources (LinkedIn, KvK) and is retained separately for use by qualified legal counsel if formal proceedings require identification. This anonymized presentation is equally effective as evidence of organizational precedent (see Section 8, Recommendation 2).</p></blockquote>
+<h3>3.1 Comparator A: Founding Team Member (Senior Technical Role)</h3>
+<ul>
+<li><strong>Position at Axelera:</strong> Founding team member in a senior technical role</li>
+<li><strong>Concurrent business:</strong> Registered technology company</li>
+<li><strong>Nature:</strong> Technology-related business</li>
+<li><strong>Significance:</strong> A founding team member with the highest technical authority maintains a concurrent technology company. Of all identified cases, this one carries the most weight: even the most senior and trusted technical leaders maintain parallel businesses in the same technology domain without enforcement action by Axelera. If the founding team itself maintains side businesses without restriction, there is no principled basis for denying the same to other employees.</li>
+</ul>
+<h3>3.2 Comparator B: Senior Engineer (Peer Level)</h3>
+<ul>
+<li><strong>Position at Axelera:</strong> Senior engineering role at peer level</li>
+<li><strong>Concurrent business:</strong> Registered software development company</li>
+<li><strong>Nature:</strong> Software development</li>
+<li><strong>Significance:</strong> This colleague holds a similar seniority level to Abhilash and operates a software development business alongside their Axelera employment, making this the closest parallel to FutureAtoms. If Axelera has not enforced restrictions against a senior engineer running a software development business, there is no objective basis for prohibiting another senior engineer from operating FutureAtoms.</li>
+</ul>
+<h3>3.3 Comparator C: Employee with Consultancy</h3>
+<ul>
+<li><strong>Position at Axelera:</strong> Employee</li>
+<li><strong>Concurrent business:</strong> Registered consultancy</li>
+<li><strong>Nature:</strong> Consulting</li>
+<li><strong>Significance:</strong> Another Axelera employee operating a consultancy alongside their employment. This adds to the pattern showing that side businesses are accepted practice within the organization.</li>
+</ul>
+<h3>3.4 Board Members with Concurrent Positions</h3>
+<ul>
+<li>Multiple board members hold concurrent executive roles at other companies</li>
+<li>This is common in Dutch corporate governance but establishes that <strong>Axelera's culture accepts dual roles at the highest levels</strong></li>
+<li>Board-level acceptance of concurrent positions sets the cultural and governance tone for the entire organization</li>
+</ul>
+<hr>
+<h2>4. Statistical Overview</h2>
+<table>
+<thead><tr><th>Category</th><th>Count</th><th>Percentage</th></tr></thead>
+<tbody>
+<tr><td>Total Axelera employees surveyed</td><td>111</td><td>100%</td></tr>
+<tr><td>Employees with concurrent roles/businesses (per public data review, March 2026; see Section 2)</td><td>38</td><td>34%</td></tr>
+<tr><td>Employees without known concurrent roles</td><td>73</td><td>66%</td></tr>
+</tbody></table>
+<h3>Types of Concurrent Activities Identified</h3>
+<ul>
+<li>Active business registrations (KvK)</li>
+<li>Consulting practices</li>
+<li>Technology companies</li>
+<li>Board positions at other entities</li>
+<li>Advisory roles</li>
+<li>Academic positions</li>
+<li>Freelance/contractor work through personal entities</li>
+</ul>
+<h3>Distribution Across Seniority Levels</h3>
+<p>The 38 employees with concurrent roles span all levels of the organization:</p>
+<ul>
+<li><strong>Founding team members</strong>, including Principal-level technical architects</li>
+<li><strong>Senior leadership</strong>, such as board members and executives with concurrent directorships</li>
+<li><strong>Senior engineers and technical staff</strong>: individual contributors operating side businesses</li>
+<li><strong>Mid-level employees</strong> with consulting practices and advisory roles</li>
+</ul>
+<p>This broad distribution shows that dual roles are not merely tolerated at the executive level but are embedded throughout the organizational culture.</p>
+<hr>
+<h2>5. Legal Analysis</h2>
+<h3>5.1 Article 7:653a BW (Ancillary Activities Clause / Nevenwerkzaamhedenbeding)</h3>
+<p>Article 7:653a of the Dutch Civil Code (Burgerlijk Wetboek), effective since <strong>1 August 2022</strong>, implements EU Directive 2019/1152 on transparent and predictable working conditions. Key provisions:</p>
+<ul>
+<li><strong>Lid 1:</strong> A clause that prohibits an employee from performing work for others outside working hours is <strong>VOID</strong> unless the employer has an <strong>&quot;objective justification&quot;</strong> (<em>objectieve rechtvaardigingsgrond</em>).</li>
+<li><strong>The employer must demonstrate the justification AT THE TIME of invoking the clause</strong>, not retroactively.</li>
+<li>Examples of valid objective justification recognized in parliamentary history (<em>Kamerstukken</em>):</li>
+<li>Health and safety concerns</li>
+<li>Protection of business confidentiality</li>
+<li>Avoiding genuine conflicts of interest</li>
+<li>Compliance with sector-specific legislation (e.g., working time regulations)</li>
+<li>A <strong>blanket prohibition</strong> on all side activities is almost certainly void under this provision.</li>
+<li>The justification must be <strong>proportionate</strong> to the restriction imposed.</li>
+</ul>
+<h3>5.2 Equal Treatment Argument (Gelijke Behandeling)</h3>
+<ul>
+<li>If Axelera was aware of and tolerated <strong>38 employees</strong> maintaining concurrent roles but refuses Abhilash, this would give rise to a strong argument of <strong>unequal treatment</strong> (<em>ongelijke behandeling</em>). The strength of this argument depends on whether Axelera can demonstrate it was genuinely unaware of the other arrangements or had objective grounds for distinguishing those cases.</li>
+<li>When invoking a restriction under Art. 7:653a BW, the employer bears the burden of demonstrating an <strong>&quot;objective justification&quot;</strong> for the restriction (Art. 7:653a lid 1 BW).</li>
+<li>FutureAtoms (no revenue, no external clients, different product scope) poses <strong>LESS competitive risk</strong> than many of the 38 existing cases.</li>
+<li>The principle of <em>goed werkgeverschap</em> (good employer practice) under Article 7:611 BW requires consistent and fair treatment of employees in comparable situations.</li>
+<li>Selective enforcement of a side activities clause against one employee while tolerating violations by 38 others would, if employer awareness can be established, be difficult to defend as reasonable before a Dutch court (<em>kantonrechter</em>).</li>
+</ul>
+<p><strong>Important caveat:</strong> This equal treatment argument is most effective if used to inform our own negotiation strategy rather than presented directly as a confrontational argument. The data confirms the reasonableness of allowing FutureAtoms, without needing to name specific colleagues.</p>
+<h3>5.3 Anti-Retaliation Protection (EU Directive 2019/1152 Art. 17)</h3>
+<ul>
+<li>EU Directive 2019/1152 Art. 17 provides that Member States shall ensure that employees are not subjected to adverse treatment by their employer for exercising rights under the Directive, including the right to parallel employment under Art. 9.</li>
+<li>The Dutch implementation of this Directive (of which Art. 7:653a BW forms part) is intended to include anti-retaliation protections, although the precise domestic mechanism may involve general principles of good employer practice (Art. 7:611 BW) and reasonableness and fairness (Art. 6:248 BW).</li>
+<li>Refusing FutureAtoms approval <strong>AFTER</strong> the employee asserts this right could, depending on the circumstances, be argued to constitute adverse treatment within the meaning of Art. 17 of the Directive.</li>
+<li>This protection would extend to informal disadvantages such as negative performance reviews, exclusion from projects, or hostile treatment.</li>
+</ul>
+<h3>5.4 Original Employment Agreement: Clause 13</h3>
+<ul>
+<li>Requires prior written consent (<em>voorafgaande schriftelijke toestemming</em>) for side activities.</li>
+<li>Consent <strong>&quot;shall not be unreasonably withheld on objective grounds&quot;</strong> (<em>niet op onredelijke gronden worden geweigerd</em>).</li>
+<li>Given the <strong>34% precedent</strong> (subject to verification of employer awareness), withholding consent for FutureAtoms would face a significant challenge on the &quot;unreasonableness&quot; (<em>onredelijkheid</em>) standard, particularly where FutureAtoms poses objectively less risk than the tolerated cases.</li>
+<li>The &quot;objective grounds&quot; requirement mirrors the standard in Article 7:653a BW, creating a double legal protection for the employee.</li>
+</ul>
+<h3>5.5 Good Employer Practice (Article 7:611 BW)</h3>
+<ul>
+<li>Dutch law imposes on employers a duty of <em>goed werkgeverschap</em> (acting as a good employer).</li>
+<li>This includes consistent policy application, proportionality, and fair treatment.</li>
+<li>Tolerating 34% of the workforce maintaining side activities while denying one specific employee is inconsistent and therefore potentially a breach of this duty.</li>
+</ul>
+<hr>
+<h2>6. Comparison: FutureAtoms vs. Permitted Cases</h2>
+<p>FutureAtoms operates across nine diverse technology domains, the vast majority of which have no connection to Axelera's semiconductor hardware business:</p>
+<table>
+<thead><tr><th>#</th><th>Project</th><th>Domain</th><th>Relevance to Axelera</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>ChipOS</td><td>Semiconductor design OS</td><td>Vendor-neutral; not Axelera-specific</td></tr>
+<tr><td>2</td><td>Swaastik</td><td>Healthcare platform (targeting 150K+ facilities, per project specifications)</td><td>None</td></tr>
+<tr><td>3</td><td>BevyBeats</td><td>Music generation</td><td>None</td></tr>
+<tr><td>4</td><td>Zaphy</td><td>LinkedIn networking AI</td><td>None</td></tr>
+<tr><td>5</td><td>Agentic Control</td><td>Workflow automation</td><td>None</td></tr>
+<tr><td>6</td><td>SystemVerilogGPT</td><td>RTL generation</td><td>None (vendor-neutral)</td></tr>
+<tr><td>7</td><td>Yuj</td><td>AI wellness/yoga</td><td>None</td></tr>
+<tr><td>8</td><td>Savitri</td><td>Mental health CBT/DBT companion</td><td>None</td></tr>
+<tr><td>9</td><td>AdaptiveVision</td><td>Computer vision deployment</td><td>None</td></tr>
+</tbody></table>
+<p>This breadth of activity makes clear that FutureAtoms is a genuine independent technology business operating primarily in domains completely unrelated to Axelera's hardware accelerator business. Any claim that FutureAtoms competes with Axelera would need to account for the fact that 8 of 9 projects have zero overlap with Axelera's business.</p>
+<table>
+<thead><tr><th>Factor</th><th>FutureAtoms (Abhilash)</th><th>Comparator A: Founding Team Member, Technology Company</th><th>Comparator B: Senior Engineer, Software Development</th></tr></thead>
+<tbody>
+<tr><td>Employee level</td><td>Senior Verification Engineer</td><td>Founding team member (senior technical role)</td><td>Senior engineering role (peer level)</td></tr>
+<tr><td>Business type</td><td>Software platform</td><td>Technology company</td><td>Software development</td></tr>
+<tr><td>Revenue</td><td><strong>No revenue (zero)</strong></td><td>Unknown</td><td>Unknown</td></tr>
+<tr><td>External clients</td><td><strong>None</strong></td><td>Unknown</td><td>Unknown</td></tr>
+<tr><td>Competitive overlap</td><td><strong>Minimal</strong> (different product domain)</td><td>Potential (same technology domain)</td><td>Potential (software development)</td></tr>
+<tr><td>Duration of concurrent activity</td><td>Active</td><td>Active</td><td>Active</td></tr>
+<tr><td>Current status at Axelera</td><td>Current employee</td><td>Current employee (founding team)</td><td>Current employee</td></tr>
+<tr><td>Risk to Axelera</td><td><strong>Lowest</strong></td><td>Higher (founding team knowledge)</td><td>Moderate</td></tr>
+</tbody></table>
+<p><strong>Key observation:</strong> FutureAtoms presents objectively <strong>less risk</strong> to Axelera than both comparable cases. It generates no revenue, has no external clients, and operates in a different product domain. If either comparator's business is permitted, there is no rational basis for prohibiting FutureAtoms.</p>
+<hr>
+<h2>7. Conclusion</h2>
+<p>Based on publicly available data, <strong>concurrent businesses and external roles appear to be widespread at Axelera AI.</strong> With approximately 34% of employees maintaining such arrangements (including founding team members and senior leadership), as indicated by public LinkedIn and KvK records, singling out FutureAtoms for refusal would be difficult to justify objectively, particularly where FutureAtoms poses less competitive risk than many of the existing cases. However, this argument depends on Axelera's awareness of (and failure to act against) these arrangements; if Axelera can demonstrate it was genuinely unaware, the equal treatment claim would be weaker.</p>
+<p>Refusing permission for FutureAtoms while tolerating 38 other cases would:</p>
+<ol>
+<li><strong>Give rise to a strong argument of unequal treatment</strong> without objective justification, contrary to the principle of <em>goed werkgeverschap</em> (Art. 7:611 BW), provided employer awareness of the other arrangements can be established</li>
+<li><strong>Potentially conflict with Article 7:653a BW</strong>, which voids ancillary activity restrictions without objective justification</li>
+<li><strong>Be difficult to reconcile with the &quot;not unreasonably withheld&quot; standard</strong> in Clause 13 of the employment agreement</li>
+<li><strong>Create significant litigation risk</strong> for Axelera, including a potential challenge to any adverse action taken</li>
+<li><strong>Potentially give rise to claims under the anti-retaliation protections</strong> of EU Directive 2019/1152 Art. 17 (implemented in Dutch law) if adverse action follows the employee asserting these rights</li>
+</ol>
+<hr>
+<h2>8. Recommendations</h2>
+<ol>
+<li><strong>Present this precedent data</strong> when requesting FutureAtoms approval. The 34% figure (based on publicly available data reviewed in March 2026; supporting documentation available on request) is a powerful factual foundation.</li>
+<li><strong>This document uses anonymized examples</strong> in compliance with GDPR Art. 5(1)(c) (data minimization). Comparators are identified by role description (&quot;a founding team member who maintains a concurrent technology company,&quot; &quot;a same-level engineer who operates a software development business&quot;) rather than by name. This approach (a) avoids GDPR/AVG concerns about processing colleagues' personal data in an adversarial context, (b) reduces the risk of damaging workplace relationships, and (c) is equally effective as evidence of organizational precedent. The underlying named data is retained separately for use by qualified legal counsel if formal proceedings require identification under Art. 843a Rv.</li>
+<li><strong>Aggregate statistics are the primary weapon</strong>: &quot;34% of employees maintain concurrent roles&quot; is compelling without identifying anyone. If the employer disputes this figure, Art. 843a Rv (exhibitieplicht), subject to its cumulative conditions (legitimate interest, specificity of documents requested, and party status in a legal relationship), and Art. 22 Rv (rechterlijk bevel) may be used to request the employer to produce its own HR records on side activity permissions, provided the statutory conditions are met.</li>
+<li><strong>Emphasize that FutureAtoms poses LESS risk</strong> than many tolerated cases: zero revenue, no external clients, different product domain.</li>
+<li><strong>Frame the request as seeking equal treatment, not special treatment.</strong> The ask is simply to be treated the same as existing colleagues with similar arrangements.</li>
+<li><strong>Cite Article 7:653a BW explicitly</strong> in any written communication, putting the employer on notice that the legal framework requires objective justification.</li>
+<li><strong>Document all communications</strong> regarding this request in writing, to preserve evidence in case of any future dispute.</li>
+<li><strong>Consult with a qualified Dutch employment lawyer</strong> (<em>arbeidsrechtadvocaat</em>) before taking formal legal action.</li>
+</ol>
+<hr>
+<h2>9. Sources</h2>
+<ul>
+<li>LinkedIn profiles and public business registrations of Axelera AI employees (surveyed February–March 2026; reviewed and finalized March 2026; note: this data represents a snapshot and should be independently verified and timestamped before use in formal proceedings)</li>
+<li>Dutch Chamber of Commerce (KvK) public records (<em>Handelsregister</em>) (note: KvK extracts should be obtained as formal evidence if relied upon in legal proceedings)</li>
+<li>Axelera AI public company information</li>
+<li><strong>Article 7:653a BW</strong> (Burgerlijk Wetboek): ancillary activities clause</li>
+<li><strong>Article 7:611 BW</strong>: good employer practice (<em>goed werkgeverschap</em>)</li>
+<li><strong>EU Directive 2019/1152</strong> on transparent and predictable working conditions</li>
+<li><em>Kamerstukken II</em> 2021/22, 35 962 (Parliamentary history of Art. 7:653a BW implementation)</li>
+</ul>
+<hr>
+<p><strong>DISCLAIMER:</strong> This is an AI-generated analysis and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet). The data on concurrent roles was gathered from publicly available sources (LinkedIn, KvK). This document is for informational purposes only and should be reviewed by qualified legal counsel before use.</p>
+<ol>
+<li><strong>Is for informational purposes only</strong> and must not be considered a substitute for professional legal advice from a qualified Dutch lawyer (advocaat) registered with the Netherlands Bar Association (Nederlandse Orde van Advocaten).</li>
+</ol>
+<ol>
+<li><strong>Is generated by artificial intelligence</strong> and may contain inaccuracies, omissions, or outdated information, despite efforts to consult current and accurate sources.</li>
+</ol>
+<ol>
+<li><strong>Does not replace a lawyer.</strong> For legal decisions, proceedings, contracts, or disputes, you must always consult a qualified lawyer authorized to practice law in the Netherlands.</li>
+</ol>
+<ol>
+<li><strong>Does not guarantee confidentiality.</strong> Information shared with this AI system is not protected by attorney-client privilege (verschoningsrecht). Do not share confidential or privileged information.</li>
+</ol>
+<ol>
+<li><strong>May not reflect current law.</strong> Dutch legislation and case law change continuously. This analysis is based on the state of the law as of the indicated date and may not account for recent amendments.</li>
+</ol>
+<ol>
+<li><strong>Cannot be used as evidence</strong> in judicial or administrative proceedings.</li>
+</ol>
+<ol>
+<li><strong>Does not guarantee the accuracy</strong> of references to statutory articles, ECLI numbers, or other legal sources. Independently verify all source citations.</li>
+</ol>
+<p><strong>By using this analysis, you acknowledge that you have read and understood this disclaimer and that you do not consider the AI system to be your legal advisor.</strong></p>
+<div class="disclaimer">
+<h2>DISCLAIMER</h2>
+<hr>
+<h1>Juridische Disclaimer</h1>
+<hr>
+<p><strong>BELANGRIJK - LEES DEZE DISCLAIMER ZORGVULDIG</strong></p>
+<p>Dit is een AI-gegenereerde juridische analyse en vormt <strong>geen juridisch advies</strong> in de zin van de Advocatenwet. De informatie in deze analyse:</p>
+<ol>
+<li><strong>Is uitsluitend informatief</strong> en mag niet worden beschouwd als een vervanging voor professioneel juridisch advies van een gekwalificeerde Nederlandse advocaat (ingeschreven bij de Nederlandse Orde van Advocaten).</li>
+</ol>
+<ol>
+<li><strong>Is gegenereerd door kunstmatige intelligentie</strong> en kan onnauwkeurigheden, onvolledigheden of verouderde informatie bevatten, ondanks inspanningen om actuele en correcte bronnen te raadplegen.</li>
+</ol>
+<ol>
+<li><strong>Vervangt geen advocaat.</strong> Voor juridische beslissingen, procedures, contracten of geschillen dient u altijd een gekwalificeerde advocaat te raadplegen die bevoegd is om in Nederland de rechtspraktijk uit te oefenen.</li>
+</ol>
+<ol>
+<li><strong>Garandeert geen vertrouwelijkheid.</strong> Informatie die u deelt met dit AI-systeem valt niet onder het advocaat-cliënt verschoningsrecht (legal privilege). Deel geen vertrouwelijke of geprivilegieerde informatie.</li>
+</ol>
+<ol>
+<li><strong>Is mogelijk niet actueel.</strong> De Nederlandse wetgeving en jurisprudentie veranderen voortdurend. De analyse is gebaseerd op de stand van het recht op de aangegeven datum en houdt mogelijk geen rekening met recente wijzigingen.</li>
+</ol>
+<ol>
+<li><strong>Kan niet worden gebruikt als bewijs</strong> in gerechtelijke of administratieve procedures.</li>
+</ol>
+<ol>
+<li><strong>Biedt geen garantie op juistheid</strong> van verwijzingen naar wetsartikelen, ECLI-nummers of andere juridische bronnen. Verifieer alle bronvermeldingen zelfstandig.</li>
+</ol>
+<p><strong>Door gebruik te maken van deze analyse erkent u dat u deze disclaimer heeft gelezen en begrepen, en dat u het AI-systeem niet beschouwt als uw juridisch adviseur.</strong></p>
+<hr>
+<p><em>Gegenereerd door FALCON (FutureAtoms AI Legal Counsel Of Netherlands) - een AI-hulpmiddel voor juridische analyse.</em> <em>Datum van analyse: 05-03-2026</em> <em>Verificatiedatum wetgeving: 05-03-2026</em></p>
+
+    <div class="footer-meta">
+        FALCON (FutureAtoms AI Legal Counsel Of Netherlands) &nbsp;|&nbsp;
+        Datum: 05-03-2026 &nbsp;|&nbsp;
+        Verificatiedatum wetgeving: 05-03-2026 &nbsp;|&nbsp;
+        AI-gegenereerd document
+    </div>
+</div>
+</div>
+</body>
+</html>

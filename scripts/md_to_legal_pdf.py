@@ -748,7 +748,7 @@ class LegalPdfRenderer:
                                      color=colors.HexColor('#CCCCCC')))
         self.story.append(Spacer(1, 6))
         self.story.append(Paragraph(
-            f"Netherlands AI Lawyer System | "
+            f"FALCON (FutureAtoms AI Legal Counsel Of Netherlands) | "
             f"Datum: {TODAY_STR} | "
             f"Verificatiedatum wetgeving: {TODAY_STR}",
             self.styles['LegalFooter']))
@@ -775,7 +775,7 @@ class LegalPdfRenderer:
             canvas.drawCentredString(
                 PAGE_W / 2, 1.0 * cm,
                 f"Page {doc.page}  |  {TODAY_STR}  |  "
-                f"Netherlands AI Lawyer System  |  Confidential")
+                f"FALCON  |  Confidential")
 
             canvas.restoreState()
 

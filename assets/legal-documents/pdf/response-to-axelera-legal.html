@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Response to Proposed Employment Addendum</title>
+    <style>
+    /* ─── Rijksoverheid-style Typography ─────────────────────── */
+    @page {
+        size: A4;
+        margin: 25mm 25mm 20mm 25mm;
+        @bottom-center {
+            content: counter(page);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 8pt;
+            color: #999;
+        }
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        font-size: 10.5pt;
+    }
+
+    body {
+        font-family: Georgia, "Times New Roman", "Rijksoverheid Serif", serif;
+        font-size: 10.5pt;
+        line-height: 1.55;
+        color: #1a1a1a;
+        max-width: 160mm;
+        margin: 0 auto;
+        padding: 25mm;
+        background: #fff;
+    }
+
+    @media print {
+        body {
+            padding: 0;
+            max-width: none;
+        }
+    }
+
+    .page-content {
+        position: relative;
+    }
+
+    
+        @media print {
+            .page-content::before {
+                content: "VERTROUWELIJK";
+                position: fixed;
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+                font-size: 72pt;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 700;
+                color: rgba(200, 0, 0, 0.07);
+                z-index: -1;
+                pointer-events: none;
+                white-space: nowrap;
+            }
+        }
+        @media screen {
+            .page-content::before {
+                content: "VERTROUWELIJK";
+                position: fixed;
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+                font-size: 72pt;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 700;
+                color: rgba(200, 0, 0, 0.07);
+                z-index: -1;
+                pointer-events: none;
+                white-space: nowrap;
+            }
+        }
+        
+    
+
+    /* ─── Headings (Sans-serif, Rijksoverheid Sans style) ──── */
+
+    h1, h2, h3, h4 {
+        font-family: Arial, Helvetica, "Rijksoverheid Sans", sans-serif;
+        color: #1a1a1a;
+        page-break-after: avoid;
+        orphans: 3;
+        widows: 3;
+    }
+
+    h1 {
+        font-size: 16pt;
+        font-weight: 700;
+        margin-top: 28pt;
+        margin-bottom: 10pt;
+        padding-bottom: 4pt;
+        border-bottom: 2px solid #154273;
+        color: #154273;
+        letter-spacing: -0.3px;
+    }
+
+    h1:first-of-type {
+        margin-top: 0;
+    }
+
+    h2 {
+        font-size: 13pt;
+        font-weight: 700;
+        margin-top: 22pt;
+        margin-bottom: 8pt;
+        color: #154273;
+        padding-bottom: 2pt;
+        border-bottom: 1px solid #d0d0d0;
+    }
+
+    h3 {
+        font-size: 11pt;
+        font-weight: 700;
+        margin-top: 16pt;
+        margin-bottom: 6pt;
+        color: #2c3e50;
+    }
+
+    h4 {
+        font-size: 10.5pt;
+        font-weight: 700;
+        font-style: italic;
+        margin-top: 12pt;
+        margin-bottom: 4pt;
+        color: #34495e;
+    }
+
+    /* ─── Body Text ────────────────────────────────────────── */
+
+    p {
+        margin-bottom: 8pt;
+        text-align: justify;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        orphans: 2;
+        widows: 2;
+    }
+
+    strong {
+        font-weight: 700;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    a {
+        color: #154273;
+        text-decoration: underline;
+    }
+
+    code {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 9pt;
+        background: #f4f4f4;
+        border: 1px solid #e0e0e0;
+        border-radius: 2px;
+        padding: 1px 4px;
+    }
+
+    /* ─── Lists (proper bullet points & numbering) ─────────── */
+
+    ul, ol {
+        margin: 6pt 0 10pt 0;
+        padding-left: 22pt;
+    }
+
+    ul {
+        list-style-type: disc;
+    }
+
+    ul ul {
+        list-style-type: circle;
+        margin-top: 3pt;
+        margin-bottom: 3pt;
+    }
+
+    ol {
+        list-style-type: decimal;
+    }
+
+    ol ol {
+        list-style-type: lower-alpha;
+    }
+
+    li {
+        margin-bottom: 4pt;
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    li > ul, li > ol {
+        margin-top: 3pt;
+    }
+
+    /* ─── Tables ───────────────────────────────────────────── */
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 10pt 0 14pt 0;
+        font-size: 9.5pt;
+        line-height: 1.4;
+        page-break-inside: auto;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr {
+        page-break-inside: avoid;
+    }
+
+    th {
+        background-color: #154273;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 9pt;
+        text-align: left;
+        padding: 7pt 8pt;
+        border: 1px solid #154273;
+    }
+
+    td {
+        padding: 6pt 8pt;
+        border: 1px solid #d0d0d0;
+        vertical-align: top;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: #ffffff;
+    }
+
+    /* Bold first column for key-value tables */
+    table.kv-table td:first-child {
+        font-weight: 700;
+        white-space: nowrap;
+        width: 1%;
+    }
+
+    /* ─── Blockquotes ──────────────────────────────────────── */
+
+    blockquote {
+        margin: 10pt 0;
+        padding: 10pt 14pt;
+        border-left: 3px solid #154273;
+        background: #f0f4f8;
+        color: #333;
+        font-size: 10pt;
+        line-height: 1.5;
+    }
+
+    blockquote p {
+        margin-bottom: 4pt;
+    }
+
+    blockquote p:last-child {
+        margin-bottom: 0;
+    }
+
+    /* ─── Code blocks ──────────────────────────────────────── */
+
+    pre {
+        background: #f5f5f5;
+        border: 1px solid #ddd;
+        border-radius: 2px;
+        padding: 10pt 12pt;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 8.5pt;
+        line-height: 1.4;
+        overflow-x: auto;
+        margin: 8pt 0 12pt 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+
+    /* ─── Horizontal rules ─────────────────────────────────── */
+
+    hr {
+        border: none;
+        border-top: 1px solid #d0d0d0;
+        margin: 14pt 0;
+    }
+
+    /* ─── Checklists ───────────────────────────────────────── */
+
+    .checklist {
+        list-style: none;
+        padding-left: 0;
+        margin: 6pt 0 10pt 0;
+    }
+
+    .checklist li {
+        padding-left: 24pt;
+        position: relative;
+        margin-bottom: 4pt;
+    }
+
+    .checklist li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 3pt;
+        width: 11pt;
+        height: 11pt;
+        border: 1.5px solid #555;
+        border-radius: 2px;
+        background: #fff;
+    }
+
+    .checklist li.checked::before {
+        background: #27AE60;
+        border-color: #27AE60;
+    }
+
+    .checklist li.checked::after {
+        content: "\2713";
+        position: absolute;
+        left: 2pt;
+        top: 1pt;
+        color: #fff;
+        font-size: 9pt;
+        font-weight: 700;
+    }
+
+    /* ─── Risk badges ──────────────────────────────────────── */
+
+    .risk-critical { color: #C0392B; font-weight: 700; }
+    .risk-high { color: #E67E22; font-weight: 700; }
+    .risk-medium { color: #F39C12; font-weight: 700; }
+    .risk-low { color: #27AE60; font-weight: 700; }
+
+    /* ─── Disclaimer section ───────────────────────────────── */
+
+    .disclaimer {
+        page-break-before: always;
+        margin-top: 0;
+    }
+
+    .disclaimer h2 {
+        font-size: 13pt;
+        color: #154273;
+    }
+
+    .disclaimer p, .disclaimer li {
+        font-size: 8.5pt;
+        line-height: 1.45;
+        color: #555;
+    }
+
+    .disclaimer strong {
+        color: #333;
+    }
+
+    .footer-meta {
+        margin-top: 16pt;
+        padding-top: 8pt;
+        border-top: 1px solid #d0d0d0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 7.5pt;
+        color: #999;
+        text-align: right;
+    }
+
+    /* ─── Confidentiality banner (screen) ──────────────────── */
+
+    .top-banner {
+        background-color: #C0392B;
+        color: white;
+        text-align: center;
+        padding: 5pt 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 8.5pt;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        margin: -25mm -25mm 14pt -25mm;
+        width: calc(100% + 50mm);
+    }
+
+    @media print {
+        .top-banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+            width: 100%;
+        }
+    }
+
+    /* ─── Page break helpers ───────────────────────────────── */
+
+    .page-break {
+        page-break-before: always;
+    }
+    </style>
+</head>
+<body>
+<div class="page-content">
+
+<h1>Response to Proposed Employment Addendum</h1>
+<p><strong>From:</strong> Abhilash Chadhar <strong>To:</strong> Axelera AI B.V., Legal Department (via Bram) <strong>Date:</strong> 4 March 2026 <strong>Re:</strong> Proposed Addendum to Employment Agreement, Sections 1.1–1.19 <strong>Classification:</strong> Confidential</p>
+<hr>
+<p>Dear Counsel,</p>
+<p>I am writing to propose a clear, legally compliant arrangement that gives Axelera strong exclusive rights to Wingman v1.0.0 — including full source code, modification rights, and customer distribution — while ensuring the addendum sits on solid legal footing under Art. 7:653a BW and Art. 6:248 lid 2 BW. I appreciate legal's work in protecting Axelera's interests, and I am fully committed to delivering Wingman v1.0.0 under fair terms.</p>
+<p>Before addressing the specific clauses, I want to clarify the factual and technical background, as the proposed addendum may have been drafted on the understanding that Wingman and ChipOS are closely linked. Wingman draws on general patterns and structural approaches from my independently-developed ChipOS platform (detailed in Section 1.3 below), but it is an application built specifically for Axelera's needs. I want to set out this distinction so legal can scope the addendum precisely to the Wingman delivery.</p>
+<hr>
+<h2>1. Background: ChipOS and Wingman</h2>
+<h3>1.1 What is ChipOS?</h3>
+<p><strong>ChipOS</strong> is a vendor-neutral agentic orchestration platform for semiconductor design workflows. I conceived, designed, and developed ChipOS independently, on my own time, using my own equipment and resources, through my registered sole proprietorship <strong>FutureAtoms</strong> (eenmanszaak, KvK: 99153289). ChipOS was not created as part of my employment duties at Axelera, was not developed using Axelera equipment or resources, and was not created under Axelera's direction or instruction.</p>
+<p>ChipOS is a substantial, mature platform: - <strong>An extensive independent commit history</strong> of development - <strong>11 application modules</strong> (&quot;App Packs&quot;) covering verification, physical design, and other semiconductor workflows - <strong>Own database infrastructure</strong> (separate Supabase project) - <strong>Vendor-neutral:</strong> designed to work with any semiconductor vendor's toolchain, not specific to Axelera</p>
+<h3>1.2 What is Wingman?</h3>
+<p><strong>Wingman</strong> (formally &quot;Voyager Wingman&quot;) is an application I built specifically for the purpose of programming Axelera AI accelerator cards using the Voyager SDK. Wingman was developed as a <strong>purpose-built application</strong> that applies general software development patterns and structural approaches — independently implemented — for the Voyager SDK use case. While Wingman shares certain high-level design conventions with my independently-developed ChipOS platform (reflecting common authorship and general industry patterns), it was built from scratch in a separate repository with no code reuse or runtime dependency on ChipOS (see Technical and Legal Independence Report, Annex 5).</p>
+<p>Wingman's profile: - <strong>Separate git repository</strong> from ChipOS - <strong>Purpose:</strong> narrowly focused on Axelera's Voyager SDK - <strong>Own database infrastructure</strong> (separate Supabase project, distinct from ChipOS) - <strong>Distinct scope:</strong> while Wingman shares some structural elements with ChipOS, it was built and scoped for Axelera's specific needs</p>
+<h3>1.3 The Relationship Between ChipOS and Wingman</h3>
+<p>To be transparent: Wingman builds on patterns, structural approaches, and general techniques that I developed through my work on ChipOS. This is a common arrangement in software: a developer builds a general platform (ChipOS) and then creates a tailored application (Wingman) for a specific client's needs.</p>
+<p>Both products incorporate general software engineering patterns (workflow automation, API integration, configuration management) that are standard industry techniques used by developers worldwide. Under <strong>EU Directive 2009/24/EC Art. 1(2)</strong> (the Software Directive, applied in Dutch law via directive-conforming interpretation; confirmed by CJEU C-406/10, <em>SAS Institute v. WPL</em>), the ideas and principles underlying a computer program are not protectable by copyright. The fact that both products use similar structural approaches reflects common professional practice, not a proprietary connection between the codebases.</p>
+<p>The key distinction is: - <strong>ChipOS</strong> is the broader platform: 11 App Packs, vendor-neutral, serving multiple use cases across semiconductor design - <strong>Wingman</strong> is a focused application designed for a single purpose: programming Axelera AI accelerator cards</p>
+<p>The <strong>delivered version (Wingman v1.0.0)</strong> will be a standalone, self-contained codebase that Axelera can operate independently. Prior to delivery, I will ensure all non-Wingman components are removed and the codebase operates as a standalone application.</p>
+<h3>1.4 The Pilot</h3>
+<p>During an approximately three-month pilot, Axelera evaluated Wingman as an internal tool for assisting with Voyager SDK programming. The pilot confirmed Wingman's value for Axelera's specific use case. It is this product, Wingman v1.0.0, that I have agreed to deliver to Axelera.</p>
+<h3>1.5 Key Differences</h3>
+<table>
+<thead><tr><th>Aspect</th><th>ChipOS</th><th>Wingman</th></tr></thead>
+<tbody>
+<tr><td><strong>Purpose</strong></td><td>Vendor-neutral semiconductor orchestration platform</td><td>Axelera Voyager SDK programming tool</td></tr>
+<tr><td><strong>Scope</strong></td><td>11 App Packs, multiple workflows</td><td>Single application, single use case</td></tr>
+<tr><td><strong>Target users</strong></td><td>Any semiconductor engineer</td><td>Axelera developers only</td></tr>
+<tr><td><strong>Business context</strong></td><td>FutureAtoms independent product</td><td>Developed for Axelera's specific needs</td></tr>
+<tr><td><strong>Git repository</strong></td><td>Separate repo (extensive independent commit history)</td><td>Separate repo</td></tr>
+<tr><td><strong>Database</strong></td><td>Own Supabase project</td><td>Separate Supabase project</td></tr>
+<tr><td><strong>Branding</strong></td><td>FutureAtoms / ChipOS</td><td>Voyager Wingman</td></tr>
+<tr><td><strong>Licensing</strong></td><td>FutureAtoms proprietary</td><td>Licensed to Axelera per this addendum</td></tr>
+</tbody></table>
+<h3>1.6 FutureAtoms' Broader Scope</h3>
+<p>It is worth noting that FutureAtoms operates across nine diverse project domains that extend far beyond semiconductors. In addition to ChipOS, FutureAtoms encompasses: <strong>Swaastik</strong> (healthcare platform targeting 150K+ facilities, per FutureAtoms project specifications), <strong>BevyBeats</strong> (music generation), <strong>Zaphy</strong> (LinkedIn networking AI), <strong>Agentic Control</strong> (workflow automation), <strong>SystemVerilogGPT</strong> (RTL generation), <strong>Yuj</strong> (AI wellness/yoga), <strong>Savitri</strong> (mental health CBT/DBT companion), and <strong>AdaptiveVision</strong> (computer vision deployment). The breadth of these projects, spanning healthcare, music, wellness, networking, and automation, underscores that FutureAtoms is not a competitor to Axelera. Scoping the addendum specifically to the Wingman deliverable avoids unintentionally capturing these unrelated activities.</p>
+<h3>1.7 What This Means for the Addendum</h3>
+<p>The agreed arrangement is the delivery of <strong>Wingman v1.0.0</strong>, an application built for Axelera, with an exclusive license for Axelera to use it with its hardware products. This is a standard software licensing arrangement: the client (Axelera) receives an exclusive license to the deliverable application (Wingman), while the developer (FutureAtoms) retains ownership of the underlying platform (ChipOS) from which it was derived.</p>
+<p>The addendum should therefore be scoped to the Wingman deliverable. The proposed draft references <strong>ChipOS</strong> in several places, which I believe was unintentional. The Wingman delivery is what we discussed and agreed upon. The suggestions below are intended to help align the addendum's scope with the actual deliverable.</p>
+<hr>
+<h2>2. Suggested Scope Refinements</h2>
+<p>I am happy to give Axelera very strong Wingman rights, including exclusive use, full source code delivery, and even future development during my employment. The only thing I need is clear separation for my independent projects (ChipOS and FutureAtoms). With that framing, here are some areas where I believe the scope can be refined to capture the intent more precisely:</p>
+<h3>2.1 ChipOS Definition: Scope Alignment (Section 1.2)</h3>
+<p>The definition includes &quot;any successor, derivative, fork, update, extension, architectural variation or <strong>related technology</strong>.&quot; This is broader than necessary for the Wingman delivery and may unintentionally capture future software I develop through FutureAtoms in unrelated domains (healthcare, music, wellness, etc.). I would suggest scoping this to the Wingman v1.0.0 deliverable as defined in the delivery manifest.</p>
+<h3>2.2 License Scope: Wingman vs. ChipOS (Section 1.3a)</h3>
+<p>Section 1.3a grants Axelera a perpetual, irrevocable, transferable, sublicensable license to the <strong>entire ChipOS platform</strong> rather than the Wingman deliverable. I would suggest scoping this to the Wingman application, which is what Axelera evaluated during the pilot and what we agreed to deliver. ChipOS is a broader, independently developed platform with 11 App Packs serving multiple use cases beyond Axelera. To ensure compliance with <strong>Article 7 of the Auteurswet</strong> (<em>werkgeversauteursrecht</em>), it is worth noting that employer copyright arises only where there is a functional connection (<em>functioneel verband</em>) between the employment duties and the creative work (see e.g. HR 19 januari 1951, NJ 1952/37, <em>Van der Laan/Schoonderbeek</em>; pre-ECLI, verify NJ citation with counsel). Article 7 Aw applies to software as well as other works and requires that the employee's work &quot;consists of&quot; creating such works and that the works are created &quot;in the service of&quot; the employer. Scoping the license to Wingman ensures the addendum aligns with these statutory requirements.</p>
+<h3>2.3 &quot;Defined Fields&quot;: Precision of Scope (Section 1.3b)</h3>
+<p>The exclusive license scope (&quot;any and all fields of developing software for AI applications on CPUs, GPUs, AIPUs, accelerators, and <strong>any other compute processors</strong>&quot;) is broader than necessary for the Wingman delivery scope. As drafted, this may unintentionally capture FutureAtoms projects in entirely unrelated domains (healthcare, music, wellness). I would suggest scoping this to programming Axelera AI accelerator cards, which is what Wingman was built for. This more precise scope also helps ensure compliance with <strong>Article 6:248 lid 2 BW</strong> (<em>derogerende werking van redelijkheid en billijkheid</em>), which requires proportionality in contractual terms.</p>
+<h3>2.4 Future Development Scope (Section 1.8)</h3>
+<p>Section 1.8 claims all developments &quot;whether during or outside working hours and whether at the workplace or elsewhere.&quot; I understand the intent is to ensure Axelera captures Wingman-related work, which I fully support. However, to ensure this provision sits on solid legal footing under <strong>Article 7:653a BW</strong> (effective 1 August 2022, implementing EU Directive 2019/1152), which requires objective justification for restricting an employee's activities outside working hours, I would suggest scoping this to Wingman-related developments. This achieves the same protective intent while ensuring compliance.</p>
+<h3>2.5 FutureAtoms Side Activities (Sections 1.13-1.14)</h3>
+<p>I understand these sections aim to prevent competitive activity, which is a reasonable concern. However, a blanket prohibition on all AI/software business activities is broader than necessary for the Wingman delivery scope and may conflict with: - <strong>Article 7:653a BW</strong>, which requires objective justification for restricting outside activities; and - <strong>Clause 13 of my employment agreement</strong>, which permits side activities with consent &quot;not unreasonably withheld on objective grounds.&quot;</p>
+<p>FutureAtoms generates no revenue, has no external clients, and operates across nine diverse domains (healthcare, music, wellness, etc.) that do not compete with Axelera. I would suggest scoping any restrictions to developing programming tools that directly compete with Wingman for Axelera AI accelerator cards, which achieves the protective intent without affecting unrelated FutureAtoms projects (healthcare, music, wellness, computer vision, etc.) or vendor-neutral semiconductor tooling.</p>
+<h3>2.6 Delivery Scope Clarification (Sections 1.5-1.6c)</h3>
+<p>The delivery obligation references the &quot;full source code repository for <strong>ChipOS</strong> and Voyager Wingman.&quot; Since these are separate repositories (as outlined in the comparison table above), I would suggest updating this to reference the Wingman v1.0.0 repository specifically. This aligns the delivery clause with the actual deliverable and avoids any ambiguity.</p>
+<h3>2.7 Enforcement Rights: Scope Alignment (Section 1.15)</h3>
+<p>This provision would grant Axelera enforcement rights over ChipOS intellectual property. I would suggest scoping this to the Wingman deliverable IP, which is the subject of the license. Axelera should absolutely have strong enforcement rights over Wingman; I just want to ensure the scope matches the deliverable.</p>
+<h3>2.8 Termination Provisions (Section 1.17)</h3>
+<p>I understand the desire for license stability, which I fully support. To ensure the provision aligns with the principle of good employer practices (<em>goed werkgeverschap</em>) under <strong>Article 7:611 BW</strong>, and noting that Dutch employment termination law is governed by the semi-mandatory regime of <strong>Article 7:669 ff. BW</strong>, I would suggest including standard mutual termination-for-material-breach provisions that operate within this statutory framework, which is common in licensing arrangements and protects both parties.</p>
+<hr>
+<h2>3. Counter-Proposal</h2>
+<p>I have prepared a counter-proposal (attached as <strong>Annex A</strong>) that gives Axelera strong rights to the Wingman deliverable while properly scoping the arrangement to Wingman rather than the broader ChipOS platform. The key terms:</p>
+<h3>What Axelera receives:</h3>
+<ul>
+<li><strong>Perpetual, irrevocable, worldwide, exclusive</strong> license to Wingman v1.0.0</li>
+<li>Scope: programming Axelera AI accelerator cards (Metis and successor products)</li>
+<li>Right to use, modify, reproduce, and distribute Wingman to customers <strong>in connection with Axelera hardware</strong></li>
+<li>Full source code delivery (git archive, tag v1.0.0), Docker images, deployment docs, API docs, SBOM, SHA-256 checksums</li>
+<li>Delivery by <strong>15 April 2026</strong>, with a 30-calendar-day verification period</li>
+</ul>
+<h3>What remains with Employee / FutureAtoms:</h3>
+<ul>
+<li>FutureAtoms continues operating under clear separation conditions (outside working hours, no Axelera resources, no solicitation, prompt conflict disclosure)</li>
+<li>Clear IP boundary: work within employment scope = Axelera's IP; independent FutureAtoms work = Employee's IP</li>
+<li>ChipOS acknowledged as exclusive FutureAtoms property</li>
+<li>Right to develop similar technology for non-Axelera hardware platforms</li>
+<li>No ongoing maintenance obligation; future versions by separate agreement</li>
+<li>Mutual marketing rights (with prior written approval)</li>
+</ul>
+<h3>Compensation (as agreed with Accounts):</h3>
+<ul>
+<li>EUR 14,000 gross bonus</li>
+<li>EUR 10,000 in SARs/stock options</li>
+<li>Reimbursement of pilot expenses (~USD 1,400)</li>
+</ul>
+<p>A delivery manifest (attached as <strong>Annex B</strong>) specifies exactly what is included in and excluded from the deliverable.</p>
+<hr>
+<h2>4. Items Not Included in the Delivery</h2>
+<p>For absolute clarity, the following are <strong>expressly excluded</strong> from the Wingman delivery and are not covered by this arrangement:</p>
+<table class="kv-table">
+<thead><tr><th>Excluded Item</th><th>Reason</th></tr></thead>
+<tbody>
+<tr><td>ChipOS platform source code</td><td>Separate product, FutureAtoms IP (extensive independent commit history, 11 App Packs, vendor-neutral platform)</td></tr>
+<tr><td>ChipOS git history</td><td>Separate repository</td></tr>
+<tr><td>Non-Wingman App Packs</td><td>11 modules unrelated to Wingman</td></tr>
+<tr><td>FutureAtoms branding / logos</td><td>FutureAtoms proprietary</td></tr>
+<tr><td>Future Wingman versions (v1.1+)</td><td>Not covered; future work by separate agreement</td></tr>
+<tr><td>ChipOS database / infrastructure</td><td>Separate Supabase project</td></tr>
+</tbody></table>
+<hr>
+<h2>5. Timeline Considerations</h2>
+<p>I would like to draw attention to the following timing factors that support prompt resolution:</p>
+<ol>
+<li><strong>Delivery deadline:</strong> The proposed Wingman v1.0.0 delivery date is 15 April 2026. The addendum should be signed before delivery to ensure both parties' rights are clearly established.</li>
+<li><strong>Operational dependency:</strong> Axelera currently depends on me for Wingman operation. The delivery package includes full autonomous operation capability, but this requires a signed agreement.</li>
+<li><strong>Immigration timeline:</strong> My HSM (kennismigrant) permit expires 15 November 2027, and I am on track for Dutch citizenship by approximately December 2027. Unresolved employment disputes create unnecessary immigration risk for both parties.</li>
+<li><strong>Proposal:</strong> I suggest we aim to finalize the addendum within <strong>14 business days</strong> from the date of this letter to ensure sufficient time for delivery preparation.</li>
+</ol>
+<hr>
+<h2>6. Conclusion</h2>
+<p>I believe we are very close to a good agreement. The core of what I am proposing is simple: Axelera gets everything on Wingman (exclusive rights, full source code, the ability to modify and extend it) and my independently operated side business (FutureAtoms) stays separate. Given that FutureAtoms spans nine diverse domains from healthcare to music to wellness, none of which compete with Axelera, I am confident this is a clean separation that works well for both sides.</p>
+<p>I am available to discuss the counter-proposal at your convenience and welcome the opportunity to finalise this quickly.</p>
+<p>Kind regards,</p>
+<p><strong>Abhilash Chadhar</strong> Senior Verification Engineer Axelera AI B.V.</p>
+<hr>
+<h2>Attachments</h2>
+<ul>
+<li><strong>Annex A:</strong> Counter-Proposal, Addendum to Employment Agreement (Ref: FTA-AXL-2026-CP-001)</li>
+<li><strong>Annex B:</strong> Wingman v1.0.0 Delivery Manifest</li>
+</ul>
+<hr>
+<h2>Legal References Cited (for Ensuring Compliance)</h2>
+<table class="kv-table">
+<thead><tr><th>Reference</th><th>Subject</th></tr></thead>
+<tbody>
+<tr><td>Art. 7 Auteurswet</td><td>Employer copyright (<em>werkgeversauteursrecht</em>); requires that the work &quot;consists of&quot; creating such works and that works are created &quot;in the service of&quot; the employer, i.e., a functional connection (<em>functioneel verband</em>) between employment duties and the work (see e.g. HR 19 januari 1951, NJ 1952/37, <em>Van der Laan/Schoonderbeek</em>; pre-ECLI, verify NJ citation with counsel). Art. 7 Aw applies to all works including software.</td></tr>
+<tr><td>Art. 45h Auteurswet</td><td>Part of the software chapter (Arts. 45h–45n Aw) implementing EU Directive 2009/24/EC; Art. 45h concerns rental rights (<em>verhuurrechten</em>) for software, not employer copyright. Employer copyright for software is governed by Art. 7 Aw (general provision).</td></tr>
+<tr><td>EU Directive 2009/24/EC Art. 1(2)</td><td>Ideas and principles underlying a computer program are not protectable by copyright (CJEU C-406/10, <em>SAS Institute v. WPL</em>; applied via <em>richtlijnconforme interpretatie</em>)</td></tr>
+<tr><td>Art. 7:653a BW</td><td>Ancillary activities clause (<em>nevenwerkzaamhedenbeding</em>); void without objective justification. Effective 1 August 2022, implementing EU Directive 2019/1152. Includes anti-retaliation protection.</td></tr>
+<tr><td>Art. 7:611 BW</td><td>Good employer practices (<em>goed werkgeverschap</em>); applies alongside the semi-mandatory termination regime of Art. 7:669 ff. BW</td></tr>
+<tr><td>Art. 6:248 lid 2 BW</td><td>Limitation based on reasonableness and fairness (<em>derogerende werking van redelijkheid en billijkheid</em>); a contractual provision is not binding insofar as its application would be unacceptable (<em>onaanvaardbaar</em>) per standards of reasonableness and fairness (HR 25 februari 2000, NJ 2000/471)</td></tr>
+<tr><td>EU Directive 2019/1152</td><td>Transparent and predictable working conditions</td></tr>
+<tr><td>Clause 13, Employment Agreement</td><td>Side activities permitted with consent &quot;not unreasonably withheld on objective grounds&quot;</td></tr>
+</tbody></table>
+<hr>
+<p><em>This letter and its attachments are confidential and intended solely for the addressee. This communication does not constitute a waiver of any rights or claims.</em></p>
+<hr>
+<p><strong>DISCLAIMER:</strong> This is an AI-generated document and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet). This document is for informational purposes only and should be reviewed by a qualified Dutch lawyer (advocaat) before use.</p>
+<ol>
+<li><strong>Is for informational purposes only</strong> and must not be considered a substitute for professional legal advice from a qualified Dutch lawyer (advocaat) registered with the Netherlands Bar Association (Nederlandse Orde van Advocaten).</li>
+</ol>
+<ol>
+<li><strong>Is generated by artificial intelligence</strong> and may contain inaccuracies, omissions, or outdated information, despite efforts to consult current and accurate sources.</li>
+</ol>
+<ol>
+<li><strong>Does not replace a lawyer.</strong> For legal decisions, proceedings, contracts, or disputes, you must always consult a qualified lawyer authorized to practice law in the Netherlands.</li>
+</ol>
+<ol>
+<li><strong>Does not guarantee confidentiality.</strong> Information shared with this AI system is not protected by attorney-client privilege (verschoningsrecht). Do not share confidential or privileged information.</li>
+</ol>
+<ol>
+<li><strong>May not reflect current law.</strong> Dutch legislation and case law change continuously. This analysis is based on the state of the law as of the indicated date and may not account for recent amendments.</li>
+</ol>
+<ol>
+<li><strong>Cannot be used as evidence</strong> in judicial or administrative proceedings.</li>
+</ol>
+<ol>
+<li><strong>Does not guarantee the accuracy</strong> of references to statutory articles, ECLI numbers, or other legal sources. Independently verify all source citations.</li>
+</ol>
+<p><strong>By using this analysis, you acknowledge that you have read and understood this disclaimer and that you do not consider the AI system to be your legal advisor.</strong></p>
+<div class="disclaimer">
+<h2>DISCLAIMER</h2>
+<hr>
+<h1>Juridische Disclaimer</h1>
+<hr>
+<p><strong>BELANGRIJK - LEES DEZE DISCLAIMER ZORGVULDIG</strong></p>
+<p>Dit is een AI-gegenereerde juridische analyse en vormt <strong>geen juridisch advies</strong> in de zin van de Advocatenwet. De informatie in deze analyse:</p>
+<ol>
+<li><strong>Is uitsluitend informatief</strong> en mag niet worden beschouwd als een vervanging voor professioneel juridisch advies van een gekwalificeerde Nederlandse advocaat (ingeschreven bij de Nederlandse Orde van Advocaten).</li>
+</ol>
+<ol>
+<li><strong>Is gegenereerd door kunstmatige intelligentie</strong> en kan onnauwkeurigheden, onvolledigheden of verouderde informatie bevatten, ondanks inspanningen om actuele en correcte bronnen te raadplegen.</li>
+</ol>
+<ol>
+<li><strong>Vervangt geen advocaat.</strong> Voor juridische beslissingen, procedures, contracten of geschillen dient u altijd een gekwalificeerde advocaat te raadplegen die bevoegd is om in Nederland de rechtspraktijk uit te oefenen.</li>
+</ol>
+<ol>
+<li><strong>Garandeert geen vertrouwelijkheid.</strong> Informatie die u deelt met dit AI-systeem valt niet onder het advocaat-cliënt verschoningsrecht (legal privilege). Deel geen vertrouwelijke of geprivilegieerde informatie.</li>
+</ol>
+<ol>
+<li><strong>Is mogelijk niet actueel.</strong> De Nederlandse wetgeving en jurisprudentie veranderen voortdurend. De analyse is gebaseerd op de stand van het recht op de aangegeven datum en houdt mogelijk geen rekening met recente wijzigingen.</li>
+</ol>
+<ol>
+<li><strong>Kan niet worden gebruikt als bewijs</strong> in gerechtelijke of administratieve procedures.</li>
+</ol>
+<ol>
+<li><strong>Biedt geen garantie op juistheid</strong> van verwijzingen naar wetsartikelen, ECLI-nummers of andere juridische bronnen. Verifieer alle bronvermeldingen zelfstandig.</li>
+</ol>
+<p><strong>Door gebruik te maken van deze analyse erkent u dat u deze disclaimer heeft gelezen en begrepen, en dat u het AI-systeem niet beschouwt als uw juridisch adviseur.</strong></p>
+<hr>
+<p><em>Gegenereerd door FALCON (FutureAtoms AI Legal Counsel Of Netherlands) - een AI-hulpmiddel voor juridische analyse.</em> <em>Datum van analyse: 05-03-2026</em> <em>Verificatiedatum wetgeving: 05-03-2026</em></p>
+
+    <div class="footer-meta">
+        FALCON (FutureAtoms AI Legal Counsel Of Netherlands) &nbsp;|&nbsp;
+        Datum: 05-03-2026 &nbsp;|&nbsp;
+        Verificatiedatum wetgeving: 05-03-2026 &nbsp;|&nbsp;
+        AI-gegenereerd document
+    </div>
+</div>
+</div>
+</body>
+</html>

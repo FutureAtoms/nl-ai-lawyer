@@ -359,7 +359,7 @@ def create_disclaimer_block(styles, language='nl'):
     elements.append(Paragraph(text, styles['LegalDisclaimer']))
     elements.append(Spacer(1, 8))
     elements.append(Paragraph(
-        f"Netherlands AI Lawyer System | "
+        f"FALCON (FutureAtoms AI Legal Counsel Of Netherlands) | "
         f"Datum: {date.today().strftime('%d-%m-%Y')} | "
         f"Verificatiedatum wetgeving: {date.today().strftime('%d-%m-%Y')}",
         styles['LegalFooter']

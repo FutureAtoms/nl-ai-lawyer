@@ -6,7 +6,7 @@
 Abhilash Chadhar
 Senior Verification Engineer
 Axelera AI B.V.
-Employee since December 2022
+Employee since 1 December 2022
 
 **To:**
 The Management / Human Resources Department
@@ -29,7 +29,7 @@ Dear Management,
 
 I am writing to formally request written approval for my side business activities, as required under Clause 13 (Side Activities) of my employment agreement with Axelera AI B.V. (hereinafter: "Axelera" or "Employer").
 
-I have been employed by Axelera as a Senior Verification Engineer since December 2022. Clause 13 of my employment agreement provides that side activities require prior written consent from the Employer, and that such consent "shall not be unreasonably withheld on objective grounds." In the interest of full transparency and in compliance with my contractual obligations, I hereby disclose my side business activities and request your formal written approval.
+I have been employed by Axelera as a Senior Verification Engineer since 1 December 2022. Clause 13 of my employment agreement provides that side activities require prior written consent from the Employer, and that such consent "shall not be unreasonably withheld on objective grounds." In the interest of full transparency and in compliance with my contractual obligations, I hereby disclose my side business activities and request your formal written approval.
 
 ## 2. Disclosure of Side Business Activities
 
@@ -41,7 +41,7 @@ I wish to disclose the following side business:
 | **Legal form** | Eenmanszaak (sole proprietorship) |
 | **KvK number** | 99153289 |
 | **Registration date** | 28 November 2024 |
-| **Nature of activities** | A broad portfolio of independent technology projects spanning multiple unrelated domains: **ChipOS** (vendor-neutral semiconductor design orchestration platform), **Swaastik** (healthcare platform targeting 150K+ facilities, per project specifications), **BevyBeats** (music generation), **Zaphy** (LinkedIn networking AI), **Agentic Control** (workflow automation), **SystemVerilogGPT** (RTL generation), **Yuj** (AI wellness/yoga), **Savitri** (mental health CBT/DBT companion), and **AdaptiveVision** (computer vision deployment) |
+| **Nature of activities** | A broad portfolio of independent technology projects spanning multiple unrelated domains: **ChipOS** (vendor-neutral agentic orchestration platform for semiconductor design workflows), **Swaastik** (healthcare platform targeting 150K+ facilities, per project specifications), **BevyBeats** (music generation), **Zaphy** (LinkedIn networking AI), **Agentic Control** (workflow automation), **SystemVerilogGPT** (RTL generation), **Yuj** (AI wellness/yoga), **Savitri** (mental health CBT/DBT companion), and **AdaptiveVision** (computer vision deployment) |
 | **Revenue status** | No revenue to date |
 | **Client status** | No external clients to date |
 
@@ -92,9 +92,28 @@ I believe there is no objective ground on which consent could reasonably be with
 
 ### 4.3 Existing Practice at Axelera: Equal Treatment
 
-I note that a significant number of Axelera employees maintain concurrent roles, businesses, and external engagements. Based on publicly available information (LinkedIn, KvK registers), approximately 38 of 111 Axelera employees (34%) (data based on publicly available sources as of March 2026; methodology and underlying data retained separately and available on request for verification by qualified legal counsel) hold concurrent positions or operate side businesses, including members of the founding team, senior engineers, and board members holding concurrent executive and advisory roles at other entities.
+I note that a significant number of Axelera employees maintain concurrent roles, businesses, and external engagements based on publicly available information (LinkedIn, KvK registers). This includes members of the founding team, senior engineers, and board members holding concurrent executive and advisory roles at other entities.
 
-The fact that these arrangements exist, whether formally approved or informally tolerated, establishes a clear practice within Axelera of allowing side activities. I trust that my request will be assessed on the same basis as these existing arrangements, in line with the principle of equal treatment (*gelijke behandeling*) and *goed werkgeverschap* under Art. 7:611 BW.
+The fact that these arrangements exist, whether formally approved or informally tolerated, establishes a clear practice within Axelera of allowing side activities. By way of illustration, anonymized comparators include: a founding team member who operates a concurrent technology company, a senior engineer who operates a software development business, and a board member who holds concurrent advisory roles at multiple entities. I trust that my request will be assessed on the same basis as these existing arrangements, in line with the principle of equal treatment (*gelijke behandeling*).
+
+### 4.4 Good Employer Practices (Goed Werkgeverschap)
+
+Article 7:611 BW imposes on employers the obligation to conduct themselves as a *goed werkgever* (good employer). In the context of side activity requests, this means:
+
+1. **Proportionality:** Any restriction on side activities must be proportionate to the employer's legitimate interest. Given that FutureAtoms operates in a non-competing domain with zero revenue, a blanket refusal would be disproportionate.
+2. **Equal treatment:** Permitting side activities for some employees while denying them to others without objective distinction violates the *goed werkgeverschap* obligation.
+3. **Transparency:** The employer must provide clear, objective reasons for any refusal, as required by both Art. 7:611 BW and Art. 7:653a BW.
+
+### 4.5 Good Faith Offer: Standalone Confidentiality Acknowledgment
+
+To demonstrate my commitment to protecting Axelera's legitimate business interests, I offer to sign a standalone confidentiality acknowledgment confirming that:
+
+1. I will not use any Axelera confidential information, trade secrets, or proprietary technology in my FutureAtoms activities;
+2. I will not solicit Axelera clients, partners, or employees through FutureAtoms;
+3. I will maintain strict separation of equipment, networks, and working time between my employment and FutureAtoms activities;
+4. I will promptly disclose to Axelera any situation that could reasonably be perceived as a conflict of interest.
+
+This offer is made in addition to, and without prejudice to, my existing confidentiality obligations under the employment agreement.
 
 ## 5. Request
 
@@ -130,9 +149,27 @@ Signature: ____________________
 
 ---
 
-**DISCLAIMER:** This is an AI-generated document and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet). This document is for informational purposes only and should be reviewed by a qualified Dutch lawyer (advocaat) before submission. References to legal provisions should be independently verified.
+**DISCLAIMER:** This is an AI-generated document and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet). This document is for informational purposes only and should be reviewed by a qualified Dutch lawyer (advocaat) before submission.
 
-*Generated by the Netherlands AI Lawyer System*
+1. **Is for informational purposes only** and must not be considered a substitute for professional legal advice from a qualified Dutch lawyer (advocaat) registered with the Netherlands Bar Association (Nederlandse Orde van Advocaten).
+
+2. **Is generated by artificial intelligence** and may contain inaccuracies, omissions, or outdated information, despite efforts to consult current and accurate sources.
+
+3. **Does not replace a lawyer.** For legal decisions, proceedings, contracts, or disputes, you must always consult a qualified lawyer authorized to practice law in the Netherlands.
+
+4. **Does not guarantee confidentiality.** Information shared with this AI system is not protected by attorney-client privilege (verschoningsrecht). Do not share confidential or privileged information.
+
+5. **May not reflect current law.** Dutch legislation and case law change continuously. This analysis is based on the state of the law as of the indicated date and may not account for recent amendments.
+
+6. **Cannot be used as evidence** in judicial or administrative proceedings.
+
+7. **Does not guarantee the accuracy** of references to statutory articles, ECLI numbers, or other legal sources. Independently verify all source citations.
+
+**By using this analysis, you acknowledge that you have read and understood this disclaimer and that you do not consider the AI system to be your legal advisor.**
+
+---
+
+*Generated by FALCON (FutureAtoms AI Legal Counsel Of Netherlands)*
 *Date of analysis: 2026-03-04*
 
 ---

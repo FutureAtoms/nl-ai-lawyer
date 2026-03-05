@@ -10,9 +10,9 @@
 
 Dear Counsel,
 
-Thank you for preparing the proposed addendum regarding the Wingman application. I appreciate legal's work in protecting Axelera's interests, and I want to help scope this correctly so we can reach a clean agreement quickly. I am fully committed to delivering Wingman v1.0.0 to Axelera under fair and legally compliant terms.
+I am writing to propose a clear, legally compliant arrangement that gives Axelera strong exclusive rights to Wingman v1.0.0 — including full source code, modification rights, and customer distribution — while ensuring the addendum sits on solid legal footing under Art. 7:653a BW and Art. 6:248 lid 2 BW. I appreciate legal's work in protecting Axelera's interests, and I am fully committed to delivering Wingman v1.0.0 under fair terms.
 
-Before addressing the specific clauses, I think it would be helpful to clarify the factual and technical background, as the proposed addendum may have been drafted on the understanding that Wingman and ChipOS are closely linked. In practice, they are independent products serving different purposes, though Wingman does draw on general patterns and structural approaches from ChipOS (as detailed in Section 1.3 below). Wingman uses patterns and structural approaches from my independently-developed ChipOS platform, but it is an application built specifically for Axelera's needs. I want to set out this distinction below so legal can scope the addendum precisely to the Wingman delivery.
+Before addressing the specific clauses, I want to clarify the factual and technical background, as the proposed addendum may have been drafted on the understanding that Wingman and ChipOS are closely linked. Wingman draws on general patterns and structural approaches from my independently-developed ChipOS platform (detailed in Section 1.3 below), but it is an application built specifically for Axelera's needs. I want to set out this distinction so legal can scope the addendum precisely to the Wingman delivery.
 
 ---
 
@@ -30,7 +30,7 @@ ChipOS is a substantial, mature platform:
 
 ### 1.2 What is Wingman?
 
-**Wingman** (formally "Voyager Wingman") is an application I built specifically for the purpose of programming Axelera AI accelerator cards using the Voyager SDK. Wingman was developed as a **derivative application** that applies general patterns and structural approaches from my independently-developed ChipOS platform, tailored specifically for the Voyager SDK use case.
+**Wingman** (formally "Voyager Wingman") is an application I built specifically for the purpose of programming Axelera AI accelerator cards using the Voyager SDK. Wingman was developed as a **purpose-built application** that applies general software development patterns and structural approaches — independently implemented — for the Voyager SDK use case. While Wingman shares certain high-level design conventions with my independently-developed ChipOS platform (reflecting common authorship and general industry patterns), it was built from scratch in a separate repository with no code reuse or runtime dependency on ChipOS (see Technical and Legal Independence Report, Annex 5).
 
 Wingman's profile:
 - **Separate git repository** from ChipOS
@@ -89,7 +89,7 @@ The definition includes "any successor, derivative, fork, update, extension, arc
 
 ### 2.2 License Scope: Wingman vs. ChipOS (Section 1.3a)
 
-Section 1.3a grants Axelera a perpetual, irrevocable, transferable, sublicensable license to the **entire ChipOS platform** rather than the Wingman deliverable. I would suggest scoping this to the Wingman application, which is what Axelera evaluated during the pilot and what we agreed to deliver. ChipOS is a broader, independently developed platform with 11 App Packs serving multiple use cases beyond Axelera. To ensure compliance with **Article 7 of the Auteurswet** (*werkgeversauteursrecht*), it is worth noting that employer copyright arises only where there is a functional connection (*functioneel verband*) between the employment duties and the creative work (see e.g. HR 19 januari 1951, NJ 1952/37, *Van der Laan/Schoonderbeek*). Article 7 Aw applies to software as well as other works and requires that the employee's work "consists of" creating such works and that the works are created "in the service of" the employer. Scoping the license to Wingman ensures the addendum aligns with these statutory requirements.
+Section 1.3a grants Axelera a perpetual, irrevocable, transferable, sublicensable license to the **entire ChipOS platform** rather than the Wingman deliverable. I would suggest scoping this to the Wingman application, which is what Axelera evaluated during the pilot and what we agreed to deliver. ChipOS is a broader, independently developed platform with 11 App Packs serving multiple use cases beyond Axelera. To ensure compliance with **Article 7 of the Auteurswet** (*werkgeversauteursrecht*), it is worth noting that employer copyright arises only where there is a functional connection (*functioneel verband*) between the employment duties and the creative work (see e.g. HR 19 januari 1951, NJ 1952/37, *Van der Laan/Schoonderbeek*; pre-ECLI, verify NJ citation with counsel). Article 7 Aw applies to software as well as other works and requires that the employee's work "consists of" creating such works and that the works are created "in the service of" the employer. Scoping the license to Wingman ensures the addendum aligns with these statutory requirements.
 
 ### 2.3 "Defined Fields": Precision of Scope (Section 1.3b)
 
@@ -167,7 +167,18 @@ For absolute clarity, the following are **expressly excluded** from the Wingman 
 
 ---
 
-## 5. Conclusion
+## 5. Timeline Considerations
+
+I would like to draw attention to the following timing factors that support prompt resolution:
+
+1. **Delivery deadline:** The proposed Wingman v1.0.0 delivery date is 15 April 2026. The addendum should be signed before delivery to ensure both parties' rights are clearly established.
+2. **Operational dependency:** Axelera currently depends on me for Wingman operation. The delivery package includes full autonomous operation capability, but this requires a signed agreement.
+3. **Immigration timeline:** My HSM (kennismigrant) permit expires 15 November 2027, and I am on track for Dutch citizenship by approximately December 2027. Unresolved employment disputes create unnecessary immigration risk for both parties.
+4. **Proposal:** I suggest we aim to finalize the addendum within **14 business days** from the date of this letter to ensure sufficient time for delivery preparation.
+
+---
+
+## 6. Conclusion
 
 I believe we are very close to a good agreement. The core of what I am proposing is simple: Axelera gets everything on Wingman (exclusive rights, full source code, the ability to modify and extend it) and my independently operated side business (FutureAtoms) stays separate. Given that FutureAtoms spans nine diverse domains from healthcare to music to wellness, none of which compete with Axelera, I am confident this is a clean separation that works well for both sides.
 
@@ -192,7 +203,7 @@ Axelera AI B.V.
 
 | Reference | Subject |
 |-----------|---------|
-| Art. 7 Auteurswet | Employer copyright (*werkgeversauteursrecht*); requires that the work "consists of" creating such works and that works are created "in the service of" the employer, i.e., a functional connection (*functioneel verband*) between employment duties and the work (see e.g. HR 19 januari 1951, NJ 1952/37, *Van der Laan/Schoonderbeek*). Art. 7 Aw applies to all works including software. |
+| Art. 7 Auteurswet | Employer copyright (*werkgeversauteursrecht*); requires that the work "consists of" creating such works and that works are created "in the service of" the employer, i.e., a functional connection (*functioneel verband*) between employment duties and the work (see e.g. HR 19 januari 1951, NJ 1952/37, *Van der Laan/Schoonderbeek*; pre-ECLI, verify NJ citation with counsel). Art. 7 Aw applies to all works including software. |
 | Art. 45h Auteurswet | Part of the software chapter (Arts. 45h–45n Aw) implementing EU Directive 2009/24/EC; Art. 45h concerns rental rights (*verhuurrechten*) for software, not employer copyright. Employer copyright for software is governed by Art. 7 Aw (general provision). |
 | EU Directive 2009/24/EC Art. 1(2) | Ideas and principles underlying a computer program are not protectable by copyright (CJEU C-406/10, *SAS Institute v. WPL*; applied via *richtlijnconforme interpretatie*) |
 | Art. 7:653a BW | Ancillary activities clause (*nevenwerkzaamhedenbeding*); void without objective justification. Effective 1 August 2022, implementing EU Directive 2019/1152. Includes anti-retaliation protection. |
@@ -207,7 +218,25 @@ Axelera AI B.V.
 
 ---
 
-**DISCLAIMER:** This is an AI-generated document and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet). This document is for informational purposes only and should be reviewed by a qualified Dutch lawyer (advocaat) before use. References to legal provisions should be independently verified.
+**DISCLAIMER:** This is an AI-generated document and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet). This document is for informational purposes only and should be reviewed by a qualified Dutch lawyer (advocaat) before use.
 
-*Generated by the Netherlands AI Lawyer System*
+1. **Is for informational purposes only** and must not be considered a substitute for professional legal advice from a qualified Dutch lawyer (advocaat) registered with the Netherlands Bar Association (Nederlandse Orde van Advocaten).
+
+2. **Is generated by artificial intelligence** and may contain inaccuracies, omissions, or outdated information, despite efforts to consult current and accurate sources.
+
+3. **Does not replace a lawyer.** For legal decisions, proceedings, contracts, or disputes, you must always consult a qualified lawyer authorized to practice law in the Netherlands.
+
+4. **Does not guarantee confidentiality.** Information shared with this AI system is not protected by attorney-client privilege (verschoningsrecht). Do not share confidential or privileged information.
+
+5. **May not reflect current law.** Dutch legislation and case law change continuously. This analysis is based on the state of the law as of the indicated date and may not account for recent amendments.
+
+6. **Cannot be used as evidence** in judicial or administrative proceedings.
+
+7. **Does not guarantee the accuracy** of references to statutory articles, ECLI numbers, or other legal sources. Independently verify all source citations.
+
+**By using this analysis, you acknowledge that you have read and understood this disclaimer and that you do not consider the AI system to be your legal advisor.**
+
+---
+
+*Generated by FALCON (FutureAtoms AI Legal Counsel Of Netherlands)*
 *Date of analysis: 2026-03-04*

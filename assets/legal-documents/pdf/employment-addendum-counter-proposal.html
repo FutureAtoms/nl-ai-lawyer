@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTER-PROPOSAL: ADDENDUM TO EMPLOYMENT AGREEMENT</title>
+    <style>
+    /* ─── Rijksoverheid-style Typography ─────────────────────── */
+    @page {
+        size: A4;
+        margin: 25mm 25mm 20mm 25mm;
+        @bottom-center {
+            content: counter(page);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 8pt;
+            color: #999;
+        }
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        font-size: 10.5pt;
+    }
+
+    body {
+        font-family: Georgia, "Times New Roman", "Rijksoverheid Serif", serif;
+        font-size: 10.5pt;
+        line-height: 1.55;
+        color: #1a1a1a;
+        max-width: 160mm;
+        margin: 0 auto;
+        padding: 25mm;
+        background: #fff;
+    }
+
+    @media print {
+        body {
+            padding: 0;
+            max-width: none;
+        }
+    }
+
+    .page-content {
+        position: relative;
+    }
+
+    
+        @media print {
+            .page-content::before {
+                content: "VERTROUWELIJK";
+                position: fixed;
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+                font-size: 72pt;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 700;
+                color: rgba(200, 0, 0, 0.07);
+                z-index: -1;
+                pointer-events: none;
+                white-space: nowrap;
+            }
+        }
+        @media screen {
+            .page-content::before {
+                content: "VERTROUWELIJK";
+                position: fixed;
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+                font-size: 72pt;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 700;
+                color: rgba(200, 0, 0, 0.07);
+                z-index: -1;
+                pointer-events: none;
+                white-space: nowrap;
+            }
+        }
+        
+    
+
+    /* ─── Headings (Sans-serif, Rijksoverheid Sans style) ──── */
+
+    h1, h2, h3, h4 {
+        font-family: Arial, Helvetica, "Rijksoverheid Sans", sans-serif;
+        color: #1a1a1a;
+        page-break-after: avoid;
+        orphans: 3;
+        widows: 3;
+    }
+
+    h1 {
+        font-size: 16pt;
+        font-weight: 700;
+        margin-top: 28pt;
+        margin-bottom: 10pt;
+        padding-bottom: 4pt;
+        border-bottom: 2px solid #154273;
+        color: #154273;
+        letter-spacing: -0.3px;
+    }
+
+    h1:first-of-type {
+        margin-top: 0;
+    }
+
+    h2 {
+        font-size: 13pt;
+        font-weight: 700;
+        margin-top: 22pt;
+        margin-bottom: 8pt;
+        color: #154273;
+        padding-bottom: 2pt;
+        border-bottom: 1px solid #d0d0d0;
+    }
+
+    h3 {
+        font-size: 11pt;
+        font-weight: 700;
+        margin-top: 16pt;
+        margin-bottom: 6pt;
+        color: #2c3e50;
+    }
+
+    h4 {
+        font-size: 10.5pt;
+        font-weight: 700;
+        font-style: italic;
+        margin-top: 12pt;
+        margin-bottom: 4pt;
+        color: #34495e;
+    }
+
+    /* ─── Body Text ────────────────────────────────────────── */
+
+    p {
+        margin-bottom: 8pt;
+        text-align: justify;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        orphans: 2;
+        widows: 2;
+    }
+
+    strong {
+        font-weight: 700;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    a {
+        color: #154273;
+        text-decoration: underline;
+    }
+
+    code {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 9pt;
+        background: #f4f4f4;
+        border: 1px solid #e0e0e0;
+        border-radius: 2px;
+        padding: 1px 4px;
+    }
+
+    /* ─── Lists (proper bullet points & numbering) ─────────── */
+
+    ul, ol {
+        margin: 6pt 0 10pt 0;
+        padding-left: 22pt;
+    }
+
+    ul {
+        list-style-type: disc;
+    }
+
+    ul ul {
+        list-style-type: circle;
+        margin-top: 3pt;
+        margin-bottom: 3pt;
+    }
+
+    ol {
+        list-style-type: decimal;
+    }
+
+    ol ol {
+        list-style-type: lower-alpha;
+    }
+
+    li {
+        margin-bottom: 4pt;
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    li > ul, li > ol {
+        margin-top: 3pt;
+    }
+
+    /* ─── Tables ───────────────────────────────────────────── */
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 10pt 0 14pt 0;
+        font-size: 9.5pt;
+        line-height: 1.4;
+        page-break-inside: auto;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr {
+        page-break-inside: avoid;
+    }
+
+    th {
+        background-color: #154273;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 9pt;
+        text-align: left;
+        padding: 7pt 8pt;
+        border: 1px solid #154273;
+    }
+
+    td {
+        padding: 6pt 8pt;
+        border: 1px solid #d0d0d0;
+        vertical-align: top;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: #ffffff;
+    }
+
+    /* Bold first column for key-value tables */
+    table.kv-table td:first-child {
+        font-weight: 700;
+        white-space: nowrap;
+        width: 1%;
+    }
+
+    /* ─── Blockquotes ──────────────────────────────────────── */
+
+    blockquote {
+        margin: 10pt 0;
+        padding: 10pt 14pt;
+        border-left: 3px solid #154273;
+        background: #f0f4f8;
+        color: #333;
+        font-size: 10pt;
+        line-height: 1.5;
+    }
+
+    blockquote p {
+        margin-bottom: 4pt;
+    }
+
+    blockquote p:last-child {
+        margin-bottom: 0;
+    }
+
+    /* ─── Code blocks ──────────────────────────────────────── */
+
+    pre {
+        background: #f5f5f5;
+        border: 1px solid #ddd;
+        border-radius: 2px;
+        padding: 10pt 12pt;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 8.5pt;
+        line-height: 1.4;
+        overflow-x: auto;
+        margin: 8pt 0 12pt 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+
+    /* ─── Horizontal rules ─────────────────────────────────── */
+
+    hr {
+        border: none;
+        border-top: 1px solid #d0d0d0;
+        margin: 14pt 0;
+    }
+
+    /* ─── Checklists ───────────────────────────────────────── */
+
+    .checklist {
+        list-style: none;
+        padding-left: 0;
+        margin: 6pt 0 10pt 0;
+    }
+
+    .checklist li {
+        padding-left: 24pt;
+        position: relative;
+        margin-bottom: 4pt;
+    }
+
+    .checklist li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 3pt;
+        width: 11pt;
+        height: 11pt;
+        border: 1.5px solid #555;
+        border-radius: 2px;
+        background: #fff;
+    }
+
+    .checklist li.checked::before {
+        background: #27AE60;
+        border-color: #27AE60;
+    }
+
+    .checklist li.checked::after {
+        content: "\2713";
+        position: absolute;
+        left: 2pt;
+        top: 1pt;
+        color: #fff;
+        font-size: 9pt;
+        font-weight: 700;
+    }
+
+    /* ─── Risk badges ──────────────────────────────────────── */
+
+    .risk-critical { color: #C0392B; font-weight: 700; }
+    .risk-high { color: #E67E22; font-weight: 700; }
+    .risk-medium { color: #F39C12; font-weight: 700; }
+    .risk-low { color: #27AE60; font-weight: 700; }
+
+    /* ─── Disclaimer section ───────────────────────────────── */
+
+    .disclaimer {
+        page-break-before: always;
+        margin-top: 0;
+    }
+
+    .disclaimer h2 {
+        font-size: 13pt;
+        color: #154273;
+    }
+
+    .disclaimer p, .disclaimer li {
+        font-size: 8.5pt;
+        line-height: 1.45;
+        color: #555;
+    }
+
+    .disclaimer strong {
+        color: #333;
+    }
+
+    .footer-meta {
+        margin-top: 16pt;
+        padding-top: 8pt;
+        border-top: 1px solid #d0d0d0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 7.5pt;
+        color: #999;
+        text-align: right;
+    }
+
+    /* ─── Confidentiality banner (screen) ──────────────────── */
+
+    .top-banner {
+        background-color: #C0392B;
+        color: white;
+        text-align: center;
+        padding: 5pt 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 8.5pt;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        margin: -25mm -25mm 14pt -25mm;
+        width: calc(100% + 50mm);
+    }
+
+    @media print {
+        .top-banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+            width: 100%;
+        }
+    }
+
+    /* ─── Page break helpers ───────────────────────────────── */
+
+    .page-break {
+        page-break-before: always;
+    }
+    </style>
+</head>
+<body>
+<div class="page-content">
+
+<h1>COUNTER-PROPOSAL: ADDENDUM TO EMPLOYMENT AGREEMENT</h1>
+<h2>(Tegenvoorstel: Aanvulling op de Arbeidsovereenkomst)</h2>
+<hr>
+<p><strong>Document Reference:</strong> FTA-AXL-2026-CP-001 <strong>Date:</strong> 4 March 2026 (4 maart 2026) <strong>Classification:</strong> Confidential (Vertrouwelijk) <strong>Status:</strong> COUNTER-PROPOSAL: FOR NEGOTIATION PURPOSES</p>
+<hr>
+<h2>Executive Summary</h2>
+<p><strong>What Axelera Gets:</strong> - Perpetual, irrevocable, worldwide, exclusive license to Wingman v1.0.0 for Axelera AI accelerator cards - Full source code delivery with modification rights - Right to distribute Wingman to Axelera customers - Independent Wingman operation without ongoing Employee dependency</p>
+<p><strong>What Employee Retains:</strong> - ChipOS platform ownership (developed independently as eenmanszaak, registered KvK 99153289) - FutureAtoms business continuation for non-competing platforms - Right to develop for non-Axelera hardware platforms</p>
+<p><strong>Why This Works for Both Parties:</strong> - Axelera receives an autonomous, production-ready Wingman v1.0.0 package - The addendum is legally enforceable (compliant with Art. 7:653a BW and Art. 6:248 lid 2 BW) - Clear boundaries prevent future disputes over IP ownership</p>
+<p><strong>Compensation:</strong> - EUR 14,000 gross one-time payment - EUR 10,000 in Stock Appreciation Rights (SARs) - Approximately USD 1,400 in documented out-of-pocket expenses</p>
+<hr>
+<h2>PARTIES (PARTIJEN)</h2>
+<p><strong>1. Employer (Werkgever):</strong> Axelera AI B.V., a company incorporated under the laws of the Netherlands, having its registered office at its principal place of business (hereinafter: <strong>&quot;Employer&quot;</strong> or <strong>&quot;Axelera AI&quot;</strong>);</p>
+<p><strong>2. Employee (Werknemer):</strong> Mr. Abhilash Chadhar, born on 11 June 1991, residing at 1-609 Kastanjelaan, 5616 LH Eindhoven, employed by Employer since <strong>1 December 2022</strong> in the capacity of <strong>Senior Verification Engineer</strong>, on a permanent employment contract (arbeidsovereenkomst voor onbepaalde tijd) (hereinafter: <strong>&quot;Employee&quot;</strong>);</p>
+<p><strong>Capacity Note (Hoedanigheid):</strong> Employee also operates <strong>FutureAtoms</strong>, a sole proprietorship (eenmanszaak) registered with the Kamer van Koophandel under number KvK: 99153289. A sole proprietorship (eenmanszaak) has no separate legal personality under Dutch law; FutureAtoms is a trade name of Employee. Accordingly, this Addendum is entered into between two parties only (Employer and Employee). Where this Addendum refers to &quot;Employee / FutureAtoms&quot; or to Employee &quot;acting in his capacity as sole proprietor of FutureAtoms,&quot; this refers to Employee's commercial activities conducted under the FutureAtoms trade name and is used for clarity of context only, not to introduce a third party. The signature by Employee in his capacity as sole proprietor of FutureAtoms serves to confirm Employee's commitment with respect to the commercial and IP-related provisions of this Addendum.</p>
+<p>hereinafter individually referred to as a <strong>&quot;Party&quot;</strong> and collectively as the <strong>&quot;Parties&quot;</strong>;</p>
+<hr>
+<h2>RECITALS (OVERWEGINGEN)</h2>
+<p><strong>WHEREAS:</strong></p>
+<p>A. Employee has been employed by Employer since 1 December 2022 under a permanent employment contract (arbeidsovereenkomst voor onbepaalde tijd), currently holding the position of Senior Verification Engineer;</p>
+<p>B. Employee independently owns and operates <strong>FutureAtoms</strong>, a sole proprietorship (eenmanszaak) registered with the Dutch Chamber of Commerce (Kamer van Koophandel) under number <strong>KvK: 99153289</strong>, through which Employee has developed <strong>ChipOS</strong>, a vendor-neutral agentic orchestration platform for semiconductor design workflows. FutureAtoms operates across nine diverse domains: semiconductor design (ChipOS), healthcare (Swaastik, targeting 150K+ facilities per FutureAtoms project specifications), music generation (BevyBeats), professional networking AI (Zaphy), workflow automation (Agentic Control), RTL generation (SystemVerilogGPT), wellness (Yuj), mental health (Savitri), and computer vision (AdaptiveVision), demonstrating that FutureAtoms is a broad technology platform, not a competitor to Employer's hardware business;</p>
+<p>C. ChipOS was conceived, designed, and developed by Employee on his own time, using his own equipment and resources, independently of and prior to any instruction or assignment by Employer, and does not fall within Employee's employment duties (taakomschrijving) with Employer. ChipOS is maintained in a separate git repository (github.com/FutureAtoms/ChipOS.git) with an extensive independent commit history (predominantly by FutureAtoms), and has no code-level dependency on, imports from, or shared history with any Employer repository or the Wingman application;</p>
+<p>D. Employee developed an application called <strong>Wingman</strong>, a product for programming Axelera AI accelerator cards using the Voyager SDK, which is maintained in a separate git repository (github.com/FutureAtoms/voyager-wingman.git, 3 commits) with a distinct architecture (8-service Docker microservices platform) from ChipOS (custom VS Code distribution), zero code imports from ChipOS, a separate database, and a separate Docker network. Wingman uses general development patterns from Employee's independent work but is specifically tailored for Axelera's use case;</p>
+<p>E. Employer has expressed interest in acquiring rights to the Wingman application for use in connection with its hardware products;</p>
+<p>F. Employer has proposed an addendum to the employment agreement that, in Employee's assessment, is broader than necessary for the Wingman delivery and may unintentionally capture intellectual property rights to ChipOS and other FutureAtoms assets that fall outside the scope of the employment relationship;</p>
+<p>G. This Counter-Proposal seeks to establish a fair and legally compliant arrangement that (i) properly delineates the boundaries between Employee's employment duties and FutureAtoms' independent business activities, (ii) grants Employer appropriate rights to the Wingman application, and (iii) preserves Employee's pre-existing intellectual property rights in ChipOS and FutureAtoms, all in accordance with Dutch law, including but not limited to Book 7 of the Dutch Civil Code (Burgerlijk Wetboek, &quot;BW&quot;), the Dutch Copyright Act (Auteurswet, &quot;Aw&quot;), and the Dutch Patent Act (Rijksoctrooiwet);</p>
+<p>H. Parties wish to record their agreements in this Addendum in accordance with the principle of good employment practices (goed werkgeverschap en goed werknemerschap) as set forth in <strong>Article 7:611 BW</strong>;</p>
+<p>(I) Both Parties recognize that this arrangement serves their mutual interests: Employer receives an autonomous, production-ready Wingman v1.0.0 package, and Employee retains the ability to continue developing the independently-created ChipOS platform through FutureAtoms;</p>
+<p>(J) Both Parties wish to establish a clear, enforceable framework that provides legal certainty and avoids future disputes regarding the ownership and use of software developed by Employee;</p>
+<p><strong>NOW, THEREFORE, the Parties agree as follows:</strong></p>
+<hr>
+<h1>PART A: SIDE BUSINESS PERMISSION</h1>
+<h2>(Deel A: Toestemming Nevenactiviteiten)</h2>
+<hr>
+<h3>Article A1: Disclosure and Approval of Side Business (Openbaarmaking en Goedkeuring Nevenactiviteiten)</h3>
+<p>A1.1. Employee hereby formally discloses that he owns and operates the sole proprietorship (eenmanszaak) <strong>FutureAtoms</strong>, registered with the Kamer van Koophandel under number <strong>KvK: 99153289</strong> (hereinafter: <strong>&quot;FutureAtoms&quot;</strong>).</p>
+<p>A1.2. FutureAtoms' principal activity is the development, licensing, and commercialization of <strong>ChipOS</strong>, a vendor-neutral agentic orchestration platform for semiconductor design workflows, as further defined in Article A4.</p>
+<p>A1.3. Employer hereby grants Employee <strong>written approval</strong> (schriftelijke toestemming) to continue operating FutureAtoms and to continue developing, marketing, licensing, and commercializing ChipOS and related products, subject to the conditions set forth in this Addendum.</p>
+<p>A1.4. This approval shall remain in effect for the duration of the employment relationship unless revoked in writing for cause, provided that revocation shall only be permissible in the event of a material breach of the conditions set forth in this Part A that remains uncured after a written notice period of thirty (30) calendar days.</p>
+<p>A1.5. Any restriction on side activities must comply with the requirements of <strong>Article 7:653a BW</strong>, which provides that an ancillary activities restriction (nevenwerkzaamhedenbeding) may only be invoked if justified by objective reasons (objectieve rechtvaardiging).</p>
+<hr>
+<h3>Article A2: Separation of Activities (Scheiding van Activiteiten)</h3>
+<p>A2.1. Employee undertakes that all work for FutureAtoms, including but not limited to development, marketing, customer engagement, and administrative tasks, shall be performed <strong>exclusively outside of Employee's working hours</strong> (buiten werktijd) as defined in the employment agreement and any applicable working time arrangements.</p>
+<p>A2.2. Employee shall <strong>not</strong> use any of the following for FutureAtoms activities: - (a) Employer's equipment, hardware, software licenses, or infrastructure (apparatuur, hardware, softwarelicenties of infrastructuur); - (b) Employer's networks, servers, cloud environments, or development environments (netwerken, servers, cloudomgevingen of ontwikkelomgevingen); - (c) Employer's confidential information or trade secrets (vertrouwelijke informatie of bedrijfsgeheimen) as defined in the employment agreement and the Dutch Trade Secrets Act (Wet bescherming bedrijfsgeheimen).</p>
+<p>A2.3. Employee shall <strong>not</strong> solicit, approach, or divert any customers, clients, business partners, or prospects of Employer for FutureAtoms business purposes (geen relatiebeding-schending).</p>
+<p>A2.4. Employee shall <strong>not</strong> use any trade secrets (bedrijfsgeheimen) of Employer in the development, marketing, or commercialization of ChipOS, Wingman, or any other FutureAtoms products.</p>
+<p>A2.5. Employee shall <strong>promptly disclose</strong> to Employer any situation that may give rise to a conflict of interest (belangenconflict) between Employee's duties under the employment agreement and FutureAtoms' business activities. Such disclosure shall be made in writing within five (5) business days of Employee becoming aware of the potential conflict.</p>
+<h3>Article A2.6: Objective Justification of Restrictions (Objectieve Rechtvaardiging Beperkingen)</h3>
+<p>A2.6. In accordance with <strong>Article 7:653a BW</strong>, the restrictions set forth in Articles A2.1 through A2.5 are each supported by the following objective justifications:</p>
+<ul>
+<li>(a) <strong>Article A2.1</strong> (outside working hours): justified by the need to ensure adequate time and resource separation between employment duties and side business activities, protecting Employer's legitimate interest in Employee's full availability during contracted working hours;
+<ul>
+<li>(b) <strong>Article A2.2</strong> (no use of Employer resources): justified by the protection of Employer's trade secrets and confidential information (bescherming bedrijfsgeheimen) and the prevention of commingling of business assets;</li>
+<li>(c) <strong>Article A2.3</strong> (no solicitation): justified by the protection of Employer's customer relationships and business goodwill (relatiebescherming);</li>
+<li>(d) <strong>Article A2.4</strong> (no use of trade secrets): justified by the protection of Employer's trade secrets within the meaning of the Dutch Trade Secrets Act (Wet bescherming bedrijfsgeheimen);</li>
+<li>(e) <strong>Article A2.5</strong> (conflict disclosure): justified by the avoidance of conflicts of interest (belangenconflicten) and the duty of good faith inherent in the employment relationship.</li>
+</ul></li>
+</ul>
+<hr>
+<h3>Article A3: Intellectual Property Boundary (Intellectueel Eigendom Afbakening)</h3>
+<p><em>This Article constitutes the agreed delineation of intellectual property ownership between the Parties.</em></p>
+<p>A3.1. <strong>Employer's IP (IE van Werkgever):</strong> Pursuant to the &quot;unless otherwise agreed&quot; (<em>tenzij tussen partijen anders is overeengekomen</em>) provision of Article 7 of the Auteurswet and the applicable provisions of Article 12(1) of the Rijksoctrooiwet 1995, the Parties agree that all intellectual property, including but not limited to inventions, works of authorship, software, designs, and know-how, that is: - (a) created in the performance of Employee's employment duties (in de uitoefening van de dienstbetrekking) as described in the employment agreement; <strong>and</strong> - (b) created using Employer's time, equipment, networks, or resources;</p>
+<p>shall be and remain the exclusive property of Employer. The Parties intend this cumulative test (requiring both (a) and (b)) to replace the default statutory rule of Article 7 Auteurswet, which applies the single criterion of creation &quot;in the service of&quot; the employer. This agreed departure is made in accordance with <strong>Article 7:610 BW</strong> (employment relationship), <strong>Article 7 of the Auteurswet</strong> (copyright in employment), and <strong>Article 12(1) of the Rijksoctrooiwet 1995</strong> (patents in employment).</p>
+<p>A3.2. <strong>Employee's / FutureAtoms' IP (IE van Werknemer / FutureAtoms):</strong> All intellectual property, including but not limited to inventions, works of authorship, software, designs, and know-how, that is: - (a) created <strong>outside of Employee's working hours</strong> (buiten werktijd); <strong>and</strong> - (b) created using Employee's <strong>own equipment, resources, and infrastructure</strong>;</p>
+<p>shall be and remain the <strong>exclusive property of Employee and/or FutureAtoms</strong>. The fact that such intellectual property may relate to a field of activity similar to Employer's business shall not, by itself, alter this classification, provided that the cumulative conditions of Article A3.1(a) and (b) are not met.</p>
+<p>A3.3. <strong>ChipOS</strong> and all its components, modules, source code, documentation, trademarks, and associated intellectual property, as defined in Article A4 below, are hereby acknowledged and confirmed by Employer to be the <strong>exclusive intellectual property of Employee / FutureAtoms</strong>, having been developed independently of the employment relationship.</p>
+<p>A3.4. <strong>Testing and Demonstration Exception (Uitzondering voor Testen en Demonstratie):</strong> The fact that Employee has tested, demonstrated, or evaluated ChipOS or any FutureAtoms product on Employer's hardware for pilot, evaluation, proof-of-concept, or demonstration purposes shall <strong>NOT</strong>: - (a) create, transfer, or imply any ownership rights in favor of Employer over ChipOS or any FutureAtoms intellectual property; - (b) constitute creation &quot;in the performance of employment duties&quot; within the meaning of Article 7 Auteurswet or Article 12 Rijksoctrooiwet 1995; - (c) alter the classification of ChipOS or any FutureAtoms product as Employee's / FutureAtoms' IP under Article A3.2.</p>
+<p>A3.5. In the event of any dispute regarding the classification of specific intellectual property under this Article A3, the burden of proof that such IP was created in the performance of employment duties using employer time and equipment shall rest with Employer.</p>
+<p>A3.6. <strong>Mixed-Scenario Clarification (Verduidelijking Gemengde Situaties).</strong> In the event that the creation of intellectual property involves elements of both Article A3.1 and Article A3.2 (for example, work performed partly during and partly outside working hours, or using a combination of Employer and Employee resources):</p>
+<p>(a) The intellectual property shall be classified as Employer's IP under Article A3.1 <strong>only if</strong> Employer demonstrates that <strong>both</strong> cumulative conditions (A3.1(a) and A3.1(b)) are satisfied for the <strong>substantial and material part</strong> of the creative work. Incidental or <em>de minimis</em> use of Employer time or resources (e.g., a brief test on Employer hardware, reference to a work email) shall not, by itself, satisfy condition A3.1(b).</p>
+<p>(b) Where the creative work cannot reasonably be attributed predominantly to either category, the Parties shall negotiate in good faith to reach a fair allocation of rights, taking into account the relative contributions of each Party's time and resources to the creation of the IP.</p>
+<p>(c) The burden of proof that the cumulative conditions of Article A3.1 are met for the substantial part of the work shall rest with Employer (consistent with Article A3.5).</p>
+<hr>
+<h3>Article A4: ChipOS Definition (Definitie ChipOS)</h3>
+<p>A4.1. For the purposes of this Addendum, <strong>&quot;ChipOS&quot;</strong> means the vendor-neutral agentic orchestration platform for semiconductor design workflows, developed by Employee through FutureAtoms, maintained in the git repository at github.com/FutureAtoms/ChipOS.git (extensive independent commit history, predominantly by FutureAtoms), including but not limited to: - (a) the core orchestration engine and framework (custom VS Code distribution with FastAPI backend and MCP server); - (b) all application modules, plugins, extensions, and App Packs (including but not limited to the 11 AI-native App Packs for semiconductor design workflows: CPU Development, RTL Verification, RTL Debug, Physical Design, PD Verification, Spec Developer, Hardware Programmer, Voyager SDK, Raspberry Pi, Web Development, and Documentation); - (c) all APIs, interfaces, protocols, and data schemas; - (d) all documentation, specifications, and user guides; - (e) all associated source code, object code, libraries, and dependencies; - (f) the FutureAtoms brand, trademarks, trade names, and associated goodwill; - (g) all derivative works, improvements, and future versions thereof; - (h) all cloud infrastructure, deployment scripts, CI/CD pipelines, and build systems associated with ChipOS.</p>
+<p>A4.2. ChipOS is and shall remain the <strong>exclusive intellectual property of Employee / FutureAtoms</strong>. Employer has no claim, right, title, or interest in ChipOS, except as expressly granted under Part B of this Addendum with respect to the Wingman application only.</p>
+<p>A4.3. Nothing in the employment agreement, any prior or subsequent addendum, or any company policy shall be construed to transfer, assign, or license any rights in ChipOS to Employer, except as expressly set forth in Part B.</p>
+<hr>
+<h1>PART B: WINGMAN DELIVERY</h1>
+<h2>(Deel B: Oplevering Wingman)</h2>
+<hr>
+<h3>Article B1: Wingman Definition (Definitie Wingman)</h3>
+<p>B1.1. For the purposes of this Addendum, <strong>&quot;Wingman&quot;</strong> means the standalone software application developed by Employee for the specific purpose of programming Axelera AI accelerator cards using the Voyager SDK.</p>
+<p>B1.2. Wingman is a <strong>standalone application</strong> that incorporates general patterns and structural approaches from Employee's independently-developed ChipOS platform, tailored specifically for the Voyager SDK use case. While Wingman shares some structural elements with ChipOS, it is scoped to Axelera's specific needs and is maintained in its own git repository with its own database infrastructure. The delivered version (Wingman v1.0.0) will be a standalone, self-contained codebase that Employer can operate independently.</p>
+<p>B1.3. The version of Wingman subject to this Addendum is <strong>version 1.0.0</strong> (hereinafter: <strong>&quot;Wingman v1.0.0&quot;</strong>).</p>
+<p>B1.4. <strong>Shared Development Patterns (Gedeelde Ontwikkelpatronen):</strong> The Parties acknowledge that Wingman v1.0.0 may contain structural elements, patterns, or approaches derived from ChipOS (hereinafter: <strong>&quot;Shared Development Patterns&quot;</strong>). For the avoidance of doubt, Shared Development Patterns constitute general software engineering techniques, including workflow automation patterns, API integration approaches, and configuration management structures, that are standard industry practices and do not represent proprietary intellectual property of either Party (cf. <strong>EU Directive 2009/24/EC Art. 1(2)</strong>, confirmed by CJEU C-406/10, <em>SAS Institute v. WPL</em>: ideas and principles underlying a computer program are not protectable by copyright; applied in Dutch law via <em>richtlijnconforme interpretatie</em>). The Wingman License granted under Article B3 includes a license to use such Shared Development Patterns <strong>solely as part of and in connection with Wingman v1.0.0 for the Permitted Purpose</strong>. This license to Shared Development Patterns does not extend to: - (a) the ChipOS platform as a whole; - (b) any ChipOS modules, App Packs, or components not included in the Wingman v1.0.0 deliverable; - (c) any use of Shared Development Patterns outside of or separate from the Wingman application.</p>
+<hr>
+<h3>Article B2: Delivery Scope and Timeline (Omvang en Tijdlijn Oplevering)</h3>
+<p>B2.1. Employee shall deliver Wingman v1.0.0 to Employer no later than <strong>15 April 2026</strong> (hereinafter: the <strong>&quot;Delivery Date&quot;</strong>).</p>
+<p>B2.2. The delivery shall comprise the following deliverables (op te leveren materialen):</p>
+<p><strong>(a) Source Code:</strong> - Complete source code of Wingman v1.0.0, provided as a git archive; - Tagged as version <strong>v1.0.0</strong> in the Wingman repository; - <strong>Exclusively</strong> from the Wingman repository; the ChipOS repository, any other FutureAtoms repositories, or any ChipOS source code are expressly <strong>NOT</strong> included in the delivery;</p>
+<p><strong>(b) Container Images and Build Files:</strong> - Pre-built Docker images for deployment of Wingman v1.0.0, if pre-built images are provided; otherwise, Dockerfiles and build scripts sufficient to produce such images; - Dockerfiles and build scripts necessary to reproduce the Docker images;</p>
+<p><strong>(c) Documentation:</strong> - Deployment documentation (installatiehandleiding); - Database schemas and migration scripts (databaseschema's en migratiescripts); - API documentation (API-documentatie);</p>
+<p><strong>(d) Integrity and Compliance:</strong> - SHA-256 checksums for all delivered files and images; - Software Bill of Materials (SBOM) listing all dependencies, libraries, and their licenses; - Confirmation that all secrets, credentials, API keys, and personal data have been removed from the delivered materials;</p>
+<p>B2.3. Delivery shall be made via a mutually agreed secure transfer method. Upon delivery, Employer shall have thirty (30) calendar days to verify completeness and functionality of the deliverables against the list in Article B2.2 and the Delivery Manifest (Annex 3) (hereinafter: the <strong>&quot;Verification Period&quot;</strong>). During the Verification Period, Employee shall be available for reasonable clarification questions, up to a maximum of eight (8) working hours. If Employer does not provide written notice of material deficiencies within the Verification Period, the delivery shall be deemed accepted.</p>
+<p>B2.4. <strong>Interim Testing License (Tussentijdse Testlicentie).</strong> During the Verification Period, Employer is granted a limited, non-exclusive, non-transferable, revocable license to use Wingman v1.0.0 solely for the purpose of verifying completeness and functionality of the deliverables under Article B2.3 (hereinafter: the <strong>&quot;Testing License&quot;</strong>). The Testing License does not permit production use, distribution, sublicensing, or modification of Wingman v1.0.0. The Testing License shall automatically terminate upon the vesting of the Wingman License under Article B3. If Employer provides written notice of material deficiencies within the Verification Period and such deficiencies are disputed, the Testing License shall continue in effect (on the same terms and solely for verification purposes) until the dispute is resolved through the procedure in Article B2.5. If the Verification Period expires without Employer having provided written notice of material deficiencies, the delivery shall be deemed accepted and the Testing License shall continue in effect until the Wingman License vests under Article B3. For the avoidance of doubt, the Testing License is independent of and does not affect the conditions for vesting of the Wingman License under Article B3.</p>
+<p>B2.5. <strong>Deficiency Resolution (Geschillenregeling Gebreken).</strong> If Employer provides written notice of material deficiencies within the Verification Period, Employee shall have fifteen (15) business days from receipt of such notice to remedy the identified deficiencies (hereinafter: the <strong>&quot;Cure Period&quot;</strong>). A &quot;material deficiency&quot; means a failure to deliver a deliverable listed in Article B2.2 or a failure of the delivered materials to meet the acceptance criteria set forth in the Delivery Manifest (Annex 3). If the Parties cannot agree on whether a deficiency has been remedied after the Cure Period, either Party may refer the matter to an independent IT expert mutually agreed upon by the Parties (or, failing agreement within ten (10) business days, appointed by the president of the Rechtbank Oost-Brabant), whose determination shall be binding. Costs of the expert shall be borne by the Party whose position is not upheld.</p>
+<hr>
+<h3>Article B3: License Grant (Licentieverlening)</h3>
+<p>B3.1. <strong>Vesting of the Wingman License.</strong> The Wingman License shall vest upon satisfaction of <strong>both</strong> of the following conditions (the <strong>&quot;Vesting Conditions&quot;</strong>):</p>
+<p>(i) <strong>Acceptance</strong>: the delivery has been accepted, whether expressly, deemed under Article B2.3 (expiry of the Verification Period without notice of material deficiencies), or confirmed by the independent IT expert under Article B2.5; <strong>and</strong></p>
+<p>(ii) <strong>Payment</strong>: the cash bonus set forth in Article B6.1(a) has been received by Employee.</p>
+<p><strong>Payment obligation is independent of acceptance:</strong> the obligation to pay under Article B6 arises upon the Delivery Date and is not conditional upon acceptance. Employer may not withhold payment pending acceptance.</p>
+<p><strong>Independent contractual obligations:</strong> The equity compensation under Article B6.1(b) and expense reimbursement under Article B6.1(c) are independent contractual obligations of Employer arising upon the Delivery Date. Failure to grant the equity compensation within the period specified in Article B6.1(b), or failure to reimburse expenses within the period specified in Article B6.1(c), shall constitute a material breach of this Addendum entitling Employee to claim performance, damages, and/or statutory interest (wettelijke rente, Art. 6:119 BW) without prejudice to the vesting of the Wingman License.</p>
+<p><strong>Testing License bridge:</strong> Until both Vesting Conditions are satisfied, the Testing License under Article B2.4 shall remain in effect (on its existing terms, solely for verification and internal evaluation purposes). If the delivery has been accepted but payment remains outstanding more than fifteen (15) calendar days after the payment due date, Employee may terminate the Testing License upon seven (7) calendar days' written notice, without prejudice to Employee's right to claim the outstanding payment.</p>
+<p><strong>Dispute scenario:</strong> If the Parties are engaged in the deficiency resolution procedure under Article B2.5, the Testing License continues during and until resolution. If the independent IT expert determines that the delivery meets the acceptance criteria, acceptance is deemed to have occurred on the date of the expert's determination. If the expert determines that material deficiencies remain, Employee shall have a further Cure Period of fifteen (15) business days, after which the expert shall make a final binding determination on acceptance.</p>
+<p>Upon vesting, Employee (acting in his capacity as sole proprietor of FutureAtoms) hereby grants Employer the following license (hereinafter: the <strong>&quot;Wingman License&quot;</strong>):</p>
+<p><strong>(a) Nature of License:</strong> - <strong>Perpetual</strong> (eeuwigdurend): the license shall have no expiration date; - <strong>Irrevocable</strong> (onherroepelijk): the license may not be revoked by Employee / FutureAtoms; - <strong>Worldwide</strong> (wereldwijd): the license shall have no territorial restrictions; - <strong>Exclusive</strong> (exclusief): Employee / FutureAtoms shall not grant licenses to third parties for standalone applications whose primary purpose is programming Axelera AI accelerator cards, subject to Article B3.1(f). For the avoidance of doubt, this exclusivity does not extend to vendor-neutral, multi-platform tools that may incidentally support Axelera hardware alongside other vendors' hardware (see Article B3.1(f)(iv));</p>
+<p><strong>(b) Scope Limitation: Purpose:</strong> The Wingman License is <strong>strictly limited</strong> to the purpose of <strong>programming Axelera AI accelerator cards</strong>, including the Metis platform and its successors (hereinafter: <strong>&quot;Permitted Purpose&quot;</strong>). For the avoidance of doubt, the Permitted Purpose covers standalone applications that are marketed or distributed as dedicated tools for programming Axelera AI hardware; it does not cover vendor-neutral, multi-platform tools that may incidentally support Axelera hardware alongside other vendors' hardware;</p>
+<p><strong>(c) Permitted Uses:</strong> Within the Permitted Purpose, Employer may: - Use, execute, and operate Wingman v1.0.0; - Modify, adapt, and create derivative works of Wingman v1.0.0; - Reproduce and copy Wingman v1.0.0; - Distribute Wingman v1.0.0, including to end customers; - Use Wingman for both <strong>internal use</strong> and <strong>customer-facing use</strong> (extern gebruik), provided always that such use is <strong>in connection with Axelera AI hardware products only</strong>;</p>
+<p><strong>(d) Non-Transferability and Sublicensing:</strong> The Wingman License is <strong>non-transferable</strong> (niet-overdraagbaar), except in connection with the sale, merger, or transfer of substantially all of Employer's business or the business unit to which the Wingman License relates. Employer may grant sublicenses to end customers solely to use Wingman v1.0.0 in connection with Axelera AI hardware products purchased by such end customers, provided that such sublicenses are on terms no less restrictive than the Wingman License and do not exceed the scope of the Permitted Purpose. Employer shall remain fully liable for compliance by its sublicensees with the terms of the Wingman License;</p>
+<p><strong>(e) Version Limitation:</strong> The Wingman License is <strong>limited to Wingman v1.0.0 as delivered</strong> under Article B2, including any modifications made by Employer pursuant to Article B3.1(c). The license does not extend to future versions of Wingman or any other FutureAtoms products;</p>
+<p><strong>(f) Employee's Retained Rights:</strong> Employee / FutureAtoms <strong>retains</strong> the right to: - Develop, license, and commercialize similar technology, products, and applications for <strong>non-Axelera hardware platforms</strong>; - Continue developing ChipOS and derivative products for any purpose not covered by the Permitted Purpose; - Use the general knowledge, skills, experience, and know-how acquired during the development of Wingman; - (iv) Develop and distribute vendor-neutral tools and platforms that support multiple hardware platforms, including tools that may incidentally support Axelera hardware alongside other vendors' hardware, provided such tools are not marketed or positioned as dedicated Axelera programming tools that would directly replace the Wingman application for the Permitted Purpose;</p>
+<p><strong>(g) Relationship to Non-Competition Provisions:</strong> The exclusivity covenant in Article B3.1(a) is a license term governing the scope of commercial exploitation of Wingman v1.0.0 and is not a post-employment non-competition clause (<em>concurrentiebeding</em>) within the meaning of Article 7:653 BW. For the avoidance of doubt: - This exclusivity relates solely to standalone applications whose primary purpose is programming Axelera AI accelerator cards and that are substantially based on Wingman v1.0.0 technology; - It does not restrict Employee's right to develop, market, or distribute new, independently-created software products (even if such products support Axelera hardware) provided they are not substantially derived from Wingman v1.0.0; - The post-employment restrictions addressed in Article D1 are separate and independent provisions governed by employment law; the license exclusivity in this Article B3 does not extend, modify, or supplement those provisions.</p>
+<p><strong>(h) Internal Modifications:</strong> Employer may modify Wingman v1.0.0 internally for its own purposes within the scope of the Permitted Purpose. Any such modifications shall not create any obligation on the part of Employee / FutureAtoms to support, maintain, or warrant such modifications.</p>
+<hr>
+<h3>Article B4: No Future Obligation (Geen Toekomstige Verplichtingen)</h3>
+<p>B4.1. Employee (acting in his capacity as sole proprietor of FutureAtoms) shall have <strong>no obligation</strong> to provide any of the following after the Delivery Date: - (a) Updates, upgrades, patches, or new versions of Wingman; - (b) Maintenance, support, or troubleshooting services; - (c) Training or knowledge transfer beyond the documentation delivered under Article B2.2(c); - (d) Integration services or compatibility assurances with future Employer products or systems.</p>
+<p>B4.1a. For the avoidance of doubt, any future Wingman development or enhancement work performed by Employee <strong>within the scope of Employee's regular employment duties</strong> at Employer (i.e., work that Employer directs as part of Employee's day-to-day role and for which Employee receives regular salary compensation) shall be the property of Employer under Article A3.1. This provision applies to routine employment-scope work and does not create an obligation for Employee to perform Wingman development work beyond Employee's agreed role description. For work that falls outside Employee's regular employment duties or that constitutes a discrete development project, Article B4.2 applies.</p>
+<p>B4.2. Any future development, maintenance, support, or update services requested by Employer shall be subject to a separate commercial agreement between Employer and Employee (acting in his capacity as sole proprietor of FutureAtoms), to be negotiated in good faith at arm's length terms and market rates.</p>
+<hr>
+<h3>Article B5: Exclusions from Delivery (Uitgesloten van Oplevering)</h3>
+<p>B5.1. For the avoidance of doubt, the following are <strong>expressly not included</strong> in the delivery under this Addendum and are <strong>not</strong> covered by the Wingman License:</p>
+<ul>
+<li>(a) <strong>The ChipOS platform</strong>, including its core orchestration engine, framework, and all components as defined in Article A4;
+<ul>
+<li>(b) <strong>Non-Wingman App Packs</strong>, modules, plugins, or extensions developed by Employee / FutureAtoms for ChipOS or other purposes;</li>
+<li>(c) <strong>FutureAtoms branding</strong>, including the FutureAtoms name, logo, trademarks, trade names, domain names, and associated goodwill;</li>
+<li>(d) <strong>Future versions</strong> of Wingman (i.e., any version other than v1.0.0);</li>
+<li>(e) <strong>Source code, documentation, or materials</strong> from any repository other than the Wingman v1.0.0 repository;</li>
+<li>(f) Any intellectual property of FutureAtoms not expressly identified in Article B2.2.</li>
+</ul></li>
+</ul>
+<hr>
+<h3>Article B6: Compensation (Vergoeding)</h3>
+<p>B6.1. In consideration of the delivery of Wingman v1.0.0 and the grant of the Wingman License, Employer shall pay Employee the following compensation through the employment relationship (via payroll), subject to applicable tax withholdings and social security contributions:</p>
+<p><strong>(a) Cash Bonus (Bonus):</strong> A one-time gross bonus of <strong>EUR 14,000.00</strong> (fourteen thousand euros), payable within thirty (30) calendar days after the Delivery Date, subject to applicable tax withholdings and social security contributions;</p>
+<p><strong>(b) Equity Compensation (Aandelencompensatie):</strong> Stock Appreciation Rights (SARs) and/or stock options with a value of <strong>EUR 10,000.00</strong> (ten thousand euros) at the date of grant, subject to the terms and conditions of Employer's equity incentive plan, to be granted within thirty (30) calendar days after the Delivery Date;</p>
+<p><strong>(c) Expense Reimbursement (Onkostenvergoeding):</strong> Reimbursement of documented pilot-related expenses incurred by Employee in the amount of approximately <strong>USD 1,400.00</strong> (one thousand four hundred US dollars), or the euro equivalent at the exchange rate on the date of reimbursement, payable within thirty (30) calendar days after submission of supporting documentation.</p>
+<p>B6.2. The compensation set forth in this Article B6 constitutes the <strong>full and final compensation</strong> for the delivery of Wingman v1.0.0 and the grant of the Wingman License <strong>as defined and scoped in this Part B</strong>. No additional compensation shall be due from Employer in connection with the subject matter of Part B of this Addendum. For the avoidance of doubt, any use of Wingman beyond the Permitted Purpose defined in Article B3.1(b), any request for additional versions, updates, or maintenance, or any expansion of the license scope shall require a separate commercial agreement and additional compensation.</p>
+<hr>
+<h1>PART C: MARKETING RIGHTS</h1>
+<h2>(Deel C: Marketingrechten)</h2>
+<hr>
+<h3>Article C1: Employee's Marketing Rights (Marketingrechten Werknemer)</h3>
+<p>C1.1. Employee (acting in his capacity as sole proprietor of FutureAtoms) shall have the right to publicly state, in marketing materials, portfolios, case studies, website content, and professional communications, that Employee / FutureAtoms developed the Wingman application for Axelera AI.</p>
+<p>C1.2. Employee / FutureAtoms may use Employer's logo, trade name, and trademarks in such marketing materials, subject to Employer's <strong>prior written approval</strong> (voorafgaande schriftelijke toestemming), which approval shall not be unreasonably withheld or delayed.</p>
+<p>C1.3. Employer shall respond to any approval request under Article C1.2 within ten (10) business days. If Employer fails to respond within such period, approval shall be deemed granted, unless Employer notifies Employee within such period that additional time is required (not to exceed an additional ten (10) business days).</p>
+<hr>
+<h3>Article C2: Employer's Marketing Rights (Marketingrechten Werkgever)</h3>
+<p>C2.1. Employer shall have the right to reference FutureAtoms' contribution to the development of the Wingman application in Employer's marketing materials, press releases, investor communications, and product documentation.</p>
+<p>C2.2. Such references shall be subject to Employee's / FutureAtoms' <strong>prior written approval</strong> (voorafgaande schriftelijke toestemming), which approval shall not be unreasonably withheld or delayed.</p>
+<p>C2.3. Employee / FutureAtoms shall respond to any approval request under Article C2.2 within ten (10) business days. If Employee / FutureAtoms fails to respond within such period, approval shall be deemed granted, unless Employee / FutureAtoms notifies Employer within such period that additional time is required (not to exceed an additional ten (10) business days).</p>
+<hr>
+<h1>PART D: CONFLICT OF INTEREST SAFEGUARDS</h1>
+<h2>(Deel D: Belangenconflict Waarborgen)</h2>
+<hr>
+<h3>Article D1: Narrow Non-Competition Clause (Beperkt Concurrentiebeding)</h3>
+<p>D1.1. During the term of the employment agreement only (gedurende de looptijd van de arbeidsovereenkomst), Employee shall refrain from developing, licensing, or commercializing products that <strong>directly compete</strong> with Wingman for the specific purpose of programming Axelera AI accelerator cards.</p>
+<p>D1.2. This non-competition obligation is <strong>narrowly defined</strong> and shall be interpreted restrictively. For the avoidance of doubt, this Article D1 constitutes a <strong>nevenwerkzaamhedenbeding</strong> within the meaning of <strong>Article 7:653a BW</strong>, as it restricts side activities <strong>during the employment relationship only</strong> (see Article D1.4: automatic termination upon end of employment). Article 7:653 BW (concurrentiebeding) applies exclusively to <strong>post-employment</strong> non-competition restrictions and is therefore not applicable to this clause. The objective justification for this restriction under Art. 7:653a BW is the protection of Employer's legitimate commercial interest in the exclusive Wingman license granted under Part B.</p>
+<p>D1.3. For the avoidance of doubt, the non-competition obligation in Article D1.1 does <strong>NOT</strong> restrict Employee (acting in his capacity as sole proprietor of FutureAtoms) from: - (a) Continuing to develop, license, and commercialize <strong>ChipOS</strong> in any form; - (b) Developing, licensing, or commercializing products for <strong>non-Axelera hardware platforms</strong>, including but not limited to accelerator cards, FPGAs, ASICs, or other semiconductor devices manufactured by third parties; - (c) Developing, licensing, or commercializing products in <strong>different application domains</strong>, including but not limited to general EDA workflows, chip verification, design automation, or any other field not directly related to programming Axelera AI accelerator cards; - (d) Engaging in any <strong>consulting, advisory, or freelance</strong> activities unrelated to the Permitted Purpose; - (e) Engaging in <strong>academic research, publications, or open-source contributions</strong> in any field.</p>
+<p>D1.4. This non-competition obligation shall <strong>automatically terminate</strong> upon the termination of the employment agreement for any reason, without any post-employment non-competition period.</p>
+<p>D1.5. In accordance with <strong>Article 7:653a BW</strong> and established principles of proportionality, Employer may only invoke this restriction to the extent that it is justified by objective reasons and proportionate to the legitimate business interest it seeks to protect, taking into account the employee's interest in unrestricted professional activity.</p>
+<p>D1.6. <strong>Supersession of Prior Restrictions (Vervanging Eerdere Bedingen).</strong> This Article D1 is intended to update and align with current legal requirements any prior non-competition clause (<em>concurrentiebeding</em>) and/or non-solicitation clause (<em>relatiebeding</em>) contained in the original employment agreement between the Parties dated 1 December 2022, or in any prior amendment or addendum thereto. From the effective date of this Addendum, Employee shall have no post-employment non-competition or non-solicitation obligations beyond those set forth in this Article D1. For the relationship between this Article and the license exclusivity covenant in Article B3.1(a), see Article B3.1(g).</p>
+<hr>
+<h1>GENERAL PROVISIONS (ALGEMENE BEPALINGEN)</h1>
+<hr>
+<h3>Article G1: Entire Agreement (Volledige Overeenkomst)</h3>
+<p>G1.1. This Addendum, together with the employment agreement dated 1 December 2022 and any prior amendments thereto, constitutes the entire agreement between the Parties with respect to the subject matter hereof.</p>
+<p>G1.2. In the event of any conflict between this Addendum and the employment agreement, the provisions of this Addendum shall prevail with respect to the matters addressed herein.</p>
+<hr>
+<h3>Article G2: Governing Law and Disputes (Toepasselijk Recht en Geschillen)</h3>
+<p>G2.1. This Addendum shall be governed by and construed in accordance with the laws of the <strong>Netherlands</strong> (Nederlands recht).</p>
+<p>G2.2. Any disputes arising out of or in connection with this Addendum shall first be submitted to mediation. If mediation does not result in resolution within sixty (60) calendar days, the dispute shall be submitted to the Rechtbank Oost-Brabant, Eindhoven (bevoegde rechtbank). Notwithstanding the foregoing, nothing in this Article G2.2 shall prevent either Party from seeking urgent interim relief (<em>kort geding</em>) or conservatory measures (<em>conservatoire maatregelen</em>) before any competent court at any time, including prior to or during any mediation proceedings.</p>
+<hr>
+<h3>Article G3: Severability (Partiële Nietigheid)</h3>
+<p>G3.1. If any provision of this Addendum is held to be invalid, illegal, or unenforceable, the remaining provisions shall continue in full force and effect.</p>
+<p>G3.2. The Parties shall negotiate in good faith to replace any invalid provision with a valid provision that most closely reflects the Parties' original intent.</p>
+<hr>
+<h3>Article G4: Amendments (Wijzigingen)</h3>
+<p>G4.1. This Addendum may only be amended, modified, or supplemented by a written instrument signed by both Parties.</p>
+<hr>
+<h3>Article G5: Counterparts (Exemplaren)</h3>
+<p>G5.1. This Addendum may be executed in counterparts, each of which shall be deemed an original, and all of which together shall constitute one and the same instrument.</p>
+<p>G5.2. Electronic signatures shall be deemed valid and binding, in accordance with the European eIDAS Regulation (EU) No 910/2014.</p>
+<hr>
+<h2>SIGNATURE BLOCKS (ONDERTEKENING)</h2>
+<p>This Addendum has been executed in two (2) counterparts on the date first written above. Employee signs twice: once in his capacity as employee, and once in his capacity as sole proprietor of FutureAtoms, to confirm his commitment with respect to both the employment-related and the commercial/IP-related provisions of this Addendum. Both signatures bind the same natural person (see Capacity Note above).</p>
+<p>&amp;nbsp;</p>
+<p><strong>FOR AND ON BEHALF OF EMPLOYER (NAMENS WERKGEVER):</strong></p>
+<p><strong>Axelera AI B.V.</strong></p>
+<p>&amp;nbsp;</p>
+<table class="kv-table">
+<thead><tr><th></th><th></th></tr></thead>
+<tbody>
+<tr><td>Name (Naam):</td><td>_________________________________</td></tr>
+<tr><td>Title (Functie):</td><td>_________________________________</td></tr>
+<tr><td>Date (Datum):</td><td>_________________________________</td></tr>
+<tr><td>Signature (Handtekening):</td><td>_________________________________</td></tr>
+</tbody></table>
+<p>&amp;nbsp;</p>
+<p><strong>EMPLOYEE (WERKNEMER):</strong></p>
+<p>&amp;nbsp;</p>
+<table class="kv-table">
+<thead><tr><th></th><th></th></tr></thead>
+<tbody>
+<tr><td>Name (Naam):</td><td>Abhilash Chadhar</td></tr>
+<tr><td>Date (Datum):</td><td>_________________________________</td></tr>
+<tr><td>Signature (Handtekening):</td><td>_________________________________</td></tr>
+</tbody></table>
+<p>&amp;nbsp;</p>
+<p><strong>FOR AND ON BEHALF OF FUTUREATOMS (NAMENS FUTUREATOMS):</strong></p>
+<p><em>(in Employee's capacity as sole proprietor of FutureAtoms, KvK: 99153289)</em></p>
+<p>&amp;nbsp;</p>
+<table class="kv-table">
+<thead><tr><th></th><th></th></tr></thead>
+<tbody>
+<tr><td>Name (Naam):</td><td>Abhilash Chadhar</td></tr>
+<tr><td>Capacity (Hoedanigheid):</td><td>Sole Proprietor (Eigenaar Eenmanszaak)</td></tr>
+<tr><td>Date (Datum):</td><td>_________________________________</td></tr>
+<tr><td>Signature (Handtekening):</td><td>_________________________________</td></tr>
+</tbody></table>
+<hr>
+<h2>ANNEXES (BIJLAGEN)</h2>
+<ul>
+<li><strong>Annex 1:</strong> FutureAtoms KvK Extract (Uittreksel Kamer van Koophandel)</li>
+<li><strong>Annex 2:</strong> ChipOS Technical Description and Architecture Overview</li>
+<li><strong>Annex 3:</strong> Wingman v1.0.0 Delivery Manifest</li>
+<li><strong>Annex 4:</strong> Employer's Equity Incentive Plan (relevant excerpts)</li>
+<li><strong>Annex 5:</strong> Technical and Legal Independence Report: ChipOS vs. Wingman (chipos-wingman-independence-report.md)</li>
+</ul>
+<hr>
+<p><em>This document and its contents are confidential.</em></p>
+<hr>
+<p><strong>DISCLAIMER:</strong> This is an AI-generated document and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet). This document is for informational purposes only and should be reviewed by a qualified Dutch lawyer (advocaat) before use.</p>
+<ol>
+<li><strong>Is for informational purposes only</strong> and must not be considered a substitute for professional legal advice from a qualified Dutch lawyer (advocaat) registered with the Netherlands Bar Association (Nederlandse Orde van Advocaten).</li>
+</ol>
+<ol>
+<li><strong>Is generated by artificial intelligence</strong> and may contain inaccuracies, omissions, or outdated information, despite efforts to consult current and accurate sources.</li>
+</ol>
+<ol>
+<li><strong>Does not replace a lawyer.</strong> For legal decisions, proceedings, contracts, or disputes, you must always consult a qualified lawyer authorized to practice law in the Netherlands.</li>
+</ol>
+<ol>
+<li><strong>Does not guarantee confidentiality.</strong> Information shared with this AI system is not protected by attorney-client privilege (verschoningsrecht). Do not share confidential or privileged information.</li>
+</ol>
+<ol>
+<li><strong>May not reflect current law.</strong> Dutch legislation and case law change continuously. This analysis is based on the state of the law as of the indicated date and may not account for recent amendments.</li>
+</ol>
+<ol>
+<li><strong>Cannot be used as evidence</strong> in judicial or administrative proceedings.</li>
+</ol>
+<ol>
+<li><strong>Does not guarantee the accuracy</strong> of references to statutory articles, ECLI numbers, or other legal sources. Independently verify all source citations.</li>
+</ol>
+<p><strong>By using this analysis, you acknowledge that you have read and understood this disclaimer and that you do not consider the AI system to be your legal advisor.</strong></p>
+<div class="disclaimer">
+<h2>DISCLAIMER</h2>
+<hr>
+<h1>Juridische Disclaimer</h1>
+<hr>
+<p><strong>BELANGRIJK - LEES DEZE DISCLAIMER ZORGVULDIG</strong></p>
+<p>Dit is een AI-gegenereerde juridische analyse en vormt <strong>geen juridisch advies</strong> in de zin van de Advocatenwet. De informatie in deze analyse:</p>
+<ol>
+<li><strong>Is uitsluitend informatief</strong> en mag niet worden beschouwd als een vervanging voor professioneel juridisch advies van een gekwalificeerde Nederlandse advocaat (ingeschreven bij de Nederlandse Orde van Advocaten).</li>
+</ol>
+<ol>
+<li><strong>Is gegenereerd door kunstmatige intelligentie</strong> en kan onnauwkeurigheden, onvolledigheden of verouderde informatie bevatten, ondanks inspanningen om actuele en correcte bronnen te raadplegen.</li>
+</ol>
+<ol>
+<li><strong>Vervangt geen advocaat.</strong> Voor juridische beslissingen, procedures, contracten of geschillen dient u altijd een gekwalificeerde advocaat te raadplegen die bevoegd is om in Nederland de rechtspraktijk uit te oefenen.</li>
+</ol>
+<ol>
+<li><strong>Garandeert geen vertrouwelijkheid.</strong> Informatie die u deelt met dit AI-systeem valt niet onder het advocaat-cliënt verschoningsrecht (legal privilege). Deel geen vertrouwelijke of geprivilegieerde informatie.</li>
+</ol>
+<ol>
+<li><strong>Is mogelijk niet actueel.</strong> De Nederlandse wetgeving en jurisprudentie veranderen voortdurend. De analyse is gebaseerd op de stand van het recht op de aangegeven datum en houdt mogelijk geen rekening met recente wijzigingen.</li>
+</ol>
+<ol>
+<li><strong>Kan niet worden gebruikt als bewijs</strong> in gerechtelijke of administratieve procedures.</li>
+</ol>
+<ol>
+<li><strong>Biedt geen garantie op juistheid</strong> van verwijzingen naar wetsartikelen, ECLI-nummers of andere juridische bronnen. Verifieer alle bronvermeldingen zelfstandig.</li>
+</ol>
+<p><strong>Door gebruik te maken van deze analyse erkent u dat u deze disclaimer heeft gelezen en begrepen, en dat u het AI-systeem niet beschouwt als uw juridisch adviseur.</strong></p>
+<hr>
+<p><em>Gegenereerd door FALCON (FutureAtoms AI Legal Counsel Of Netherlands) - een AI-hulpmiddel voor juridische analyse.</em> <em>Datum van analyse: 05-03-2026</em> <em>Verificatiedatum wetgeving: 05-03-2026</em></p>
+
+    <div class="footer-meta">
+        FALCON (FutureAtoms AI Legal Counsel Of Netherlands) &nbsp;|&nbsp;
+        Datum: 05-03-2026 &nbsp;|&nbsp;
+        Verificatiedatum wetgeving: 05-03-2026 &nbsp;|&nbsp;
+        AI-gegenereerd document
+    </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,4 +1,4 @@
-# Netherlands AI Lawyer System - User Guide
+# FALCON (FutureAtoms AI Legal Counsel Of Netherlands) - User Guide
 
 ## Table of Contents
 

@@ -81,7 +81,7 @@ The objective justification need not be stated in the clause itself but must be 
 | Issue | Assessment |
 |-------|-----------|
 | **Scope** | Extremely broad — covers ALL AI software and hardware worldwide |
-| **ChipOS overlap?** | ChipOS is a semiconductor design orchestration platform. It uses AI. Under the literal wording of "software products for artificial intelligence," Axelera *could* argue ChipOS falls within scope. |
+| **ChipOS overlap?** | ChipOS is a vendor-neutral agentic orchestration platform for semiconductor design workflows. It uses AI. Under the literal wording of "software products for artificial intelligence," Axelera *could* argue ChipOS falls within scope. |
 | **Geographic scope** | "Worldwide" — Dutch courts regularly narrow overly broad geographic restrictions |
 | **Duration** | 1 year post-termination — this is within the normal range Dutch courts accept |
 | **During employment** | Applies NOW while you are employed |
@@ -113,7 +113,7 @@ The objective justification need not be stated in the clause itself but must be 
 | Factor | Your position |
 |--------|--------------|
 | **"in the context this Agreement"** | ChipOS was developed independently, outside hours, own equipment — NOT in the context of the employment agreement |
-| **Art. 7 Auteurswet** | Employer copyright requires a "functional connection" (*functioneel verband*) between employment duties and the creative work. Your job is Senior Verification Engineer, not AI platform developer. The seminal case HR 19 januari 1951, NJ 1952/37 (*Van der Laan/Schoonderbeek*) established that the work must be created "in dienst van" (in the service of) the employer with a functional connection to employment duties. |
+| **Art. 7 Auteurswet** | Employer copyright requires a "functional connection" (*functioneel verband*) between employment duties and the creative work. Your job is Senior Verification Engineer, not AI platform developer. The seminal case HR 19 januari 1951, NJ 1952/37 (*Van der Laan/Schoonderbeek*) (pre-ECLI; verify NJ citation with counsel before use in proceedings) established that the work must be created "in dienst van" (in the service of) the employer with a functional connection to employment duties. |
 | **Clause 15.2.3** | "Employee shall refrain from registering any Intellectual Property Right in his own name" — BUT this refers to "the Intellectual Property Rights" as defined (those arising from employment activities), NOT independently created IP |
 | **Advance transfer (15.2.1)** | The *bij voorbaat* transfer only covers IP "arising from or in connection with" employment activities |
 | **EU Directive 2009/24/EC Art. 2(3)** | Employer copyright in software requires creation "in the execution of duties" or "following employer instructions." Independent work satisfies neither condition. |
@@ -220,7 +220,7 @@ A detailed clause-by-clause analysis is provided in the separate addendum analys
 
 > "including any successor, derivative, fork, update, extension, architectural variation or **related technology** developed within the Company"
 
-**Problem:** "Related technology" is undefined and could capture virtually any software you ever develop. This is a **catch-all** that goes far beyond what is reasonable.
+**Problem:** "Related technology" is undefined and could capture virtually any software you ever develop. This is a **catch-all** that exceeds what is reasonable.
 
 **Legal vulnerability:** Under **Art. 6:248 lid 2 BW** (*derogerende werking van redelijkheid en billijkheid*), a provision that is unconscionably broad may be unenforceable. A court would likely read "related technology" narrowly or strike it. Art. 6:248 lid 2 BW provides:
 
@@ -234,7 +234,7 @@ Translation: A rule applicable between parties as a result of the agreement does
 
 > "perpetual, irrevocable, worldwide, fully paid-up, royalty-free, transferable and sublicensable non-exclusive licence to use, reproduce, modify, adapt, integrate, commercialise, distribute and otherwise exploit **the ChipOS** in all fields of use"
 
-**Problem:** This grants Axelera a full non-exclusive license to your **entire ChipOS platform** — all 11 App Packs, vendor-neutral tooling, everything — not just the Wingman deliverable. This is far beyond what was discussed.
+**Problem:** This grants Axelera a full non-exclusive license to your **entire ChipOS platform** — all 11 App Packs, vendor-neutral tooling, everything — not just the Wingman deliverable. This substantially exceeds what was discussed.
 
 **Legal vulnerability:**
 - You and Axelera discussed **Wingman** delivery, not a ChipOS platform license
@@ -337,7 +337,7 @@ Translation: A rule applicable between parties as a result of the agreement does
 
 ### KEY CONCLUSION ON THE ADDENDUM
 
-**You should NOT sign this addendum as drafted.** It goes far beyond the agreed Wingman delivery and attempts to capture your entire independent ChipOS platform, all future work, and shut down FutureAtoms. The counter-proposal you already prepared (in `employment-addendum-counter-proposal.md`) is the right approach: give Axelera strong rights to **Wingman** while protecting ChipOS and FutureAtoms.
+**You should NOT sign this addendum as drafted.** It significantly overreaches the agreed Wingman delivery and attempts to capture your entire independent ChipOS platform, all future work, and shut down FutureAtoms. The counter-proposal you already prepared (in `employment-addendum-counter-proposal.md`) is the right approach: give Axelera strong rights to **Wingman** while protecting ChipOS and FutureAtoms.
 
 If Axelera insists on this version, engage a Dutch employment lawyer immediately. Multiple clauses are legally vulnerable and a court would likely narrow them significantly.
 
@@ -412,10 +412,13 @@ If Axelera insists on this version, engage a Dutch employment lawyer immediately
 | Case | Subject |
 |------|---------|
 | **HR 11 July 2008, ECLI:NL:HR:2008:BD1847** (*Stoof/Mammoet*) | Employer cannot unilaterally impose unreasonable employment term changes; three-part test: (i) changed circumstances, (ii) reasonable proposal, (iii) employee cannot reasonably refuse |
-| **HR 19 januari 1951, NJ 1952/37** (*Van der Laan/Schoonderbeek*) | Employer copyright under Art. 7 Auteurswet requires functional connection (*functioneel verband*) between employment duties and the creative work |
+| **HR 19 januari 1951, NJ 1952/37** (*Van der Laan/Schoonderbeek*) (pre-ECLI; verify NJ citation with counsel) | Employer copyright under Art. 7 Auteurswet requires functional connection (*functioneel verband*) between employment duties and the creative work |
 | **HR 27 april 2007, ECLI:NL:HR:2007:AZ6638** (*Intrahof/Bart Smit*) | Court moderation of penalty clauses under Art. 6:94 BW; courts should exercise restraint but can moderate manifestly disproportionate penalties |
-| **CJEU C-406/10** (*SAS Institute v. WPL*) | Ideas and principles underlying a computer program are not protectable by copyright under EU Directive 2009/24/EC Art. 1(2); applied in Dutch law via *richtlijnconforme interpretatie* |
-| **HR 25 februari 2000, NJ 2000/471** | Application of Art. 6:248 lid 2 BW: contractual provision not binding if application is unacceptable by standards of reasonableness and fairness |
+| **CJEU C-406/10, ECLI:EU:C:2012:259** (*SAS Institute v. WPL*) | Ideas and principles underlying a computer program are not protectable by copyright under EU Directive 2009/24/EC Art. 1(2); applied in Dutch law via *richtlijnconforme interpretatie* |
+| **HR 25 februari 2000, ECLI:NL:HR:2000:AA4942** (*NJ 2000/471*) | Application of Art. 6:248 lid 2 BW: contractual provision not binding if application is unacceptable by standards of reasonableness and fairness |
+| **HR 17 juni 2022, ECLI:NL:HR:2022:894** | Leading Hoge Raad ruling on non-compete proportionality: non-compete clause must serve protection of employer's business interests (*bedrijfsdebiet*), not merely employee retention |
+| **Rb. Noord-Holland 15 maart 2023, ECLI:NL:RBNHO:2023:2448** | Art. 7:653a BW has immediate effect; employer must demonstrate objective justification at the time of invoking ancillary activities restriction; proportionality test applied |
+| **Rb. Amsterdam 2023, ECLI:NL:RBAMS:2023:1526** | Non-compete clause suspended by court for insufficient (generic) justification; employer failed to demonstrate specific business interest warranting restriction |
 
 ---
 
@@ -439,7 +442,7 @@ If Axelera insists on this version, engage a Dutch employment lawyer immediately
 
 ---
 
-*Generated by the Netherlands AI Lawyer System*
+*Generated by FALCON (FutureAtoms AI Legal Counsel Of Netherlands)*
 *Date of analysis: 2026-03-05*
 *Legislation verification date: 2026-03-05*
 *Contract reviewed: Axelera AI B.V. Employment Agreement (DocuSign ID: F3BAD03D-59AE-4277-8ABB-BA2DA2B5D56E, signed August 2022)*

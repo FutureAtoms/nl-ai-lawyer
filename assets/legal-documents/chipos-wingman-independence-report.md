@@ -48,8 +48,8 @@ This report presents the combined technical and legal evidence demonstrating tha
 | **Owner** | FutureAtoms (delivered to Axelera AI under license) |
 | **Total commits** | 3 |
 | **Contributors** | FutureAtoms: 3 commits |
-| **Version** | v1.0.0 (delivered February 2026) |
-| **License** | Voyager Wingman Software License Agreement v1.0 (January 2026) |
+| **Version** | v1.0.0 (released February 2026; formal contractual delivery to Axelera scheduled per Addendum Article B2) |
+| **License** | FutureAtoms product license (January 2026); Axelera-specific license terms defined in Employment Addendum Article B3 (subject to vesting conditions) |
 | **Architecture** | Full-stack microservices platform (8 Docker services) |
 | **Purpose** | AI-powered developer platform for Axelera Metis NPU programming |
 | **Target users** | Axelera Voyager SDK developers only |
@@ -201,7 +201,7 @@ Article 7 Aw provides an exception to the creator principle for works created in
 2. **The work consists of** creating such works (must be part of employee's duties)
 3. Works were created **in the service of** the employer
 
-Hoge Raad jurisprudence establishes that Art. 7 Aw requires a **functional connection** (*functioneel verband*) between the employment relationship and the creative work (see e.g. **HR 19 januari 1951, NJ 1952/37**, *Van der Laan/Schoonderbeek*). The mere existence of an employment relationship is insufficient.
+Hoge Raad jurisprudence establishes that Art. 7 Aw requires a **functional connection** (*functioneel verband*) between the employment relationship and the creative work (see e.g. **HR 19 januari 1951, NJ 1952/37**, *Van der Laan/Schoonderbeek*; pre-ECLI, verify NJ citation with counsel before use in proceedings). The mere existence of an employment relationship is insufficient.
 
 **Application to ChipOS:** Only one of the three conditions is met, and the remaining two — which are each necessary for Art. 7 Aw to apply — are not:
 - (1) Employment exists (conceded)
@@ -344,9 +344,9 @@ The counter-proposal (Recital D) acknowledges that Wingman "draws on general dev
 
 | Potential Question | Clarification | Legal Reference |
 |---|---|---|
-| "ChipOS relates to our field of activity" | Field relatedness is insufficient. The test is **task-based**: was creating ChipOS part of Employee's assigned duties? The answer is no. | Established Hoge Raad jurisprudence on Art. 7 Aw (functional connection requirement; see e.g. HR 19 januari 1951, NJ 1952/37) |
+| "ChipOS relates to our field of activity" | Field relatedness is insufficient. The test is **task-based**: was creating ChipOS part of Employee's assigned duties? The answer is no. | Established Hoge Raad jurisprudence on Art. 7 Aw (functional connection requirement; see e.g. HR 19 januari 1951, NJ 1952/37; pre-ECLI) |
 | "Employee used skills learned at Axelera" | General skills and experience are not trade secrets and do not create IP claims. The task-based criterion focuses on what was assigned, not what was learned. | Art. 12(1) Rijksoctrooiwet 1995 (distinguishes bijzondere kennis from general skills) |
-| "Dutch law gives Axelera ownership of all employee software" | Art. 45h Aw concerns rental rights, not employer copyright. The correct test is Art. 7 Aw, which requires that software was created "in dienst van" the employer as part of assigned duties. ChipOS was not created as part of Employee's duties. | Art. 7 Auteurswet; Directive 2009/24/EC Art. 2(3); established Hoge Raad jurisprudence (functional connection requirement; see e.g. HR 19 januari 1951, NJ 1952/37) |
+| "Dutch law gives Axelera ownership of all employee software" | Art. 45h Aw concerns rental rights, not employer copyright. The correct test is Art. 7 Aw, which requires that software was created "in dienst van" the employer as part of assigned duties. ChipOS was not created as part of Employee's duties. | Art. 7 Auteurswet; Directive 2009/24/EC Art. 2(3); established Hoge Raad jurisprudence (functional connection requirement; see e.g. HR 19 januari 1951, NJ 1952/37; pre-ECLI) |
 | "Employee had a duty of loyalty" | Art. 7:611 BW requires good faith, but not surrender of independently created property. Art. 7:653a BW explicitly protects side activities. | Art. 7:611 BW; Art. 7:653a BW |
 | "Our non-compete clause covers this" | Non-compete clauses regulate competitive activity, not IP ownership. They are separate legal instruments. | Art. 7:653 BW (separate from Art. 7 Aw) |
 | "Wingman proves ChipOS was created for us" | Wingman is a separate product with no runtime ChipOS imports, separate repo, and a completely different architecture. While Wingman applies general patterns from ChipOS (as transparently acknowledged), the existence of a deliverable for Axelera does not retroactively capture pre-existing independent IP. | Separation evidence in Section 3 |
@@ -422,6 +422,24 @@ Both parties benefit from a clearly scoped addendum that gives Axelera strong Wi
 
 **DISCLAIMER:** This is an AI-generated analysis and does NOT constitute legal advice within the meaning of the Dutch Advocates Act (Advocatenwet). This document is for informational purposes only and must be reviewed and finalized by a licensed attorney admitted to the Dutch bar. All legal citations and technical evidence should be independently verified.
 
-*Generated by the Netherlands AI Lawyer System*
+1. **Is for informational purposes only** and must not be considered a substitute for professional legal advice from a qualified Dutch lawyer (advocaat) registered with the Netherlands Bar Association (Nederlandse Orde van Advocaten).
+
+2. **Is generated by artificial intelligence** and may contain inaccuracies, omissions, or outdated information, despite efforts to consult current and accurate sources.
+
+3. **Does not replace a lawyer.** For legal decisions, proceedings, contracts, or disputes, you must always consult a qualified lawyer authorized to practice law in the Netherlands.
+
+4. **Does not guarantee confidentiality.** Information shared with this AI system is not protected by attorney-client privilege (verschoningsrecht). Do not share confidential or privileged information.
+
+5. **May not reflect current law.** Dutch legislation and case law change continuously. This analysis is based on the state of the law as of the indicated date and may not account for recent amendments.
+
+6. **Cannot be used as evidence** in judicial or administrative proceedings.
+
+7. **Does not guarantee the accuracy** of references to statutory articles, ECLI numbers, or other legal sources. Independently verify all source citations.
+
+**By using this analysis, you acknowledge that you have read and understood this disclaimer and that you do not consider the AI system to be your legal advisor.**
+
+---
+
+*Generated by FALCON (FutureAtoms AI Legal Counsel Of Netherlands)*
 *Date of analysis: 2026-03-04*
 *Legislation verification date: 2026-03-04*

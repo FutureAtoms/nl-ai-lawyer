@@ -1,7 +1,7 @@
 {
   "name": "nl-ai-lawyer",
   "version": "1.0.0",
-  "description": "Netherlands AI Lawyer System - Comprehensive Dutch legal analysis plugin with multi-agent team capabilities",
+  "description": "FALCON (FutureAtoms AI Legal Counsel Of Netherlands) - Comprehensive Dutch legal analysis plugin with multi-agent team capabilities",
   "author": "AviFutureAtoms",
   "license": "MIT",
   "repository": "https://github.com/AviFutureAtoms/nl-ai-lawyer",

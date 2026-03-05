@@ -1,120 +1,6 @@
 [
   {
-    "file": "employment-addendum-counter-proposal.pdf",
-    "checks": {
-      "content_integrity": {
-        "status": "PASS",
-        "h2_found": 8,
-        "h2_total": 9,
-        "percentage": 88.9,
-        "missing": [
-          "RECITALS OVERWEGINGEN"
-        ]
-      },
-      "formatting": {
-        "status": "PASS",
-        "pages": 13,
-        "file_size_kb": 92.8,
-        "md_size_kb": 40.9
-      },
-      "legal_completeness": {
-        "status": "PASS",
-        "disclaimer_present": true,
-        "date_stamp": true,
-        "ai_disclosure": true
-      },
-      "watermark": {
-        "status": "PASS",
-        "configured": "VERTROUWELIJK",
-        "note": "Applied via pypdf merge (15% opacity)"
-      }
-    }
-  },
-  {
-    "file": "chipos-wingman-independence-report.pdf",
-    "checks": {
-      "content_integrity": {
-        "status": "PASS",
-        "h2_found": 11,
-        "h2_total": 11,
-        "percentage": 100.0,
-        "missing": []
-      },
-      "formatting": {
-        "status": "PASS",
-        "pages": 13,
-        "file_size_kb": 112.7,
-        "md_size_kb": 31.3
-      },
-      "legal_completeness": {
-        "status": "PASS",
-        "disclaimer_present": true,
-        "date_stamp": true,
-        "ai_disclosure": true
-      },
-      "watermark": {
-        "status": "PASS",
-        "configured": "VERTROUWELIJK",
-        "note": "Applied via pypdf merge (15% opacity)"
-      }
-    }
-  },
-  {
-    "file": "axelera-addendum-analysis.pdf",
-    "checks": {
-      "content_integrity": {
-        "status": "PASS",
-        "h2_found": 5,
-        "h2_total": 5,
-        "percentage": 100.0,
-        "missing": []
-      },
-      "formatting": {
-        "status": "PASS",
-        "pages": 8,
-        "file_size_kb": 24.7,
-        "md_size_kb": 19.6
-      },
-      "legal_completeness": {
-        "status": "PASS",
-        "disclaimer_present": true,
-        "date_stamp": true,
-        "ai_disclosure": true
-      },
-      "watermark": {
-        "status": "N/A"
-      }
-    }
-  },
-  {
-    "file": "immigration-risk-assessment.pdf",
-    "checks": {
-      "content_integrity": {
-        "status": "PASS",
-        "h2_found": 9,
-        "h2_total": 9,
-        "percentage": 100.0,
-        "missing": []
-      },
-      "formatting": {
-        "status": "PASS",
-        "pages": 8,
-        "file_size_kb": 26.4,
-        "md_size_kb": 18.8
-      },
-      "legal_completeness": {
-        "status": "PASS",
-        "disclaimer_present": true,
-        "date_stamp": true,
-        "ai_disclosure": true
-      },
-      "watermark": {
-        "status": "N/A"
-      }
-    }
-  },
-  {
-    "file": "axelera-dual-roles-precedent.pdf",
+    "file": "employment-addendum-counter-proposal.html",
     "checks": {
       "content_integrity": {
         "status": "PASS",
@@ -123,40 +9,33 @@
         "percentage": 100.0,
         "missing": []
       },
-      "formatting": {
-        "status": "PASS",
-        "pages": 8,
-        "file_size_kb": 61.3,
-        "md_size_kb": 17.8
-      },
       "legal_completeness": {
         "status": "PASS",
         "disclaimer_present": true,
         "date_stamp": true,
         "ai_disclosure": true
       },
+      "formatting": {
+        "status": "PASS",
+        "file_size_kb": 62.2,
+        "lists_rendered": true,
+        "tables_rendered": true
+      },
       "watermark": {
         "status": "PASS",
-        "configured": "STRIKT VERTROUWELIJK",
-        "note": "Applied via pypdf merge (15% opacity)"
+        "configured": "VERTROUWELIJK"
       }
     }
   },
   {
-    "file": "response-to-axelera-legal.pdf",
+    "file": "chipos-wingman-independence-report.html",
     "checks": {
       "content_integrity": {
         "status": "PASS",
-        "h2_found": 7,
-        "h2_total": 7,
+        "h2_found": 11,
+        "h2_total": 11,
         "percentage": 100.0,
         "missing": []
-      },
-      "formatting": {
-        "status": "PASS",
-        "pages": 7,
-        "file_size_kb": 51.3,
-        "md_size_kb": 18.2
       },
       "legal_completeness": {
         "status": "PASS",
@@ -164,34 +43,39 @@
         "date_stamp": true,
         "ai_disclosure": true
       },
+      "formatting": {
+        "status": "PASS",
+        "file_size_kb": 52.5,
+        "lists_rendered": true,
+        "tables_rendered": true
+      },
       "watermark": {
         "status": "PASS",
-        "configured": "VERTROUWELIJK",
-        "note": "Applied via pypdf merge (15% opacity)"
+        "configured": "VERTROUWELIJK"
       }
     }
   },
   {
-    "file": "side-business-permission-request.pdf",
+    "file": "axelera-addendum-analysis.html",
     "checks": {
       "content_integrity": {
         "status": "PASS",
-        "h2_found": 6,
-        "h2_total": 6,
+        "h2_found": 5,
+        "h2_total": 5,
         "percentage": 100.0,
         "missing": []
-      },
-      "formatting": {
-        "status": "PASS",
-        "pages": 5,
-        "file_size_kb": 13.7,
-        "md_size_kb": 9.2
       },
       "legal_completeness": {
         "status": "PASS",
         "disclaimer_present": true,
         "date_stamp": true,
         "ai_disclosure": true
+      },
+      "formatting": {
+        "status": "PASS",
+        "file_size_kb": 36.6,
+        "lists_rendered": true,
+        "tables_rendered": true
       },
       "watermark": {
         "status": "N/A"
@@ -199,7 +83,7 @@
     }
   },
   {
-    "file": "wingman-delivery-manifest.pdf",
+    "file": "immigration-risk-assessment.html",
     "checks": {
       "content_integrity": {
         "status": "PASS",
@@ -208,17 +92,127 @@
         "percentage": 100.0,
         "missing": []
       },
+      "legal_completeness": {
+        "status": "PASS",
+        "disclaimer_present": true,
+        "date_stamp": true,
+        "ai_disclosure": true
+      },
       "formatting": {
         "status": "PASS",
-        "pages": 6,
-        "file_size_kb": 14.7,
-        "md_size_kb": 7.8
+        "file_size_kb": 34.8,
+        "lists_rendered": true,
+        "tables_rendered": true
+      },
+      "watermark": {
+        "status": "N/A"
+      }
+    }
+  },
+  {
+    "file": "axelera-dual-roles-precedent.html",
+    "checks": {
+      "content_integrity": {
+        "status": "PASS",
+        "h2_found": 10,
+        "h2_total": 10,
+        "percentage": 100.0,
+        "missing": []
       },
       "legal_completeness": {
         "status": "PASS",
         "disclaimer_present": true,
         "date_stamp": true,
         "ai_disclosure": true
+      },
+      "formatting": {
+        "status": "PASS",
+        "file_size_kb": 35.3,
+        "lists_rendered": true,
+        "tables_rendered": true
+      },
+      "watermark": {
+        "status": "PASS",
+        "configured": "STRIKT VERTROUWELIJK"
+      }
+    }
+  },
+  {
+    "file": "response-to-axelera-legal.html",
+    "checks": {
+      "content_integrity": {
+        "status": "PASS",
+        "h2_found": 8,
+        "h2_total": 8,
+        "percentage": 100.0,
+        "missing": []
+      },
+      "legal_completeness": {
+        "status": "PASS",
+        "disclaimer_present": true,
+        "date_stamp": true,
+        "ai_disclosure": true
+      },
+      "formatting": {
+        "status": "PASS",
+        "file_size_kb": 35.3,
+        "lists_rendered": true,
+        "tables_rendered": true
+      },
+      "watermark": {
+        "status": "PASS",
+        "configured": "VERTROUWELIJK"
+      }
+    }
+  },
+  {
+    "file": "side-business-permission-request.html",
+    "checks": {
+      "content_integrity": {
+        "status": "PASS",
+        "h2_found": 6,
+        "h2_total": 6,
+        "percentage": 100.0,
+        "missing": []
+      },
+      "legal_completeness": {
+        "status": "PASS",
+        "disclaimer_present": true,
+        "date_stamp": true,
+        "ai_disclosure": true
+      },
+      "formatting": {
+        "status": "PASS",
+        "file_size_kb": 24.5,
+        "lists_rendered": true,
+        "tables_rendered": true
+      },
+      "watermark": {
+        "status": "N/A"
+      }
+    }
+  },
+  {
+    "file": "wingman-delivery-manifest.html",
+    "checks": {
+      "content_integrity": {
+        "status": "PASS",
+        "h2_found": 9,
+        "h2_total": 9,
+        "percentage": 100.0,
+        "missing": []
+      },
+      "legal_completeness": {
+        "status": "PASS",
+        "disclaimer_present": true,
+        "date_stamp": true,
+        "ai_disclosure": true
+      },
+      "formatting": {
+        "status": "PASS",
+        "file_size_kb": 22.8,
+        "lists_rendered": true,
+        "tables_rendered": true
       },
       "watermark": {
         "status": "N/A"

@@ -38,7 +38,7 @@ This is how every major software company handles derivative products: the client
 - Your employment contract Clause 13 already permits side activities with consent "not unreasonably withheld on objective grounds"
 - 34% of Axelera employees maintain concurrent side businesses -- denial is indefensible
 - Anti-retaliation protection: Art. 7:653a lid 2 prohibits disadvantaging you for asserting this right
-- A founding team member (Stanisavljevic) operates Ponos Technology; a peer-level engineer (Miclosh) operates miclosedi.dev
+- A founding team member operates a concurrent technology company; a peer-level engineer operates a software development business (see anonymized comparators in axelera-dual-roles-precedent.md)
 
 **In the counter-proposal:** Part A formally discloses FutureAtoms and secures written approval with objective separation conditions (outside hours, own equipment, no solicitation, no trade secrets, prompt conflict disclosure).
 

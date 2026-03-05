@@ -16,7 +16,7 @@
 | **Permit type** | Highly Skilled Migrant (kennismigrant / HSM) |
 | **Permit valid until** | 15 November 2027 |
 | **Employer / Sponsor** | Axelera AI B.V. (recognized sponsor / erkend referent) |
-| **Employment start** | December 2022 |
+| **Employment start** | 1 December 2022 |
 | **Continuous residence** | ~3 years 3 months (as of March 2026) |
 | **Side business** | FutureAtoms (eenmanszaak, KvK: 99153289) |
 
@@ -32,7 +32,23 @@ Your current HSM (kennismigrant) permit, employment relationship, and citizenshi
 
 ---
 
-## 3. Employee vs. Contractor Comparison
+## 3. Having an Eenmanszaak Alongside Employment IS Permitted
+
+**Important:** Operating FutureAtoms as a side business does **not** conflict with or endanger the HSM permit. Specifically:
+
+- The HSM permit is based on the **primary employment relationship** with Axelera AI B.V.
+- A side business (eenmanszaak) is a **separate activity** that does not affect the legal basis of the residence permit.
+- Employment income continues to meet the HSM salary threshold requirement.
+- Under current IND practice, a side business (eenmanszaak) alongside HSM employment generally does not need to be separately reported to the IND, provided primary employment continues and all HSM conditions remain fulfilled, and subject to the conditions and endorsements stated on the individual residence permit (*verblijfsdocument*). However, IND policy and reporting requirements can change; confirm with an immigration lawyer or the IND if in doubt.
+- **Art. 7:653a BW** (nevenwerkzaamhedenbeding) provides that an employer may not prohibit an employee from performing work for others unless the employer has an objective justification. This protects the right to have side activities.
+- The eenmanszaak can grow organically while employment provides stability, income, and immigration security.
+- Any income from the eenmanszaak must be properly declared in the annual income tax return (aangifte inkomstenbelasting).
+
+**Recommendation:** Secure **written approval** from Axelera AI for operating FutureAtoms to avoid any future disputes regarding the nevenwerkzaamhedenbeding.
+
+---
+
+## 4. Employee vs. Contractor Comparison
 
 | Factor | Permanent Employee | Self-Employed Contractor |
 |--------|-------------------|------------------------|
@@ -52,7 +68,7 @@ Your current HSM (kennismigrant) permit, employment relationship, and citizenshi
 
 ---
 
-## 4. Why NOT to Switch to Contractor Status
+## 5. Why NOT to Switch to Contractor Status
 
 ### 4.1 HSM Permit Is Tied to Employment
 
@@ -126,22 +142,6 @@ The 30% ruling (*30%-regeling*) under **Art. 31a(2)(e) Wet op de loonbelasting 1
 
 ---
 
-## 5. Having an Eenmanszaak Alongside Employment IS Permitted
-
-**Important:** Operating FutureAtoms as a side business does **not** conflict with or endanger the HSM permit. Specifically:
-
-- The HSM permit is based on the **primary employment relationship** with Axelera AI B.V.
-- A side business (eenmanszaak) is a **separate activity** that does not affect the legal basis of the residence permit.
-- Employment income continues to meet the HSM salary threshold requirement.
-- Under current IND practice, a side business (eenmanszaak) alongside HSM employment generally does not need to be separately reported to the IND, provided primary employment continues and all HSM conditions remain fulfilled, and subject to the conditions and endorsements stated on the individual residence permit (*verblijfsdocument*). However, IND policy and reporting requirements can change; confirm with an immigration lawyer or the IND if in doubt.
-- **Art. 7:653a BW** (nevenwerkzaamhedenbeding) provides that an employer may not prohibit an employee from performing work for others unless the employer has an objective justification. This protects the right to have side activities.
-- The eenmanszaak can grow organically while employment provides stability, income, and immigration security.
-- Any income from the eenmanszaak must be properly declared in the annual income tax return (aangifte inkomstenbelasting).
-
-**Recommendation:** Secure **written approval** from Axelera AI for operating FutureAtoms to avoid any future disputes regarding the nevenwerkzaamhedenbeding.
-
----
-
 ## 6. Citizenship Timeline
 
 ### 6.1 Eligibility
@@ -149,7 +149,7 @@ The 30% ruling (*30%-regeling*) under **Art. 31a(2)(e) Wet op de loonbelasting 1
 | Milestone | Date / Duration |
 |-----------|----------------|
 | Continuous legal residence required | 5 years |
-| Employment / residence start | December 2022 |
+| Employment / residence start | 1 December 2022 |
 | **Earliest eligibility** | **~December 2027** |
 | Application processing time | IND decision period is 12 months from complete application (may vary; check current IND processing times) |
 | Expected citizenship (if approved) | Mid-to-late 2028 |
@@ -219,8 +219,26 @@ The 30% ruling (*30%-regeling*) under **Art. 31a(2)(e) Wet op de loonbelasting 1
 
 ---
 
-**DISCLAIMER:** This is an AI-generated analysis and does NOT constitute legal or immigration advice. Immigration rules change frequently. This document must be verified by a qualified immigration lawyer (vreemdelingenadvocaat) or the IND before making any decisions. All references to IND requirements should be independently verified against current IND guidelines.
+**DISCLAIMER:** This is an AI-generated analysis and does NOT constitute legal or immigration advice. Immigration rules change frequently. This document must be verified by a qualified immigration lawyer (vreemdelingenadvocaat) or the IND before making any decisions.
 
-*Generated by the Netherlands AI Lawyer System*
+1. **Is for informational purposes only** and must not be considered a substitute for professional legal advice from a qualified Dutch lawyer (advocaat) registered with the Netherlands Bar Association (Nederlandse Orde van Advocaten).
+
+2. **Is generated by artificial intelligence** and may contain inaccuracies, omissions, or outdated information, despite efforts to consult current and accurate sources.
+
+3. **Does not replace a lawyer.** For legal decisions, proceedings, contracts, or disputes, you must always consult a qualified lawyer authorized to practice law in the Netherlands.
+
+4. **Does not guarantee confidentiality.** Information shared with this AI system is not protected by attorney-client privilege (verschoningsrecht). Do not share confidential or privileged information.
+
+5. **May not reflect current law.** Dutch legislation and case law change continuously. This analysis is based on the state of the law as of the indicated date and may not account for recent amendments.
+
+6. **Cannot be used as evidence** in judicial or administrative proceedings.
+
+7. **Does not guarantee the accuracy** of references to statutory articles, ECLI numbers, or other legal sources. Independently verify all source citations.
+
+**By using this analysis, you acknowledge that you have read and understood this disclaimer and that you do not consider the AI system to be your legal advisor.**
+
+---
+
+*Generated by FALCON (FutureAtoms AI Legal Counsel Of Netherlands)*
 *Date of analysis: 2026-03-04*
 *IND requirements verification date: 2026-03-04*

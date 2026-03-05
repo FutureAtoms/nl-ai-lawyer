@@ -93,7 +93,7 @@ def add_disclaimer(story, styles, language='nl'):
     story.append(Paragraph(text, styles['LegalDisclaimer']))
     story.append(Spacer(1, 8))
     story.append(Paragraph(
-        f"Netherlands AI Lawyer System | "
+        f"FALCON (FutureAtoms AI Legal Counsel Of Netherlands) | "
         f"Datum: {date.today().strftime('%d-%m-%Y')} | "
         f"Verificatiedatum wetgeving: {date.today().strftime('%d-%m-%Y')}",
         styles['LegalFooter']
