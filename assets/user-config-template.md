@@ -1,4 +1,4 @@
-# Netherlands AI Lawyer - Organization Configuration
+# FALCON - Organization Configuration
 
 ## Organization Profile
 - **Organization Name:** [Your organization name]

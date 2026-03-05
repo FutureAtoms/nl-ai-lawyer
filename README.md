@@ -1,7 +1,7 @@
-# Netherlands AI Lawyer System
+# FALCON — FutureAtoms AI Legal Counsel Of Netherlands
 
 ## Overview
-Comprehensive AI lawyer system for Netherlands law, built as a Claude Code plugin with multi-agent team capabilities.
+Comprehensive AI legal counsel system for Netherlands law, built as a Claude Code plugin with multi-agent team capabilities. FALCON is developed by [FutureAtoms](https://futureatoms.com).
 
 ## Features
 - 14 domain-specific legal skills covering all major Dutch law areas
@@ -21,8 +21,8 @@ Comprehensive AI lawyer system for Netherlands law, built as a Claude Code plugi
 
 1. Clone this repository:
 ```bash
-git clone [repo-url] ~/uncloud/nl-ai-lawyer
-cd ~/uncloud/nl-ai-lawyer
+git clone [repo-url] ~/falcon
+cd ~/falcon
 ```
 
 2. Build the custom MCP server:
@@ -46,7 +46,7 @@ Get your key at https://developers.kvk.nl/
 
 5. Configure organization preferences:
 ```bash
-cp assets/user-config-template.md .claude/nl-ai-lawyer.local.md
+cp assets/user-config-template.md .claude/falcon.local.md
 # Edit the file with your organization's preferences
 ```
 
@@ -92,7 +92,7 @@ For complex legal matters, the system can deploy specialized agent teams.
 - data.overheid.nl - Government datasets
 
 ## Disclaimer
-This system provides AI-generated legal analysis and does NOT constitute legal advice. Always consult a qualified Dutch lawyer (advocaat) for legal matters.
+FALCON provides AI-generated legal analysis and does NOT constitute legal advice. Always consult a qualified Dutch lawyer (advocaat) for legal matters.
 
 ## License
 MIT

@@ -24,6 +24,6 @@ Dit is een AI-gegenereerde juridische analyse en vormt **geen juridisch advies**
 
 ---
 
-*Gegenereerd door het Netherlands AI Lawyer System - een AI-hulpmiddel voor juridische analyse.*
+*Gegenereerd door FALCON (FutureAtoms AI Legal Counsel Of Netherlands) - een AI-hulpmiddel voor juridische analyse.*
 *Datum van analyse: [DATUM]*
 *Verificatiedatum wetgeving: [DATUM]*
